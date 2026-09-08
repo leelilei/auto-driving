@@ -1,0 +1,44 @@
+{
+  "stage": "main",
+  "dataset": "9-AutoDriving-core/data/test/test_640_utterances_v2_confirmed.json",
+  "dataset_sha256": "25ba3bfeeff02c63c4f2be0890d9d9f87fc8dc6730704fc6258a817879585444",
+  "groups": 160,
+  "utterances": 640,
+  "max_attempts": 3200,
+  "retries": 0,
+  "config": {
+    "provider": "fhl",
+    "model": "gpt-5.4-mini",
+    "wire_api": "chat_completions",
+    "base_url": "https://www.fhl.mom",
+    "temperature": 0.0,
+    "timeout": 45,
+    "json_mode": true,
+    "retries": 0,
+    "retry_sleep": 2.0,
+    "sleep": 0.0,
+    "max_concurrency": 4,
+    "omit_temperature": true,
+    "reasoning_effort": null,
+    "max_output_tokens": 1600,
+    "stream": false,
+    "service_tier": null,
+    "store": null,
+    "responses_input_mode": "messages",
+    "input_char_limit": null,
+    "transport": "curl",
+    "api_key_env": "FHL_API_KEY"
+  },
+  "parameters": {
+    "tau_star": 0.02,
+    "tau_sem_star": 0.1,
+    "p_review_star": 0.4805194805194805
+  },
+  "scope": "fresh replication on previously exposed intent groups; NOT an untouched confirmatory holdout",
+  "evaluation_weight_map": {
+    "quality_first": 0.75,
+    "balanced": 0.5,
+    "distance_first": 0.25
+  },
+  "metric_version": "fresh-v3-valid-task-pairs"
+}

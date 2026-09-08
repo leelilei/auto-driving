@@ -1,0 +1,29 @@
+[
+  {
+    "run_id": "20260907T160417Z_fresh_pilot",
+    "attempts": 1,
+    "schema_valid": 0,
+    "errors": [
+      "curl request failed: curl: (7) Failed to connect to www.fhl.mom port 443 after 0 ms: Couldn't connect to server"
+    ],
+    "summary_exists": false
+  },
+  {
+    "run_id": "20260907T160619Z_fresh_pilot",
+    "attempts": 1,
+    "schema_valid": 0,
+    "errors": [
+      "provider HTTP 502: error code: 502\n"
+    ],
+    "summary_exists": true
+  },
+  {
+    "run_id": "20260907T160716Z_fresh_pilot",
+    "attempts": 1,
+    "schema_valid": 0,
+    "errors": [
+      "curl request failed: curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to www.fhl.mom:443"
+    ],
+    "summary_exists": true
+  }
+]

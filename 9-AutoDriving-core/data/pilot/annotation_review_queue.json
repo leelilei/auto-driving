@@ -1,0 +1,142 @@
+[
+  {
+    "group_id": "pilot_01",
+    "source_index": 786,
+    "instruction": "Today, you'll be visiting the shopping mall and the supermarket. Make sure to be back by 22:00. Since time efficiency is a priority, try to keep your route as direct as possible. Remember to visit the shopping mall before heading to the supermarket.",
+    "human_status": "pending",
+    "ai_triage_note": "仍需逐字段人工核验；无标记不表示已通过。"
+  },
+  {
+    "group_id": "pilot_02",
+    "source_index": 330,
+    "instruction": "Make sure to visit the supermarket and the pharmacy today. Balance your stops to maintain both reasonable ratings and efficiency along the route. Start your trip at the supermarket before heading to the pharmacy.",
+    "human_status": "pending",
+    "ai_triage_note": "仍需逐字段人工核验；无标记不表示已通过。"
+  },
+  {
+    "group_id": "pilot_03",
+    "source_index": 232,
+    "instruction": "Today, make sure to visit the pharmacy and the shopping mall. Try to find a balance between visiting well-rated places and keeping the route efficient. There are no specific dependencies on the order of visits, so feel free to choose the sequence that works best for you.",
+    "human_status": "pending",
+    "ai_triage_note": "仍需逐字段人工核验；无标记不表示已通过。"
+  },
+  {
+    "group_id": "pilot_04",
+    "source_index": 684,
+    "instruction": "Today, make sure to visit the bank and the library. Please be back by 18:00. It's essential to prioritize a quick and efficient route for these visits.",
+    "human_status": "pending",
+    "ai_triage_note": "仍需逐字段人工核验；无标记不表示已通过。"
+  },
+  {
+    "group_id": "pilot_05",
+    "source_index": 308,
+    "instruction": "Today, make sure to visit the bank, library, and pharmacy. It's important to prioritize places with the best ratings. Also, please go to the bank before heading to the library.",
+    "human_status": "pending",
+    "ai_triage_note": "仍需逐字段人工核验；无标记不表示已通过。"
+  },
+  {
+    "group_id": "pilot_06",
+    "source_index": 299,
+    "instruction": "Today, you need to visit the library, supermarket, and bank. Make sure to be back by 18:00. Aim for a route that allows you to complete everything efficiently. Also, remember to stop by the supermarket before heading to the bank.",
+    "human_status": "pending",
+    "ai_triage_note": "仍需逐字段人工核验；无标记不表示已通过。"
+  },
+  {
+    "group_id": "pilot_07",
+    "source_index": 693,
+    "instruction": "Today, make sure to visit the library, pharmacy, and supermarket. Please return by 17:00. Focus on visiting high-rated places, even if the route is slightly longer.",
+    "human_status": "pending",
+    "ai_triage_note": "仍需逐字段人工核验；无标记不表示已通过。"
+  },
+  {
+    "group_id": "pilot_08",
+    "source_index": 504,
+    "instruction": "Today, let's visit the library, the shopping mall, and the supermarket. I would like to keep a good balance between visiting well-rated places and having an efficient route. Make sure to stop by the shopping mall before heading to the supermarket.",
+    "human_status": "pending",
+    "ai_triage_note": "仍需逐字段人工核验；无标记不表示已通过。"
+  },
+  {
+    "group_id": "pilot_09",
+    "source_index": 851,
+    "instruction": "Please visit the library, pharmacy, and bank today. It's important to be efficient with the route, so let's make sure to visit places quickly. Also, make sure to go to the library before heading to the pharmacy.",
+    "human_status": "pending",
+    "ai_triage_note": "仍需逐字段人工核验；无标记不表示已通过。"
+  },
+  {
+    "group_id": "pilot_10",
+    "source_index": 461,
+    "instruction": "Today, the plan is to visit the supermarket, library, and pharmacy. Please aim for a route that maximizes efficiency.",
+    "human_status": "pending",
+    "ai_triage_note": "仍需逐字段人工核验；无标记不表示已通过。"
+  },
+  {
+    "group_id": "pilot_11",
+    "source_index": 55,
+    "instruction": "Today, you'll need to visit the library, shopping mall, supermarket, and bank. While balancing a good mix of visiting worthwhile places within a reasonable timeframe, make sure to go to the library before heading to the shopping mall, and ensure you stop by the supermarket before visiting the bank.",
+    "human_status": "pending",
+    "ai_triage_note": "原句包含 balancing，合成权重 0.6；偏好方向待文本审核。"
+  },
+  {
+    "group_id": "pilot_12",
+    "source_index": 362,
+    "instruction": "Today, make sure to visit the library, shopping mall, bank, and supermarket. It's important to balance visiting places that are appealing with using your time efficiently.",
+    "human_status": "pending",
+    "ai_triage_note": "仍需逐字段人工核验；无标记不表示已通过。"
+  },
+  {
+    "group_id": "pilot_13",
+    "source_index": 810,
+    "instruction": "Today, you'll be visiting the library, shopping mall, pharmacy, and bank. Please ensure you're back by 23:00. We need to focus on getting through our visits efficiently today. Start at the library, then head to the shopping mall, and make sure you visit the pharmacy after the mall.",
+    "human_status": "pending",
+    "ai_triage_note": "Start at the library 是否要求所有 POI 中首先访问 library，待明确。"
+  },
+  {
+    "group_id": "pilot_14",
+    "source_index": 749,
+    "instruction": "Today, make sure to visit the shopping mall, bank, pharmacy, and library. Aim to complete the visits efficiently to make the most out of your route.",
+    "human_status": "pending",
+    "ai_triage_note": "仍需逐字段人工核验；无标记不表示已通过。"
+  },
+  {
+    "group_id": "pilot_15",
+    "source_index": 111,
+    "instruction": "Today, please visit the library, supermarket, pharmacy, and shopping mall. While there is no specific return time, it would be great to complete these visits efficiently. Make sure to stop by the supermarket before heading to the pharmacy.",
+    "human_status": "pending",
+    "ai_triage_note": "仍需逐字段人工核验；无标记不表示已通过。"
+  },
+  {
+    "group_id": "pilot_16",
+    "source_index": 536,
+    "instruction": "Today, you need to visit the pharmacy, supermarket, library, shopping mall, and bank. Since there's no fixed time to return, feel free to focus on covering the route efficiently. Remember, make sure to head to the library before going to the shopping mall.",
+    "human_status": "pending",
+    "ai_triage_note": "仍需逐字段人工核验；无标记不表示已通过。"
+  },
+  {
+    "group_id": "pilot_17",
+    "source_index": 880,
+    "instruction": "Today, make sure to visit the library, pharmacy, bank, shopping mall, and supermarket. Be sure to get everything done by 11 PM. Aim for a good balance between spending time at each location and navigating efficiently through your route. Please visit the shopping mall before heading to the supermarket.",
+    "human_status": "pending",
+    "ai_triage_note": "原句 good balance 指停留/导航，合成权重 0.6；质量偏好是否可判定待审核。"
+  },
+  {
+    "group_id": "pilot_18",
+    "source_index": 628,
+    "instruction": "Today, we need to visit the bank, pharmacy, shopping mall, library, and supermarket. Make sure to return by 22:00. Given the priority for efficiency, let's focus on the quickest route possible. Make sure to stop by the library before heading to the supermarket.",
+    "human_status": "pending",
+    "ai_triage_note": "仍需逐字段人工核验；无标记不表示已通过。"
+  },
+  {
+    "group_id": "pilot_19",
+    "source_index": 783,
+    "instruction": "Today, make sure to visit the supermarket, pharmacy, bank, shopping mall, and library. Prioritize finding places with high ratings for a great experience. When planning your visits, be sure to go to the supermarket before heading to the pharmacy, and don't forget to visit the shopping mall before the library.",
+    "human_status": "pending",
+    "ai_triage_note": "仍需逐字段人工核验；无标记不表示已通过。"
+  },
+  {
+    "group_id": "pilot_20",
+    "source_index": 564,
+    "instruction": "Today, you need to visit the pharmacy, the shopping mall, the bank, the library, and the supermarket. Please ensure that you return by 11 PM. As you plan your route, aim for a balance between visiting places with good ratings and keeping the journey efficient. Make sure to stop by the pharmacy before heading to the shopping mall and visit the library before going to the supermarket.",
+    "human_status": "pending",
+    "ai_triage_note": "仍需逐字段人工核验；无标记不表示已通过。"
+  }
+]

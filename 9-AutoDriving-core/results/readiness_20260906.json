@@ -1,0 +1,38 @@
+{
+  "date_local": "2026-09-06",
+  "scope": "original_instruction_development_smoke_NOT_Gate_A",
+  "runs": [
+    "results/runs/20260905T165534201989Z_original_smoke",
+    "results/runs/20260905T165623760044Z_original_smoke",
+    "results/runs/20260905T165839810927Z_original_smoke"
+  ],
+  "python": "3.12.13",
+  "platform": "macOS-26.3-arm64-arm-64bit",
+  "tests_passed": 25,
+  "raw_records": 1000,
+  "synthetic_label_clusters": 609,
+  "dependency_alias_records": 223,
+  "unique_groups": 20,
+  "first_pass": {
+    "B0": 19,
+    "B6": 19
+  },
+  "after_explicit_transport_retest": {
+    "B0": 20,
+    "B6": 20
+  },
+  "attempted_api_calls": 61,
+  "valid_response_calls": 60,
+  "transport_failures": 1,
+  "provider_reported_tokens": {
+    "input_tokens": 31154,
+    "output_tokens": 5713,
+    "total_tokens": 36867
+  },
+  "failed_call_billing": "unknown; do not count character estimate as provider tokens",
+  "corrections": 0,
+  "harms": 0,
+  "human_annotation": "pending",
+  "gate_a": "not_evaluated",
+  "successful_call_latency_median_seconds": 4.390499999999999
+}

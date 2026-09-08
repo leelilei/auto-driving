@@ -1,0 +1,302 @@
+{
+  "timestamp": "2026-09-07T03:01:46.300415+00:00",
+  "project": "DARC-Route",
+  "phase": "Full_Benchmark_Archived_Complete",
+  "evaluation_scope": "5_Frontier_Models_160_Groups_640_Utterances",
+  "paper_status": "Strictly_6_Pages_IEEE_Compiled",
+  "files_count": 73,
+  "files": {
+    "9-AutoDriving-core/requirements-dev.lock.txt": {
+      "sha256": "0f240c0dc07c94244da07e7aeef451a75e0fadf876e7ccf55a3abd7e9ccfdafd",
+      "size_bytes": 199
+    },
+    "9-AutoDriving-core/configs/llm_config.json": {
+      "sha256": "8ea1621d0730aa57eced07f8c77cd26f11131052c5502894151c819920928d9e",
+      "size_bytes": 340
+    },
+    "9-AutoDriving-core/data/raw/HIPP.json": {
+      "sha256": "5fd5101a9bdb93823f0fe4109fa5342d6bd7d45ef240498a2f822f0554efbf02",
+      "size_bytes": 9512285
+    },
+    "9-AutoDriving-core/data/processed/development_exposure.json": {
+      "sha256": "bfa23dc10ec6cb44a22fdbc54eae9466647a538e0d2dd39008999ca955ca554c",
+      "size_bytes": 906
+    },
+    "9-AutoDriving-core/data/processed/candidate_splits.json": {
+      "sha256": "551a68f2c3388266edf128abc8549cf6a12d2bc8221a6fd99a61281b0050eee6",
+      "size_bytes": 181447
+    },
+    "9-AutoDriving-core/data/test/test_640_utterances.json": {
+      "sha256": "82ec91230a1901a9bb36e51afdf0800e1e1a50713d7c5a9d8de737d824e3ec2f",
+      "size_bytes": 450555
+    },
+    "9-AutoDriving-core/data/calibration/frozen_config.json": {
+      "sha256": "c46c66e04aa83fc8b7b3766304b65b14270264130725ac36cf632ee06e4c3731",
+      "size_bytes": 3487
+    },
+    "9-AutoDriving-core/data/pilot/pilot_80_utterances.json": {
+      "sha256": "28e4d39f993769eee929815eaae87f4231a568d2bef66b25a5b423679693610a",
+      "size_bytes": 61100
+    },
+    "docs/experiments/CODEX_REVIEW_DOSSIER.md": {
+      "sha256": "bdd1542bc08868515d337444c7512751574fd49382a252f49b7f8a1dd33d190c",
+      "size_bytes": 11885
+    },
+    "docs/experiments/HANDOFF_RESULTS.md": {
+      "sha256": "f25f52803563e0f58cb3fe6a50d3102f775e1806c576f759b121e7cfdeb7949c",
+      "size_bytes": 40770
+    },
+    "docs/experiments/EXPERIMENT_GUIDE.md": {
+      "sha256": "25f41187633c4bf9e9917ab59a8cf81bea5c993eee583149501ddb9f03df9f2e",
+      "size_bytes": 26138
+    },
+    "docs/experiments/ACCEPTANCE_CHECKLIST.md": {
+      "sha256": "cd80bd91ea584658c9892f5be266c01e5d1f840fde5ac584878031dc16b49754",
+      "size_bytes": 15602
+    },
+    "docs/experiments/annotation_test_640_review_sheet.md": {
+      "sha256": "dfd1d87e923676f3f7e2f6df502d3f4c2b8f032dbc9b46ca44bcd1809a128875",
+      "size_bytes": 27138
+    },
+    "paper/main.tex": {
+      "sha256": "fb5a721c0f0a0ed2617f52d1564a652a16f534969546383748931c95e972a3b1",
+      "size_bytes": 31775
+    },
+    "paper/main.pdf": {
+      "sha256": "20b1a2a3dbcbf6160b55975596b6f3345dd4cbb60e21d9067c1b890048d73c04",
+      "size_bytes": 390229
+    },
+    "9-AutoDriving-core/results/reports/ablation_experiment_report.md": {
+      "sha256": "7f8a0fe44ed0d1073b0f91bbac27a773503180caa56619df9de1f7c8681ba19b",
+      "size_bytes": 3428
+    },
+    "9-AutoDriving-core/results/reports/analysis_report.md": {
+      "sha256": "dd74564536c4bc7c1243bf98c1af70f76511fb17e9a154fc8232adb9d0d9d59a",
+      "size_bytes": 962
+    },
+    "9-AutoDriving-core/results/reports/calibration_report.md": {
+      "sha256": "09eeb99b2eff56006b0b58d23114b83667708d6ef5d26e77cc81e512f4efa6b5",
+      "size_bytes": 2955
+    },
+    "9-AutoDriving-core/results/reports/contrast_experiment_report.md": {
+      "sha256": "b2878c0644dbe074bc69af3b9cafdbeb3ed944bdb965e0d94385e304ffe9a00e",
+      "size_bytes": 967
+    },
+    "9-AutoDriving-core/results/reports/deepseek_v4_experiment_report.md": {
+      "sha256": "d4a7a61fdb346d685e680d79d0c217ea69798f3bd316cfb2c5daf9a2b8320a6d",
+      "size_bytes": 2396
+    },
+    "9-AutoDriving-core/results/reports/gpt56_luna_experiment_report.md": {
+      "sha256": "935ebefeb8c3b9a6747347c685c4cbdcb04d25c7df86373366ce5fefbace1f46",
+      "size_bytes": 2312
+    },
+    "9-AutoDriving-core/results/reports/gpt56_sol_experiment_report.md": {
+      "sha256": "d5d7f4b974df1435e23a683b474a0b293ced96bc15ffb30dfc553664193604f3",
+      "size_bytes": 2309
+    },
+    "9-AutoDriving-core/results/reports/main_experiment_report.md": {
+      "sha256": "50d0d46745799b348fdef656e7403f4b61334c51cdae8f7eee3d8c31ae6ce501",
+      "size_bytes": 2822
+    },
+    "9-AutoDriving-core/results/reports/qwen38_max_experiment_report.md": {
+      "sha256": "a5afb36bf38dc11d98782f69147e2a80eefde2cbb34f63a5ac5a0d7d69696f02",
+      "size_bytes": 2396
+    },
+    "9-AutoDriving-core/results/reports/ablation_experiment_summary.json": {
+      "sha256": "32793d857299e0f52c7753c530ccb82abf2ebe2fbaf6613597056d43b048df2f",
+      "size_bytes": 2934
+    },
+    "9-AutoDriving-core/results/reports/calibration_trace.json": {
+      "sha256": "0f0f60575020cad74a2d5a4ef009577329da83f60cc77278d54e558a0d504587",
+      "size_bytes": 14340
+    },
+    "9-AutoDriving-core/results/reports/contrast_experiment_summary.json": {
+      "sha256": "889c4ae3127f0f3f6d096c15b65b7d9930a31b8bc88ef1922a0d0c6b6341660e",
+      "size_bytes": 514
+    },
+    "9-AutoDriving-core/results/reports/data_validation.json": {
+      "sha256": "0b977373ec8d4ad2aff848b6ece2ef15ba3dc63486caa0591e44d08912aafb2c",
+      "size_bytes": 404
+    },
+    "9-AutoDriving-core/results/reports/deepseek_v4_experiment_summary.json": {
+      "sha256": "a95038848ab14214ef0b5580b82de8621f8917cf38f0d9ea57d3fb56f9c367d2",
+      "size_bytes": 4247
+    },
+    "9-AutoDriving-core/results/reports/main_experiment_summary.json": {
+      "sha256": "352dbea0232543fa02b9c06baf94da9507e2e572ff604947e13b8559b783f5e6",
+      "size_bytes": 4674
+    },
+    "9-AutoDriving-core/results/reports/preflight.json": {
+      "sha256": "00bd0e402bc9338bcad56611efda1af524976727fcadf8489a8151aca6aadefb",
+      "size_bytes": 1091
+    },
+    "9-AutoDriving-core/results/reports/qwen38_max_experiment_summary.json": {
+      "sha256": "b4aad846ba2e06062b8948700b74a4cf76d964dbd8d2d191b9ffdbe52e5599fb",
+      "size_bytes": 4222
+    },
+    "9-AutoDriving-core/results/reports/replay_metrics.json": {
+      "sha256": "d83244849fbaf609d99642cba109191f4aab4039fcf2d644ff2287758766db96",
+      "size_bytes": 1324
+    },
+    "9-AutoDriving-core/results/reports/replay_predictions.json": {
+      "sha256": "7fa840310d3ddbe7860e066aebfa325d71865979021d31c8c076c090b696d15d",
+      "size_bytes": 34036
+    },
+    "9-AutoDriving-core/src/__init__.py": {
+      "sha256": "030776d6460bec95db10d8ca3488bfcacf6d24a9fd6a5afc0415cdff3c00e8f2",
+      "size_bytes": 31
+    },
+    "9-AutoDriving-core/src/cache_manager.py": {
+      "sha256": "e8d82439d62951e0d91ddaa2b8c50c3a1622e4c9b39aaf19e194659b9b47038b",
+      "size_bytes": 4056
+    },
+    "9-AutoDriving-core/src/evaluation.py": {
+      "sha256": "d9ecfe65fcdeb9138628d312c7b145a5715a0cd3e59a552deb3a96ec609183b8",
+      "size_bytes": 2212
+    },
+    "9-AutoDriving-core/src/gating.py": {
+      "sha256": "aba36edbd9fd511ff734bf1c2f63042664db1c8669a01882e4bfa5cd3b858310",
+      "size_bytes": 12815
+    },
+    "9-AutoDriving-core/src/graph.py": {
+      "sha256": "e74b2f7e9fbf1e6dba6905e7780e70b10c3eb9313c19812e579385ed0ca6214d",
+      "size_bytes": 6353
+    },
+    "9-AutoDriving-core/src/intent.py": {
+      "sha256": "ca492b73daecd97fcb53413c6958eed4897ee6a9b3a82548d6d394ac9c8524f0",
+      "size_bytes": 3364
+    },
+    "9-AutoDriving-core/src/llm_client.py": {
+      "sha256": "2101a6f39f9c8a10d88aec52a134bea6e2ce4cc273326a9378eb7d874adf66a4",
+      "size_bytes": 25997
+    },
+    "9-AutoDriving-core/src/metrics.py": {
+      "sha256": "06f4877083452c325a659a90383b0b272d86dde2b3466c5bf5f1266a416b34d3",
+      "size_bytes": 11077
+    },
+    "9-AutoDriving-core/src/preprocess_hipp.py": {
+      "sha256": "bd533d1be800c81a72d2a2dc341b1d1b23f17cc8f083ec6b7f383264768b9ce3",
+      "size_bytes": 8531
+    },
+    "9-AutoDriving-core/src/scenarios.py": {
+      "sha256": "4e9f5df8990b01bced60b1742822160f5003073063258543d7f192bf5d1c1954",
+      "size_bytes": 5590
+    },
+    "9-AutoDriving-core/src/solver.py": {
+      "sha256": "ed24a40d906532f366be9371f6c92b2b2d648f1e7a456de0870df7c0a36280a2",
+      "size_bytes": 10107
+    },
+    "9-AutoDriving-core/scripts/benchmark_api_concurrency.py": {
+      "sha256": "af49a543e49cf0ecb7fdf044a7f3956ce5bb7aa3a722e0ac72e56638858bbb46",
+      "size_bytes": 7439
+    },
+    "9-AutoDriving-core/scripts/collect_b1_test.py": {
+      "sha256": "b2fb51de3d7aaac6bfc8dbd964e14f9ea188cf316b0d9a9babd2525ddc9e654c",
+      "size_bytes": 21689
+    },
+    "9-AutoDriving-core/scripts/download_hipp.py": {
+      "sha256": "1c89092dd34553b8aaeba691a0575550eb976f45d7bb611ca56196ae655a2c2a",
+      "size_bytes": 1857
+    },
+    "9-AutoDriving-core/scripts/experiment.py": {
+      "sha256": "55249049c62e839d09d0c81d40f8a0124dc0cd0a81127e17c3e4cc80beae1790",
+      "size_bytes": 27047
+    },
+    "9-AutoDriving-core/scripts/plot_paper_figures.py": {
+      "sha256": "85d9e38a368830a7ab82b27e30676cfcd94c117c4aa228b25742efa7d0aaccc9",
+      "size_bytes": 9792
+    },
+    "9-AutoDriving-core/scripts/prepare_calibration.py": {
+      "sha256": "26796d38f162762df00a193af644e005c2903fe32062cec49ea4fbf8d22dac58",
+      "size_bytes": 13649
+    },
+    "9-AutoDriving-core/scripts/prepare_contrast_dataset.py": {
+      "sha256": "4345ece9d780457dca3554485c8a6be19c27457059eec97d9044b700b69fb488",
+      "size_bytes": 5077
+    },
+    "9-AutoDriving-core/scripts/prepare_dataset.py": {
+      "sha256": "acc88e5dea61823ccf0d3deabc82f4599e4303678837f5637ab704a5a965651a",
+      "size_bytes": 29237
+    },
+    "9-AutoDriving-core/scripts/prepare_test_dataset.py": {
+      "sha256": "0ce1b46f8fb87f4f391eef2f64b662a0fab952a8fe9436863023000a43ced488",
+      "size_bytes": 10101
+    },
+    "9-AutoDriving-core/scripts/run_ablation_experiment.py": {
+      "sha256": "fd1fd9a3bf08e003b9b6ef39df5412411ebaeb7f9758514c60ca1c4da1b93a6c",
+      "size_bytes": 22717
+    },
+    "9-AutoDriving-core/scripts/run_calibration.py": {
+      "sha256": "c4f4229b0da16e329efc37c86d5303604eb91285b5bedf018b9b569492c21135",
+      "size_bytes": 26124
+    },
+    "9-AutoDriving-core/scripts/run_contrast_experiment.py": {
+      "sha256": "f017ff716865584b284692bcd8f155c69b7188fe09586003dc834d4ef15b9523",
+      "size_bytes": 14615
+    },
+    "9-AutoDriving-core/scripts/run_deepseek_experiment.py": {
+      "sha256": "fc97d8624ce1abcba3b7921c52f522f4746984259517b56f99cd699e1162ce22",
+      "size_bytes": 24639
+    },
+    "9-AutoDriving-core/scripts/run_e1_pilot.py": {
+      "sha256": "93ea6eb69dd0defeb729b249e4f0044bd95c7f4630d4082df66a081c46f7b6df",
+      "size_bytes": 17525
+    },
+    "9-AutoDriving-core/scripts/run_gpt56_luna_experiment.py": {
+      "sha256": "6e2ee5b034c2b5a9aabb272af9ce69aaadcc922dd3ee1b9266135f131290f370",
+      "size_bytes": 24290
+    },
+    "9-AutoDriving-core/scripts/run_gpt56_sol_experiment.py": {
+      "sha256": "7ae6de03c7ac0905d6a7cd3522ac4e7594983a01b5d55dfa69ef19a33dc37873",
+      "size_bytes": 25030
+    },
+    "9-AutoDriving-core/scripts/run_main_experiment.py": {
+      "sha256": "3161a3ba4c3903ecd31d3b6703e650bcbc54eb528547d8b132d95d2c0d60da8c",
+      "size_bytes": 27534
+    },
+    "9-AutoDriving-core/scripts/run_pilot.py": {
+      "sha256": "3d946d026156276e2102166681e40a1496d58aa8b5c8d78dd15d0b62b23d4bcc",
+      "size_bytes": 9622
+    },
+    "9-AutoDriving-core/scripts/run_qwen_experiment.py": {
+      "sha256": "c1b03324f43f955e730905d3175c949ff3091265a778d25fc85aca170c2a30f7",
+      "size_bytes": 24507
+    },
+    "9-AutoDriving-core/scripts/run_supplementary.py": {
+      "sha256": "c605a9fe10b075c69b21c5ad5b6bab1449bc601d122badcfe05563a752c54d67",
+      "size_bytes": 4122
+    },
+    "9-AutoDriving-core/scripts/sample_pilot_intents.py": {
+      "sha256": "f738086ec6ad52512934a6bbb2d06c3352ed4d00e6d1c8fa4833502a0947f6c4",
+      "size_bytes": 4572
+    },
+    "9-AutoDriving-core/tests/__init__.py": {
+      "sha256": "8f74bb1735e6dc0c2ec8c36998219b30e27fe93d1d062ccafc9dcf086db55ffc",
+      "size_bytes": 32
+    },
+    "9-AutoDriving-core/tests/test_data_leakage.py": {
+      "sha256": "5fa213154409c10e38cc892f90d82ce1ab7dd94f2563b789e31ce6294da882d4",
+      "size_bytes": 2053
+    },
+    "9-AutoDriving-core/tests/test_experiment_cli.py": {
+      "sha256": "089daf7c781c7098f826979366b5657309da95450bade93a20fef729b954d921",
+      "size_bytes": 1435
+    },
+    "9-AutoDriving-core/tests/test_gating.py": {
+      "sha256": "a56d27c5e0da753d1f748233fb2cae965e7909f52ab824d5931589088c431f45",
+      "size_bytes": 5534
+    },
+    "9-AutoDriving-core/tests/test_metrics.py": {
+      "sha256": "21c069b2a993738a2980377fa1414bd085841c75544397c71aa0f9633c2de3da",
+      "size_bytes": 2917
+    },
+    "9-AutoDriving-core/tests/test_readiness.py": {
+      "sha256": "551011c8c84212a6701c298d1e48d9a6e0aaff228b85effc35ec93cb87f425de",
+      "size_bytes": 4378
+    },
+    "9-AutoDriving-core/tests/test_solver.py": {
+      "sha256": "449eaf98d5ea782f1105017ecd6036447c2dac1fb037cc00d8de68d0c40be8b9",
+      "size_bytes": 3864
+    }
+  }
+}

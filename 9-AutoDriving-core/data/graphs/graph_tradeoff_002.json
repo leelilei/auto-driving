@@ -1,0 +1,136 @@
+{
+  "graph_id": "graph_tradeoff_002",
+  "origin": [
+    7.5,
+    7.5
+  ],
+  "destination": [
+    7.5,
+    7.5
+  ],
+  "departure_time": 540,
+  "speed_km_h": 30.0,
+  "max_edge_distance": 9.527778859734308,
+  "pois": [
+    {
+      "id": "shopping_mall_1",
+      "category": "shopping_mall",
+      "x": 8.649,
+      "y": 9.043,
+      "rating": 3.1,
+      "reviews": 60,
+      "quality": 0.3214,
+      "open_time": 540,
+      "close_time": 1260,
+      "stay_duration": 60
+    },
+    {
+      "id": "shopping_mall_2",
+      "category": "shopping_mall",
+      "x": 4.603,
+      "y": 2.876,
+      "rating": 4.8,
+      "reviews": 819,
+      "quality": 0.9355,
+      "open_time": 540,
+      "close_time": 1260,
+      "stay_duration": 60
+    },
+    {
+      "id": "supermarket_1",
+      "category": "supermarket",
+      "x": 6.526,
+      "y": 7.069,
+      "rating": 3.3,
+      "reviews": 54,
+      "quality": 0.3637,
+      "open_time": 480,
+      "close_time": 1260,
+      "stay_duration": 40
+    },
+    {
+      "id": "supermarket_2",
+      "category": "supermarket",
+      "x": 7.335,
+      "y": 0.289,
+      "rating": 4.8,
+      "reviews": 793,
+      "quality": 0.9332,
+      "open_time": 480,
+      "close_time": 1260,
+      "stay_duration": 40
+    },
+    {
+      "id": "pharmacy_1",
+      "category": "pharmacy",
+      "x": 5.853,
+      "y": 8.134,
+      "rating": 3.1,
+      "reviews": 18,
+      "quality": 0.2342,
+      "open_time": 480,
+      "close_time": 1260,
+      "stay_duration": 15
+    },
+    {
+      "id": "pharmacy_2",
+      "category": "pharmacy",
+      "x": 5.09,
+      "y": 1.438,
+      "rating": 4.8,
+      "reviews": 856,
+      "quality": 0.9387,
+      "open_time": 480,
+      "close_time": 1260,
+      "stay_duration": 15
+    },
+    {
+      "id": "bank_1",
+      "category": "bank",
+      "x": 8.582,
+      "y": 5.733,
+      "rating": 3.3,
+      "reviews": 46,
+      "quality": 0.3521,
+      "open_time": 540,
+      "close_time": 1080,
+      "stay_duration": 30
+    },
+    {
+      "id": "bank_2",
+      "category": "bank",
+      "x": 2.738,
+      "y": 2.966,
+      "rating": 4.9,
+      "reviews": 726,
+      "quality": 0.9518,
+      "open_time": 540,
+      "close_time": 1080,
+      "stay_duration": 30
+    },
+    {
+      "id": "library_1",
+      "category": "library",
+      "x": 5.784,
+      "y": 6.056,
+      "rating": 3.2,
+      "reviews": 27,
+      "quality": 0.2886,
+      "open_time": 540,
+      "close_time": 1080,
+      "stay_duration": 45
+    },
+    {
+      "id": "library_2",
+      "category": "library",
+      "x": 0.644,
+      "y": 7.072,
+      "rating": 4.8,
+      "reviews": 803,
+      "quality": 0.9341,
+      "open_time": 540,
+      "close_time": 1080,
+      "stay_duration": 45
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+# Local environments and caches
+9-AutoDriving-core/.venv/
+**/__pycache__/
+**/.pytest_cache/
+**/.DS_Store
+.DS_Store
+
+# Downloaded reference papers (metadata and download scripts are tracked)
+assets/papers/pdf/
+
+# Local experiment run payloads can be regenerated; keep curated reports tracked
+9-AutoDriving-core/results/runs/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*_secret*
+*.key
+*.pem

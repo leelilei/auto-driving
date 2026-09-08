@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-09-07T03:01:51.306780+00:00",
+  "total_groups_in_splits": 200,
+  "dev_pilot_groups": 20,
+  "dev_calibration_groups": 20,
+  "test_groups": 160,
+  "test_1_poi_count": 26,
+  "pilot_80_utterances_count": 80,
+  "cluster_overlap_count": 0,
+  "index_overlap_count": 0,
+  "exposed_in_test_count": 0,
+  "annotation_status": "pending_human_verification",
+  "status": "PASS",
+  "errors": []
+}

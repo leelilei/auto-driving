@@ -1,0 +1,16 @@
+{
+  "provider": "fhl",
+  "model": "gpt-5.4-mini",
+  "wire_api": "chat_completions",
+  "base_url": "https://www.fhl.mom",
+  "api_key_env": "FHL_API_KEY",
+  "temperature": 0.0,
+  "omit_temperature": true,
+  "timeout": 60,
+  "sleep": 0,
+  "max_concurrency": 32,
+  "retries": 3,
+  "retry_sleep": 2,
+  "json_mode": true,
+  "transport": "curl"
+}

@@ -1,0 +1,6 @@
+{
+  "raw_candidates_checked": 3200,
+  "routes_checked": 2560,
+  "issues": [],
+  "scope": "main run only; candidate equality and route node/validity equality, not bitwise equality of all artifacts"
+}

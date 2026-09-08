@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/mac/Documents/6-Research/9-AutoDriving/9-AutoDriving-core/scripts/run_fresh_stage.py", line 119, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/mac/Documents/6-Research/9-AutoDriving/9-AutoDriving-core/scripts/run_fresh_stage.py", line 96, in main
+    if admission.get('stage3_allowed') is not True or admission.get('test_dataset_sha256')!=sha(data_bytes):raise ValueError('Stage 3 admission missing or dataset hash mismatch')
+                                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Stage 3 admission missing or dataset hash mismatch

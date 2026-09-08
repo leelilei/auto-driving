@@ -1,0 +1,14 @@
+{
+  "provider": "mock",
+  "model": "mock-baseline",
+  "wire_api": "chat_completions",
+  "base_url": "https://api.openai.com",
+  "temperature": 0.0,
+  "omit_temperature": true,
+  "timeout": 10,
+  "sleep": 0,
+  "max_concurrency": 1,
+  "retries": 0,
+  "retry_sleep": 1,
+  "json_mode": true
+}

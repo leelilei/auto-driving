@@ -1,0 +1,2 @@
+=== DARC-Route Evidence Packaging ===
+[✓] Submission manifest saved to /Users/mac/Documents/6-Research/9-AutoDriving/submission_manifest.json with 73 files indexed.

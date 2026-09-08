@@ -1,0 +1,15 @@
+{
+  "entries": 73,
+  "issues": [
+    {
+      "path": "9-AutoDriving-core/results/reports/data_validation.json",
+      "expected": "0b977373ec8d4ad2aff848b6ece2ef15ba3dc63486caa0591e44d08912aafb2c",
+      "actual": "a142a490d4244b900bc0d4bf3af664501376d5dd045317afdd2577dce339158a"
+    },
+    {
+      "path": "9-AutoDriving-core/results/reports/preflight.json",
+      "expected": "00bd0e402bc9338bcad56611efda1af524976727fcadf8489a8151aca6aadefb",
+      "actual": "7df453c0affa5b1dee1f3970a642c9c0f10879c4214a3b703477b1e97cb1ac4f"
+    }
+  ]
+}

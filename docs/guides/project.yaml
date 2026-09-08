@@ -1,0 +1,235 @@
+version: 2
+project: 9-AutoDriving
+type: empirical
+title: "DARC-Route: Decision-Aware Selective Verification for Language-Based POI Route Planning"
+researchQuestion: "在自然语言解析结果存在分歧时，利用其对路线规划的影响，能否比仅看语义分歧或随机抽样，更有效地分配有限的 LLM 复核预算？"
+currentFocus: "Phase 1 - 原句试跑完成；标签人工审核、划分冻结与 80 句等义 Pilot 待推进"
+
+tracks:
+  - id: design
+    name: 设计
+    accent: "#0071e3"
+    order: 1
+  - id: build
+    name: 构建
+    accent: "#ff9500"
+    order: 2
+  - id: experiment
+    name: 实验
+    accent: "#34c759"
+    order: 3
+  - id: write
+    name: 写作
+    accent: "#af52de"
+    order: 4
+
+phases:
+  - n: 0
+    title: "项目骨架与研究规范落地"
+    track: design
+    status: done
+    summary: "按 0-Tools 规范搭建标准 L3 研究项目结构，归档历史提案并建立统一文档索引。"
+    date: "2026-09-05"
+    outputs:
+      - "README.md"
+      - "docs/guides/todolist.md"
+      - "docs/plans/proposal.md"
+      - "docs/project/reference_sources.md"
+      - "docs/project/decisions.md"
+
+  - n: 1
+    title: "受控环境与最小 Pilot (Gate A)"
+    track: build
+    status: current
+    summary: "实现 10 个 POI 的受控图生成器与 6,331 条路线枚举求解器，在 20 组 Pilot 上验证 Gate A。"
+    outputs:
+      - "9-AutoDriving-core/src/graph.py"
+      - "9-AutoDriving-core/src/solver.py"
+      - "9-AutoDriving-core/scripts/run_pilot.py"
+
+  - n: 2
+    title: "HIPP-Robust 数据集与提示链"
+    track: build
+    status: planned
+    summary: "聚类去重抽取 200 个意图，生成 800 句等义改写与 80 句对照集，实现 A/B/复核提示链。"
+    outputs:
+      - "9-AutoDriving-core/data/hipp_robust_dev.json"
+      - "9-AutoDriving-core/data/hipp_robust_test.json"
+      - "9-AutoDriving-core/src/parser.py"
+
+  - n: 3
+    title: "门控校准与全流程联调 (Gate B)"
+    track: experiment
+    status: planned
+    summary: "实现决策差异交叉评分门控与离线缓存系统，在开发集上调优阈值 tau，验证 Gate B。"
+    outputs:
+      - "9-AutoDriving-core/src/gate.py"
+      - "9-AutoDriving-core/configs/gate_config.yaml"
+
+  - n: 4
+    title: "测试集主实验与显著性检验 (Gate C)"
+    track: experiment
+    status: planned
+    summary: "在 640 句测试集上公平运行 8 种方法，完成 2,000 次 Bootstrap 检验与预算匹配分析。"
+    outputs:
+      - "9-AutoDriving-core/results/main_results.csv"
+      - "9-AutoDriving-core/results/bootstrap_ci.json"
+
+  - n: 5
+    title: "消融分析与论文初稿"
+    track: write
+    status: planned
+    summary: "完成复核故障归因、偏好权重敏感性分析，绘制架构图与预算曲线，完成论文正文初稿。"
+    outputs:
+      - "paper/figures/"
+      - "paper/draft.md"
+
+  - n: 6
+    title: "可复现发布与论文定稿"
+    track: write
+    status: planned
+    summary: "完成全流程代码复核与数据包打包，确保离线结果可一键复现，完成最终投稿排版。"
+    outputs:
+      - "paper/final_submission.pdf"
+
+milestones:
+  - id: m0-setup
+    title: "项目骨架规范化"
+    status: done
+    phase: 0
+    date: "2026-09-05"
+    summary: "完成符合 0-Tools 规范的 L3 项目骨架搭建与历史版本归档。"
+    outputs:
+      - { path: "README.md", label: "项目 README" }
+      - { path: "docs/plans/proposal.md", label: "当前 Proposal v4" }
+
+  - id: gate-a
+    title: "Gate A: Pilot 净纠错验证"
+    status: planned
+    phase: 1
+    summary: "20 组 Pilot 上确认基线有真实错误，且复核器实现净纠错。"
+
+  - id: gate-b
+    title: "Gate B: 决策门控增量检验"
+    status: planned
+    phase: 3
+    summary: "确认效用差异信号相对纯硬约束门控具备统计增量。"
+
+  - id: gate-c
+    title: "Gate C: 论文核心主张成立"
+    status: planned
+    phase: 4
+    summary: "相比 B6 节省 15% 以上 token 且 TSR 损失不超过 2 个百分点，且优于表示门控 B4。"
+
+mapNodes:
+  - id: pilot-solver
+    title: "受控求解器与 Pilot 验证"
+    lane: now
+    status: current
+    phase: 1
+    dependsOn: []
+    outputs:
+      - "9-AutoDriving-core/src/solver.py"
+    nextActions:
+      - "完成原句人工标签核验，并冻结未见测试簇。"
+      - "构建 80 句等义候选与审核表；原句试跑不能判定 Gate A。"
+
+  - id: dataset-build
+    title: "HIPP-Robust 数据集与标注"
+    lane: next
+    status: planned
+    phase: 2
+    dependsOn:
+      - pilot-solver
+    outputs:
+      - "9-AutoDriving-core/data/hipp_robust_test.json"
+    nextActions:
+      - "执行 200 组意图抽样并构建等义改写。"
+      - "执行双人审核；发现超过 5% 变化时扩大复核并修订数据。"
+
+  - id: gate-tuning
+    title: "门控阈值校准与联调"
+    lane: next
+    status: planned
+    phase: 3
+    dependsOn:
+      - dataset-build
+    outputs:
+      - "9-AutoDriving-core/configs/gate_config.yaml"
+    nextActions:
+      - "网格搜索最优 tau 并冻结。"
+
+  - id: main-eval
+    title: "主实验与消融对比"
+    lane: next
+    status: planned
+    phase: 4
+    dependsOn:
+      - gate-tuning
+    outputs:
+      - "9-AutoDriving-core/results/main_results.csv"
+    nextActions:
+      - "在测试集上评测 8 种方法。"
+
+  - id: paper-draft
+    title: "论文初稿撰写"
+    lane: paper
+    status: planned
+    phase: 5
+    dependsOn:
+      - main-eval
+    outputs:
+      - "paper/"
+    nextActions:
+      - "基于真实实验数据生成图表与正文。"
+
+paper:
+  sections:
+    - id: abstract
+      title: "Abstract"
+      status: draft
+      assets: ["docs/plans/proposal.md"]
+      blockers: ["等待正式测试集数据产出"]
+      nextActions: ["基于 proposal 摘要草拟英文 Abstract"]
+    - id: introduction
+      title: "Introduction"
+      status: planned
+      assets: ["docs/plans/proposal.md"]
+      blockers: []
+      nextActions: ["梳理有限复核预算与决策感知复核动机"]
+    - id: related_work
+      title: "Related Work"
+      status: planned
+      assets: ["docs/project/reference_sources.md"]
+      blockers: []
+      nextActions: ["综述 LLMAP、RouteLLM、SPO 及语言鲁棒性工作"]
+    - id: task_and_data
+      title: "Task Formulation & HIPP-Robust"
+      status: planned
+      assets: ["docs/plans/proposal.md"]
+      blockers: ["需完成 200 组数据集审核"]
+      nextActions: ["形式化定义 S, T, D, w 与等义构建协议"]
+    - id: method
+      title: "DARC-Route Methodology"
+      status: planned
+      assets: ["docs/plans/proposal.md"]
+      blockers: []
+      nextActions: ["撰写双候选生成、硬约束保护与效用门控公式"]
+    - id: experiments
+      title: "Experiments & Results"
+      status: planned
+      assets: []
+      blockers: ["等待 Phase 4 主实验运行完成"]
+      nextActions: ["整理 Table 1 主结果与 Table 2 消融结果"]
+    - id: limitations
+      title: "Limitations & Future Work"
+      status: planned
+      assets: ["docs/plans/proposal.md"]
+      blockers: []
+      nextActions: ["客观阐述受控合成图与离线任务的边界"]
+    - id: conclusion
+      title: "Conclusion"
+      status: planned
+      assets: []
+      blockers: []
+      nextActions: ["总结主要贡献与工程启发"]

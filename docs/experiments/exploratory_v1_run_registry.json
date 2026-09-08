@@ -1,0 +1,68 @@
+{
+  "phase": "exploratory-v1",
+  "status": "frozen_superseded",
+  "frozen_date": "2026-09-07T03:21:00Z",
+  "notes": "Frozen historical record of the first exploratory phase. Preserved as immutable audit ground truth per Codex remediation R0. Does not represent formal verified benchmark.",
+  "runs": {
+    "gpt-5.4-mini": {
+      "run_id": "20260906T051339Z_main_test",
+      "model_requested": "gpt-5.4-mini",
+      "run_dir": "9-AutoDriving-core/results/runs/20260906T051339Z_main_test",
+      "total_calls": 3200,
+      "schema_valid": 3200,
+      "transport_failures": 0,
+      "reported_tsr": 1.0,
+      "reported_b0_flip": 0.2385,
+      "reported_darc_flip": 0.2031,
+      "reported_q": 0.0422
+    },
+    "deepseek-v4-flash": {
+      "run_id": "20260906T081920Z_main_test_deepseek_v4",
+      "model_requested": "deepseek-v4-flash",
+      "run_dir": "9-AutoDriving-core/results/runs/20260906T081920Z_main_test_deepseek_v4",
+      "total_calls": 1467,
+      "schema_valid": 1233,
+      "transport_failures": 233,
+      "reported_tsr": 0.6484,
+      "reported_b0_flip": 0.0882,
+      "reported_b6_flip": 0.1012,
+      "reported_darc_flip": 0.0882
+    },
+    "qwen3.8-max": {
+      "run_id": "20260906T123744Z_main_test_qwen38_max",
+      "model_requested": "qwen3.8-max",
+      "run_dir": "9-AutoDriving-core/results/runs/20260906T123744Z_main_test_qwen38_max",
+      "total_calls": 1818,
+      "schema_valid": 1708,
+      "transport_failures": 78,
+      "reported_tsr": 0.9375,
+      "reported_b0_flip": 0.0865,
+      "reported_b6_flip": 0.0897,
+      "reported_darc_flip": 0.0897
+    },
+    "gpt-5.6-luna": {
+      "run_id": "20260906T133009Z_main_test_gpt56_luna",
+      "model_requested": "gpt-5.6-luna",
+      "run_dir": "9-AutoDriving-core/results/runs/20260906T133009Z_main_test_gpt56_luna",
+      "total_calls": 1918,
+      "schema_valid": 1910,
+      "transport_failures": 3,
+      "reported_tsr": 1.0,
+      "reported_b0_flip": 0.2292,
+      "reported_b6_flip": 0.2229,
+      "reported_darc_flip": 0.2198
+    },
+    "gpt-5.6-sol": {
+      "run_id": "20260907T014117Z_main_test_gpt56_sol",
+      "model_requested": "gpt-5.6-sol",
+      "run_dir": "9-AutoDriving-core/results/runs/20260907T014117Z_main_test_gpt56_sol",
+      "total_calls": 1920,
+      "schema_valid": 1920,
+      "transport_failures": 0,
+      "reported_tsr": 1.0,
+      "reported_b0_flip": 0.2604,
+      "reported_b6_flip": 0.2271,
+      "reported_darc_flip": 0.2375
+    }
+  }
+}

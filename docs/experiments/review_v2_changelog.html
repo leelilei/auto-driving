@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DARC-Route 测试集语义漂移修复审阅工作台 (v1 ➔ v2)</title>
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --warning: #d97706;
+      --warning-bg: #fef3c7;
+      --danger: #dc2626;
+      --danger-bg: #fee2e2;
+      --slate-50: #f8fafc;
+      --slate-100: #f1f5f9;
+      --slate-200: #e2e8f0;
+      --slate-300: #cbd5e1;
+      --slate-600: #475569;
+      --slate-700: #334155;
+      --slate-800: #1e293b;
+      --slate-900: #0f172a;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      background-color: var(--slate-50);
+      color: var(--slate-800);
+      line-height: 1.6;
+      padding-bottom: 90px;
+    }
+    header {
+      background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+      color: white;
+      padding: 24px 36px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+    .header-content {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .header-title h1 {
+      font-size: 22px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .header-title p {
+      font-size: 13px;
+      color: #94a3b8;
+      margin-top: 4px;
+    }
+    .header-badges {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      font-size: 12px;
+      font-weight: 600;
+      gap: 5px;
+    }
+    .badge-primary { background: #1e40af; color: #dbeafe; }
+    .badge-warning { background: #854d0e; color: #fef08a; }
+    .badge-success { background: #166534; color: #bbf7d0; }
+
+    .container {
+      max-width: 1400px;
+      margin: 24px auto;
+      padding: 0 24px;
+    }
+
+    /* Stat Cards */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .stat-card {
+      background: white;
+      border-radius: 12px;
+      padding: 18px 20px;
+      border: 1px solid var(--slate-200);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      display: flex;
+      flex-direction: column;
+    }
+    .stat-label {
+      font-size: 13px;
+      color: var(--slate-600);
+      font-weight: 500;
+    }
+    .stat-value {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--slate-900);
+      margin-top: 4px;
+    }
+    .stat-desc {
+      font-size: 12px;
+      color: #64748b;
+      margin-top: 4px;
+    }
+
+    /* Explainer Box */
+    .explainer-box {
+      background: #eff6ff;
+      border-left: 4px solid var(--primary);
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-bottom: 24px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+    }
+    .explainer-box h3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: #1e40af;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .explainer-box p {
+      font-size: 13.5px;
+      color: #1e3a8a;
+      line-height: 1.6;
+    }
+
+    /* Toolbar & Navigation */
+    .toolbar {
+      background: white;
+      border-radius: 12px;
+      padding: 16px 20px;
+      border: 1px solid var(--slate-200);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      margin-bottom: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .toolbar-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .tabs {
+      display: flex;
+      gap: 8px;
+    }
+    .tab-btn {
+      padding: 8px 16px;
+      border-radius: 8px;
+      border: 1px solid var(--slate-200);
+      background: var(--slate-100);
+      font-size: 13.5px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--slate-700);
+      transition: all 0.2s;
+    }
+    .tab-btn.active {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+    }
+    .action-btns {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      padding: 8px 14px;
+      border-radius: 8px;
+      border: 1px solid transparent;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .btn-outline {
+      border-color: var(--slate-300);
+      background: white;
+      color: var(--slate-700);
+    }
+    .btn-outline:hover {
+      background: var(--slate-100);
+    }
+    .btn-success {
+      background: var(--success);
+      color: white;
+    }
+    .btn-success:hover {
+      background: #15803d;
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+    }
+    .btn-primary:hover {
+      background: var(--primary-hover);
+    }
+
+    .filter-chips {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .chip-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--slate-600);
+      margin-right: 4px;
+    }
+    .chip {
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 12px;
+      background: var(--slate-100);
+      border: 1px solid var(--slate-200);
+      cursor: pointer;
+      font-weight: 500;
+      color: var(--slate-700);
+      transition: all 0.15s;
+    }
+    .chip:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+    .chip.active {
+      background: #dbeafe;
+      border-color: var(--primary);
+      color: #1e40af;
+      font-weight: 600;
+    }
+    .search-input {
+      padding: 8px 14px;
+      border-radius: 8px;
+      border: 1px solid var(--slate-300);
+      font-size: 13px;
+      width: 260px;
+      outline: none;
+    }
+    .search-input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(37,99,235,0.15);
+    }
+
+    /* Group Card */
+    .group-card {
+      background: white;
+      border-radius: 14px;
+      border: 1px solid var(--slate-200);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.04);
+      margin-bottom: 24px;
+      overflow: hidden;
+      transition: box-shadow 0.2s, border-color 0.2s;
+    }
+    .group-card:hover {
+      box-shadow: 0 6px 16px rgba(0,0,0,0.07);
+    }
+    .group-card.status-approved {
+      border-left: 6px solid var(--success);
+    }
+    .group-card.status-flagged {
+      border-left: 6px solid var(--danger);
+    }
+    .group-card.status-pending {
+      border-left: 6px solid var(--warning);
+    }
+
+    .group-header {
+      padding: 16px 22px;
+      background: #f8fafc;
+      border-bottom: 1px solid var(--slate-200);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .group-header-left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .group-id-badge {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--slate-900);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+    .group-tags {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 11.5px;
+      background: var(--slate-200);
+      color: var(--slate-700);
+      font-weight: 500;
+    }
+    .tag-blue { background: #e0e7ff; color: #3730a3; }
+    .tag-amber { background: #fef3c7; color: #92400e; }
+    .tag-purple { background: #f3e8ff; color: #6b21a8; }
+
+    .group-header-right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn-action-group {
+      display: inline-flex;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid var(--slate-300);
+    }
+    .btn-toggle {
+      padding: 6px 12px;
+      border: none;
+      background: white;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--slate-600);
+      transition: all 0.15s;
+    }
+    .btn-toggle:not(:last-child) {
+      border-right: 1px solid var(--slate-300);
+    }
+    .btn-toggle.active-approved {
+      background: var(--success);
+      color: white;
+    }
+    .btn-toggle.active-flagged {
+      background: var(--danger);
+      color: white;
+    }
+
+    .group-body {
+      padding: 20px 22px;
+    }
+
+    /* Variants Grid */
+    .variants-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      margin-top: 10px;
+      border: 1px solid var(--slate-200);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .variants-table th {
+      background: #f1f5f9;
+      padding: 10px 14px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--slate-700);
+      text-align: left;
+      border-bottom: 1px solid var(--slate-200);
+    }
+    .variants-table td {
+      padding: 12px 14px;
+      font-size: 13.5px;
+      border-bottom: 1px solid var(--slate-100);
+      vertical-align: top;
+    }
+    .variants-table tr:last-child td {
+      border-bottom: none;
+    }
+    .var-type {
+      font-weight: 700;
+      color: var(--slate-900);
+      font-size: 12px;
+      display: inline-block;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: var(--slate-100);
+    }
+    .var-type.v0 { background: #e2e8f0; color: #334155; }
+    .var-type.v1 { background: #dbeafe; color: #1e40af; }
+    .var-type.v2 { background: #ede9fe; color: #6d28d9; }
+    .var-type.v3 { background: #fae8ff; color: #86198f; }
+
+    /* Diff highlighting */
+    mark.diff-del {
+      background-color: #fee2e2;
+      color: #991b1b;
+      text-decoration: line-through;
+      padding: 1px 4px;
+      border-radius: 3px;
+    }
+    mark.diff-ins {
+      background-color: #dcfce7;
+      color: #166534;
+      font-weight: 600;
+      padding: 1px 4px;
+      border-radius: 3px;
+    }
+
+    .diff-cell {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .diff-row-old {
+      font-size: 13px;
+      color: #475569;
+      background: #fef2f2;
+      padding: 6px 10px;
+      border-radius: 6px;
+      border-left: 3px solid #f87171;
+    }
+    .diff-row-new {
+      font-size: 13px;
+      color: #0f172a;
+      background: #f0fdf4;
+      padding: 6px 10px;
+      border-radius: 6px;
+      border-left: 3px solid #4ade80;
+    }
+    .diff-row-same {
+      font-size: 13px;
+      color: #334155;
+      background: #f8fafc;
+      padding: 6px 10px;
+      border-radius: 6px;
+      border-left: 3px solid #94a3b8;
+    }
+
+    .param-change {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+    .param-old {
+      color: #dc2626;
+      text-decoration: line-through;
+    }
+    .param-arrow {
+      color: #94a3b8;
+    }
+    .param-new {
+      color: #16a34a;
+      font-weight: 700;
+    }
+
+    .note-box {
+      margin-top: 14px;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+    .note-input {
+      flex: 1;
+      padding: 6px 12px;
+      border-radius: 6px;
+      border: 1px solid var(--slate-300);
+      font-size: 12.5px;
+    }
+    .note-input:focus {
+      border-color: var(--primary);
+      outline: none;
+    }
+
+    /* All 160 View Table */
+    .all-groups-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid var(--slate-200);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    .all-groups-table th {
+      background: #f8fafc;
+      padding: 12px 16px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--slate-700);
+      text-align: left;
+      border-bottom: 1px solid var(--slate-200);
+    }
+    .all-groups-table td {
+      padding: 12px 16px;
+      font-size: 13px;
+      border-bottom: 1px solid var(--slate-100);
+    }
+    .all-groups-table tr:hover td {
+      background: #f8fafc;
+    }
+
+    /* Modal */
+    .modal-backdrop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,0.5);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 100;
+    }
+    .modal {
+      background: white;
+      border-radius: 14px;
+      padding: 24px;
+      max-width: 680px;
+      width: 90%;
+      max-height: 85vh;
+      overflow-y: auto;
+      box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+    }
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+    .modal-header h3 {
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .modal-close {
+      background: none;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+      color: #64748b;
+    }
+    .modal-textarea {
+      width: 100%;
+      height: 280px;
+      font-family: monospace;
+      font-size: 12px;
+      padding: 12px;
+      border: 1px solid var(--slate-300);
+      border-radius: 8px;
+      margin-top: 10px;
+      outline: none;
+    }
+
+    .footer-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: white;
+      border-top: 1px solid var(--slate-200);
+      padding: 12px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 -4px 12px rgba(0,0,0,0.05);
+      z-index: 40;
+    }
+    .footer-info {
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--slate-700);
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .progress-bar-wrap {
+      width: 200px;
+      height: 8px;
+      background: var(--slate-200);
+      border-radius: 9999px;
+      overflow: hidden;
+    }
+    .progress-bar-fill {
+      height: 100%;
+      background: var(--success);
+      width: 0%;
+      transition: width 0.3s;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-content">
+      <div class="header-title">
+        <h1><span>🚗</span> DARC-Route 测试集语义漂移修复审阅工作台</h1>
+        <p>数据版本变更: 1.0.0-exploratory ➔ 2.0.0-proposed ｜ 针对 14 组语义漂移改写的人工审核视图</p>
+      </div>
+      <div class="header-badges">
+        <span class="badge badge-primary">Test Split: 160 组 / 640 句</span>
+        <span class="badge badge-warning">修订组数: 14 组 (42 改写, 56 权重)</span>
+        <span class="badge badge-success">未修改组数: 146 组 (100% 保持)</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <!-- Top Metric Cards -->
+    <div class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-label">待审阅修订组数</span>
+        <span class="stat-value" style="color: var(--primary);">14 <span style="font-size: 14px; font-weight: normal; color: #64748b;">组</span></span>
+        <span class="stat-desc">占全部 160 组的 8.75%</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">文本改写总数</span>
+        <span class="stat-value" style="color: var(--warning);">42 <span style="font-size: 14px; font-weight: normal; color: #64748b;">句</span></span>
+        <span class="stat-desc">14 组 × (V1+V2+V3)</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">偏好权重归正</span>
+        <span class="stat-value" style="color: var(--success);">56 <span style="font-size: 14px; font-weight: normal; color: #64748b;">处</span></span>
+        <span class="stat-desc">0.60 ➔ 0.50 (对齐 balanced)</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">当前审核进度</span>
+        <span class="stat-value" id="topProgressStat">0 / 14</span>
+        <span class="stat-desc" id="topProgressPct">完成度 0%</span>
+      </div>
+    </div>
+
+    <!-- Explainer Callout -->
+    <div class="explainer-box">
+      <h3><span>💡</span> 为什么必须进行这次数据修正？（漂移根因回顾）</h3>
+      <p>
+        在历史探索测试集生成过程中，这 14 组原句（V0）文本均明确表达了<strong>“平衡评分与距离/路程”（Aim for a balance between...）</strong>。然而在初始数据合成中，原合成标签错误打上了 <code>quality_first</code>（权重 0.60）。改写模型在生成同义改写（V1）、句式变换（V2）、口语表达（V3）时，受标签驱动错误注入了 <em>"Prioritize locations with high ratings" / "Give top priority to reputable venues"</em> 等品质优先词句。
+        <br><br>
+        <strong>后果</strong>：大模型在 V0 上选平衡路线、在 V1-V3 上选高分路线，原本是<strong>“精准遵循用户不同指令”</strong>的合理行为，却在评测中被误判为<strong>“缺乏鲁棒性”的路线翻转（Route Flip）</strong>。
+        <br>
+        <strong>整改方案</strong>：保留 V0 原句不变；将 V1-V3 误插入的高分优先表述剔除，重新对齐为与 V0 完全一致的平衡表述；标签与权重统一归正为 <code>balanced (w=0.50)</code>。
+      </p>
+    </div>
+
+    <!-- Toolbar -->
+    <div class="toolbar">
+      <div class="toolbar-row">
+        <div class="tabs">
+          <button class="tab-btn active" id="tabFocus" onclick="switchTab('focus')">🎯 14 组重点审阅视图 (Focus Diff)</button>
+          <button class="tab-btn" id="tabAll" onclick="switchTab('all')">📋 全部 160 组测试集浏览 (All 160)</button>
+        </div>
+        <div class="action-btns">
+          <input type="text" id="searchInput" class="search-input" placeholder="🔍 搜索 Group ID 或关键词..." oninput="onSearchChange()">
+          <button class="btn btn-outline" onclick="approveAll()">✓ 全部通过</button>
+          <button class="btn btn-outline" onclick="resetReview()">↺ 重置审核</button>
+          <button class="btn btn-primary" onclick="openExportModal()">📥 导出审核结论</button>
+        </div>
+      </div>
+      <div class="toolbar-row" id="quickJumpRow">
+        <div class="filter-chips">
+          <span class="chip-label">快速跳转组:</span>
+          <span class="chip" onclick="scrollToGroup('test_001')">test_001</span><span class="chip" onclick="scrollToGroup('test_007')">test_007</span><span class="chip" onclick="scrollToGroup('test_020')">test_020</span><span class="chip" onclick="scrollToGroup('test_080')">test_080</span><span class="chip" onclick="scrollToGroup('test_091')">test_091</span><span class="chip" onclick="scrollToGroup('test_100')">test_100</span><span class="chip" onclick="scrollToGroup('test_102')">test_102</span><span class="chip" onclick="scrollToGroup('test_108')">test_108</span><span class="chip" onclick="scrollToGroup('test_112')">test_112</span><span class="chip" onclick="scrollToGroup('test_115')">test_115</span><span class="chip" onclick="scrollToGroup('test_129')">test_129</span><span class="chip" onclick="scrollToGroup('test_141')">test_141</span><span class="chip" onclick="scrollToGroup('test_142')">test_142</span><span class="chip" onclick="scrollToGroup('test_147')">test_147</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- View 1: Focus 14 Groups -->
+    <div id="focusView">
+      <!-- Injected by JavaScript -->
+    </div>
+
+    <!-- View 2: All 160 Groups -->
+    <div id="allView" style="display: none;">
+      <table class="all-groups-table">
+        <thead>
+          <tr>
+            <th style="width: 110px;">Group ID</th>
+            <th style="width: 100px;">状态</th>
+            <th style="width: 180px;">POI 需求</th>
+            <th style="width: 140px;">截止时间</th>
+            <th style="width: 150px;">拓扑依赖</th>
+            <th>V0 原句预览</th>
+          </tr>
+        </thead>
+        <tbody id="allGroupsTbody">
+          <!-- Injected by JavaScript -->
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <!-- Bottom Floating Bar -->
+  <div class="footer-bar">
+    <div class="footer-info">
+      <span id="footerApprovedCount">已通过: 0 / 14 组</span>
+      <span id="footerFlaggedCount" style="color: var(--danger);">有异议: 0 组</span>
+      <div class="progress-bar-wrap">
+        <div class="progress-bar-fill" id="progressBarFill"></div>
+      </div>
+    </div>
+    <div>
+      <button class="btn btn-success" onclick="openExportModal()">✓ 完成审核并导出报告</button>
+    </div>
+  </div>
+
+  <!-- Export Modal -->
+  <div class="modal-backdrop" id="exportModal">
+    <div class="modal">
+      <div class="modal-header">
+        <h3>📄 导出人工审核决议报告</h3>
+        <button class="modal-close" onclick="closeExportModal()">✕</button>
+      </div>
+      <p style="font-size: 13px; color: #475569;">
+        您可以直接复制下方生成的 Markdown 决议文本粘贴到聊天窗口，或者保存为文件作为正式审核证据。
+      </p>
+      <textarea class="modal-textarea" id="exportText" readonly></textarea>
+      <div style="margin-top: 16px; display: flex; justify-content: flex-end; gap: 10px;">
+        <button class="btn btn-outline" onclick="copyExportText()">📋 复制到剪贴板</button>
+        <button class="btn btn-primary" onclick="downloadExportJson()">💾 下载 JSON 审核记录</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const groupsData = [{"group_id": "test_001", "pois": ["bank", "library"], "time_str": "无截止限制", "dep_str": "无拓扑依赖", "graph_id": "test_001_graph", "variants": [{"variant_type": "V0", "old_text": "Today, you'll visit both the library and the bank. Make sure to enjoy each stop as there isn't a rush to return. Aim for a balance between enjoying well-rated places and keeping the route manageable.", "proposed_text": "Today, you'll visit both the library and the bank. Make sure to enjoy each stop as there isn't a rush to return. Aim for a balance between enjoying well-rated places and keeping the route manageable.", "old_text_html": "Today, you'll visit both the library and the bank. Make sure to enjoy each stop as there isn't a rush to return. Aim for a balance between enjoying well-rated places and keeping the route manageable.", "proposed_text_html": "Today, you'll visit both the library and the bank. Make sure to enjoy each stop as there isn't a rush to return. Aim for a balance between enjoying well-rated places and keeping the route manageable.", "text_changed": false, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 base text already balanced; weight aligned from quality_first to balanced (0.50)."}, {"variant_type": "V1", "old_text": "Please visit the bank and the library today. Prioritize locations with high ratings and strong customer reviews.", "proposed_text": "Please visit the bank and the library today. Maintain a balanced compromise between location ratings and route distance.", "old_text_html": "Please visit the bank and the library today. <mark class=\"diff-del\">Prioritize locations with high</mark> ratings and <mark class=\"diff-del\">strong customer reviews</mark>.", "proposed_text_html": "Please visit the bank and the library today. <mark class=\"diff-ins\">Maintain a balanced compromise between location</mark> ratings and <mark class=\"diff-ins\">route distance</mark>.", "text_changed": true, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 expressed balance; cluster heuristic erroneously inserted quality_first in V1-V3 rewrites."}, {"variant_type": "V2", "old_text": "Your itinerary today includes visiting both the bank and the library. Give top priority to reputable, well-reviewed venues.", "proposed_text": "Your itinerary today includes visiting both the bank and the library. Aim for a sensible balance between well-reviewed spots and travel efficiency.", "old_text_html": "Your itinerary today includes visiting both the bank and the library. <mark class=\"diff-del\">Give top priority to reputable,</mark> well - reviewed <mark class=\"diff-del\">venues</mark>.", "proposed_text_html": "Your itinerary today includes visiting both the bank and the library. <mark class=\"diff-ins\">Aim for a sensible balance between</mark> well - reviewed <mark class=\"diff-ins\">spots and travel efficiency</mark>.", "text_changed": true, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 expressed balance; cluster heuristic erroneously inserted quality_first in V1-V3 rewrites."}, {"variant_type": "V3", "old_text": "Hey, need you to stop by the bank as well as the library today. Aim for the highest-rated places since quality is the main goal.", "proposed_text": "Hey, need you to stop by the bank as well as the library today. Keep a good balance between decent reviews and not driving too far.", "old_text_html": "Hey, need you to stop by the bank as well as the library today. <mark class=\"diff-del\">Aim for the highest - rated places since quality is the main goal</mark>.", "proposed_text_html": "Hey, need you to stop by the bank as well as the library today. <mark class=\"diff-ins\">Keep a good balance between decent reviews and not driving too far</mark>.", "text_changed": true, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 expressed balance; cluster heuristic erroneously inserted quality_first in V1-V3 rewrites."}]}, {"group_id": "test_007", "pois": ["library", "supermarket"], "time_str": "21:00 (截止分钟 1260)", "dep_str": "无拓扑依赖", "graph_id": "test_007_graph", "variants": [{"variant_type": "V0", "old_text": "Today, you'll need to visit the library and the supermarket. Make sure you're back by 21:00. Try to find a route that balances reasonable places with a relatively efficient journey.", "proposed_text": "Today, you'll need to visit the library and the supermarket. Make sure you're back by 21:00. Try to find a route that balances reasonable places with a relatively efficient journey.", "old_text_html": "Today, you'll need to visit the library and the supermarket. Make sure you're back by 21:00. Try to find a route that balances reasonable places with a relatively efficient journey.", "proposed_text_html": "Today, you'll need to visit the library and the supermarket. Make sure you're back by 21:00. Try to find a route that balances reasonable places with a relatively efficient journey.", "text_changed": false, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 base text already balanced; weight aligned from quality_first to balanced (0.50)."}, {"variant_type": "V1", "old_text": "Please visit the library and the supermarket today, returning by 21:00. Prioritize locations with high ratings and strong customer reviews.", "proposed_text": "Please visit the library and the supermarket today, returning by 21:00. Maintain a balanced compromise between location ratings and route distance.", "old_text_html": "Please visit the library and the supermarket today, returning by 21: 00. <mark class=\"diff-del\">Prioritize locations with high</mark> ratings and <mark class=\"diff-del\">strong customer reviews</mark>.", "proposed_text_html": "Please visit the library and the supermarket today, returning by 21: 00. <mark class=\"diff-ins\">Maintain a balanced compromise between location</mark> ratings and <mark class=\"diff-ins\">route distance</mark>.", "text_changed": true, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 expressed balance; cluster heuristic erroneously inserted quality_first in V1-V3 rewrites."}, {"variant_type": "V2", "old_text": "Please ensure you are back by 21:00 after visiting both the library and the supermarket. Give top priority to reputable, well-reviewed venues.", "proposed_text": "Please ensure you are back by 21:00 after visiting both the library and the supermarket. Aim for a sensible balance between well-reviewed spots and travel efficiency.", "old_text_html": "Please ensure you are back by 21: 00 after visiting both the library and the supermarket. <mark class=\"diff-del\">Give top priority to reputable,</mark> well - reviewed <mark class=\"diff-del\">venues</mark>.", "proposed_text_html": "Please ensure you are back by 21: 00 after visiting both the library and the supermarket. <mark class=\"diff-ins\">Aim for a sensible balance between</mark> well - reviewed <mark class=\"diff-ins\">spots and travel efficiency</mark>.", "text_changed": true, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 expressed balance; cluster heuristic erroneously inserted quality_first in V1-V3 rewrites."}, {"variant_type": "V3", "old_text": "Hey, need you to stop by the library as well as the supermarket today and be back before 9 PM. Aim for the highest-rated places since quality is the main goal.", "proposed_text": "Hey, need you to stop by the library as well as the supermarket today and be back before 9 PM. Keep a good balance between decent reviews and not driving too far.", "old_text_html": "Hey, need you to stop by the library as well as the supermarket today and be back before 9 PM. <mark class=\"diff-del\">Aim for the highest - rated places since quality is the main goal</mark>.", "proposed_text_html": "Hey, need you to stop by the library as well as the supermarket today and be back before 9 PM. <mark class=\"diff-ins\">Keep a good balance between decent reviews and not driving too far</mark>.", "text_changed": true, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 expressed balance; cluster heuristic erroneously inserted quality_first in V1-V3 rewrites."}]}, {"group_id": "test_020", "pois": ["bank", "library", "pharmacy"], "time_str": "无截止限制", "dep_str": "bank ➔ pharmacy", "graph_id": "test_020_graph", "variants": [{"variant_type": "V0", "old_text": "Today, you'll need to visit the library, bank, and pharmacy. Make sure to maintain a good balance between visiting well-rated places and keeping your route efficient. Additionally, remember to visit the bank before going to the pharmacy.", "proposed_text": "Today, you'll need to visit the library, bank, and pharmacy. Make sure to maintain a good balance between visiting well-rated places and keeping your route efficient. Additionally, remember to visit the bank before going to the pharmacy.", "old_text_html": "Today, you'll need to visit the library, bank, and pharmacy. Make sure to maintain a good balance between visiting well-rated places and keeping your route efficient. Additionally, remember to visit the bank before going to the pharmacy.", "proposed_text_html": "Today, you'll need to visit the library, bank, and pharmacy. Make sure to maintain a good balance between visiting well-rated places and keeping your route efficient. Additionally, remember to visit the bank before going to the pharmacy.", "text_changed": false, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 base text already balanced; weight aligned from quality_first to balanced (0.50)."}, {"variant_type": "V1", "old_text": "Please visit the bank, the library, and the pharmacy today. Prioritize locations with high ratings and strong customer reviews. Make sure to visit the bank prior to the pharmacy.", "proposed_text": "Please visit the bank, the library, and the pharmacy today. Maintain a balanced compromise between location ratings and route distance. Make sure to visit the bank prior to the pharmacy.", "old_text_html": "Please visit the bank, the library, and the pharmacy today. <mark class=\"diff-del\">Prioritize locations with high</mark> ratings and <mark class=\"diff-del\">strong customer reviews</mark> . Make sure to visit the bank prior to the pharmacy.", "proposed_text_html": "Please visit the bank, the library, and the pharmacy today. <mark class=\"diff-ins\">Maintain a balanced compromise between location</mark> ratings and <mark class=\"diff-ins\">route distance</mark> . Make sure to visit the bank prior to the pharmacy.", "text_changed": true, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 expressed balance; cluster heuristic erroneously inserted quality_first in V1-V3 rewrites."}, {"variant_type": "V2", "old_text": "Your itinerary today includes visiting the bank, the library, and the pharmacy. Remember to stop at the bank before heading to the pharmacy. Give top priority to reputable, well-reviewed venues.", "proposed_text": "Your itinerary today includes visiting the bank, the library, and the pharmacy. Remember to stop at the bank before heading to the pharmacy. Aim for a sensible balance between well-reviewed spots and travel efficiency.", "old_text_html": "Your itinerary today includes visiting the bank, the library, and the pharmacy. Remember to stop at the bank before heading to the pharmacy. <mark class=\"diff-del\">Give top priority to reputable,</mark> well - reviewed <mark class=\"diff-del\">venues</mark>.", "proposed_text_html": "Your itinerary today includes visiting the bank, the library, and the pharmacy. Remember to stop at the bank before heading to the pharmacy. <mark class=\"diff-ins\">Aim for a sensible balance between</mark> well - reviewed <mark class=\"diff-ins\">spots and travel efficiency</mark>.", "text_changed": true, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 expressed balance; cluster heuristic erroneously inserted quality_first in V1-V3 rewrites."}, {"variant_type": "V3", "old_text": "Hey, need you to stop by the bank, the library, and the pharmacy today. Be sure to hit the bank first before the pharmacy. Aim for the highest-rated places since quality is the main goal.", "proposed_text": "Hey, need you to stop by the bank, the library, and the pharmacy today. Be sure to hit the bank first before the pharmacy. Keep a good balance between decent reviews and not driving too far.", "old_text_html": "Hey, need you to stop by the bank, the library, and the pharmacy today. Be sure to hit the bank first before the pharmacy. <mark class=\"diff-del\">Aim for the highest - rated places since quality is the main goal</mark>.", "proposed_text_html": "Hey, need you to stop by the bank, the library, and the pharmacy today. Be sure to hit the bank first before the pharmacy. <mark class=\"diff-ins\">Keep a good balance between decent reviews and not driving too far</mark>.", "text_changed": true, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 expressed balance; cluster heuristic erroneously inserted quality_first in V1-V3 rewrites."}]}, {"group_id": "test_080", "pois": ["library", "shopping_mall"], "time_str": "24:00 (截止分钟 1440)", "dep_str": "无拓扑依赖", "graph_id": "test_080_graph", "variants": [{"variant_type": "V0", "old_text": "Today, you need to visit the library and the shopping mall. Make sure to be back by midnight. Try to find a good balance between visiting well-rated places and not taking too long.", "proposed_text": "Today, you need to visit the library and the shopping mall. Make sure to be back by midnight. Try to find a good balance between visiting well-rated places and not taking too long.", "old_text_html": "Today, you need to visit the library and the shopping mall. Make sure to be back by midnight. Try to find a good balance between visiting well-rated places and not taking too long.", "proposed_text_html": "Today, you need to visit the library and the shopping mall. Make sure to be back by midnight. Try to find a good balance between visiting well-rated places and not taking too long.", "text_changed": false, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 base text already balanced; weight aligned from quality_first to balanced (0.50)."}, {"variant_type": "V1", "old_text": "Please visit the library and the shopping mall today, returning by 24:00. Prioritize locations with high ratings and strong customer reviews.", "proposed_text": "Please visit the library and the shopping mall today, returning by 24:00. Maintain a balanced compromise between location ratings and route distance.", "old_text_html": "Please visit the library and the shopping mall today, returning by 24: 00. <mark class=\"diff-del\">Prioritize locations with high</mark> ratings and <mark class=\"diff-del\">strong customer reviews</mark>.", "proposed_text_html": "Please visit the library and the shopping mall today, returning by 24: 00. <mark class=\"diff-ins\">Maintain a balanced compromise between location</mark> ratings and <mark class=\"diff-ins\">route distance</mark>.", "text_changed": true, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 expressed balance; cluster heuristic erroneously inserted quality_first in V1-V3 rewrites."}, {"variant_type": "V2", "old_text": "Please ensure you are back by 24:00 after visiting both the library and the shopping mall. Give top priority to reputable, well-reviewed venues.", "proposed_text": "Please ensure you are back by 24:00 after visiting both the library and the shopping mall. Aim for a sensible balance between well-reviewed spots and travel efficiency.", "old_text_html": "Please ensure you are back by 24: 00 after visiting both the library and the shopping mall. <mark class=\"diff-del\">Give top priority to reputable,</mark> well - reviewed <mark class=\"diff-del\">venues</mark>.", "proposed_text_html": "Please ensure you are back by 24: 00 after visiting both the library and the shopping mall. <mark class=\"diff-ins\">Aim for a sensible balance between</mark> well - reviewed <mark class=\"diff-ins\">spots and travel efficiency</mark>.", "text_changed": true, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 expressed balance; cluster heuristic erroneously inserted quality_first in V1-V3 rewrites."}, {"variant_type": "V3", "old_text": "Hey, need you to stop by the library as well as the shopping mall today and be back before midnight. Aim for the highest-rated places since quality is the main goal.", "proposed_text": "Hey, need you to stop by the library as well as the shopping mall today and be back before midnight. Keep a good balance between decent reviews and not driving too far.", "old_text_html": "Hey, need you to stop by the library as well as the shopping mall today and be back before midnight. <mark class=\"diff-del\">Aim for the highest - rated places since quality is the main goal</mark>.", "proposed_text_html": "Hey, need you to stop by the library as well as the shopping mall today and be back before midnight. <mark class=\"diff-ins\">Keep a good balance between decent reviews and not driving too far</mark>.", "text_changed": true, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 expressed balance; cluster heuristic erroneously inserted quality_first in V1-V3 rewrites."}]}, {"group_id": "test_091", "pois": ["library"], "time_str": "19:00 (截止分钟 1140)", "dep_str": "无拓扑依赖", "graph_id": "test_091_graph", "variants": [{"variant_type": "V0", "old_text": "Today, make sure to visit the library. Please return by 19:00. Aim to balance the quality of the visit with a reasonable route.", "proposed_text": "Today, make sure to visit the library. Please return by 19:00. Aim to balance the quality of the visit with a reasonable route.", "old_text_html": "Today, make sure to visit the library. Please return by 19:00. Aim to balance the quality of the visit with a reasonable route.", "proposed_text_html": "Today, make sure to visit the library. Please return by 19:00. Aim to balance the quality of the visit with a reasonable route.", "text_changed": false, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 base text already balanced; weight aligned from quality_first to balanced (0.50)."}, {"variant_type": "V1", "old_text": "Please visit the library today, returning by 19:00. Prioritize locations with high ratings and strong customer reviews.", "proposed_text": "Please visit the library today, returning by 19:00. Maintain a balanced compromise between location ratings and route distance.", "old_text_html": "Please visit the library today, returning by 19: 00. <mark class=\"diff-del\">Prioritize locations with high</mark> ratings and <mark class=\"diff-del\">strong customer reviews</mark>.", "proposed_text_html": "Please visit the library today, returning by 19: 00. <mark class=\"diff-ins\">Maintain a balanced compromise between location</mark> ratings and <mark class=\"diff-ins\">route distance</mark>.", "text_changed": true, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 expressed balance; cluster heuristic erroneously inserted quality_first in V1-V3 rewrites."}, {"variant_type": "V2", "old_text": "Please ensure you are back by 19:00 after visiting the library. Give top priority to reputable, well-reviewed venues.", "proposed_text": "Please ensure you are back by 19:00 after visiting the library. Aim for a sensible balance between well-reviewed spots and travel efficiency.", "old_text_html": "Please ensure you are back by 19: 00 after visiting the library. <mark class=\"diff-del\">Give top priority to reputable,</mark> well - reviewed <mark class=\"diff-del\">venues</mark>.", "proposed_text_html": "Please ensure you are back by 19: 00 after visiting the library. <mark class=\"diff-ins\">Aim for a sensible balance between</mark> well - reviewed <mark class=\"diff-ins\">spots and travel efficiency</mark>.", "text_changed": true, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 expressed balance; cluster heuristic erroneously inserted quality_first in V1-V3 rewrites."}, {"variant_type": "V3", "old_text": "Hey, need you to stop by the library today and be back before 7 PM. Aim for the highest-rated places since quality is the main goal.", "proposed_text": "Hey, need you to stop by the library today and be back before 7 PM. Keep a good balance between decent reviews and not driving too far.", "old_text_html": "Hey, need you to stop by the library today and be back before 7 PM. <mark class=\"diff-del\">Aim for the highest - rated places since quality is the main goal</mark>.", "proposed_text_html": "Hey, need you to stop by the library today and be back before 7 PM. <mark class=\"diff-ins\">Keep a good balance between decent reviews and not driving too far</mark>.", "text_changed": true, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 expressed balance; cluster heuristic erroneously inserted quality_first in V1-V3 rewrites."}]}, {"group_id": "test_100", "pois": ["bank", "library", "pharmacy", "shopping_mall", "supermarket"], "time_str": "24:00 (截止分钟 1440)", "dep_str": "无拓扑依赖", "graph_id": "test_100_graph", "variants": [{"variant_type": "V0", "old_text": "Today, you need to visit the bank, pharmacy, shopping mall, library, and supermarket. Make sure to be back by midnight. Try to balance visiting places with good ratings while still keeping your route efficient.", "proposed_text": "Today, you need to visit the bank, pharmacy, shopping mall, library, and supermarket. Make sure to be back by midnight. Try to balance visiting places with good ratings while still keeping your route efficient.", "old_text_html": "Today, you need to visit the bank, pharmacy, shopping mall, library, and supermarket. Make sure to be back by midnight. Try to balance visiting places with good ratings while still keeping your route efficient.", "proposed_text_html": "Today, you need to visit the bank, pharmacy, shopping mall, library, and supermarket. Make sure to be back by midnight. Try to balance visiting places with good ratings while still keeping your route efficient.", "text_changed": false, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 base text already balanced; weight aligned from quality_first to balanced (0.50)."}, {"variant_type": "V1", "old_text": "Please visit the bank, the library, the pharmacy, the shopping mall, and the supermarket today, returning by 24:00. Prioritize locations with high ratings and strong customer reviews.", "proposed_text": "Please visit the bank, the library, the pharmacy, the shopping mall, and the supermarket today, returning by 24:00. Maintain a balanced compromise between location ratings and route distance.", "old_text_html": "Please visit the bank, the library, the pharmacy, the shopping mall, and the supermarket today, returning by 24: 00. <mark class=\"diff-del\">Prioritize locations with high</mark> ratings and <mark class=\"diff-del\">strong customer reviews</mark>.", "proposed_text_html": "Please visit the bank, the library, the pharmacy, the shopping mall, and the supermarket today, returning by 24: 00. <mark class=\"diff-ins\">Maintain a balanced compromise between location</mark> ratings and <mark class=\"diff-ins\">route distance</mark>.", "text_changed": true, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 expressed balance; cluster heuristic erroneously inserted quality_first in V1-V3 rewrites."}, {"variant_type": "V2", "old_text": "Please ensure you are back by 24:00 after visiting the bank, the library, the pharmacy, the shopping mall, and the supermarket. Give top priority to reputable, well-reviewed venues.", "proposed_text": "Please ensure you are back by 24:00 after visiting the bank, the library, the pharmacy, the shopping mall, and the supermarket. Aim for a sensible balance between well-reviewed spots and travel efficiency.", "old_text_html": "Please ensure you are back by 24: 00 after visiting the bank, the library, the pharmacy, the shopping mall, and the supermarket. <mark class=\"diff-del\">Give top priority to reputable,</mark> well - reviewed <mark class=\"diff-del\">venues</mark>.", "proposed_text_html": "Please ensure you are back by 24: 00 after visiting the bank, the library, the pharmacy, the shopping mall, and the supermarket. <mark class=\"diff-ins\">Aim for a sensible balance between</mark> well - reviewed <mark class=\"diff-ins\">spots and travel efficiency</mark>.", "text_changed": true, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 expressed balance; cluster heuristic erroneously inserted quality_first in V1-V3 rewrites."}, {"variant_type": "V3", "old_text": "Hey, need you to stop by the bank, the library, the pharmacy, the shopping mall, and the supermarket today and be back before midnight. Aim for the highest-rated places since quality is the main goal.", "proposed_text": "Hey, need you to stop by the bank, library, pharmacy, shopping mall, and supermarket today and be back before midnight. Keep a good balance between decent reviews and not driving too far.", "old_text_html": "Hey, need you to stop by the bank, <mark class=\"diff-del\">the</mark> library, <mark class=\"diff-del\">the</mark> pharmacy, <mark class=\"diff-del\">the</mark> shopping mall, and <mark class=\"diff-del\">the</mark> supermarket today and be back before midnight. <mark class=\"diff-del\">Aim for the highest - rated places since quality is the main goal</mark>.", "proposed_text_html": "Hey, need you to stop by the bank, library, pharmacy, shopping mall, and supermarket today and be back before midnight. <mark class=\"diff-ins\">Keep a good balance between decent reviews and not driving too far</mark>.", "text_changed": true, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 expressed balance; cluster heuristic erroneously inserted quality_first in V1-V3 rewrites."}]}, {"group_id": "test_102", "pois": ["bank", "pharmacy", "supermarket"], "time_str": "23:00 (截止分钟 1380)", "dep_str": "supermarket ➔ pharmacy", "graph_id": "test_102_graph", "variants": [{"variant_type": "V0", "old_text": "Today's itinerary includes visits to the supermarket, the pharmacy, and the bank. Please make sure to return by 11 p.m. We aim for a good balance between visiting quality places and keeping our route efficient. Remember to stop by the supermarket before heading to the pharmacy.", "proposed_text": "Today's itinerary includes visits to the supermarket, the pharmacy, and the bank. Please make sure to return by 11 p.m. We aim for a good balance between visiting quality places and keeping our route efficient. Remember to stop by the supermarket before heading to the pharmacy.", "old_text_html": "Today's itinerary includes visits to the supermarket, the pharmacy, and the bank. Please make sure to return by 11 p.m. We aim for a good balance between visiting quality places and keeping our route efficient. Remember to stop by the supermarket before heading to the pharmacy.", "proposed_text_html": "Today's itinerary includes visits to the supermarket, the pharmacy, and the bank. Please make sure to return by 11 p.m. We aim for a good balance between visiting quality places and keeping our route efficient. Remember to stop by the supermarket before heading to the pharmacy.", "text_changed": false, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 base text already balanced; weight aligned from quality_first to balanced (0.50)."}, {"variant_type": "V1", "old_text": "Please visit the bank, the pharmacy, and the supermarket today, returning by 23:00. Prioritize locations with high ratings and strong customer reviews. Make sure to visit the supermarket prior to the pharmacy.", "proposed_text": "Please visit the supermarket, the pharmacy, and the bank today, returning by 23:00. Make sure to stop by the supermarket before the pharmacy. Maintain a balanced compromise between location ratings and route distance.", "old_text_html": "Please visit the <mark class=\"diff-del\">bank</mark> , the pharmacy, and the <mark class=\"diff-del\">supermarket</mark> today, returning by 23: 00. <mark class=\"diff-del\">Prioritize locations with high ratings and strong customer reviews.</mark> Make sure to <mark class=\"diff-del\">visit</mark> the supermarket <mark class=\"diff-del\">prior to</mark> the pharmacy.", "proposed_text_html": "Please visit the <mark class=\"diff-ins\">supermarket</mark> , the pharmacy, and the <mark class=\"diff-ins\">bank</mark> today, returning by 23: 00. Make sure to <mark class=\"diff-ins\">stop by</mark> the supermarket <mark class=\"diff-ins\">before</mark> the pharmacy. <mark class=\"diff-ins\">Maintain a balanced compromise between location ratings and route distance.</mark>", "text_changed": true, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 expressed balance; cluster heuristic erroneously inserted quality_first in V1-V3 rewrites."}, {"variant_type": "V2", "old_text": "Please ensure you are back by 23:00 after visiting the bank, the pharmacy, and the supermarket. Remember to stop at the supermarket before heading to the pharmacy. Give top priority to reputable, well-reviewed venues.", "proposed_text": "Your itinerary today includes the supermarket, the pharmacy, and the bank, returning before 11 PM. Remember to visit the supermarket prior to the pharmacy. Aim for a sensible balance between well-reviewed spots and travel efficiency.", "old_text_html": "<mark class=\"diff-del\">Please ensure you are back by 23: 00 after visiting</mark> the <mark class=\"diff-del\">bank</mark> , the pharmacy, and the <mark class=\"diff-del\">supermarket</mark> . Remember to <mark class=\"diff-del\">stop at</mark> the supermarket <mark class=\"diff-del\">before heading</mark> to the pharmacy. <mark class=\"diff-del\">Give top priority to reputable,</mark> well - reviewed <mark class=\"diff-del\">venues</mark>.", "proposed_text_html": "<mark class=\"diff-ins\">Your itinerary today includes</mark> the <mark class=\"diff-ins\">supermarket</mark> , the pharmacy, and the <mark class=\"diff-ins\">bank, returning before 11 PM</mark> . Remember to <mark class=\"diff-ins\">visit</mark> the supermarket <mark class=\"diff-ins\">prior</mark> to the pharmacy. <mark class=\"diff-ins\">Aim for a sensible balance between</mark> well - reviewed <mark class=\"diff-ins\">spots and travel efficiency</mark>.", "text_changed": true, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 expressed balance; cluster heuristic erroneously inserted quality_first in V1-V3 rewrites."}, {"variant_type": "V3", "old_text": "Hey, need you to stop by the bank, the pharmacy, and the supermarket today and be back before 11 PM. Be sure to hit the supermarket first before the pharmacy. Aim for the highest-rated places since quality is the main goal.", "proposed_text": "Hey, need you to hit the supermarket, pharmacy, and bank today and be back by 11 PM. Head to the supermarket before the pharmacy, and keep a good balance between decent reviews and driving distance.", "old_text_html": "Hey, need you to <mark class=\"diff-del\">stop</mark> by the <mark class=\"diff-del\">bank,</mark> the pharmacy, and <mark class=\"diff-del\">the supermarket today</mark> and <mark class=\"diff-del\">be back before 11 PM</mark>. <mark class=\"diff-del\">Be sure to hit the supermarket first before the pharmacy. Aim for the highest - rated places since quality is the main goal.</mark>", "proposed_text_html": "Hey, need you to <mark class=\"diff-ins\">hit the supermarket, pharmacy, and bank today and be back</mark> by <mark class=\"diff-ins\">11 PM. Head to</mark> the <mark class=\"diff-ins\">supermarket before</mark> the pharmacy, and <mark class=\"diff-ins\">keep a good balance between decent reviews</mark> and <mark class=\"diff-ins\">driving distance</mark>.", "text_changed": true, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 expressed balance; cluster heuristic erroneously inserted quality_first in V1-V3 rewrites."}]}, {"group_id": "test_108", "pois": ["bank", "library", "pharmacy", "shopping_mall", "supermarket"], "time_str": "无截止限制", "dep_str": "pharmacy ➔ supermarket", "graph_id": "test_108_graph", "variants": [{"variant_type": "V0", "old_text": "Today, you need to visit the bank, pharmacy, supermarket, library, and shopping mall. While it's important to find a balance between high-rated places and an efficient route, make sure to stop by the pharmacy before heading to the supermarket.", "proposed_text": "Today, you need to visit the bank, pharmacy, supermarket, library, and shopping mall. While it's important to find a balance between high-rated places and an efficient route, make sure to stop by the pharmacy before heading to the supermarket.", "old_text_html": "Today, you need to visit the bank, pharmacy, supermarket, library, and shopping mall. While it's important to find a balance between high-rated places and an efficient route, make sure to stop by the pharmacy before heading to the supermarket.", "proposed_text_html": "Today, you need to visit the bank, pharmacy, supermarket, library, and shopping mall. While it's important to find a balance between high-rated places and an efficient route, make sure to stop by the pharmacy before heading to the supermarket.", "text_changed": false, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 base text already balanced; weight aligned from quality_first to balanced (0.50)."}, {"variant_type": "V1", "old_text": "Please visit the bank, the library, the pharmacy, the shopping mall, and the supermarket today. Prioritize locations with high ratings and strong customer reviews. Make sure to visit the pharmacy prior to the supermarket.", "proposed_text": "Please visit the bank, the pharmacy, the supermarket, the library, and the shopping mall today. Stop by the pharmacy prior to the supermarket. Maintain a balanced compromise between location ratings and route distance.", "old_text_html": "Please visit the bank, the <mark class=\"diff-del\">library, the</mark> pharmacy, the <mark class=\"diff-del\">shopping mall</mark> , and the <mark class=\"diff-del\">supermarket</mark> today. <mark class=\"diff-del\">Prioritize locations with high ratings and strong customer reviews. Make sure to visit</mark> the pharmacy prior to the supermarket.", "proposed_text_html": "Please visit the bank, the pharmacy, the <mark class=\"diff-ins\">supermarket, the library</mark> , and the <mark class=\"diff-ins\">shopping mall</mark> today. <mark class=\"diff-ins\">Stop by</mark> the pharmacy prior to the supermarket. <mark class=\"diff-ins\">Maintain a balanced compromise between location ratings and route distance.</mark>", "text_changed": true, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 expressed balance; cluster heuristic erroneously inserted quality_first in V1-V3 rewrites."}, {"variant_type": "V2", "old_text": "Your itinerary today includes visiting the bank, the library, the pharmacy, the shopping mall, and the supermarket. Remember to stop at the pharmacy before heading to the supermarket. Give top priority to reputable, well-reviewed venues.", "proposed_text": "Your itinerary today includes the bank, pharmacy, supermarket, library, and shopping mall. Remember to visit the pharmacy before heading to the supermarket. Aim for a sensible balance between well-reviewed spots and travel efficiency.", "old_text_html": "Your itinerary today includes <mark class=\"diff-del\">visiting</mark> the bank, <mark class=\"diff-del\">the</mark> library, <mark class=\"diff-del\">the pharmacy, the</mark> shopping mall <mark class=\"diff-del\">, and the supermarket</mark> . Remember to <mark class=\"diff-del\">stop at</mark> the pharmacy before heading to the supermarket. <mark class=\"diff-del\">Give top priority to reputable,</mark> well - reviewed <mark class=\"diff-del\">venues</mark>.", "proposed_text_html": "Your itinerary today includes the bank, <mark class=\"diff-ins\">pharmacy, supermarket,</mark> library, <mark class=\"diff-ins\">and</mark> shopping mall . Remember to <mark class=\"diff-ins\">visit</mark> the pharmacy before heading to the supermarket. <mark class=\"diff-ins\">Aim for a sensible balance between</mark> well - reviewed <mark class=\"diff-ins\">spots and travel efficiency</mark>.", "text_changed": true, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 expressed balance; cluster heuristic erroneously inserted quality_first in V1-V3 rewrites."}, {"variant_type": "V3", "old_text": "Hey, need you to stop by the bank, the library, the pharmacy, the shopping mall, and the supermarket today. Be sure to hit the pharmacy first before the supermarket. Aim for the highest-rated places since quality is the main goal.", "proposed_text": "Hey, need you to visit the bank, pharmacy, supermarket, library, and mall today. Make sure to hit the pharmacy before the supermarket, and keep a good balance between decent reviews and driving distance.", "old_text_html": "Hey, need you to <mark class=\"diff-del\">stop by</mark> the bank, <mark class=\"diff-del\">the</mark> library, <mark class=\"diff-del\">the pharmacy, the shopping</mark> mall <mark class=\"diff-del\">, and the supermarket</mark> today. <mark class=\"diff-del\">Be</mark> sure to hit the pharmacy <mark class=\"diff-del\">first</mark> before the supermarket. <mark class=\"diff-del\">Aim for the highest - rated places since quality is the main goal.</mark>", "proposed_text_html": "Hey, need you to <mark class=\"diff-ins\">visit</mark> the bank, <mark class=\"diff-ins\">pharmacy, supermarket,</mark> library, <mark class=\"diff-ins\">and</mark> mall today. <mark class=\"diff-ins\">Make</mark> sure to hit the pharmacy before the supermarket <mark class=\"diff-ins\">, and keep a good balance between decent reviews and driving distance</mark>.", "text_changed": true, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 expressed balance; cluster heuristic erroneously inserted quality_first in V1-V3 rewrites."}]}, {"group_id": "test_112", "pois": ["pharmacy"], "time_str": "23:00 (截止分钟 1380)", "dep_str": "无拓扑依赖", "graph_id": "test_112_graph", "variants": [{"variant_type": "V0", "old_text": "Today, make sure to visit the pharmacy. Please be back by 23:00. Find a balance between visiting a well-rated location and ensuring the trip is not too lengthy.", "proposed_text": "Today, make sure to visit the pharmacy. Please be back by 23:00. Find a balance between visiting a well-rated location and ensuring the trip is not too lengthy.", "old_text_html": "Today, make sure to visit the pharmacy. Please be back by 23:00. Find a balance between visiting a well-rated location and ensuring the trip is not too lengthy.", "proposed_text_html": "Today, make sure to visit the pharmacy. Please be back by 23:00. Find a balance between visiting a well-rated location and ensuring the trip is not too lengthy.", "text_changed": false, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 base text already balanced; weight aligned from quality_first to balanced (0.50)."}, {"variant_type": "V1", "old_text": "Please visit the pharmacy today, returning by 23:00. Prioritize locations with high ratings and strong customer reviews.", "proposed_text": "Please visit the pharmacy today, returning by 23:00. Maintain a balanced compromise between location ratings and route distance.", "old_text_html": "Please visit the pharmacy today, returning by 23: 00. <mark class=\"diff-del\">Prioritize locations with high</mark> ratings and <mark class=\"diff-del\">strong customer reviews</mark>.", "proposed_text_html": "Please visit the pharmacy today, returning by 23: 00. <mark class=\"diff-ins\">Maintain a balanced compromise between location</mark> ratings and <mark class=\"diff-ins\">route distance</mark>.", "text_changed": true, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 expressed balance; cluster heuristic erroneously inserted quality_first in V1-V3 rewrites."}, {"variant_type": "V2", "old_text": "Please ensure you are back by 23:00 after visiting the pharmacy. Give top priority to reputable, well-reviewed venues.", "proposed_text": "Please ensure you are back by 23:00 after visiting the pharmacy. Aim for a sensible balance between well-reviewed spots and travel efficiency.", "old_text_html": "Please ensure you are back by 23: 00 after visiting the pharmacy. <mark class=\"diff-del\">Give top priority to reputable,</mark> well - reviewed <mark class=\"diff-del\">venues</mark>.", "proposed_text_html": "Please ensure you are back by 23: 00 after visiting the pharmacy. <mark class=\"diff-ins\">Aim for a sensible balance between</mark> well - reviewed <mark class=\"diff-ins\">spots and travel efficiency</mark>.", "text_changed": true, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 expressed balance; cluster heuristic erroneously inserted quality_first in V1-V3 rewrites."}, {"variant_type": "V3", "old_text": "Hey, need you to stop by the pharmacy today and be back before 11 PM. Aim for the highest-rated places since quality is the main goal.", "proposed_text": "Hey, need you to stop by the pharmacy today and be back before 11 PM. Keep a good balance between decent reviews and not driving too far.", "old_text_html": "Hey, need you to stop by the pharmacy today and be back before 11 PM. <mark class=\"diff-del\">Aim for the highest - rated places since quality is the main goal</mark>.", "proposed_text_html": "Hey, need you to stop by the pharmacy today and be back before 11 PM. <mark class=\"diff-ins\">Keep a good balance between decent reviews and not driving too far</mark>.", "text_changed": true, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 expressed balance; cluster heuristic erroneously inserted quality_first in V1-V3 rewrites."}]}, {"group_id": "test_115", "pois": ["bank", "library", "pharmacy", "shopping_mall", "supermarket"], "time_str": "无截止限制", "dep_str": "library ➔ supermarket", "graph_id": "test_115_graph", "variants": [{"variant_type": "V0", "old_text": "Today, you'll be heading out to visit the shopping mall, bank, pharmacy, library, and the supermarket. You should try to find a balance between visiting the best-rated places and keeping your route efficient. Make sure to stop by the library before you go to the supermarket.", "proposed_text": "Today, you'll be heading out to visit the shopping mall, bank, pharmacy, library, and the supermarket. You should try to find a balance between visiting the best-rated places and keeping your route efficient. Make sure to stop by the library before you go to the supermarket.", "old_text_html": "Today, you'll be heading out to visit the shopping mall, bank, pharmacy, library, and the supermarket. You should try to find a balance between visiting the best-rated places and keeping your route efficient. Make sure to stop by the library before you go to the supermarket.", "proposed_text_html": "Today, you'll be heading out to visit the shopping mall, bank, pharmacy, library, and the supermarket. You should try to find a balance between visiting the best-rated places and keeping your route efficient. Make sure to stop by the library before you go to the supermarket.", "text_changed": false, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 base text already balanced; weight aligned from quality_first to balanced (0.50)."}, {"variant_type": "V1", "old_text": "Please visit the bank, the library, the pharmacy, the shopping mall, and the supermarket today. Prioritize locations with high ratings and strong customer reviews. Make sure to visit the library prior to the supermarket.", "proposed_text": "Please visit the shopping mall, the bank, the pharmacy, the library, and the supermarket today. Visit the library prior to the supermarket. Maintain a balanced compromise between location ratings and route distance.", "old_text_html": "Please visit the <mark class=\"diff-del\">bank</mark> , the <mark class=\"diff-del\">library</mark> , the pharmacy, the <mark class=\"diff-del\">shopping mall</mark> , and the supermarket today. <mark class=\"diff-del\">Prioritize locations with high ratings and strong customer reviews. Make sure to visit</mark> the library prior to the supermarket.", "proposed_text_html": "Please visit the <mark class=\"diff-ins\">shopping mall</mark> , the <mark class=\"diff-ins\">bank</mark> , the pharmacy, the <mark class=\"diff-ins\">library</mark> , and the supermarket today. <mark class=\"diff-ins\">Visit</mark> the library prior to the supermarket. <mark class=\"diff-ins\">Maintain a balanced compromise between location ratings and route distance.</mark>", "text_changed": true, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 expressed balance; cluster heuristic erroneously inserted quality_first in V1-V3 rewrites."}, {"variant_type": "V2", "old_text": "Your itinerary today includes visiting the bank, the library, the pharmacy, the shopping mall, and the supermarket. Remember to stop at the library before heading to the supermarket. Give top priority to reputable, well-reviewed venues.", "proposed_text": "Your itinerary today includes the shopping mall, bank, pharmacy, library, and supermarket. Remember to stop at the library before heading to the supermarket. Aim for a sensible balance between well-reviewed spots and travel efficiency.", "old_text_html": "Your itinerary today includes <mark class=\"diff-del\">visiting the bank, the library, the pharmacy,</mark> the shopping mall, and <mark class=\"diff-del\">the</mark> supermarket. Remember to stop at the library before heading to the supermarket. <mark class=\"diff-del\">Give top priority to reputable,</mark> well - reviewed <mark class=\"diff-del\">venues</mark>.", "proposed_text_html": "Your itinerary today includes the shopping mall, <mark class=\"diff-ins\">bank, pharmacy, library,</mark> and supermarket. Remember to stop at the library before heading to the supermarket. <mark class=\"diff-ins\">Aim for a sensible balance between</mark> well - reviewed <mark class=\"diff-ins\">spots and travel efficiency</mark>.", "text_changed": true, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 expressed balance; cluster heuristic erroneously inserted quality_first in V1-V3 rewrites."}, {"variant_type": "V3", "old_text": "Hey, need you to stop by the bank, the library, the pharmacy, the shopping mall, and the supermarket today. Be sure to hit the library first before the supermarket. Aim for the highest-rated places since quality is the main goal.", "proposed_text": "Hey, need you to stop by the mall, bank, pharmacy, library, and supermarket today. Hit the library before the supermarket, and keep a good balance between decent reviews and driving distance.", "old_text_html": "Hey, need you to stop by the bank, <mark class=\"diff-del\">the</mark> library, <mark class=\"diff-del\">the pharmacy, the shopping mall,</mark> and <mark class=\"diff-del\">the</mark> supermarket today. <mark class=\"diff-del\">Be sure to hit</mark> the library <mark class=\"diff-del\">first</mark> before the supermarket. <mark class=\"diff-del\">Aim for the highest - rated places since quality is the main goal.</mark>", "proposed_text_html": "Hey, need you to stop by the <mark class=\"diff-ins\">mall,</mark> bank, <mark class=\"diff-ins\">pharmacy,</mark> library, and supermarket today. <mark class=\"diff-ins\">Hit</mark> the library before the supermarket <mark class=\"diff-ins\">, and keep a good balance between decent reviews and driving distance</mark>.", "text_changed": true, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 expressed balance; cluster heuristic erroneously inserted quality_first in V1-V3 rewrites."}]}, {"group_id": "test_129", "pois": ["bank", "shopping_mall", "supermarket"], "time_str": "无截止限制", "dep_str": "shopping_mall ➔ supermarket", "graph_id": "test_129_graph", "variants": [{"variant_type": "V0", "old_text": "Today, you need to visit the bank, shopping mall, and supermarket. It would be great if you could find a balance between visiting well-rated spots and not taking too long on the route. Remember to stop by the shopping mall before heading to the supermarket.", "proposed_text": "Today, you need to visit the bank, shopping mall, and supermarket. It would be great if you could find a balance between visiting well-rated spots and not taking too long on the route. Remember to stop by the shopping mall before heading to the supermarket.", "old_text_html": "Today, you need to visit the bank, shopping mall, and supermarket. It would be great if you could find a balance between visiting well-rated spots and not taking too long on the route. Remember to stop by the shopping mall before heading to the supermarket.", "proposed_text_html": "Today, you need to visit the bank, shopping mall, and supermarket. It would be great if you could find a balance between visiting well-rated spots and not taking too long on the route. Remember to stop by the shopping mall before heading to the supermarket.", "text_changed": false, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 base text already balanced; weight aligned from quality_first to balanced (0.50)."}, {"variant_type": "V1", "old_text": "Please visit the bank, the shopping mall, and the supermarket today. Prioritize locations with high ratings and strong customer reviews. Make sure to visit the shopping mall prior to the supermarket.", "proposed_text": "Please visit the bank, the shopping mall, and the supermarket today. Stop by the shopping mall prior to the supermarket. Maintain a balanced compromise between location ratings and route distance.", "old_text_html": "Please visit the bank, the shopping mall, and the supermarket today. <mark class=\"diff-del\">Prioritize locations with high ratings and strong customer reviews. Make sure to visit</mark> the shopping mall prior to the supermarket.", "proposed_text_html": "Please visit the bank, the shopping mall, and the supermarket today. <mark class=\"diff-ins\">Stop by</mark> the shopping mall prior to the supermarket. <mark class=\"diff-ins\">Maintain a balanced compromise between location ratings and route distance.</mark>", "text_changed": true, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 expressed balance; cluster heuristic erroneously inserted quality_first in V1-V3 rewrites."}, {"variant_type": "V2", "old_text": "Your itinerary today includes visiting the bank, the shopping mall, and the supermarket. Remember to stop at the shopping mall before heading to the supermarket. Give top priority to reputable, well-reviewed venues.", "proposed_text": "Your itinerary today includes visiting the bank, the shopping mall, and the supermarket. Remember to visit the shopping mall before the supermarket. Aim for a sensible balance between well-reviewed spots and travel efficiency.", "old_text_html": "Your itinerary today includes visiting the bank, the shopping mall, and the supermarket. Remember to <mark class=\"diff-del\">stop at</mark> the shopping mall before <mark class=\"diff-del\">heading to</mark> the supermarket. <mark class=\"diff-del\">Give top priority to reputable,</mark> well - reviewed <mark class=\"diff-del\">venues</mark>.", "proposed_text_html": "Your itinerary today includes visiting the bank, the shopping mall, and the supermarket. Remember to <mark class=\"diff-ins\">visit</mark> the shopping mall before the supermarket. <mark class=\"diff-ins\">Aim for a sensible balance between</mark> well - reviewed <mark class=\"diff-ins\">spots and travel efficiency</mark>.", "text_changed": true, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 expressed balance; cluster heuristic erroneously inserted quality_first in V1-V3 rewrites."}, {"variant_type": "V3", "old_text": "Hey, need you to stop by the bank, the shopping mall, and the supermarket today. Be sure to hit the shopping mall first before the supermarket. Aim for the highest-rated places since quality is the main goal.", "proposed_text": "Hey, need you to stop by the bank, mall, and supermarket today. Hit the shopping mall before the supermarket, and keep a good balance between decent reviews and driving distance.", "old_text_html": "Hey, need you to stop by the bank, the shopping mall <mark class=\"diff-del\">, and the supermarket today. Be sure to hit the shopping mall first</mark> before the supermarket. <mark class=\"diff-del\">Aim for the highest - rated places since quality is the main goal.</mark>", "proposed_text_html": "Hey, need you to stop by the bank, <mark class=\"diff-ins\">mall, and supermarket today. Hit</mark> the shopping mall before the supermarket <mark class=\"diff-ins\">, and keep a good balance between decent reviews and driving distance</mark>.", "text_changed": true, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 expressed balance; cluster heuristic erroneously inserted quality_first in V1-V3 rewrites."}]}, {"group_id": "test_141", "pois": ["bank", "library"], "time_str": "无截止限制", "dep_str": "bank ➔ library", "graph_id": "test_141_graph", "variants": [{"variant_type": "V0", "old_text": "Today, you need to visit the bank and the library. Aim for a balance between visiting well-rated places and keeping the route efficient. Make sure to go to the bank before heading to the library.", "proposed_text": "Today, you need to visit the bank and the library. Aim for a balance between visiting well-rated places and keeping the route efficient. Make sure to go to the bank before heading to the library.", "old_text_html": "Today, you need to visit the bank and the library. Aim for a balance between visiting well-rated places and keeping the route efficient. Make sure to go to the bank before heading to the library.", "proposed_text_html": "Today, you need to visit the bank and the library. Aim for a balance between visiting well-rated places and keeping the route efficient. Make sure to go to the bank before heading to the library.", "text_changed": false, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 base text already balanced; weight aligned from quality_first to balanced (0.50)."}, {"variant_type": "V1", "old_text": "Please visit the bank and the library today. Prioritize locations with high ratings and strong customer reviews. Make sure to visit the bank prior to the library.", "proposed_text": "Please visit the bank and the library today. Go to the bank prior to the library. Maintain a balanced compromise between location ratings and route distance.", "old_text_html": "Please visit the bank and the library today. <mark class=\"diff-del\">Prioritize locations with high ratings and strong customer reviews. Make sure</mark> to <mark class=\"diff-del\">visit</mark> the bank prior to the library.", "proposed_text_html": "Please visit the bank and the library today. <mark class=\"diff-ins\">Go</mark> to the bank prior to the library. <mark class=\"diff-ins\">Maintain a balanced compromise between location ratings and route distance.</mark>", "text_changed": true, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 expressed balance; cluster heuristic erroneously inserted quality_first in V1-V3 rewrites."}, {"variant_type": "V2", "old_text": "Your itinerary today includes visiting both the bank and the library. Remember to stop at the bank before heading to the library. Give top priority to reputable, well-reviewed venues.", "proposed_text": "Your itinerary today includes visiting the bank and the library. Remember to stop at the bank before heading to the library. Aim for a sensible balance between well-reviewed spots and travel efficiency.", "old_text_html": "Your itinerary today includes visiting <mark class=\"diff-del\">both</mark> the bank and the library. Remember to stop at the bank before heading to the library. <mark class=\"diff-del\">Give top priority to reputable,</mark> well - reviewed <mark class=\"diff-del\">venues</mark>.", "proposed_text_html": "Your itinerary today includes visiting the bank and the library. Remember to stop at the bank before heading to the library. <mark class=\"diff-ins\">Aim for a sensible balance between</mark> well - reviewed <mark class=\"diff-ins\">spots and travel efficiency</mark>.", "text_changed": true, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 expressed balance; cluster heuristic erroneously inserted quality_first in V1-V3 rewrites."}, {"variant_type": "V3", "old_text": "Hey, need you to stop by the bank as well as the library today. Be sure to hit the bank first before the library. Aim for the highest-rated places since quality is the main goal.", "proposed_text": "Hey, need you to stop by the bank and the library today. Hit the bank before the library, and keep a good balance between decent reviews and driving distance.", "old_text_html": "Hey, need you to stop by the bank <mark class=\"diff-del\">as well as</mark> the library today. <mark class=\"diff-del\">Be sure to hit</mark> the bank <mark class=\"diff-del\">first</mark> before the library. <mark class=\"diff-del\">Aim for the highest - rated places since quality is the main goal.</mark>", "proposed_text_html": "Hey, need you to stop by the bank <mark class=\"diff-ins\">and</mark> the library today. <mark class=\"diff-ins\">Hit</mark> the bank before the library <mark class=\"diff-ins\">, and keep a good balance between decent reviews and driving distance</mark>.", "text_changed": true, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 expressed balance; cluster heuristic erroneously inserted quality_first in V1-V3 rewrites."}]}, {"group_id": "test_142", "pois": ["library", "pharmacy", "shopping_mall", "supermarket"], "time_str": "无截止限制", "dep_str": "supermarket ➔ pharmacy", "graph_id": "test_142_graph", "variants": [{"variant_type": "V0", "old_text": "Today, you'll need to visit the library, supermarket, pharmacy, and shopping mall. Please ensure you consider places that offer a good balance of quality and ease of access. Remember to go to the supermarket before heading to the pharmacy.", "proposed_text": "Today, you'll need to visit the library, supermarket, pharmacy, and shopping mall. Please ensure you consider places that offer a good balance of quality and ease of access. Remember to go to the supermarket before heading to the pharmacy.", "old_text_html": "Today, you'll need to visit the library, supermarket, pharmacy, and shopping mall. Please ensure you consider places that offer a good balance of quality and ease of access. Remember to go to the supermarket before heading to the pharmacy.", "proposed_text_html": "Today, you'll need to visit the library, supermarket, pharmacy, and shopping mall. Please ensure you consider places that offer a good balance of quality and ease of access. Remember to go to the supermarket before heading to the pharmacy.", "text_changed": false, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 base text already balanced; weight aligned from quality_first to balanced (0.50)."}, {"variant_type": "V1", "old_text": "Please visit the library, the pharmacy, the shopping mall, and the supermarket today. Prioritize locations with high ratings and strong customer reviews. Make sure to visit the supermarket prior to the pharmacy.", "proposed_text": "Please visit the library, the supermarket, the pharmacy, and the shopping mall today. Go to the supermarket prior to the pharmacy. Maintain a balanced compromise between location ratings and route distance.", "old_text_html": "Please visit the library, the pharmacy, the shopping mall <mark class=\"diff-del\">, and the supermarket</mark> today. <mark class=\"diff-del\">Prioritize locations with high ratings and strong customer reviews. Make sure</mark> to <mark class=\"diff-del\">visit</mark> the supermarket prior to the pharmacy.", "proposed_text_html": "Please visit the library, the <mark class=\"diff-ins\">supermarket, the</mark> pharmacy, <mark class=\"diff-ins\">and</mark> the shopping mall today. <mark class=\"diff-ins\">Go</mark> to the supermarket prior to the pharmacy. <mark class=\"diff-ins\">Maintain a balanced compromise between location ratings and route distance.</mark>", "text_changed": true, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 expressed balance; cluster heuristic erroneously inserted quality_first in V1-V3 rewrites."}, {"variant_type": "V2", "old_text": "Your itinerary today includes visiting the library, the pharmacy, the shopping mall, and the supermarket. Remember to stop at the supermarket before heading to the pharmacy. Give top priority to reputable, well-reviewed venues.", "proposed_text": "Your itinerary today includes visiting the library, supermarket, pharmacy, and shopping mall. Remember to stop at the supermarket before heading to the pharmacy. Aim for a sensible balance between well-reviewed spots and travel efficiency.", "old_text_html": "Your itinerary today includes visiting the library, <mark class=\"diff-del\">the</mark> pharmacy, <mark class=\"diff-del\">the</mark> shopping mall <mark class=\"diff-del\">, and the supermarket</mark> . Remember to stop at the supermarket before heading to the pharmacy. <mark class=\"diff-del\">Give top priority to reputable,</mark> well - reviewed <mark class=\"diff-del\">venues</mark>.", "proposed_text_html": "Your itinerary today includes visiting the library, <mark class=\"diff-ins\">supermarket,</mark> pharmacy, <mark class=\"diff-ins\">and</mark> shopping mall . Remember to stop at the supermarket before heading to the pharmacy. <mark class=\"diff-ins\">Aim for a sensible balance between</mark> well - reviewed <mark class=\"diff-ins\">spots and travel efficiency</mark>.", "text_changed": true, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 expressed balance; cluster heuristic erroneously inserted quality_first in V1-V3 rewrites."}, {"variant_type": "V3", "old_text": "Hey, need you to stop by the library, the pharmacy, the shopping mall, and the supermarket today. Be sure to hit the supermarket first before the pharmacy. Aim for the highest-rated places since quality is the main goal.", "proposed_text": "Hey, need you to stop by the library, supermarket, pharmacy, and mall today. Hit the supermarket before the pharmacy, and keep a good balance between decent reviews and driving distance.", "old_text_html": "Hey, need you to stop by the library, the pharmacy, <mark class=\"diff-del\">the shopping mall,</mark> and <mark class=\"diff-del\">the supermarket today</mark>. <mark class=\"diff-del\">Be sure to hit the supermarket first before the pharmacy. Aim for the highest - rated places since quality is the main goal.</mark>", "proposed_text_html": "Hey, need you to stop by the library, <mark class=\"diff-ins\">supermarket, pharmacy, and mall today. Hit the supermarket before</mark> the pharmacy, and <mark class=\"diff-ins\">keep a good balance between decent reviews and driving distance</mark>.", "text_changed": true, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 expressed balance; cluster heuristic erroneously inserted quality_first in V1-V3 rewrites."}]}, {"group_id": "test_147", "pois": ["shopping_mall"], "time_str": "17:00 (截止分钟 1020)", "dep_str": "无拓扑依赖", "graph_id": "test_147_graph", "variants": [{"variant_type": "V0", "old_text": "Please visit the shopping mall today. Make sure to return by 17:00. I'd prefer a balance between visiting a place with a decent rating and a reasonably efficient route. There are no specific order requirements for today's visit.", "proposed_text": "Please visit the shopping mall today. Make sure to return by 17:00. I'd prefer a balance between visiting a place with a decent rating and a reasonably efficient route. There are no specific order requirements for today's visit.", "old_text_html": "Please visit the shopping mall today. Make sure to return by 17:00. I'd prefer a balance between visiting a place with a decent rating and a reasonably efficient route. There are no specific order requirements for today's visit.", "proposed_text_html": "Please visit the shopping mall today. Make sure to return by 17:00. I'd prefer a balance between visiting a place with a decent rating and a reasonably efficient route. There are no specific order requirements for today's visit.", "text_changed": false, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 base text already balanced; weight aligned from quality_first to balanced (0.50)."}, {"variant_type": "V1", "old_text": "Please visit the shopping mall today, returning by 17:00. Prioritize locations with high ratings and strong customer reviews.", "proposed_text": "Please visit the shopping mall today, returning by 17:00. Maintain a balanced compromise between location ratings and route distance.", "old_text_html": "Please visit the shopping mall today, returning by 17: 00. <mark class=\"diff-del\">Prioritize locations with high</mark> ratings and <mark class=\"diff-del\">strong customer reviews</mark>.", "proposed_text_html": "Please visit the shopping mall today, returning by 17: 00. <mark class=\"diff-ins\">Maintain a balanced compromise between location</mark> ratings and <mark class=\"diff-ins\">route distance</mark>.", "text_changed": true, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 expressed balance; cluster heuristic erroneously inserted quality_first in V1-V3 rewrites."}, {"variant_type": "V2", "old_text": "Please ensure you are back by 17:00 after visiting the shopping mall. Give top priority to reputable, well-reviewed venues.", "proposed_text": "Please ensure you are back by 17:00 after visiting the shopping mall. Aim for a sensible balance between well-reviewed spots and travel efficiency.", "old_text_html": "Please ensure you are back by 17: 00 after visiting the shopping mall. <mark class=\"diff-del\">Give top priority to reputable,</mark> well - reviewed <mark class=\"diff-del\">venues</mark>.", "proposed_text_html": "Please ensure you are back by 17: 00 after visiting the shopping mall. <mark class=\"diff-ins\">Aim for a sensible balance between</mark> well - reviewed <mark class=\"diff-ins\">spots and travel efficiency</mark>.", "text_changed": true, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 expressed balance; cluster heuristic erroneously inserted quality_first in V1-V3 rewrites."}, {"variant_type": "V3", "old_text": "Hey, need you to stop by the shopping mall today and be back before 5 PM. Aim for the highest-rated places since quality is the main goal.", "proposed_text": "Hey, need you to stop by the shopping mall today and be back before 5 PM. Keep a good balance between decent reviews and not driving too far.", "old_text_html": "Hey, need you to stop by the shopping mall today and be back before 5 PM. <mark class=\"diff-del\">Aim for the highest - rated places since quality is the main goal</mark>.", "proposed_text_html": "Hey, need you to stop by the shopping mall today and be back before 5 PM. <mark class=\"diff-ins\">Keep a good balance between decent reviews and not driving too far</mark>.", "text_changed": true, "old_direction": "quality_first", "proposed_direction": "balanced", "old_w": 0.6, "proposed_w": 0.5, "reason": "V0 expressed balance; cluster heuristic erroneously inserted quality_first in V1-V3 rewrites."}]}];
+    const allGroupsMeta = [{"group_id": "test_001", "is_modified": true, "pois": ["bank", "library"], "time_limit": null, "dependencies": [], "v0_text": "Today, you'll visit both the library and the bank. Make sure to enjoy each stop as there isn't a rush to return. Aim for a balance between enjoying well-rated places and keeping the route manageable."}, {"group_id": "test_002", "is_modified": false, "pois": ["bank", "shopping_mall"], "time_limit": null, "dependencies": [["bank", "shopping_mall"]], "v0_text": "Today, we need to visit the bank and the shopping mall. Be sure to prioritize locations with high ratings during our outing. It's important that we go to the bank first before heading to the shopping mall."}, {"group_id": "test_003", "is_modified": false, "pois": ["bank", "pharmacy", "shopping_mall"], "time_limit": null, "dependencies": [["pharmacy", "shopping_mall"]], "v0_text": "Today, we need to visit the pharmacy, the shopping mall, and the bank. Please try to make the journey efficient as time is of the essence, but we don't have to be back by any specific time. Make sure to stop by the pharmacy before heading to the shopping mall."}, {"group_id": "test_004", "is_modified": false, "pois": ["bank", "library", "supermarket"], "time_limit": null, "dependencies": [["library", "bank"]], "v0_text": "Today, we need to visit the library, bank, and supermarket. I’d like us to prioritize places with good ratings. Also, let's make sure to head to the library before going to the bank."}, {"group_id": "test_005", "is_modified": false, "pois": ["bank", "pharmacy", "shopping_mall"], "time_limit": 1200, "dependencies": [["shopping_mall", "bank"]], "v0_text": "Today, you need to visit the shopping mall, the bank, and the pharmacy. Please make sure to return by 8 PM. Given your preferences, it's important to prioritize an efficient route. Remember, you must stop by the shopping mall before heading to the bank."}, {"group_id": "test_006", "is_modified": false, "pois": ["bank", "library", "pharmacy", "shopping_mall", "supermarket"], "time_limit": 1380, "dependencies": [["pharmacy", "bank"], ["library", "supermarket"]], "v0_text": "Today we will be visiting the pharmacy, bank, shopping mall, library, and supermarket. It's important to be back by 23:00. Let's make sure we visit places with high ratings as a priority. First, make sure to stop by the pharmacy before heading to the bank, and remember to visit the library before the supermarket."}, {"group_id": "test_007", "is_modified": true, "pois": ["library", "supermarket"], "time_limit": 1260, "dependencies": [], "v0_text": "Today, you'll need to visit the library and the supermarket. Make sure you're back by 21:00. Try to find a route that balances reasonable places with a relatively efficient journey."}, {"group_id": "test_008", "is_modified": false, "pois": ["bank", "library", "pharmacy", "shopping_mall"], "time_limit": null, "dependencies": [["pharmacy", "bank"], ["bank", "shopping_mall"]], "v0_text": "Today, you'll need to visit the library, pharmacy, bank, and shopping mall. Make sure to prioritize going to high-rated places. It's important to stop by the pharmacy before heading to the bank, and ensure you visit the bank before going to the shopping mall."}, {"group_id": "test_009", "is_modified": false, "pois": ["bank", "library", "pharmacy", "supermarket"], "time_limit": null, "dependencies": [["supermarket", "library"]], "v0_text": "Today, let's make sure to visit the pharmacy, supermarket, library, and bank. We should aim for a quick and efficient route. Remember, after going to the supermarket, head to the library next."}, {"group_id": "test_010", "is_modified": false, "pois": ["bank", "pharmacy"], "time_limit": null, "dependencies": [], "v0_text": "Today, you'll need to visit the bank and the pharmacy. Please aim to complete these visits as efficiently as possible."}, {"group_id": "test_011", "is_modified": false, "pois": ["bank", "pharmacy", "shopping_mall", "supermarket"], "time_limit": null, "dependencies": [["bank", "pharmacy"], ["pharmacy", "shopping_mall"]], "v0_text": "Today, you need to visit the bank, pharmacy, shopping mall, and supermarket. Since there's no specific time to be back, try to keep the trip as efficient as possible. Make sure to stop by the bank before heading to the pharmacy, and then visit the shopping mall after the pharmacy."}, {"group_id": "test_012", "is_modified": false, "pois": ["bank", "library", "shopping_mall", "supermarket"], "time_limit": 1380, "dependencies": [["supermarket", "shopping_mall"]], "v0_text": "Today, we need to visit the library, bank, supermarket, and shopping mall. Please ensure you're back by 11 PM. We should focus on completing the route efficiently to save time. Make sure to visit the supermarket before heading to the shopping mall."}, {"group_id": "test_013", "is_modified": false, "pois": ["library", "pharmacy", "supermarket"], "time_limit": null, "dependencies": [["supermarket", "pharmacy"]], "v0_text": "Today, you'll need to visit the library, supermarket, and pharmacy. It's important to move efficiently through your visits. Make sure to go to the supermarket before heading to the pharmacy."}, {"group_id": "test_014", "is_modified": false, "pois": ["library", "shopping_mall"], "time_limit": 1080, "dependencies": [], "v0_text": "Make sure to visit the library and then head over to the shopping mall today. Please return by 18:00. It's important to focus on places with high ratings, so enjoy some quality time at each spot."}, {"group_id": "test_015", "is_modified": false, "pois": ["bank", "pharmacy", "shopping_mall", "supermarket"], "time_limit": null, "dependencies": [["shopping_mall", "bank"]], "v0_text": "We need to visit the shopping mall, bank, supermarket, and pharmacy today. Make sure to prioritize places with high ratings when planning the route. It's important to go to the shopping mall before heading to the bank."}, {"group_id": "test_016", "is_modified": false, "pois": ["bank", "library", "pharmacy", "shopping_mall", "supermarket"], "time_limit": null, "dependencies": [["library", "supermarket"]], "v0_text": "Today, make sure to visit the bank, library, supermarket, pharmacy, and shopping mall. Since there is no rush on returning by a specific time, you can enjoy your trip. Try to balance between visiting well-rated places and keeping the route efficient. Remember to visit the library before heading to the supermarket."}, {"group_id": "test_017", "is_modified": false, "pois": ["bank", "shopping_mall", "supermarket"], "time_limit": 1440, "dependencies": [["supermarket", "shopping_mall"]], "v0_text": "Today, we need to visit the bank, the supermarket, and the shopping mall. Please make sure to return by midnight. It's important to keep the travel time minimal, so let's aim for the most efficient route possible. Also, remember that we must stop by the supermarket before heading to the shopping mall."}, {"group_id": "test_018", "is_modified": false, "pois": ["library", "pharmacy", "shopping_mall", "supermarket"], "time_limit": null, "dependencies": [["supermarket", "shopping_mall"], ["shopping_mall", "pharmacy"]], "v0_text": "Today we need to visit the supermarket, the shopping mall, the pharmacy, and the library. Let's make sure we complete our visits efficiently. We should first head to the supermarket before the shopping mall, and then we must stop by the shopping mall before going to the pharmacy."}, {"group_id": "test_019", "is_modified": false, "pois": ["bank", "library", "pharmacy", "shopping_mall", "supermarket"], "time_limit": 1080, "dependencies": [], "v0_text": "Today, we need to visit the library, supermarket, shopping mall, bank, and pharmacy. Please ensure to return by 18:00. It's important to make the route as efficient as possible. There are no specific visit order requirements, so feel free to plan the stops accordingly."}, {"group_id": "test_020", "is_modified": true, "pois": ["bank", "library", "pharmacy"], "time_limit": null, "dependencies": [["bank", "pharmacy"]], "v0_text": "Today, you'll need to visit the library, bank, and pharmacy. Make sure to maintain a good balance between visiting well-rated places and keeping your route efficient. Additionally, remember to visit the bank before going to the pharmacy."}, {"group_id": "test_021", "is_modified": false, "pois": ["bank", "supermarket"], "time_limit": 1440, "dependencies": [], "v0_text": "Today, we need to visit the supermarket and the bank. Please make sure to be back by midnight. We should aim to complete these errands efficiently."}, {"group_id": "test_022", "is_modified": false, "pois": ["bank", "pharmacy", "shopping_mall", "supermarket"], "time_limit": null, "dependencies": [["shopping_mall", "supermarket"], ["supermarket", "bank"]], "v0_text": "Today, we need to make stops at the pharmacy, shopping mall, supermarket, and bank. Make sure to prioritize visiting places that are well-regarded. Begin our trip at the shopping mall, then head to the supermarket, and after that, make your way to the bank."}, {"group_id": "test_023", "is_modified": false, "pois": ["library", "pharmacy", "supermarket"], "time_limit": 1200, "dependencies": [], "v0_text": "Today, you need to visit the library, supermarket, and pharmacy. Please make sure to return by 20:00. Prioritize stopping by places with higher ratings during your trip."}, {"group_id": "test_024", "is_modified": false, "pois": ["supermarket"], "time_limit": 1200, "dependencies": [], "v0_text": "Please visit the supermarket today and make sure to be back by 20:00. Efficiency is key, so choose the shortest route possible."}, {"group_id": "test_025", "is_modified": false, "pois": ["bank", "pharmacy"], "time_limit": 1320, "dependencies": [], "v0_text": "Today, we need to visit the bank and pharmacy. Please make sure to return by 22:00. While I value a high rating for these places, the route length is not my main concern, so focus on quality over speed. There are no specific sequences to follow, so you can choose the order of visits."}, {"group_id": "test_026", "is_modified": false, "pois": ["library", "shopping_mall", "supermarket"], "time_limit": 1080, "dependencies": [], "v0_text": "Today, make sure to visit the shopping mall, library, and supermarket. Please return by 18:00. It's important to prioritize efficiency and keep the route as short as possible."}, {"group_id": "test_027", "is_modified": false, "pois": ["bank"], "time_limit": 1380, "dependencies": [], "v0_text": "Today, you need to visit the bank. Make sure you're back by 23:00. Try to keep the trip efficient while considering a reasonable experience. There are no specific order requirements for this visit."}, {"group_id": "test_028", "is_modified": false, "pois": ["bank", "library", "pharmacy", "shopping_mall", "supermarket"], "time_limit": null, "dependencies": [["supermarket", "bank"], ["bank", "library"]], "v0_text": "Today, you need to visit the pharmacy, shopping mall, supermarket, bank, and library. It's important to prioritize high-rated places during your visits. Make sure to go to the supermarket first, then head to the bank, and finally stop by the library."}, {"group_id": "test_029", "is_modified": false, "pois": ["shopping_mall"], "time_limit": 1380, "dependencies": [], "v0_text": "Today, you should visit the shopping mall. Please make sure to return by 23:00. It's important to find a shopping mall with high ratings even if it means taking a slightly longer route. Enjoy your visit!"}, {"group_id": "test_030", "is_modified": false, "pois": ["bank", "library", "pharmacy", "shopping_mall", "supermarket"], "time_limit": null, "dependencies": [["library", "supermarket"], ["shopping_mall", "pharmacy"]], "v0_text": "Today, make sure you visit the bank, library, supermarket, shopping mall, and pharmacy. Focus on visiting places with high ratings. Start by going to the library before heading to the supermarket, and ensure you visit the shopping mall before going to the pharmacy."}, {"group_id": "test_031", "is_modified": false, "pois": ["pharmacy", "shopping_mall", "supermarket"], "time_limit": null, "dependencies": [], "v0_text": "Today, you need to visit the shopping mall, pharmacy, and supermarket. While planning your route, aim for a balance between visiting well-rated places and efficient travel. There are no specific dependencies in the order of your visits."}, {"group_id": "test_032", "is_modified": false, "pois": ["bank", "pharmacy", "shopping_mall", "supermarket"], "time_limit": null, "dependencies": [["shopping_mall", "pharmacy"]], "v0_text": "Today, you need to visit the bank, supermarket, shopping mall, and pharmacy. Since efficiency is key, focus on completing the route quickly. Make sure to visit the shopping mall before heading over to the pharmacy."}, {"group_id": "test_033", "is_modified": false, "pois": ["pharmacy"], "time_limit": 1020, "dependencies": [], "v0_text": "Today, make sure to stop by the pharmacy. Be back home by 5 PM. Given the day’s priorities, let's focus on being quick and efficient with our route."}, {"group_id": "test_034", "is_modified": false, "pois": ["bank", "shopping_mall", "supermarket"], "time_limit": null, "dependencies": [["shopping_mall", "bank"]], "v0_text": "Today, you'll need to visit the supermarket, shopping mall, and bank. We should aim for a good balance between the quality of our stops and the overall efficiency of our route. Remember to go to the shopping mall before the bank."}, {"group_id": "test_035", "is_modified": false, "pois": ["bank", "shopping_mall"], "time_limit": null, "dependencies": [["shopping_mall", "bank"]], "v0_text": "Make sure to visit the shopping mall and the bank today. Since there is no specific return time, aim for a quick and efficient trip. Start at the shopping mall before heading to the bank."}, {"group_id": "test_036", "is_modified": false, "pois": ["bank", "shopping_mall", "supermarket"], "time_limit": null, "dependencies": [], "v0_text": "Today, make sure to visit the bank, the shopping mall, and the supermarket. Let's prioritize visiting places with higher ratings to have the best experience possible."}, {"group_id": "test_037", "is_modified": false, "pois": ["bank", "library", "shopping_mall", "supermarket"], "time_limit": 1140, "dependencies": [], "v0_text": "Today, make sure to visit the bank, library, supermarket, and shopping mall. Please ensure you return by 19:00. Focus on visiting places with the highest ratings over the shortest routes for a better experience today."}, {"group_id": "test_038", "is_modified": false, "pois": ["bank", "library", "supermarket"], "time_limit": 1080, "dependencies": [["supermarket", "bank"]], "v0_text": "Today, please visit the library, the supermarket, and the bank. Make sure to be back by 18:00. Let's focus on visiting the places with the best ratings. Remember, the supermarket must be visited before heading to the bank."}, {"group_id": "test_039", "is_modified": false, "pois": ["bank", "library"], "time_limit": 1320, "dependencies": [], "v0_text": "Today, you need to visit the bank and the library. Make sure to return by 10 PM. I'm aiming for a balance between visiting well-rated places and keeping the route efficient."}, {"group_id": "test_040", "is_modified": false, "pois": ["bank"], "time_limit": 1440, "dependencies": [], "v0_text": "We need to visit the bank today. Make sure to be back by midnight. It's really important to choose places with high ratings."}, {"group_id": "test_041", "is_modified": false, "pois": ["library", "shopping_mall", "supermarket"], "time_limit": null, "dependencies": [], "v0_text": "Today, make sure to visit the supermarket, shopping mall, and library. Since there's no specific return time, prioritize a fast and efficient route to get through all the stops smoothly. Enjoy your day!"}, {"group_id": "test_042", "is_modified": false, "pois": ["bank", "library"], "time_limit": 1380, "dependencies": [["bank", "library"]], "v0_text": "Today, make sure to visit the bank and the library. Please be back by 11 PM. Aim for the quickest route as efficiency is the priority. It's important to stop by the bank before heading to the library."}, {"group_id": "test_043", "is_modified": false, "pois": ["bank", "library", "pharmacy", "shopping_mall", "supermarket"], "time_limit": null, "dependencies": [["bank", "pharmacy"], ["pharmacy", "shopping_mall"]], "v0_text": "Today, we need to visit the bank, pharmacy, shopping mall, library, and supermarket. While it's important to make these stops, we're really focusing on experiencing places with top ratings. Before heading to the pharmacy, we must stop by the bank, and we'll ensure to visit the pharmacy before going to the shopping mall."}, {"group_id": "test_044", "is_modified": false, "pois": ["bank", "supermarket"], "time_limit": null, "dependencies": [], "v0_text": "Today, you'll need to visit the supermarket and the bank. Try to keep your route as efficient as possible, given that there's no rush to return at a specific time."}, {"group_id": "test_045", "is_modified": false, "pois": ["library"], "time_limit": null, "dependencies": [], "v0_text": "The main task for today is to visit the library. Since efficiency is crucial, prioritize planning your route to ensure minimal travel time."}, {"group_id": "test_046", "is_modified": false, "pois": ["library", "shopping_mall"], "time_limit": null, "dependencies": [], "v0_text": "Today, you'll be visiting the library and the shopping mall. Please prioritize an efficient route as there are no specific dependencies or return time constraints."}, {"group_id": "test_047", "is_modified": false, "pois": ["bank", "pharmacy", "shopping_mall", "supermarket"], "time_limit": 1380, "dependencies": [], "v0_text": "Today, make sure to visit the pharmacy, the shopping mall, the supermarket, and the bank. Please ensure you return by 23:00. To make the most of your day, focus on completing the route efficiently. There are no specific places that need to be visited before others, so feel free to choose the order that works best for you."}, {"group_id": "test_048", "is_modified": false, "pois": ["shopping_mall"], "time_limit": 1020, "dependencies": [], "v0_text": "Make sure to visit the shopping mall today. Please be back by 5 PM. Aim for a good balance between the quality of the visit and the efficiency of the route."}, {"group_id": "test_049", "is_modified": false, "pois": ["bank", "library", "pharmacy", "shopping_mall", "supermarket"], "time_limit": null, "dependencies": [["library", "bank"]], "v0_text": "Today, we'll be visiting the shopping mall, supermarket, library, bank, and pharmacy. Let's prioritize visiting locations with high ratings. Remember, we need to visit the library before heading to the bank."}, {"group_id": "test_050", "is_modified": false, "pois": ["bank", "library", "pharmacy", "supermarket"], "time_limit": 1320, "dependencies": [], "v0_text": "Today, you need to visit the supermarket, bank, pharmacy, and library. Please ensure you return by 22:00. Aim to make your visits efficient and keep the route short."}, {"group_id": "test_051", "is_modified": false, "pois": ["shopping_mall", "supermarket"], "time_limit": null, "dependencies": [], "v0_text": "Today, we'd like to visit the supermarket and the shopping mall. There's no specific return time, so feel free to take your time. It's important that we prioritize visiting places with high ratings, ensuring we enjoy the best experiences available."}, {"group_id": "test_052", "is_modified": false, "pois": ["bank", "library", "pharmacy", "shopping_mall", "supermarket"], "time_limit": 1200, "dependencies": [["pharmacy", "library"], ["shopping_mall", "bank"]], "v0_text": "Today, make sure to visit the supermarket, pharmacy, library, shopping mall, and bank. Aim to be back by 20:00. It's important to keep the route efficient, so quick stops are preferred. Be sure to stop by the pharmacy before heading to the library, and visit the shopping mall prior to going to the bank."}, {"group_id": "test_053", "is_modified": false, "pois": ["pharmacy"], "time_limit": 1320, "dependencies": [], "v0_text": "We need to visit the pharmacy today. Please make sure to return by 22:00. It's important to take the most efficient route possible, so prioritize quick travel. There are no specific order constraints for this visit."}, {"group_id": "test_054", "is_modified": false, "pois": ["bank", "library", "pharmacy", "shopping_mall", "supermarket"], "time_limit": null, "dependencies": [["shopping_mall", "pharmacy"]], "v0_text": "Today, make sure to visit the bank, library, shopping mall, pharmacy, and supermarket. Please prioritize being efficient as the route length is a key consideration. Ensure you go to the shopping mall before heading to the pharmacy."}, {"group_id": "test_055", "is_modified": false, "pois": ["pharmacy", "supermarket"], "time_limit": null, "dependencies": [], "v0_text": "Today, we need to visit the pharmacy and the supermarket. It's important to check out these places with the best reviews, even if it takes a bit longer. There are no specific sequences we need to follow for visiting these places."}, {"group_id": "test_056", "is_modified": false, "pois": ["bank", "library", "pharmacy", "shopping_mall", "supermarket"], "time_limit": 1200, "dependencies": [["bank", "shopping_mall"]], "v0_text": "Today, you need to visit the library, pharmacy, bank, shopping mall, and supermarket. Be sure to return by 20:00. Focus on visiting places with excellent ratings along the way. Remember to drop by the bank before heading to the shopping mall."}, {"group_id": "test_057", "is_modified": false, "pois": ["bank"], "time_limit": 1440, "dependencies": [], "v0_text": "Today, you just need to visit the bank. Please make sure to return by midnight. It's important to be efficient with your timing."}, {"group_id": "test_058", "is_modified": false, "pois": ["bank", "library", "supermarket"], "time_limit": 1320, "dependencies": [], "v0_text": "Today, we need to make stops at the library, supermarket, and bank. Please ensure we are back by 22:00. Make sure to prioritize visiting places that offer the best experiences."}, {"group_id": "test_059", "is_modified": false, "pois": ["bank", "pharmacy", "shopping_mall", "supermarket"], "time_limit": 1020, "dependencies": [["supermarket", "bank"], ["bank", "pharmacy"]], "v0_text": "Today, you need to visit the supermarket, bank, pharmacy, and shopping mall. Please make sure to return by 17:00. Since time efficiency is crucial, focus on the quickest route possible. First, go to the supermarket before heading to the bank, and make sure you visit the bank before stopping by the pharmacy."}, {"group_id": "test_060", "is_modified": false, "pois": ["library", "pharmacy", "shopping_mall", "supermarket"], "time_limit": null, "dependencies": [["pharmacy", "supermarket"], ["supermarket", "shopping_mall"]], "v0_text": "Today, you'll be visiting the pharmacy, supermarket, shopping mall, and library. It's important to prioritize visiting high-rated places throughout your journey. Start by visiting the pharmacy before heading to the supermarket, and make sure to visit the supermarket before going to the shopping mall."}, {"group_id": "test_061", "is_modified": false, "pois": ["bank", "library", "shopping_mall", "supermarket"], "time_limit": 1260, "dependencies": [["bank", "supermarket"]], "v0_text": "Today's itinerary includes visiting the library, bank, supermarket, and shopping mall. Please make sure to be back by 21:00. Prioritize efficiency when planning your route, although it's okay to look for well-rated places too. Remember to stop by the bank before heading to the supermarket."}, {"group_id": "test_062", "is_modified": false, "pois": ["pharmacy"], "time_limit": null, "dependencies": [], "v0_text": "Today, we need to visit the pharmacy. Let's aim for a balance between a good experience and efficiency."}, {"group_id": "test_063", "is_modified": false, "pois": ["bank", "library", "pharmacy", "shopping_mall"], "time_limit": 1140, "dependencies": [["library", "shopping_mall"], ["pharmacy", "bank"]], "v0_text": "Today, you'll need to visit the library, shopping mall, pharmacy, and bank. Please ensure that you return by 19:00. Given the time constraints, it would be best to aim for the most efficient route possible. Start your day by visiting the library before heading to the shopping mall, and make sure to drop by the pharmacy before going to the bank."}, {"group_id": "test_064", "is_modified": false, "pois": ["library", "pharmacy", "shopping_mall", "supermarket"], "time_limit": null, "dependencies": [["library", "supermarket"], ["supermarket", "shopping_mall"]], "v0_text": "Today, you need to visit the pharmacy, library, supermarket, and shopping mall. Since there's no specific time to be back, you can focus on getting through your list efficiently. Make sure to go to the library before heading to the supermarket, and visit the supermarket prior to the shopping mall."}, {"group_id": "test_065", "is_modified": false, "pois": ["bank", "library", "pharmacy", "shopping_mall"], "time_limit": 1260, "dependencies": [], "v0_text": "Today, you'll need to visit the pharmacy, shopping mall, bank, and library. Be sure to return home by 21:00. It's important to move efficiently and minimize travel time between these locations."}, {"group_id": "test_066", "is_modified": false, "pois": ["bank", "pharmacy", "shopping_mall", "supermarket"], "time_limit": null, "dependencies": [["supermarket", "bank"]], "v0_text": "Today, make sure to visit the pharmacy, supermarket, bank, and shopping mall. We should plan to take the most efficient route possible. Remember to go to the supermarket before heading to the bank."}, {"group_id": "test_067", "is_modified": false, "pois": ["library"], "time_limit": 1380, "dependencies": [], "v0_text": "Today, make sure to stop by the library. Please return by 23:00. Prioritize getting there efficiently while keeping a reasonable eye on the ratings."}, {"group_id": "test_068", "is_modified": false, "pois": ["bank", "library", "pharmacy", "shopping_mall", "supermarket"], "time_limit": null, "dependencies": [["shopping_mall", "library"]], "v0_text": "Today, we'll visit the shopping mall, library, pharmacy, bank, and supermarket. Ensure we stop at the shopping mall before heading to the library. Let's aim for a balance between visiting well-rated places and keeping our travel efficient."}, {"group_id": "test_069", "is_modified": false, "pois": ["library", "shopping_mall", "supermarket"], "time_limit": 1440, "dependencies": [], "v0_text": "Today, please make sure to visit the shopping mall, supermarket, and library. Ensure you're back by midnight. Efficiency is key, so aim for a route that saves time while visiting all the places. There are no specific sequences needed for visiting these locations."}, {"group_id": "test_070", "is_modified": false, "pois": ["bank", "pharmacy", "shopping_mall", "supermarket"], "time_limit": null, "dependencies": [["pharmacy", "shopping_mall"]], "v0_text": "Today, you'll need to visit the supermarket, pharmacy, shopping mall, and bank. As time is of the essence, an efficient route should be prioritized. Make sure to stop by the pharmacy before heading to the shopping mall."}, {"group_id": "test_071", "is_modified": false, "pois": ["library"], "time_limit": 1020, "dependencies": [], "v0_text": "Today, you'll need to visit the library. Make sure to return by 5:00 PM. It's important to keep your route efficient, so plan your visit accordingly."}, {"group_id": "test_072", "is_modified": false, "pois": ["bank", "library", "shopping_mall"], "time_limit": null, "dependencies": [["library", "shopping_mall"]], "v0_text": "Today, make sure to visit the library, shopping mall, and bank. We should prioritize visiting places with high ratings. Start at the library before heading to the shopping mall."}, {"group_id": "test_073", "is_modified": false, "pois": ["library", "shopping_mall"], "time_limit": null, "dependencies": [["library", "shopping_mall"]], "v0_text": "Today, we need to visit the library and the shopping mall. To make the most of our time, let's focus on visiting in the most efficient order. Be sure to stop by the library before heading to the shopping mall."}, {"group_id": "test_074", "is_modified": false, "pois": ["bank", "library", "pharmacy", "shopping_mall", "supermarket"], "time_limit": 1020, "dependencies": [["library", "pharmacy"]], "v0_text": "Today, we need to visit the supermarket, shopping mall, bank, library, and pharmacy. Please make sure we're back by 17:00. It's important that we prioritize visiting places with high ratings. Remember, we must go to the library before heading to the pharmacy."}, {"group_id": "test_075", "is_modified": false, "pois": ["bank", "library", "supermarket"], "time_limit": 1020, "dependencies": [], "v0_text": "Today, make sure to visit the library, the supermarket, and the bank. Please be home by 17:00. It's important to focus on places with higher ratings, so prioritize them even if it takes a little longer."}, {"group_id": "test_076", "is_modified": false, "pois": ["library", "pharmacy", "shopping_mall", "supermarket"], "time_limit": null, "dependencies": [["library", "shopping_mall"], ["supermarket", "pharmacy"]], "v0_text": "Today, please make sure to visit the library, shopping mall, supermarket, and pharmacy. It's important to prioritize visiting places with high ratings during this trip. Start by heading to the library before moving on to the shopping mall, and make sure to stop at the supermarket before you visit the pharmacy."}, {"group_id": "test_077", "is_modified": false, "pois": ["library"], "time_limit": 1080, "dependencies": [], "v0_text": "Today, you need to visit the library. Please make sure to return by 18:00. Prioritize efficiency and quick routes to ensure everything is completed on time."}, {"group_id": "test_078", "is_modified": false, "pois": ["bank", "library", "pharmacy", "shopping_mall", "supermarket"], "time_limit": null, "dependencies": [["shopping_mall", "supermarket"]], "v0_text": "Today, make sure to visit the pharmacy, library, bank, shopping mall, and supermarket. It's important to be efficient with the route to save time. Remember to stop by the shopping mall before heading to the supermarket."}, {"group_id": "test_079", "is_modified": false, "pois": ["bank", "library", "pharmacy"], "time_limit": null, "dependencies": [["pharmacy", "bank"]], "v0_text": "Today, make sure to visit the library, pharmacy, and bank. It's essential to prioritize places with the best ratings. Remember to stop by the pharmacy before heading to the bank."}, {"group_id": "test_080", "is_modified": true, "pois": ["library", "shopping_mall"], "time_limit": 1440, "dependencies": [], "v0_text": "Today, you need to visit the library and the shopping mall. Make sure to be back by midnight. Try to find a good balance between visiting well-rated places and not taking too long."}, {"group_id": "test_081", "is_modified": false, "pois": ["bank", "pharmacy", "shopping_mall", "supermarket"], "time_limit": null, "dependencies": [["pharmacy", "bank"], ["shopping_mall", "supermarket"]], "v0_text": "Today, make sure to visit the pharmacy, the bank, the shopping mall, and the supermarket. I'd really like to focus on visiting the places with the best feedback. Start by going to the pharmacy before heading to the bank. Also, check out the shopping mall before you pop into the supermarket."}, {"group_id": "test_082", "is_modified": false, "pois": ["bank", "library", "shopping_mall"], "time_limit": 1440, "dependencies": [], "v0_text": "Today, you'll need to visit the library, shopping mall, and bank. Make sure you return by midnight. Since it's important to keep the routes short and efficient, try to plan your visits accordingly. You can choose the order of visits as there are no specific dependencies."}, {"group_id": "test_083", "is_modified": false, "pois": ["bank", "library"], "time_limit": null, "dependencies": [], "v0_text": "Today we need to visit the bank and the library. Considering we have no time constraint for returning, let's make sure our route is efficient to save time. There are no specific dependencies, so we can visit in any order that suits us best."}, {"group_id": "test_084", "is_modified": false, "pois": ["bank", "library", "shopping_mall"], "time_limit": null, "dependencies": [["bank", "library"]], "v0_text": "Today, the plan is to visit the bank, the library, and the shopping mall. I’d prefer if the route is efficient to save time. Make sure to stop by the bank before heading over to the library."}, {"group_id": "test_085", "is_modified": false, "pois": ["shopping_mall", "supermarket"], "time_limit": null, "dependencies": [["shopping_mall", "supermarket"]], "v0_text": "We need to visit the shopping mall and the supermarket today. Let's focus on finding places with good ratings. Be sure to head to the shopping mall before making our way to the supermarket."}, {"group_id": "test_086", "is_modified": false, "pois": ["library"], "time_limit": null, "dependencies": [], "v0_text": "We plan to visit the library today. It would be great to find a balance between a highly rated visit and an efficient route."}, {"group_id": "test_087", "is_modified": false, "pois": ["pharmacy"], "time_limit": 1260, "dependencies": [], "v0_text": "Please make sure to visit the pharmacy today. We need to be back by 21:00. Let's try to make the trip as swift as possible for efficiency."}, {"group_id": "test_088", "is_modified": false, "pois": ["pharmacy"], "time_limit": 1380, "dependencies": [], "v0_text": "Make sure to visit the pharmacy today. Please be back by 23:00. Try to ensure a balance between the quality of your visit and the efficiency of your route."}, {"group_id": "test_089", "is_modified": false, "pois": ["bank", "library", "pharmacy", "shopping_mall", "supermarket"], "time_limit": null, "dependencies": [["library", "bank"], ["shopping_mall", "pharmacy"], ["pharmacy", "supermarket"]], "v0_text": "Today, please make sure you visit the library, bank, shopping mall, pharmacy, and supermarket. It would be great if you could complete these stops in a quick and efficient manner. Start by going to the library, then proceed to the bank. Afterwards, make your way to the shopping mall before heading to the pharmacy. Finally, finish your errands at the supermarket."}, {"group_id": "test_090", "is_modified": false, "pois": ["shopping_mall"], "time_limit": null, "dependencies": [], "v0_text": "Today's plan is to visit the shopping mall. We should aim to make this trip as quick and efficient as possible."}, {"group_id": "test_091", "is_modified": true, "pois": ["library"], "time_limit": 1140, "dependencies": [], "v0_text": "Today, make sure to visit the library. Please return by 19:00. Aim to balance the quality of the visit with a reasonable route."}, {"group_id": "test_092", "is_modified": false, "pois": ["bank", "library", "pharmacy", "shopping_mall", "supermarket"], "time_limit": null, "dependencies": [["shopping_mall", "library"]], "v0_text": "Today we need to visit the pharmacy, supermarket, shopping mall, library, and bank. While we're out, let’s try to focus on visiting places with the best ratings. Make sure to stop by the shopping mall before heading to the library."}, {"group_id": "test_093", "is_modified": false, "pois": ["bank", "library", "pharmacy", "shopping_mall"], "time_limit": null, "dependencies": [], "v0_text": "We need to visit the shopping mall, library, pharmacy, and bank today. I'm really keen on exploring the highly rated spots, even if it takes a bit longer."}, {"group_id": "test_094", "is_modified": false, "pois": ["bank", "library", "pharmacy", "shopping_mall"], "time_limit": 1380, "dependencies": [["bank", "pharmacy"]], "v0_text": "Today, we need to visit the bank, pharmacy, shopping mall, and library. Please make sure you return by 23:00. While balancing both the quality of places and the efficiency of the route, start with the bank before heading to the pharmacy."}, {"group_id": "test_095", "is_modified": false, "pois": ["pharmacy", "shopping_mall"], "time_limit": 1440, "dependencies": [], "v0_text": "Today, you need to visit the pharmacy and the shopping mall. Please make sure to be back by midnight. It's important to choose places with high ratings over shorter routes, so prioritize visiting those. There are no specific order requirements for these visits."}, {"group_id": "test_096", "is_modified": false, "pois": ["bank", "library", "pharmacy", "shopping_mall", "supermarket"], "time_limit": 1260, "dependencies": [["pharmacy", "shopping_mall"], ["shopping_mall", "supermarket"], ["supermarket", "library"]], "v0_text": "Today, make sure you visit the pharmacy, shopping mall, supermarket, library, and bank. You need to be back by 9 PM. Since we're prioritizing efficiency, please take the most direct route possible. Remember, you should visit the pharmacy before the shopping mall, the shopping mall before the supermarket, and the supermarket before the library."}, {"group_id": "test_097", "is_modified": false, "pois": ["bank", "library", "pharmacy", "shopping_mall", "supermarket"], "time_limit": null, "dependencies": [["supermarket", "pharmacy"]], "v0_text": "Today, you need to visit the library, bank, supermarket, pharmacy, and shopping mall. Since timing is crucial, try to make your trip as efficient as possible. Remember to visit the supermarket before heading to the pharmacy."}, {"group_id": "test_098", "is_modified": false, "pois": ["library", "pharmacy"], "time_limit": 1260, "dependencies": [], "v0_text": "Today, you need to visit the library and the pharmacy. Please make sure to return by 21:00. It's important to prioritize places with higher ratings, so keep an eye out for any options that offer exceptional quality."}, {"group_id": "test_099", "is_modified": false, "pois": ["bank", "library"], "time_limit": null, "dependencies": [["bank", "library"]], "v0_text": "Today, we need to visit the bank and the library. Ensure we prioritize an efficient route. Start at the bank before heading to the library."}, {"group_id": "test_100", "is_modified": true, "pois": ["bank", "library", "pharmacy", "shopping_mall", "supermarket"], "time_limit": 1440, "dependencies": [], "v0_text": "Today, you need to visit the bank, pharmacy, shopping mall, library, and supermarket. Make sure to be back by midnight. Try to balance visiting places with good ratings while still keeping your route efficient."}, {"group_id": "test_101", "is_modified": false, "pois": ["pharmacy", "shopping_mall"], "time_limit": null, "dependencies": [["pharmacy", "shopping_mall"]], "v0_text": "Today, make sure to visit the pharmacy and then head to the shopping mall. There's a need to be as efficient as possible with the route. Remember, you must stop by the pharmacy before you go to the shopping mall."}, {"group_id": "test_102", "is_modified": true, "pois": ["bank", "pharmacy", "supermarket"], "time_limit": 1380, "dependencies": [["supermarket", "pharmacy"]], "v0_text": "Today's itinerary includes visits to the supermarket, the pharmacy, and the bank. Please make sure to return by 11 p.m. We aim for a good balance between visiting quality places and keeping our route efficient. Remember to stop by the supermarket before heading to the pharmacy."}, {"group_id": "test_103", "is_modified": false, "pois": ["bank", "library", "pharmacy", "shopping_mall", "supermarket"], "time_limit": 1200, "dependencies": [["bank", "supermarket"], ["supermarket", "shopping_mall"]], "v0_text": "Today, you need to visit the library, pharmacy, bank, supermarket, and shopping mall. You must be back by 20:00. It is quite important to prioritize visiting places with high ratings. Ensure you go to the bank before heading to the supermarket, and visit the supermarket before the shopping mall."}, {"group_id": "test_104", "is_modified": false, "pois": ["library", "pharmacy", "shopping_mall", "supermarket"], "time_limit": 1200, "dependencies": [], "v0_text": "Today, make sure to visit the shopping mall, supermarket, library, and pharmacy. Please be home by 20:00. It's important to focus on taking the shortest route possible to get through the day efficiently. There are no specific order requirements for these visits."}, {"group_id": "test_105", "is_modified": false, "pois": ["shopping_mall"], "time_limit": 1140, "dependencies": [], "v0_text": "Please visit the shopping mall today. Make sure you return by 19:00. It's really important to focus on places with excellent ratings, even if it means taking a longer route."}, {"group_id": "test_106", "is_modified": false, "pois": ["bank", "pharmacy"], "time_limit": null, "dependencies": [], "v0_text": "Today, we need to visit the bank and the pharmacy. Let's make sure we find a good balance between places with decent ratings and a route that is not too lengthy."}, {"group_id": "test_107", "is_modified": false, "pois": ["bank", "pharmacy"], "time_limit": 1140, "dependencies": [], "v0_text": "Today, make sure to visit the pharmacy and the bank. Please return by 19:00. Aim to enjoy high-rated places along the way."}, {"group_id": "test_108", "is_modified": true, "pois": ["bank", "library", "pharmacy", "shopping_mall", "supermarket"], "time_limit": null, "dependencies": [["pharmacy", "supermarket"]], "v0_text": "Today, you need to visit the bank, pharmacy, supermarket, library, and shopping mall. While it's important to find a balance between high-rated places and an efficient route, make sure to stop by the pharmacy before heading to the supermarket."}, {"group_id": "test_109", "is_modified": false, "pois": ["bank", "library", "pharmacy", "shopping_mall"], "time_limit": null, "dependencies": [["shopping_mall", "library"]], "v0_text": "Today, visit the pharmacy, bank, shopping mall, and library. As there is no specific time to return, aim for a balance between seeing enjoyable places and maintaining an efficient route. Ensure the shopping mall is visited before the library."}, {"group_id": "test_110", "is_modified": false, "pois": ["bank", "pharmacy"], "time_limit": 1260, "dependencies": [], "v0_text": "Today, we need to visit both the pharmacy and the bank. Make sure to be back by 9 PM. It's important to be quick and efficient during these visits, so please keep that in mind as you plan the route."}, {"group_id": "test_111", "is_modified": false, "pois": ["pharmacy", "shopping_mall", "supermarket"], "time_limit": null, "dependencies": [["pharmacy", "supermarket"]], "v0_text": "Today, make sure to visit the pharmacy, the supermarket, and the shopping mall. Since there's no specific return time, aim to complete this as efficiently as possible. Additionally, please ensure you stop by the pharmacy before heading to the supermarket."}, {"group_id": "test_112", "is_modified": true, "pois": ["pharmacy"], "time_limit": 1380, "dependencies": [], "v0_text": "Today, make sure to visit the pharmacy. Please be back by 23:00. Find a balance between visiting a well-rated location and ensuring the trip is not too lengthy."}, {"group_id": "test_113", "is_modified": false, "pois": ["bank", "library", "shopping_mall", "supermarket"], "time_limit": null, "dependencies": [["library", "bank"]], "v0_text": "Today, we'll be visiting the shopping mall, supermarket, library, and bank. It's important to get through the list as efficiently as possible. Make sure to stop by the library before heading to the bank."}, {"group_id": "test_114", "is_modified": false, "pois": ["bank", "shopping_mall"], "time_limit": 1380, "dependencies": [], "v0_text": "Today, you need to visit the shopping mall and the bank. Make sure you return by 23:00. Focus on the most efficient route to complete your visits quickly."}, {"group_id": "test_115", "is_modified": true, "pois": ["bank", "library", "pharmacy", "shopping_mall", "supermarket"], "time_limit": null, "dependencies": [["library", "supermarket"]], "v0_text": "Today, you'll be heading out to visit the shopping mall, bank, pharmacy, library, and the supermarket. You should try to find a balance between visiting the best-rated places and keeping your route efficient. Make sure to stop by the library before you go to the supermarket."}, {"group_id": "test_116", "is_modified": false, "pois": ["bank", "shopping_mall", "supermarket"], "time_limit": 1080, "dependencies": [], "v0_text": "Today, you need to visit the shopping mall, supermarket, and bank. Please make sure to return by 18:00. It’s important to have an efficient route for these visits."}, {"group_id": "test_117", "is_modified": false, "pois": ["bank", "supermarket"], "time_limit": 1140, "dependencies": [["supermarket", "bank"]], "v0_text": "Today, you need to visit the supermarket and the bank. Make sure to be back by 19:00. It's important to prioritize efficiency to make the most out of the trip. Please visit the supermarket before heading to the bank."}, {"group_id": "test_118", "is_modified": false, "pois": ["bank", "library", "pharmacy", "shopping_mall", "supermarket"], "time_limit": 1080, "dependencies": [["pharmacy", "supermarket"]], "v0_text": "Today, make sure to visit the shopping mall, bank, pharmacy, supermarket, and library. Please return by 18:00. Focus on exploring places with excellent ratings. Remember to visit the pharmacy before heading to the supermarket."}, {"group_id": "test_119", "is_modified": false, "pois": ["library", "pharmacy", "shopping_mall"], "time_limit": 1440, "dependencies": [], "v0_text": "Today, make sure to visit the pharmacy, library, and shopping mall. You should return by midnight. Focus on visiting places that are highly rated, even if it might mean a slightly longer trip. There are no specific rules about the order, so you can visit each place as you choose."}, {"group_id": "test_120", "is_modified": false, "pois": ["pharmacy", "shopping_mall"], "time_limit": null, "dependencies": [], "v0_text": "Today, make sure to visit the shopping mall and then head over to the pharmacy. It's important to visit the highest-rated places, so take your time and enjoy each stop. There is no specific order you need to follow for these visits."}, {"group_id": "test_121", "is_modified": false, "pois": ["shopping_mall"], "time_limit": 1200, "dependencies": [], "v0_text": "Today, make sure to visit the shopping mall. Plan to be back by 8 PM. Prioritize visiting places with higher ratings during your trip. There are no specific sequences required this time."}, {"group_id": "test_122", "is_modified": false, "pois": ["bank", "library", "pharmacy", "shopping_mall", "supermarket"], "time_limit": 1260, "dependencies": [["bank", "library"]], "v0_text": "Today, you need to visit the bank, library, supermarket, pharmacy, and shopping mall. Make sure to return home by 21:00. Prioritize visiting places with higher ratings to ensure a quality experience. It's important to stop by the bank before heading to the library."}, {"group_id": "test_123", "is_modified": false, "pois": ["supermarket"], "time_limit": 1320, "dependencies": [], "v0_text": "Today, you'll need to visit the supermarket. Make sure to return home by 22:00. The quickest and most efficient route is a priority, so aim to minimize travel time."}, {"group_id": "test_124", "is_modified": false, "pois": ["bank", "library", "shopping_mall", "supermarket"], "time_limit": null, "dependencies": [["bank", "supermarket"], ["supermarket", "library"]], "v0_text": "Today, make sure to visit the shopping mall, bank, supermarket, and library. Time is of the essence, so prioritize an efficient route to accomplish these visits. Start at the bank, then head to the supermarket, and finish at the library to ensure a smooth sequence."}, {"group_id": "test_125", "is_modified": false, "pois": ["pharmacy", "shopping_mall"], "time_limit": 1440, "dependencies": [], "v0_text": "Today, we need to visit the pharmacy and the shopping mall. Please ensure to be back by midnight. We should aim for a quick and efficient route given our priorities."}, {"group_id": "test_126", "is_modified": false, "pois": ["bank", "library", "shopping_mall"], "time_limit": 1140, "dependencies": [["shopping_mall", "bank"]], "v0_text": "Today, we need to visit the shopping mall, bank, and library. Please ensure we are back by 19:00. Let's aim to visit places that are highly rated to make the most of our day. Start with the shopping mall before heading to the bank."}, {"group_id": "test_127", "is_modified": false, "pois": ["bank", "library", "pharmacy", "supermarket"], "time_limit": null, "dependencies": [["bank", "library"], ["library", "supermarket"]], "v0_text": "Today, we have to visit the bank, library, supermarket, and pharmacy. Let's focus on visiting highly rated places. Please make sure to go to the bank first before heading to the library, and visit the library before going to the supermarket."}, {"group_id": "test_128", "is_modified": false, "pois": ["bank", "pharmacy"], "time_limit": null, "dependencies": [["bank", "pharmacy"]], "v0_text": "Today, you'll need to visit the bank and the pharmacy. Please focus on a quick and efficient route. Be sure to stop by the bank before heading over to the pharmacy."}, {"group_id": "test_129", "is_modified": true, "pois": ["bank", "shopping_mall", "supermarket"], "time_limit": null, "dependencies": [["shopping_mall", "supermarket"]], "v0_text": "Today, you need to visit the bank, shopping mall, and supermarket. It would be great if you could find a balance between visiting well-rated spots and not taking too long on the route. Remember to stop by the shopping mall before heading to the supermarket."}, {"group_id": "test_130", "is_modified": false, "pois": ["bank", "pharmacy", "supermarket"], "time_limit": 1260, "dependencies": [["pharmacy", "supermarket"]], "v0_text": "Today, you need to visit the bank, pharmacy, and supermarket. Be sure to return by 21:00. While you're out, try to balance both visiting well-rated places and keeping the route efficient. Remember to stop by the pharmacy before heading to the supermarket."}, {"group_id": "test_131", "is_modified": false, "pois": ["library", "pharmacy", "shopping_mall", "supermarket"], "time_limit": null, "dependencies": [["pharmacy", "supermarket"]], "v0_text": "Today, you'll need to visit the pharmacy, supermarket, shopping mall, and library. Make sure the trip is as efficient as possible to save time. Be sure to stop by the pharmacy before heading to the supermarket."}, {"group_id": "test_132", "is_modified": false, "pois": ["bank", "library", "supermarket"], "time_limit": null, "dependencies": [], "v0_text": "Today, we need to visit the bank, the supermarket, and the library. Since there's no rush to return by a specific time, let's make sure to balance visiting high-rated places with an efficient route."}, {"group_id": "test_133", "is_modified": false, "pois": ["supermarket"], "time_limit": 1260, "dependencies": [], "v0_text": "Today, please make sure to visit the supermarket. You need to be back by 9 PM. It's important to prioritize a place with a high rating."}, {"group_id": "test_134", "is_modified": false, "pois": ["bank"], "time_limit": 1260, "dependencies": [], "v0_text": "Today, you need to visit the bank. Make sure to be back by 21:00. Prioritize visiting a high-rated location even if it means a longer route."}, {"group_id": "test_135", "is_modified": false, "pois": ["pharmacy", "shopping_mall", "supermarket"], "time_limit": 1080, "dependencies": [], "v0_text": "Today, you need to visit the supermarket, shopping mall, and pharmacy. Make sure you're back by 18:00. Prioritize visiting places with high ratings."}, {"group_id": "test_136", "is_modified": false, "pois": ["bank", "library", "pharmacy"], "time_limit": 1020, "dependencies": [["library", "bank"], ["bank", "pharmacy"]], "v0_text": "Let's visit the library, the bank, and the pharmacy today. We need to be back by 5 PM. It's important to prioritize visiting places with good reviews. Start at the library, then go to the bank, and finally head to the pharmacy."}, {"group_id": "test_137", "is_modified": false, "pois": ["library", "pharmacy", "supermarket"], "time_limit": null, "dependencies": [["pharmacy", "library"]], "v0_text": "Today, we need to visit the supermarket, pharmacy, and library. Let's make sure our route is efficient and keep things quick. Please remember to visit the pharmacy before heading to the library."}, {"group_id": "test_138", "is_modified": false, "pois": ["library", "pharmacy", "supermarket"], "time_limit": 1320, "dependencies": [["pharmacy", "library"]], "v0_text": "Today, you need to visit the pharmacy, library, and supermarket. Please ensure you return by 22:00. Given the schedule, it would be best to take the quickest route possible. Make sure to stop by the pharmacy before heading to the library."}, {"group_id": "test_139", "is_modified": false, "pois": ["bank", "library", "pharmacy", "shopping_mall", "supermarket"], "time_limit": null, "dependencies": [["pharmacy", "shopping_mall"], ["shopping_mall", "supermarket"], ["supermarket", "library"]], "v0_text": "Today, please make sure to visit the pharmacy, shopping mall, supermarket, library, and bank. Since our priority is to explore highly rated places, let's focus on visiting establishments with good ratings. Begin your journey by going to the pharmacy, and after that, proceed to the shopping mall. Once you're done shopping, head to the supermarket, and make sure to visit the library afterwards."}, {"group_id": "test_140", "is_modified": false, "pois": ["bank", "library", "pharmacy", "shopping_mall", "supermarket"], "time_limit": 1200, "dependencies": [["shopping_mall", "bank"]], "v0_text": "Today, make sure to visit the pharmacy, shopping mall, bank, library, and supermarket. Please be back by 20:00. Let's aim for the places with excellent ratings while planning this outing. Remember to stop by the shopping mall before heading to the bank."}, {"group_id": "test_141", "is_modified": true, "pois": ["bank", "library"], "time_limit": null, "dependencies": [["bank", "library"]], "v0_text": "Today, you need to visit the bank and the library. Aim for a balance between visiting well-rated places and keeping the route efficient. Make sure to go to the bank before heading to the library."}, {"group_id": "test_142", "is_modified": true, "pois": ["library", "pharmacy", "shopping_mall", "supermarket"], "time_limit": null, "dependencies": [["supermarket", "pharmacy"]], "v0_text": "Today, you'll need to visit the library, supermarket, pharmacy, and shopping mall. Please ensure you consider places that offer a good balance of quality and ease of access. Remember to go to the supermarket before heading to the pharmacy."}, {"group_id": "test_143", "is_modified": false, "pois": ["shopping_mall", "supermarket"], "time_limit": null, "dependencies": [], "v0_text": "Please make sure to visit the supermarket and the shopping mall today. Since there is no time constraint, you can plan your route efficiently as the journey should be as quick and as straightforward as possible."}, {"group_id": "test_144", "is_modified": false, "pois": ["bank", "library", "pharmacy", "shopping_mall", "supermarket"], "time_limit": null, "dependencies": [["shopping_mall", "pharmacy"], ["bank", "library"]], "v0_text": "Today, you need to visit the shopping mall, pharmacy, bank, library, and supermarket. Maximize your route efficiency to ensure a quick outing. Make sure you go to the shopping mall before heading to the pharmacy, and visit the bank before proceeding to the library."}, {"group_id": "test_145", "is_modified": false, "pois": ["library", "shopping_mall"], "time_limit": null, "dependencies": [["shopping_mall", "library"]], "v0_text": "Today, we need to visit the shopping mall and the library. While there's no specific time to return, let's prioritize exploring places with a good reputation. We'll start at the shopping mall before heading to the library."}, {"group_id": "test_146", "is_modified": false, "pois": ["bank", "library", "pharmacy", "shopping_mall", "supermarket"], "time_limit": null, "dependencies": [["pharmacy", "library"], ["bank", "shopping_mall"]], "v0_text": "Today, you'll need to visit the supermarket, pharmacy, library, bank, and shopping mall. Given the busy schedule, it's crucial to plan an efficient route. Make sure to stop by the pharmacy before heading to the library and visit the bank before going to the shopping mall."}, {"group_id": "test_147", "is_modified": true, "pois": ["shopping_mall"], "time_limit": 1020, "dependencies": [], "v0_text": "Please visit the shopping mall today. Make sure to return by 17:00. I'd prefer a balance between visiting a place with a decent rating and a reasonably efficient route. There are no specific order requirements for today's visit."}, {"group_id": "test_148", "is_modified": false, "pois": ["bank", "library", "pharmacy", "supermarket"], "time_limit": null, "dependencies": [], "v0_text": "Today, you need to visit the supermarket, pharmacy, bank, and library. Aim for a balance between visiting well-rated places and maintaining an efficient route. Enjoy your day!"}, {"group_id": "test_149", "is_modified": false, "pois": ["bank", "library", "pharmacy", "shopping_mall", "supermarket"], "time_limit": 1260, "dependencies": [["bank", "pharmacy"], ["pharmacy", "library"], ["library", "shopping_mall"]], "v0_text": "Today, make sure to visit the supermarket, bank, pharmacy, library, and shopping mall. Be back by 21:00. It's important to have an efficient trip, so let's focus on a sensible and time-effective route. You should first stop by the bank, then head to the pharmacy, followed by a visit to the library, and finally, make your way to the shopping mall."}, {"group_id": "test_150", "is_modified": false, "pois": ["bank", "library", "pharmacy", "supermarket"], "time_limit": null, "dependencies": [["bank", "library"]], "v0_text": "Today, make sure to visit the pharmacy, bank, library, and supermarket. It's crucial to be efficient, so aim for a quick and effective route. Remember to stop by the bank before heading to the library."}, {"group_id": "test_151", "is_modified": false, "pois": ["bank", "library", "pharmacy", "shopping_mall", "supermarket"], "time_limit": 1320, "dependencies": [["library", "bank"]], "v0_text": "Today, we need to visit the shopping mall, library, bank, supermarket, and pharmacy. Please make sure to return by 22:00. We should aim to keep the journey efficient and prioritize a shorter route. Remember to visit the library before going to the bank."}, {"group_id": "test_152", "is_modified": false, "pois": ["bank", "library", "pharmacy", "shopping_mall", "supermarket"], "time_limit": 1440, "dependencies": [["bank", "supermarket"]], "v0_text": "Today, you'll be visiting the bank, supermarket, shopping mall, pharmacy, and library. Please make sure to return by midnight. Prioritize highly-rated places on your itinerary. Start your journey at the bank, as you need to visit it before heading to the supermarket."}, {"group_id": "test_153", "is_modified": false, "pois": ["library", "shopping_mall", "supermarket"], "time_limit": 1200, "dependencies": [["library", "shopping_mall"]], "v0_text": "Today, you need to visit the supermarket, library, and shopping mall. Make sure to finish everything and return by 8:00 PM. Try to prioritize places that have good ratings while keeping the route reasonable. Remember, you should visit the library before heading to the shopping mall."}, {"group_id": "test_154", "is_modified": false, "pois": ["library", "supermarket"], "time_limit": null, "dependencies": [["supermarket", "library"]], "v0_text": "We need to visit both the supermarket and the library today. Let's make sure to have a balanced plan that allows us to reach both efficiently while also considering the quality of our experiences. We'll start with the supermarket and then head to the library."}, {"group_id": "test_155", "is_modified": false, "pois": ["bank", "library", "shopping_mall"], "time_limit": null, "dependencies": [["bank", "library"]], "v0_text": "Today, we need to visit the bank, library, and shopping mall. It's important that we visit places with high ratings, so let's prioritize them. Remember, we have to stop at the bank before we head to the library."}, {"group_id": "test_156", "is_modified": false, "pois": ["library", "pharmacy", "shopping_mall", "supermarket"], "time_limit": 1260, "dependencies": [["supermarket", "pharmacy"]], "v0_text": "Today, you need to visit the shopping mall, library, supermarket, and pharmacy. Please ensure you're back by 21:00. Time is of the essence, so try to choose the most efficient route possible. Remember, the supermarket should be visited before the pharmacy."}, {"group_id": "test_157", "is_modified": false, "pois": ["bank", "library", "pharmacy", "shopping_mall", "supermarket"], "time_limit": null, "dependencies": [], "v0_text": "Today, we need to visit the pharmacy, library, shopping mall, bank, and supermarket. Be sure to focus on finding highly rated places, as that's our priority for today. There are no specific dependencies or sequence requirements for visiting the locations."}, {"group_id": "test_158", "is_modified": false, "pois": ["bank", "library", "pharmacy", "shopping_mall", "supermarket"], "time_limit": null, "dependencies": [], "v0_text": "Today, the plan is to visit the supermarket, library, shopping mall, pharmacy, and bank. Make sure to prioritize an efficient route for getting these errands done smoothly, without any need to rush back by a specific time."}, {"group_id": "test_159", "is_modified": false, "pois": ["bank", "library", "pharmacy", "shopping_mall", "supermarket"], "time_limit": null, "dependencies": [["library", "shopping_mall"]], "v0_text": "Today, let's visit the bank, the library, the shopping mall, the supermarket, and the pharmacy. I hope we can find a balance between visiting some well-rated places without making our route too long. Make sure to stop by the library before heading over to the shopping mall."}, {"group_id": "test_160", "is_modified": false, "pois": ["shopping_mall"], "time_limit": 1080, "dependencies": [], "v0_text": "Today, please make sure to visit the shopping mall. We should aim to return by 18:00. It's important to strike a balance, so look for a reasonable rating and efficiency in our itinerary. There are no specific order requirements to follow."}];
+
+    // Review state: { gid: { status: 'approved'|'flagged'|'pending', note: '' } }
+    let reviewState = JSON.parse(localStorage.getItem('darc_v2_review_state') || '{}');
+
+    // Initialize state - default approved for easy confirmation, user can toggle
+    groupsData.forEach(g => {
+      if (!reviewState[g.group_id]) {
+        reviewState[g.group_id] = { status: 'approved', note: '' };
+      }
+    });
+
+    function saveState() {
+      localStorage.setItem('darc_v2_review_state', JSON.stringify(reviewState));
+      updateProgress();
+    }
+
+    function setGroupStatus(gid, status) {
+      if (!reviewState[gid]) reviewState[gid] = { status: 'pending', note: '' };
+      reviewState[gid].status = status;
+      saveState();
+      renderFocusView();
+    }
+
+    function setGroupNote(gid, note) {
+      if (!reviewState[gid]) reviewState[gid] = { status: 'pending', note: '' };
+      reviewState[gid].note = note;
+      saveState();
+    }
+
+    function approveAll() {
+      groupsData.forEach(g => {
+        if (!reviewState[g.group_id]) reviewState[g.group_id] = {};
+        reviewState[g.group_id].status = 'approved';
+      });
+      saveState();
+      renderFocusView();
+    }
+
+    function resetReview() {
+      if (confirm('确认重置所有审核标记为待审阅？')) {
+        groupsData.forEach(g => {
+          reviewState[g.group_id] = { status: 'pending', note: '' };
+        });
+        saveState();
+        renderFocusView();
+      }
+    }
+
+    function updateProgress() {
+      let approved = 0;
+      let flagged = 0;
+      groupsData.forEach(g => {
+        const st = reviewState[g.group_id]?.status;
+        if (st === 'approved') approved++;
+        else if (st === 'flagged') flagged++;
+      });
+      const total = groupsData.length;
+      const pct = Math.round((approved / total) * 100);
+
+      document.getElementById('topProgressStat').innerText = `${approved} / ${total}`;
+      document.getElementById('topProgressPct').innerText = `已认可 ${pct}% (异议 ${flagged})`;
+      document.getElementById('footerApprovedCount').innerText = `已通过: ${approved} / ${total} 组`;
+      document.getElementById('footerFlaggedCount').innerText = `有异议: ${flagged} 组`;
+      document.getElementById('progressBarFill').style.width = pct + '%';
+    }
+
+    function renderFocusView() {
+      const container = document.getElementById('focusView');
+      const q = document.getElementById('searchInput').value.trim().toLowerCase();
+
+      let html = '';
+      groupsData.forEach((g, idx) => {
+        if (q) {
+          const matchId = g.group_id.toLowerCase().includes(q);
+          const matchText = g.variants.some(v => v.old_text.toLowerCase().includes(q) || v.proposed_text.toLowerCase().includes(q));
+          if (!matchId && !matchText) return;
+        }
+
+        const state = reviewState[g.group_id] || { status: 'pending', note: '' };
+        const statusClass = 'status-' + state.status;
+
+        html += `
+          <div class="group-card ${statusClass}" id="group-card-${g.group_id}">
+            <div class="group-header">
+              <div class="group-header-left">
+                <span class="group-id-badge">${g.group_id}</span>
+                <div class="group-tags">
+                  <span class="tag tag-blue">POI: ${g.pois.join(', ')}</span>
+                  <span class="tag tag-amber">截止: ${g.time_str}</span>
+                  <span class="tag tag-purple">依赖: ${g.dep_str}</span>
+                </div>
+              </div>
+              <div class="group-header-right">
+                <div class="btn-action-group">
+                  <button class="btn-toggle ${state.status === 'approved' ? 'active-approved' : ''}" onclick="setGroupStatus('${g.group_id}', 'approved')">✓ 认可通过</button>
+                  <button class="btn-toggle ${state.status === 'flagged' ? 'active-flagged' : ''}" onclick="setGroupStatus('${g.group_id}', 'flagged')">✕ 存在异议</button>
+                </div>
+              </div>
+            </div>
+            <div class="group-body">
+              <table class="variants-table">
+                <thead>
+                  <tr>
+                    <th style="width: 70px;">版本</th>
+                    <th style="width: 140px;">字段与权重变更</th>
+                    <th>原版 (v1) vs 提议修正 (v2) 文本对比</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  ${g.variants.map(v => `
+                    <tr>
+                      <td>
+                        <span class="var-type ${v.variant_type.toLowerCase()}">${v.variant_type}</span>
+                        <div style="font-size: 11px; color: #64748b; margin-top: 4px;">
+                          ${v.variant_type === 'V0' ? '原句基准' : v.variant_type === 'V1' ? '同义改写' : v.variant_type === 'V2' ? '句式变换' : '口语表达'}
+                        </div>
+                      </td>
+                      <td>
+                        <div class="param-change">
+                          <span class="param-old">${v.old_direction} (${v.old_w.toFixed(2)})</span>
+                          <span class="param-arrow">➔</span>
+                          <span class="param-new">${v.proposed_direction} (${v.proposed_w.toFixed(2)})</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="diff-cell">
+                          ${v.text_changed ? `
+                            <div class="diff-row-old">
+                              <strong>[v1 原版]</strong> ${v.old_text_html}
+                            </div>
+                            <div class="diff-row-new">
+                              <strong>[v2 提议]</strong> ${v.proposed_text_html}
+                            </div>
+                          ` : `
+                            <div class="diff-row-same">
+                              <strong>[保持不变]</strong> ${v.old_text}
+                            </div>
+                          `}
+                        </div>
+                      </td>
+                    </tr>
+                  `).join('')}
+                </tbody>
+              </table>
+
+              <div class="note-box">
+                <span style="font-size: 12px; font-weight: 600; color: #64748b;">审阅批注:</span>
+                <input type="text" class="note-input" placeholder="可在此输入该组的审核意见或修改建议（选填）..." value="${state.note || ''}" onchange="setGroupNote('${g.group_id}', this.value)">
+              </div>
+            </div>
+          </div>
+        `;
+      });
+
+      container.innerHTML = html || '<div style="text-align: center; padding: 40px; color: #94a3b8;">无匹配的组</div>';
+    }
+
+    function renderAllGroupsView() {
+      const tbody = document.getElementById('allGroupsTbody');
+      const q = document.getElementById('searchInput').value.trim().toLowerCase();
+
+      let html = '';
+      allGroupsMeta.forEach(g => {
+        if (q) {
+          const matchId = g.group_id.toLowerCase().includes(q);
+          const matchText = g.v0_text.toLowerCase().includes(q);
+          if (!matchId && !matchText) return;
+        }
+
+        const isMod = g.is_modified;
+        html += `
+          <tr>
+            <td>
+              <strong style="font-family: monospace;">${g.group_id}</strong>
+            </td>
+            <td>
+              ${isMod ? '<span class="badge badge-warning">漂移修订 (14组)</span>' : '<span class="badge badge-success">保持原样</span>'}
+            </td>
+            <td>${g.pois.join(', ')}</td>
+            <td>${g.time_limit ? g.time_limit + ' 分' : '无'}</td>
+            <td>${g.dependencies.length ? g.dependencies.map(d => d[0] + '➔' + d[1]).join(', ') : '无'}</td>
+            <td style="font-size: 12px; color: #475569;">${g.v0_text}</td>
+          </tr>
+        `;
+      });
+      tbody.innerHTML = html || '<tr><td colspan="6" style="text-align: center;">无匹配项</td></tr>';
+    }
+
+    function switchTab(tab) {
+      document.getElementById('tabFocus').classList.toggle('active', tab === 'focus');
+      document.getElementById('tabAll').classList.toggle('active', tab === 'all');
+      document.getElementById('focusView').style.display = tab === 'focus' ? 'block' : 'none';
+      document.getElementById('allView').style.display = tab === 'all' ? 'block' : 'none';
+      document.getElementById('quickJumpRow').style.display = tab === 'focus' ? 'flex' : 'none';
+
+      if (tab === 'focus') renderFocusView();
+      else renderAllGroupsView();
+    }
+
+    function onSearchChange() {
+      const isFocus = document.getElementById('tabFocus').classList.contains('active');
+      if (isFocus) renderFocusView();
+      else renderAllGroupsView();
+    }
+
+    function scrollToGroup(gid) {
+      const el = document.getElementById('group-card-' + gid);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        el.style.outline = '3px solid var(--primary)';
+        setTimeout(() => { el.style.outline = 'none'; }, 1500);
+      }
+    }
+
+    function openExportModal() {
+      let approvedCount = 0;
+      let flaggedCount = 0;
+      const flags = [];
+
+      groupsData.forEach(g => {
+        const st = reviewState[g.group_id]?.status;
+        const note = reviewState[g.group_id]?.note || '';
+        if (st === 'approved') approvedCount++;
+        else if (st === 'flagged') {
+          flaggedCount++;
+          flags.push(`- **${g.group_id}**: ${note || '有异议'}`);
+        }
+      });
+
+      let md = `# DARC-Route 测试集 14 组语义漂移人工审核决议报告\n\n`;
+      md += `> **审核人**：研究负责人 / 人工审核员\n`;
+      md += `> **审核时间**：${new Date().toISOString().replace('T', ' ').substring(0, 19)}\n`;
+      md += `> **审核范围**：14 组语义漂移表达（共 56 句，42 处文本改写，56 处权重归正）\n\n`;
+      md += `## 1. 审核结论\n\n`;
+      md += `- **审核通过组数**：${approvedCount} / 14 组\n`;
+      md += `- **存在异议组数**：${flaggedCount} / 14 组\n`;
+      md += `- **综合决议**：${flaggedCount === 0 ? '【全部认可通过 (APPROVED)】，准予冻结为正式数据集 v2_confirmed' : '【存在异议需微调 (CONDITIONAL)】'} \n\n`;
+
+      if (flags.length > 0) {
+        md += `## 2. 异议清单\n\n` + flags.join('\n') + '\n\n';
+      } else {
+        md += `## 2. 异议清单\n\n无异议。全部 14 组改写成功剔除了 V1-V3 的高分优先漂移表述，恢复与 V0 完全一致的平衡语义。\n\n`;
+      }
+
+      md += `## 3. 逐组明细状态\n\n`;
+      groupsData.forEach(g => {
+        const st = reviewState[g.group_id]?.status || 'pending';
+        const note = reviewState[g.group_id]?.note || '';
+        md += `- **${g.group_id}**: ${st === 'approved' ? '✓ APPROVED' : '✕ FLAGGED'} ${note ? '(' + note + ')' : ''}\n`;
+      });
+
+      document.getElementById('exportText').value = md;
+      document.getElementById('exportModal').style.display = 'flex';
+    }
+
+    function closeExportModal() {
+      document.getElementById('exportModal').style.display = 'none';
+    }
+
+    function copyExportText() {
+      const ta = document.getElementById('exportText');
+      ta.select();
+      navigator.clipboard.writeText(ta.value).then(() => {
+        alert('已复制审核报告到剪贴板！');
+      });
+    }
+
+    function downloadExportJson() {
+      const dataStr = 'data:text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify({
+        timestamp: new Date().toISOString(),
+        reviewer: 'Human Reviewer',
+        decision: reviewState
+      }, null, 2));
+      const a = document.createElement('a');
+      a.setAttribute('href', dataStr);
+      a.setAttribute('download', 'darc_route_v2_review_decision.json');
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+    }
+
+    // Initial render
+    renderFocusView();
+    updateProgress();
+  </script>
+</body>
+</html>

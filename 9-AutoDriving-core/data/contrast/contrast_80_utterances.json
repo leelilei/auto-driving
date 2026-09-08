@@ -1,0 +1,1864 @@
+[
+  {
+    "pair_id": "contrast_01",
+    "utterance_id": "contrast_01_c0",
+    "contrast_variant": "C0",
+    "change_type": "original",
+    "text": "Today, you'll be visiting the library, shopping mall, bank, and supermarket. Although there's no specific time to finish by, try to focus on exploring places with higher ratings. Enjoy your trip without any specific order to follow!",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [],
+      "quality_weight": 0.5
+    },
+    "source_index": 1,
+    "source_cluster_id": 1
+  },
+  {
+    "pair_id": "contrast_01",
+    "utterance_id": "contrast_01_c1",
+    "contrast_variant": "C1",
+    "change_type": "dependency_alteration",
+    "text": "Today, you'll be visiting the library, shopping mall, bank, and supermarket. Although there's no specific time to finish by, try to focus on exploring places with higher ratings. Enjoy your trip without any specific order to follow! Furthermore, make sure you visit the library before going to the bank.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "library",
+          "bank"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "source_index": 1,
+    "source_cluster_id": 1
+  },
+  {
+    "pair_id": "contrast_02",
+    "utterance_id": "contrast_02_c0",
+    "contrast_variant": "C0",
+    "change_type": "original",
+    "text": "Today, make sure to visit the shopping mall, bank, pharmacy, and library. While planning your trip, prioritize going to high-rated places. It's important to stop by the bank before heading to the pharmacy.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "bank",
+          "pharmacy"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "source_index": 3,
+    "source_cluster_id": 3
+  },
+  {
+    "pair_id": "contrast_02",
+    "utterance_id": "contrast_02_c1",
+    "contrast_variant": "C1",
+    "change_type": "deadline_alteration",
+    "text": "Today, make sure to visit the shopping mall, bank, pharmacy, and library. While planning your trip, prioritize going to high-rated places. It's important to stop by the bank before heading to the pharmacy. However, you must return by 18:00 sharp.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall"
+      ],
+      "time_limit": 1080,
+      "dependencies": [
+        [
+          "bank",
+          "pharmacy"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "source_index": 3,
+    "source_cluster_id": 3
+  },
+  {
+    "pair_id": "contrast_03",
+    "utterance_id": "contrast_03_c0",
+    "contrast_variant": "C0",
+    "change_type": "original",
+    "text": "Today, you need to visit the shopping mall, pharmacy, and bank. Since there is a need for efficiency, it's important to prioritize a shorter route. Start at the shopping mall, make your way to the pharmacy next, and finally head to the bank.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "pharmacy",
+        "shopping_mall"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "shopping_mall",
+          "pharmacy"
+        ],
+        [
+          "pharmacy",
+          "bank"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "source_index": 6,
+    "source_cluster_id": 6
+  },
+  {
+    "pair_id": "contrast_03",
+    "utterance_id": "contrast_03_c1",
+    "contrast_variant": "C1",
+    "change_type": "preference_flip",
+    "text": "Today, you need to visit the shopping mall, pharmacy, and bank. Since there is a need for efficiency, it's important to prioritize a shorter route. Start at the shopping mall, make your way to the pharmacy next, and finally head to the bank. Above all, please give top priority to the highest-rated places regardless of distance.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "pharmacy",
+        "shopping_mall"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "shopping_mall",
+          "pharmacy"
+        ],
+        [
+          "pharmacy",
+          "bank"
+        ]
+      ],
+      "quality_weight": 0.9
+    },
+    "source_index": 6,
+    "source_cluster_id": 6
+  },
+  {
+    "pair_id": "contrast_04",
+    "utterance_id": "contrast_04_c0",
+    "contrast_variant": "C0",
+    "change_type": "original",
+    "text": "Today, make sure to visit the shopping mall, pharmacy, supermarket, and library. Please prioritize an efficient route to get everything done swiftly. Remember, you need to stop by the supermarket before heading to the library.",
+    "gold_intent": {
+      "pois": [
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "supermarket",
+          "library"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "source_index": 8,
+    "source_cluster_id": 8
+  },
+  {
+    "pair_id": "contrast_04",
+    "utterance_id": "contrast_04_c1",
+    "contrast_variant": "C1",
+    "change_type": "dependency_alteration",
+    "text": "Today, make sure to visit the shopping mall, pharmacy, supermarket, and library. Please prioritize an efficient route to get everything done swiftly. Remember, you need to stop by the supermarket before heading to the library. Furthermore, make sure you visit the pharmacy before going to the library.",
+    "gold_intent": {
+      "pois": [
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [],
+      "quality_weight": 0.5
+    },
+    "source_index": 8,
+    "source_cluster_id": 8
+  },
+  {
+    "pair_id": "contrast_05",
+    "utterance_id": "contrast_05_c0",
+    "contrast_variant": "C0",
+    "change_type": "original",
+    "text": "Today, you'll need to visit the bank, pharmacy, library, shopping mall, and the supermarket. Since ratings are highly important, be sure to prioritize visiting well-rated places on your list. Make sure you go to the bank before heading to the pharmacy, and remember to check out the shopping mall before you stop by the supermarket.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "bank",
+          "pharmacy"
+        ],
+        [
+          "shopping_mall",
+          "supermarket"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "source_index": 9,
+    "source_cluster_id": 9
+  },
+  {
+    "pair_id": "contrast_05",
+    "utterance_id": "contrast_05_c1",
+    "contrast_variant": "C1",
+    "change_type": "deadline_alteration",
+    "text": "Today, you'll need to visit the bank, pharmacy, library, shopping mall, and the supermarket. Since ratings are highly important, be sure to prioritize visiting well-rated places on your list. Make sure you go to the bank before heading to the pharmacy, and remember to check out the shopping mall before you stop by the supermarket. However, you must return by 18:00 sharp.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": 1080,
+      "dependencies": [
+        [
+          "bank",
+          "pharmacy"
+        ],
+        [
+          "shopping_mall",
+          "supermarket"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "source_index": 9,
+    "source_cluster_id": 9
+  },
+  {
+    "pair_id": "contrast_06",
+    "utterance_id": "contrast_06_c0",
+    "contrast_variant": "C0",
+    "change_type": "original",
+    "text": "Make sure to visit the pharmacy, library, and supermarket today. It's important to prioritize locations that are well-rated as we go. Enjoy your day!",
+    "gold_intent": {
+      "pois": [
+        "library",
+        "pharmacy",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [],
+      "quality_weight": 0.5
+    },
+    "source_index": 12,
+    "source_cluster_id": 12
+  },
+  {
+    "pair_id": "contrast_06",
+    "utterance_id": "contrast_06_c1",
+    "contrast_variant": "C1",
+    "change_type": "preference_flip",
+    "text": "Make sure to visit the pharmacy, library, and supermarket today. It's important to prioritize locations that are well-rated as we go. Enjoy your day! Above all, please give top priority to the highest-rated places regardless of distance.",
+    "gold_intent": {
+      "pois": [
+        "library",
+        "pharmacy",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [],
+      "quality_weight": 0.9
+    },
+    "source_index": 12,
+    "source_cluster_id": 12
+  },
+  {
+    "pair_id": "contrast_07",
+    "utterance_id": "contrast_07_c0",
+    "contrast_variant": "C0",
+    "change_type": "original",
+    "text": "Today, make sure to visit the library, bank, supermarket, and shopping mall. Please return home by 23:00. Prioritize visiting the highest-rated places on your list for a rewarding experience.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": 1380,
+      "dependencies": [],
+      "quality_weight": 0.5
+    },
+    "source_index": 13,
+    "source_cluster_id": 13
+  },
+  {
+    "pair_id": "contrast_07",
+    "utterance_id": "contrast_07_c1",
+    "contrast_variant": "C1",
+    "change_type": "dependency_alteration",
+    "text": "Today, make sure to visit the library, bank, supermarket, and shopping mall. Please return home by 23:00. Prioritize visiting the highest-rated places on your list for a rewarding experience. Furthermore, make sure you visit the library before going to the bank.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": 1380,
+      "dependencies": [
+        [
+          "library",
+          "bank"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "source_index": 13,
+    "source_cluster_id": 13
+  },
+  {
+    "pair_id": "contrast_08",
+    "utterance_id": "contrast_08_c0",
+    "contrast_variant": "C0",
+    "change_type": "original",
+    "text": "Today, we need to visit the bank, pharmacy, supermarket, and shopping mall. I'd like to keep the route reasonably efficient while ensuring we visit worthwhile places. Let's plan the day accordingly without any specific order to follow.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [],
+      "quality_weight": 0.5
+    },
+    "source_index": 14,
+    "source_cluster_id": 14
+  },
+  {
+    "pair_id": "contrast_08",
+    "utterance_id": "contrast_08_c1",
+    "contrast_variant": "C1",
+    "change_type": "deadline_alteration",
+    "text": "Today, we need to visit the bank, pharmacy, supermarket, and shopping mall. I'd like to keep the route reasonably efficient while ensuring we visit worthwhile places. Let's plan the day accordingly without any specific order to follow. However, you must return by 18:00 sharp.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": 1080,
+      "dependencies": [],
+      "quality_weight": 0.5
+    },
+    "source_index": 14,
+    "source_cluster_id": 14
+  },
+  {
+    "pair_id": "contrast_09",
+    "utterance_id": "contrast_09_c0",
+    "contrast_variant": "C0",
+    "change_type": "original",
+    "text": "Today, please visit the pharmacy, library, shopping mall, and supermarket. It's important that we prioritize visiting places with the best ratings. Enjoy your day!",
+    "gold_intent": {
+      "pois": [
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [],
+      "quality_weight": 0.5
+    },
+    "source_index": 15,
+    "source_cluster_id": 15
+  },
+  {
+    "pair_id": "contrast_09",
+    "utterance_id": "contrast_09_c1",
+    "contrast_variant": "C1",
+    "change_type": "preference_flip",
+    "text": "Today, please visit the pharmacy, library, shopping mall, and supermarket. It's important that we prioritize visiting places with the best ratings. Enjoy your day! Above all, please give top priority to the highest-rated places regardless of distance.",
+    "gold_intent": {
+      "pois": [
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [],
+      "quality_weight": 0.9
+    },
+    "source_index": 15,
+    "source_cluster_id": 15
+  },
+  {
+    "pair_id": "contrast_10",
+    "utterance_id": "contrast_10_c0",
+    "contrast_variant": "C0",
+    "change_type": "original",
+    "text": "Today, you'll need to make stops at the bank, pharmacy, supermarket, library, and shopping mall. While visiting these places, try to balance getting to some enjoyable spots with not taking too long on the route. Remember to stop by the supermarket before heading to the library.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "supermarket",
+          "library"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "source_index": 17,
+    "source_cluster_id": 17
+  },
+  {
+    "pair_id": "contrast_10",
+    "utterance_id": "contrast_10_c1",
+    "contrast_variant": "C1",
+    "change_type": "dependency_alteration",
+    "text": "Today, you'll need to make stops at the bank, pharmacy, supermarket, library, and shopping mall. While visiting these places, try to balance getting to some enjoyable spots with not taking too long on the route. Remember to stop by the supermarket before heading to the library. Furthermore, make sure you visit the library before going to the bank.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [],
+      "quality_weight": 0.5
+    },
+    "source_index": 17,
+    "source_cluster_id": 17
+  },
+  {
+    "pair_id": "contrast_11",
+    "utterance_id": "contrast_11_c0",
+    "contrast_variant": "C0",
+    "change_type": "original",
+    "text": "Today, make sure to visit both the supermarket and the shopping mall. Aim for a balance between visiting places of interest with reasonable ratings and keeping the journey efficient. Enjoy your day!",
+    "gold_intent": {
+      "pois": [
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [],
+      "quality_weight": 0.5
+    },
+    "source_index": 19,
+    "source_cluster_id": 18
+  },
+  {
+    "pair_id": "contrast_11",
+    "utterance_id": "contrast_11_c1",
+    "contrast_variant": "C1",
+    "change_type": "deadline_alteration",
+    "text": "Today, make sure to visit both the supermarket and the shopping mall. Aim for a balance between visiting places of interest with reasonable ratings and keeping the journey efficient. Enjoy your day! However, you must return by 18:00 sharp.",
+    "gold_intent": {
+      "pois": [
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": 1080,
+      "dependencies": [],
+      "quality_weight": 0.5
+    },
+    "source_index": 19,
+    "source_cluster_id": 18
+  },
+  {
+    "pair_id": "contrast_12",
+    "utterance_id": "contrast_12_c0",
+    "contrast_variant": "C0",
+    "change_type": "original",
+    "text": "Today, we need to visit the library, pharmacy, supermarket, shopping mall, and bank. Since there’s no specific return time, let's focus on keeping our route efficient. We'll make sure to stop by the supermarket before heading to the shopping mall.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "supermarket",
+          "shopping_mall"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "source_index": 20,
+    "source_cluster_id": 19
+  },
+  {
+    "pair_id": "contrast_12",
+    "utterance_id": "contrast_12_c1",
+    "contrast_variant": "C1",
+    "change_type": "preference_flip",
+    "text": "Today, we need to visit the library, pharmacy, supermarket, shopping mall, and bank. Since there’s no specific return time, let's focus on keeping our route efficient. We'll make sure to stop by the supermarket before heading to the shopping mall. Above all, please give top priority to the highest-rated places regardless of distance.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "supermarket",
+          "shopping_mall"
+        ]
+      ],
+      "quality_weight": 0.9
+    },
+    "source_index": 20,
+    "source_cluster_id": 19
+  },
+  {
+    "pair_id": "contrast_13",
+    "utterance_id": "contrast_13_c0",
+    "contrast_variant": "C0",
+    "change_type": "original",
+    "text": "Today, you need to visit the bank and the shopping mall. Focus on visiting places with a good reputation to ensure a pleasant experience. There are no specific order or dependencies for these visits, so you can plan your day as you like.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "shopping_mall"
+      ],
+      "time_limit": null,
+      "dependencies": [],
+      "quality_weight": 0.5
+    },
+    "source_index": 22,
+    "source_cluster_id": 21
+  },
+  {
+    "pair_id": "contrast_13",
+    "utterance_id": "contrast_13_c1",
+    "contrast_variant": "C1",
+    "change_type": "dependency_alteration",
+    "text": "Today, you need to visit the bank and the shopping mall. Focus on visiting places with a good reputation to ensure a pleasant experience. There are no specific order or dependencies for these visits, so you can plan your day as you like. Furthermore, make sure you visit the shopping mall before going to the bank.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "shopping_mall"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "shopping_mall",
+          "bank"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "source_index": 22,
+    "source_cluster_id": 21
+  },
+  {
+    "pair_id": "contrast_14",
+    "utterance_id": "contrast_14_c0",
+    "contrast_variant": "C0",
+    "change_type": "original",
+    "text": "Today, you need to visit the library and the supermarket. Please make sure to return by 20:00. Focus on visiting places with high ratings, even if it means taking a slightly longer route. There are no particular places that you must visit in a specific order.",
+    "gold_intent": {
+      "pois": [
+        "library",
+        "supermarket"
+      ],
+      "time_limit": 1200,
+      "dependencies": [],
+      "quality_weight": 0.5
+    },
+    "source_index": 23,
+    "source_cluster_id": 22
+  },
+  {
+    "pair_id": "contrast_14",
+    "utterance_id": "contrast_14_c1",
+    "contrast_variant": "C1",
+    "change_type": "deadline_alteration",
+    "text": "Today, you need to visit the library and the supermarket. Please make sure to return by 20:00. Focus on visiting places with high ratings, even if it means taking a slightly longer route. There are no particular places that you must visit in a specific order. However, you must return by 18:00 sharp.",
+    "gold_intent": {
+      "pois": [
+        "library",
+        "supermarket"
+      ],
+      "time_limit": 1080,
+      "dependencies": [],
+      "quality_weight": 0.5
+    },
+    "source_index": 23,
+    "source_cluster_id": 22
+  },
+  {
+    "pair_id": "contrast_15",
+    "utterance_id": "contrast_15_c0",
+    "contrast_variant": "C0",
+    "change_type": "original",
+    "text": "Today, we need to visit the shopping mall and the bank. Let's prioritize places with high ratings to ensure a great experience. Remember, we must stop by the shopping mall before heading to the bank.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "shopping_mall"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "shopping_mall",
+          "bank"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "source_index": 24,
+    "source_cluster_id": 23
+  },
+  {
+    "pair_id": "contrast_15",
+    "utterance_id": "contrast_15_c1",
+    "contrast_variant": "C1",
+    "change_type": "preference_flip",
+    "text": "Today, we need to visit the shopping mall and the bank. Let's prioritize places with high ratings to ensure a great experience. Remember, we must stop by the shopping mall before heading to the bank. Above all, please give top priority to the highest-rated places regardless of distance.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "shopping_mall"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "shopping_mall",
+          "bank"
+        ]
+      ],
+      "quality_weight": 0.9
+    },
+    "source_index": 24,
+    "source_cluster_id": 23
+  },
+  {
+    "pair_id": "contrast_16",
+    "utterance_id": "contrast_16_c0",
+    "contrast_variant": "C0",
+    "change_type": "original",
+    "text": "Today we need to visit the library, supermarket, bank, shopping mall, and pharmacy. Make sure we're back by 10:00 PM at the latest. Try to balance the quality of the places we visit with a reasonable travel route. Please visit the shopping mall before heading to the pharmacy.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": 1320,
+      "dependencies": [
+        [
+          "shopping_mall",
+          "pharmacy"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "source_index": 26,
+    "source_cluster_id": 25
+  },
+  {
+    "pair_id": "contrast_16",
+    "utterance_id": "contrast_16_c1",
+    "contrast_variant": "C1",
+    "change_type": "dependency_alteration",
+    "text": "Today we need to visit the library, supermarket, bank, shopping mall, and pharmacy. Make sure we're back by 10:00 PM at the latest. Try to balance the quality of the places we visit with a reasonable travel route. Please visit the shopping mall before heading to the pharmacy. Furthermore, make sure you visit the library before going to the bank.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": 1320,
+      "dependencies": [],
+      "quality_weight": 0.5
+    },
+    "source_index": 26,
+    "source_cluster_id": 25
+  },
+  {
+    "pair_id": "contrast_17",
+    "utterance_id": "contrast_17_c0",
+    "contrast_variant": "C0",
+    "change_type": "original",
+    "text": "Today, we need to visit the shopping mall, supermarket, library, pharmacy, and bank. Please make sure to return by 18:00. Aim for visiting places that are known for good ratings on our list. No particular order is required for visiting these locations.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": 1080,
+      "dependencies": [],
+      "quality_weight": 0.5
+    },
+    "source_index": 27,
+    "source_cluster_id": 26
+  },
+  {
+    "pair_id": "contrast_17",
+    "utterance_id": "contrast_17_c1",
+    "contrast_variant": "C1",
+    "change_type": "deadline_alteration",
+    "text": "Today, we need to visit the shopping mall, supermarket, library, pharmacy, and bank. Please make sure to return by 18:00. Aim for visiting places that are known for good ratings on our list. No particular order is required for visiting these locations. However, you must return by 16:00 sharp.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": 960,
+      "dependencies": [],
+      "quality_weight": 0.5
+    },
+    "source_index": 27,
+    "source_cluster_id": 26
+  },
+  {
+    "pair_id": "contrast_18",
+    "utterance_id": "contrast_18_c0",
+    "contrast_variant": "C0",
+    "change_type": "original",
+    "text": "Today, you need to visit the shopping mall, the bank, and the pharmacy. Please make sure to return by 22:00. It's important to keep the journey efficient in terms of time and distance. Start by visiting the shopping mall before heading to the bank.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "pharmacy",
+        "shopping_mall"
+      ],
+      "time_limit": 1320,
+      "dependencies": [
+        [
+          "shopping_mall",
+          "bank"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "source_index": 30,
+    "source_cluster_id": 29
+  },
+  {
+    "pair_id": "contrast_18",
+    "utterance_id": "contrast_18_c1",
+    "contrast_variant": "C1",
+    "change_type": "preference_flip",
+    "text": "Today, you need to visit the shopping mall, the bank, and the pharmacy. Please make sure to return by 22:00. It's important to keep the journey efficient in terms of time and distance. Start by visiting the shopping mall before heading to the bank. Above all, please give top priority to the highest-rated places regardless of distance.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "pharmacy",
+        "shopping_mall"
+      ],
+      "time_limit": 1320,
+      "dependencies": [
+        [
+          "shopping_mall",
+          "bank"
+        ]
+      ],
+      "quality_weight": 0.9
+    },
+    "source_index": 30,
+    "source_cluster_id": 29
+  },
+  {
+    "pair_id": "contrast_19",
+    "utterance_id": "contrast_19_c0",
+    "contrast_variant": "C0",
+    "change_type": "original",
+    "text": "Today, you'll need to visit both the pharmacy and the library. Make sure to prioritize going to places with high ratings even if it means taking a bit longer.",
+    "gold_intent": {
+      "pois": [
+        "library",
+        "pharmacy"
+      ],
+      "time_limit": null,
+      "dependencies": [],
+      "quality_weight": 0.5
+    },
+    "source_index": 32,
+    "source_cluster_id": 31
+  },
+  {
+    "pair_id": "contrast_19",
+    "utterance_id": "contrast_19_c1",
+    "contrast_variant": "C1",
+    "change_type": "dependency_alteration",
+    "text": "Today, you'll need to visit both the pharmacy and the library. Make sure to prioritize going to places with high ratings even if it means taking a bit longer. Furthermore, make sure you visit the pharmacy before going to the library.",
+    "gold_intent": {
+      "pois": [
+        "library",
+        "pharmacy"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "pharmacy",
+          "library"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "source_index": 32,
+    "source_cluster_id": 31
+  },
+  {
+    "pair_id": "contrast_20",
+    "utterance_id": "contrast_20_c0",
+    "contrast_variant": "C0",
+    "change_type": "original",
+    "text": "Today, you need to visit the shopping mall, the bank, and the pharmacy. Make sure to return by 17:00. Aim to visit places that are highly rated for the best experience. Be sure to go to the bank before heading to the pharmacy.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "pharmacy",
+        "shopping_mall"
+      ],
+      "time_limit": 1020,
+      "dependencies": [
+        [
+          "bank",
+          "pharmacy"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "source_index": 33,
+    "source_cluster_id": 32
+  },
+  {
+    "pair_id": "contrast_20",
+    "utterance_id": "contrast_20_c1",
+    "contrast_variant": "C1",
+    "change_type": "deadline_alteration",
+    "text": "Today, you need to visit the shopping mall, the bank, and the pharmacy. Make sure to return by 17:00. Aim to visit places that are highly rated for the best experience. Be sure to go to the bank before heading to the pharmacy. However, you must return by 16:00 sharp.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "pharmacy",
+        "shopping_mall"
+      ],
+      "time_limit": 960,
+      "dependencies": [
+        [
+          "bank",
+          "pharmacy"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "source_index": 33,
+    "source_cluster_id": 32
+  },
+  {
+    "pair_id": "contrast_21",
+    "utterance_id": "contrast_21_c0",
+    "contrast_variant": "C0",
+    "change_type": "original",
+    "text": "Today, you need to visit the supermarket, bank, library, pharmacy, and shopping mall. Make sure to be back by 9 PM. Prioritize visiting places with higher ratings for a more enjoyable experience. Additionally, ensure that you stop by the pharmacy before heading to the shopping mall.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": 1260,
+      "dependencies": [
+        [
+          "pharmacy",
+          "shopping_mall"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "source_index": 35,
+    "source_cluster_id": 34
+  },
+  {
+    "pair_id": "contrast_21",
+    "utterance_id": "contrast_21_c1",
+    "contrast_variant": "C1",
+    "change_type": "preference_flip",
+    "text": "Today, you need to visit the supermarket, bank, library, pharmacy, and shopping mall. Make sure to be back by 9 PM. Prioritize visiting places with higher ratings for a more enjoyable experience. Additionally, ensure that you stop by the pharmacy before heading to the shopping mall. Above all, please give top priority to the highest-rated places regardless of distance.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": 1260,
+      "dependencies": [
+        [
+          "pharmacy",
+          "shopping_mall"
+        ]
+      ],
+      "quality_weight": 0.9
+    },
+    "source_index": 35,
+    "source_cluster_id": 34
+  },
+  {
+    "pair_id": "contrast_22",
+    "utterance_id": "contrast_22_c0",
+    "contrast_variant": "C0",
+    "change_type": "original",
+    "text": "Today, make sure to visit the supermarket, bank, shopping mall, library, and pharmacy. You need to be back by 5 PM. Prioritize visiting places with higher ratings for a more satisfying trip. Remember, you must visit the shopping mall before heading to the library.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": 1020,
+      "dependencies": [
+        [
+          "shopping_mall",
+          "library"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "source_index": 38,
+    "source_cluster_id": 37
+  },
+  {
+    "pair_id": "contrast_22",
+    "utterance_id": "contrast_22_c1",
+    "contrast_variant": "C1",
+    "change_type": "dependency_alteration",
+    "text": "Today, make sure to visit the supermarket, bank, shopping mall, library, and pharmacy. You need to be back by 5 PM. Prioritize visiting places with higher ratings for a more satisfying trip. Remember, you must visit the shopping mall before heading to the library. Furthermore, make sure you visit the library before going to the bank.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": 1020,
+      "dependencies": [],
+      "quality_weight": 0.5
+    },
+    "source_index": 38,
+    "source_cluster_id": 37
+  },
+  {
+    "pair_id": "contrast_23",
+    "utterance_id": "contrast_23_c0",
+    "contrast_variant": "C0",
+    "change_type": "original",
+    "text": "Today, make sure to visit the bank, shopping mall, library, supermarket, and pharmacy. Since efficiency is key, aim to follow the most efficient route possible. Remember to stop by the shopping mall before heading to the library.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "shopping_mall",
+          "library"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "source_index": 39,
+    "source_cluster_id": 38
+  },
+  {
+    "pair_id": "contrast_23",
+    "utterance_id": "contrast_23_c1",
+    "contrast_variant": "C1",
+    "change_type": "deadline_alteration",
+    "text": "Today, make sure to visit the bank, shopping mall, library, supermarket, and pharmacy. Since efficiency is key, aim to follow the most efficient route possible. Remember to stop by the shopping mall before heading to the library. However, you must return by 18:00 sharp.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": 1080,
+      "dependencies": [
+        [
+          "shopping_mall",
+          "library"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "source_index": 39,
+    "source_cluster_id": 38
+  },
+  {
+    "pair_id": "contrast_24",
+    "utterance_id": "contrast_24_c0",
+    "contrast_variant": "C0",
+    "change_type": "original",
+    "text": "Today, you need to visit the pharmacy, bank, library, supermarket, and shopping mall. Make sure you're back by 19:00. Prioritize an efficient route to save time. Start at the pharmacy before heading to the bank, and remember to visit the supermarket prior to the shopping mall.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": 1140,
+      "dependencies": [
+        [
+          "pharmacy",
+          "bank"
+        ],
+        [
+          "supermarket",
+          "shopping_mall"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "source_index": 40,
+    "source_cluster_id": 39
+  },
+  {
+    "pair_id": "contrast_24",
+    "utterance_id": "contrast_24_c1",
+    "contrast_variant": "C1",
+    "change_type": "preference_flip",
+    "text": "Today, you need to visit the pharmacy, bank, library, supermarket, and shopping mall. Make sure you're back by 19:00. Prioritize an efficient route to save time. Start at the pharmacy before heading to the bank, and remember to visit the supermarket prior to the shopping mall. Above all, please give top priority to the highest-rated places regardless of distance.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": 1140,
+      "dependencies": [
+        [
+          "pharmacy",
+          "bank"
+        ],
+        [
+          "supermarket",
+          "shopping_mall"
+        ]
+      ],
+      "quality_weight": 0.9
+    },
+    "source_index": 40,
+    "source_cluster_id": 39
+  },
+  {
+    "pair_id": "contrast_25",
+    "utterance_id": "contrast_25_c0",
+    "contrast_variant": "C0",
+    "change_type": "original",
+    "text": "Today, you need to visit the supermarket, the shopping mall, the pharmacy, and the library. Please ensure you return by 18:00. Prioritize visiting places with higher ratings as much as possible. Make sure to visit the supermarket before heading to the shopping mall and stop by the pharmacy before going to the library.",
+    "gold_intent": {
+      "pois": [
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": 1080,
+      "dependencies": [
+        [
+          "supermarket",
+          "shopping_mall"
+        ],
+        [
+          "pharmacy",
+          "library"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "source_index": 41,
+    "source_cluster_id": 40
+  },
+  {
+    "pair_id": "contrast_25",
+    "utterance_id": "contrast_25_c1",
+    "contrast_variant": "C1",
+    "change_type": "dependency_alteration",
+    "text": "Today, you need to visit the supermarket, the shopping mall, the pharmacy, and the library. Please ensure you return by 18:00. Prioritize visiting places with higher ratings as much as possible. Make sure to visit the supermarket before heading to the shopping mall and stop by the pharmacy before going to the library. Furthermore, make sure you visit the pharmacy before going to the library.",
+    "gold_intent": {
+      "pois": [
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": 1080,
+      "dependencies": [],
+      "quality_weight": 0.5
+    },
+    "source_index": 41,
+    "source_cluster_id": 40
+  },
+  {
+    "pair_id": "contrast_26",
+    "utterance_id": "contrast_26_c0",
+    "contrast_variant": "C0",
+    "change_type": "original",
+    "text": "Please make sure to visit the supermarket and the library today. You need to be back by 21:00. Since we're pressed for time, let's prioritize a quick and efficient route. Make sure to stop at the supermarket before heading to the library.",
+    "gold_intent": {
+      "pois": [
+        "library",
+        "supermarket"
+      ],
+      "time_limit": 1260,
+      "dependencies": [
+        [
+          "supermarket",
+          "library"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "source_index": 43,
+    "source_cluster_id": 42
+  },
+  {
+    "pair_id": "contrast_26",
+    "utterance_id": "contrast_26_c1",
+    "contrast_variant": "C1",
+    "change_type": "deadline_alteration",
+    "text": "Please make sure to visit the supermarket and the library today. You need to be back by 21:00. Since we're pressed for time, let's prioritize a quick and efficient route. Make sure to stop at the supermarket before heading to the library. However, you must return by 18:00 sharp.",
+    "gold_intent": {
+      "pois": [
+        "library",
+        "supermarket"
+      ],
+      "time_limit": 1080,
+      "dependencies": [
+        [
+          "supermarket",
+          "library"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "source_index": 43,
+    "source_cluster_id": 42
+  },
+  {
+    "pair_id": "contrast_27",
+    "utterance_id": "contrast_27_c0",
+    "contrast_variant": "C0",
+    "change_type": "original",
+    "text": "We need to visit the pharmacy and the shopping mall today. I really want to make sure we visit places with high ratings. Let's stop by the pharmacy first before heading to the shopping mall.",
+    "gold_intent": {
+      "pois": [
+        "pharmacy",
+        "shopping_mall"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "pharmacy",
+          "shopping_mall"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "source_index": 44,
+    "source_cluster_id": 43
+  },
+  {
+    "pair_id": "contrast_27",
+    "utterance_id": "contrast_27_c1",
+    "contrast_variant": "C1",
+    "change_type": "preference_flip",
+    "text": "We need to visit the pharmacy and the shopping mall today. I really want to make sure we visit places with high ratings. Let's stop by the pharmacy first before heading to the shopping mall. Above all, please give top priority to the highest-rated places regardless of distance.",
+    "gold_intent": {
+      "pois": [
+        "pharmacy",
+        "shopping_mall"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "pharmacy",
+          "shopping_mall"
+        ]
+      ],
+      "quality_weight": 0.9
+    },
+    "source_index": 44,
+    "source_cluster_id": 43
+  },
+  {
+    "pair_id": "contrast_28",
+    "utterance_id": "contrast_28_c0",
+    "contrast_variant": "C0",
+    "change_type": "original",
+    "text": "Today, you'll need to visit the library, supermarket, pharmacy, shopping mall, and bank. Make sure to prioritize places with excellent ratings. You'll need to visit the supermarket before heading to the pharmacy.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "supermarket",
+          "pharmacy"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "source_index": 45,
+    "source_cluster_id": 44
+  },
+  {
+    "pair_id": "contrast_28",
+    "utterance_id": "contrast_28_c1",
+    "contrast_variant": "C1",
+    "change_type": "dependency_alteration",
+    "text": "Today, you'll need to visit the library, supermarket, pharmacy, shopping mall, and bank. Make sure to prioritize places with excellent ratings. You'll need to visit the supermarket before heading to the pharmacy. Furthermore, make sure you visit the library before going to the bank.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [],
+      "quality_weight": 0.5
+    },
+    "source_index": 45,
+    "source_cluster_id": 44
+  },
+  {
+    "pair_id": "contrast_29",
+    "utterance_id": "contrast_29_c0",
+    "contrast_variant": "C0",
+    "change_type": "original",
+    "text": "Today's itinerary includes visiting the pharmacy, shopping mall, library, and bank. Given our preference for efficiency, let's try to keep our route quick and straightforward. Start by going to the pharmacy before heading to the shopping mall.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "pharmacy",
+          "shopping_mall"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "source_index": 46,
+    "source_cluster_id": 45
+  },
+  {
+    "pair_id": "contrast_29",
+    "utterance_id": "contrast_29_c1",
+    "contrast_variant": "C1",
+    "change_type": "deadline_alteration",
+    "text": "Today's itinerary includes visiting the pharmacy, shopping mall, library, and bank. Given our preference for efficiency, let's try to keep our route quick and straightforward. Start by going to the pharmacy before heading to the shopping mall. However, you must return by 18:00 sharp.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall"
+      ],
+      "time_limit": 1080,
+      "dependencies": [
+        [
+          "pharmacy",
+          "shopping_mall"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "source_index": 46,
+    "source_cluster_id": 45
+  },
+  {
+    "pair_id": "contrast_30",
+    "utterance_id": "contrast_30_c0",
+    "contrast_variant": "C0",
+    "change_type": "original",
+    "text": "Today, you need to visit the shopping mall, library, bank, pharmacy, and supermarket. It's important to prioritize places with high ratings along the journey. Make sure you go to the library before heading to the bank, and visit the bank before the pharmacy.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "library",
+          "bank"
+        ],
+        [
+          "bank",
+          "pharmacy"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "source_index": 47,
+    "source_cluster_id": 46
+  },
+  {
+    "pair_id": "contrast_30",
+    "utterance_id": "contrast_30_c1",
+    "contrast_variant": "C1",
+    "change_type": "preference_flip",
+    "text": "Today, you need to visit the shopping mall, library, bank, pharmacy, and supermarket. It's important to prioritize places with high ratings along the journey. Make sure you go to the library before heading to the bank, and visit the bank before the pharmacy. Above all, please give top priority to the highest-rated places regardless of distance.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "library",
+          "bank"
+        ],
+        [
+          "bank",
+          "pharmacy"
+        ]
+      ],
+      "quality_weight": 0.9
+    },
+    "source_index": 47,
+    "source_cluster_id": 46
+  },
+  {
+    "pair_id": "contrast_31",
+    "utterance_id": "contrast_31_c0",
+    "contrast_variant": "C0",
+    "change_type": "original",
+    "text": "Today, you need to visit the library, shopping mall, supermarket, bank, and pharmacy. Make sure you explore the places with high ratings. You must visit the library before heading to the shopping mall.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "library",
+          "shopping_mall"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "source_index": 48,
+    "source_cluster_id": 47
+  },
+  {
+    "pair_id": "contrast_31",
+    "utterance_id": "contrast_31_c1",
+    "contrast_variant": "C1",
+    "change_type": "dependency_alteration",
+    "text": "Today, you need to visit the library, shopping mall, supermarket, bank, and pharmacy. Make sure you explore the places with high ratings. You must visit the library before heading to the shopping mall. Furthermore, make sure you visit the library before going to the bank.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [],
+      "quality_weight": 0.5
+    },
+    "source_index": 48,
+    "source_cluster_id": 47
+  },
+  {
+    "pair_id": "contrast_32",
+    "utterance_id": "contrast_32_c0",
+    "contrast_variant": "C0",
+    "change_type": "original",
+    "text": "Today, you need to visit the library, shopping mall, and bank. Please make sure to visit the library before heading to the shopping mall. Given the need for efficiency, aim to plan a route that minimizes travel time.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library",
+        "shopping_mall"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "library",
+          "shopping_mall"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "source_index": 49,
+    "source_cluster_id": 48
+  },
+  {
+    "pair_id": "contrast_32",
+    "utterance_id": "contrast_32_c1",
+    "contrast_variant": "C1",
+    "change_type": "deadline_alteration",
+    "text": "Today, you need to visit the library, shopping mall, and bank. Please make sure to visit the library before heading to the shopping mall. Given the need for efficiency, aim to plan a route that minimizes travel time. However, you must return by 18:00 sharp.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library",
+        "shopping_mall"
+      ],
+      "time_limit": 1080,
+      "dependencies": [
+        [
+          "library",
+          "shopping_mall"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "source_index": 49,
+    "source_cluster_id": 48
+  },
+  {
+    "pair_id": "contrast_33",
+    "utterance_id": "contrast_33_c0",
+    "contrast_variant": "C0",
+    "change_type": "original",
+    "text": "Today, we need to visit the shopping mall and the pharmacy. Make sure you're back by 23:00. Let's aim for a balance between visiting worthwhile places and maintaining a reasonably efficient route.",
+    "gold_intent": {
+      "pois": [
+        "pharmacy",
+        "shopping_mall"
+      ],
+      "time_limit": 1380,
+      "dependencies": [],
+      "quality_weight": 0.5
+    },
+    "source_index": 51,
+    "source_cluster_id": 50
+  },
+  {
+    "pair_id": "contrast_33",
+    "utterance_id": "contrast_33_c1",
+    "contrast_variant": "C1",
+    "change_type": "preference_flip",
+    "text": "Today, we need to visit the shopping mall and the pharmacy. Make sure you're back by 23:00. Let's aim for a balance between visiting worthwhile places and maintaining a reasonably efficient route. Above all, please give top priority to the highest-rated places regardless of distance.",
+    "gold_intent": {
+      "pois": [
+        "pharmacy",
+        "shopping_mall"
+      ],
+      "time_limit": 1380,
+      "dependencies": [],
+      "quality_weight": 0.9
+    },
+    "source_index": 51,
+    "source_cluster_id": 50
+  },
+  {
+    "pair_id": "contrast_34",
+    "utterance_id": "contrast_34_c0",
+    "contrast_variant": "C0",
+    "change_type": "original",
+    "text": "Today, make sure to stop by the shopping mall, library, pharmacy, supermarket, and bank. Since time is of the essence, focus on finding the most efficient route between these places. Visit the pharmacy before heading to the supermarket.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "pharmacy",
+          "supermarket"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "source_index": 54,
+    "source_cluster_id": 53
+  },
+  {
+    "pair_id": "contrast_34",
+    "utterance_id": "contrast_34_c1",
+    "contrast_variant": "C1",
+    "change_type": "dependency_alteration",
+    "text": "Today, make sure to stop by the shopping mall, library, pharmacy, supermarket, and bank. Since time is of the essence, focus on finding the most efficient route between these places. Visit the pharmacy before heading to the supermarket. Furthermore, make sure you visit the library before going to the bank.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [],
+      "quality_weight": 0.5
+    },
+    "source_index": 54,
+    "source_cluster_id": 53
+  },
+  {
+    "pair_id": "contrast_35",
+    "utterance_id": "contrast_35_c0",
+    "contrast_variant": "C0",
+    "change_type": "original",
+    "text": "Today, make sure to visit the bank, library, supermarket, and shopping mall. Please be home by 19:00. Prioritize visiting places with high ratings as they are more important today. Start at the bank before heading to the library, and continue to the supermarket right after the library.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": 1140,
+      "dependencies": [
+        [
+          "bank",
+          "library"
+        ],
+        [
+          "library",
+          "supermarket"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "source_index": 60,
+    "source_cluster_id": 56
+  },
+  {
+    "pair_id": "contrast_35",
+    "utterance_id": "contrast_35_c1",
+    "contrast_variant": "C1",
+    "change_type": "deadline_alteration",
+    "text": "Today, make sure to visit the bank, library, supermarket, and shopping mall. Please be home by 19:00. Prioritize visiting places with high ratings as they are more important today. Start at the bank before heading to the library, and continue to the supermarket right after the library. However, you must return by 18:00 sharp.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": 1080,
+      "dependencies": [
+        [
+          "bank",
+          "library"
+        ],
+        [
+          "library",
+          "supermarket"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "source_index": 60,
+    "source_cluster_id": 56
+  },
+  {
+    "pair_id": "contrast_36",
+    "utterance_id": "contrast_36_c0",
+    "contrast_variant": "C0",
+    "change_type": "original",
+    "text": "Today, we need to visit the bank and the shopping mall. We'll aim to be back by midnight. It's essential to keep our route efficient, so let's prioritize speed over stopping at high-rating places. Make sure to stop by the bank before heading to the shopping mall.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "shopping_mall"
+      ],
+      "time_limit": 1440,
+      "dependencies": [
+        [
+          "bank",
+          "shopping_mall"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "source_index": 62,
+    "source_cluster_id": 58
+  },
+  {
+    "pair_id": "contrast_36",
+    "utterance_id": "contrast_36_c1",
+    "contrast_variant": "C1",
+    "change_type": "preference_flip",
+    "text": "Today, we need to visit the bank and the shopping mall. We'll aim to be back by midnight. It's essential to keep our route efficient, so let's prioritize speed over stopping at high-rating places. Make sure to stop by the bank before heading to the shopping mall. Above all, please give top priority to the highest-rated places regardless of distance.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "shopping_mall"
+      ],
+      "time_limit": 1440,
+      "dependencies": [
+        [
+          "bank",
+          "shopping_mall"
+        ]
+      ],
+      "quality_weight": 0.9
+    },
+    "source_index": 62,
+    "source_cluster_id": 58
+  },
+  {
+    "pair_id": "contrast_37",
+    "utterance_id": "contrast_37_c0",
+    "contrast_variant": "C0",
+    "change_type": "original",
+    "text": "Today, we need to visit the bank and the supermarket. Make sure to prioritize going to the bank and supermarket with the highest ratings available.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [],
+      "quality_weight": 0.5
+    },
+    "source_index": 67,
+    "source_cluster_id": 63
+  },
+  {
+    "pair_id": "contrast_37",
+    "utterance_id": "contrast_37_c1",
+    "contrast_variant": "C1",
+    "change_type": "dependency_alteration",
+    "text": "Today, we need to visit the bank and the supermarket. Make sure to prioritize going to the bank and supermarket with the highest ratings available. Furthermore, make sure you visit the supermarket before going to the bank.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "supermarket",
+          "bank"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "source_index": 67,
+    "source_cluster_id": 63
+  },
+  {
+    "pair_id": "contrast_38",
+    "utterance_id": "contrast_38_c0",
+    "contrast_variant": "C0",
+    "change_type": "original",
+    "text": "Today, we need to visit the library, pharmacy, supermarket, and shopping mall. We should try to find a balance between visiting places with good ratings and maintaining an efficient route.",
+    "gold_intent": {
+      "pois": [
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [],
+      "quality_weight": 0.5
+    },
+    "source_index": 68,
+    "source_cluster_id": 64
+  },
+  {
+    "pair_id": "contrast_38",
+    "utterance_id": "contrast_38_c1",
+    "contrast_variant": "C1",
+    "change_type": "deadline_alteration",
+    "text": "Today, we need to visit the library, pharmacy, supermarket, and shopping mall. We should try to find a balance between visiting places with good ratings and maintaining an efficient route. However, you must return by 18:00 sharp.",
+    "gold_intent": {
+      "pois": [
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": 1080,
+      "dependencies": [],
+      "quality_weight": 0.5
+    },
+    "source_index": 68,
+    "source_cluster_id": 64
+  },
+  {
+    "pair_id": "contrast_39",
+    "utterance_id": "contrast_39_c0",
+    "contrast_variant": "C0",
+    "change_type": "original",
+    "text": "Today, we need to visit the supermarket, bank, shopping mall, pharmacy, and library. Please ensure that you return by 23:00. Given the preference for a shorter route, let's aim to be as efficient as possible with our travel between these locations.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": 1380,
+      "dependencies": [],
+      "quality_weight": 0.5
+    },
+    "source_index": 69,
+    "source_cluster_id": 65
+  },
+  {
+    "pair_id": "contrast_39",
+    "utterance_id": "contrast_39_c1",
+    "contrast_variant": "C1",
+    "change_type": "preference_flip",
+    "text": "Today, we need to visit the supermarket, bank, shopping mall, pharmacy, and library. Please ensure that you return by 23:00. Given the preference for a shorter route, let's aim to be as efficient as possible with our travel between these locations. Above all, please give top priority to the highest-rated places regardless of distance.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": 1380,
+      "dependencies": [],
+      "quality_weight": 0.9
+    },
+    "source_index": 69,
+    "source_cluster_id": 65
+  },
+  {
+    "pair_id": "contrast_40",
+    "utterance_id": "contrast_40_c0",
+    "contrast_variant": "C0",
+    "change_type": "original",
+    "text": "Today, please make sure to visit the bank, supermarket, library, and the shopping mall. As time is of the essence, aim for the quickest route. Remember to stop by the library before heading to the shopping mall.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "library",
+          "shopping_mall"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "source_index": 70,
+    "source_cluster_id": 66
+  },
+  {
+    "pair_id": "contrast_40",
+    "utterance_id": "contrast_40_c1",
+    "contrast_variant": "C1",
+    "change_type": "dependency_alteration",
+    "text": "Today, please make sure to visit the bank, supermarket, library, and the shopping mall. As time is of the essence, aim for the quickest route. Remember to stop by the library before heading to the shopping mall. Furthermore, make sure you visit the library before going to the bank.",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [],
+      "quality_weight": 0.5
+    },
+    "source_index": 70,
+    "source_cluster_id": 66
+  }
+]

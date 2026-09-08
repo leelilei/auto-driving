@@ -1,0 +1,38 @@
+version: 1
+project: 9-AutoDriving
+title: 9-AutoDriving
+currentFocus: Phase 1 - <当前焦点>
+researchQuestion: <一句话核心研究问题>
+
+# 「做过什么」：已完成里程碑
+milestones: []
+#  - id: project-setup
+#    title: 项目搭建
+#    status: done
+#    phase: 0
+#    date: 2026-09-05
+#    summary: <...>
+#    outputs:
+#      - { path: README.md, label: 项目 README }
+
+# 「阶段流图」节点，lane ∈ done | now | next | paper
+mapNodes:
+  - id: phase-1
+    title: Phase 1 - <阶段标题>
+    lane: now
+    status: current
+    phase: 1
+    dependsOn: []
+    outputs: []
+    nextActions:
+      - <下一步具体动作>
+
+# 「论文准备度」：各 section 状态
+paper:
+  sections:
+    - id: introduction
+      title: Introduction
+      status: planned        # ready | done | draft | planned | blocked | missing
+      assets: []
+      blockers: []
+      nextActions: []

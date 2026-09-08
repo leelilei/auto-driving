@@ -1,0 +1,110 @@
+{
+  "timestamp": "2026-09-05T18:03:53.197004+00:00",
+  "num_graphs": 9,
+  "scenarios": [
+    "loose",
+    "time_sensitive",
+    "tradeoff"
+  ],
+  "graphs": [
+    {
+      "graph_id": "graph_loose_000",
+      "scenario_type": "loose",
+      "seed": 100,
+      "file": "data/graphs/graph_loose_000.json",
+      "sha256": "25b1553b59ac4baef5d9888ee975a807bcbae87fa1d91a4c74df2e3c54efaf99",
+      "num_pois": 10,
+      "max_edge_distance": 10.1095,
+      "departure_time": 540,
+      "speed_km_h": 30.0
+    },
+    {
+      "graph_id": "graph_loose_001",
+      "scenario_type": "loose",
+      "seed": 101,
+      "file": "data/graphs/graph_loose_001.json",
+      "sha256": "3ecf388a94df9a77d56044b9d2ea477b1367f8e054f09cb32bd1287739a22bd1",
+      "num_pois": 10,
+      "max_edge_distance": 10.4597,
+      "departure_time": 540,
+      "speed_km_h": 30.0
+    },
+    {
+      "graph_id": "graph_loose_002",
+      "scenario_type": "loose",
+      "seed": 102,
+      "file": "data/graphs/graph_loose_002.json",
+      "sha256": "2cefc47b51f86cadd8bcc733c033ea909ef63574e027aad816a260ed2cda3fee",
+      "num_pois": 10,
+      "max_edge_distance": 7.705,
+      "departure_time": 540,
+      "speed_km_h": 30.0
+    },
+    {
+      "graph_id": "graph_time_sensitive_000",
+      "scenario_type": "time_sensitive",
+      "seed": 100,
+      "file": "data/graphs/graph_time_sensitive_000.json",
+      "sha256": "3ebff56e9d6dc4c8637074b1efb31d525741fe2d6a3b120fdb0e38bc2a0c2548",
+      "num_pois": 10,
+      "max_edge_distance": 10.1095,
+      "departure_time": 840,
+      "speed_km_h": 25.0
+    },
+    {
+      "graph_id": "graph_time_sensitive_001",
+      "scenario_type": "time_sensitive",
+      "seed": 101,
+      "file": "data/graphs/graph_time_sensitive_001.json",
+      "sha256": "a9fdf0a436fed4ba138e26ffbb8f21d1e7827fad402e5513a7cb36c4a18460f3",
+      "num_pois": 10,
+      "max_edge_distance": 10.4597,
+      "departure_time": 840,
+      "speed_km_h": 25.0
+    },
+    {
+      "graph_id": "graph_time_sensitive_002",
+      "scenario_type": "time_sensitive",
+      "seed": 102,
+      "file": "data/graphs/graph_time_sensitive_002.json",
+      "sha256": "5a66b7130030386c6e2796783f1af7bd201c8f63de2f54c3d1165d94b569abff",
+      "num_pois": 10,
+      "max_edge_distance": 7.705,
+      "departure_time": 840,
+      "speed_km_h": 25.0
+    },
+    {
+      "graph_id": "graph_tradeoff_000",
+      "scenario_type": "tradeoff",
+      "seed": 100,
+      "file": "data/graphs/graph_tradeoff_000.json",
+      "sha256": "1674c8d104ce29a6c03edc3ec86cc4f7d281f71edd160e01537ced166f7565a2",
+      "num_pois": 10,
+      "max_edge_distance": 13.8287,
+      "departure_time": 540,
+      "speed_km_h": 30.0
+    },
+    {
+      "graph_id": "graph_tradeoff_001",
+      "scenario_type": "tradeoff",
+      "seed": 101,
+      "file": "data/graphs/graph_tradeoff_001.json",
+      "sha256": "048384adfa011f10f2aa277102a6df779f61764fea0019a220fcc93abc5dd669",
+      "num_pois": 10,
+      "max_edge_distance": 13.4097,
+      "departure_time": 540,
+      "speed_km_h": 30.0
+    },
+    {
+      "graph_id": "graph_tradeoff_002",
+      "scenario_type": "tradeoff",
+      "seed": 102,
+      "file": "data/graphs/graph_tradeoff_002.json",
+      "sha256": "b4f491aa35fd904344579b76c4e1bb6b5417796582d3e53ace7d4481394fe883",
+      "num_pois": 10,
+      "max_edge_distance": 9.5278,
+      "departure_time": 540,
+      "speed_km_h": 30.0
+    }
+  ]
+}

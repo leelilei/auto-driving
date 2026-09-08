@@ -1,0 +1,4 @@
+usage: experiment.py [-h]
+                     {preflight,prepare,validate-data,build-graphs,collect,replay,calibrate,analyze,package}
+                     ...
+experiment.py: error: unrecognized arguments: --run-dir 9-AutoDriving-core/results/runs/20260906T060136Z_main_test

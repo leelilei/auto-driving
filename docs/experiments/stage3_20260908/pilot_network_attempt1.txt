@@ -1,0 +1,143 @@
+RUN_DIR=/Users/mac/Documents/6-Research/9-AutoDriving/9-AutoDriving-core/results/runs/20260907T160619Z_fresh_pilot
+groups=1/20 attempts=1 batch_transport_errors=1
+{
+  "run_id": "20260907T160619Z_fresh_pilot",
+  "collection_complete": false,
+  "evaluated_utterances": 1,
+  "planned_utterances": 80,
+  "unattempted_utterances": 79,
+  "transport_errors": 1,
+  "schema_valid": 0,
+  "attempts": 1,
+  "known_provider_tokens": 0,
+  "usage_missing": 1,
+  "wall_seconds": 6.676019500009716,
+  "metrics": {
+    "B0": {
+      "TSR": 0.0,
+      "GTSR": 0.0,
+      "flip": {
+        "mean_route_flip": null,
+        "valid_groups_count": 0,
+        "total_groups_count": 1,
+        "valid_pairs_count": 0,
+        "total_pairs_count": 0,
+        "invalid_pairs_ratio": 0.0
+      },
+      "regret": null,
+      "regret_n": 0,
+      "review_rate": 0.0,
+      "mean_calls": 1.0,
+      "known_provider_tokens": 0,
+      "usage_complete": false
+    },
+    "B2": {
+      "TSR": 0.0,
+      "GTSR": 0.0,
+      "flip": {
+        "mean_route_flip": null,
+        "valid_groups_count": 0,
+        "total_groups_count": 1,
+        "valid_pairs_count": 0,
+        "total_pairs_count": 0,
+        "invalid_pairs_ratio": 0.0
+      },
+      "regret": null,
+      "regret_n": 0,
+      "review_rate": 0.0,
+      "mean_calls": 2.0,
+      "known_provider_tokens": 0,
+      "usage_complete": false
+    },
+    "B3": {
+      "TSR": 0.0,
+      "GTSR": 0.0,
+      "flip": {
+        "mean_route_flip": null,
+        "valid_groups_count": 0,
+        "total_groups_count": 1,
+        "valid_pairs_count": 0,
+        "total_pairs_count": 0,
+        "invalid_pairs_ratio": 0.0
+      },
+      "regret": null,
+      "regret_n": 0,
+      "review_rate": 1.0,
+      "mean_calls": 3.0,
+      "known_provider_tokens": 0,
+      "usage_complete": false
+    },
+    "B4": {
+      "TSR": 0.0,
+      "GTSR": 0.0,
+      "flip": {
+        "mean_route_flip": null,
+        "valid_groups_count": 0,
+        "total_groups_count": 1,
+        "valid_pairs_count": 0,
+        "total_pairs_count": 0,
+        "invalid_pairs_ratio": 0.0
+      },
+      "regret": null,
+      "regret_n": 0,
+      "review_rate": 1.0,
+      "mean_calls": 3.0,
+      "known_provider_tokens": 0,
+      "usage_complete": false
+    },
+    "B5": {
+      "TSR": 0.0,
+      "GTSR": 0.0,
+      "flip": {
+        "mean_route_flip": null,
+        "valid_groups_count": 0,
+        "total_groups_count": 1,
+        "valid_pairs_count": 0,
+        "total_pairs_count": 0,
+        "invalid_pairs_ratio": 0.0
+      },
+      "regret": null,
+      "regret_n": 0,
+      "review_rate": 1.0,
+      "mean_calls": 3.0,
+      "known_provider_tokens": 0,
+      "usage_complete": false
+    },
+    "B6": {
+      "TSR": 0.0,
+      "GTSR": 0.0,
+      "flip": {
+        "mean_route_flip": null,
+        "valid_groups_count": 0,
+        "total_groups_count": 1,
+        "valid_pairs_count": 0,
+        "total_pairs_count": 0,
+        "invalid_pairs_ratio": 0.0
+      },
+      "regret": null,
+      "regret_n": 0,
+      "review_rate": 1.0,
+      "mean_calls": 3.0,
+      "known_provider_tokens": 0,
+      "usage_complete": false
+    },
+    "Ours": {
+      "TSR": 0.0,
+      "GTSR": 0.0,
+      "flip": {
+        "mean_route_flip": null,
+        "valid_groups_count": 0,
+        "total_groups_count": 1,
+        "valid_pairs_count": 0,
+        "total_pairs_count": 0,
+        "invalid_pairs_ratio": 0.0
+      },
+      "regret": null,
+      "regret_n": 0,
+      "review_rate": 1.0,
+      "mean_calls": 3.0,
+      "known_provider_tokens": 0,
+      "usage_complete": false
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "timestamp": "2026-09-07T06:22:14.416957+00:00",
+  "human_review_complete": false,
+  "test_pending_human_count": 640,
+  "pilot_pending_human_count": 80,
+  "pilot_error_diagnostics": [
+    {
+      "utterance_id": "pilot_03_v2",
+      "group_id": "pilot_03",
+      "variant_type": "V2",
+      "b0_task_success": false,
+      "ours_task_success": false,
+      "b6_task_success": false,
+      "call_a_schema_valid": false,
+      "call_a_transport_error": "RuntimeError",
+      "call_a_raw_response": null,
+      "oracle_task_success": true,
+      "true_root_cause": "Transport error (RuntimeError) during Call A; schema_valid=False. Oracle check confirmed feasible route exists.",
+      "is_temporal_window_conflict": false
+    },
+    {
+      "utterance_id": "pilot_06_v0",
+      "group_id": "pilot_06",
+      "variant_type": "V0",
+      "b0_task_success": false,
+      "ours_task_success": false,
+      "b6_task_success": false,
+      "call_a_schema_valid": false,
+      "call_a_transport_error": "RuntimeError",
+      "call_a_raw_response": null,
+      "oracle_task_success": true,
+      "true_root_cause": "Transport error (RuntimeError) during Call A; schema_valid=False. Oracle check confirmed feasible route exists.",
+      "is_temporal_window_conflict": false
+    }
+  ],
+  "gate_a": {
+    "verdict": "NOT_MET_TSR_NET_GAIN",
+    "justification": "TSR at ceiling (97.50%, 2 errors), net correction is 0, and regret worsened by +0.000641 (+35.2%), though Route Flip improved by -0.0416 (-22.7%). Empirical trade-off observed rather than strict net gain.",
+    "b0_tsr": 0.975,
+    "ours_tsr": 0.975,
+    "b6_tsr": 0.975,
+    "b0_flip": 0.1833,
+    "ours_flip": 0.1417,
+    "b6_flip": 0.0583,
+    "b0_regret": 0.001822,
+    "ours_regret": 0.002463,
+    "b6_regret": 0.002375,
+    "regret_delta_vs_b0": 0.000641,
+    "regret_percentage_change": 35.2,
+    "transitions": {
+      "base_method": "B0",
+      "comp_method": "Ours",
+      "wrong_to_right_count": 0,
+      "wrong_to_right_ids": [],
+      "right_to_wrong_count": 0,
+      "right_to_wrong_ids": [],
+      "net_correction": 0,
+      "same_right_count": 78,
+      "same_wrong_count": 2
+    }
+  },
+  "gate_b": {
+    "verdict": "PASS_FLIP_REDUCTION",
+    "justification": "Ours achieves lowest Route Flip (0.1083, -40.9% vs B0) at 2.09 calls/req. Note compute is higher than B5 (2.04) and regret (0.001991) is slightly higher than B4 (0.001829).",
+    "b0_flip": 0.1833,
+    "ours_flip": 0.1083,
+    "flip_reduction_vs_b0_pct": 40.9,
+    "ours_calls": 2.0875,
+    "b5_calls": 2.0375,
+    "ours_regret": 0.001991,
+    "b4_regret": 0.001829
+  },
+  "data_leakage": {
+    "verdict": "PASS",
+    "cluster_overlap": 0,
+    "index_overlap": 0,
+    "exposed_leakage": 0
+  },
+  "overall_decision": "BLOCKED_PENDING_HUMAN_REVIEW_AND_FRESH_COLLECTION",
+  "blocking_reasons": [
+    "Human annotation pending (Test: 640/640, Pilot: 80/80)",
+    "Gate A net gain requirement not satisfied (net correction = 0, regret +35.2% on pilot)",
+    "Confirmatory benchmark requires fresh API collection on audited v2 dataset"
+  ]
+}

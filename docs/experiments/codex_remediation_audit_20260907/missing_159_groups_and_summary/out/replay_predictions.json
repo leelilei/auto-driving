@@ -1,0 +1,1314 @@
+[
+  {
+    "group_id": "test_001",
+    "utterance_id": "test_001_v0",
+    "variant_type": "V0",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library"
+      ],
+      "time_limit": null,
+      "dependencies": [],
+      "quality_weight": 0.6
+    },
+    "methods": {
+      "B0": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B0",
+          "calls_used": 1,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.2863,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.2862689348955537
+        }
+      },
+      "B1": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B1",
+          "calls_used": 3,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.2863,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.2862689348955537
+        }
+      },
+      "B2": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B2",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.2863,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.2862689348955537
+        }
+      },
+      "B3": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B3",
+          "calls_used": 3,
+          "review_triggered": true,
+          "trigger_reason": "random_probability",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": "adopted_review"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.2863,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.2862689348955537
+        }
+      },
+      "B4": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B4",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b4",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.2863,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.2862689348955537
+        }
+      },
+      "B5": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B5",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b5_only_h",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.2863,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.2862689348955537
+        }
+      },
+      "B6": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B6",
+          "calls_used": 3,
+          "review_triggered": true,
+          "trigger_reason": "always_review",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "adopted_review"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.2863,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.2862689348955537
+        }
+      },
+      "Ours": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "Ours",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_darc",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.2863,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.2862689348955537
+        }
+      }
+    }
+  },
+  {
+    "group_id": "test_001",
+    "utterance_id": "test_001_v1",
+    "variant_type": "V1",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library"
+      ],
+      "time_limit": null,
+      "dependencies": [],
+      "quality_weight": 0.6
+    },
+    "methods": {
+      "B0": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B0",
+          "calls_used": 1,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6044,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.6044375739582215
+        }
+      },
+      "B1": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B1",
+          "calls_used": 3,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6044,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.6044375739582215
+        }
+      },
+      "B2": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B2",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6044,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.6044375739582215
+        }
+      },
+      "B3": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B3",
+          "calls_used": 3,
+          "review_triggered": true,
+          "trigger_reason": "random_probability",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": "adopted_review"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6044,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.6044375739582215
+        }
+      },
+      "B4": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B4",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b4",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6044,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.6044375739582215
+        }
+      },
+      "B5": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B5",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b5_only_h",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6044,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.6044375739582215
+        }
+      },
+      "B6": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B6",
+          "calls_used": 3,
+          "review_triggered": true,
+          "trigger_reason": "always_review",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "adopted_review"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6044,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.6044375739582215
+        }
+      },
+      "Ours": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "Ours",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_darc",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6044,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.6044375739582215
+        }
+      }
+    }
+  },
+  {
+    "group_id": "test_001",
+    "utterance_id": "test_001_v2",
+    "variant_type": "V2",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library"
+      ],
+      "time_limit": null,
+      "dependencies": [],
+      "quality_weight": 0.6
+    },
+    "methods": {
+      "B0": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B0",
+          "calls_used": 1,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6044,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.6044375739582215
+        }
+      },
+      "B1": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B1",
+          "calls_used": 3,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6044,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.6044375739582215
+        }
+      },
+      "B2": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B2",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6044,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.6044375739582215
+        }
+      },
+      "B3": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B3",
+          "calls_used": 3,
+          "review_triggered": true,
+          "trigger_reason": "random_probability",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": "adopted_review"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6044,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.6044375739582215
+        }
+      },
+      "B4": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B4",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b4",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6044,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.6044375739582215
+        }
+      },
+      "B5": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B5",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b5_only_h",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6044,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.6044375739582215
+        }
+      },
+      "B6": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B6",
+          "calls_used": 3,
+          "review_triggered": true,
+          "trigger_reason": "always_review",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "adopted_review"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6044,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.6044375739582215
+        }
+      },
+      "Ours": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "Ours",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_darc",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6044,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.6044375739582215
+        }
+      }
+    }
+  },
+  {
+    "group_id": "test_001",
+    "utterance_id": "test_001_v3",
+    "variant_type": "V3",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library"
+      ],
+      "time_limit": null,
+      "dependencies": [],
+      "quality_weight": 0.6
+    },
+    "methods": {
+      "B0": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B0",
+          "calls_used": 1,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.8165,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.81655
+        }
+      },
+      "B1": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B1",
+          "calls_used": 3,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.8165,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.81655
+        }
+      },
+      "B2": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B2",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.8165,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.81655
+        }
+      },
+      "B3": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B3",
+          "calls_used": 3,
+          "review_triggered": true,
+          "trigger_reason": "random_probability",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": "adopted_review"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.8165,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.81655
+        }
+      },
+      "B4": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B4",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b4",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.8165,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.81655
+        }
+      },
+      "B5": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B5",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b5_only_h",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.8165,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.81655
+        }
+      },
+      "B6": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B6",
+          "calls_used": 3,
+          "review_triggered": true,
+          "trigger_reason": "always_review",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "adopted_review"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.8165,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.81655
+        }
+      },
+      "Ours": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "Ours",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_darc",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.8165,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.81655
+        }
+      }
+    }
+  }
+]

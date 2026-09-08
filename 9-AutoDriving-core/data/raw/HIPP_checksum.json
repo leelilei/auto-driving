@@ -1,0 +1,9 @@
+{
+  "dataset": "HIPP.json",
+  "source_repo": "https://github.com/liangqiyuan/LLMAP",
+  "commit": "281f6ad95f42ca386400e5288f006aeffa2ac282",
+  "raw_url": "https://raw.githubusercontent.com/liangqiyuan/LLMAP/281f6ad95f42ca386400e5288f006aeffa2ac282/dataset/HIPP.json",
+  "sha256": "5fd5101a9bdb93823f0fe4109fa5342d6bd7d45ef240498a2f822f0554efbf02",
+  "size_bytes": 9512285,
+  "record_count": 1000
+}

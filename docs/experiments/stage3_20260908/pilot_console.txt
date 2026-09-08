@@ -1,0 +1,13 @@
+RUN_DIR=/Users/mac/Documents/6-Research/9-AutoDriving/9-AutoDriving-core/results/runs/20260907T160417Z_fresh_pilot
+groups=1/20 attempts=1 batch_transport_errors=1
+Traceback (most recent call last):
+  File "/Users/mac/Documents/6-Research/9-AutoDriving/9-AutoDriving-core/scripts/run_fresh_stage.py", line 119, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/mac/Documents/6-Research/9-AutoDriving/9-AutoDriving-core/scripts/run_fresh_stage.py", line 113, in main
+    metrics,records=evaluate(all_us,graphs,params,args.stage);calls=[c for u in all_us for c in u['calls'].values()];tel=[c.get('telemetry') or {} for c in calls]
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Documents/6-Research/9-AutoDriving/9-AutoDriving-core/scripts/run_fresh_stage.py", line 76, in evaluate
+    telem=[u['calls'][k].get('telemetry') or {} for k in selected]
+           ~~~~~~~~~~^^^
+KeyError: 'B'

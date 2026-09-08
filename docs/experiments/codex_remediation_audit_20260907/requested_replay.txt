@@ -1,0 +1,9 @@
+=== DARC-Route Strict Offline Replay & Method Evaluation ===
+Enforcing strictly OFFLINE mode (0 API calls, socket blocked).
+Replaying run directory: 20260906T051339Z_main_test
+[✓] Verification against saved summary PASSED (TSR, GTSR, RouteFlip, MeanCalls match exactly).
+[✓] Offline replay completed for 640 utterances across all 8 methods.
+  [✓] 3200 candidates reparsed, 2560 routes re-solved.
+  [✓] Zero API calls executed (network strictly blocked).
+  [✓] Baseline C01 verified: B0 and B2 identical on all cases.
+Saved replay results to 9-AutoDriving-core/results/reports/replay_metrics.json

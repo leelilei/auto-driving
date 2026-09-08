@@ -1,0 +1,15 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.12.13, pytest-9.1.1, pluggy-1.6.0
+rootdir: /Users/mac/Documents/6-Research/9-AutoDriving
+collected 59 items
+
+9-AutoDriving-core/tests/test_data_leakage.py .                          [  1%]
+9-AutoDriving-core/tests/test_experiment_cli.py ......                   [ 11%]
+9-AutoDriving-core/tests/test_gating.py ......                           [ 22%]
+9-AutoDriving-core/tests/test_metrics.py ....                            [ 28%]
+9-AutoDriving-core/tests/test_pilot_gate_admission.py ....               [ 35%]
+9-AutoDriving-core/tests/test_readiness.py ..................            [ 66%]
+9-AutoDriving-core/tests/test_remediation_r1.py .............            [ 88%]
+9-AutoDriving-core/tests/test_solver.py .......                          [100%]
+
+============================== 59 passed in 3.27s ==============================

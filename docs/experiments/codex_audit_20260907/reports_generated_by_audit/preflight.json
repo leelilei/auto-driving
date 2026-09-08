@@ -1,0 +1,34 @@
+{
+  "timestamp": "2026-09-07T03:05:16.176028+00:00",
+  "overall_status": "PASS",
+  "checks": {
+    "python_version": {
+      "version": "3.12.13",
+      "is_python_3_12": true,
+      "executable": "/Users/mac/Documents/6-Research/9-AutoDriving/9-AutoDriving-core/.venv/bin/python",
+      "status": "PASS"
+    },
+    "virtualenv": {
+      "prefix": "/Users/mac/Documents/6-Research/9-AutoDriving/9-AutoDriving-core/.venv",
+      "in_venv": true,
+      "status": "PASS"
+    },
+    "dependency_lock": {
+      "path": "requirements-dev.lock.txt",
+      "exists": true,
+      "sha256": "0f240c0dc07c94244da07e7aeef451a75e0fadf876e7ccf55a3abd7e9ccfdafd",
+      "status": "PASS"
+    },
+    "hipp_dataset_hash": {
+      "path": "data/raw/HIPP.json",
+      "expected_sha256": "5fd5101a9bdb93823f0fe4109fa5342d6bd7d45ef240498a2f822f0554efbf02",
+      "actual_sha256": "5fd5101a9bdb93823f0fe4109fa5342d6bd7d45ef240498a2f822f0554efbf02",
+      "status": "PASS"
+    },
+    "api_credentials": {
+      "fhl_api_key_set": true,
+      "source": "environment_variable_only",
+      "status": "PASS"
+    }
+  }
+}

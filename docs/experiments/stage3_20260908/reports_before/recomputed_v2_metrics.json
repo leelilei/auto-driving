@@ -1,0 +1,1351 @@
+{
+  "20260906T051339Z_main_test": {
+    "run_id": "20260906T051339Z_main_test",
+    "model_label": "gpt-5.4-mini",
+    "metric_version": "v2",
+    "evaluated_groups": 160,
+    "evaluated_utterances": 640,
+    "calibrated_parameters": {
+      "tau_star": 0.02,
+      "tau_sem_star": 0.1,
+      "p_review_star": 0.4805194805194805
+    },
+    "telemetry": {
+      "total_calls_issued": 3200,
+      "schema_valid_calls": 3200,
+      "transport_failures": 0,
+      "provider_tokens_input": 1528566,
+      "provider_tokens_output": 218183,
+      "provider_tokens_total": 1746749,
+      "total_latency_seconds": 12006.64
+    },
+    "results": {
+      "B0": {
+        "method": "B0",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.2385,
+        "mean_calls_used": 1.0,
+        "review_rate": 0.0,
+        "h_trigger_rate": 0.0,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.002924
+      },
+      "B1": {
+        "method": "B1",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.2188,
+        "mean_calls_used": 3.0,
+        "review_rate": 0.0,
+        "h_trigger_rate": 0.0,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.002701
+      },
+      "B2": {
+        "method": "B2",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.2385,
+        "mean_calls_used": 2.0,
+        "review_rate": 0.0,
+        "h_trigger_rate": 0.0,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.002924
+      },
+      "B3": {
+        "method": "B3",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.1896,
+        "mean_calls_used": 2.5094,
+        "review_rate": 0.5094,
+        "h_trigger_rate": 0.0016,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.002478
+      },
+      "B4": {
+        "method": "B4",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.2271,
+        "mean_calls_used": 2.0766,
+        "review_rate": 0.0766,
+        "h_trigger_rate": 0.0016,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.002461
+      },
+      "B5": {
+        "method": "B5",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.2385,
+        "mean_calls_used": 2.0016,
+        "review_rate": 0.0016,
+        "h_trigger_rate": 0.0016,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.002924
+      },
+      "B6": {
+        "method": "B6",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.1635,
+        "mean_calls_used": 3.0,
+        "review_rate": 1.0,
+        "h_trigger_rate": 0.0,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.002018
+      },
+      "Ours": {
+        "method": "Ours",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.2031,
+        "mean_calls_used": 2.0422,
+        "review_rate": 0.0422,
+        "h_trigger_rate": 0.0016,
+        "delta_u_trigger_rate": 0.0406,
+        "mean_utility_loss": 0.002361
+      }
+    },
+    "v1_results": {
+      "B0": {
+        "method": "B0",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.2385,
+        "mean_calls_used": 1.0,
+        "review_rate": 0.0,
+        "h_trigger_rate": 0.0,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.022737
+      },
+      "B1": {
+        "method": "B1",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.2188,
+        "mean_calls_used": 3.0,
+        "review_rate": 0.0,
+        "h_trigger_rate": 0.0,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.022327
+      },
+      "B2": {
+        "method": "B2",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.2385,
+        "mean_calls_used": 2.0,
+        "review_rate": 0.0,
+        "h_trigger_rate": 0.0,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.022737
+      },
+      "B5": {
+        "method": "B5",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.2385,
+        "mean_calls_used": 2.0016,
+        "review_rate": 0.0016,
+        "h_trigger_rate": 0.0016,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.022737
+      },
+      "B6": {
+        "method": "B6",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.1635,
+        "mean_calls_used": 3.0,
+        "review_rate": 1.0,
+        "h_trigger_rate": 0.0,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.021875
+      },
+      "B3": {
+        "method": "B3",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.1896,
+        "mean_calls_used": 2.5094,
+        "review_rate": 0.5094,
+        "h_trigger_rate": 0.0016,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.022835
+      },
+      "B4": {
+        "method": "B4",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.2271,
+        "mean_calls_used": 2.0766,
+        "review_rate": 0.0766,
+        "h_trigger_rate": 0.0016,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.021288
+      },
+      "Ours": {
+        "method": "Ours",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.2031,
+        "mean_calls_used": 2.0422,
+        "review_rate": 0.0422,
+        "h_trigger_rate": 0.0016,
+        "delta_u_trigger_rate": 0.0406,
+        "mean_utility_loss": 0.02177
+      }
+    }
+  },
+  "20260906T081920Z_main_test_deepseek_v4": {
+    "run_id": "20260906T081920Z_main_test_deepseek_v4",
+    "model_label": "deepseek-v4-flash",
+    "metric_version": "v2",
+    "evaluated_groups": 160,
+    "evaluated_utterances": 640,
+    "calibrated_parameters": {
+      "tau_star": 0.02,
+      "tau_sem_star": 0.1,
+      "p_review_star": 0.4805194805194805
+    },
+    "telemetry": {
+      "total_calls_issued": 1467,
+      "schema_valid_calls": 1233,
+      "transport_failures": 233,
+      "provider_tokens_input": 679018,
+      "provider_tokens_output": 2379402,
+      "provider_tokens_total": 3058420,
+      "total_latency_seconds": 23189.07
+    },
+    "results": {
+      "B0": {
+        "method": "B0",
+        "TSR": 0.6469,
+        "GTSR": 0.6062,
+        "variant_TSR": {
+          "V0": 0.675,
+          "V1": 0.66875,
+          "V2": 0.6375,
+          "V3": 0.60625
+        },
+        "route_flip": 0.095,
+        "mean_calls_used": 1.0,
+        "review_rate": 0.0,
+        "h_trigger_rate": 0.0,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.001672
+      },
+      "B2": {
+        "method": "B2",
+        "TSR": 0.6469,
+        "GTSR": 0.6062,
+        "variant_TSR": {
+          "V0": 0.675,
+          "V1": 0.66875,
+          "V2": 0.6375,
+          "V3": 0.60625
+        },
+        "route_flip": 0.095,
+        "mean_calls_used": 2.0,
+        "review_rate": 0.0,
+        "h_trigger_rate": 0.0,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.001672
+      },
+      "B3": {
+        "method": "B3",
+        "TSR": 0.6484,
+        "GTSR": 0.6062,
+        "variant_TSR": {
+          "V0": 0.68125,
+          "V1": 0.66875,
+          "V2": 0.6375,
+          "V3": 0.60625
+        },
+        "route_flip": 0.1106,
+        "mean_calls_used": 2.7,
+        "review_rate": 0.7,
+        "h_trigger_rate": 0.3609,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.001661
+      },
+      "B4": {
+        "method": "B4",
+        "TSR": 0.6484,
+        "GTSR": 0.6062,
+        "variant_TSR": {
+          "V0": 0.68125,
+          "V1": 0.66875,
+          "V2": 0.6375,
+          "V3": 0.60625
+        },
+        "route_flip": 0.1075,
+        "mean_calls_used": 2.4813,
+        "review_rate": 0.4813,
+        "h_trigger_rate": 0.3609,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.001538
+      },
+      "B5": {
+        "method": "B5",
+        "TSR": 0.6484,
+        "GTSR": 0.6062,
+        "variant_TSR": {
+          "V0": 0.68125,
+          "V1": 0.66875,
+          "V2": 0.6375,
+          "V3": 0.60625
+        },
+        "route_flip": 0.095,
+        "mean_calls_used": 2.3609,
+        "review_rate": 0.3609,
+        "h_trigger_rate": 0.3609,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.001668
+      },
+      "B6": {
+        "method": "B6",
+        "TSR": 0.6484,
+        "GTSR": 0.6062,
+        "variant_TSR": {
+          "V0": 0.68125,
+          "V1": 0.66875,
+          "V2": 0.6375,
+          "V3": 0.60625
+        },
+        "route_flip": 0.109,
+        "mean_calls_used": 3.0,
+        "review_rate": 1.0,
+        "h_trigger_rate": 0.0,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.001448
+      },
+      "Ours": {
+        "method": "Ours",
+        "TSR": 0.6484,
+        "GTSR": 0.6062,
+        "variant_TSR": {
+          "V0": 0.68125,
+          "V1": 0.66875,
+          "V2": 0.6375,
+          "V3": 0.60625
+        },
+        "route_flip": 0.1012,
+        "mean_calls_used": 2.3797,
+        "review_rate": 0.3797,
+        "h_trigger_rate": 0.3609,
+        "delta_u_trigger_rate": 0.0187,
+        "mean_utility_loss": 0.001484
+      }
+    },
+    "v1_results": {
+      "B0": {
+        "method": "B0",
+        "TSR": 0.6469,
+        "GTSR": 0.6062,
+        "variant_TSR": {
+          "V0": 0.675,
+          "V1": 0.66875,
+          "V2": 0.6375,
+          "V3": 0.60625
+        },
+        "route_flip": 0.095,
+        "mean_calls_used": 1.0,
+        "review_rate": 0.0,
+        "h_trigger_rate": 0.0,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.033437
+      },
+      "B2": {
+        "method": "B2",
+        "TSR": 0.6469,
+        "GTSR": 0.6062,
+        "variant_TSR": {
+          "V0": 0.675,
+          "V1": 0.66875,
+          "V2": 0.6375,
+          "V3": 0.60625
+        },
+        "route_flip": 0.095,
+        "mean_calls_used": 2.0,
+        "review_rate": 0.0,
+        "h_trigger_rate": 0.0,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.033437
+      },
+      "B5": {
+        "method": "B5",
+        "TSR": 0.6484,
+        "GTSR": 0.6062,
+        "variant_TSR": {
+          "V0": 0.68125,
+          "V1": 0.66875,
+          "V2": 0.6375,
+          "V3": 0.60625
+        },
+        "route_flip": 0.095,
+        "mean_calls_used": 2.3609,
+        "review_rate": 0.3609,
+        "h_trigger_rate": 0.3609,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.033433
+      },
+      "B6": {
+        "method": "B6",
+        "TSR": 0.6484,
+        "GTSR": 0.6062,
+        "variant_TSR": {
+          "V0": 0.68125,
+          "V1": 0.66875,
+          "V2": 0.6375,
+          "V3": 0.60625
+        },
+        "route_flip": 0.109,
+        "mean_calls_used": 3.0,
+        "review_rate": 1.0,
+        "h_trigger_rate": 0.0,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.034067
+      },
+      "B3": {
+        "method": "B3",
+        "TSR": 0.6484,
+        "GTSR": 0.6062,
+        "variant_TSR": {
+          "V0": 0.68125,
+          "V1": 0.66875,
+          "V2": 0.6375,
+          "V3": 0.60625
+        },
+        "route_flip": 0.1106,
+        "mean_calls_used": 2.7,
+        "review_rate": 0.7,
+        "h_trigger_rate": 0.3609,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.033872
+      },
+      "B4": {
+        "method": "B4",
+        "TSR": 0.6484,
+        "GTSR": 0.6062,
+        "variant_TSR": {
+          "V0": 0.68125,
+          "V1": 0.66875,
+          "V2": 0.6375,
+          "V3": 0.60625
+        },
+        "route_flip": 0.1075,
+        "mean_calls_used": 2.4813,
+        "review_rate": 0.4813,
+        "h_trigger_rate": 0.3609,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.034459
+      },
+      "Ours": {
+        "method": "Ours",
+        "TSR": 0.6484,
+        "GTSR": 0.6062,
+        "variant_TSR": {
+          "V0": 0.68125,
+          "V1": 0.66875,
+          "V2": 0.6375,
+          "V3": 0.60625
+        },
+        "route_flip": 0.1012,
+        "mean_calls_used": 2.3797,
+        "review_rate": 0.3797,
+        "h_trigger_rate": 0.3609,
+        "delta_u_trigger_rate": 0.0187,
+        "mean_utility_loss": 0.033722
+      }
+    }
+  },
+  "20260906T123744Z_main_test_qwen38_max": {
+    "run_id": "20260906T123744Z_main_test_qwen38_max",
+    "model_label": "qwen38-max",
+    "metric_version": "v2",
+    "evaluated_groups": 160,
+    "evaluated_utterances": 640,
+    "calibrated_parameters": {
+      "tau_star": 0.02,
+      "tau_sem_star": 0.1,
+      "p_review_star": 0.4805194805194805
+    },
+    "telemetry": {
+      "total_calls_issued": 1818,
+      "schema_valid_calls": 1708,
+      "transport_failures": 78,
+      "provider_tokens_input": 563414,
+      "provider_tokens_output": 92694,
+      "provider_tokens_total": 656108,
+      "total_latency_seconds": 22401.62
+    },
+    "results": {
+      "B0": {
+        "method": "B0",
+        "TSR": 0.9375,
+        "GTSR": 0.8125,
+        "variant_TSR": {
+          "V0": 0.9375,
+          "V1": 0.95625,
+          "V2": 0.96875,
+          "V3": 0.8875
+        },
+        "route_flip": 0.0865,
+        "mean_calls_used": 1.0,
+        "review_rate": 0.0,
+        "h_trigger_rate": 0.0,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.001466
+      },
+      "B2": {
+        "method": "B2",
+        "TSR": 0.9375,
+        "GTSR": 0.8125,
+        "variant_TSR": {
+          "V0": 0.9375,
+          "V1": 0.95625,
+          "V2": 0.96875,
+          "V3": 0.8875
+        },
+        "route_flip": 0.0865,
+        "mean_calls_used": 2.0,
+        "review_rate": 0.0,
+        "h_trigger_rate": 0.0,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.001466
+      },
+      "B3": {
+        "method": "B3",
+        "TSR": 0.9375,
+        "GTSR": 0.8125,
+        "variant_TSR": {
+          "V0": 0.9375,
+          "V1": 0.95625,
+          "V2": 0.96875,
+          "V3": 0.8875
+        },
+        "route_flip": 0.0928,
+        "mean_calls_used": 2.5625,
+        "review_rate": 0.5625,
+        "h_trigger_rate": 0.0969,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.001544
+      },
+      "B4": {
+        "method": "B4",
+        "TSR": 0.9375,
+        "GTSR": 0.8125,
+        "variant_TSR": {
+          "V0": 0.9375,
+          "V1": 0.95625,
+          "V2": 0.96875,
+          "V3": 0.8875
+        },
+        "route_flip": 0.0865,
+        "mean_calls_used": 2.1047,
+        "review_rate": 0.1047,
+        "h_trigger_rate": 0.0969,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.001466
+      },
+      "B5": {
+        "method": "B5",
+        "TSR": 0.9375,
+        "GTSR": 0.8125,
+        "variant_TSR": {
+          "V0": 0.9375,
+          "V1": 0.95625,
+          "V2": 0.96875,
+          "V3": 0.8875
+        },
+        "route_flip": 0.0865,
+        "mean_calls_used": 2.0969,
+        "review_rate": 0.0969,
+        "h_trigger_rate": 0.0969,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.001466
+      },
+      "B6": {
+        "method": "B6",
+        "TSR": 0.9375,
+        "GTSR": 0.8125,
+        "variant_TSR": {
+          "V0": 0.9375,
+          "V1": 0.95625,
+          "V2": 0.96875,
+          "V3": 0.8875
+        },
+        "route_flip": 0.0897,
+        "mean_calls_used": 3.0,
+        "review_rate": 1.0,
+        "h_trigger_rate": 0.0,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.001461
+      },
+      "Ours": {
+        "method": "Ours",
+        "TSR": 0.9375,
+        "GTSR": 0.8125,
+        "variant_TSR": {
+          "V0": 0.9375,
+          "V1": 0.95625,
+          "V2": 0.96875,
+          "V3": 0.8875
+        },
+        "route_flip": 0.0897,
+        "mean_calls_used": 2.1125,
+        "review_rate": 0.1125,
+        "h_trigger_rate": 0.0969,
+        "delta_u_trigger_rate": 0.0156,
+        "mean_utility_loss": 0.001436
+      }
+    },
+    "v1_results": {
+      "B0": {
+        "method": "B0",
+        "TSR": 0.9375,
+        "GTSR": 0.8125,
+        "variant_TSR": {
+          "V0": 0.9375,
+          "V1": 0.95625,
+          "V2": 0.96875,
+          "V3": 0.8875
+        },
+        "route_flip": 0.0865,
+        "mean_calls_used": 1.0,
+        "review_rate": 0.0,
+        "h_trigger_rate": 0.0,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.023188
+      },
+      "B2": {
+        "method": "B2",
+        "TSR": 0.9375,
+        "GTSR": 0.8125,
+        "variant_TSR": {
+          "V0": 0.9375,
+          "V1": 0.95625,
+          "V2": 0.96875,
+          "V3": 0.8875
+        },
+        "route_flip": 0.0865,
+        "mean_calls_used": 2.0,
+        "review_rate": 0.0,
+        "h_trigger_rate": 0.0,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.023188
+      },
+      "B5": {
+        "method": "B5",
+        "TSR": 0.9375,
+        "GTSR": 0.8125,
+        "variant_TSR": {
+          "V0": 0.9375,
+          "V1": 0.95625,
+          "V2": 0.96875,
+          "V3": 0.8875
+        },
+        "route_flip": 0.0865,
+        "mean_calls_used": 2.0969,
+        "review_rate": 0.0969,
+        "h_trigger_rate": 0.0969,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.023188
+      },
+      "B6": {
+        "method": "B6",
+        "TSR": 0.9375,
+        "GTSR": 0.8125,
+        "variant_TSR": {
+          "V0": 0.9375,
+          "V1": 0.95625,
+          "V2": 0.96875,
+          "V3": 0.8875
+        },
+        "route_flip": 0.0897,
+        "mean_calls_used": 3.0,
+        "review_rate": 1.0,
+        "h_trigger_rate": 0.0,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.022914
+      },
+      "B3": {
+        "method": "B3",
+        "TSR": 0.9375,
+        "GTSR": 0.8125,
+        "variant_TSR": {
+          "V0": 0.9375,
+          "V1": 0.95625,
+          "V2": 0.96875,
+          "V3": 0.8875
+        },
+        "route_flip": 0.0928,
+        "mean_calls_used": 2.5625,
+        "review_rate": 0.5625,
+        "h_trigger_rate": 0.0969,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.023199
+      },
+      "B4": {
+        "method": "B4",
+        "TSR": 0.9375,
+        "GTSR": 0.8125,
+        "variant_TSR": {
+          "V0": 0.9375,
+          "V1": 0.95625,
+          "V2": 0.96875,
+          "V3": 0.8875
+        },
+        "route_flip": 0.0865,
+        "mean_calls_used": 2.1047,
+        "review_rate": 0.1047,
+        "h_trigger_rate": 0.0969,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.023188
+      },
+      "Ours": {
+        "method": "Ours",
+        "TSR": 0.9375,
+        "GTSR": 0.8125,
+        "variant_TSR": {
+          "V0": 0.9375,
+          "V1": 0.95625,
+          "V2": 0.96875,
+          "V3": 0.8875
+        },
+        "route_flip": 0.0897,
+        "mean_calls_used": 2.1125,
+        "review_rate": 0.1125,
+        "h_trigger_rate": 0.0969,
+        "delta_u_trigger_rate": 0.0156,
+        "mean_utility_loss": 0.023101
+      }
+    }
+  },
+  "20260906T133009Z_main_test_gpt56_luna": {
+    "run_id": "20260906T133009Z_main_test_gpt56_luna",
+    "model_label": "gpt-5.6-luna",
+    "metric_version": "v2",
+    "evaluated_groups": 160,
+    "evaluated_utterances": 640,
+    "calibrated_parameters": {
+      "tau_star": 0.02,
+      "tau_sem_star": 0.1,
+      "p_review_star": 0.4805194805194805
+    },
+    "telemetry": {
+      "total_calls_issued": 1918,
+      "schema_valid_calls": 1910,
+      "transport_failures": 3,
+      "provider_tokens_input": 1914212,
+      "provider_tokens_output": 140385,
+      "provider_tokens_total": 2054597,
+      "total_latency_seconds": 84732.23
+    },
+    "results": {
+      "B0": {
+        "method": "B0",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.2292,
+        "mean_calls_used": 1.0,
+        "review_rate": 0.0,
+        "h_trigger_rate": 0.0,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.003723
+      },
+      "B2": {
+        "method": "B2",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.2292,
+        "mean_calls_used": 2.0,
+        "review_rate": 0.0,
+        "h_trigger_rate": 0.0,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.003723
+      },
+      "B3": {
+        "method": "B3",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.2198,
+        "mean_calls_used": 2.5203,
+        "review_rate": 0.5203,
+        "h_trigger_rate": 0.0266,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.003774
+      },
+      "B4": {
+        "method": "B4",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.2156,
+        "mean_calls_used": 2.3859,
+        "review_rate": 0.3859,
+        "h_trigger_rate": 0.0266,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.003507
+      },
+      "B5": {
+        "method": "B5",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.2292,
+        "mean_calls_used": 2.0266,
+        "review_rate": 0.0266,
+        "h_trigger_rate": 0.0266,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.003723
+      },
+      "B6": {
+        "method": "B6",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.2229,
+        "mean_calls_used": 3.0,
+        "review_rate": 1.0,
+        "h_trigger_rate": 0.0,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.003848
+      },
+      "Ours": {
+        "method": "Ours",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.2198,
+        "mean_calls_used": 2.1641,
+        "review_rate": 0.1641,
+        "h_trigger_rate": 0.0266,
+        "delta_u_trigger_rate": 0.1375,
+        "mean_utility_loss": 0.00361
+      }
+    },
+    "v1_results": {
+      "B0": {
+        "method": "B0",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.2292,
+        "mean_calls_used": 1.0,
+        "review_rate": 0.0,
+        "h_trigger_rate": 0.0,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.042909
+      },
+      "B2": {
+        "method": "B2",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.2292,
+        "mean_calls_used": 2.0,
+        "review_rate": 0.0,
+        "h_trigger_rate": 0.0,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.042909
+      },
+      "B5": {
+        "method": "B5",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.2292,
+        "mean_calls_used": 2.0266,
+        "review_rate": 0.0266,
+        "h_trigger_rate": 0.0266,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.043035
+      },
+      "B6": {
+        "method": "B6",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.2229,
+        "mean_calls_used": 3.0,
+        "review_rate": 1.0,
+        "h_trigger_rate": 0.0,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.050937
+      },
+      "B3": {
+        "method": "B3",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.2198,
+        "mean_calls_used": 2.5203,
+        "review_rate": 0.5203,
+        "h_trigger_rate": 0.0266,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.0463
+      },
+      "B4": {
+        "method": "B4",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.2156,
+        "mean_calls_used": 2.3859,
+        "review_rate": 0.3859,
+        "h_trigger_rate": 0.0266,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.047222
+      },
+      "Ours": {
+        "method": "Ours",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.2198,
+        "mean_calls_used": 2.1641,
+        "review_rate": 0.1641,
+        "h_trigger_rate": 0.0266,
+        "delta_u_trigger_rate": 0.1375,
+        "mean_utility_loss": 0.04453
+      }
+    }
+  },
+  "20260907T014117Z_main_test_gpt56_sol": {
+    "run_id": "20260907T014117Z_main_test_gpt56_sol",
+    "model_label": "gpt-5.6-sol",
+    "metric_version": "v2",
+    "evaluated_groups": 160,
+    "evaluated_utterances": 640,
+    "calibrated_parameters": {
+      "tau_star": 0.02,
+      "tau_sem_star": 0.1,
+      "p_review_star": 0.4805194805194805
+    },
+    "telemetry": {
+      "total_calls_issued": 1920,
+      "schema_valid_calls": 1920,
+      "transport_failures": 0,
+      "provider_tokens_input": 2898704,
+      "provider_tokens_output": 150668,
+      "provider_tokens_total": 3049372,
+      "total_latency_seconds": 72998.05
+    },
+    "results": {
+      "B0": {
+        "method": "B0",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.2604,
+        "mean_calls_used": 1.0,
+        "review_rate": 0.0,
+        "h_trigger_rate": 0.0,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.00334
+      },
+      "B2": {
+        "method": "B2",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.2604,
+        "mean_calls_used": 2.0,
+        "review_rate": 0.0,
+        "h_trigger_rate": 0.0,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.00334
+      },
+      "B3": {
+        "method": "B3",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.2448,
+        "mean_calls_used": 2.5172,
+        "review_rate": 0.5172,
+        "h_trigger_rate": 0.0141,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.003195
+      },
+      "B4": {
+        "method": "B4",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.225,
+        "mean_calls_used": 2.3891,
+        "review_rate": 0.3891,
+        "h_trigger_rate": 0.0141,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.003106
+      },
+      "B5": {
+        "method": "B5",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.2604,
+        "mean_calls_used": 2.0141,
+        "review_rate": 0.0141,
+        "h_trigger_rate": 0.0141,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.00334
+      },
+      "B6": {
+        "method": "B6",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.2271,
+        "mean_calls_used": 3.0,
+        "review_rate": 1.0,
+        "h_trigger_rate": 0.0,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.002969
+      },
+      "Ours": {
+        "method": "Ours",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.2375,
+        "mean_calls_used": 2.1406,
+        "review_rate": 0.1406,
+        "h_trigger_rate": 0.0141,
+        "delta_u_trigger_rate": 0.1266,
+        "mean_utility_loss": 0.003144
+      }
+    },
+    "v1_results": {
+      "B0": {
+        "method": "B0",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.2604,
+        "mean_calls_used": 1.0,
+        "review_rate": 0.0,
+        "h_trigger_rate": 0.0,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.041306
+      },
+      "B2": {
+        "method": "B2",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.2604,
+        "mean_calls_used": 2.0,
+        "review_rate": 0.0,
+        "h_trigger_rate": 0.0,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.041306
+      },
+      "B5": {
+        "method": "B5",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.2604,
+        "mean_calls_used": 2.0141,
+        "review_rate": 0.0141,
+        "h_trigger_rate": 0.0141,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.041431
+      },
+      "B6": {
+        "method": "B6",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.2271,
+        "mean_calls_used": 3.0,
+        "review_rate": 1.0,
+        "h_trigger_rate": 0.0,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.045593
+      },
+      "B3": {
+        "method": "B3",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.2448,
+        "mean_calls_used": 2.5172,
+        "review_rate": 0.5172,
+        "h_trigger_rate": 0.0141,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.043427
+      },
+      "B4": {
+        "method": "B4",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.225,
+        "mean_calls_used": 2.3891,
+        "review_rate": 0.3891,
+        "h_trigger_rate": 0.0141,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.043933
+      },
+      "Ours": {
+        "method": "Ours",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.2375,
+        "mean_calls_used": 2.1406,
+        "review_rate": 0.1406,
+        "h_trigger_rate": 0.0141,
+        "delta_u_trigger_rate": 0.1266,
+        "mean_utility_loss": 0.041633
+      }
+    }
+  }
+}

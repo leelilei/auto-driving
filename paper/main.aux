@@ -1,0 +1,68 @@
+\relax 
+\citation{liang2025llmap,wang2025constraint}
+\citation{wang2025constraint}
+\citation{wang2022selfconsistency}
+\citation{kamath2020selective,geifman2017selective}
+\citation{elmachtoub2022smart}
+\@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}{}\protected@file@percent }
+\citation{liang2025llmap}
+\citation{wang2025constraint}
+\citation{geifman2017selective,kamath2020selective}
+\citation{varshney2023stitch,mishra2024calibrated}
+\citation{elmachtoub2022smart}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Architectural overview of \textbf  {DARC-Route}. Given user instruction $x$, two complementary prompts (Direct extraction $A$ and Evidence-grounded extraction $B$) yield candidate intents $y_A, y_B$. A shared exact solver computes provisional routes $r_A, r_B$. The decision gate evaluates structural protection $h$ and cross-utility swing $\Delta _U$. Only high-risk samples ($\Delta _U > \tau ^*$) trigger a single evidence-based review ($4.2\%$ of traffic), achieving maximum route stability with minimal compute overhead.}}{2}{}\protected@file@percent }
+\newlabel{fig:framework}{{1}{2}{}{figure.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {II}Related Work}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-A}}Language-Directed Route Planning}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-B}}Selective Verification and Confidence Estimation}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-C}}Decision-Focused Learning (Predict-then-Optimize)}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {III}Problem Formulation}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-A}}Structured Intent Representation}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-B}}Controlled POI Environment and Exact Backend}{2}{}\protected@file@percent }
+\citation{liang2025llmap}
+\@writefile{toc}{\contentsline {section}{\numberline {IV}DARC-Route Methodology}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-A}}Dual Complementary Parsing}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-B}}Structural Protection Trigger ($h$)}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-C}}Cross-Utility Decision Discrepancy ($\Delta _U$)}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-D}}Selective Gating and Review Arbitration}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {V}Experimental Setup}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-A}}The HIPP-Robust Benchmark}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-B}}Contrast Set for Sensitivity Validation}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-C}}Baselines}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-D}}Evaluation Metrics}{4}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Route Flip Rate (\%) and deployment calls across all baselines on the frozen test split. DARC achieves statistically significant stability gains ($p < 0.05$) with only 2.04 calls/request.}}{4}{}\protected@file@percent }
+\newlabel{fig:baseline_comparison}{{2}{4}{}{figure.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {VI}Empirical Results}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-A}}Main Experiment on Frozen Test Split}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-B}}Contrast Set Analysis: Ruling Out Over-Smoothing}{4}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Comprehensive Comparison on Frozen Test Split ($N=160$ groups, 640 utterances). Bold indicates the most cost-effective performance. Bootstrap CIs are computed across 2,000 group resamples.}}{5}{}\protected@file@percent }
+\newlabel{tab:main_results}{{I}{5}{}{table.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces Sensitivity Analysis on Contrast Set ($N=40$ Pairs).}}{5}{}\protected@file@percent }
+\newlabel{tab:contrast_results}{{II}{5}{}{table.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Contrast set sensitivity metrics. DARC achieves the highest appropriate response rate ($75.0\%$), successfully distinguishing deliberate intent shifts from surface paraphrase noise.}}{5}{}\protected@file@percent }
+\newlabel{fig:contrast_sensitivity}{{3}{5}{}{figure.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-C}}Ablation Studies and Pareto Analysis}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {VI-C}1}Gating Attribution ($h$ vs. $\Delta _U$)}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {VI-C}2}Equal-Quota Pareto Frontier}{5}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Equal-Quota Pareto curves comparing DARC gating against semantic gating (B4) and random gating (B3) across budget tiers $q \in [2\%, 20\%]$. DARC strictly dominates across all review budgets.}}{5}{}\protected@file@percent }
+\newlabel{fig:pareto_curve}{{4}{5}{}{figure.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {VI-C}3}Multi-Run Repeat Stability}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {VII}Discussion and Limitations}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VII-A}}Decision-Aware vs. Representation-Aware Verification}{5}{}\protected@file@percent }
+\bibstyle{IEEEtran}
+\bibdata{references}
+\bibcite{liang2025llmap}{1}
+\bibcite{wang2025constraint}{2}
+\bibcite{wang2022selfconsistency}{3}
+\bibcite{kamath2020selective}{4}
+\bibcite{geifman2017selective}{5}
+\bibcite{elmachtoub2022smart}{6}
+\bibcite{varshney2023stitch}{7}
+\bibcite{mishra2024calibrated}{8}
+\@writefile{lot}{\contentsline {table}{\numberline {III}{\ignorespaces Cross-architecture evaluation on 160 test groups (640 utterances).}}{6}{}\protected@file@percent }
+\newlabel{tab:cross_model}{{III}{6}{}{table.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VII-B}}Cross-Model Generalization: Multi-Family Evaluation}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VII-C}}Limitations}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {VIII}Conclusion}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{References}{6}{}\protected@file@percent }
+\gdef \@abspage@last{6}

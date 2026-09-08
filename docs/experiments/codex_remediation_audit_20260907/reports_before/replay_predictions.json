@@ -1,0 +1,5510 @@
+[
+  {
+    "group_id": "test_001",
+    "utterance_id": "test_001_v0",
+    "variant_type": "V0",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library"
+      ],
+      "time_limit": null,
+      "dependencies": [],
+      "quality_weight": 0.6
+    },
+    "methods": {
+      "B0": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B0",
+          "calls_used": 1,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.2863,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.2862689348955537
+        }
+      },
+      "B1": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B1",
+          "calls_used": 3,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.2863,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.2862689348955537
+        }
+      },
+      "B2": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B2",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.2863,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.2862689348955537
+        }
+      },
+      "B3": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B3",
+          "calls_used": 3,
+          "review_triggered": true,
+          "trigger_reason": "random_probability",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": "adopted_review"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.2863,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.2862689348955537
+        }
+      },
+      "B4": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B4",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b4",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.2863,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.2862689348955537
+        }
+      },
+      "B5": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B5",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b5_only_h",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.2863,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.2862689348955537
+        }
+      },
+      "B6": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B6",
+          "calls_used": 3,
+          "review_triggered": true,
+          "trigger_reason": "always_review",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "adopted_review"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.2863,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.2862689348955537
+        }
+      },
+      "Ours": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "Ours",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_darc",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.2863,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.2862689348955537
+        }
+      }
+    }
+  },
+  {
+    "group_id": "test_001",
+    "utterance_id": "test_001_v1",
+    "variant_type": "V1",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library"
+      ],
+      "time_limit": null,
+      "dependencies": [],
+      "quality_weight": 0.6
+    },
+    "methods": {
+      "B0": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B0",
+          "calls_used": 1,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6044,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.6044375739582215
+        }
+      },
+      "B1": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B1",
+          "calls_used": 3,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6044,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.6044375739582215
+        }
+      },
+      "B2": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B2",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6044,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.6044375739582215
+        }
+      },
+      "B3": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B3",
+          "calls_used": 3,
+          "review_triggered": true,
+          "trigger_reason": "random_probability",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": "adopted_review"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6044,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.6044375739582215
+        }
+      },
+      "B4": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B4",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b4",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6044,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.6044375739582215
+        }
+      },
+      "B5": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B5",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b5_only_h",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6044,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.6044375739582215
+        }
+      },
+      "B6": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B6",
+          "calls_used": 3,
+          "review_triggered": true,
+          "trigger_reason": "always_review",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "adopted_review"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6044,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.6044375739582215
+        }
+      },
+      "Ours": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "Ours",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_darc",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6044,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.6044375739582215
+        }
+      }
+    }
+  },
+  {
+    "group_id": "test_001",
+    "utterance_id": "test_001_v2",
+    "variant_type": "V2",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library"
+      ],
+      "time_limit": null,
+      "dependencies": [],
+      "quality_weight": 0.6
+    },
+    "methods": {
+      "B0": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B0",
+          "calls_used": 1,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6044,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.6044375739582215
+        }
+      },
+      "B1": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B1",
+          "calls_used": 3,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6044,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.6044375739582215
+        }
+      },
+      "B2": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B2",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6044,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.6044375739582215
+        }
+      },
+      "B3": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B3",
+          "calls_used": 3,
+          "review_triggered": true,
+          "trigger_reason": "random_probability",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": "adopted_review"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6044,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.6044375739582215
+        }
+      },
+      "B4": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B4",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b4",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6044,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.6044375739582215
+        }
+      },
+      "B5": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B5",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b5_only_h",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6044,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.6044375739582215
+        }
+      },
+      "B6": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B6",
+          "calls_used": 3,
+          "review_triggered": true,
+          "trigger_reason": "always_review",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "adopted_review"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6044,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.6044375739582215
+        }
+      },
+      "Ours": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "Ours",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_darc",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6044,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.6044375739582215
+        }
+      }
+    }
+  },
+  {
+    "group_id": "test_001",
+    "utterance_id": "test_001_v3",
+    "variant_type": "V3",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library"
+      ],
+      "time_limit": null,
+      "dependencies": [],
+      "quality_weight": 0.6
+    },
+    "methods": {
+      "B0": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B0",
+          "calls_used": 1,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.8165,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.81655
+        }
+      },
+      "B1": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B1",
+          "calls_used": 3,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.8165,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.81655
+        }
+      },
+      "B2": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B2",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.8165,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.81655
+        }
+      },
+      "B3": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B3",
+          "calls_used": 3,
+          "review_triggered": true,
+          "trigger_reason": "random_probability",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": "adopted_review"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.8165,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.81655
+        }
+      },
+      "B4": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B4",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b4",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.8165,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.81655
+        }
+      },
+      "B5": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B5",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b5_only_h",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.8165,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.81655
+        }
+      },
+      "B6": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B6",
+          "calls_used": 3,
+          "review_triggered": true,
+          "trigger_reason": "always_review",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "adopted_review"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.8165,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.81655
+        }
+      },
+      "Ours": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "Ours",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_darc",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.8165,
+          "total_distance": 14.494,
+          "total_time": 104.0,
+          "final_arrival_time": 644,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "library_2"
+            ]
+          },
+          "raw_utility": 0.81655
+        }
+      }
+    }
+  },
+  {
+    "group_id": "test_002",
+    "utterance_id": "test_002_v0",
+    "variant_type": "V0",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "shopping_mall"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "bank",
+          "shopping_mall"
+        ]
+      ],
+      "quality_weight": 1.0
+    },
+    "methods": {
+      "B0": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B0",
+          "calls_used": 1,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "shopping_mall_2"
+          ],
+          "categories": [
+            "bank",
+            "shopping_mall"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6228,
+          "total_distance": 22.168,
+          "total_time": 134.3,
+          "final_arrival_time": 674,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "shopping_mall_2"
+            ]
+          },
+          "raw_utility": 0.6227577028973675
+        }
+      },
+      "B1": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B1",
+          "calls_used": 3,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "shopping_mall_2"
+          ],
+          "categories": [
+            "bank",
+            "shopping_mall"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6228,
+          "total_distance": 22.168,
+          "total_time": 134.3,
+          "final_arrival_time": 674,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "shopping_mall_2"
+            ]
+          },
+          "raw_utility": 0.6227577028973675
+        }
+      },
+      "B2": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B2",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "shopping_mall_2"
+          ],
+          "categories": [
+            "bank",
+            "shopping_mall"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6228,
+          "total_distance": 22.168,
+          "total_time": 134.3,
+          "final_arrival_time": 674,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "shopping_mall_2"
+            ]
+          },
+          "raw_utility": 0.6227577028973675
+        }
+      },
+      "B3": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B3",
+          "calls_used": 3,
+          "review_triggered": true,
+          "trigger_reason": "random_probability",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": "adopted_review"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "shopping_mall_2"
+          ],
+          "categories": [
+            "bank",
+            "shopping_mall"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6228,
+          "total_distance": 22.168,
+          "total_time": 134.3,
+          "final_arrival_time": 674,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "shopping_mall_2"
+            ]
+          },
+          "raw_utility": 0.6227577028973675
+        }
+      },
+      "B4": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B4",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b4",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "shopping_mall_2"
+          ],
+          "categories": [
+            "bank",
+            "shopping_mall"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6228,
+          "total_distance": 22.168,
+          "total_time": 134.3,
+          "final_arrival_time": 674,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "shopping_mall_2"
+            ]
+          },
+          "raw_utility": 0.6227577028973675
+        }
+      },
+      "B5": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B5",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b5_only_h",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "shopping_mall_2"
+          ],
+          "categories": [
+            "bank",
+            "shopping_mall"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6228,
+          "total_distance": 22.168,
+          "total_time": 134.3,
+          "final_arrival_time": 674,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "shopping_mall_2"
+            ]
+          },
+          "raw_utility": 0.6227577028973675
+        }
+      },
+      "B6": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B6",
+          "calls_used": 3,
+          "review_triggered": true,
+          "trigger_reason": "always_review",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "adopted_review"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "shopping_mall_2"
+          ],
+          "categories": [
+            "bank",
+            "shopping_mall"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6228,
+          "total_distance": 22.168,
+          "total_time": 134.3,
+          "final_arrival_time": 674,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "shopping_mall_2"
+            ]
+          },
+          "raw_utility": 0.6227577028973675
+        }
+      },
+      "Ours": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "Ours",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_darc",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "shopping_mall_2"
+          ],
+          "categories": [
+            "bank",
+            "shopping_mall"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6228,
+          "total_distance": 22.168,
+          "total_time": 134.3,
+          "final_arrival_time": 674,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "shopping_mall_2"
+            ]
+          },
+          "raw_utility": 0.6227577028973675
+        }
+      }
+    }
+  },
+  {
+    "group_id": "test_002",
+    "utterance_id": "test_002_v1",
+    "variant_type": "V1",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "shopping_mall"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "bank",
+          "shopping_mall"
+        ]
+      ],
+      "quality_weight": 1.0
+    },
+    "methods": {
+      "B0": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B0",
+          "calls_used": 1,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "shopping_mall_2"
+          ],
+          "categories": [
+            "bank",
+            "shopping_mall"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6228,
+          "total_distance": 22.168,
+          "total_time": 134.3,
+          "final_arrival_time": 674,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "shopping_mall_2"
+            ]
+          },
+          "raw_utility": 0.6227577028973675
+        }
+      },
+      "B1": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B1",
+          "calls_used": 3,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "shopping_mall_2"
+          ],
+          "categories": [
+            "bank",
+            "shopping_mall"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6228,
+          "total_distance": 22.168,
+          "total_time": 134.3,
+          "final_arrival_time": 674,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "shopping_mall_2"
+            ]
+          },
+          "raw_utility": 0.6227577028973675
+        }
+      },
+      "B2": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B2",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "shopping_mall_2"
+          ],
+          "categories": [
+            "bank",
+            "shopping_mall"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6228,
+          "total_distance": 22.168,
+          "total_time": 134.3,
+          "final_arrival_time": 674,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "shopping_mall_2"
+            ]
+          },
+          "raw_utility": 0.6227577028973675
+        }
+      },
+      "B3": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B3",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b3",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "shopping_mall_2"
+          ],
+          "categories": [
+            "bank",
+            "shopping_mall"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6228,
+          "total_distance": 22.168,
+          "total_time": 134.3,
+          "final_arrival_time": 674,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "shopping_mall_2"
+            ]
+          },
+          "raw_utility": 0.6227577028973675
+        }
+      },
+      "B4": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B4",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b4",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "shopping_mall_2"
+          ],
+          "categories": [
+            "bank",
+            "shopping_mall"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6228,
+          "total_distance": 22.168,
+          "total_time": 134.3,
+          "final_arrival_time": 674,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "shopping_mall_2"
+            ]
+          },
+          "raw_utility": 0.6227577028973675
+        }
+      },
+      "B5": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B5",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b5_only_h",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "shopping_mall_2"
+          ],
+          "categories": [
+            "bank",
+            "shopping_mall"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6228,
+          "total_distance": 22.168,
+          "total_time": 134.3,
+          "final_arrival_time": 674,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "shopping_mall_2"
+            ]
+          },
+          "raw_utility": 0.6227577028973675
+        }
+      },
+      "B6": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B6",
+          "calls_used": 3,
+          "review_triggered": true,
+          "trigger_reason": "always_review",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "adopted_review"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "shopping_mall_2"
+          ],
+          "categories": [
+            "bank",
+            "shopping_mall"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6228,
+          "total_distance": 22.168,
+          "total_time": 134.3,
+          "final_arrival_time": 674,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "shopping_mall_2"
+            ]
+          },
+          "raw_utility": 0.6227577028973675
+        }
+      },
+      "Ours": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "Ours",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_darc",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "shopping_mall_2"
+          ],
+          "categories": [
+            "bank",
+            "shopping_mall"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6228,
+          "total_distance": 22.168,
+          "total_time": 134.3,
+          "final_arrival_time": 674,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "shopping_mall_2"
+            ]
+          },
+          "raw_utility": 0.6227577028973675
+        }
+      }
+    }
+  },
+  {
+    "group_id": "test_002",
+    "utterance_id": "test_002_v2",
+    "variant_type": "V2",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "shopping_mall"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "bank",
+          "shopping_mall"
+        ]
+      ],
+      "quality_weight": 1.0
+    },
+    "methods": {
+      "B0": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B0",
+          "calls_used": 1,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "shopping_mall_2"
+          ],
+          "categories": [
+            "bank",
+            "shopping_mall"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6228,
+          "total_distance": 22.168,
+          "total_time": 134.3,
+          "final_arrival_time": 674,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "shopping_mall_2"
+            ]
+          },
+          "raw_utility": 0.6227577028973675
+        }
+      },
+      "B1": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B1",
+          "calls_used": 3,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A2"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "shopping_mall_2"
+          ],
+          "categories": [
+            "bank",
+            "shopping_mall"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.7426,
+          "total_distance": 22.168,
+          "total_time": 134.3,
+          "final_arrival_time": 674,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "shopping_mall_2"
+            ]
+          },
+          "raw_utility": 0.7425538514486837
+        }
+      },
+      "B2": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B2",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "shopping_mall_2"
+          ],
+          "categories": [
+            "bank",
+            "shopping_mall"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6228,
+          "total_distance": 22.168,
+          "total_time": 134.3,
+          "final_arrival_time": 674,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "shopping_mall_2"
+            ]
+          },
+          "raw_utility": 0.6227577028973675
+        }
+      },
+      "B3": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B3",
+          "calls_used": 3,
+          "review_triggered": true,
+          "trigger_reason": "random_probability",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": "adopted_review"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "shopping_mall_2"
+          ],
+          "categories": [
+            "bank",
+            "shopping_mall"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6228,
+          "total_distance": 22.168,
+          "total_time": 134.3,
+          "final_arrival_time": 674,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "shopping_mall_2"
+            ]
+          },
+          "raw_utility": 0.6227577028973675
+        }
+      },
+      "B4": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B4",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b4",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "shopping_mall_2"
+          ],
+          "categories": [
+            "bank",
+            "shopping_mall"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6228,
+          "total_distance": 22.168,
+          "total_time": 134.3,
+          "final_arrival_time": 674,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "shopping_mall_2"
+            ]
+          },
+          "raw_utility": 0.6227577028973675
+        }
+      },
+      "B5": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B5",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b5_only_h",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "shopping_mall_2"
+          ],
+          "categories": [
+            "bank",
+            "shopping_mall"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6228,
+          "total_distance": 22.168,
+          "total_time": 134.3,
+          "final_arrival_time": 674,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "shopping_mall_2"
+            ]
+          },
+          "raw_utility": 0.6227577028973675
+        }
+      },
+      "B6": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B6",
+          "calls_used": 3,
+          "review_triggered": true,
+          "trigger_reason": "always_review",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "adopted_review"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "shopping_mall_2"
+          ],
+          "categories": [
+            "bank",
+            "shopping_mall"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6228,
+          "total_distance": 22.168,
+          "total_time": 134.3,
+          "final_arrival_time": 674,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "shopping_mall_2"
+            ]
+          },
+          "raw_utility": 0.6227577028973675
+        }
+      },
+      "Ours": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "Ours",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_darc",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "shopping_mall_2"
+          ],
+          "categories": [
+            "bank",
+            "shopping_mall"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6228,
+          "total_distance": 22.168,
+          "total_time": 134.3,
+          "final_arrival_time": 674,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "shopping_mall_2"
+            ]
+          },
+          "raw_utility": 0.6227577028973675
+        }
+      }
+    }
+  },
+  {
+    "group_id": "test_002",
+    "utterance_id": "test_002_v3",
+    "variant_type": "V3",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "shopping_mall"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "bank",
+          "shopping_mall"
+        ]
+      ],
+      "quality_weight": 1.0
+    },
+    "methods": {
+      "B0": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B0",
+          "calls_used": 1,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "shopping_mall_2"
+          ],
+          "categories": [
+            "bank",
+            "shopping_mall"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.8623,
+          "total_distance": 22.168,
+          "total_time": 134.3,
+          "final_arrival_time": 674,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "shopping_mall_2"
+            ]
+          },
+          "raw_utility": 0.86235
+        }
+      },
+      "B1": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B1",
+          "calls_used": 3,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "shopping_mall_2"
+          ],
+          "categories": [
+            "bank",
+            "shopping_mall"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.8623,
+          "total_distance": 22.168,
+          "total_time": 134.3,
+          "final_arrival_time": 674,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "shopping_mall_2"
+            ]
+          },
+          "raw_utility": 0.86235
+        }
+      },
+      "B2": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B2",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "shopping_mall_2"
+          ],
+          "categories": [
+            "bank",
+            "shopping_mall"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.8623,
+          "total_distance": 22.168,
+          "total_time": 134.3,
+          "final_arrival_time": 674,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "shopping_mall_2"
+            ]
+          },
+          "raw_utility": 0.86235
+        }
+      },
+      "B3": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B3",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b3",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "shopping_mall_2"
+          ],
+          "categories": [
+            "bank",
+            "shopping_mall"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.8623,
+          "total_distance": 22.168,
+          "total_time": 134.3,
+          "final_arrival_time": 674,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "shopping_mall_2"
+            ]
+          },
+          "raw_utility": 0.86235
+        }
+      },
+      "B4": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B4",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b4",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "shopping_mall_2"
+          ],
+          "categories": [
+            "bank",
+            "shopping_mall"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.8623,
+          "total_distance": 22.168,
+          "total_time": 134.3,
+          "final_arrival_time": 674,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "shopping_mall_2"
+            ]
+          },
+          "raw_utility": 0.86235
+        }
+      },
+      "B5": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B5",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b5_only_h",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "shopping_mall_2"
+          ],
+          "categories": [
+            "bank",
+            "shopping_mall"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.8623,
+          "total_distance": 22.168,
+          "total_time": 134.3,
+          "final_arrival_time": 674,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "shopping_mall_2"
+            ]
+          },
+          "raw_utility": 0.86235
+        }
+      },
+      "B6": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B6",
+          "calls_used": 3,
+          "review_triggered": true,
+          "trigger_reason": "always_review",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "adopted_review"
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "shopping_mall_2"
+          ],
+          "categories": [
+            "bank",
+            "shopping_mall"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.8623,
+          "total_distance": 22.168,
+          "total_time": 134.3,
+          "final_arrival_time": 674,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "shopping_mall_2"
+            ]
+          },
+          "raw_utility": 0.86235
+        }
+      },
+      "Ours": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "Ours",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_darc",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "bank_2",
+            "shopping_mall_2"
+          ],
+          "categories": [
+            "bank",
+            "shopping_mall"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.8623,
+          "total_distance": 22.168,
+          "total_time": 134.3,
+          "final_arrival_time": 674,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "bank_2",
+              "shopping_mall_2"
+            ]
+          },
+          "raw_utility": 0.86235
+        }
+      }
+    }
+  },
+  {
+    "group_id": "test_003",
+    "utterance_id": "test_003_v0",
+    "variant_type": "V0",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "pharmacy",
+        "shopping_mall"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "pharmacy",
+          "shopping_mall"
+        ]
+      ],
+      "quality_weight": 0.4
+    },
+    "methods": {
+      "B0": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B0",
+          "calls_used": 1,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "pharmacy_2",
+            "shopping_mall_1",
+            "bank_1"
+          ],
+          "categories": [
+            "pharmacy",
+            "shopping_mall",
+            "bank"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0596,
+          "total_distance": 11.643,
+          "total_time": 128.3,
+          "final_arrival_time": 668,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "pharmacy_2",
+              "shopping_mall_1",
+              "bank_1"
+            ]
+          },
+          "raw_utility": 0.05956494412937005
+        }
+      },
+      "B1": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B1",
+          "calls_used": 3,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "pharmacy_2",
+            "shopping_mall_1",
+            "bank_1"
+          ],
+          "categories": [
+            "pharmacy",
+            "shopping_mall",
+            "bank"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0596,
+          "total_distance": 11.643,
+          "total_time": 128.3,
+          "final_arrival_time": 668,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "pharmacy_2",
+              "shopping_mall_1",
+              "bank_1"
+            ]
+          },
+          "raw_utility": 0.05956494412937005
+        }
+      },
+      "B2": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B2",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "pharmacy_2",
+            "shopping_mall_1",
+            "bank_1"
+          ],
+          "categories": [
+            "pharmacy",
+            "shopping_mall",
+            "bank"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0596,
+          "total_distance": 11.643,
+          "total_time": 128.3,
+          "final_arrival_time": 668,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "pharmacy_2",
+              "shopping_mall_1",
+              "bank_1"
+            ]
+          },
+          "raw_utility": 0.05956494412937005
+        }
+      },
+      "B3": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B3",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b3",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "pharmacy_2",
+            "shopping_mall_1",
+            "bank_1"
+          ],
+          "categories": [
+            "pharmacy",
+            "shopping_mall",
+            "bank"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0596,
+          "total_distance": 11.643,
+          "total_time": 128.3,
+          "final_arrival_time": 668,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "pharmacy_2",
+              "shopping_mall_1",
+              "bank_1"
+            ]
+          },
+          "raw_utility": 0.05956494412937005
+        }
+      },
+      "B4": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B4",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b4",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "pharmacy_2",
+            "shopping_mall_1",
+            "bank_1"
+          ],
+          "categories": [
+            "pharmacy",
+            "shopping_mall",
+            "bank"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0596,
+          "total_distance": 11.643,
+          "total_time": 128.3,
+          "final_arrival_time": 668,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "pharmacy_2",
+              "shopping_mall_1",
+              "bank_1"
+            ]
+          },
+          "raw_utility": 0.05956494412937005
+        }
+      },
+      "B5": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B5",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b5_only_h",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "pharmacy_2",
+            "shopping_mall_1",
+            "bank_1"
+          ],
+          "categories": [
+            "pharmacy",
+            "shopping_mall",
+            "bank"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0596,
+          "total_distance": 11.643,
+          "total_time": 128.3,
+          "final_arrival_time": 668,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "pharmacy_2",
+              "shopping_mall_1",
+              "bank_1"
+            ]
+          },
+          "raw_utility": 0.05956494412937005
+        }
+      },
+      "B6": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B6",
+          "calls_used": 3,
+          "review_triggered": true,
+          "trigger_reason": "always_review",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "adopted_review"
+        },
+        "route": {
+          "poi_ids": [
+            "pharmacy_2",
+            "shopping_mall_1",
+            "bank_1"
+          ],
+          "categories": [
+            "pharmacy",
+            "shopping_mall",
+            "bank"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0596,
+          "total_distance": 11.643,
+          "total_time": 128.3,
+          "final_arrival_time": 668,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "pharmacy_2",
+              "shopping_mall_1",
+              "bank_1"
+            ]
+          },
+          "raw_utility": 0.05956494412937005
+        }
+      },
+      "Ours": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "Ours",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_darc",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "pharmacy_2",
+            "shopping_mall_1",
+            "bank_1"
+          ],
+          "categories": [
+            "pharmacy",
+            "shopping_mall",
+            "bank"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0596,
+          "total_distance": 11.643,
+          "total_time": 128.3,
+          "final_arrival_time": 668,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "pharmacy_2",
+              "shopping_mall_1",
+              "bank_1"
+            ]
+          },
+          "raw_utility": 0.05956494412937005
+        }
+      }
+    }
+  },
+  {
+    "group_id": "test_003",
+    "utterance_id": "test_003_v1",
+    "variant_type": "V1",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "pharmacy",
+        "shopping_mall"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "pharmacy",
+          "shopping_mall"
+        ]
+      ],
+      "quality_weight": 0.4
+    },
+    "methods": {
+      "B0": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B0",
+          "calls_used": 1,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "pharmacy_2",
+            "shopping_mall_1",
+            "bank_1"
+          ],
+          "categories": [
+            "pharmacy",
+            "shopping_mall",
+            "bank"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0596,
+          "total_distance": 11.643,
+          "total_time": 128.3,
+          "final_arrival_time": 668,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "pharmacy_2",
+              "shopping_mall_1",
+              "bank_1"
+            ]
+          },
+          "raw_utility": 0.05956494412937005
+        }
+      },
+      "B1": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B1",
+          "calls_used": 3,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "pharmacy_2",
+            "shopping_mall_1",
+            "bank_1"
+          ],
+          "categories": [
+            "pharmacy",
+            "shopping_mall",
+            "bank"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0596,
+          "total_distance": 11.643,
+          "total_time": 128.3,
+          "final_arrival_time": 668,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "pharmacy_2",
+              "shopping_mall_1",
+              "bank_1"
+            ]
+          },
+          "raw_utility": 0.05956494412937005
+        }
+      },
+      "B2": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B2",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "pharmacy_2",
+            "shopping_mall_1",
+            "bank_1"
+          ],
+          "categories": [
+            "pharmacy",
+            "shopping_mall",
+            "bank"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0596,
+          "total_distance": 11.643,
+          "total_time": 128.3,
+          "final_arrival_time": 668,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "pharmacy_2",
+              "shopping_mall_1",
+              "bank_1"
+            ]
+          },
+          "raw_utility": 0.05956494412937005
+        }
+      },
+      "B3": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B3",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b3",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "pharmacy_2",
+            "shopping_mall_1",
+            "bank_1"
+          ],
+          "categories": [
+            "pharmacy",
+            "shopping_mall",
+            "bank"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0596,
+          "total_distance": 11.643,
+          "total_time": 128.3,
+          "final_arrival_time": 668,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "pharmacy_2",
+              "shopping_mall_1",
+              "bank_1"
+            ]
+          },
+          "raw_utility": 0.05956494412937005
+        }
+      },
+      "B4": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B4",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b4",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "pharmacy_2",
+            "shopping_mall_1",
+            "bank_1"
+          ],
+          "categories": [
+            "pharmacy",
+            "shopping_mall",
+            "bank"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0596,
+          "total_distance": 11.643,
+          "total_time": 128.3,
+          "final_arrival_time": 668,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "pharmacy_2",
+              "shopping_mall_1",
+              "bank_1"
+            ]
+          },
+          "raw_utility": 0.05956494412937005
+        }
+      },
+      "B5": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B5",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b5_only_h",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "pharmacy_2",
+            "shopping_mall_1",
+            "bank_1"
+          ],
+          "categories": [
+            "pharmacy",
+            "shopping_mall",
+            "bank"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0596,
+          "total_distance": 11.643,
+          "total_time": 128.3,
+          "final_arrival_time": 668,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "pharmacy_2",
+              "shopping_mall_1",
+              "bank_1"
+            ]
+          },
+          "raw_utility": 0.05956494412937005
+        }
+      },
+      "B6": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B6",
+          "calls_used": 3,
+          "review_triggered": true,
+          "trigger_reason": "always_review",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "adopted_review"
+        },
+        "route": {
+          "poi_ids": [
+            "pharmacy_2",
+            "shopping_mall_1",
+            "bank_1"
+          ],
+          "categories": [
+            "pharmacy",
+            "shopping_mall",
+            "bank"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": -0.0294,
+          "total_distance": 11.643,
+          "total_time": 128.3,
+          "final_arrival_time": 668,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "pharmacy_2",
+              "shopping_mall_1",
+              "bank_1"
+            ]
+          },
+          "raw_utility": -0.02942577813786279
+        }
+      },
+      "Ours": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "Ours",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_darc",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "pharmacy_2",
+            "shopping_mall_1",
+            "bank_1"
+          ],
+          "categories": [
+            "pharmacy",
+            "shopping_mall",
+            "bank"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0596,
+          "total_distance": 11.643,
+          "total_time": 128.3,
+          "final_arrival_time": 668,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "pharmacy_2",
+              "shopping_mall_1",
+              "bank_1"
+            ]
+          },
+          "raw_utility": 0.05956494412937005
+        }
+      }
+    }
+  },
+  {
+    "group_id": "test_003",
+    "utterance_id": "test_003_v2",
+    "variant_type": "V2",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "pharmacy",
+        "shopping_mall"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "pharmacy",
+          "shopping_mall"
+        ]
+      ],
+      "quality_weight": 0.4
+    },
+    "methods": {
+      "B0": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B0",
+          "calls_used": 1,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "pharmacy_2",
+            "shopping_mall_1",
+            "bank_1"
+          ],
+          "categories": [
+            "pharmacy",
+            "shopping_mall",
+            "bank"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": -0.0294,
+          "total_distance": 11.643,
+          "total_time": 128.3,
+          "final_arrival_time": 668,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "pharmacy_2",
+              "shopping_mall_1",
+              "bank_1"
+            ]
+          },
+          "raw_utility": -0.02942577813786279
+        }
+      },
+      "B1": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B1",
+          "calls_used": 3,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "pharmacy_2",
+            "shopping_mall_1",
+            "bank_1"
+          ],
+          "categories": [
+            "pharmacy",
+            "shopping_mall",
+            "bank"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": -0.0294,
+          "total_distance": 11.643,
+          "total_time": 128.3,
+          "final_arrival_time": 668,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "pharmacy_2",
+              "shopping_mall_1",
+              "bank_1"
+            ]
+          },
+          "raw_utility": -0.02942577813786279
+        }
+      },
+      "B2": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B2",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "pharmacy_2",
+            "shopping_mall_1",
+            "bank_1"
+          ],
+          "categories": [
+            "pharmacy",
+            "shopping_mall",
+            "bank"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": -0.0294,
+          "total_distance": 11.643,
+          "total_time": 128.3,
+          "final_arrival_time": 668,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "pharmacy_2",
+              "shopping_mall_1",
+              "bank_1"
+            ]
+          },
+          "raw_utility": -0.02942577813786279
+        }
+      },
+      "B3": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B3",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b3",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "pharmacy_2",
+            "shopping_mall_1",
+            "bank_1"
+          ],
+          "categories": [
+            "pharmacy",
+            "shopping_mall",
+            "bank"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": -0.0294,
+          "total_distance": 11.643,
+          "total_time": 128.3,
+          "final_arrival_time": 668,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "pharmacy_2",
+              "shopping_mall_1",
+              "bank_1"
+            ]
+          },
+          "raw_utility": -0.02942577813786279
+        }
+      },
+      "B4": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B4",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b4",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "pharmacy_2",
+            "shopping_mall_1",
+            "bank_1"
+          ],
+          "categories": [
+            "pharmacy",
+            "shopping_mall",
+            "bank"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": -0.0294,
+          "total_distance": 11.643,
+          "total_time": 128.3,
+          "final_arrival_time": 668,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "pharmacy_2",
+              "shopping_mall_1",
+              "bank_1"
+            ]
+          },
+          "raw_utility": -0.02942577813786279
+        }
+      },
+      "B5": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B5",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b5_only_h",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "pharmacy_2",
+            "shopping_mall_1",
+            "bank_1"
+          ],
+          "categories": [
+            "pharmacy",
+            "shopping_mall",
+            "bank"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": -0.0294,
+          "total_distance": 11.643,
+          "total_time": 128.3,
+          "final_arrival_time": 668,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "pharmacy_2",
+              "shopping_mall_1",
+              "bank_1"
+            ]
+          },
+          "raw_utility": -0.02942577813786279
+        }
+      },
+      "B6": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B6",
+          "calls_used": 3,
+          "review_triggered": true,
+          "trigger_reason": "always_review",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "adopted_review"
+        },
+        "route": {
+          "poi_ids": [
+            "pharmacy_2",
+            "shopping_mall_1",
+            "bank_1"
+          ],
+          "categories": [
+            "pharmacy",
+            "shopping_mall",
+            "bank"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": -0.0294,
+          "total_distance": 11.643,
+          "total_time": 128.3,
+          "final_arrival_time": 668,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "pharmacy_2",
+              "shopping_mall_1",
+              "bank_1"
+            ]
+          },
+          "raw_utility": -0.02942577813786279
+        }
+      },
+      "Ours": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "Ours",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_darc",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "pharmacy_2",
+            "shopping_mall_1",
+            "bank_1"
+          ],
+          "categories": [
+            "pharmacy",
+            "shopping_mall",
+            "bank"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": -0.0294,
+          "total_distance": 11.643,
+          "total_time": 128.3,
+          "final_arrival_time": 668,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "pharmacy_2",
+              "shopping_mall_1",
+              "bank_1"
+            ]
+          },
+          "raw_utility": -0.02942577813786279
+        }
+      }
+    }
+  },
+  {
+    "group_id": "test_003",
+    "utterance_id": "test_003_v3",
+    "variant_type": "V3",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "pharmacy",
+        "shopping_mall"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "pharmacy",
+          "shopping_mall"
+        ]
+      ],
+      "quality_weight": 0.4
+    },
+    "methods": {
+      "B0": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B0",
+          "calls_used": 1,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "pharmacy_2",
+            "shopping_mall_1",
+            "bank_1"
+          ],
+          "categories": [
+            "pharmacy",
+            "shopping_mall",
+            "bank"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": -0.0294,
+          "total_distance": 11.643,
+          "total_time": 128.3,
+          "final_arrival_time": 668,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "pharmacy_2",
+              "shopping_mall_1",
+              "bank_1"
+            ]
+          },
+          "raw_utility": -0.02942577813786279
+        }
+      },
+      "B1": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B1",
+          "calls_used": 3,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "pharmacy_2",
+            "shopping_mall_1",
+            "bank_1"
+          ],
+          "categories": [
+            "pharmacy",
+            "shopping_mall",
+            "bank"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": -0.0294,
+          "total_distance": 11.643,
+          "total_time": 128.3,
+          "final_arrival_time": 668,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "pharmacy_2",
+              "shopping_mall_1",
+              "bank_1"
+            ]
+          },
+          "raw_utility": -0.02942577813786279
+        }
+      },
+      "B2": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B2",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "pharmacy_2",
+            "shopping_mall_1",
+            "bank_1"
+          ],
+          "categories": [
+            "pharmacy",
+            "shopping_mall",
+            "bank"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": -0.0294,
+          "total_distance": 11.643,
+          "total_time": 128.3,
+          "final_arrival_time": 668,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "pharmacy_2",
+              "shopping_mall_1",
+              "bank_1"
+            ]
+          },
+          "raw_utility": -0.02942577813786279
+        }
+      },
+      "B3": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B3",
+          "calls_used": 3,
+          "review_triggered": true,
+          "trigger_reason": "random_probability",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": "adopted_review"
+        },
+        "route": {
+          "poi_ids": [
+            "pharmacy_2",
+            "shopping_mall_1",
+            "bank_1"
+          ],
+          "categories": [
+            "pharmacy",
+            "shopping_mall",
+            "bank"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": -0.0294,
+          "total_distance": 11.643,
+          "total_time": 128.3,
+          "final_arrival_time": 668,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "pharmacy_2",
+              "shopping_mall_1",
+              "bank_1"
+            ]
+          },
+          "raw_utility": -0.02942577813786279
+        }
+      },
+      "B4": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B4",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b4",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "pharmacy_2",
+            "shopping_mall_1",
+            "bank_1"
+          ],
+          "categories": [
+            "pharmacy",
+            "shopping_mall",
+            "bank"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": -0.0294,
+          "total_distance": 11.643,
+          "total_time": 128.3,
+          "final_arrival_time": 668,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "pharmacy_2",
+              "shopping_mall_1",
+              "bank_1"
+            ]
+          },
+          "raw_utility": -0.02942577813786279
+        }
+      },
+      "B5": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B5",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b5_only_h",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "pharmacy_2",
+            "shopping_mall_1",
+            "bank_1"
+          ],
+          "categories": [
+            "pharmacy",
+            "shopping_mall",
+            "bank"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": -0.0294,
+          "total_distance": 11.643,
+          "total_time": 128.3,
+          "final_arrival_time": 668,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "pharmacy_2",
+              "shopping_mall_1",
+              "bank_1"
+            ]
+          },
+          "raw_utility": -0.02942577813786279
+        }
+      },
+      "B6": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B6",
+          "calls_used": 3,
+          "review_triggered": true,
+          "trigger_reason": "always_review",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "adopted_review"
+        },
+        "route": {
+          "poi_ids": [
+            "pharmacy_2",
+            "shopping_mall_1",
+            "bank_1"
+          ],
+          "categories": [
+            "pharmacy",
+            "shopping_mall",
+            "bank"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": -0.0294,
+          "total_distance": 11.643,
+          "total_time": 128.3,
+          "final_arrival_time": 668,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "pharmacy_2",
+              "shopping_mall_1",
+              "bank_1"
+            ]
+          },
+          "raw_utility": -0.02942577813786279
+        }
+      },
+      "Ours": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "Ours",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_darc",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "pharmacy_2",
+            "shopping_mall_1",
+            "bank_1"
+          ],
+          "categories": [
+            "pharmacy",
+            "shopping_mall",
+            "bank"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": -0.0294,
+          "total_distance": 11.643,
+          "total_time": 128.3,
+          "final_arrival_time": 668,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "pharmacy_2",
+              "shopping_mall_1",
+              "bank_1"
+            ]
+          },
+          "raw_utility": -0.02942577813786279
+        }
+      }
+    }
+  },
+  {
+    "group_id": "test_004",
+    "utterance_id": "test_004_v0",
+    "variant_type": "V0",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "library",
+          "bank"
+        ]
+      ],
+      "quality_weight": 0.7
+    },
+    "methods": {
+      "B0": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B0",
+          "calls_used": 1,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "library_2",
+            "bank_2",
+            "supermarket_2"
+          ],
+          "categories": [
+            "library",
+            "bank",
+            "supermarket"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6789,
+          "total_distance": 20.769,
+          "total_time": 156.5,
+          "final_arrival_time": 697,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "library_2",
+              "bank_2",
+              "supermarket_2"
+            ]
+          },
+          "raw_utility": 0.678944069205404
+        }
+      },
+      "B1": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B1",
+          "calls_used": 3,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "library_2",
+            "bank_2",
+            "supermarket_2"
+          ],
+          "categories": [
+            "library",
+            "bank",
+            "supermarket"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6789,
+          "total_distance": 20.769,
+          "total_time": 156.5,
+          "final_arrival_time": 697,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "library_2",
+              "bank_2",
+              "supermarket_2"
+            ]
+          },
+          "raw_utility": 0.678944069205404
+        }
+      },
+      "B2": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B2",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "library_2",
+            "bank_2",
+            "supermarket_2"
+          ],
+          "categories": [
+            "library",
+            "bank",
+            "supermarket"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6789,
+          "total_distance": 20.769,
+          "total_time": 156.5,
+          "final_arrival_time": 697,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "library_2",
+              "bank_2",
+              "supermarket_2"
+            ]
+          },
+          "raw_utility": 0.678944069205404
+        }
+      },
+      "B3": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B3",
+          "calls_used": 3,
+          "review_triggered": true,
+          "trigger_reason": "random_probability",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": "adopted_review"
+        },
+        "route": {
+          "poi_ids": [
+            "library_2",
+            "bank_2",
+            "supermarket_2"
+          ],
+          "categories": [
+            "library",
+            "bank",
+            "supermarket"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6789,
+          "total_distance": 20.769,
+          "total_time": 156.5,
+          "final_arrival_time": 697,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "library_2",
+              "bank_2",
+              "supermarket_2"
+            ]
+          },
+          "raw_utility": 0.678944069205404
+        }
+      },
+      "B4": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B4",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b4",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "library_2",
+            "bank_2",
+            "supermarket_2"
+          ],
+          "categories": [
+            "library",
+            "bank",
+            "supermarket"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6789,
+          "total_distance": 20.769,
+          "total_time": 156.5,
+          "final_arrival_time": 697,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "library_2",
+              "bank_2",
+              "supermarket_2"
+            ]
+          },
+          "raw_utility": 0.678944069205404
+        }
+      },
+      "B5": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B5",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b5_only_h",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "library_2",
+            "bank_2",
+            "supermarket_2"
+          ],
+          "categories": [
+            "library",
+            "bank",
+            "supermarket"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6789,
+          "total_distance": 20.769,
+          "total_time": 156.5,
+          "final_arrival_time": 697,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "library_2",
+              "bank_2",
+              "supermarket_2"
+            ]
+          },
+          "raw_utility": 0.678944069205404
+        }
+      },
+      "B6": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B6",
+          "calls_used": 3,
+          "review_triggered": true,
+          "trigger_reason": "always_review",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "adopted_review"
+        },
+        "route": {
+          "poi_ids": [
+            "library_2",
+            "bank_2",
+            "supermarket_2"
+          ],
+          "categories": [
+            "library",
+            "bank",
+            "supermarket"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6789,
+          "total_distance": 20.769,
+          "total_time": 156.5,
+          "final_arrival_time": 697,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "library_2",
+              "bank_2",
+              "supermarket_2"
+            ]
+          },
+          "raw_utility": 0.678944069205404
+        }
+      },
+      "Ours": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "Ours",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_darc",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "library_2",
+            "bank_2",
+            "supermarket_2"
+          ],
+          "categories": [
+            "library",
+            "bank",
+            "supermarket"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6789,
+          "total_distance": 20.769,
+          "total_time": 156.5,
+          "final_arrival_time": 697,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "library_2",
+              "bank_2",
+              "supermarket_2"
+            ]
+          },
+          "raw_utility": 0.678944069205404
+        }
+      }
+    }
+  },
+  {
+    "group_id": "test_004",
+    "utterance_id": "test_004_v1",
+    "variant_type": "V1",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "library",
+          "bank"
+        ]
+      ],
+      "quality_weight": 0.7
+    },
+    "methods": {
+      "B0": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B0",
+          "calls_used": 1,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "library_2",
+            "bank_2",
+            "supermarket_2"
+          ],
+          "categories": [
+            "library",
+            "bank",
+            "supermarket"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6789,
+          "total_distance": 20.769,
+          "total_time": 156.5,
+          "final_arrival_time": 697,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "library_2",
+              "bank_2",
+              "supermarket_2"
+            ]
+          },
+          "raw_utility": 0.678944069205404
+        }
+      },
+      "B1": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B1",
+          "calls_used": 3,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "library_2",
+            "bank_2",
+            "supermarket_2"
+          ],
+          "categories": [
+            "library",
+            "bank",
+            "supermarket"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6789,
+          "total_distance": 20.769,
+          "total_time": 156.5,
+          "final_arrival_time": 697,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "library_2",
+              "bank_2",
+              "supermarket_2"
+            ]
+          },
+          "raw_utility": 0.678944069205404
+        }
+      },
+      "B2": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B2",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "library_2",
+            "bank_2",
+            "supermarket_2"
+          ],
+          "categories": [
+            "library",
+            "bank",
+            "supermarket"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6789,
+          "total_distance": 20.769,
+          "total_time": 156.5,
+          "final_arrival_time": 697,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "library_2",
+              "bank_2",
+              "supermarket_2"
+            ]
+          },
+          "raw_utility": 0.678944069205404
+        }
+      },
+      "B3": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B3",
+          "calls_used": 3,
+          "review_triggered": true,
+          "trigger_reason": "random_probability",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": "adopted_review"
+        },
+        "route": {
+          "poi_ids": [
+            "library_2",
+            "bank_2",
+            "supermarket_2"
+          ],
+          "categories": [
+            "library",
+            "bank",
+            "supermarket"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6789,
+          "total_distance": 20.769,
+          "total_time": 156.5,
+          "final_arrival_time": 697,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "library_2",
+              "bank_2",
+              "supermarket_2"
+            ]
+          },
+          "raw_utility": 0.678944069205404
+        }
+      },
+      "B4": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B4",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b4",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "library_2",
+            "bank_2",
+            "supermarket_2"
+          ],
+          "categories": [
+            "library",
+            "bank",
+            "supermarket"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6789,
+          "total_distance": 20.769,
+          "total_time": 156.5,
+          "final_arrival_time": 697,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "library_2",
+              "bank_2",
+              "supermarket_2"
+            ]
+          },
+          "raw_utility": 0.678944069205404
+        }
+      },
+      "B5": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B5",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b5_only_h",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "library_2",
+            "bank_2",
+            "supermarket_2"
+          ],
+          "categories": [
+            "library",
+            "bank",
+            "supermarket"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6789,
+          "total_distance": 20.769,
+          "total_time": 156.5,
+          "final_arrival_time": 697,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "library_2",
+              "bank_2",
+              "supermarket_2"
+            ]
+          },
+          "raw_utility": 0.678944069205404
+        }
+      },
+      "B6": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B6",
+          "calls_used": 3,
+          "review_triggered": true,
+          "trigger_reason": "always_review",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "adopted_review"
+        },
+        "route": {
+          "poi_ids": [
+            "library_2",
+            "bank_2",
+            "supermarket_2"
+          ],
+          "categories": [
+            "library",
+            "bank",
+            "supermarket"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6789,
+          "total_distance": 20.769,
+          "total_time": 156.5,
+          "final_arrival_time": 697,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "library_2",
+              "bank_2",
+              "supermarket_2"
+            ]
+          },
+          "raw_utility": 0.678944069205404
+        }
+      },
+      "Ours": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "Ours",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_darc",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "library_2",
+            "bank_2",
+            "supermarket_2"
+          ],
+          "categories": [
+            "library",
+            "bank",
+            "supermarket"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6789,
+          "total_distance": 20.769,
+          "total_time": 156.5,
+          "final_arrival_time": 697,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "library_2",
+              "bank_2",
+              "supermarket_2"
+            ]
+          },
+          "raw_utility": 0.678944069205404
+        }
+      }
+    }
+  },
+  {
+    "group_id": "test_004",
+    "utterance_id": "test_004_v2",
+    "variant_type": "V2",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "library",
+          "bank"
+        ]
+      ],
+      "quality_weight": 0.7
+    },
+    "methods": {
+      "B0": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B0",
+          "calls_used": 1,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "library_2",
+            "bank_2",
+            "supermarket_2"
+          ],
+          "categories": [
+            "library",
+            "bank",
+            "supermarket"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6789,
+          "total_distance": 20.769,
+          "total_time": 156.5,
+          "final_arrival_time": 697,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "library_2",
+              "bank_2",
+              "supermarket_2"
+            ]
+          },
+          "raw_utility": 0.678944069205404
+        }
+      },
+      "B1": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B1",
+          "calls_used": 3,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "library_2",
+            "bank_2",
+            "supermarket_2"
+          ],
+          "categories": [
+            "library",
+            "bank",
+            "supermarket"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6789,
+          "total_distance": 20.769,
+          "total_time": 156.5,
+          "final_arrival_time": 697,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "library_2",
+              "bank_2",
+              "supermarket_2"
+            ]
+          },
+          "raw_utility": 0.678944069205404
+        }
+      },
+      "B2": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B2",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "library_2",
+            "bank_2",
+            "supermarket_2"
+          ],
+          "categories": [
+            "library",
+            "bank",
+            "supermarket"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6789,
+          "total_distance": 20.769,
+          "total_time": 156.5,
+          "final_arrival_time": 697,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "library_2",
+              "bank_2",
+              "supermarket_2"
+            ]
+          },
+          "raw_utility": 0.678944069205404
+        }
+      },
+      "B3": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B3",
+          "calls_used": 3,
+          "review_triggered": true,
+          "trigger_reason": "random_probability",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": "adopted_review"
+        },
+        "route": {
+          "poi_ids": [
+            "library_2",
+            "bank_2",
+            "supermarket_2"
+          ],
+          "categories": [
+            "library",
+            "bank",
+            "supermarket"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6789,
+          "total_distance": 20.769,
+          "total_time": 156.5,
+          "final_arrival_time": 697,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "library_2",
+              "bank_2",
+              "supermarket_2"
+            ]
+          },
+          "raw_utility": 0.678944069205404
+        }
+      },
+      "B4": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B4",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b4",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "library_2",
+            "bank_2",
+            "supermarket_2"
+          ],
+          "categories": [
+            "library",
+            "bank",
+            "supermarket"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6789,
+          "total_distance": 20.769,
+          "total_time": 156.5,
+          "final_arrival_time": 697,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "library_2",
+              "bank_2",
+              "supermarket_2"
+            ]
+          },
+          "raw_utility": 0.678944069205404
+        }
+      },
+      "B5": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B5",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b5_only_h",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "library_2",
+            "bank_2",
+            "supermarket_2"
+          ],
+          "categories": [
+            "library",
+            "bank",
+            "supermarket"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6789,
+          "total_distance": 20.769,
+          "total_time": 156.5,
+          "final_arrival_time": 697,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "library_2",
+              "bank_2",
+              "supermarket_2"
+            ]
+          },
+          "raw_utility": 0.678944069205404
+        }
+      },
+      "B6": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B6",
+          "calls_used": 3,
+          "review_triggered": true,
+          "trigger_reason": "always_review",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "adopted_review"
+        },
+        "route": {
+          "poi_ids": [
+            "library_2",
+            "bank_2",
+            "supermarket_2"
+          ],
+          "categories": [
+            "library",
+            "bank",
+            "supermarket"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6789,
+          "total_distance": 20.769,
+          "total_time": 156.5,
+          "final_arrival_time": 697,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "library_2",
+              "bank_2",
+              "supermarket_2"
+            ]
+          },
+          "raw_utility": 0.678944069205404
+        }
+      },
+      "Ours": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "Ours",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_darc",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "library_2",
+            "bank_2",
+            "supermarket_2"
+          ],
+          "categories": [
+            "library",
+            "bank",
+            "supermarket"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.6789,
+          "total_distance": 20.769,
+          "total_time": 156.5,
+          "final_arrival_time": 697,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "library_2",
+              "bank_2",
+              "supermarket_2"
+            ]
+          },
+          "raw_utility": 0.678944069205404
+        }
+      }
+    }
+  },
+  {
+    "group_id": "test_004",
+    "utterance_id": "test_004_v3",
+    "variant_type": "V3",
+    "gold_intent": {
+      "pois": [
+        "bank",
+        "library",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "library",
+          "bank"
+        ]
+      ],
+      "quality_weight": 0.7
+    },
+    "methods": {
+      "B0": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B0",
+          "calls_used": 1,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "library_2",
+            "bank_2",
+            "supermarket_2"
+          ],
+          "categories": [
+            "library",
+            "bank",
+            "supermarket"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.9322,
+          "total_distance": 20.769,
+          "total_time": 156.5,
+          "final_arrival_time": 697,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "library_2",
+              "bank_2",
+              "supermarket_2"
+            ]
+          },
+          "raw_utility": 0.9322333333333334
+        }
+      },
+      "B1": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B1",
+          "calls_used": 3,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "library_2",
+            "bank_2",
+            "supermarket_2"
+          ],
+          "categories": [
+            "library",
+            "bank",
+            "supermarket"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.9322,
+          "total_distance": 20.769,
+          "total_time": 156.5,
+          "final_arrival_time": 697,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "library_2",
+              "bank_2",
+              "supermarket_2"
+            ]
+          },
+          "raw_utility": 0.9322333333333334
+        }
+      },
+      "B2": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B2",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "library_2",
+            "bank_2",
+            "supermarket_2"
+          ],
+          "categories": [
+            "library",
+            "bank",
+            "supermarket"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.9322,
+          "total_distance": 20.769,
+          "total_time": 156.5,
+          "final_arrival_time": 697,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "library_2",
+              "bank_2",
+              "supermarket_2"
+            ]
+          },
+          "raw_utility": 0.9322333333333334
+        }
+      },
+      "B3": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B3",
+          "calls_used": 3,
+          "review_triggered": true,
+          "trigger_reason": "random_probability",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": "adopted_review"
+        },
+        "route": {
+          "poi_ids": [
+            "library_2",
+            "bank_2",
+            "supermarket_2"
+          ],
+          "categories": [
+            "library",
+            "bank",
+            "supermarket"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.9322,
+          "total_distance": 20.769,
+          "total_time": 156.5,
+          "final_arrival_time": 697,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "library_2",
+              "bank_2",
+              "supermarket_2"
+            ]
+          },
+          "raw_utility": 0.9322333333333334
+        }
+      },
+      "B4": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B4",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b4",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "library_2",
+            "bank_2",
+            "supermarket_2"
+          ],
+          "categories": [
+            "library",
+            "bank",
+            "supermarket"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.9322,
+          "total_distance": 20.769,
+          "total_time": 156.5,
+          "final_arrival_time": 697,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "library_2",
+              "bank_2",
+              "supermarket_2"
+            ]
+          },
+          "raw_utility": 0.9322333333333334
+        }
+      },
+      "B5": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B5",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b5_only_h",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "library_2",
+            "bank_2",
+            "supermarket_2"
+          ],
+          "categories": [
+            "library",
+            "bank",
+            "supermarket"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.9322,
+          "total_distance": 20.769,
+          "total_time": 156.5,
+          "final_arrival_time": 697,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "library_2",
+              "bank_2",
+              "supermarket_2"
+            ]
+          },
+          "raw_utility": 0.9322333333333334
+        }
+      },
+      "B6": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "B6",
+          "calls_used": 3,
+          "review_triggered": true,
+          "trigger_reason": "always_review",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "adopted_review"
+        },
+        "route": {
+          "poi_ids": [
+            "library_2",
+            "bank_2",
+            "supermarket_2"
+          ],
+          "categories": [
+            "library",
+            "bank",
+            "supermarket"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.9322,
+          "total_distance": 20.769,
+          "total_time": 156.5,
+          "final_arrival_time": 697,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "library_2",
+              "bank_2",
+              "supermarket_2"
+            ]
+          },
+          "raw_utility": 0.9322333333333334
+        }
+      },
+      "Ours": {
+        "task_success": true,
+        "regret": 0.0,
+        "gating_meta": {
+          "method": "Ours",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_darc",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "library_2",
+            "bank_2",
+            "supermarket_2"
+          ],
+          "categories": [
+            "library",
+            "bank",
+            "supermarket"
+          ],
+          "coverage": 3,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.9322,
+          "total_distance": 20.769,
+          "total_time": 156.5,
+          "final_arrival_time": 697,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "library_2",
+              "bank_2",
+              "supermarket_2"
+            ]
+          },
+          "raw_utility": 0.9322333333333334
+        }
+      }
+    }
+  }
+]

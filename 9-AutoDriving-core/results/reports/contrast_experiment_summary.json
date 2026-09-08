@@ -1,0 +1,24 @@
+{
+  "run_id": "20260906T054757Z_contrast",
+  "pairs_count": 40,
+  "results": {
+    "B0": {
+      "c0_accuracy": 1.0,
+      "c1_accuracy": 1.0,
+      "adaptation_rate": 0.425,
+      "appropriate_response_rate": 0.7
+    },
+    "B6": {
+      "c0_accuracy": 1.0,
+      "c1_accuracy": 1.0,
+      "adaptation_rate": 0.45,
+      "appropriate_response_rate": 0.725
+    },
+    "Ours": {
+      "c0_accuracy": 1.0,
+      "c1_accuracy": 1.0,
+      "adaptation_rate": 0.425,
+      "appropriate_response_rate": 0.75
+    }
+  }
+}

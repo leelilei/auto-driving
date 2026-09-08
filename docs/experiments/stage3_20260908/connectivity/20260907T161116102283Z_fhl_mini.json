@@ -1,0 +1,27 @@
+{
+  "timestamp": "2026-09-07T16:11:11.062936+00:00",
+  "model_requested": "gpt-5.4-mini",
+  "base_url": "https://www.fhl.mom",
+  "transport": "curl",
+  "max_attempts": 1,
+  "status": "FAIL",
+  "error_type": "RuntimeError",
+  "error": "curl request failed: curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to www.fhl.mom:443",
+  "elapsed_seconds": 5.038,
+  "telemetry": [
+    {
+      "call_index": 1,
+      "prompt_sha256": "7b8d7c60748270a49bdb404766b0fce7a7fde6d7a52eea3442694b2364ef6f9e",
+      "attempts": 1,
+      "latency_seconds": 5.038,
+      "input_chars": 54,
+      "output_chars": 0,
+      "input_tokens": 14,
+      "output_tokens": 0,
+      "total_tokens": 14,
+      "usage_source": "character_estimate",
+      "success": false,
+      "error": "RuntimeError"
+    }
+  ]
+}

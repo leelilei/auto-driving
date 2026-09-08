@@ -1,0 +1,122 @@
+{
+  "B0": {
+    "method": "B0",
+    "TSR": 1.0,
+    "GTSR": 1.0,
+    "variant_TSR": {
+      "V0": 1.0,
+      "V1": 1.0,
+      "V2": 1.0,
+      "V3": 1.0
+    },
+    "route_flip": 0.2385,
+    "mean_calls_used": 1.0,
+    "review_rate": 0.0,
+    "mean_utility_loss": 0.002924
+  },
+  "B1": {
+    "method": "B1",
+    "TSR": 1.0,
+    "GTSR": 1.0,
+    "variant_TSR": {
+      "V0": 1.0,
+      "V1": 1.0,
+      "V2": 1.0,
+      "V3": 1.0
+    },
+    "route_flip": 0.2188,
+    "mean_calls_used": 3.0,
+    "review_rate": 0.0,
+    "mean_utility_loss": 0.002701
+  },
+  "B2": {
+    "method": "B2",
+    "TSR": 1.0,
+    "GTSR": 1.0,
+    "variant_TSR": {
+      "V0": 1.0,
+      "V1": 1.0,
+      "V2": 1.0,
+      "V3": 1.0
+    },
+    "route_flip": 0.2385,
+    "mean_calls_used": 2.0,
+    "review_rate": 0.0,
+    "mean_utility_loss": 0.002924
+  },
+  "B3": {
+    "method": "B3",
+    "TSR": 1.0,
+    "GTSR": 1.0,
+    "variant_TSR": {
+      "V0": 1.0,
+      "V1": 1.0,
+      "V2": 1.0,
+      "V3": 1.0
+    },
+    "route_flip": 0.1896,
+    "mean_calls_used": 2.5094,
+    "review_rate": 0.5094,
+    "mean_utility_loss": 0.002478
+  },
+  "B4": {
+    "method": "B4",
+    "TSR": 1.0,
+    "GTSR": 1.0,
+    "variant_TSR": {
+      "V0": 1.0,
+      "V1": 1.0,
+      "V2": 1.0,
+      "V3": 1.0
+    },
+    "route_flip": 0.2271,
+    "mean_calls_used": 2.0766,
+    "review_rate": 0.0766,
+    "mean_utility_loss": 0.002461
+  },
+  "B5": {
+    "method": "B5",
+    "TSR": 1.0,
+    "GTSR": 1.0,
+    "variant_TSR": {
+      "V0": 1.0,
+      "V1": 1.0,
+      "V2": 1.0,
+      "V3": 1.0
+    },
+    "route_flip": 0.2385,
+    "mean_calls_used": 2.0016,
+    "review_rate": 0.0016,
+    "mean_utility_loss": 0.002924
+  },
+  "B6": {
+    "method": "B6",
+    "TSR": 1.0,
+    "GTSR": 1.0,
+    "variant_TSR": {
+      "V0": 1.0,
+      "V1": 1.0,
+      "V2": 1.0,
+      "V3": 1.0
+    },
+    "route_flip": 0.1635,
+    "mean_calls_used": 3.0,
+    "review_rate": 1.0,
+    "mean_utility_loss": 0.002018
+  },
+  "Ours": {
+    "method": "Ours",
+    "TSR": 1.0,
+    "GTSR": 1.0,
+    "variant_TSR": {
+      "V0": 1.0,
+      "V1": 1.0,
+      "V2": 1.0,
+      "V3": 1.0
+    },
+    "route_flip": 0.2031,
+    "mean_calls_used": 2.0422,
+    "review_rate": 0.0422,
+    "mean_utility_loss": 0.002361
+  }
+}

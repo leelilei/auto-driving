@@ -1,0 +1,5976 @@
+{
+  "metadata": {
+    "seed": 20260906,
+    "total_groups": 200,
+    "dev_pilot_count": 20,
+    "dev_calibration_count": 20,
+    "test_count": 160,
+    "annotation_status": "pending_human_verification"
+  },
+  "dev_pilot": [
+    {
+      "group_id": "pilot_01",
+      "split": "dev_pilot",
+      "source_index": 786,
+      "source_cluster_id": 504,
+      "base_instruction": "Today, you'll be visiting the shopping mall and the supermarket. Make sure to be back by 22:00. Since time efficiency is a priority, try to keep your route as direct as possible. Remember to visit the shopping mall before heading to the supermarket.",
+      "gold_intent": {
+        "pois": [
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 2,
+        "time_limit": 1320,
+        "dependencies": [
+          [
+            "shopping mall",
+            "supermarket"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "shopping mall",
+            "supermarket"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.2,
+        "distance_weight_synthetic": 0.8
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "pilot_02",
+      "split": "dev_pilot",
+      "source_index": 330,
+      "source_cluster_id": 251,
+      "base_instruction": "Make sure to visit the supermarket and the pharmacy today. Balance your stops to maintain both reasonable ratings and efficiency along the route. Start your trip at the supermarket before heading to the pharmacy.",
+      "gold_intent": {
+        "pois": [
+          "pharmacy",
+          "supermarket"
+        ],
+        "poi_count": 2,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "supermarket",
+            "pharmacy"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "supermarket",
+            "pharmacy"
+          ]
+        ],
+        "preference_direction": "balanced",
+        "quality_weight_synthetic": 0.5,
+        "distance_weight_synthetic": 0.5
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "pilot_03",
+      "split": "dev_pilot",
+      "source_index": 232,
+      "source_cluster_id": 191,
+      "base_instruction": "Today, make sure to visit the pharmacy and the shopping mall. Try to find a balance between visiting well-rated places and keeping the route efficient. There are no specific dependencies on the order of visits, so feel free to choose the sequence that works best for you.",
+      "gold_intent": {
+        "pois": [
+          "pharmacy",
+          "shopping_mall"
+        ],
+        "poi_count": 2,
+        "time_limit": null,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "balanced",
+        "quality_weight_synthetic": 0.5,
+        "distance_weight_synthetic": 0.5
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "pilot_04",
+      "split": "dev_pilot",
+      "source_index": 684,
+      "source_cluster_id": 451,
+      "base_instruction": "Today, make sure to visit the bank and the library. Please be back by 18:00. It's essential to prioritize a quick and efficient route for these visits.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library"
+        ],
+        "poi_count": 2,
+        "time_limit": 1080,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.2,
+        "distance_weight_synthetic": 0.8
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "pilot_05",
+      "split": "dev_pilot",
+      "source_index": 308,
+      "source_cluster_id": 236,
+      "base_instruction": "Today, make sure to visit the bank, library, and pharmacy. It's important to prioritize places with the best ratings. Also, please go to the bank before heading to the library.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy"
+        ],
+        "poi_count": 3,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "bank",
+            "library"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "bank",
+            "library"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.9,
+        "distance_weight_synthetic": 0.1
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "pilot_06",
+      "split": "dev_pilot",
+      "source_index": 299,
+      "source_cluster_id": 231,
+      "base_instruction": "Today, you need to visit the library, supermarket, and bank. Make sure to be back by 18:00. Aim for a route that allows you to complete everything efficiently. Also, remember to stop by the supermarket before heading to the bank.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "supermarket"
+        ],
+        "poi_count": 3,
+        "time_limit": 1080,
+        "dependencies": [
+          [
+            "supermarket",
+            "bank"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "supermarket",
+            "bank"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.2,
+        "distance_weight_synthetic": 0.8
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "pilot_07",
+      "split": "dev_pilot",
+      "source_index": 693,
+      "source_cluster_id": 455,
+      "base_instruction": "Today, make sure to visit the library, pharmacy, and supermarket. Please return by 17:00. Focus on visiting high-rated places, even if the route is slightly longer.",
+      "gold_intent": {
+        "pois": [
+          "library",
+          "pharmacy",
+          "supermarket"
+        ],
+        "poi_count": 3,
+        "time_limit": 1020,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.8,
+        "distance_weight_synthetic": 0.2
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "pilot_08",
+      "split": "dev_pilot",
+      "source_index": 504,
+      "source_cluster_id": 354,
+      "base_instruction": "Today, let's visit the library, the shopping mall, and the supermarket. I would like to keep a good balance between visiting well-rated places and having an efficient route. Make sure to stop by the shopping mall before heading to the supermarket.",
+      "gold_intent": {
+        "pois": [
+          "library",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 3,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "shopping mall",
+            "supermarket"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "shopping mall",
+            "supermarket"
+          ]
+        ],
+        "preference_direction": "balanced",
+        "quality_weight_synthetic": 0.5,
+        "distance_weight_synthetic": 0.5
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "pilot_09",
+      "split": "dev_pilot",
+      "source_index": 851,
+      "source_cluster_id": 536,
+      "base_instruction": "Please visit the library, pharmacy, and bank today. It's important to be efficient with the route, so let's make sure to visit places quickly. Also, make sure to go to the library before heading to the pharmacy.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy"
+        ],
+        "poi_count": 3,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "library",
+            "pharmacy"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "library",
+            "pharmacy"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.2,
+        "distance_weight_synthetic": 0.8
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "pilot_10",
+      "split": "dev_pilot",
+      "source_index": 461,
+      "source_cluster_id": 329,
+      "base_instruction": "Today, the plan is to visit the supermarket, library, and pharmacy. Please aim for a route that maximizes efficiency.",
+      "gold_intent": {
+        "pois": [
+          "library",
+          "pharmacy",
+          "supermarket"
+        ],
+        "poi_count": 3,
+        "time_limit": null,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.4,
+        "distance_weight_synthetic": 0.6
+      },
+      "cluster_size": 6
+    },
+    {
+      "group_id": "pilot_11",
+      "split": "dev_pilot",
+      "source_index": 55,
+      "source_cluster_id": 54,
+      "base_instruction": "Today, you'll need to visit the library, shopping mall, supermarket, and bank. While balancing a good mix of visiting worthwhile places within a reasonable timeframe, make sure to go to the library before heading to the shopping mall, and ensure you stop by the supermarket before visiting the bank.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 4,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "library",
+            "shopping mall"
+          ],
+          [
+            "supermarket",
+            "bank"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "library",
+            "shopping mall"
+          ],
+          [
+            "supermarket",
+            "bank"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.6,
+        "distance_weight_synthetic": 0.4
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "pilot_12",
+      "split": "dev_pilot",
+      "source_index": 362,
+      "source_cluster_id": 271,
+      "base_instruction": "Today, make sure to visit the library, shopping mall, bank, and supermarket. It's important to balance visiting places that are appealing with using your time efficiently.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 4,
+        "time_limit": null,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "balanced",
+        "quality_weight_synthetic": 0.5,
+        "distance_weight_synthetic": 0.5
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "pilot_13",
+      "split": "dev_pilot",
+      "source_index": 810,
+      "source_cluster_id": 515,
+      "base_instruction": "Today, you'll be visiting the library, shopping mall, pharmacy, and bank. Please ensure you're back by 23:00. We need to focus on getting through our visits efficiently today. Start at the library, then head to the shopping mall, and make sure you visit the pharmacy after the mall.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall"
+        ],
+        "poi_count": 4,
+        "time_limit": 1380,
+        "dependencies": [
+          [
+            "library",
+            "shopping mall"
+          ],
+          [
+            "shopping mall",
+            "pharmacy"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "library",
+            "pharmacy"
+          ],
+          [
+            "library",
+            "shopping mall"
+          ],
+          [
+            "shopping mall",
+            "pharmacy"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.1,
+        "distance_weight_synthetic": 0.9
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "pilot_14",
+      "split": "dev_pilot",
+      "source_index": 749,
+      "source_cluster_id": 486,
+      "base_instruction": "Today, make sure to visit the shopping mall, bank, pharmacy, and library. Aim to complete the visits efficiently to make the most out of your route.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall"
+        ],
+        "poi_count": 4,
+        "time_limit": null,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.4,
+        "distance_weight_synthetic": 0.6
+      },
+      "cluster_size": 3
+    },
+    {
+      "group_id": "pilot_15",
+      "split": "dev_pilot",
+      "source_index": 111,
+      "source_cluster_id": 100,
+      "base_instruction": "Today, please visit the library, supermarket, pharmacy, and shopping mall. While there is no specific return time, it would be great to complete these visits efficiently. Make sure to stop by the supermarket before heading to the pharmacy.",
+      "gold_intent": {
+        "pois": [
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 4,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "supermarket",
+            "pharmacy"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "supermarket",
+            "pharmacy"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.4,
+        "distance_weight_synthetic": 0.6
+      },
+      "cluster_size": 2
+    },
+    {
+      "group_id": "pilot_16",
+      "split": "dev_pilot",
+      "source_index": 536,
+      "source_cluster_id": 375,
+      "base_instruction": "Today, you need to visit the pharmacy, supermarket, library, shopping mall, and bank. Since there's no fixed time to return, feel free to focus on covering the route efficiently. Remember, make sure to head to the library before going to the shopping mall.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 5,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "library",
+            "shopping mall"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "library",
+            "shopping mall"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.0,
+        "distance_weight_synthetic": 1.0
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "pilot_17",
+      "split": "dev_pilot",
+      "source_index": 880,
+      "source_cluster_id": 550,
+      "base_instruction": "Today, make sure to visit the library, pharmacy, bank, shopping mall, and supermarket. Be sure to get everything done by 11 PM. Aim for a good balance between spending time at each location and navigating efficiently through your route. Please visit the shopping mall before heading to the supermarket.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 5,
+        "time_limit": 1380,
+        "dependencies": [
+          [
+            "shopping mall",
+            "supermarket"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "shopping mall",
+            "supermarket"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.6,
+        "distance_weight_synthetic": 0.4
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "pilot_18",
+      "split": "dev_pilot",
+      "source_index": 628,
+      "source_cluster_id": 423,
+      "base_instruction": "Today, we need to visit the bank, pharmacy, shopping mall, library, and supermarket. Make sure to return by 22:00. Given the priority for efficiency, let's focus on the quickest route possible. Make sure to stop by the library before heading to the supermarket.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 5,
+        "time_limit": 1320,
+        "dependencies": [
+          [
+            "library",
+            "supermarket"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "library",
+            "supermarket"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.0,
+        "distance_weight_synthetic": 1.0
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "pilot_19",
+      "split": "dev_pilot",
+      "source_index": 783,
+      "source_cluster_id": 502,
+      "base_instruction": "Today, make sure to visit the supermarket, pharmacy, bank, shopping mall, and library. Prioritize finding places with high ratings for a great experience. When planning your visits, be sure to go to the supermarket before heading to the pharmacy, and don't forget to visit the shopping mall before the library.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 5,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "supermarket",
+            "pharmacy"
+          ],
+          [
+            "shopping mall",
+            "library"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "shopping mall",
+            "library"
+          ],
+          [
+            "supermarket",
+            "pharmacy"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.9,
+        "distance_weight_synthetic": 0.1
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "pilot_20",
+      "split": "dev_pilot",
+      "source_index": 564,
+      "source_cluster_id": 389,
+      "base_instruction": "Today, you need to visit the pharmacy, the shopping mall, the bank, the library, and the supermarket. Please ensure that you return by 11 PM. As you plan your route, aim for a balance between visiting places with good ratings and keeping the journey efficient. Make sure to stop by the pharmacy before heading to the shopping mall and visit the library before going to the supermarket.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 5,
+        "time_limit": 1380,
+        "dependencies": [
+          [
+            "pharmacy",
+            "shopping mall"
+          ],
+          [
+            "library",
+            "supermarket"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "library",
+            "supermarket"
+          ],
+          [
+            "pharmacy",
+            "shopping mall"
+          ]
+        ],
+        "preference_direction": "balanced",
+        "quality_weight_synthetic": 0.5,
+        "distance_weight_synthetic": 0.5
+      },
+      "cluster_size": 1
+    }
+  ],
+  "dev_calibration": [
+    {
+      "group_id": "calib_01",
+      "split": "dev_calibration",
+      "source_index": 16,
+      "source_cluster_id": 16,
+      "base_instruction": "Let's make sure to visit the shopping mall today. Since the quality of our destinations is quite important, we should prioritize a place with a high rating for a better experience. There's no specific order needed for our visit, so we have flexibility in our schedule.",
+      "gold_intent": {
+        "pois": [
+          "shopping_mall"
+        ],
+        "poi_count": 1,
+        "time_limit": null,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.9,
+        "distance_weight_synthetic": 0.1
+      },
+      "cluster_size": 3
+    },
+    {
+      "group_id": "calib_02",
+      "split": "dev_calibration",
+      "source_index": 950,
+      "source_cluster_id": 583,
+      "base_instruction": "Today, you need to visit the supermarket. Make sure to balance your time between finding a place with a good reputation and ensuring efficiency in your route.",
+      "gold_intent": {
+        "pois": [
+          "supermarket"
+        ],
+        "poi_count": 1,
+        "time_limit": null,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "balanced",
+        "quality_weight_synthetic": 0.5,
+        "distance_weight_synthetic": 0.5
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "calib_03",
+      "split": "dev_calibration",
+      "source_index": 287,
+      "source_cluster_id": 222,
+      "base_instruction": "Today, you need to visit the library. Please ensure that you return by 21:00. It's crucial to prioritize places with high ratings, so make sure to enjoy your time at this well-regarded spot.",
+      "gold_intent": {
+        "pois": [
+          "library"
+        ],
+        "poi_count": 1,
+        "time_limit": 1260,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.9,
+        "distance_weight_synthetic": 0.1
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "calib_04",
+      "split": "dev_calibration",
+      "source_index": 204,
+      "source_cluster_id": 170,
+      "base_instruction": "Today, you need to visit the supermarket. Please make sure to return by 17:00. It's important to keep the trip efficient and quick.",
+      "gold_intent": {
+        "pois": [
+          "supermarket"
+        ],
+        "poi_count": 1,
+        "time_limit": 1020,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.2,
+        "distance_weight_synthetic": 0.8
+      },
+      "cluster_size": 2
+    },
+    {
+      "group_id": "calib_05",
+      "split": "dev_calibration",
+      "source_index": 443,
+      "source_cluster_id": 314,
+      "base_instruction": "Today, we need to visit the bank and the shopping mall. Please ensure we're back by 17:00. Let's aim for high-quality stops during our outing.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "shopping_mall"
+        ],
+        "poi_count": 2,
+        "time_limit": 1020,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.7,
+        "distance_weight_synthetic": 0.3
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "calib_06",
+      "split": "dev_calibration",
+      "source_index": 779,
+      "source_cluster_id": 500,
+      "base_instruction": "Today, you need to visit the supermarket and the bank. Strive to balance both high-quality experiences and efficient travel. Be sure to stop by the supermarket before heading to the bank.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "supermarket"
+        ],
+        "poi_count": 2,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "supermarket",
+            "bank"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "supermarket",
+            "bank"
+          ]
+        ],
+        "preference_direction": "balanced",
+        "quality_weight_synthetic": 0.5,
+        "distance_weight_synthetic": 0.5
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "calib_07",
+      "split": "dev_calibration",
+      "source_index": 745,
+      "source_cluster_id": 482,
+      "base_instruction": "Make sure to visit the library and the shopping mall today. Be back by 11 PM at the latest. We should focus on enjoying places with great reviews. Start with the library, then head to the shopping mall afterward.",
+      "gold_intent": {
+        "pois": [
+          "library",
+          "shopping_mall"
+        ],
+        "poi_count": 2,
+        "time_limit": 1380,
+        "dependencies": [
+          [
+            "library",
+            "shopping_mall"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "library",
+            "shopping_mall"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.8,
+        "distance_weight_synthetic": 0.2
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "calib_08",
+      "split": "dev_calibration",
+      "source_index": 532,
+      "source_cluster_id": 372,
+      "base_instruction": "Today, we need to visit the pharmacy and bank. It's important to be efficient with our route. Make sure to go to the pharmacy first before heading to the bank.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "pharmacy"
+        ],
+        "poi_count": 2,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "pharmacy",
+            "bank"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "pharmacy",
+            "bank"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.3,
+        "distance_weight_synthetic": 0.7
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "calib_09",
+      "split": "dev_calibration",
+      "source_index": 762,
+      "source_cluster_id": 494,
+      "base_instruction": "Today, you need to visit the library, supermarket, and pharmacy. Please ensure you're back by 10 PM. Try your best to balance between choosing places with decent ratings and keeping your route efficient.",
+      "gold_intent": {
+        "pois": [
+          "library",
+          "pharmacy",
+          "supermarket"
+        ],
+        "poi_count": 3,
+        "time_limit": 1320,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.6,
+        "distance_weight_synthetic": 0.4
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "calib_10",
+      "split": "dev_calibration",
+      "source_index": 800,
+      "source_cluster_id": 509,
+      "base_instruction": "Today, you need to visit the shopping mall, bank, and pharmacy. Please make sure to return by 22:00. Prioritize visiting places with high ratings to have a quality experience. Ensure that you go to the bank before heading to the pharmacy.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "pharmacy",
+          "shopping_mall"
+        ],
+        "poi_count": 3,
+        "time_limit": 1320,
+        "dependencies": [
+          [
+            "bank",
+            "pharmacy"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "bank",
+            "pharmacy"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.8,
+        "distance_weight_synthetic": 0.2
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "calib_11",
+      "split": "dev_calibration",
+      "source_index": 265,
+      "source_cluster_id": 210,
+      "base_instruction": "Today, you need to visit the bank, shopping mall, and pharmacy. Make sure to return by 5:00 PM. Prioritize efficiency to make your trip as quick as possible.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "pharmacy",
+          "shopping_mall"
+        ],
+        "poi_count": 3,
+        "time_limit": 1020,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.0,
+        "distance_weight_synthetic": 1.0
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "calib_12",
+      "split": "dev_calibration",
+      "source_index": 962,
+      "source_cluster_id": 590,
+      "base_instruction": "Today, we need to visit the supermarket, shopping mall, and pharmacy. Please ensure we are back by 21:00. It’s important to be efficient with our route to save time. Start at the supermarket before heading to the shopping mall.",
+      "gold_intent": {
+        "pois": [
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 3,
+        "time_limit": 1260,
+        "dependencies": [
+          [
+            "supermarket",
+            "shopping_mall"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "supermarket",
+            "shopping_mall"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.3,
+        "distance_weight_synthetic": 0.7
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "calib_13",
+      "split": "dev_calibration",
+      "source_index": 333,
+      "source_cluster_id": 254,
+      "base_instruction": "Today, visit the shopping mall, pharmacy, library, and supermarket. It's important to keep the trip quick and efficient, so prioritize a shorter route. Begin by going to the shopping mall, then head over to the pharmacy, and make sure to stop by the library afterward.",
+      "gold_intent": {
+        "pois": [
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 4,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "shopping_mall",
+            "pharmacy"
+          ],
+          [
+            "pharmacy",
+            "library"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "pharmacy",
+            "library"
+          ],
+          [
+            "shopping_mall",
+            "library"
+          ],
+          [
+            "shopping_mall",
+            "pharmacy"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.2,
+        "distance_weight_synthetic": 0.8
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "calib_14",
+      "split": "dev_calibration",
+      "source_index": 153,
+      "source_cluster_id": 133,
+      "base_instruction": "Today, we need to visit the shopping mall, supermarket, library, and pharmacy. Since there's no set return time, let's prioritize getting to each place as quickly as possible. We'll start at the shopping mall before heading to the supermarket, and visit the library before going to the pharmacy.",
+      "gold_intent": {
+        "pois": [
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 4,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "shopping_mall",
+            "supermarket"
+          ],
+          [
+            "library",
+            "pharmacy"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "library",
+            "pharmacy"
+          ],
+          [
+            "shopping_mall",
+            "supermarket"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.0,
+        "distance_weight_synthetic": 1.0
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "calib_15",
+      "split": "dev_calibration",
+      "source_index": 751,
+      "source_cluster_id": 488,
+      "base_instruction": "Today, you need to visit the supermarket, bank, shopping mall, and library. Make sure to prioritize places with good ratings while planning your route for a reasonably efficient journey. Remember to stop by the supermarket before heading to the bank.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 4,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "supermarket",
+            "bank"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "supermarket",
+            "bank"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.7,
+        "distance_weight_synthetic": 0.3
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "calib_16",
+      "split": "dev_calibration",
+      "source_index": 343,
+      "source_cluster_id": 259,
+      "base_instruction": "Today, you need to visit the shopping mall, library, supermarket, and pharmacy. Make sure to return by 18:00. Given the need for efficiency, aim to keep your route as short as possible. Remember to visit the library before heading to the supermarket.",
+      "gold_intent": {
+        "pois": [
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 4,
+        "time_limit": 1080,
+        "dependencies": [
+          [
+            "library",
+            "supermarket"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "library",
+            "supermarket"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.1,
+        "distance_weight_synthetic": 0.9
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "calib_17",
+      "split": "dev_calibration",
+      "source_index": 569,
+      "source_cluster_id": 391,
+      "base_instruction": "Today's stops include the bank, supermarket, shopping mall, library, and pharmacy. We need to be back by 6 PM. Let's aim for both a reasonable route and decent ratings as we plan our visit. Make sure to stop by the bank before heading to the supermarket and visit the library prior to the pharmacy.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 5,
+        "time_limit": 1080,
+        "dependencies": [
+          [
+            "bank",
+            "supermarket"
+          ],
+          [
+            "library",
+            "pharmacy"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "bank",
+            "supermarket"
+          ],
+          [
+            "library",
+            "pharmacy"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.6,
+        "distance_weight_synthetic": 0.4
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "calib_18",
+      "split": "dev_calibration",
+      "source_index": 205,
+      "source_cluster_id": 171,
+      "base_instruction": "Today, make sure to visit the bank, pharmacy, supermarket, shopping mall, and library. Since we prefer going to places with high ratings, prioritize those with a better reputation. Remember to stop by the bank before heading to the pharmacy.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 5,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "bank",
+            "pharmacy"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "bank",
+            "pharmacy"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.7,
+        "distance_weight_synthetic": 0.3
+      },
+      "cluster_size": 2
+    },
+    {
+      "group_id": "calib_19",
+      "split": "dev_calibration",
+      "source_index": 424,
+      "source_cluster_id": 301,
+      "base_instruction": "Today, you need to visit the shopping mall, bank, pharmacy, supermarket, and library. Efficiency is key, so aim for a quick and smooth route. Make sure to go to the bank before heading to the pharmacy, and visit the supermarket before the library.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 5,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "bank",
+            "pharmacy"
+          ],
+          [
+            "supermarket",
+            "library"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "bank",
+            "pharmacy"
+          ],
+          [
+            "supermarket",
+            "library"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.2,
+        "distance_weight_synthetic": 0.8
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "calib_20",
+      "split": "dev_calibration",
+      "source_index": 104,
+      "source_cluster_id": 95,
+      "base_instruction": "Today, make sure to visit the library, pharmacy, bank, shopping mall, and supermarket. Please remember to return by 17:00. Try to balance visiting high-rated places with keeping your route efficient.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 5,
+        "time_limit": 1020,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "balanced",
+        "quality_weight_synthetic": 0.5,
+        "distance_weight_synthetic": 0.5
+      },
+      "cluster_size": 1
+    }
+  ],
+  "test": [
+    {
+      "group_id": "test_001",
+      "split": "test",
+      "source_index": 235,
+      "source_cluster_id": 193,
+      "base_instruction": "Today, you'll visit both the library and the bank. Make sure to enjoy each stop as there isn't a rush to return. Aim for a balance between enjoying well-rated places and keeping the route manageable.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library"
+        ],
+        "poi_count": 2,
+        "time_limit": null,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.6,
+        "distance_weight_synthetic": 0.4
+      },
+      "cluster_size": 6
+    },
+    {
+      "group_id": "test_002",
+      "split": "test",
+      "source_index": 497,
+      "source_cluster_id": 350,
+      "base_instruction": "Today, we need to visit the bank and the shopping mall. Be sure to prioritize locations with high ratings during our outing. It's important that we go to the bank first before heading to the shopping mall.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "shopping_mall"
+        ],
+        "poi_count": 2,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "bank",
+            "shopping_mall"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "bank",
+            "shopping_mall"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 1.0,
+        "distance_weight_synthetic": 0.0
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_003",
+      "split": "test",
+      "source_index": 470,
+      "source_cluster_id": 334,
+      "base_instruction": "Today, we need to visit the pharmacy, the shopping mall, and the bank. Please try to make the journey efficient as time is of the essence, but we don't have to be back by any specific time. Make sure to stop by the pharmacy before heading to the shopping mall.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "pharmacy",
+          "shopping_mall"
+        ],
+        "poi_count": 3,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "pharmacy",
+            "shopping_mall"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "pharmacy",
+            "shopping_mall"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.4,
+        "distance_weight_synthetic": 0.6
+      },
+      "cluster_size": 2
+    },
+    {
+      "group_id": "test_004",
+      "split": "test",
+      "source_index": 425,
+      "source_cluster_id": 302,
+      "base_instruction": "Today, we need to visit the library, bank, and supermarket. I’d like us to prioritize places with good ratings. Also, let's make sure to head to the library before going to the bank.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "supermarket"
+        ],
+        "poi_count": 3,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "library",
+            "bank"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "library",
+            "bank"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.7,
+        "distance_weight_synthetic": 0.3
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_005",
+      "split": "test",
+      "source_index": 454,
+      "source_cluster_id": 323,
+      "base_instruction": "Today, you need to visit the shopping mall, the bank, and the pharmacy. Please make sure to return by 8 PM. Given your preferences, it's important to prioritize an efficient route. Remember, you must stop by the shopping mall before heading to the bank.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "pharmacy",
+          "shopping_mall"
+        ],
+        "poi_count": 3,
+        "time_limit": 1200,
+        "dependencies": [
+          [
+            "shopping_mall",
+            "bank"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "shopping_mall",
+            "bank"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.2,
+        "distance_weight_synthetic": 0.8
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_006",
+      "split": "test",
+      "source_index": 410,
+      "source_cluster_id": 294,
+      "base_instruction": "Today we will be visiting the pharmacy, bank, shopping mall, library, and supermarket. It's important to be back by 23:00. Let's make sure we visit places with high ratings as a priority. First, make sure to stop by the pharmacy before heading to the bank, and remember to visit the library before the supermarket.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 5,
+        "time_limit": 1380,
+        "dependencies": [
+          [
+            "pharmacy",
+            "bank"
+          ],
+          [
+            "library",
+            "supermarket"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "library",
+            "supermarket"
+          ],
+          [
+            "pharmacy",
+            "bank"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.8,
+        "distance_weight_synthetic": 0.2
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_007",
+      "split": "test",
+      "source_index": 611,
+      "source_cluster_id": 414,
+      "base_instruction": "Today, you'll need to visit the library and the supermarket. Make sure you're back by 21:00. Try to find a route that balances reasonable places with a relatively efficient journey.",
+      "gold_intent": {
+        "pois": [
+          "library",
+          "supermarket"
+        ],
+        "poi_count": 2,
+        "time_limit": 1260,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.6,
+        "distance_weight_synthetic": 0.4
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_008",
+      "split": "test",
+      "source_index": 440,
+      "source_cluster_id": 311,
+      "base_instruction": "Today, you'll need to visit the library, pharmacy, bank, and shopping mall. Make sure to prioritize going to high-rated places. It's important to stop by the pharmacy before heading to the bank, and ensure you visit the bank before going to the shopping mall.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall"
+        ],
+        "poi_count": 4,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "pharmacy",
+            "bank"
+          ],
+          [
+            "bank",
+            "shopping_mall"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "bank",
+            "shopping_mall"
+          ],
+          [
+            "pharmacy",
+            "bank"
+          ],
+          [
+            "pharmacy",
+            "shopping_mall"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 1.0,
+        "distance_weight_synthetic": 0.0
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_009",
+      "split": "test",
+      "source_index": 317,
+      "source_cluster_id": 240,
+      "base_instruction": "Today, let's make sure to visit the pharmacy, supermarket, library, and bank. We should aim for a quick and efficient route. Remember, after going to the supermarket, head to the library next.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "supermarket"
+        ],
+        "poi_count": 4,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "supermarket",
+            "library"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "supermarket",
+            "library"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.3,
+        "distance_weight_synthetic": 0.7
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_010",
+      "split": "test",
+      "source_index": 50,
+      "source_cluster_id": 49,
+      "base_instruction": "Today, you'll need to visit the bank and the pharmacy. Please aim to complete these visits as efficiently as possible.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "pharmacy"
+        ],
+        "poi_count": 2,
+        "time_limit": null,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.3,
+        "distance_weight_synthetic": 0.7
+      },
+      "cluster_size": 3
+    },
+    {
+      "group_id": "test_011",
+      "split": "test",
+      "source_index": 526,
+      "source_cluster_id": 368,
+      "base_instruction": "Today, you need to visit the bank, pharmacy, shopping mall, and supermarket. Since there's no specific time to be back, try to keep the trip as efficient as possible. Make sure to stop by the bank before heading to the pharmacy, and then visit the shopping mall after the pharmacy.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 4,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "bank",
+            "pharmacy"
+          ],
+          [
+            "pharmacy",
+            "shopping_mall"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "bank",
+            "pharmacy"
+          ],
+          [
+            "bank",
+            "shopping_mall"
+          ],
+          [
+            "pharmacy",
+            "shopping_mall"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.1,
+        "distance_weight_synthetic": 0.9
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_012",
+      "split": "test",
+      "source_index": 190,
+      "source_cluster_id": 158,
+      "base_instruction": "Today, we need to visit the library, bank, supermarket, and shopping mall. Please ensure you're back by 11 PM. We should focus on completing the route efficiently to save time. Make sure to visit the supermarket before heading to the shopping mall.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 4,
+        "time_limit": 1380,
+        "dependencies": [
+          [
+            "supermarket",
+            "shopping_mall"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "supermarket",
+            "shopping_mall"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.2,
+        "distance_weight_synthetic": 0.8
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_013",
+      "split": "test",
+      "source_index": 695,
+      "source_cluster_id": 456,
+      "base_instruction": "Today, you'll need to visit the library, supermarket, and pharmacy. It's important to move efficiently through your visits. Make sure to go to the supermarket before heading to the pharmacy.",
+      "gold_intent": {
+        "pois": [
+          "library",
+          "pharmacy",
+          "supermarket"
+        ],
+        "poi_count": 3,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "supermarket",
+            "pharmacy"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "supermarket",
+            "pharmacy"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.0,
+        "distance_weight_synthetic": 1.0
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_014",
+      "split": "test",
+      "source_index": 845,
+      "source_cluster_id": 531,
+      "base_instruction": "Make sure to visit the library and then head over to the shopping mall today. Please return by 18:00. It's important to focus on places with high ratings, so enjoy some quality time at each spot.",
+      "gold_intent": {
+        "pois": [
+          "library",
+          "shopping_mall"
+        ],
+        "poi_count": 2,
+        "time_limit": 1080,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 1.0,
+        "distance_weight_synthetic": 0.0
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_015",
+      "split": "test",
+      "source_index": 899,
+      "source_cluster_id": 558,
+      "base_instruction": "We need to visit the shopping mall, bank, supermarket, and pharmacy today. Make sure to prioritize places with high ratings when planning the route. It's important to go to the shopping mall before heading to the bank.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 4,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "shopping_mall",
+            "bank"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "shopping_mall",
+            "bank"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.9,
+        "distance_weight_synthetic": 0.1
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_016",
+      "split": "test",
+      "source_index": 112,
+      "source_cluster_id": 101,
+      "base_instruction": "Today, make sure to visit the bank, library, supermarket, pharmacy, and shopping mall. Since there is no rush on returning by a specific time, you can enjoy your trip. Try to balance between visiting well-rated places and keeping the route efficient. Remember to visit the library before heading to the supermarket.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 5,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "library",
+            "supermarket"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "library",
+            "supermarket"
+          ]
+        ],
+        "preference_direction": "balanced",
+        "quality_weight_synthetic": 0.5,
+        "distance_weight_synthetic": 0.5
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_017",
+      "split": "test",
+      "source_index": 457,
+      "source_cluster_id": 326,
+      "base_instruction": "Today, we need to visit the bank, the supermarket, and the shopping mall. Please make sure to return by midnight. It's important to keep the travel time minimal, so let's aim for the most efficient route possible. Also, remember that we must stop by the supermarket before heading to the shopping mall.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 3,
+        "time_limit": 1440,
+        "dependencies": [
+          [
+            "supermarket",
+            "shopping_mall"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "supermarket",
+            "shopping_mall"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.2,
+        "distance_weight_synthetic": 0.8
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_018",
+      "split": "test",
+      "source_index": 415,
+      "source_cluster_id": 296,
+      "base_instruction": "Today we need to visit the supermarket, the shopping mall, the pharmacy, and the library. Let's make sure we complete our visits efficiently. We should first head to the supermarket before the shopping mall, and then we must stop by the shopping mall before going to the pharmacy.",
+      "gold_intent": {
+        "pois": [
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 4,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "supermarket",
+            "shopping_mall"
+          ],
+          [
+            "shopping_mall",
+            "pharmacy"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "shopping_mall",
+            "pharmacy"
+          ],
+          [
+            "supermarket",
+            "pharmacy"
+          ],
+          [
+            "supermarket",
+            "shopping_mall"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.1,
+        "distance_weight_synthetic": 0.9
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_019",
+      "split": "test",
+      "source_index": 339,
+      "source_cluster_id": 257,
+      "base_instruction": "Today, we need to visit the library, supermarket, shopping mall, bank, and pharmacy. Please ensure to return by 18:00. It's important to make the route as efficient as possible. There are no specific visit order requirements, so feel free to plan the stops accordingly.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 5,
+        "time_limit": 1080,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.3,
+        "distance_weight_synthetic": 0.7
+      },
+      "cluster_size": 2
+    },
+    {
+      "group_id": "test_020",
+      "split": "test",
+      "source_index": 134,
+      "source_cluster_id": 117,
+      "base_instruction": "Today, you'll need to visit the library, bank, and pharmacy. Make sure to maintain a good balance between visiting well-rated places and keeping your route efficient. Additionally, remember to visit the bank before going to the pharmacy.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy"
+        ],
+        "poi_count": 3,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "bank",
+            "pharmacy"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "bank",
+            "pharmacy"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.6,
+        "distance_weight_synthetic": 0.4
+      },
+      "cluster_size": 3
+    },
+    {
+      "group_id": "test_021",
+      "split": "test",
+      "source_index": 678,
+      "source_cluster_id": 447,
+      "base_instruction": "Today, we need to visit the supermarket and the bank. Please make sure to be back by midnight. We should aim to complete these errands efficiently.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "supermarket"
+        ],
+        "poi_count": 2,
+        "time_limit": 1440,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.3,
+        "distance_weight_synthetic": 0.7
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_022",
+      "split": "test",
+      "source_index": 537,
+      "source_cluster_id": 376,
+      "base_instruction": "Today, we need to make stops at the pharmacy, shopping mall, supermarket, and bank. Make sure to prioritize visiting places that are well-regarded. Begin our trip at the shopping mall, then head to the supermarket, and after that, make your way to the bank.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 4,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "shopping_mall",
+            "supermarket"
+          ],
+          [
+            "supermarket",
+            "bank"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "shopping_mall",
+            "bank"
+          ],
+          [
+            "shopping_mall",
+            "supermarket"
+          ],
+          [
+            "supermarket",
+            "bank"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.7,
+        "distance_weight_synthetic": 0.3
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_023",
+      "split": "test",
+      "source_index": 750,
+      "source_cluster_id": 487,
+      "base_instruction": "Today, you need to visit the library, supermarket, and pharmacy. Please make sure to return by 20:00. Prioritize stopping by places with higher ratings during your trip.",
+      "gold_intent": {
+        "pois": [
+          "library",
+          "pharmacy",
+          "supermarket"
+        ],
+        "poi_count": 3,
+        "time_limit": 1200,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.8,
+        "distance_weight_synthetic": 0.2
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_024",
+      "split": "test",
+      "source_index": 881,
+      "source_cluster_id": 551,
+      "base_instruction": "Please visit the supermarket today and make sure to be back by 20:00. Efficiency is key, so choose the shortest route possible.",
+      "gold_intent": {
+        "pois": [
+          "supermarket"
+        ],
+        "poi_count": 1,
+        "time_limit": 1200,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.0,
+        "distance_weight_synthetic": 1.0
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_025",
+      "split": "test",
+      "source_index": 277,
+      "source_cluster_id": 215,
+      "base_instruction": "Today, we need to visit the bank and pharmacy. Please make sure to return by 22:00. While I value a high rating for these places, the route length is not my main concern, so focus on quality over speed. There are no specific sequences to follow, so you can choose the order of visits.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "pharmacy"
+        ],
+        "poi_count": 2,
+        "time_limit": 1320,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.7,
+        "distance_weight_synthetic": 0.3
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_026",
+      "split": "test",
+      "source_index": 11,
+      "source_cluster_id": 11,
+      "base_instruction": "Today, make sure to visit the shopping mall, library, and supermarket. Please return by 18:00. It's important to prioritize efficiency and keep the route as short as possible.",
+      "gold_intent": {
+        "pois": [
+          "library",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 3,
+        "time_limit": 1080,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.2,
+        "distance_weight_synthetic": 0.8
+      },
+      "cluster_size": 3
+    },
+    {
+      "group_id": "test_027",
+      "split": "test",
+      "source_index": 394,
+      "source_cluster_id": 288,
+      "base_instruction": "Today, you need to visit the bank. Make sure you're back by 23:00. Try to keep the trip efficient while considering a reasonable experience. There are no specific order requirements for this visit.",
+      "gold_intent": {
+        "pois": [
+          "bank"
+        ],
+        "poi_count": 1,
+        "time_limit": 1380,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.4,
+        "distance_weight_synthetic": 0.6
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_028",
+      "split": "test",
+      "source_index": 683,
+      "source_cluster_id": 450,
+      "base_instruction": "Today, you need to visit the pharmacy, shopping mall, supermarket, bank, and library. It's important to prioritize high-rated places during your visits. Make sure to go to the supermarket first, then head to the bank, and finally stop by the library.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 5,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "supermarket",
+            "bank"
+          ],
+          [
+            "bank",
+            "library"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "bank",
+            "library"
+          ],
+          [
+            "supermarket",
+            "bank"
+          ],
+          [
+            "supermarket",
+            "library"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.7,
+        "distance_weight_synthetic": 0.3
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_029",
+      "split": "test",
+      "source_index": 616,
+      "source_cluster_id": 417,
+      "base_instruction": "Today, you should visit the shopping mall. Please make sure to return by 23:00. It's important to find a shopping mall with high ratings even if it means taking a slightly longer route. Enjoy your visit!",
+      "gold_intent": {
+        "pois": [
+          "shopping_mall"
+        ],
+        "poi_count": 1,
+        "time_limit": 1380,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.8,
+        "distance_weight_synthetic": 0.2
+      },
+      "cluster_size": 4
+    },
+    {
+      "group_id": "test_030",
+      "split": "test",
+      "source_index": 5,
+      "source_cluster_id": 5,
+      "base_instruction": "Today, make sure you visit the bank, library, supermarket, shopping mall, and pharmacy. Focus on visiting places with high ratings. Start by going to the library before heading to the supermarket, and ensure you visit the shopping mall before going to the pharmacy.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 5,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "library",
+            "supermarket"
+          ],
+          [
+            "shopping_mall",
+            "pharmacy"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "library",
+            "supermarket"
+          ],
+          [
+            "shopping_mall",
+            "pharmacy"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.7,
+        "distance_weight_synthetic": 0.3
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_031",
+      "split": "test",
+      "source_index": 413,
+      "source_cluster_id": 295,
+      "base_instruction": "Today, you need to visit the shopping mall, pharmacy, and supermarket. While planning your route, aim for a balance between visiting well-rated places and efficient travel. There are no specific dependencies in the order of your visits.",
+      "gold_intent": {
+        "pois": [
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 3,
+        "time_limit": null,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "balanced",
+        "quality_weight_synthetic": 0.5,
+        "distance_weight_synthetic": 0.5
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_032",
+      "split": "test",
+      "source_index": 214,
+      "source_cluster_id": 175,
+      "base_instruction": "Today, you need to visit the bank, supermarket, shopping mall, and pharmacy. Since efficiency is key, focus on completing the route quickly. Make sure to visit the shopping mall before heading over to the pharmacy.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 4,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "shopping_mall",
+            "pharmacy"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "shopping_mall",
+            "pharmacy"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.2,
+        "distance_weight_synthetic": 0.8
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_033",
+      "split": "test",
+      "source_index": 230,
+      "source_cluster_id": 189,
+      "base_instruction": "Today, make sure to stop by the pharmacy. Be back home by 5 PM. Given the day’s priorities, let's focus on being quick and efficient with our route.",
+      "gold_intent": {
+        "pois": [
+          "pharmacy"
+        ],
+        "poi_count": 1,
+        "time_limit": 1020,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.2,
+        "distance_weight_synthetic": 0.8
+      },
+      "cluster_size": 3
+    },
+    {
+      "group_id": "test_034",
+      "split": "test",
+      "source_index": 192,
+      "source_cluster_id": 160,
+      "base_instruction": "Today, you'll need to visit the supermarket, shopping mall, and bank. We should aim for a good balance between the quality of our stops and the overall efficiency of our route. Remember to go to the shopping mall before the bank.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 3,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "shopping_mall",
+            "bank"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "shopping_mall",
+            "bank"
+          ]
+        ],
+        "preference_direction": "balanced",
+        "quality_weight_synthetic": 0.5,
+        "distance_weight_synthetic": 0.5
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_035",
+      "split": "test",
+      "source_index": 177,
+      "source_cluster_id": 149,
+      "base_instruction": "Make sure to visit the shopping mall and the bank today. Since there is no specific return time, aim for a quick and efficient trip. Start at the shopping mall before heading to the bank.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "shopping_mall"
+        ],
+        "poi_count": 2,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "shopping_mall",
+            "bank"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "shopping_mall",
+            "bank"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.3,
+        "distance_weight_synthetic": 0.7
+      },
+      "cluster_size": 2
+    },
+    {
+      "group_id": "test_036",
+      "split": "test",
+      "source_index": 231,
+      "source_cluster_id": 190,
+      "base_instruction": "Today, make sure to visit the bank, the shopping mall, and the supermarket. Let's prioritize visiting places with higher ratings to have the best experience possible.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 3,
+        "time_limit": null,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.9,
+        "distance_weight_synthetic": 0.1
+      },
+      "cluster_size": 3
+    },
+    {
+      "group_id": "test_037",
+      "split": "test",
+      "source_index": 136,
+      "source_cluster_id": 119,
+      "base_instruction": "Today, make sure to visit the bank, library, supermarket, and shopping mall. Please ensure you return by 19:00. Focus on visiting places with the highest ratings over the shortest routes for a better experience today.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 4,
+        "time_limit": 1140,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.9,
+        "distance_weight_synthetic": 0.1
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_038",
+      "split": "test",
+      "source_index": 53,
+      "source_cluster_id": 52,
+      "base_instruction": "Today, please visit the library, the supermarket, and the bank. Make sure to be back by 18:00. Let's focus on visiting the places with the best ratings. Remember, the supermarket must be visited before heading to the bank.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "supermarket"
+        ],
+        "poi_count": 3,
+        "time_limit": 1080,
+        "dependencies": [
+          [
+            "supermarket",
+            "bank"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "supermarket",
+            "bank"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.8,
+        "distance_weight_synthetic": 0.2
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_039",
+      "split": "test",
+      "source_index": 77,
+      "source_cluster_id": 73,
+      "base_instruction": "Today, you need to visit the bank and the library. Make sure to return by 10 PM. I'm aiming for a balance between visiting well-rated places and keeping the route efficient.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library"
+        ],
+        "poi_count": 2,
+        "time_limit": 1320,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "balanced",
+        "quality_weight_synthetic": 0.5,
+        "distance_weight_synthetic": 0.5
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_040",
+      "split": "test",
+      "source_index": 282,
+      "source_cluster_id": 220,
+      "base_instruction": "We need to visit the bank today. Make sure to be back by midnight. It's really important to choose places with high ratings.",
+      "gold_intent": {
+        "pois": [
+          "bank"
+        ],
+        "poi_count": 1,
+        "time_limit": 1440,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.8,
+        "distance_weight_synthetic": 0.2
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_041",
+      "split": "test",
+      "source_index": 66,
+      "source_cluster_id": 62,
+      "base_instruction": "Today, make sure to visit the supermarket, shopping mall, and library. Since there's no specific return time, prioritize a fast and efficient route to get through all the stops smoothly. Enjoy your day!",
+      "gold_intent": {
+        "pois": [
+          "library",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 3,
+        "time_limit": null,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.3,
+        "distance_weight_synthetic": 0.7
+      },
+      "cluster_size": 4
+    },
+    {
+      "group_id": "test_042",
+      "split": "test",
+      "source_index": 641,
+      "source_cluster_id": 426,
+      "base_instruction": "Today, make sure to visit the bank and the library. Please be back by 11 PM. Aim for the quickest route as efficiency is the priority. It's important to stop by the bank before heading to the library.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library"
+        ],
+        "poi_count": 2,
+        "time_limit": 1380,
+        "dependencies": [
+          [
+            "bank",
+            "library"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "bank",
+            "library"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.0,
+        "distance_weight_synthetic": 1.0
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_043",
+      "split": "test",
+      "source_index": 465,
+      "source_cluster_id": 332,
+      "base_instruction": "Today, we need to visit the bank, pharmacy, shopping mall, library, and supermarket. While it's important to make these stops, we're really focusing on experiencing places with top ratings. Before heading to the pharmacy, we must stop by the bank, and we'll ensure to visit the pharmacy before going to the shopping mall.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 5,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "bank",
+            "pharmacy"
+          ],
+          [
+            "pharmacy",
+            "shopping_mall"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "bank",
+            "pharmacy"
+          ],
+          [
+            "bank",
+            "shopping_mall"
+          ],
+          [
+            "pharmacy",
+            "shopping_mall"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.8,
+        "distance_weight_synthetic": 0.2
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_044",
+      "split": "test",
+      "source_index": 249,
+      "source_cluster_id": 199,
+      "base_instruction": "Today, you'll need to visit the supermarket and the bank. Try to keep your route as efficient as possible, given that there's no rush to return at a specific time.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "supermarket"
+        ],
+        "poi_count": 2,
+        "time_limit": null,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.2,
+        "distance_weight_synthetic": 0.8
+      },
+      "cluster_size": 6
+    },
+    {
+      "group_id": "test_045",
+      "split": "test",
+      "source_index": 95,
+      "source_cluster_id": 87,
+      "base_instruction": "The main task for today is to visit the library. Since efficiency is crucial, prioritize planning your route to ensure minimal travel time.",
+      "gold_intent": {
+        "pois": [
+          "library"
+        ],
+        "poi_count": 1,
+        "time_limit": null,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.0,
+        "distance_weight_synthetic": 1.0
+      },
+      "cluster_size": 14
+    },
+    {
+      "group_id": "test_046",
+      "split": "test",
+      "source_index": 202,
+      "source_cluster_id": 169,
+      "base_instruction": "Today, you'll be visiting the library and the shopping mall. Please prioritize an efficient route as there are no specific dependencies or return time constraints.",
+      "gold_intent": {
+        "pois": [
+          "library",
+          "shopping_mall"
+        ],
+        "poi_count": 2,
+        "time_limit": null,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.2,
+        "distance_weight_synthetic": 0.8
+      },
+      "cluster_size": 2
+    },
+    {
+      "group_id": "test_047",
+      "split": "test",
+      "source_index": 436,
+      "source_cluster_id": 309,
+      "base_instruction": "Today, make sure to visit the pharmacy, the shopping mall, the supermarket, and the bank. Please ensure you return by 23:00. To make the most of your day, focus on completing the route efficiently. There are no specific places that need to be visited before others, so feel free to choose the order that works best for you.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 4,
+        "time_limit": 1380,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.3,
+        "distance_weight_synthetic": 0.7
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_048",
+      "split": "test",
+      "source_index": 912,
+      "source_cluster_id": 563,
+      "base_instruction": "Make sure to visit the shopping mall today. Please be back by 5 PM. Aim for a good balance between the quality of the visit and the efficiency of the route.",
+      "gold_intent": {
+        "pois": [
+          "shopping_mall"
+        ],
+        "poi_count": 1,
+        "time_limit": 1020,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "balanced",
+        "quality_weight_synthetic": 0.5,
+        "distance_weight_synthetic": 0.5
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_049",
+      "split": "test",
+      "source_index": 221,
+      "source_cluster_id": 180,
+      "base_instruction": "Today, we'll be visiting the shopping mall, supermarket, library, bank, and pharmacy. Let's prioritize visiting locations with high ratings. Remember, we need to visit the library before heading to the bank.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 5,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "library",
+            "bank"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "library",
+            "bank"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.9,
+        "distance_weight_synthetic": 0.1
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_050",
+      "split": "test",
+      "source_index": 224,
+      "source_cluster_id": 183,
+      "base_instruction": "Today, you need to visit the supermarket, bank, pharmacy, and library. Please ensure you return by 22:00. Aim to make your visits efficient and keep the route short.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "supermarket"
+        ],
+        "poi_count": 4,
+        "time_limit": 1320,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.4,
+        "distance_weight_synthetic": 0.6
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_051",
+      "split": "test",
+      "source_index": 207,
+      "source_cluster_id": 172,
+      "base_instruction": "Today, we'd like to visit the supermarket and the shopping mall. There's no specific return time, so feel free to take your time. It's important that we prioritize visiting places with high ratings, ensuring we enjoy the best experiences available.",
+      "gold_intent": {
+        "pois": [
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 2,
+        "time_limit": null,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 1.0,
+        "distance_weight_synthetic": 0.0
+      },
+      "cluster_size": 6
+    },
+    {
+      "group_id": "test_052",
+      "split": "test",
+      "source_index": 756,
+      "source_cluster_id": 490,
+      "base_instruction": "Today, make sure to visit the supermarket, pharmacy, library, shopping mall, and bank. Aim to be back by 20:00. It's important to keep the route efficient, so quick stops are preferred. Be sure to stop by the pharmacy before heading to the library, and visit the shopping mall prior to going to the bank.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 5,
+        "time_limit": 1200,
+        "dependencies": [
+          [
+            "pharmacy",
+            "library"
+          ],
+          [
+            "shopping_mall",
+            "bank"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "pharmacy",
+            "library"
+          ],
+          [
+            "shopping_mall",
+            "bank"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.2,
+        "distance_weight_synthetic": 0.8
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_053",
+      "split": "test",
+      "source_index": 565,
+      "source_cluster_id": 390,
+      "base_instruction": "We need to visit the pharmacy today. Please make sure to return by 22:00. It's important to take the most efficient route possible, so prioritize quick travel. There are no specific order constraints for this visit.",
+      "gold_intent": {
+        "pois": [
+          "pharmacy"
+        ],
+        "poi_count": 1,
+        "time_limit": 1320,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.2,
+        "distance_weight_synthetic": 0.8
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_054",
+      "split": "test",
+      "source_index": 877,
+      "source_cluster_id": 548,
+      "base_instruction": "Today, make sure to visit the bank, library, shopping mall, pharmacy, and supermarket. Please prioritize being efficient as the route length is a key consideration. Ensure you go to the shopping mall before heading to the pharmacy.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 5,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "shopping_mall",
+            "pharmacy"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "shopping_mall",
+            "pharmacy"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.1,
+        "distance_weight_synthetic": 0.9
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_055",
+      "split": "test",
+      "source_index": 263,
+      "source_cluster_id": 208,
+      "base_instruction": "Today, we need to visit the pharmacy and the supermarket. It's important to check out these places with the best reviews, even if it takes a bit longer. There are no specific sequences we need to follow for visiting these places.",
+      "gold_intent": {
+        "pois": [
+          "pharmacy",
+          "supermarket"
+        ],
+        "poi_count": 2,
+        "time_limit": null,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.9,
+        "distance_weight_synthetic": 0.1
+      },
+      "cluster_size": 5
+    },
+    {
+      "group_id": "test_056",
+      "split": "test",
+      "source_index": 982,
+      "source_cluster_id": 601,
+      "base_instruction": "Today, you need to visit the library, pharmacy, bank, shopping mall, and supermarket. Be sure to return by 20:00. Focus on visiting places with excellent ratings along the way. Remember to drop by the bank before heading to the shopping mall.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 5,
+        "time_limit": 1200,
+        "dependencies": [
+          [
+            "bank",
+            "shopping_mall"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "bank",
+            "shopping_mall"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.9,
+        "distance_weight_synthetic": 0.1
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_057",
+      "split": "test",
+      "source_index": 727,
+      "source_cluster_id": 474,
+      "base_instruction": "Today, you just need to visit the bank. Please make sure to return by midnight. It's important to be efficient with your timing.",
+      "gold_intent": {
+        "pois": [
+          "bank"
+        ],
+        "poi_count": 1,
+        "time_limit": 1440,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.3,
+        "distance_weight_synthetic": 0.7
+      },
+      "cluster_size": 2
+    },
+    {
+      "group_id": "test_058",
+      "split": "test",
+      "source_index": 98,
+      "source_cluster_id": 90,
+      "base_instruction": "Today, we need to make stops at the library, supermarket, and bank. Please ensure we are back by 22:00. Make sure to prioritize visiting places that offer the best experiences.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "supermarket"
+        ],
+        "poi_count": 3,
+        "time_limit": 1320,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.9,
+        "distance_weight_synthetic": 0.1
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_059",
+      "split": "test",
+      "source_index": 974,
+      "source_cluster_id": 597,
+      "base_instruction": "Today, you need to visit the supermarket, bank, pharmacy, and shopping mall. Please make sure to return by 17:00. Since time efficiency is crucial, focus on the quickest route possible. First, go to the supermarket before heading to the bank, and make sure you visit the bank before stopping by the pharmacy.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 4,
+        "time_limit": 1020,
+        "dependencies": [
+          [
+            "supermarket",
+            "bank"
+          ],
+          [
+            "bank",
+            "pharmacy"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "bank",
+            "pharmacy"
+          ],
+          [
+            "supermarket",
+            "bank"
+          ],
+          [
+            "supermarket",
+            "pharmacy"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.0,
+        "distance_weight_synthetic": 1.0
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_060",
+      "split": "test",
+      "source_index": 442,
+      "source_cluster_id": 313,
+      "base_instruction": "Today, you'll be visiting the pharmacy, supermarket, shopping mall, and library. It's important to prioritize visiting high-rated places throughout your journey. Start by visiting the pharmacy before heading to the supermarket, and make sure to visit the supermarket before going to the shopping mall.",
+      "gold_intent": {
+        "pois": [
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 4,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "pharmacy",
+            "supermarket"
+          ],
+          [
+            "supermarket",
+            "shopping_mall"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "pharmacy",
+            "shopping_mall"
+          ],
+          [
+            "pharmacy",
+            "supermarket"
+          ],
+          [
+            "supermarket",
+            "shopping_mall"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.9,
+        "distance_weight_synthetic": 0.1
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_061",
+      "split": "test",
+      "source_index": 604,
+      "source_cluster_id": 411,
+      "base_instruction": "Today's itinerary includes visiting the library, bank, supermarket, and shopping mall. Please make sure to be back by 21:00. Prioritize efficiency when planning your route, although it's okay to look for well-rated places too. Remember to stop by the bank before heading to the supermarket.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 4,
+        "time_limit": 1260,
+        "dependencies": [
+          [
+            "bank",
+            "supermarket"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "bank",
+            "supermarket"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.4,
+        "distance_weight_synthetic": 0.6
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_062",
+      "split": "test",
+      "source_index": 398,
+      "source_cluster_id": 290,
+      "base_instruction": "Today, we need to visit the pharmacy. Let's aim for a balance between a good experience and efficiency.",
+      "gold_intent": {
+        "pois": [
+          "pharmacy"
+        ],
+        "poi_count": 1,
+        "time_limit": null,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "balanced",
+        "quality_weight_synthetic": 0.5,
+        "distance_weight_synthetic": 0.5
+      },
+      "cluster_size": 3
+    },
+    {
+      "group_id": "test_063",
+      "split": "test",
+      "source_index": 327,
+      "source_cluster_id": 248,
+      "base_instruction": "Today, you'll need to visit the library, shopping mall, pharmacy, and bank. Please ensure that you return by 19:00. Given the time constraints, it would be best to aim for the most efficient route possible. Start your day by visiting the library before heading to the shopping mall, and make sure to drop by the pharmacy before going to the bank.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall"
+        ],
+        "poi_count": 4,
+        "time_limit": 1140,
+        "dependencies": [
+          [
+            "library",
+            "shopping_mall"
+          ],
+          [
+            "pharmacy",
+            "bank"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "library",
+            "shopping_mall"
+          ],
+          [
+            "pharmacy",
+            "bank"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.1,
+        "distance_weight_synthetic": 0.9
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_064",
+      "split": "test",
+      "source_index": 42,
+      "source_cluster_id": 41,
+      "base_instruction": "Today, you need to visit the pharmacy, library, supermarket, and shopping mall. Since there's no specific time to be back, you can focus on getting through your list efficiently. Make sure to go to the library before heading to the supermarket, and visit the supermarket prior to the shopping mall.",
+      "gold_intent": {
+        "pois": [
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 4,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "library",
+            "supermarket"
+          ],
+          [
+            "supermarket",
+            "shopping_mall"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "library",
+            "shopping_mall"
+          ],
+          [
+            "library",
+            "supermarket"
+          ],
+          [
+            "supermarket",
+            "shopping_mall"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.3,
+        "distance_weight_synthetic": 0.7
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_065",
+      "split": "test",
+      "source_index": 325,
+      "source_cluster_id": 246,
+      "base_instruction": "Today, you'll need to visit the pharmacy, shopping mall, bank, and library. Be sure to return home by 21:00. It's important to move efficiently and minimize travel time between these locations.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall"
+        ],
+        "poi_count": 4,
+        "time_limit": 1260,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.0,
+        "distance_weight_synthetic": 1.0
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_066",
+      "split": "test",
+      "source_index": 770,
+      "source_cluster_id": 496,
+      "base_instruction": "Today, make sure to visit the pharmacy, supermarket, bank, and shopping mall. We should plan to take the most efficient route possible. Remember to go to the supermarket before heading to the bank.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 4,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "supermarket",
+            "bank"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "supermarket",
+            "bank"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.2,
+        "distance_weight_synthetic": 0.8
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_067",
+      "split": "test",
+      "source_index": 544,
+      "source_cluster_id": 380,
+      "base_instruction": "Today, make sure to stop by the library. Please return by 23:00. Prioritize getting there efficiently while keeping a reasonable eye on the ratings.",
+      "gold_intent": {
+        "pois": [
+          "library"
+        ],
+        "poi_count": 1,
+        "time_limit": 1380,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.4,
+        "distance_weight_synthetic": 0.6
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_068",
+      "split": "test",
+      "source_index": 228,
+      "source_cluster_id": 187,
+      "base_instruction": "Today, we'll visit the shopping mall, library, pharmacy, bank, and supermarket. Ensure we stop at the shopping mall before heading to the library. Let's aim for a balance between visiting well-rated places and keeping our travel efficient.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 5,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "shopping_mall",
+            "library"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "shopping_mall",
+            "library"
+          ]
+        ],
+        "preference_direction": "balanced",
+        "quality_weight_synthetic": 0.5,
+        "distance_weight_synthetic": 0.5
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_069",
+      "split": "test",
+      "source_index": 65,
+      "source_cluster_id": 61,
+      "base_instruction": "Today, please make sure to visit the shopping mall, supermarket, and library. Ensure you're back by midnight. Efficiency is key, so aim for a route that saves time while visiting all the places. There are no specific sequences needed for visiting these locations.",
+      "gold_intent": {
+        "pois": [
+          "library",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 3,
+        "time_limit": 1440,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.4,
+        "distance_weight_synthetic": 0.6
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_070",
+      "split": "test",
+      "source_index": 509,
+      "source_cluster_id": 356,
+      "base_instruction": "Today, you'll need to visit the supermarket, pharmacy, shopping mall, and bank. As time is of the essence, an efficient route should be prioritized. Make sure to stop by the pharmacy before heading to the shopping mall.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 4,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "pharmacy",
+            "shopping_mall"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "pharmacy",
+            "shopping_mall"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.2,
+        "distance_weight_synthetic": 0.8
+      },
+      "cluster_size": 2
+    },
+    {
+      "group_id": "test_071",
+      "split": "test",
+      "source_index": 52,
+      "source_cluster_id": 51,
+      "base_instruction": "Today, you'll need to visit the library. Make sure to return by 5:00 PM. It's important to keep your route efficient, so plan your visit accordingly.",
+      "gold_intent": {
+        "pois": [
+          "library"
+        ],
+        "poi_count": 1,
+        "time_limit": 1020,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.3,
+        "distance_weight_synthetic": 0.7
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_072",
+      "split": "test",
+      "source_index": 220,
+      "source_cluster_id": 179,
+      "base_instruction": "Today, make sure to visit the library, shopping mall, and bank. We should prioritize visiting places with high ratings. Start at the library before heading to the shopping mall.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "shopping_mall"
+        ],
+        "poi_count": 3,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "library",
+            "shopping_mall"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "library",
+            "shopping_mall"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.8,
+        "distance_weight_synthetic": 0.2
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_073",
+      "split": "test",
+      "source_index": 685,
+      "source_cluster_id": 452,
+      "base_instruction": "Today, we need to visit the library and the shopping mall. To make the most of our time, let's focus on visiting in the most efficient order. Be sure to stop by the library before heading to the shopping mall.",
+      "gold_intent": {
+        "pois": [
+          "library",
+          "shopping_mall"
+        ],
+        "poi_count": 2,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "library",
+            "shopping_mall"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "library",
+            "shopping_mall"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.1,
+        "distance_weight_synthetic": 0.9
+      },
+      "cluster_size": 2
+    },
+    {
+      "group_id": "test_074",
+      "split": "test",
+      "source_index": 709,
+      "source_cluster_id": 465,
+      "base_instruction": "Today, we need to visit the supermarket, shopping mall, bank, library, and pharmacy. Please make sure we're back by 17:00. It's important that we prioritize visiting places with high ratings. Remember, we must go to the library before heading to the pharmacy.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 5,
+        "time_limit": 1020,
+        "dependencies": [
+          [
+            "library",
+            "pharmacy"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "library",
+            "pharmacy"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.9,
+        "distance_weight_synthetic": 0.1
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_075",
+      "split": "test",
+      "source_index": 2,
+      "source_cluster_id": 2,
+      "base_instruction": "Today, make sure to visit the library, the supermarket, and the bank. Please be home by 17:00. It's important to focus on places with higher ratings, so prioritize them even if it takes a little longer.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "supermarket"
+        ],
+        "poi_count": 3,
+        "time_limit": 1020,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.8,
+        "distance_weight_synthetic": 0.2
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_076",
+      "split": "test",
+      "source_index": 73,
+      "source_cluster_id": 69,
+      "base_instruction": "Today, please make sure to visit the library, shopping mall, supermarket, and pharmacy. It's important to prioritize visiting places with high ratings during this trip. Start by heading to the library before moving on to the shopping mall, and make sure to stop at the supermarket before you visit the pharmacy.",
+      "gold_intent": {
+        "pois": [
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 4,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "library",
+            "shopping_mall"
+          ],
+          [
+            "supermarket",
+            "pharmacy"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "library",
+            "shopping_mall"
+          ],
+          [
+            "supermarket",
+            "pharmacy"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.9,
+        "distance_weight_synthetic": 0.1
+      },
+      "cluster_size": 2
+    },
+    {
+      "group_id": "test_077",
+      "split": "test",
+      "source_index": 76,
+      "source_cluster_id": 72,
+      "base_instruction": "Today, you need to visit the library. Please make sure to return by 18:00. Prioritize efficiency and quick routes to ensure everything is completed on time.",
+      "gold_intent": {
+        "pois": [
+          "library"
+        ],
+        "poi_count": 1,
+        "time_limit": 1080,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.1,
+        "distance_weight_synthetic": 0.9
+      },
+      "cluster_size": 3
+    },
+    {
+      "group_id": "test_078",
+      "split": "test",
+      "source_index": 599,
+      "source_cluster_id": 409,
+      "base_instruction": "Today, make sure to visit the pharmacy, library, bank, shopping mall, and supermarket. It's important to be efficient with the route to save time. Remember to stop by the shopping mall before heading to the supermarket.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 5,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "shopping_mall",
+            "supermarket"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "shopping_mall",
+            "supermarket"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.2,
+        "distance_weight_synthetic": 0.8
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_079",
+      "split": "test",
+      "source_index": 58,
+      "source_cluster_id": 55,
+      "base_instruction": "Today, make sure to visit the library, pharmacy, and bank. It's essential to prioritize places with the best ratings. Remember to stop by the pharmacy before heading to the bank.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy"
+        ],
+        "poi_count": 3,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "pharmacy",
+            "bank"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "pharmacy",
+            "bank"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 1.0,
+        "distance_weight_synthetic": 0.0
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_080",
+      "split": "test",
+      "source_index": 920,
+      "source_cluster_id": 567,
+      "base_instruction": "Today, you need to visit the library and the shopping mall. Make sure to be back by midnight. Try to find a good balance between visiting well-rated places and not taking too long.",
+      "gold_intent": {
+        "pois": [
+          "library",
+          "shopping_mall"
+        ],
+        "poi_count": 2,
+        "time_limit": 1440,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.6,
+        "distance_weight_synthetic": 0.4
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_081",
+      "split": "test",
+      "source_index": 932,
+      "source_cluster_id": 572,
+      "base_instruction": "Today, make sure to visit the pharmacy, the bank, the shopping mall, and the supermarket. I'd really like to focus on visiting the places with the best feedback. Start by going to the pharmacy before heading to the bank. Also, check out the shopping mall before you pop into the supermarket.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 4,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "pharmacy",
+            "bank"
+          ],
+          [
+            "shopping_mall",
+            "supermarket"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "pharmacy",
+            "bank"
+          ],
+          [
+            "shopping_mall",
+            "supermarket"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.8,
+        "distance_weight_synthetic": 0.2
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_082",
+      "split": "test",
+      "source_index": 940,
+      "source_cluster_id": 577,
+      "base_instruction": "Today, you'll need to visit the library, shopping mall, and bank. Make sure you return by midnight. Since it's important to keep the routes short and efficient, try to plan your visits accordingly. You can choose the order of visits as there are no specific dependencies.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "shopping_mall"
+        ],
+        "poi_count": 3,
+        "time_limit": 1440,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.1,
+        "distance_weight_synthetic": 0.9
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_083",
+      "split": "test",
+      "source_index": 140,
+      "source_cluster_id": 122,
+      "base_instruction": "Today we need to visit the bank and the library. Considering we have no time constraint for returning, let's make sure our route is efficient to save time. There are no specific dependencies, so we can visit in any order that suits us best.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library"
+        ],
+        "poi_count": 2,
+        "time_limit": null,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.3,
+        "distance_weight_synthetic": 0.7
+      },
+      "cluster_size": 6
+    },
+    {
+      "group_id": "test_084",
+      "split": "test",
+      "source_index": 788,
+      "source_cluster_id": 506,
+      "base_instruction": "Today, the plan is to visit the bank, the library, and the shopping mall. I’d prefer if the route is efficient to save time. Make sure to stop by the bank before heading over to the library.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "shopping_mall"
+        ],
+        "poi_count": 3,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "bank",
+            "library"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "bank",
+            "library"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.4,
+        "distance_weight_synthetic": 0.6
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_085",
+      "split": "test",
+      "source_index": 948,
+      "source_cluster_id": 581,
+      "base_instruction": "We need to visit the shopping mall and the supermarket today. Let's focus on finding places with good ratings. Be sure to head to the shopping mall before making our way to the supermarket.",
+      "gold_intent": {
+        "pois": [
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 2,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "shopping_mall",
+            "supermarket"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "shopping_mall",
+            "supermarket"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.7,
+        "distance_weight_synthetic": 0.3
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_086",
+      "split": "test",
+      "source_index": 64,
+      "source_cluster_id": 60,
+      "base_instruction": "We plan to visit the library today. It would be great to find a balance between a highly rated visit and an efficient route.",
+      "gold_intent": {
+        "pois": [
+          "library"
+        ],
+        "poi_count": 1,
+        "time_limit": null,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "balanced",
+        "quality_weight_synthetic": 0.5,
+        "distance_weight_synthetic": 0.5
+      },
+      "cluster_size": 4
+    },
+    {
+      "group_id": "test_087",
+      "split": "test",
+      "source_index": 560,
+      "source_cluster_id": 386,
+      "base_instruction": "Please make sure to visit the pharmacy today. We need to be back by 21:00. Let's try to make the trip as swift as possible for efficiency.",
+      "gold_intent": {
+        "pois": [
+          "pharmacy"
+        ],
+        "poi_count": 1,
+        "time_limit": 1260,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.4,
+        "distance_weight_synthetic": 0.6
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_088",
+      "split": "test",
+      "source_index": 218,
+      "source_cluster_id": 178,
+      "base_instruction": "Make sure to visit the pharmacy today. Please be back by 23:00. Try to ensure a balance between the quality of your visit and the efficiency of your route.",
+      "gold_intent": {
+        "pois": [
+          "pharmacy"
+        ],
+        "poi_count": 1,
+        "time_limit": 1380,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "balanced",
+        "quality_weight_synthetic": 0.5,
+        "distance_weight_synthetic": 0.5
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_089",
+      "split": "test",
+      "source_index": 801,
+      "source_cluster_id": 510,
+      "base_instruction": "Today, please make sure you visit the library, bank, shopping mall, pharmacy, and supermarket. It would be great if you could complete these stops in a quick and efficient manner. Start by going to the library, then proceed to the bank. Afterwards, make your way to the shopping mall before heading to the pharmacy. Finally, finish your errands at the supermarket.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 5,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "library",
+            "bank"
+          ],
+          [
+            "shopping_mall",
+            "pharmacy"
+          ],
+          [
+            "pharmacy",
+            "supermarket"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "library",
+            "bank"
+          ],
+          [
+            "pharmacy",
+            "supermarket"
+          ],
+          [
+            "shopping_mall",
+            "pharmacy"
+          ],
+          [
+            "shopping_mall",
+            "supermarket"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.2,
+        "distance_weight_synthetic": 0.8
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_090",
+      "split": "test",
+      "source_index": 152,
+      "source_cluster_id": 132,
+      "base_instruction": "Today's plan is to visit the shopping mall. We should aim to make this trip as quick and efficient as possible.",
+      "gold_intent": {
+        "pois": [
+          "shopping_mall"
+        ],
+        "poi_count": 1,
+        "time_limit": null,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.2,
+        "distance_weight_synthetic": 0.8
+      },
+      "cluster_size": 22
+    },
+    {
+      "group_id": "test_091",
+      "split": "test",
+      "source_index": 480,
+      "source_cluster_id": 340,
+      "base_instruction": "Today, make sure to visit the library. Please return by 19:00. Aim to balance the quality of the visit with a reasonable route.",
+      "gold_intent": {
+        "pois": [
+          "library"
+        ],
+        "poi_count": 1,
+        "time_limit": 1140,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.6,
+        "distance_weight_synthetic": 0.4
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_092",
+      "split": "test",
+      "source_index": 81,
+      "source_cluster_id": 77,
+      "base_instruction": "Today we need to visit the pharmacy, supermarket, shopping mall, library, and bank. While we're out, let’s try to focus on visiting places with the best ratings. Make sure to stop by the shopping mall before heading to the library.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 5,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "shopping_mall",
+            "library"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "shopping_mall",
+            "library"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.7,
+        "distance_weight_synthetic": 0.3
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_093",
+      "split": "test",
+      "source_index": 475,
+      "source_cluster_id": 338,
+      "base_instruction": "We need to visit the shopping mall, library, pharmacy, and bank today. I'm really keen on exploring the highly rated spots, even if it takes a bit longer.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall"
+        ],
+        "poi_count": 4,
+        "time_limit": null,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.8,
+        "distance_weight_synthetic": 0.2
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_094",
+      "split": "test",
+      "source_index": 971,
+      "source_cluster_id": 594,
+      "base_instruction": "Today, we need to visit the bank, pharmacy, shopping mall, and library. Please make sure you return by 23:00. While balancing both the quality of places and the efficiency of the route, start with the bank before heading to the pharmacy.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall"
+        ],
+        "poi_count": 4,
+        "time_limit": 1380,
+        "dependencies": [
+          [
+            "bank",
+            "pharmacy"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "bank",
+            "pharmacy"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.6,
+        "distance_weight_synthetic": 0.4
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_095",
+      "split": "test",
+      "source_index": 471,
+      "source_cluster_id": 335,
+      "base_instruction": "Today, you need to visit the pharmacy and the shopping mall. Please make sure to be back by midnight. It's important to choose places with high ratings over shorter routes, so prioritize visiting those. There are no specific order requirements for these visits.",
+      "gold_intent": {
+        "pois": [
+          "pharmacy",
+          "shopping_mall"
+        ],
+        "poi_count": 2,
+        "time_limit": 1440,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.9,
+        "distance_weight_synthetic": 0.1
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_096",
+      "split": "test",
+      "source_index": 123,
+      "source_cluster_id": 110,
+      "base_instruction": "Today, make sure you visit the pharmacy, shopping mall, supermarket, library, and bank. You need to be back by 9 PM. Since we're prioritizing efficiency, please take the most direct route possible. Remember, you should visit the pharmacy before the shopping mall, the shopping mall before the supermarket, and the supermarket before the library.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 5,
+        "time_limit": 1260,
+        "dependencies": [
+          [
+            "pharmacy",
+            "shopping_mall"
+          ],
+          [
+            "shopping_mall",
+            "supermarket"
+          ],
+          [
+            "supermarket",
+            "library"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "pharmacy",
+            "library"
+          ],
+          [
+            "pharmacy",
+            "shopping_mall"
+          ],
+          [
+            "pharmacy",
+            "supermarket"
+          ],
+          [
+            "shopping_mall",
+            "library"
+          ],
+          [
+            "shopping_mall",
+            "supermarket"
+          ],
+          [
+            "supermarket",
+            "library"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.1,
+        "distance_weight_synthetic": 0.9
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_097",
+      "split": "test",
+      "source_index": 78,
+      "source_cluster_id": 74,
+      "base_instruction": "Today, you need to visit the library, bank, supermarket, pharmacy, and shopping mall. Since timing is crucial, try to make your trip as efficient as possible. Remember to visit the supermarket before heading to the pharmacy.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 5,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "supermarket",
+            "pharmacy"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "supermarket",
+            "pharmacy"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.0,
+        "distance_weight_synthetic": 1.0
+      },
+      "cluster_size": 3
+    },
+    {
+      "group_id": "test_098",
+      "split": "test",
+      "source_index": 486,
+      "source_cluster_id": 343,
+      "base_instruction": "Today, you need to visit the library and the pharmacy. Please make sure to return by 21:00. It's important to prioritize places with higher ratings, so keep an eye out for any options that offer exceptional quality.",
+      "gold_intent": {
+        "pois": [
+          "library",
+          "pharmacy"
+        ],
+        "poi_count": 2,
+        "time_limit": 1260,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.8,
+        "distance_weight_synthetic": 0.2
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_099",
+      "split": "test",
+      "source_index": 498,
+      "source_cluster_id": 351,
+      "base_instruction": "Today, we need to visit the bank and the library. Ensure we prioritize an efficient route. Start at the bank before heading to the library.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library"
+        ],
+        "poi_count": 2,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "bank",
+            "library"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "bank",
+            "library"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.2,
+        "distance_weight_synthetic": 0.8
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_100",
+      "split": "test",
+      "source_index": 939,
+      "source_cluster_id": 576,
+      "base_instruction": "Today, you need to visit the bank, pharmacy, shopping mall, library, and supermarket. Make sure to be back by midnight. Try to balance visiting places with good ratings while still keeping your route efficient.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 5,
+        "time_limit": 1440,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.6,
+        "distance_weight_synthetic": 0.4
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_101",
+      "split": "test",
+      "source_index": 331,
+      "source_cluster_id": 252,
+      "base_instruction": "Today, make sure to visit the pharmacy and then head to the shopping mall. There's a need to be as efficient as possible with the route. Remember, you must stop by the pharmacy before you go to the shopping mall.",
+      "gold_intent": {
+        "pois": [
+          "pharmacy",
+          "shopping_mall"
+        ],
+        "poi_count": 2,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "pharmacy",
+            "shopping_mall"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "pharmacy",
+            "shopping_mall"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.0,
+        "distance_weight_synthetic": 1.0
+      },
+      "cluster_size": 2
+    },
+    {
+      "group_id": "test_102",
+      "split": "test",
+      "source_index": 328,
+      "source_cluster_id": 249,
+      "base_instruction": "Today's itinerary includes visits to the supermarket, the pharmacy, and the bank. Please make sure to return by 11 p.m. We aim for a good balance between visiting quality places and keeping our route efficient. Remember to stop by the supermarket before heading to the pharmacy.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "pharmacy",
+          "supermarket"
+        ],
+        "poi_count": 3,
+        "time_limit": 1380,
+        "dependencies": [
+          [
+            "supermarket",
+            "pharmacy"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "supermarket",
+            "pharmacy"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.6,
+        "distance_weight_synthetic": 0.4
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_103",
+      "split": "test",
+      "source_index": 99,
+      "source_cluster_id": 91,
+      "base_instruction": "Today, you need to visit the library, pharmacy, bank, supermarket, and shopping mall. You must be back by 20:00. It is quite important to prioritize visiting places with high ratings. Ensure you go to the bank before heading to the supermarket, and visit the supermarket before the shopping mall.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 5,
+        "time_limit": 1200,
+        "dependencies": [
+          [
+            "bank",
+            "supermarket"
+          ],
+          [
+            "supermarket",
+            "shopping_mall"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "bank",
+            "shopping_mall"
+          ],
+          [
+            "bank",
+            "supermarket"
+          ],
+          [
+            "supermarket",
+            "shopping_mall"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.9,
+        "distance_weight_synthetic": 0.1
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_104",
+      "split": "test",
+      "source_index": 714,
+      "source_cluster_id": 467,
+      "base_instruction": "Today, make sure to visit the shopping mall, supermarket, library, and pharmacy. Please be home by 20:00. It's important to focus on taking the shortest route possible to get through the day efficiently. There are no specific order requirements for these visits.",
+      "gold_intent": {
+        "pois": [
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 4,
+        "time_limit": 1200,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.3,
+        "distance_weight_synthetic": 0.7
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_105",
+      "split": "test",
+      "source_index": 793,
+      "source_cluster_id": 507,
+      "base_instruction": "Please visit the shopping mall today. Make sure you return by 19:00. It's really important to focus on places with excellent ratings, even if it means taking a longer route.",
+      "gold_intent": {
+        "pois": [
+          "shopping_mall"
+        ],
+        "poi_count": 1,
+        "time_limit": 1140,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.9,
+        "distance_weight_synthetic": 0.1
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_106",
+      "split": "test",
+      "source_index": 459,
+      "source_cluster_id": 328,
+      "base_instruction": "Today, we need to visit the bank and the pharmacy. Let's make sure we find a good balance between places with decent ratings and a route that is not too lengthy.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "pharmacy"
+        ],
+        "poi_count": 2,
+        "time_limit": null,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "balanced",
+        "quality_weight_synthetic": 0.5,
+        "distance_weight_synthetic": 0.5
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_107",
+      "split": "test",
+      "source_index": 690,
+      "source_cluster_id": 453,
+      "base_instruction": "Today, make sure to visit the pharmacy and the bank. Please return by 19:00. Aim to enjoy high-rated places along the way.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "pharmacy"
+        ],
+        "poi_count": 2,
+        "time_limit": 1140,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.7,
+        "distance_weight_synthetic": 0.3
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_108",
+      "split": "test",
+      "source_index": 384,
+      "source_cluster_id": 282,
+      "base_instruction": "Today, you need to visit the bank, pharmacy, supermarket, library, and shopping mall. While it's important to find a balance between high-rated places and an efficient route, make sure to stop by the pharmacy before heading to the supermarket.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 5,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "pharmacy",
+            "supermarket"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "pharmacy",
+            "supermarket"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.6,
+        "distance_weight_synthetic": 0.4
+      },
+      "cluster_size": 2
+    },
+    {
+      "group_id": "test_109",
+      "split": "test",
+      "source_index": 226,
+      "source_cluster_id": 185,
+      "base_instruction": "Today, visit the pharmacy, bank, shopping mall, and library. As there is no specific time to return, aim for a balance between seeing enjoyable places and maintaining an efficient route. Ensure the shopping mall is visited before the library.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall"
+        ],
+        "poi_count": 4,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "shopping_mall",
+            "library"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "shopping_mall",
+            "library"
+          ]
+        ],
+        "preference_direction": "balanced",
+        "quality_weight_synthetic": 0.5,
+        "distance_weight_synthetic": 0.5
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_110",
+      "split": "test",
+      "source_index": 821,
+      "source_cluster_id": 523,
+      "base_instruction": "Today, we need to visit both the pharmacy and the bank. Make sure to be back by 9 PM. It's important to be quick and efficient during these visits, so please keep that in mind as you plan the route.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "pharmacy"
+        ],
+        "poi_count": 2,
+        "time_limit": 1260,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.0,
+        "distance_weight_synthetic": 1.0
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_111",
+      "split": "test",
+      "source_index": 879,
+      "source_cluster_id": 549,
+      "base_instruction": "Today, make sure to visit the pharmacy, the supermarket, and the shopping mall. Since there's no specific return time, aim to complete this as efficiently as possible. Additionally, please ensure you stop by the pharmacy before heading to the supermarket.",
+      "gold_intent": {
+        "pois": [
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 3,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "pharmacy",
+            "supermarket"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "pharmacy",
+            "supermarket"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.1,
+        "distance_weight_synthetic": 0.9
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_112",
+      "split": "test",
+      "source_index": 605,
+      "source_cluster_id": 412,
+      "base_instruction": "Today, make sure to visit the pharmacy. Please be back by 23:00. Find a balance between visiting a well-rated location and ensuring the trip is not too lengthy.",
+      "gold_intent": {
+        "pois": [
+          "pharmacy"
+        ],
+        "poi_count": 1,
+        "time_limit": 1380,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.6,
+        "distance_weight_synthetic": 0.4
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_113",
+      "split": "test",
+      "source_index": 524,
+      "source_cluster_id": 366,
+      "base_instruction": "Today, we'll be visiting the shopping mall, supermarket, library, and bank. It's important to get through the list as efficiently as possible. Make sure to stop by the library before heading to the bank.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 4,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "library",
+            "bank"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "library",
+            "bank"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.1,
+        "distance_weight_synthetic": 0.9
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_114",
+      "split": "test",
+      "source_index": 681,
+      "source_cluster_id": 448,
+      "base_instruction": "Today, you need to visit the shopping mall and the bank. Make sure you return by 23:00. Focus on the most efficient route to complete your visits quickly.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "shopping_mall"
+        ],
+        "poi_count": 2,
+        "time_limit": 1380,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.1,
+        "distance_weight_synthetic": 0.9
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_115",
+      "split": "test",
+      "source_index": 130,
+      "source_cluster_id": 114,
+      "base_instruction": "Today, you'll be heading out to visit the shopping mall, bank, pharmacy, library, and the supermarket. You should try to find a balance between visiting the best-rated places and keeping your route efficient. Make sure to stop by the library before you go to the supermarket.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 5,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "library",
+            "supermarket"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "library",
+            "supermarket"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.6,
+        "distance_weight_synthetic": 0.4
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_116",
+      "split": "test",
+      "source_index": 548,
+      "source_cluster_id": 382,
+      "base_instruction": "Today, you need to visit the shopping mall, supermarket, and bank. Please make sure to return by 18:00. It’s important to have an efficient route for these visits.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 3,
+        "time_limit": 1080,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.4,
+        "distance_weight_synthetic": 0.6
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_117",
+      "split": "test",
+      "source_index": 952,
+      "source_cluster_id": 585,
+      "base_instruction": "Today, you need to visit the supermarket and the bank. Make sure to be back by 19:00. It's important to prioritize efficiency to make the most out of the trip. Please visit the supermarket before heading to the bank.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "supermarket"
+        ],
+        "poi_count": 2,
+        "time_limit": 1140,
+        "dependencies": [
+          [
+            "supermarket",
+            "bank"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "supermarket",
+            "bank"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.2,
+        "distance_weight_synthetic": 0.8
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_118",
+      "split": "test",
+      "source_index": 807,
+      "source_cluster_id": 513,
+      "base_instruction": "Today, make sure to visit the shopping mall, bank, pharmacy, supermarket, and library. Please return by 18:00. Focus on exploring places with excellent ratings. Remember to visit the pharmacy before heading to the supermarket.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 5,
+        "time_limit": 1080,
+        "dependencies": [
+          [
+            "pharmacy",
+            "supermarket"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "pharmacy",
+            "supermarket"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.9,
+        "distance_weight_synthetic": 0.1
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_119",
+      "split": "test",
+      "source_index": 434,
+      "source_cluster_id": 307,
+      "base_instruction": "Today, make sure to visit the pharmacy, library, and shopping mall. You should return by midnight. Focus on visiting places that are highly rated, even if it might mean a slightly longer trip. There are no specific rules about the order, so you can visit each place as you choose.",
+      "gold_intent": {
+        "pois": [
+          "library",
+          "pharmacy",
+          "shopping_mall"
+        ],
+        "poi_count": 3,
+        "time_limit": 1440,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.7,
+        "distance_weight_synthetic": 0.3
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_120",
+      "split": "test",
+      "source_index": 25,
+      "source_cluster_id": 24,
+      "base_instruction": "Today, make sure to visit the shopping mall and then head over to the pharmacy. It's important to visit the highest-rated places, so take your time and enjoy each stop. There is no specific order you need to follow for these visits.",
+      "gold_intent": {
+        "pois": [
+          "pharmacy",
+          "shopping_mall"
+        ],
+        "poi_count": 2,
+        "time_limit": null,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 1.0,
+        "distance_weight_synthetic": 0.0
+      },
+      "cluster_size": 7
+    },
+    {
+      "group_id": "test_121",
+      "split": "test",
+      "source_index": 934,
+      "source_cluster_id": 573,
+      "base_instruction": "Today, make sure to visit the shopping mall. Plan to be back by 8 PM. Prioritize visiting places with higher ratings during your trip. There are no specific sequences required this time.",
+      "gold_intent": {
+        "pois": [
+          "shopping_mall"
+        ],
+        "poi_count": 1,
+        "time_limit": 1200,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.8,
+        "distance_weight_synthetic": 0.2
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_122",
+      "split": "test",
+      "source_index": 949,
+      "source_cluster_id": 582,
+      "base_instruction": "Today, you need to visit the bank, library, supermarket, pharmacy, and shopping mall. Make sure to return home by 21:00. Prioritize visiting places with higher ratings to ensure a quality experience. It's important to stop by the bank before heading to the library.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 5,
+        "time_limit": 1260,
+        "dependencies": [
+          [
+            "bank",
+            "library"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "bank",
+            "library"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.7,
+        "distance_weight_synthetic": 0.3
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_123",
+      "split": "test",
+      "source_index": 441,
+      "source_cluster_id": 312,
+      "base_instruction": "Today, you'll need to visit the supermarket. Make sure to return home by 22:00. The quickest and most efficient route is a priority, so aim to minimize travel time.",
+      "gold_intent": {
+        "pois": [
+          "supermarket"
+        ],
+        "poi_count": 1,
+        "time_limit": 1320,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.0,
+        "distance_weight_synthetic": 1.0
+      },
+      "cluster_size": 2
+    },
+    {
+      "group_id": "test_124",
+      "split": "test",
+      "source_index": 229,
+      "source_cluster_id": 188,
+      "base_instruction": "Today, make sure to visit the shopping mall, bank, supermarket, and library. Time is of the essence, so prioritize an efficient route to accomplish these visits. Start at the bank, then head to the supermarket, and finish at the library to ensure a smooth sequence.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 4,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "bank",
+            "supermarket"
+          ],
+          [
+            "supermarket",
+            "library"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "bank",
+            "library"
+          ],
+          [
+            "bank",
+            "supermarket"
+          ],
+          [
+            "supermarket",
+            "library"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.3,
+        "distance_weight_synthetic": 0.7
+      },
+      "cluster_size": 2
+    },
+    {
+      "group_id": "test_125",
+      "split": "test",
+      "source_index": 668,
+      "source_cluster_id": 441,
+      "base_instruction": "Today, we need to visit the pharmacy and the shopping mall. Please ensure to be back by midnight. We should aim for a quick and efficient route given our priorities.",
+      "gold_intent": {
+        "pois": [
+          "pharmacy",
+          "shopping_mall"
+        ],
+        "poi_count": 2,
+        "time_limit": 1440,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.4,
+        "distance_weight_synthetic": 0.6
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_126",
+      "split": "test",
+      "source_index": 10,
+      "source_cluster_id": 10,
+      "base_instruction": "Today, we need to visit the shopping mall, bank, and library. Please ensure we are back by 19:00. Let's aim to visit places that are highly rated to make the most of our day. Start with the shopping mall before heading to the bank.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "shopping_mall"
+        ],
+        "poi_count": 3,
+        "time_limit": 1140,
+        "dependencies": [
+          [
+            "shopping_mall",
+            "bank"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "shopping_mall",
+            "bank"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.8,
+        "distance_weight_synthetic": 0.2
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_127",
+      "split": "test",
+      "source_index": 612,
+      "source_cluster_id": 415,
+      "base_instruction": "Today, we have to visit the bank, library, supermarket, and pharmacy. Let's focus on visiting highly rated places. Please make sure to go to the bank first before heading to the library, and visit the library before going to the supermarket.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "supermarket"
+        ],
+        "poi_count": 4,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "bank",
+            "library"
+          ],
+          [
+            "library",
+            "supermarket"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "bank",
+            "library"
+          ],
+          [
+            "bank",
+            "supermarket"
+          ],
+          [
+            "library",
+            "supermarket"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 1.0,
+        "distance_weight_synthetic": 0.0
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_128",
+      "split": "test",
+      "source_index": 211,
+      "source_cluster_id": 174,
+      "base_instruction": "Today, you'll need to visit the bank and the pharmacy. Please focus on a quick and efficient route. Be sure to stop by the bank before heading over to the pharmacy.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "pharmacy"
+        ],
+        "poi_count": 2,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "bank",
+            "pharmacy"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "bank",
+            "pharmacy"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.2,
+        "distance_weight_synthetic": 0.8
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_129",
+      "split": "test",
+      "source_index": 977,
+      "source_cluster_id": 598,
+      "base_instruction": "Today, you need to visit the bank, shopping mall, and supermarket. It would be great if you could find a balance between visiting well-rated spots and not taking too long on the route. Remember to stop by the shopping mall before heading to the supermarket.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 3,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "shopping_mall",
+            "supermarket"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "shopping_mall",
+            "supermarket"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.6,
+        "distance_weight_synthetic": 0.4
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_130",
+      "split": "test",
+      "source_index": 7,
+      "source_cluster_id": 7,
+      "base_instruction": "Today, you need to visit the bank, pharmacy, and supermarket. Be sure to return by 21:00. While you're out, try to balance both visiting well-rated places and keeping the route efficient. Remember to stop by the pharmacy before heading to the supermarket.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "pharmacy",
+          "supermarket"
+        ],
+        "poi_count": 3,
+        "time_limit": 1260,
+        "dependencies": [
+          [
+            "pharmacy",
+            "supermarket"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "pharmacy",
+            "supermarket"
+          ]
+        ],
+        "preference_direction": "balanced",
+        "quality_weight_synthetic": 0.5,
+        "distance_weight_synthetic": 0.5
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_131",
+      "split": "test",
+      "source_index": 983,
+      "source_cluster_id": 602,
+      "base_instruction": "Today, you'll need to visit the pharmacy, supermarket, shopping mall, and library. Make sure the trip is as efficient as possible to save time. Be sure to stop by the pharmacy before heading to the supermarket.",
+      "gold_intent": {
+        "pois": [
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 4,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "pharmacy",
+            "supermarket"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "pharmacy",
+            "supermarket"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.4,
+        "distance_weight_synthetic": 0.6
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_132",
+      "split": "test",
+      "source_index": 598,
+      "source_cluster_id": 408,
+      "base_instruction": "Today, we need to visit the bank, the supermarket, and the library. Since there's no rush to return by a specific time, let's make sure to balance visiting high-rated places with an efficient route.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "supermarket"
+        ],
+        "poi_count": 3,
+        "time_limit": null,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "balanced",
+        "quality_weight_synthetic": 0.5,
+        "distance_weight_synthetic": 0.5
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_133",
+      "split": "test",
+      "source_index": 586,
+      "source_cluster_id": 400,
+      "base_instruction": "Today, please make sure to visit the supermarket. You need to be back by 9 PM. It's important to prioritize a place with a high rating.",
+      "gold_intent": {
+        "pois": [
+          "supermarket"
+        ],
+        "poi_count": 1,
+        "time_limit": 1260,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.8,
+        "distance_weight_synthetic": 0.2
+      },
+      "cluster_size": 2
+    },
+    {
+      "group_id": "test_134",
+      "split": "test",
+      "source_index": 151,
+      "source_cluster_id": 131,
+      "base_instruction": "Today, you need to visit the bank. Make sure to be back by 21:00. Prioritize visiting a high-rated location even if it means a longer route.",
+      "gold_intent": {
+        "pois": [
+          "bank"
+        ],
+        "poi_count": 1,
+        "time_limit": 1260,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.7,
+        "distance_weight_synthetic": 0.3
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_135",
+      "split": "test",
+      "source_index": 252,
+      "source_cluster_id": 201,
+      "base_instruction": "Today, you need to visit the supermarket, shopping mall, and pharmacy. Make sure you're back by 18:00. Prioritize visiting places with high ratings.",
+      "gold_intent": {
+        "pois": [
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 3,
+        "time_limit": 1080,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.8,
+        "distance_weight_synthetic": 0.2
+      },
+      "cluster_size": 2
+    },
+    {
+      "group_id": "test_136",
+      "split": "test",
+      "source_index": 316,
+      "source_cluster_id": 239,
+      "base_instruction": "Let's visit the library, the bank, and the pharmacy today. We need to be back by 5 PM. It's important to prioritize visiting places with good reviews. Start at the library, then go to the bank, and finally head to the pharmacy.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy"
+        ],
+        "poi_count": 3,
+        "time_limit": 1020,
+        "dependencies": [
+          [
+            "library",
+            "bank"
+          ],
+          [
+            "bank",
+            "pharmacy"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "bank",
+            "pharmacy"
+          ],
+          [
+            "library",
+            "bank"
+          ],
+          [
+            "library",
+            "pharmacy"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.9,
+        "distance_weight_synthetic": 0.1
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_137",
+      "split": "test",
+      "source_index": 891,
+      "source_cluster_id": 553,
+      "base_instruction": "Today, we need to visit the supermarket, pharmacy, and library. Let's make sure our route is efficient and keep things quick. Please remember to visit the pharmacy before heading to the library.",
+      "gold_intent": {
+        "pois": [
+          "library",
+          "pharmacy",
+          "supermarket"
+        ],
+        "poi_count": 3,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "pharmacy",
+            "library"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "pharmacy",
+            "library"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.0,
+        "distance_weight_synthetic": 1.0
+      },
+      "cluster_size": 2
+    },
+    {
+      "group_id": "test_138",
+      "split": "test",
+      "source_index": 722,
+      "source_cluster_id": 472,
+      "base_instruction": "Today, you need to visit the pharmacy, library, and supermarket. Please ensure you return by 22:00. Given the schedule, it would be best to take the quickest route possible. Make sure to stop by the pharmacy before heading to the library.",
+      "gold_intent": {
+        "pois": [
+          "library",
+          "pharmacy",
+          "supermarket"
+        ],
+        "poi_count": 3,
+        "time_limit": 1320,
+        "dependencies": [
+          [
+            "pharmacy",
+            "library"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "pharmacy",
+            "library"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.2,
+        "distance_weight_synthetic": 0.8
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_139",
+      "split": "test",
+      "source_index": 63,
+      "source_cluster_id": 59,
+      "base_instruction": "Today, please make sure to visit the pharmacy, shopping mall, supermarket, library, and bank. Since our priority is to explore highly rated places, let's focus on visiting establishments with good ratings. Begin your journey by going to the pharmacy, and after that, proceed to the shopping mall. Once you're done shopping, head to the supermarket, and make sure to visit the library afterwards.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 5,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "pharmacy",
+            "shopping_mall"
+          ],
+          [
+            "shopping_mall",
+            "supermarket"
+          ],
+          [
+            "supermarket",
+            "library"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "pharmacy",
+            "library"
+          ],
+          [
+            "pharmacy",
+            "shopping_mall"
+          ],
+          [
+            "pharmacy",
+            "supermarket"
+          ],
+          [
+            "shopping_mall",
+            "library"
+          ],
+          [
+            "shopping_mall",
+            "supermarket"
+          ],
+          [
+            "supermarket",
+            "library"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.8,
+        "distance_weight_synthetic": 0.2
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_140",
+      "split": "test",
+      "source_index": 741,
+      "source_cluster_id": 479,
+      "base_instruction": "Today, make sure to visit the pharmacy, shopping mall, bank, library, and supermarket. Please be back by 20:00. Let's aim for the places with excellent ratings while planning this outing. Remember to stop by the shopping mall before heading to the bank.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 5,
+        "time_limit": 1200,
+        "dependencies": [
+          [
+            "shopping_mall",
+            "bank"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "shopping_mall",
+            "bank"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.8,
+        "distance_weight_synthetic": 0.2
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_141",
+      "split": "test",
+      "source_index": 958,
+      "source_cluster_id": 588,
+      "base_instruction": "Today, you need to visit the bank and the library. Aim for a balance between visiting well-rated places and keeping the route efficient. Make sure to go to the bank before heading to the library.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library"
+        ],
+        "poi_count": 2,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "bank",
+            "library"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "bank",
+            "library"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.6,
+        "distance_weight_synthetic": 0.4
+      },
+      "cluster_size": 2
+    },
+    {
+      "group_id": "test_142",
+      "split": "test",
+      "source_index": 705,
+      "source_cluster_id": 462,
+      "base_instruction": "Today, you'll need to visit the library, supermarket, pharmacy, and shopping mall. Please ensure you consider places that offer a good balance of quality and ease of access. Remember to go to the supermarket before heading to the pharmacy.",
+      "gold_intent": {
+        "pois": [
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 4,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "supermarket",
+            "pharmacy"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "supermarket",
+            "pharmacy"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.6,
+        "distance_weight_synthetic": 0.4
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_143",
+      "split": "test",
+      "source_index": 176,
+      "source_cluster_id": 148,
+      "base_instruction": "Please make sure to visit the supermarket and the shopping mall today. Since there is no time constraint, you can plan your route efficiently as the journey should be as quick and as straightforward as possible.",
+      "gold_intent": {
+        "pois": [
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 2,
+        "time_limit": null,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.1,
+        "distance_weight_synthetic": 0.9
+      },
+      "cluster_size": 4
+    },
+    {
+      "group_id": "test_144",
+      "split": "test",
+      "source_index": 746,
+      "source_cluster_id": 483,
+      "base_instruction": "Today, you need to visit the shopping mall, pharmacy, bank, library, and supermarket. Maximize your route efficiency to ensure a quick outing. Make sure you go to the shopping mall before heading to the pharmacy, and visit the bank before proceeding to the library.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 5,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "shopping_mall",
+            "pharmacy"
+          ],
+          [
+            "bank",
+            "library"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "bank",
+            "library"
+          ],
+          [
+            "shopping_mall",
+            "pharmacy"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.1,
+        "distance_weight_synthetic": 0.9
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_145",
+      "split": "test",
+      "source_index": 208,
+      "source_cluster_id": 173,
+      "base_instruction": "Today, we need to visit the shopping mall and the library. While there's no specific time to return, let's prioritize exploring places with a good reputation. We'll start at the shopping mall before heading to the library.",
+      "gold_intent": {
+        "pois": [
+          "library",
+          "shopping_mall"
+        ],
+        "poi_count": 2,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "shopping_mall",
+            "library"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "shopping_mall",
+            "library"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.7,
+        "distance_weight_synthetic": 0.3
+      },
+      "cluster_size": 2
+    },
+    {
+      "group_id": "test_146",
+      "split": "test",
+      "source_index": 377,
+      "source_cluster_id": 277,
+      "base_instruction": "Today, you'll need to visit the supermarket, pharmacy, library, bank, and shopping mall. Given the busy schedule, it's crucial to plan an efficient route. Make sure to stop by the pharmacy before heading to the library and visit the bank before going to the shopping mall.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 5,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "pharmacy",
+            "library"
+          ],
+          [
+            "bank",
+            "shopping_mall"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "bank",
+            "shopping_mall"
+          ],
+          [
+            "pharmacy",
+            "library"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.1,
+        "distance_weight_synthetic": 0.9
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_147",
+      "split": "test",
+      "source_index": 553,
+      "source_cluster_id": 384,
+      "base_instruction": "Please visit the shopping mall today. Make sure to return by 17:00. I'd prefer a balance between visiting a place with a decent rating and a reasonably efficient route. There are no specific order requirements for today's visit.",
+      "gold_intent": {
+        "pois": [
+          "shopping_mall"
+        ],
+        "poi_count": 1,
+        "time_limit": 1020,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.6,
+        "distance_weight_synthetic": 0.4
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_148",
+      "split": "test",
+      "source_index": 82,
+      "source_cluster_id": 78,
+      "base_instruction": "Today, you need to visit the supermarket, pharmacy, bank, and library. Aim for a balance between visiting well-rated places and maintaining an efficient route. Enjoy your day!",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "supermarket"
+        ],
+        "poi_count": 4,
+        "time_limit": null,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "balanced",
+        "quality_weight_synthetic": 0.5,
+        "distance_weight_synthetic": 0.5
+      },
+      "cluster_size": 3
+    },
+    {
+      "group_id": "test_149",
+      "split": "test",
+      "source_index": 938,
+      "source_cluster_id": 575,
+      "base_instruction": "Today, make sure to visit the supermarket, bank, pharmacy, library, and shopping mall. Be back by 21:00. It's important to have an efficient trip, so let's focus on a sensible and time-effective route. You should first stop by the bank, then head to the pharmacy, followed by a visit to the library, and finally, make your way to the shopping mall.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 5,
+        "time_limit": 1260,
+        "dependencies": [
+          [
+            "bank",
+            "pharmacy"
+          ],
+          [
+            "pharmacy",
+            "library"
+          ],
+          [
+            "library",
+            "shopping_mall"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "bank",
+            "library"
+          ],
+          [
+            "bank",
+            "pharmacy"
+          ],
+          [
+            "bank",
+            "shopping_mall"
+          ],
+          [
+            "library",
+            "shopping_mall"
+          ],
+          [
+            "pharmacy",
+            "library"
+          ],
+          [
+            "pharmacy",
+            "shopping_mall"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.4,
+        "distance_weight_synthetic": 0.6
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_150",
+      "split": "test",
+      "source_index": 347,
+      "source_cluster_id": 261,
+      "base_instruction": "Today, make sure to visit the pharmacy, bank, library, and supermarket. It's crucial to be efficient, so aim for a quick and effective route. Remember to stop by the bank before heading to the library.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "supermarket"
+        ],
+        "poi_count": 4,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "bank",
+            "library"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "bank",
+            "library"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.2,
+        "distance_weight_synthetic": 0.8
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_151",
+      "split": "test",
+      "source_index": 72,
+      "source_cluster_id": 68,
+      "base_instruction": "Today, we need to visit the shopping mall, library, bank, supermarket, and pharmacy. Please make sure to return by 22:00. We should aim to keep the journey efficient and prioritize a shorter route. Remember to visit the library before going to the bank.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 5,
+        "time_limit": 1320,
+        "dependencies": [
+          [
+            "library",
+            "bank"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "library",
+            "bank"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.2,
+        "distance_weight_synthetic": 0.8
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_152",
+      "split": "test",
+      "source_index": 288,
+      "source_cluster_id": 223,
+      "base_instruction": "Today, you'll be visiting the bank, supermarket, shopping mall, pharmacy, and library. Please make sure to return by midnight. Prioritize highly-rated places on your itinerary. Start your journey at the bank, as you need to visit it before heading to the supermarket.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 5,
+        "time_limit": 1440,
+        "dependencies": [
+          [
+            "bank",
+            "supermarket"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "bank",
+            "supermarket"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.8,
+        "distance_weight_synthetic": 0.2
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_153",
+      "split": "test",
+      "source_index": 383,
+      "source_cluster_id": 281,
+      "base_instruction": "Today, you need to visit the supermarket, library, and shopping mall. Make sure to finish everything and return by 8:00 PM. Try to prioritize places that have good ratings while keeping the route reasonable. Remember, you should visit the library before heading to the shopping mall.",
+      "gold_intent": {
+        "pois": [
+          "library",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 3,
+        "time_limit": 1200,
+        "dependencies": [
+          [
+            "library",
+            "shopping_mall"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "library",
+            "shopping_mall"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.7,
+        "distance_weight_synthetic": 0.3
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_154",
+      "split": "test",
+      "source_index": 200,
+      "source_cluster_id": 167,
+      "base_instruction": "We need to visit both the supermarket and the library today. Let's make sure to have a balanced plan that allows us to reach both efficiently while also considering the quality of our experiences. We'll start with the supermarket and then head to the library.",
+      "gold_intent": {
+        "pois": [
+          "library",
+          "supermarket"
+        ],
+        "poi_count": 2,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "supermarket",
+            "library"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "supermarket",
+            "library"
+          ]
+        ],
+        "preference_direction": "balanced",
+        "quality_weight_synthetic": 0.5,
+        "distance_weight_synthetic": 0.5
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_155",
+      "split": "test",
+      "source_index": 719,
+      "source_cluster_id": 470,
+      "base_instruction": "Today, we need to visit the bank, library, and shopping mall. It's important that we visit places with high ratings, so let's prioritize them. Remember, we have to stop at the bank before we head to the library.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "shopping_mall"
+        ],
+        "poi_count": 3,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "bank",
+            "library"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "bank",
+            "library"
+          ]
+        ],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.8,
+        "distance_weight_synthetic": 0.2
+      },
+      "cluster_size": 2
+    },
+    {
+      "group_id": "test_156",
+      "split": "test",
+      "source_index": 290,
+      "source_cluster_id": 224,
+      "base_instruction": "Today, you need to visit the shopping mall, library, supermarket, and pharmacy. Please ensure you're back by 21:00. Time is of the essence, so try to choose the most efficient route possible. Remember, the supermarket should be visited before the pharmacy.",
+      "gold_intent": {
+        "pois": [
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 4,
+        "time_limit": 1260,
+        "dependencies": [
+          [
+            "supermarket",
+            "pharmacy"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "supermarket",
+            "pharmacy"
+          ]
+        ],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.3,
+        "distance_weight_synthetic": 0.7
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_157",
+      "split": "test",
+      "source_index": 21,
+      "source_cluster_id": 20,
+      "base_instruction": "Today, we need to visit the pharmacy, library, shopping mall, bank, and supermarket. Be sure to focus on finding highly rated places, as that's our priority for today. There are no specific dependencies or sequence requirements for visiting the locations.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 5,
+        "time_limit": null,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "quality_first",
+        "quality_weight_synthetic": 0.8,
+        "distance_weight_synthetic": 0.2
+      },
+      "cluster_size": 16
+    },
+    {
+      "group_id": "test_158",
+      "split": "test",
+      "source_index": 34,
+      "source_cluster_id": 33,
+      "base_instruction": "Today, the plan is to visit the supermarket, library, shopping mall, pharmacy, and bank. Make sure to prioritize an efficient route for getting these errands done smoothly, without any need to rush back by a specific time.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 5,
+        "time_limit": null,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "distance_first",
+        "quality_weight_synthetic": 0.4,
+        "distance_weight_synthetic": 0.6
+      },
+      "cluster_size": 13
+    },
+    {
+      "group_id": "test_159",
+      "split": "test",
+      "source_index": 4,
+      "source_cluster_id": 4,
+      "base_instruction": "Today, let's visit the bank, the library, the shopping mall, the supermarket, and the pharmacy. I hope we can find a balance between visiting some well-rated places without making our route too long. Make sure to stop by the library before heading over to the shopping mall.",
+      "gold_intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "poi_count": 5,
+        "time_limit": null,
+        "dependencies": [
+          [
+            "library",
+            "shopping_mall"
+          ]
+        ],
+        "dependency_closure": [
+          [
+            "library",
+            "shopping_mall"
+          ]
+        ],
+        "preference_direction": "balanced",
+        "quality_weight_synthetic": 0.5,
+        "distance_weight_synthetic": 0.5
+      },
+      "cluster_size": 1
+    },
+    {
+      "group_id": "test_160",
+      "split": "test",
+      "source_index": 240,
+      "source_cluster_id": 195,
+      "base_instruction": "Today, please make sure to visit the shopping mall. We should aim to return by 18:00. It's important to strike a balance, so look for a reasonable rating and efficiency in our itinerary. There are no specific order requirements to follow.",
+      "gold_intent": {
+        "pois": [
+          "shopping_mall"
+        ],
+        "poi_count": 1,
+        "time_limit": 1080,
+        "dependencies": [],
+        "dependency_closure": [],
+        "preference_direction": "balanced",
+        "quality_weight_synthetic": 0.5,
+        "distance_weight_synthetic": 0.5
+      },
+      "cluster_size": 2
+    }
+  ]
+}

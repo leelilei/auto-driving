@@ -1,0 +1,121 @@
+{
+  "evaluation": {
+    "groups_count": 20,
+    "utterances_count": 80,
+    "results": {
+      "B0": {
+        "method": "B0",
+        "TSR": 0.975,
+        "GTSR": 0.9,
+        "variant_TSR": {
+          "V0": 0.95,
+          "V1": 1.0,
+          "V2": 0.95,
+          "V3": 1.0
+        },
+        "route_flip": 0.1833,
+        "mean_calls_used": 1.0,
+        "review_rate": 0.0,
+        "mean_utility_loss": 0.001822
+      },
+      "B6": {
+        "method": "B6",
+        "TSR": 0.975,
+        "GTSR": 0.9,
+        "variant_TSR": {
+          "V0": 0.95,
+          "V1": 1.0,
+          "V2": 0.95,
+          "V3": 1.0
+        },
+        "route_flip": 0.0583,
+        "mean_calls_used": 3.0,
+        "review_rate": 1.0,
+        "mean_utility_loss": 0.002375
+      },
+      "Ours": {
+        "method": "Ours",
+        "TSR": 0.975,
+        "GTSR": 0.9,
+        "variant_TSR": {
+          "V0": 0.95,
+          "V1": 1.0,
+          "V2": 0.95,
+          "V3": 1.0
+        },
+        "route_flip": 0.1417,
+        "mean_calls_used": 2.0875,
+        "review_rate": 0.0875,
+        "mean_utility_loss": 0.002463
+      }
+    }
+  },
+  "transport_failures": [
+    {
+      "id": "pilot_03_v2",
+      "calls": {
+        "A": {
+          "method": "A",
+          "system_prompt": "Extract only the route intent supported by the user's instruction.\nReturn one JSON object with required keys:\npois: array of requested categories, limited to shopping_mall, supermarket, pharmacy, bank, library;\ntime_limit: latest return time as integer minutes from midnight (11 PM = 1380), or null if absent;\ndependencies: array of [before_category, after_category] pairs for explicit ordering only;\nquality_weight: number between 0 and 1, with implied distance_weight = 1-quality_weight.\nUse quality_weight > 0.5 for quality/rating priority, < 0.5 for route efficiency/distance priority,\nand 0.5 for a balanced preference. Do not infer exact numerical weights from nonexistent evidence.\nDo not add an ordering just because places are listed in a particular order.\nDo not invent deadlines, new destinations, modes of travel, or constraints.\nExtract the fields directly and return only the JSON object.",
+          "user_prompt": "Today you should visit both the shopping mall and the pharmacy in whichever order you prefer, balancing location quality with route efficiency.",
+          "transport_error_type": "RuntimeError",
+          "http_status": null,
+          "schema_valid": false,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "85958bcf0b512f665c5cb470e30cd95a89826280874b6eb8441ba2f901a49a5a",
+            "attempts": 1,
+            "latency_seconds": 5.076,
+            "input_chars": 1045,
+            "output_chars": 0,
+            "input_tokens": 262,
+            "output_tokens": 0,
+            "total_tokens": 262,
+            "usage_source": "character_estimate",
+            "success": false,
+            "error": "RuntimeError"
+          }
+        }
+      },
+      "oracle_check": {
+        "task_success": true,
+        "reasons": [],
+        "arrival_minutes": 640.9060897981985,
+        "distance_km": 12.95304489909925
+      }
+    },
+    {
+      "id": "pilot_06_v0",
+      "calls": {
+        "A": {
+          "method": "A",
+          "system_prompt": "Extract only the route intent supported by the user's instruction.\nReturn one JSON object with required keys:\npois: array of requested categories, limited to shopping_mall, supermarket, pharmacy, bank, library;\ntime_limit: latest return time as integer minutes from midnight (11 PM = 1380), or null if absent;\ndependencies: array of [before_category, after_category] pairs for explicit ordering only;\nquality_weight: number between 0 and 1, with implied distance_weight = 1-quality_weight.\nUse quality_weight > 0.5 for quality/rating priority, < 0.5 for route efficiency/distance priority,\nand 0.5 for a balanced preference. Do not infer exact numerical weights from nonexistent evidence.\nDo not add an ordering just because places are listed in a particular order.\nDo not invent deadlines, new destinations, modes of travel, or constraints.\nExtract the fields directly and return only the JSON object.",
+          "user_prompt": "Today, you need to visit the library, supermarket, and bank. Make sure to be back by 18:00. Aim for a route that allows you to complete everything efficiently. Also, remember to stop by the supermarket before heading to the bank.",
+          "transport_error_type": "RuntimeError",
+          "http_status": null,
+          "schema_valid": false,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "76a6d4165bf992641a3ca005c4bc07120be560e99052f526ccf286737f2ef13d",
+            "attempts": 1,
+            "latency_seconds": 5.046,
+            "input_chars": 1131,
+            "output_chars": 0,
+            "input_tokens": 283,
+            "output_tokens": 0,
+            "total_tokens": 283,
+            "usage_source": "character_estimate",
+            "success": false,
+            "error": "RuntimeError"
+          }
+        }
+      },
+      "oracle_check": {
+        "task_success": true,
+        "reasons": [],
+        "arrival_minutes": 679.9399545475812,
+        "distance_km": 12.46997727379063
+      }
+    }
+  ]
+}

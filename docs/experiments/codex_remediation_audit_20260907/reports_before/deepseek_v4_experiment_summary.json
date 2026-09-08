@@ -1,0 +1,189 @@
+{
+  "run_id": "20260906T081920Z_main_test_deepseek_v4",
+  "model": "deepseek-v4-flash",
+  "telemetry": {
+    "total_calls_issued": 1467,
+    "schema_valid_calls": 1233,
+    "transport_failures": 233,
+    "provider_tokens_input": 679018,
+    "provider_tokens_output": 2379402,
+    "provider_tokens_total": 3058420,
+    "total_latency_seconds": 23189.07
+  },
+  "frozen_parameters": {
+    "tau_star": 0.02,
+    "tau_sem_star": 0.1,
+    "p_star": 0.4805194805194805
+  },
+  "results": {
+    "B0": {
+      "method": "B0",
+      "TSR": 0.6469,
+      "GTSR": 0.6062,
+      "variant_TSR": {
+        "V0": 0.675,
+        "V1": 0.66875,
+        "V2": 0.6375,
+        "V3": 0.60625
+      },
+      "route_flip": 0.095,
+      "mean_calls_used": 1.0,
+      "review_rate": 0.0,
+      "h_trigger_rate": 0.0,
+      "delta_u_trigger_rate": 0.0,
+      "mean_utility_loss": 0.033437
+    },
+    "B2": {
+      "method": "B2",
+      "TSR": 0.6469,
+      "GTSR": 0.6062,
+      "variant_TSR": {
+        "V0": 0.675,
+        "V1": 0.66875,
+        "V2": 0.6375,
+        "V3": 0.60625
+      },
+      "route_flip": 0.095,
+      "mean_calls_used": 2.0,
+      "review_rate": 0.0,
+      "h_trigger_rate": 0.0,
+      "delta_u_trigger_rate": 0.0,
+      "mean_utility_loss": 0.033437
+    },
+    "B5": {
+      "method": "B5",
+      "TSR": 0.6484,
+      "GTSR": 0.6062,
+      "variant_TSR": {
+        "V0": 0.68125,
+        "V1": 0.66875,
+        "V2": 0.6375,
+        "V3": 0.60625
+      },
+      "route_flip": 0.095,
+      "mean_calls_used": 2.3609,
+      "review_rate": 0.3609,
+      "h_trigger_rate": 0.3609,
+      "delta_u_trigger_rate": 0.0,
+      "mean_utility_loss": 0.033433
+    },
+    "B6": {
+      "method": "B6",
+      "TSR": 0.6484,
+      "GTSR": 0.6062,
+      "variant_TSR": {
+        "V0": 0.68125,
+        "V1": 0.66875,
+        "V2": 0.6375,
+        "V3": 0.60625
+      },
+      "route_flip": 0.109,
+      "mean_calls_used": 3.0,
+      "review_rate": 1.0,
+      "h_trigger_rate": 0.0,
+      "delta_u_trigger_rate": 0.0,
+      "mean_utility_loss": 0.034067
+    },
+    "B3": {
+      "method": "B3",
+      "TSR": 0.6484,
+      "GTSR": 0.6062,
+      "variant_TSR": {
+        "V0": 0.68125,
+        "V1": 0.66875,
+        "V2": 0.6375,
+        "V3": 0.60625
+      },
+      "route_flip": 0.1106,
+      "mean_calls_used": 2.7,
+      "review_rate": 0.7,
+      "h_trigger_rate": 0.3609,
+      "delta_u_trigger_rate": 0.0,
+      "mean_utility_loss": 0.033872
+    },
+    "B4": {
+      "method": "B4",
+      "TSR": 0.6484,
+      "GTSR": 0.6062,
+      "variant_TSR": {
+        "V0": 0.68125,
+        "V1": 0.66875,
+        "V2": 0.6375,
+        "V3": 0.60625
+      },
+      "route_flip": 0.1075,
+      "mean_calls_used": 2.4813,
+      "review_rate": 0.4813,
+      "h_trigger_rate": 0.3609,
+      "delta_u_trigger_rate": 0.0,
+      "mean_utility_loss": 0.034459
+    },
+    "Ours": {
+      "method": "Ours",
+      "TSR": 0.6484,
+      "GTSR": 0.6062,
+      "variant_TSR": {
+        "V0": 0.68125,
+        "V1": 0.66875,
+        "V2": 0.6375,
+        "V3": 0.60625
+      },
+      "route_flip": 0.1012,
+      "mean_calls_used": 2.3797,
+      "review_rate": 0.3797,
+      "h_trigger_rate": 0.3609,
+      "delta_u_trigger_rate": 0.0187,
+      "mean_utility_loss": 0.033722
+    }
+  },
+  "bootstrap": {
+    "Ours_vs_B0": {
+      "delta_tsr": {
+        "diff": 0.0016,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0047
+      },
+      "delta_route_flip": {
+        "diff": 0.0042,
+        "ci_lower": -0.0073,
+        "ci_upper": 0.0187
+      }
+    },
+    "Ours_vs_B3": {
+      "delta_tsr": {
+        "diff": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0
+      },
+      "delta_route_flip": {
+        "diff": -0.0063,
+        "ci_lower": -0.025,
+        "ci_upper": 0.0125
+      }
+    },
+    "Ours_vs_B4": {
+      "delta_tsr": {
+        "diff": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0
+      },
+      "delta_route_flip": {
+        "diff": -0.0042,
+        "ci_lower": -0.0177,
+        "ci_upper": 0.0083
+      }
+    },
+    "Ours_vs_B6": {
+      "delta_tsr": {
+        "diff": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0
+      },
+      "delta_route_flip": {
+        "diff": -0.0052,
+        "ci_lower": -0.0219,
+        "ci_upper": 0.0104
+      }
+    }
+  }
+}

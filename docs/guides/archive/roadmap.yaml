@@ -1,0 +1,33 @@
+version: 1
+project: 9-AutoDriving
+currentPhase: 1
+
+tracks:
+  - id: foundation
+    name: 项目基础
+    accent: "#0071e3"
+    order: 1
+  - id: experiments
+    name: 实验阶段
+    accent: "#34c759"
+    order: 2
+  - id: writing_release
+    name: 写作与发布
+    accent: "#af52de"
+    order: 3
+
+phases:
+  - number: 1
+    title: <阶段标题>
+    track: foundation
+    status: current        # done | in_progress | current | planned
+    summary: <一句话这个阶段要达成什么>
+    outputs:
+      - <预期产出物>
+
+  - number: 2
+    title: <阶段标题>
+    track: experiments
+    status: planned
+    summary: <...>
+    outputs: []

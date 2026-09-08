@@ -1,0 +1,1334 @@
+[
+  {
+    "group_id": "pilot_01",
+    "utterance_id": "pilot_01_v0",
+    "variant_type": "V0",
+    "gold_intent": {
+      "pois": [
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": 1320,
+      "dependencies": [
+        [
+          "shopping_mall",
+          "supermarket"
+        ]
+      ],
+      "quality_weight": 0.2
+    },
+    "methods": {
+      "B0": {
+        "task_success": true,
+        "hard_exact": true,
+        "gating_meta": {
+          "method": "B0",
+          "calls_used": 1,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "shopping_mall_2",
+            "supermarket_1"
+          ],
+          "categories": [
+            "shopping_mall",
+            "supermarket"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0209,
+          "total_distance": 7.743,
+          "total_time": 115.5,
+          "final_arrival_time": 655,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "shopping_mall_2",
+              "supermarket_1"
+            ]
+          },
+          "raw_utility": 0.020887101058043978
+        }
+      },
+      "B1": {
+        "task_success": true,
+        "hard_exact": true,
+        "gating_meta": {
+          "method": "B1",
+          "calls_used": 3,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "shopping_mall_2",
+            "supermarket_1"
+          ],
+          "categories": [
+            "shopping_mall",
+            "supermarket"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0209,
+          "total_distance": 7.743,
+          "total_time": 115.5,
+          "final_arrival_time": 655,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "shopping_mall_2",
+              "supermarket_1"
+            ]
+          },
+          "raw_utility": 0.020887101058043978
+        }
+      },
+      "B2": {
+        "task_success": true,
+        "hard_exact": true,
+        "gating_meta": {
+          "method": "B2",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "shopping_mall_2",
+            "supermarket_1"
+          ],
+          "categories": [
+            "shopping_mall",
+            "supermarket"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0209,
+          "total_distance": 7.743,
+          "total_time": 115.5,
+          "final_arrival_time": 655,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "shopping_mall_2",
+              "supermarket_1"
+            ]
+          },
+          "raw_utility": 0.020887101058043978
+        }
+      },
+      "B3": {
+        "task_success": true,
+        "hard_exact": true,
+        "gating_meta": {
+          "method": "B3",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b3",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "shopping_mall_2",
+            "supermarket_1"
+          ],
+          "categories": [
+            "shopping_mall",
+            "supermarket"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0209,
+          "total_distance": 7.743,
+          "total_time": 115.5,
+          "final_arrival_time": 655,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "shopping_mall_2",
+              "supermarket_1"
+            ]
+          },
+          "raw_utility": 0.020887101058043978
+        }
+      },
+      "B4": {
+        "task_success": true,
+        "hard_exact": true,
+        "gating_meta": {
+          "method": "B4",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b4",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "shopping_mall_2",
+            "supermarket_1"
+          ],
+          "categories": [
+            "shopping_mall",
+            "supermarket"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0209,
+          "total_distance": 7.743,
+          "total_time": 115.5,
+          "final_arrival_time": 655,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "shopping_mall_2",
+              "supermarket_1"
+            ]
+          },
+          "raw_utility": 0.020887101058043978
+        }
+      },
+      "B5": {
+        "task_success": true,
+        "hard_exact": true,
+        "gating_meta": {
+          "method": "B5",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b5_only_h",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "shopping_mall_2",
+            "supermarket_1"
+          ],
+          "categories": [
+            "shopping_mall",
+            "supermarket"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0209,
+          "total_distance": 7.743,
+          "total_time": 115.5,
+          "final_arrival_time": 655,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "shopping_mall_2",
+              "supermarket_1"
+            ]
+          },
+          "raw_utility": 0.020887101058043978
+        }
+      },
+      "B6": {
+        "task_success": true,
+        "hard_exact": true,
+        "gating_meta": {
+          "method": "B6",
+          "calls_used": 3,
+          "review_triggered": true,
+          "trigger_reason": "always_review",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "adopted_review"
+        },
+        "route": {
+          "poi_ids": [
+            "shopping_mall_2",
+            "supermarket_1"
+          ],
+          "categories": [
+            "shopping_mall",
+            "supermarket"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0209,
+          "total_distance": 7.743,
+          "total_time": 115.5,
+          "final_arrival_time": 655,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "shopping_mall_2",
+              "supermarket_1"
+            ]
+          },
+          "raw_utility": 0.020887101058043978
+        }
+      },
+      "Ours": {
+        "task_success": true,
+        "hard_exact": true,
+        "gating_meta": {
+          "method": "Ours",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_darc",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "shopping_mall_2",
+            "supermarket_1"
+          ],
+          "categories": [
+            "shopping_mall",
+            "supermarket"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0209,
+          "total_distance": 7.743,
+          "total_time": 115.5,
+          "final_arrival_time": 655,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "shopping_mall_2",
+              "supermarket_1"
+            ]
+          },
+          "raw_utility": 0.020887101058043978
+        }
+      }
+    }
+  },
+  {
+    "group_id": "pilot_01",
+    "utterance_id": "pilot_01_v1",
+    "variant_type": "V1",
+    "gold_intent": {
+      "pois": [
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": 1320,
+      "dependencies": [
+        [
+          "shopping_mall",
+          "supermarket"
+        ]
+      ],
+      "quality_weight": 0.2
+    },
+    "methods": {
+      "B0": {
+        "task_success": true,
+        "hard_exact": true,
+        "gating_meta": {
+          "method": "B0",
+          "calls_used": 1,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "shopping_mall_2",
+            "supermarket_1"
+          ],
+          "categories": [
+            "shopping_mall",
+            "supermarket"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0209,
+          "total_distance": 7.743,
+          "total_time": 115.5,
+          "final_arrival_time": 655,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "shopping_mall_2",
+              "supermarket_1"
+            ]
+          },
+          "raw_utility": 0.020887101058043978
+        }
+      },
+      "B1": {
+        "task_success": true,
+        "hard_exact": true,
+        "gating_meta": {
+          "method": "B1",
+          "calls_used": 3,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "shopping_mall_2",
+            "supermarket_1"
+          ],
+          "categories": [
+            "shopping_mall",
+            "supermarket"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0209,
+          "total_distance": 7.743,
+          "total_time": 115.5,
+          "final_arrival_time": 655,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "shopping_mall_2",
+              "supermarket_1"
+            ]
+          },
+          "raw_utility": 0.020887101058043978
+        }
+      },
+      "B2": {
+        "task_success": true,
+        "hard_exact": true,
+        "gating_meta": {
+          "method": "B2",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "shopping_mall_2",
+            "supermarket_1"
+          ],
+          "categories": [
+            "shopping_mall",
+            "supermarket"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0209,
+          "total_distance": 7.743,
+          "total_time": 115.5,
+          "final_arrival_time": 655,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "shopping_mall_2",
+              "supermarket_1"
+            ]
+          },
+          "raw_utility": 0.020887101058043978
+        }
+      },
+      "B3": {
+        "task_success": true,
+        "hard_exact": true,
+        "gating_meta": {
+          "method": "B3",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b3",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "shopping_mall_2",
+            "supermarket_1"
+          ],
+          "categories": [
+            "shopping_mall",
+            "supermarket"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0209,
+          "total_distance": 7.743,
+          "total_time": 115.5,
+          "final_arrival_time": 655,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "shopping_mall_2",
+              "supermarket_1"
+            ]
+          },
+          "raw_utility": 0.020887101058043978
+        }
+      },
+      "B4": {
+        "task_success": true,
+        "hard_exact": true,
+        "gating_meta": {
+          "method": "B4",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b4",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "shopping_mall_2",
+            "supermarket_1"
+          ],
+          "categories": [
+            "shopping_mall",
+            "supermarket"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0209,
+          "total_distance": 7.743,
+          "total_time": 115.5,
+          "final_arrival_time": 655,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "shopping_mall_2",
+              "supermarket_1"
+            ]
+          },
+          "raw_utility": 0.020887101058043978
+        }
+      },
+      "B5": {
+        "task_success": true,
+        "hard_exact": true,
+        "gating_meta": {
+          "method": "B5",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b5_only_h",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "shopping_mall_2",
+            "supermarket_1"
+          ],
+          "categories": [
+            "shopping_mall",
+            "supermarket"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0209,
+          "total_distance": 7.743,
+          "total_time": 115.5,
+          "final_arrival_time": 655,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "shopping_mall_2",
+              "supermarket_1"
+            ]
+          },
+          "raw_utility": 0.020887101058043978
+        }
+      },
+      "B6": {
+        "task_success": true,
+        "hard_exact": true,
+        "gating_meta": {
+          "method": "B6",
+          "calls_used": 3,
+          "review_triggered": true,
+          "trigger_reason": "always_review",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "adopted_review"
+        },
+        "route": {
+          "poi_ids": [
+            "shopping_mall_2",
+            "supermarket_1"
+          ],
+          "categories": [
+            "shopping_mall",
+            "supermarket"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0209,
+          "total_distance": 7.743,
+          "total_time": 115.5,
+          "final_arrival_time": 655,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "shopping_mall_2",
+              "supermarket_1"
+            ]
+          },
+          "raw_utility": 0.020887101058043978
+        }
+      },
+      "Ours": {
+        "task_success": true,
+        "hard_exact": true,
+        "gating_meta": {
+          "method": "Ours",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_darc",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "shopping_mall_2",
+            "supermarket_1"
+          ],
+          "categories": [
+            "shopping_mall",
+            "supermarket"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0209,
+          "total_distance": 7.743,
+          "total_time": 115.5,
+          "final_arrival_time": 655,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "shopping_mall_2",
+              "supermarket_1"
+            ]
+          },
+          "raw_utility": 0.020887101058043978
+        }
+      }
+    }
+  },
+  {
+    "group_id": "pilot_01",
+    "utterance_id": "pilot_01_v2",
+    "variant_type": "V2",
+    "gold_intent": {
+      "pois": [
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": 1320,
+      "dependencies": [
+        [
+          "shopping_mall",
+          "supermarket"
+        ]
+      ],
+      "quality_weight": 0.2
+    },
+    "methods": {
+      "B0": {
+        "task_success": true,
+        "hard_exact": true,
+        "gating_meta": {
+          "method": "B0",
+          "calls_used": 1,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "shopping_mall_2",
+            "supermarket_1"
+          ],
+          "categories": [
+            "shopping_mall",
+            "supermarket"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0209,
+          "total_distance": 7.743,
+          "total_time": 115.5,
+          "final_arrival_time": 655,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "shopping_mall_2",
+              "supermarket_1"
+            ]
+          },
+          "raw_utility": 0.020887101058043978
+        }
+      },
+      "B1": {
+        "task_success": true,
+        "hard_exact": true,
+        "gating_meta": {
+          "method": "B1",
+          "calls_used": 3,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "shopping_mall_2",
+            "supermarket_1"
+          ],
+          "categories": [
+            "shopping_mall",
+            "supermarket"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0209,
+          "total_distance": 7.743,
+          "total_time": 115.5,
+          "final_arrival_time": 655,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "shopping_mall_2",
+              "supermarket_1"
+            ]
+          },
+          "raw_utility": 0.020887101058043978
+        }
+      },
+      "B2": {
+        "task_success": true,
+        "hard_exact": true,
+        "gating_meta": {
+          "method": "B2",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "shopping_mall_2",
+            "supermarket_1"
+          ],
+          "categories": [
+            "shopping_mall",
+            "supermarket"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0209,
+          "total_distance": 7.743,
+          "total_time": 115.5,
+          "final_arrival_time": 655,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "shopping_mall_2",
+              "supermarket_1"
+            ]
+          },
+          "raw_utility": 0.020887101058043978
+        }
+      },
+      "B3": {
+        "task_success": true,
+        "hard_exact": true,
+        "gating_meta": {
+          "method": "B3",
+          "calls_used": 3,
+          "review_triggered": true,
+          "trigger_reason": "random_probability",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": "adopted_review"
+        },
+        "route": {
+          "poi_ids": [
+            "shopping_mall_2",
+            "supermarket_1"
+          ],
+          "categories": [
+            "shopping_mall",
+            "supermarket"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0209,
+          "total_distance": 7.743,
+          "total_time": 115.5,
+          "final_arrival_time": 655,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "shopping_mall_2",
+              "supermarket_1"
+            ]
+          },
+          "raw_utility": 0.020887101058043978
+        }
+      },
+      "B4": {
+        "task_success": true,
+        "hard_exact": true,
+        "gating_meta": {
+          "method": "B4",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b4",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "shopping_mall_2",
+            "supermarket_1"
+          ],
+          "categories": [
+            "shopping_mall",
+            "supermarket"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0209,
+          "total_distance": 7.743,
+          "total_time": 115.5,
+          "final_arrival_time": 655,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "shopping_mall_2",
+              "supermarket_1"
+            ]
+          },
+          "raw_utility": 0.020887101058043978
+        }
+      },
+      "B5": {
+        "task_success": true,
+        "hard_exact": true,
+        "gating_meta": {
+          "method": "B5",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b5_only_h",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "shopping_mall_2",
+            "supermarket_1"
+          ],
+          "categories": [
+            "shopping_mall",
+            "supermarket"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0209,
+          "total_distance": 7.743,
+          "total_time": 115.5,
+          "final_arrival_time": 655,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "shopping_mall_2",
+              "supermarket_1"
+            ]
+          },
+          "raw_utility": 0.020887101058043978
+        }
+      },
+      "B6": {
+        "task_success": true,
+        "hard_exact": true,
+        "gating_meta": {
+          "method": "B6",
+          "calls_used": 3,
+          "review_triggered": true,
+          "trigger_reason": "always_review",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "adopted_review"
+        },
+        "route": {
+          "poi_ids": [
+            "shopping_mall_2",
+            "supermarket_1"
+          ],
+          "categories": [
+            "shopping_mall",
+            "supermarket"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0209,
+          "total_distance": 7.743,
+          "total_time": 115.5,
+          "final_arrival_time": 655,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "shopping_mall_2",
+              "supermarket_1"
+            ]
+          },
+          "raw_utility": 0.020887101058043978
+        }
+      },
+      "Ours": {
+        "task_success": true,
+        "hard_exact": true,
+        "gating_meta": {
+          "method": "Ours",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_darc",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "shopping_mall_2",
+            "supermarket_1"
+          ],
+          "categories": [
+            "shopping_mall",
+            "supermarket"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0209,
+          "total_distance": 7.743,
+          "total_time": 115.5,
+          "final_arrival_time": 655,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "shopping_mall_2",
+              "supermarket_1"
+            ]
+          },
+          "raw_utility": 0.020887101058043978
+        }
+      }
+    }
+  },
+  {
+    "group_id": "pilot_01",
+    "utterance_id": "pilot_01_v3",
+    "variant_type": "V3",
+    "gold_intent": {
+      "pois": [
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": 1320,
+      "dependencies": [
+        [
+          "shopping_mall",
+          "supermarket"
+        ]
+      ],
+      "quality_weight": 0.2
+    },
+    "methods": {
+      "B0": {
+        "task_success": true,
+        "hard_exact": true,
+        "gating_meta": {
+          "method": "B0",
+          "calls_used": 1,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "shopping_mall_2",
+            "supermarket_1"
+          ],
+          "categories": [
+            "shopping_mall",
+            "supermarket"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0209,
+          "total_distance": 7.743,
+          "total_time": 115.5,
+          "final_arrival_time": 655,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "shopping_mall_2",
+              "supermarket_1"
+            ]
+          },
+          "raw_utility": 0.020887101058043978
+        }
+      },
+      "B1": {
+        "task_success": true,
+        "hard_exact": true,
+        "gating_meta": {
+          "method": "B1",
+          "calls_used": 3,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "shopping_mall_2",
+            "supermarket_1"
+          ],
+          "categories": [
+            "shopping_mall",
+            "supermarket"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0209,
+          "total_distance": 7.743,
+          "total_time": 115.5,
+          "final_arrival_time": 655,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "shopping_mall_2",
+              "supermarket_1"
+            ]
+          },
+          "raw_utility": 0.020887101058043978
+        }
+      },
+      "B2": {
+        "task_success": true,
+        "hard_exact": true,
+        "gating_meta": {
+          "method": "B2",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "none",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "A"
+        },
+        "route": {
+          "poi_ids": [
+            "shopping_mall_2",
+            "supermarket_1"
+          ],
+          "categories": [
+            "shopping_mall",
+            "supermarket"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0209,
+          "total_distance": 7.743,
+          "total_time": 115.5,
+          "final_arrival_time": 655,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "shopping_mall_2",
+              "supermarket_1"
+            ]
+          },
+          "raw_utility": 0.020887101058043978
+        }
+      },
+      "B3": {
+        "task_success": true,
+        "hard_exact": true,
+        "gating_meta": {
+          "method": "B3",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b3",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "shopping_mall_2",
+            "supermarket_1"
+          ],
+          "categories": [
+            "shopping_mall",
+            "supermarket"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0209,
+          "total_distance": 7.743,
+          "total_time": 115.5,
+          "final_arrival_time": 655,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "shopping_mall_2",
+              "supermarket_1"
+            ]
+          },
+          "raw_utility": 0.020887101058043978
+        }
+      },
+      "B4": {
+        "task_success": true,
+        "hard_exact": true,
+        "gating_meta": {
+          "method": "B4",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b4",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "shopping_mall_2",
+            "supermarket_1"
+          ],
+          "categories": [
+            "shopping_mall",
+            "supermarket"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0209,
+          "total_distance": 7.743,
+          "total_time": 115.5,
+          "final_arrival_time": 655,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "shopping_mall_2",
+              "supermarket_1"
+            ]
+          },
+          "raw_utility": 0.020887101058043978
+        }
+      },
+      "B5": {
+        "task_success": true,
+        "hard_exact": true,
+        "gating_meta": {
+          "method": "B5",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_b5_only_h",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "shopping_mall_2",
+            "supermarket_1"
+          ],
+          "categories": [
+            "shopping_mall",
+            "supermarket"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0209,
+          "total_distance": 7.743,
+          "total_time": 115.5,
+          "final_arrival_time": 655,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "shopping_mall_2",
+              "supermarket_1"
+            ]
+          },
+          "raw_utility": 0.020887101058043978
+        }
+      },
+      "B6": {
+        "task_success": true,
+        "hard_exact": true,
+        "gating_meta": {
+          "method": "B6",
+          "calls_used": 3,
+          "review_triggered": true,
+          "trigger_reason": "always_review",
+          "h": 0,
+          "delta_u": null,
+          "chosen_source": "adopted_review"
+        },
+        "route": {
+          "poi_ids": [
+            "shopping_mall_2",
+            "supermarket_1"
+          ],
+          "categories": [
+            "shopping_mall",
+            "supermarket"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0209,
+          "total_distance": 7.743,
+          "total_time": 115.5,
+          "final_arrival_time": 655,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "shopping_mall_2",
+              "supermarket_1"
+            ]
+          },
+          "raw_utility": 0.020887101058043978
+        }
+      },
+      "Ours": {
+        "task_success": true,
+        "hard_exact": true,
+        "gating_meta": {
+          "method": "Ours",
+          "calls_used": 2,
+          "review_triggered": false,
+          "trigger_reason": "no_trigger_darc",
+          "h": 0,
+          "delta_u": 0.0,
+          "chosen_source": ""
+        },
+        "route": {
+          "poi_ids": [
+            "shopping_mall_2",
+            "supermarket_1"
+          ],
+          "categories": [
+            "shopping_mall",
+            "supermarket"
+          ],
+          "coverage": 2,
+          "is_full_coverage": true,
+          "is_valid": true,
+          "utility": 0.0209,
+          "total_distance": 7.743,
+          "total_time": 115.5,
+          "final_arrival_time": 655,
+          "status": "SUCCESS",
+          "details": {
+            "reason": "OK",
+            "evaluated_pois": [
+              "shopping_mall_2",
+              "supermarket_1"
+            ]
+          },
+          "raw_utility": 0.020887101058043978
+        }
+      }
+    }
+  }
+]

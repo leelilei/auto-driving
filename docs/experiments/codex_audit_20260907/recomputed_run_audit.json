@@ -1,0 +1,191 @@
+{
+  "20260906T051339Z_main_test": {
+    "groups": 160,
+    "utterances": 640,
+    "stored_call_records": 3200,
+    "transport_error_records": 0,
+    "schema_valid_records": 3200,
+    "missing_preference_direction": 640,
+    "methods": {
+      "B0": {
+        "method": "B0",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.2385,
+        "mean_calls_used": 1.0,
+        "review_rate": 0.0,
+        "h_trigger_rate": 0.0,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.022737
+      },
+      "B1": {
+        "method": "B1",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.2188,
+        "mean_calls_used": 3.0,
+        "review_rate": 0.0,
+        "h_trigger_rate": 0.0,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.022327
+      },
+      "B2": {
+        "method": "B2",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.2385,
+        "mean_calls_used": 2.0,
+        "review_rate": 0.0,
+        "h_trigger_rate": 0.0,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.022737
+      },
+      "B3": {
+        "method": "B3",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.1896,
+        "mean_calls_used": 2.5094,
+        "review_rate": 0.5094,
+        "h_trigger_rate": 0.0016,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.022835
+      },
+      "B4": {
+        "method": "B4",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.2271,
+        "mean_calls_used": 2.0766,
+        "review_rate": 0.0766,
+        "h_trigger_rate": 0.0016,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.021288
+      },
+      "B5": {
+        "method": "B5",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.2385,
+        "mean_calls_used": 2.0016,
+        "review_rate": 0.0016,
+        "h_trigger_rate": 0.0016,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.022737
+      },
+      "B6": {
+        "method": "B6",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.1635,
+        "mean_calls_used": 3.0,
+        "review_rate": 1.0,
+        "h_trigger_rate": 0.0,
+        "delta_u_trigger_rate": 0.0,
+        "mean_utility_loss": 0.021875
+      },
+      "Ours": {
+        "method": "Ours",
+        "TSR": 1.0,
+        "GTSR": 1.0,
+        "variant_TSR": {
+          "V0": 1.0,
+          "V1": 1.0,
+          "V2": 1.0,
+          "V3": 1.0
+        },
+        "route_flip": 0.2031,
+        "mean_calls_used": 2.0422,
+        "review_rate": 0.0422,
+        "h_trigger_rate": 0.0016,
+        "delta_u_trigger_rate": 0.0406,
+        "mean_utility_loss": 0.02177
+      }
+    }
+  },
+  "20260906T081920Z_main_test_deepseek_v4": {
+    "groups": 160,
+    "utterances": 640,
+    "stored_call_records": 1467,
+    "transport_error_records": 233,
+    "schema_valid_records": 1233,
+    "missing_preference_direction": 640,
+    "methods": {}
+  },
+  "20260906T123744Z_main_test_qwen38_max": {
+    "groups": 160,
+    "utterances": 640,
+    "stored_call_records": 1818,
+    "transport_error_records": 78,
+    "schema_valid_records": 1708,
+    "missing_preference_direction": 640,
+    "methods": {}
+  },
+  "20260906T133009Z_main_test_gpt56_luna": {
+    "groups": 160,
+    "utterances": 640,
+    "stored_call_records": 1918,
+    "transport_error_records": 3,
+    "schema_valid_records": 1910,
+    "missing_preference_direction": 640,
+    "methods": {}
+  },
+  "20260907T014117Z_main_test_gpt56_sol": {
+    "groups": 160,
+    "utterances": 640,
+    "stored_call_records": 1920,
+    "transport_error_records": 0,
+    "schema_valid_records": 1920,
+    "missing_preference_direction": 640,
+    "methods": {}
+  },
+  "test_annotation_queue": {
+    "pending": 640
+  },
+  "repeat_artifacts": {
+    "results/runs/20260906T055735Z_ablation/repeat_run_2": 40,
+    "results/runs/20260906T055735Z_ablation/repeat_run_3": 40
+  }
+}

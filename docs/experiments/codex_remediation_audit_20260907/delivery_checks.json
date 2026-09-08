@@ -1,0 +1,153 @@
+{
+  "default_replay_exit": 0,
+  "missing_159_groups_and_summary": {
+    "exit": 0,
+    "output": "=== DARC-Route Strict Offline Replay & Method Evaluation ===\nEnforcing strictly OFFLINE mode (0 API calls, socket blocked).\nReplaying run directory: tmp66wuwl9q\n[✓] Offline replay completed for 4 utterances across all 8 methods.\n  [✓] 20 candidates reparsed, 16 routes re-solved.\n  [✓] Zero API calls executed (network strictly blocked).\n  [✓] Baseline C01 verified: B0 and B2 identical on all cases.\nSaved replay results to docs/experiments/codex_remediation_audit_20260907/missing_159_groups_and_summary/out/replay_metrics.json\n"
+  },
+  "missing_cached_candidates_routes": {
+    "exit": 0,
+    "output": "=== DARC-Route Strict Offline Replay & Method Evaluation ===\nEnforcing strictly OFFLINE mode (0 API calls, socket blocked).\nReplaying run directory: tmp3efdxw48\n[✓] Offline replay completed for 4 utterances across all 8 methods.\n  [✓] 20 candidates reparsed, 16 routes re-solved.\n  [✓] Zero API calls executed (network strictly blocked).\n  [✓] Baseline C01 verified: B0 and B2 identical on all cases.\nSaved replay results to docs/experiments/codex_remediation_audit_20260907/missing_cached_candidates_routes/out/replay_metrics.json\n"
+  },
+  "changed_text_vs_cached": [
+    "test_001_v1",
+    "test_001_v2",
+    "test_001_v3",
+    "test_007_v1",
+    "test_007_v2",
+    "test_007_v3",
+    "test_020_v1",
+    "test_020_v2",
+    "test_020_v3",
+    "test_080_v1",
+    "test_080_v2",
+    "test_080_v3",
+    "test_091_v1",
+    "test_091_v2",
+    "test_091_v3",
+    "test_100_v1",
+    "test_100_v2",
+    "test_100_v3",
+    "test_102_v1",
+    "test_102_v2",
+    "test_102_v3",
+    "test_108_v1",
+    "test_108_v2",
+    "test_108_v3",
+    "test_112_v1",
+    "test_112_v2",
+    "test_112_v3",
+    "test_115_v1",
+    "test_115_v2",
+    "test_115_v3",
+    "test_129_v1",
+    "test_129_v2",
+    "test_129_v3",
+    "test_141_v1",
+    "test_141_v2",
+    "test_141_v3",
+    "test_142_v1",
+    "test_142_v2",
+    "test_142_v3",
+    "test_147_v1",
+    "test_147_v2",
+    "test_147_v3"
+  ],
+  "changed_weight_vs_cached": [
+    "test_001_v0",
+    "test_001_v1",
+    "test_001_v2",
+    "test_001_v3",
+    "test_007_v0",
+    "test_007_v1",
+    "test_007_v2",
+    "test_007_v3",
+    "test_020_v0",
+    "test_020_v1",
+    "test_020_v2",
+    "test_020_v3",
+    "test_080_v0",
+    "test_080_v1",
+    "test_080_v2",
+    "test_080_v3",
+    "test_091_v0",
+    "test_091_v1",
+    "test_091_v2",
+    "test_091_v3",
+    "test_100_v0",
+    "test_100_v1",
+    "test_100_v2",
+    "test_100_v3",
+    "test_102_v0",
+    "test_102_v1",
+    "test_102_v2",
+    "test_102_v3",
+    "test_108_v0",
+    "test_108_v1",
+    "test_108_v2",
+    "test_108_v3",
+    "test_112_v0",
+    "test_112_v1",
+    "test_112_v2",
+    "test_112_v3",
+    "test_115_v0",
+    "test_115_v1",
+    "test_115_v2",
+    "test_115_v3",
+    "test_129_v0",
+    "test_129_v1",
+    "test_129_v2",
+    "test_129_v3",
+    "test_141_v0",
+    "test_141_v1",
+    "test_141_v2",
+    "test_141_v3",
+    "test_142_v0",
+    "test_142_v1",
+    "test_142_v2",
+    "test_142_v3",
+    "test_147_v0",
+    "test_147_v1",
+    "test_147_v2",
+    "test_147_v3"
+  ],
+  "pilot/pilot_80_utterances.json": {
+    "count": 80,
+    "statuses": {
+      "pending": 80
+    }
+  },
+  "pilot/annotation_pilot_80_review_queue.json": {
+    "count": 80,
+    "statuses": {
+      "missing": 80
+    }
+  },
+  "test/annotation_test_640_review_queue.json": {
+    "count": 640,
+    "statuses": {
+      "verified": 640
+    }
+  },
+  "actual_split_keys": [
+    "metadata",
+    "dev_pilot",
+    "dev_calibration",
+    "test"
+  ],
+  "actual_exposure_keys": [
+    "description",
+    "pilot_group_count",
+    "exposed_cluster_ids",
+    "directly_exposed_source_indices",
+    "cluster_closure_exposed_source_indices"
+  ],
+  "gate_leakage_function": {
+    "dev_pilot_groups": 20,
+    "dev_calib_groups": 20,
+    "test_groups": 160,
+    "cluster_overlap_count": 0,
+    "index_overlap_count": 0,
+    "test_exposed_leakage_count": 0,
+    "leakage_clean": true
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "frozen_timestamp": "2026-09-06T04:05:17.062486+00:00",
+  "purpose": "frozen_calibration_config_for_test",
+  "split": "dev_calibration",
+  "groups_count": 20,
+  "utterances_count": 80,
+  "target_review_rate": 0.5,
+  "calibrated_parameters": {
+    "tau_star": 0.02,
+    "tau_sem_star": 0.1,
+    "p_review_star": 0.4805194805194805
+  },
+  "operating_points": {
+    "B0": {
+      "method": "B0",
+      "tau": 0.05,
+      "tau_sem": 0.1,
+      "p_review": 0.5,
+      "TSR": 1.0,
+      "GTSR": 1.0,
+      "variant_TSR": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 1.0,
+        "V3": 1.0
+      },
+      "route_flip": 0.1833,
+      "mean_calls_used": 1.0,
+      "review_rate": 0.0,
+      "h_trigger_rate": 0.0,
+      "delta_u_trigger_rate": 0.0,
+      "mean_utility_loss": 0.017269
+    },
+    "B2": {
+      "method": "B2",
+      "tau": 0.05,
+      "tau_sem": 0.1,
+      "p_review": 0.5,
+      "TSR": 1.0,
+      "GTSR": 1.0,
+      "variant_TSR": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 1.0,
+        "V3": 1.0
+      },
+      "route_flip": 0.1833,
+      "mean_calls_used": 2.0,
+      "review_rate": 0.0,
+      "h_trigger_rate": 0.0,
+      "delta_u_trigger_rate": 0.0,
+      "mean_utility_loss": 0.017269
+    },
+    "B5": {
+      "method": "B5",
+      "tau": 0.05,
+      "tau_sem": 0.1,
+      "p_review": 0.5,
+      "TSR": 1.0,
+      "GTSR": 1.0,
+      "variant_TSR": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 1.0,
+        "V3": 1.0
+      },
+      "route_flip": 0.1583,
+      "mean_calls_used": 2.0375,
+      "review_rate": 0.0375,
+      "h_trigger_rate": 0.0375,
+      "delta_u_trigger_rate": 0.0,
+      "mean_utility_loss": 0.01679
+    },
+    "B6": {
+      "method": "B6",
+      "tau": 0.05,
+      "tau_sem": 0.1,
+      "p_review": 0.5,
+      "TSR": 1.0,
+      "GTSR": 1.0,
+      "variant_TSR": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 1.0,
+        "V3": 1.0
+      },
+      "route_flip": 0.1417,
+      "mean_calls_used": 3.0,
+      "review_rate": 1.0,
+      "h_trigger_rate": 0.0,
+      "delta_u_trigger_rate": 0.0,
+      "mean_utility_loss": 0.018873
+    },
+    "B3_q50": {
+      "method": "B3",
+      "tau": 0.05,
+      "tau_sem": 0.1,
+      "p_review": 0.4805194805194805,
+      "TSR": 1.0,
+      "GTSR": 1.0,
+      "variant_TSR": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 1.0,
+        "V3": 1.0
+      },
+      "route_flip": 0.1583,
+      "mean_calls_used": 2.425,
+      "review_rate": 0.425,
+      "h_trigger_rate": 0.0375,
+      "delta_u_trigger_rate": 0.0,
+      "mean_utility_loss": 0.01679,
+      "target_q": 0.5
+    },
+    "B4_star": {
+      "method": "B4",
+      "tau": 0.05,
+      "tau_sem": 0.1,
+      "p_review": 0.5,
+      "TSR": 1.0,
+      "GTSR": 1.0,
+      "variant_TSR": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 1.0,
+        "V3": 1.0
+      },
+      "route_flip": 0.1333,
+      "mean_calls_used": 2.1375,
+      "review_rate": 0.1375,
+      "h_trigger_rate": 0.0375,
+      "delta_u_trigger_rate": 0.0,
+      "mean_utility_loss": 0.01679
+    },
+    "Ours_star": {
+      "method": "Ours",
+      "tau": 0.02,
+      "tau_sem": 0.1,
+      "p_review": 0.5,
+      "TSR": 1.0,
+      "GTSR": 1.0,
+      "variant_TSR": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 1.0,
+        "V3": 1.0
+      },
+      "route_flip": 0.1083,
+      "mean_calls_used": 2.0875,
+      "review_rate": 0.0875,
+      "h_trigger_rate": 0.0375,
+      "delta_u_trigger_rate": 0.05,
+      "mean_utility_loss": 0.017419
+    }
+  }
+}
