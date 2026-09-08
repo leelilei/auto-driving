@@ -1,5 +1,7 @@
 # DARC-Route Research Protocol v2
 
+> **2026-09-08 版本提示**：当前研究主线以 [Proposal v5](../plans/proposal.md) 为准。本文件以下内容保留为旧方案记录，不能直接用作 v5 执行协议或完成证明。旧阶段三暂停扩量；需落实新数据资格、对比报告、配对图与对照协议。论文写作仍 CLOSED。
+
 > **独立审阅状态（2026-09-07）：本稿尚未验收，不能追溯性地为已暴露的历史测试建立预注册。** 当前数据/响应版本不一致，需按 [第二轮审阅](CODEX_REMEDIATION_REVIEW_20260907.md) 修订并为未来确认实验重新冻结。执行 [实验先行、验收后写作原则](../project/EXPERIMENT_FIRST_POLICY.md)。
 
 **Pre-Registered Evaluation Protocol, Metric Hierarchy, and Operational Constraints**

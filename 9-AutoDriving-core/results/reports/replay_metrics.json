@@ -9,10 +9,10 @@
       "V2": 1.0,
       "V3": 1.0
     },
-    "route_flip": 0.2385,
+    "route_flip": 0.0,
     "mean_calls_used": 1.0,
     "review_rate": 0.0,
-    "mean_utility_loss": 0.002924
+    "mean_utility_loss": 0.0
   },
   "B1": {
     "method": "B1",
@@ -24,10 +24,10 @@
       "V2": 1.0,
       "V3": 1.0
     },
-    "route_flip": 0.2188,
+    "route_flip": 0.0,
     "mean_calls_used": 3.0,
     "review_rate": 0.0,
-    "mean_utility_loss": 0.002701
+    "mean_utility_loss": 0.0
   },
   "B2": {
     "method": "B2",
@@ -39,10 +39,10 @@
       "V2": 1.0,
       "V3": 1.0
     },
-    "route_flip": 0.2385,
+    "route_flip": 0.0,
     "mean_calls_used": 2.0,
     "review_rate": 0.0,
-    "mean_utility_loss": 0.002924
+    "mean_utility_loss": 0.0
   },
   "B3": {
     "method": "B3",
@@ -54,10 +54,10 @@
       "V2": 1.0,
       "V3": 1.0
     },
-    "route_flip": 0.1896,
-    "mean_calls_used": 2.5094,
-    "review_rate": 0.5094,
-    "mean_utility_loss": 0.002478
+    "route_flip": 0.0,
+    "mean_calls_used": 2.6875,
+    "review_rate": 0.6875,
+    "mean_utility_loss": 0.0
   },
   "B4": {
     "method": "B4",
@@ -69,10 +69,10 @@
       "V2": 1.0,
       "V3": 1.0
     },
-    "route_flip": 0.2271,
-    "mean_calls_used": 2.0766,
-    "review_rate": 0.0766,
-    "mean_utility_loss": 0.002461
+    "route_flip": 0.0,
+    "mean_calls_used": 2.0,
+    "review_rate": 0.0,
+    "mean_utility_loss": 0.0
   },
   "B5": {
     "method": "B5",
@@ -84,10 +84,10 @@
       "V2": 1.0,
       "V3": 1.0
     },
-    "route_flip": 0.2385,
-    "mean_calls_used": 2.0016,
-    "review_rate": 0.0016,
-    "mean_utility_loss": 0.002924
+    "route_flip": 0.0,
+    "mean_calls_used": 2.0,
+    "review_rate": 0.0,
+    "mean_utility_loss": 0.0
   },
   "B6": {
     "method": "B6",
@@ -99,10 +99,10 @@
       "V2": 1.0,
       "V3": 1.0
     },
-    "route_flip": 0.1635,
+    "route_flip": 0.0,
     "mean_calls_used": 3.0,
     "review_rate": 1.0,
-    "mean_utility_loss": 0.002018
+    "mean_utility_loss": 0.0
   },
   "Ours": {
     "method": "Ours",
@@ -114,9 +114,9 @@
       "V2": 1.0,
       "V3": 1.0
     },
-    "route_flip": 0.2031,
-    "mean_calls_used": 2.0422,
-    "review_rate": 0.0422,
-    "mean_utility_loss": 0.002361
+    "route_flip": 0.0,
+    "mean_calls_used": 2.0,
+    "review_rate": 0.0,
+    "mean_utility_loss": 0.0
   }
 }

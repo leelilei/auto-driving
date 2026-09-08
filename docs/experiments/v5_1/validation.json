@@ -1,0 +1,34 @@
+{
+  "proposal_sha256": "8711391ae946b74fde9c66da6531772f9e37f302984dbc54c9a9c7a783e4db2c",
+  "documents": [
+    {
+      "path": "docs/experiments/v5_1/EXPERIMENT_GUIDE.md",
+      "lines": 245
+    },
+    {
+      "path": "docs/experiments/v5_1/AGY_HANDOFF.md",
+      "lines": 75
+    },
+    {
+      "path": "docs/experiments/v5_1/CODEX_ACCEPTANCE_CHECKLIST.md",
+      "lines": 102
+    }
+  ],
+  "local_link_errors": [],
+  "checklist_ids": 53,
+  "checklist_ids_unique": true,
+  "calls": {
+    "diagnostic8": 576,
+    "pilot20": 1440,
+    "dev40": 2880,
+    "test160": 11520,
+    "repeats40x2": 5760
+  },
+  "existing_tests": {
+    "exit_code": 0,
+    "passed": 64,
+    "seconds": 2.59
+  },
+  "new_v5_cli_status": "NOT_IMPLEMENTED_BY_THIS_TASK",
+  "api_calls_this_task": 0
+}

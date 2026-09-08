@@ -1,5 +1,7 @@
 # 交给 agy CLI 的执行指令
 
+> **2026-09-09 执行入口已更新**：本文件主体为旧协议/历史交接。当前请使用 [v5.1实验指导书](v5_1/EXPERIMENT_GUIDE.md)、[agy第一批任务](v5_1/AGY_HANDOFF.md) 与 [Codex验收清单](v5_1/CODEX_ACCEPTANCE_CHECKLIST.md)。不要按下方旧门控任务启动v5实验。
+
 以下整段可直接发送给 agy CLI：
 
 ---

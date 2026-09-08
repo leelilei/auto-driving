@@ -1,5 +1,7 @@
 # DARC-Route 第二轮整改交付与验收报告 (REMEDIATION_HANDOFF)
 
+> **2026-09-09 执行入口已更新**：本文件主体为旧协议/历史交接。当前请使用 [v5.1实验指导书](v5_1/EXPERIMENT_GUIDE.md)、[agy第一批任务](v5_1/AGY_HANDOFF.md) 与 [Codex验收清单](v5_1/CODEX_ACCEPTANCE_CHECKLIST.md)。不要按下方旧门控任务启动v5实验。
+
 > **当前阶段**：第二轮独立审阅整改完成，提交 Codex 独立复验。  
 > **基准审阅**：[`docs/experiments/CODEX_REMEDIATION_REVIEW_20260907.md`](CODEX_REMEDIATION_REVIEW_20260907.md)  
 > **研究原则**：严格执行 [`docs/project/EXPERIMENT_FIRST_POLICY.md`](../project/EXPERIMENT_FIRST_POLICY.md)。实验完整落地 → Codex 独立验收通过 → 研究负责人明确认可 → 最后写论文。当前论文写作门禁：**`CLOSED`**。  

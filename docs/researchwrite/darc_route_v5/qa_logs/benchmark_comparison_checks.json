@@ -1,0 +1,9 @@
+{
+  "version": "v5.1",
+  "sections_9_1_to_9_5": true,
+  "base_calls_with_two_literature_prompts": 11520,
+  "local_links_ok": true,
+  "placeholders_preserved": true,
+  "historical_table_separate": true,
+  "paper_closed": true
+}

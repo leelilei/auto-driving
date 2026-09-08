@@ -1,0 +1,10 @@
+{
+  "proposal_lines": 260,
+  "hipp_sha256": "5fd5101a9bdb93823f0fe4109fa5342d6bd7d45ef240498a2f822f0554efbf02",
+  "hipp_top_level_type": "list",
+  "hipp_top_level_count": 1000,
+  "reference_definitions": 11,
+  "local_link_errors": [],
+  "empty_headings": [],
+  "basic_call_budget": 10240
+}

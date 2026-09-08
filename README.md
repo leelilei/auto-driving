@@ -1,33 +1,32 @@
 # 9-AutoDriving (DARC-Route)
 
-> **2026-09-08 最新实测**：阶段三入口已准备；新鲜 Pilot 遭遇 HTTP 502/TLS 连接错误，尚未完成，主实验未启动。见 [阶段二至三执行计划](docs/experiments/stage3_20260908/STAGE3_EXECUTION_PLAN.md)。论文写作 CLOSED。
+> **2026-09-09 实操入口**：[v5.1实验指导书](docs/experiments/v5_1/EXPERIMENT_GUIDE.md) · [交给agy的第一批任务](docs/experiments/v5_1/AGY_HANDOFF.md) · [Codex独立验收清单](docs/experiments/v5_1/CODEX_ACCEPTANCE_CHECKLIST.md)。先实施S0/S1，当前未启动v5采集。
 
-> **项目原则：实验完整落地并经独立验收、研究负责人认可后，才开始论文写作。当前写作门禁 CLOSED。** 见 [实验先行原则](docs/project/EXPERIMENT_FIRST_POLICY.md) 与 [第二轮审阅](docs/experiments/CODEX_REMEDIATION_REVIEW_20260907.md)。
+> **2026-09-08 研究方案更新**：[Proposal v5.1](docs/plans/proposal.md) 已落盘，主线调整为固定一次复核下的决策对比证据。新增方法与 HIPP-DC 尚待实现；旧阶段三暂停扩量。历史网络实测见 [执行记录](docs/experiments/stage3_20260908/STAGE3_EXECUTION_PLAN.md)，不代表当前连通性。
 
-> 一句话研究问题：**在自然语言解析结果存在分歧时，利用其对路线规划的影响，能否比仅看语义分歧或随机抽样，更有效地分配有限的 LLM 复核预算？**
+> **项目原则：实验完整落地并经独立验收、研究负责人认可后，才开始论文写作。当前写作门禁 CLOSED。** 见 [实验先行原则](docs/project/EXPERIMENT_FIRST_POLICY.md)。
 
-- **论文工作题目**：DARC-Route: Decision-Aware Selective Verification for Language-Based POI Route Planning
-- **中文题目**：DARC-Route：面向自然语言 POI 路线规划的决策感知选择性复核
-- **目标会议**：CCEAI 2027（EI Compendex 检索会议）
-- **项目定位**：实证研究（Empirical Research），离线受控 POI 行程规划与 LLM 选择性复核调度
+> 一句话研究问题：**在相同的一次复核机会下，呈现不同语言解释的规划后果，能否比仅指出字段差异更好地纠正误读，并避免改坏合理偏好？**
+
+- **英文题目**：DARC-Route: Decision-Contrastive Verification for Language-Based POI Route Planning
+- **中文题目**：DARC-Route：面向自然语言 POI 路线规划的决策对比证据复核
+- **目标**：一篇 EI 会议论文；CCEAI 2027 为候选，投稿与检索信息另行核验
+- **基准**：公开 HIPP 语言数据＋待建设的 HIPP-DC 配对图与反馈干预评测
+- **项目定位**：离线受控 POI 规划的实证研究；哈希仅用于文件完整性，主方法不使用选择性门控
 
 ---
 
 ## 当前状态
 
-当前阶段：**Phase 1 — 基础环境与 20 条原句试跑已完成；正式等义 Pilot 待审核** ｜ 更新：**2026-09-06**
-
-本次 25 项测试通过；20 条原句首轮 19 条跑通，1 条 API 失败单独补测后成功。B0/B6 均未观察到任务净纠错，不能判定 Gate A 通过。详见 [环境与首轮报告](docs/experiments/readiness_20260906.md)。
-
-详见 [docs/guides/todolist.md](docs/guides/todolist.md) 与 [docs/guides/project.yaml](docs/guides/project.yaml)。
+当前阶段：**v5 方案评审与实现准备**。旧代码、运行记录保留，但不能视为 v5 实验已完成。下一步按 proposal 审计未暴露数据、实现对比报告与配对图，再从 8 组开发诊断开始。旧任务清单与实验指导书的主体仍描述 v4，须完成协议迁移后执行。
 
 ---
 
 ## 工作准则 (Working Principles)
 
-1. **坚持决策感知驱动**：规划结果用于复核门控调度（决定是否花钱），复核器仅读原句与分歧（语言判定用户意图），绝不凭无代价的语言一致性假定任务正确。
-2. **严格受控与先小后大**：采用小规模固定合成 POI 图（10 个 POI，枚举 6,331 条路线）与纯 Python 精确后端，不盲目依赖重型黑盒求解器；优先通过 20 组 Pilot（Gate A）检验复核器净纠错能力。
-3. **真实成本与防止幸存者偏差**：所有 LLM 调用均记录真实 Token、端到端延迟及规划耗时，失败/不可行案例严格计入统计分母，绝不暗中剔除错误样本。
+1. **检验反馈信息的增量**：固定复核机会，比较字段差异、约束反馈与决策对比；最终修改必须依据原句。
+2. **严格受控与先小后大**：复用精确小图后端，先验证报告正确性与开发集净纠正，不直接扩量历史测试。
+3. **保留失败与真实成本**：记录所有调用、token、耗时、错误及版本；不把调用次数相同写成成本相同。
 
 ---
 
@@ -43,7 +42,7 @@
 │   │   ├── todolist.md            # [L0] 任务清单（唯一真相源）
 │   │   └── project.yaml           # [L1/L2] 阶段流图、里程碑与论文结构统一视图
 │   ├── plans/
-│   │   ├── proposal.md            # [L1] 当前研究方案（DARC-Route v4）
+│   │   ├── proposal.md            # [L1] 当前研究方案（DARC-Route v5）
 │   │   └── archive/               # 方案历史版本（v1, v3, v4快照）
 │   ├── project/
 │   │   ├── reference_sources.md   # [L2] 核心文献索引与定位

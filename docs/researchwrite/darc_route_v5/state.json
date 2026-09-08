@@ -1,0 +1,18 @@
+{
+  "mode": "hybrid",
+  "phase": "proposal_revised_and_reviewed",
+  "version": "v5.1",
+  "paper_writing": "CLOSED",
+  "experiment_collection": "PAUSED_FOR_REDESIGN",
+  "proposal": "docs/plans/proposal.md",
+  "qa": "qa_logs/review_and_resolution.md",
+  "proposal_readiness": "discussion_and_development_only",
+  "experiment_acceptance": "NOT_PERFORMED",
+  "remaining": [
+    "near_neighbor_novelty_check",
+    "unexposed_data_audit",
+    "v5_implementation",
+    "development_validation_and_protocol_freeze"
+  ],
+  "latest_revision": "benchmark_alignment_quantitative_tables_sota_scope"
+}

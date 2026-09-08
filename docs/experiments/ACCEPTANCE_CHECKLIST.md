@@ -1,5 +1,7 @@
 # DARC-Route 实验验收清单
 
+> **2026-09-09 执行入口已更新**：本文件主体为旧协议/历史交接。当前请使用 [v5.1实验指导书](v5_1/EXPERIMENT_GUIDE.md)、[agy第一批任务](v5_1/AGY_HANDOFF.md) 与 [Codex验收清单](v5_1/CODEX_ACCEPTANCE_CHECKLIST.md)。不要按下方旧门控任务启动v5实验。
+
 > **验收新增门禁**：执行者自评 PASS 不等于 Codex 验收；实验验收通过且研究负责人认可后才写论文。当前实验验收 FAIL、写作 CLOSED。历史逐项状态需按 [第二轮审阅](CODEX_REMEDIATION_REVIEW_20260907.md) 复核，不能沿用为全部合格。详见 [实验先行原则](../project/EXPERIMENT_FIRST_POLICY.md)。
 
 版本 1.0｜2026-09-06｜配套：[实验指导书](EXPERIMENT_GUIDE.md)。

@@ -1,9 +1,10 @@
-version: 2
+# v5 主线元数据已更新；下方 phases 为历史实施记录，须按 proposal 迁移后执行。
+version: 3
 project: 9-AutoDriving
 type: empirical
-title: "DARC-Route: Decision-Aware Selective Verification for Language-Based POI Route Planning"
-researchQuestion: "在自然语言解析结果存在分歧时，利用其对路线规划的影响，能否比仅看语义分歧或随机抽样，更有效地分配有限的 LLM 复核预算？"
-currentFocus: "Phase 1 - 原句试跑完成；标签人工审核、划分冻结与 80 句等义 Pilot 待推进"
+title: "DARC-Route: Decision-Contrastive Verification for Language-Based POI Route Planning"
+researchQuestion: "固定一次复核机会下，决策对比证据能否比字段差异反馈更好地纠正意图误读并避免改坏偏好？"
+currentFocus: "v5 方案已落盘；方法与 HIPP-DC 待实现，旧阶段三暂停，论文 CLOSED"
 
 tracks:
   - id: design
