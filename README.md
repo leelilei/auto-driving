@@ -1,4 +1,9 @@
-# 9-AutoDriving (DARC-Route)
+# DARC-Route
+
+**Decision-Contrastive Verification for Language-Based POI Route Planning**<br>
+**面向自然语言 POI 路线规划的决策对比证据复核**
+
+项目目录：`9-AutoDriving` ｜ 研究类型：离线受控 POI 路线规划实证研究
 
 > **2026-09-09 实操入口**：[v5.1实验指导书](docs/experiments/v5_1/EXPERIMENT_GUIDE.md) · [交给agy的第一批任务](docs/experiments/v5_1/AGY_HANDOFF.md) · [Codex独立验收清单](docs/experiments/v5_1/CODEX_ACCEPTANCE_CHECKLIST.md)。先实施S0/S1，当前未启动v5采集。
 

@@ -6,7 +6,7 @@
 
 > **新增强制原则（2026-09-07）**：先完成实验，经 Codex 独立验收和研究负责人认可后才进入论文写作；当前门禁 CLOSED。详见 [实验先行原则](../project/EXPERIMENT_FIRST_POLICY.md)。与本文件历史安排冲突时，以该原则为准。
 
-版本：1.0｜日期：2026-09-06｜执行者：agy CLI｜复查者：Codex 与研究负责人。
+版本：1.0（历史协议）｜最后核验：2026-09-09｜执行者：agy CLI｜复查者：Codex 与研究负责人。
 
 项目根目录：`/Users/mac/Documents/6-Research/9-AutoDriving`。
 
