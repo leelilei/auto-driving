@@ -1,6 +1,11 @@
 # DARC-Route
 
-> **2026-09-12 实验收尾完成（当前入口）**：[Codex 收尾结果与下一步](docs/experiments/v41_codex_audit_20260912/closeout/RESULTS_AND_NEXT.md)。负责人当前人工审核已通过；v2c 冻结包完成联合评分、固定策略分层和断网重放，12 项新增验收测试通过。停止新增 API，进入证据/主张定稿；论文写作 CLOSED。下方较早状态按历史保留。
+> **2026-09-13 最新行动与方向收敛入口（当前主线）**：
+> - [下一步行动计划：DS / Qwen 160 组与 LLMAP 迁移实验](docs/guides/AGY_NEXT_ACTION_DS_QWEN_TRANSFER_20260913.md)
+> - [方向决策说明：为什么最终收敛到当前方向 (DARC-Route v4.1 决策依据)](docs/plans/DIRECTION_RATIONALE_20260913.md)
+> - [历史 160 组收尾与 6 模型基准总账报告](docs/experiments/v41_codex_audit_20260912/closeout/HISTORICAL_160_AUDIT_AND_DECISION_REPORT.md)
+
+> **2026-09-12 实验收尾完成**：[Codex 收尾结果与下一步](docs/experiments/v41_codex_audit_20260912/closeout/RESULTS_AND_NEXT.md)。负责人当前人工审核已通过；v2c 冻结包完成联合评分、固定策略分层和断网重放，12 项新增验收测试通过。停止新增 API，进入证据/主张定稿；论文写作 CLOSED。下方较早状态按历史保留。
 
 > **2026-09-12 当前唯一主线：回到 v4.1 决策感知选择性复核。** [最新 proposal](docs/plans/proposal.md) · [项目整体梳理与收敛决策](docs/plans/PROJECT_RESET_V4_1_20260912.md)。20号前只推进历史证据审计、同预算比较、小型冻结验证；Travel/ontology 不再扩量。论文 CLOSED。以下较早“最新/下一步”为历史状态。
 
@@ -70,10 +75,12 @@
 ├── docs/
 │   ├── guides/
 │   │   ├── todolist.md            # [L0] 任务清单（唯一真相源）
+│   │   ├── AGY_NEXT_ACTION_DS_QWEN_TRANSFER_20260913.md # [L1] 下一步行动：DS/Qwen 160组与LLMAP迁移实验
 │   │   └── project.yaml           # [L1/L2] 阶段流图、里程碑与论文结构统一视图
 │   ├── plans/
-│   │   ├── proposal.md            # [L1] 当前研究方案（DARC-Route v5）
-│   │   └── archive/               # 方案历史版本（v1, v3, v4快照）
+│   │   ├── proposal.md            # [L1] 当前研究方案（DARC-Route v4.1）
+│   │   ├── DIRECTION_RATIONALE_20260913.md # [L1] 方向收敛依据与各阶段决策说明
+│   │   └── archive/               # 方案历史版本（v1, v3, v4, v5快照）
 │   ├── project/
 │   │   ├── reference_sources.md   # [L2] 核心文献索引与定位
 │   │   ├── decisions.md           # [L3] 关键架构与方法决策日志
@@ -94,6 +101,10 @@
 
 ## 实验实施与验收入口
 
+- [下一步行动计划：DS / Qwen 160 组与 LLMAP 迁移实验](docs/guides/AGY_NEXT_ACTION_DS_QWEN_TRANSFER_20260913.md)：当前执行总计划。
+- [为什么最终收敛到当前方向 (DARC-Route v4.1 决策说明)](docs/plans/DIRECTION_RATIONALE_20260913.md)：方向收敛与演进分析。
+- [历史 160 组收尾与 6 模型基准总账报告](docs/experiments/v41_codex_audit_20260912/closeout/HISTORICAL_160_AUDIT_AND_DECISION_REPORT.md)：Mini/Luna/Sol/Gemini/Haiku/Sonnet 评测。
+- [Codex 收尾结果与下一步建议](docs/experiments/v41_codex_audit_20260912/closeout/RESULTS_AND_NEXT.md)：资产冻结与审计。
 - [完整实验指导书](docs/experiments/EXPERIMENT_GUIDE.md)：数据、图、方法、指标、预算、执行阶段与交付要求。
 - [agy CLI 执行指令](docs/experiments/AGY_HANDOFF.md)：可直接复制的交接任务。
 - [验收清单](docs/experiments/ACCEPTANCE_CHECKLIST.md)：实现与实验完成后，由 Codex 独立复查。

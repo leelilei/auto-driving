@@ -1,5 +1,10 @@
 # DARC-Route 任务清单 (TodoList)
 
+> **2026-09-13 最新行动计划与方向收敛入口**：
+> - [下一步行动计划：DS / Qwen 160 组与 LLMAP 迁移实验](AGY_NEXT_ACTION_DS_QWEN_TRANSFER_20260913.md)
+> - [方向决策说明：为什么最终收敛到当前方向 (DARC-Route v4.1 决策依据)](../plans/DIRECTION_RATIONALE_20260913.md)
+> - [历史 160 组收尾与 6 模型基准总账报告](../experiments/v41_codex_audit_20260912/closeout/HISTORICAL_160_AUDIT_AND_DECISION_REPORT.md)
+
 > **2026-09-12 当前状态：指定离线收尾已完成。** [结果与下一步](../experiments/v41_codex_audit_20260912/closeout/RESULTS_AND_NEXT.md)。人工审核通过已记录；联合指标、固定策略分层、解析账本、v2c 强绑定重放与 12 项测试完成。按有限科学主张接受，停止 API 扩量；下一步是证据图表与主张定稿，论文 CLOSED。以下旧“未验收/待审核”为历史记录。
 
 > **审计提交复核更新**：[Luna/Gemini新增实验与下一步](../experiments/v41_codex_audit_20260912/submission_review/REVIEW_SUBMISSION.md)。部分整改生效，但仍需联合效用/任务/回退评价、暴露人审资格与真实replay；先零API收尾。
