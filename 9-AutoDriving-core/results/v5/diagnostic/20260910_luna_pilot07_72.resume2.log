@@ -1,0 +1,20 @@
+{
+  "protocol_version": "darc-v5.1-collection-2",
+  "model": "gpt-5.6-luna",
+  "phase": "full",
+  "groups": [
+    "pilot_07"
+  ],
+  "planned_calls": 72,
+  "attempt_files": 7,
+  "logical_units_recorded": 4,
+  "complete_calls": 4,
+  "physical_attempts": 7,
+  "schema_failures": 0,
+  "skipped_upstream": 0,
+  "transport_failures": 3,
+  "provider_total_tokens": 2008,
+  "collection_complete": false,
+  "all_model_calls_schema_valid": true,
+  "finished_at": "2026-09-09T17:22:25.940313+00:00"
+}

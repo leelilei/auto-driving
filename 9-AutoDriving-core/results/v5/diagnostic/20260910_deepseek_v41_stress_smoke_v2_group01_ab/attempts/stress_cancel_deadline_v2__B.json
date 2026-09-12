@@ -1,0 +1,43 @@
+{
+  "call_id": "stress_cancel_deadline_v2::B",
+  "role": "B",
+  "graph_condition": null,
+  "started_at": "2026-09-10T02:32:45.486995+00:00",
+  "request": {
+    "system": "Read the user's route-planning instruction field by field before producing the final JSON.\n\nCheck: requested POI categories, return deadline, explicit visit order, and the direction of the quality-versus-distance preference. Each conclusion must be supported by the instruction itself.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nDo not infer a preference from any route or map. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Cover the library, pharmacy, and bank. Do not treat 17:00 as a deadline because I no longer need to return by then. Keep quality and travel equally weighted."
+  },
+  "raw_response": "{\"pois\":[\"library\",\"pharmacy\",\"bank\"],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5,\"evidence\":{\"pois\":\"Cover the library, pharmacy, and bank.\",\"time_limit\":\"Do not treat 17:00 as a deadline because I no longer need to return by then.\",\"quality_weight\":\"Keep quality and travel equally weighted.\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library",
+      "pharmacy"
+    ],
+    "time_limit": null,
+    "dependencies": [],
+    "quality_weight": 0.5
+  },
+  "evidence": {
+    "pois": "Cover the library, pharmacy, and bank.",
+    "time_limit": "Do not treat 17:00 as a deadline because I no longer need to return by then.",
+    "quality_weight": "Keep quality and travel equally weighted."
+  },
+  "changes": [],
+  "finished_at": "2026-09-10T02:32:51.122044+00:00",
+  "telemetry": {
+    "call_index": 6,
+    "prompt_sha256": "1c2697aaf72217531045b0956f2bde4164d4c4846f7e2f8590bce4ebc5ebad50",
+    "attempts": 1,
+    "latency_seconds": 5.635,
+    "input_chars": 1031,
+    "output_chars": 309,
+    "input_tokens": 266,
+    "output_tokens": 1045,
+    "total_tokens": 1311,
+    "usage_source": "provider",
+    "success": true
+  }
+}

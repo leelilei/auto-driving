@@ -1,0 +1,48 @@
+{
+  "call_id": "pilot_01_v2::A2",
+  "role": "A2",
+  "graph_condition": null,
+  "started_at": "2026-09-09T16:18:56.783103+00:00",
+  "request": {
+    "system": "You extract route-planning intent from the user's instruction.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nUse only the instruction. Do not invent constraints. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Ensure your return by 22:00 today after visiting the shopping mall and the supermarket. Because efficiency is paramount, choose the most direct path possible, stopping at the shopping mall before you head to the supermarket."
+  },
+  "raw_response": "{\"pois\":[\"shopping mall\",\"supermarket\"],\"time_limit\":1320,\"dependencies\":[[\"shopping mall\",\"supermarket\"]],\"quality_weight\":0.0,\"evidence\":{\"pois\":\"shopping mall and the supermarket\",\"time_limit\":\"by 22:00 today\",\"dependencies\":\"stopping at the shopping mall before you head to the supermarket\",\"quality_weight\":\"efficiency is paramount, choose the most direct path possible\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "shopping_mall",
+      "supermarket"
+    ],
+    "time_limit": 1320,
+    "dependencies": [
+      [
+        "shopping_mall",
+        "supermarket"
+      ]
+    ],
+    "quality_weight": 0.0
+  },
+  "evidence": {
+    "pois": "shopping mall and the supermarket",
+    "time_limit": "by 22:00 today",
+    "dependencies": "stopping at the shopping mall before you head to the supermarket",
+    "quality_weight": "efficiency is paramount, choose the most direct path possible"
+  },
+  "changes": [],
+  "finished_at": "2026-09-09T16:18:59.118384+00:00",
+  "telemetry": {
+    "call_index": 39,
+    "prompt_sha256": "d413ae99fe78fece7a99874bb4a4987b26fcab46b92e0f0b8df6a0c1cc55f347",
+    "attempts": 1,
+    "latency_seconds": 2.335,
+    "input_chars": 879,
+    "output_chars": 377,
+    "input_tokens": 231,
+    "output_tokens": 481,
+    "total_tokens": 712,
+    "usage_source": "provider",
+    "success": true
+  }
+}

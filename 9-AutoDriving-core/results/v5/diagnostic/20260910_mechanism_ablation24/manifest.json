@@ -1,0 +1,21 @@
+{
+  "created": "2026-09-10T03:00:24.898016+00:00",
+  "scope": "controlled_development_ablation_not_confirmatory",
+  "source_cases_sha256": "09be57cd11ea717570092dce3ef54e81406b846ea80c4074c12a0263a7b83c10",
+  "cases_sha256": "09be57cd11ea717570092dce3ef54e81406b846ea80c4074c12a0263a7b83c10",
+  "requests_sha256": "2b4a669164e81994e46139c4a94c0390aecade9c80cfe4e78a64ea1504a7e5fc",
+  "script_sha256": "9a67b907d7bba25cc9e0e9bb0d60408ca67ee53f7223bd55450a8b5f4e150f79",
+  "config_sha256": "2d903f7ac54b578d14955296583b0b04daaeaf9773e4378d5156234cbd07b626",
+  "model": "deepseek-v4.1-flash-expires-on-0910",
+  "cases": 24,
+  "source_groups": 8,
+  "repetitions": 2,
+  "planned": 144,
+  "concurrency": 4,
+  "max_output_tokens": 1600,
+  "primary": "full minus route_order semantic correctness, paired within case and repetition",
+  "secondary": "route_order minus fields; TSR; correction/damage against fixed A; tokens",
+  "stopping": "first authentication error halts; at most one transport recovery per unit, at most 8 recoveries total; no schema retries",
+  "interpretation": "No independent sample inflation; descriptive repeats only; no causal claim about numerical values alone because full adds swaps and constraints too; more tokens not equal budget",
+  "original_experiment": "New common instruction explicitly mentions common errors in every arm; do not compare absolute scores causally with previous round"
+}

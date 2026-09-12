@@ -1,0 +1,288 @@
+{
+  "adapter": "chinatravel_act_native_v3",
+  "scope": "development only; first case exposed regression",
+  "ids": [
+    "e20241028160248698752",
+    "e20241028160842228543",
+    "h20241029143447759844"
+  ],
+  "selection": "regression then lexicographic minimum medium and human in frozen dev",
+  "budget": {
+    "max_calls": 12,
+    "query_calls": 8,
+    "total_chars": 160000,
+    "query_chars": 110000,
+    "final_reserved_chars": 50000,
+    "output_tokens": 4096,
+    "timeout": 60,
+    "seconds": 900,
+    "retries": 0,
+    "concurrency": 1,
+    "consecutive_protocol_errors": 2
+  },
+  "policy": {
+    "page_size": 5,
+    "ordering": "official returned order; no reranking",
+    "keys": "all column/type pairs returned together; type objects converted to __name__",
+    "score_nulls": "DataFrame NaN for non-applicable constraint columns serialized as null; scores unchanged",
+    "facts_chars": 30000,
+    "retention": "newest whole trace records fitting facts_chars; chronological order",
+    "raw_retention": "all responses and full observations retained on disk",
+    "native": "exactly one forced submit_action/submit_itinerary tool_use; input serialized without repair; text blocks archived but never executed",
+    "counting": "system+user Unicode characters plus serialized tools and tool_choice; wire bytes recorded separately",
+    "final": "one final request; no repair, fallback or scoring feedback"
+  },
+  "system": "You plan travel using the REAL local ChinaTravel sandbox. Preserve every requirement in the complete original query. Only use queried facts; do not invent entities, schedules or prices. Use the required native submit_action tool exactly once. Its input is the action object: {\"kind\":\"tool\",\"name\":\"registered_name\",\"arguments\":{...}} or {\"kind\":\"finish\"}. Do not write an action inside a text or Markdown block. Never use Python/lambda expressions. Use at most eight query requests, including errors; obtain outward and return transport, attractions, meals and connecting transport as needed. After queries a separate final request is provided. Unknown entity names must be resolved by querying attractions/restaurants/accommodations_select or poi_names; poi_lat_lon_search requires an exact name. Select filters are a list of {\"key\":column,\"op\":eq|ne|contains|lt|le|gt|ge,\"value\":scalar}; all conditions are ANDed, contains is literal string containment, no regex/OR/expressions. Omitted filters return all rows. page is zero-based, five rows per page in official order. Use keys tools to discover actual columns. Tools return explicit error categories. The supplied tool catalog defines required and optional arguments. ",
+  "final_system": "Use native submit_itinerary exactly once with the final plan as its input, conforming to the official schema. Preserve the full original query and use queried facts. Do not fabricate unavailable facts. If you cannot produce a grounded plan return {\"failure_reason\":\"explanation\"}; this is recorded as schema failure. Plan round-trip travel with meals and attraction visits. Each activity.transports describes travel from the previous activity to this one. Use exact sandbox names. Include start/end and TrainID or FlightID on intercity activities; position on other activities. Include tickets for ticketed activities/metro, cars for taxi and rooms/room_type for accommodation. Transport price is per ticket/car and cost is total; walking price/cost are zero. The official goto observation cost is for the returned route; account for party size explicitly. ",
+  "catalog": {
+    "intercity_transport_select": {
+      "required": {
+        "start_city": "str",
+        "end_city": "str",
+        "intercity_type": "str"
+      },
+      "optional": {
+        "earliest_leave_time": "str",
+        "page": "int"
+      }
+    },
+    "goto": {
+      "required": {
+        "city": "str",
+        "start": "str",
+        "end": "str",
+        "start_time": "str",
+        "transport_type": "str"
+      },
+      "optional": {}
+    },
+    "poi_lat_lon_search": {
+      "required": {
+        "city": "str",
+        "name": "str"
+      },
+      "optional": {}
+    },
+    "poi_names": {
+      "required": {
+        "city": "str"
+      },
+      "optional": {
+        "contains": "str",
+        "page": "int"
+      }
+    },
+    "attractions_keys": {
+      "required": {
+        "city": "str"
+      },
+      "optional": {}
+    },
+    "attractions_select": {
+      "required": {
+        "city": "str"
+      },
+      "optional": {
+        "filters": "list",
+        "page": "int"
+      }
+    },
+    "attractions_nearby": {
+      "required": {
+        "city": "str",
+        "point": "str"
+      },
+      "optional": {
+        "topk": "int",
+        "dist": "number",
+        "page": "int"
+      }
+    },
+    "restaurants_keys": {
+      "required": {
+        "city": "str"
+      },
+      "optional": {}
+    },
+    "restaurants_select": {
+      "required": {
+        "city": "str"
+      },
+      "optional": {
+        "filters": "list",
+        "page": "int"
+      }
+    },
+    "restaurants_nearby": {
+      "required": {
+        "city": "str",
+        "point": "str"
+      },
+      "optional": {
+        "topk": "int",
+        "dist": "number",
+        "page": "int"
+      }
+    },
+    "accommodations_keys": {
+      "required": {
+        "city": "str"
+      },
+      "optional": {}
+    },
+    "accommodations_select": {
+      "required": {
+        "city": "str"
+      },
+      "optional": {
+        "filters": "list",
+        "page": "int"
+      }
+    },
+    "accommodations_nearby": {
+      "required": {
+        "city": "str",
+        "point": "str"
+      },
+      "optional": {
+        "topk": "int",
+        "dist": "number",
+        "page": "int"
+      }
+    },
+    "attractions_types": {
+      "required": {
+        "city": "str"
+      },
+      "optional": {
+        "page": "int"
+      }
+    },
+    "restaurants_cuisine": {
+      "required": {
+        "city": "str"
+      },
+      "optional": {
+        "page": "int"
+      }
+    },
+    "restaurants_with_recommended_food": {
+      "required": {
+        "city": "str",
+        "food": "str"
+      },
+      "optional": {
+        "page": "int"
+      }
+    }
+  },
+  "config": {
+    "provider": "xcode",
+    "model": "claude-haiku-4-5-20251001",
+    "wire_api": "anthropic_messages",
+    "base_url": "https://xcode.best",
+    "temperature": 0.0,
+    "timeout": 60,
+    "json_mode": false,
+    "retries": 0,
+    "retry_sleep": 1.0,
+    "sleep": 0.0,
+    "max_concurrency": 1,
+    "omit_temperature": false,
+    "reasoning_effort": null,
+    "max_output_tokens": 4096,
+    "stream": false,
+    "service_tier": null,
+    "store": null,
+    "responses_input_mode": "messages",
+    "input_char_limit": null,
+    "transport": "urllib",
+    "api_key_env": "XCODE_API_KEY"
+  },
+  "source_hashes": {
+    "9-AutoDriving-core/configs/chinatravel_act_v2.json": "44b3380884117de028d0ca46f18dd4a23c972455270b747bdd48199fcc8c27e2",
+    "9-AutoDriving-core/data/chinatravel_dev_60.json": "4cd9da804975fa0a265c6f038d61cdfc880670094b2e819fc0c5ff315371860f",
+    "9-AutoDriving-core/scripts/chinatravel_pipeline.py": "30543474fc8cdd2ca0bf35e2e57dd11be693f6ed47faa21371c69805bc325eda",
+    "9-AutoDriving-core/scripts/chinatravel_pipeline_v2.py": "24c04ace7213cd2433c370e21b45a9f7a91fa8aab375f976bd9fbb8473dffb60",
+    "9-AutoDriving-core/scripts/chinatravel_pipeline_v3.py": "1b0c6250b583a7db88fb9dfac6d3f074985c8130fe63ba6f7e63684212a6d6a6",
+    "9-AutoDriving-core/src/llm_client.py": "ff086f6efce95bd8dba98ca150ba5f8b48b61dcc543a335c39cbdfbca076639b",
+    "9-AutoDriving-core/tests/test_chinatravel_pipeline.py": "0033bebb8901bdb34ea9d63f2fa7d9c583e802319ab49144f05f3079baabe7f8",
+    "9-AutoDriving-core/tests/test_chinatravel_pipeline_v2.py": "c3c2fbeba32f47d7b07e067f83253b9ad4d7006ed348df47eba9c998f981d4f2",
+    "9-AutoDriving-core/tests/test_chinatravel_pipeline_v3.py": "aa6f11fef915fc52aad4f6b58419305fdb35c8d3ebb0b2137c3e23c0e3eacbac",
+    "external/ChinaTravel/chinatravel/agent/UrbanTrip/tpc_agent.py": "ed7e725f9bcfebd52b78c90d142e48c5a9512e4efba50b1e7a6361a514b9d0e4",
+    "external/ChinaTravel/chinatravel/agent/UrbanTrip/utils.py": "2825ef71ff308c70fc109ed173d448c48d802d48b41c8bb257308d1760542dda",
+    "external/ChinaTravel/chinatravel/agent/base.py": "a7d74a8e6e7e5f5a6c84b2ec7a92e53045e26dd781140273da6298d860a049e1",
+    "external/ChinaTravel/chinatravel/agent/llms.py": "dabf685528597753253b6a2d513b6ad59d03dafdbe6fc463425a92482af49d04",
+    "external/ChinaTravel/chinatravel/agent/load_model.py": "f464a27a4e473103b020214aaac73eaa3e620cde6ae684c6a75fc0c02c282d8a",
+    "external/ChinaTravel/chinatravel/agent/nesy_agent/ast_checker.py": "142729d1c7701420da88b05024f1aad6b0c13c0809c866fc431ad23f572a660f",
+    "external/ChinaTravel/chinatravel/agent/nesy_agent/ast_checker_en.py": "5f87bdb3cdf743baa9019fa2808a3068658038cdc840515b78c63ba4a2f6e4e9",
+    "external/ChinaTravel/chinatravel/agent/nesy_agent/llm_driven_rec.py": "cb1a0a87e69da8cf70dd5e78b5c72223b8f77861dcb226ea3fba4710b8b454b2",
+    "external/ChinaTravel/chinatravel/agent/nesy_agent/nesy_agent.py": "484994a6745f253688ab2d9d4b33971b0d8528450b54b2a35860a55eddcd2d07",
+    "external/ChinaTravel/chinatravel/agent/nesy_agent/nl2sl.py": "fd1b47a9ca1775084a3c92dba659a8b0530be55cd81bd803eb4deef25e8415a6",
+    "external/ChinaTravel/chinatravel/agent/nesy_agent/nl2sl_hybrid.py": "eb47480c443c80eaafb60048e305f52a45e3d611f0f2b005d8847530b5b6b646",
+    "external/ChinaTravel/chinatravel/agent/nesy_agent/nl2sl_hybrid_en.py": "bcbb968872be202de37ffbc4f2998c9ce9c2df9cbbce4779a1eac192737aa460",
+    "external/ChinaTravel/chinatravel/agent/nesy_agent/prompts/__init__.py": "fe623881b0e5a9a560339c84f3a7e229de50875435051197d89738a34997a325",
+    "external/ChinaTravel/chinatravel/agent/nesy_agent/prompts/prompts.py": "72f9a8b4f8a7fddb96b17a0ef0141ab47dcfdb6b1734d126383c82435890dd13",
+    "external/ChinaTravel/chinatravel/agent/nesy_agent/prompts/prompts_en.py": "5f56e1e5f0befe59a1d1b3e972e89ffaa5915e013b799f38c8ad71a561e5616d",
+    "external/ChinaTravel/chinatravel/agent/nesy_agent/rule_driven_rec.py": "a8a7dfdb7454529f4201e4ee8103423c915073b0bd09701176dab8306c9902b9",
+    "external/ChinaTravel/chinatravel/agent/nesy_agent/utils.py": "42688d808c15100bfbd8369285c8202457024a53218cc870333470e05b9c4cef",
+    "external/ChinaTravel/chinatravel/agent/nesy_verifier/__init__.py": "3a2e5d33b9b21b12b96c6e94109b6c6b0a3fe5fdf4e3239677d9f2c25cca878c",
+    "external/ChinaTravel/chinatravel/agent/nesy_verifier/llm_modulo.py": "78bc9cda0f1d7ede57cea0109b156bfb4d0580902f2de286f43f6487932ea351",
+    "external/ChinaTravel/chinatravel/agent/nesy_verifier/prompts/llm_modulo.py": "49ca6ca5a92731768d8c9c2d166243d9777a38e68aff147c4f16fa4a33b0977a",
+    "external/ChinaTravel/chinatravel/agent/nesy_verifier/prompts/poi_selection.py": "6e27098b00ad167424eb2dadbbfe2fdc0332145cdeed90ad3e99f79e72566696",
+    "external/ChinaTravel/chinatravel/agent/nesy_verifier/verifier/commonsense_constraint_nl.py": "ac313615655996fa00e6f9e42c3cde03cb42e1ed6ba9d4d9b7cf78437165333a",
+    "external/ChinaTravel/chinatravel/agent/nesy_verifier/verifier/personal_constraint_nl.py": "7b583281a931c2ff38e26c2e1cbaff57a3a6f6ee3c1a3c72b41d41c0f70c2ee8",
+    "external/ChinaTravel/chinatravel/agent/pure_neuro_agent/__init__.py": "2d9db3ae8c75aaeb86bccd94b80b05b9a976d2206a6634c620f20002273ab406",
+    "external/ChinaTravel/chinatravel/agent/pure_neuro_agent/prompts/__init__.py": "779224b44fe470b3e36bed051d6545d8fae80219455ccbabf96d896323a3db9b",
+    "external/ChinaTravel/chinatravel/agent/pure_neuro_agent/prompts/examples.py": "3faae4d901277cda7dc5a8d84304ac5f65958b6b4c47be26f8c2ca438c603c59",
+    "external/ChinaTravel/chinatravel/agent/pure_neuro_agent/prompts/examples_en.py": "33d76a11c72da4ef98abf7ef8453091cacddf8519caf89d5f473a7f845369a96",
+    "external/ChinaTravel/chinatravel/agent/pure_neuro_agent/prompts/prompts.py": "5f8627e70c901c13a80fcc3292ae3e1ef6ec617c1dca11dda2ae93ed8feb0e95",
+    "external/ChinaTravel/chinatravel/agent/pure_neuro_agent/prompts/prompts_en.py": "c8c454916aa99b0615ad88ddc6a05c17b65f4705bc539b907c7f231b5022d4f2",
+    "external/ChinaTravel/chinatravel/agent/pure_neuro_agent/pure_neuro_agent.py": "25f66982c591eb16e53ce1bf5a8bfb06f0234d380ef80bd8de9bb3e79dc55f52",
+    "external/ChinaTravel/chinatravel/agent/tpc_agent/tpc_agent.py": "2b2930c94d7c8a2394a2aff0982d1570cb4257f0fb6f2e8ea0ea537063ca2eff",
+    "external/ChinaTravel/chinatravel/agent/utils.py": "2f5ab18fe58540557e234f2ca2bd9647697dbae24e1d91222814bba7490c5de2",
+    "external/ChinaTravel/chinatravel/data/load_datasets.py": "ef35810ed31663270052cb63bb570d2a8c01b6694b58ba5338b99897edb5f9f3",
+    "external/ChinaTravel/chinatravel/environment/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "external/ChinaTravel/chinatravel/environment/concept_labels.py": "e6c75a4c87c148725c842775cba6cd4d854ed31732b04efc53d1cc2c048441a0",
+    "external/ChinaTravel/chinatravel/environment/language.py": "968c5a66bcd8c13bfda00d6979f42b0eb99fe93924c7a904cef25929a7899873",
+    "external/ChinaTravel/chinatravel/environment/tools/__init__.py": "dd0812d9db4ca4e29cfa9fd57c2ed3dddbccf61c771c40aff31c3b3cabd02e1b",
+    "external/ChinaTravel/chinatravel/environment/tools/accommodations/apis.py": "87cd51c0df729cc84306482d51c67be009a4a22ee6d424f16277c9d91752c7f1",
+    "external/ChinaTravel/chinatravel/environment/tools/attractions/apis.py": "b94508c3dfde6e0dd9375b9cc65752374c9d01d48fd8930dd4b462afa19d1b52",
+    "external/ChinaTravel/chinatravel/environment/tools/intercity_transport/apis.py": "0a21b2cd787c10527ac8a23bf12b6bc132c14fae8bb6039311d966664687e242",
+    "external/ChinaTravel/chinatravel/environment/tools/poi/apis.py": "11c8b7bd19bc3b93258fbe25e00ea8399ab57d78baf8a826bbc4921dfa3abb0d",
+    "external/ChinaTravel/chinatravel/environment/tools/restaurants/apis.py": "b0c7c731e75b3c30630e49c0b560fa9ad495959fada1dd2b472f02fa780a07fe",
+    "external/ChinaTravel/chinatravel/environment/tools/transportation/apis.py": "c99b7e1dd0c96face2379592c5275bec25146cf87700480f2b77fb70e0e3e88f",
+    "external/ChinaTravel/chinatravel/environment/world_env.py": "47a50c371219877813b3f29f7c90771380e63addd6218525f5356c17af7a4e1f",
+    "external/ChinaTravel/chinatravel/evaluation/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "external/ChinaTravel/chinatravel/evaluation/commonsense_constraint.py": "9530e4bf085bf698cec080c716be5a96bed6507b400418b78159bfd6778081d2",
+    "external/ChinaTravel/chinatravel/evaluation/hard_constraint.py": "1ec96543ce2e75420e0680c3cd76bd571dfedec9254e1d09983ba5f7ef949662",
+    "external/ChinaTravel/chinatravel/evaluation/output_schema.json": "5259e2620d100104163b560cb193b450f64660507f0a9588be129860764cb120",
+    "external/ChinaTravel/chinatravel/evaluation/preference.py": "f92f3eea502c546e25b567ca5dbafcd78e75b888f027c256bbf37e0b2e576fd9",
+    "external/ChinaTravel/chinatravel/evaluation/rank.py": "e9a4c2ab6d7c6eb065fe591ff0ca7dc03844f6908b78801e7dc0289aeb2f8647",
+    "external/ChinaTravel/chinatravel/evaluation/schema_constraint.py": "e39038aeebe302155f9e97702cdf88688446bee843261927eb6a5bd7f2f1b045",
+    "external/ChinaTravel/chinatravel/evaluation/utils.py": "78aaffc01637506bd32b26328c82f0a90800befeeed31bc779d444823671f9ee",
+    "external/ChinaTravel/chinatravel/json_utils.py": "9b178e7c2b0d4435ce94682cac39caccf879e9df2c918be8da161a22151a08b0",
+    "external/ChinaTravel/chinatravel/symbol_verification/commonsense_constraint.py": "bdae73e09838398e239fd5d721645163a429dedfd81a49b874be11e7b9439d94",
+    "external/ChinaTravel/chinatravel/symbol_verification/concept_func.py": "774da346698f9332f491434079ea624de2d863f8c513eadb96c35f13160f9aaa",
+    "external/ChinaTravel/chinatravel/symbol_verification/dsl.py": "eb1868e9ae93f0b7403f76de8a9548d2949039d955584444d08baecaeab585ef",
+    "external/ChinaTravel/chinatravel/symbol_verification/hard_constraint.py": "9da96abd2e46b56fe790faa82741d714f39c456cf57dc194aefd5ad24578b59b",
+    "external/ChinaTravel/chinatravel/symbol_verification/preference.py": "2961cdb3fdc22a403f75664bc60072d918706704e26dd5fc35bc0fc92824f179",
+    "external/ChinaTravel/data_manifest.json": "ac4e6ab485480d71c3de7932e77585537f975aa78dd5bdff8ff31f75d613af99",
+    "external/ChinaTravel/dev_hold_split.json": "a38de92c4cd5eeebedab28a8b5ffdd2b18d09973127cdb93a3f2d5dc5dc5e1ef",
+    "external/ChinaTravel/eval_exp.py": "0068c2af050094b467808f0f41a0b1f4a1dd036ab35d125da3fd1c1236eb9560",
+    "external/ChinaTravel/temp_sandbox/manifests/DATA_QUALITY_FIXES_2026_08.md": "4aea863fdbaf4db79547453fa4ed97dc3b9811c08a062c3384708e0c90615423",
+    "external/ChinaTravel/temp_sandbox/manifests/ENGLISH_FIXES.md": "364952d26be05059b3c1f62fff5ea766dc816369a5b155922aa0f13abfc26931",
+    "external/ChinaTravel/temp_sandbox/manifests/SHA256SUMS.en": "10284aa8ffea9973a38465a418ccddef0af11d00b922583cc2e4ca60e970a154",
+    "external/ChinaTravel/temp_sandbox/manifests/SHA256SUMS.zh": "43fe164ea607708e1d3bf1663a73b321ef00eff429a04d5a2edb03bea1d949e3",
+    "external/ChinaTravel/temp_sandbox/manifests/data_quality_repairs_2026_08.json": "70f2e1d5ad8a52aedebf959ea8a3c84835d162f2c44893e825f676b363bdbb83",
+    "external/ChinaTravel/temp_sandbox/manifests/english_manifest.json": "f82dd016c38644a030f9a290776451a4b61695bb0d22e05dec2e27076b6b2a5e",
+    "external/ChinaTravel/temp_sandbox/release_manifest.json": "0f683d97f340d37fd416458f72d17662d9d0246d571e629948bca2c93d00696a"
+  },
+  "sandbox_verified": {
+    "zh": 132,
+    "en": 132
+  },
+  "upstream_commit": "0936f2727dd102ad811ed015b7bf6f7d6533f28e",
+  "gate": "first case schema-valid final plus completed official scoring; otherwise stop",
+  "public_inputs_sha256": "85dd138ecf1f2f1d18c5f2b8476e7c437c21a0569e1929184d7a75685b2e81c1"
+}

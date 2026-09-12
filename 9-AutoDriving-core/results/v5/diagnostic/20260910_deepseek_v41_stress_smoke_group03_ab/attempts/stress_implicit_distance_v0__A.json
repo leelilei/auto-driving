@@ -1,0 +1,48 @@
+{
+  "call_id": "stress_implicit_distance_v0::A",
+  "role": "A",
+  "graph_condition": null,
+  "started_at": "2026-09-10T02:28:35.607475+00:00",
+  "request": {
+    "system": "You extract route-planning intent from the user's instruction.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nUse only the instruction. Do not invent constraints. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Visit the bank, pharmacy, and supermarket. My schedule is tight, so avoid any unnecessary detours. Go to the bank before the pharmacy."
+  },
+  "raw_response": "{\"pois\":[\"bank\",\"pharmacy\",\"supermarket\"],\"time_limit\":null,\"dependencies\":[[\"bank\",\"pharmacy\"]],\"quality_weight\":0.2,\"evidence\":{\"pois\":\"Visit the bank, pharmacy, and supermarket.\",\"dependencies\":\"Go to the bank before the pharmacy.\",\"quality_weight\":\"avoid any unnecessary detours\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "pharmacy",
+      "supermarket"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "bank",
+        "pharmacy"
+      ]
+    ],
+    "quality_weight": 0.2
+  },
+  "evidence": {
+    "pois": "Visit the bank, pharmacy, and supermarket.",
+    "dependencies": "Go to the bank before the pharmacy.",
+    "quality_weight": "avoid any unnecessary detours"
+  },
+  "changes": [],
+  "finished_at": "2026-09-10T02:28:39.107021+00:00",
+  "telemetry": {
+    "call_index": 1,
+    "prompt_sha256": "d6bdd57a36f480242656382ec025b2605bb00a94f5aa872e49f0f709359e932a",
+    "attempts": 1,
+    "latency_seconds": 3.499,
+    "input_chars": 789,
+    "output_chars": 285,
+    "input_tokens": 218,
+    "output_tokens": 738,
+    "total_tokens": 956,
+    "usage_source": "provider",
+    "success": true
+  }
+}

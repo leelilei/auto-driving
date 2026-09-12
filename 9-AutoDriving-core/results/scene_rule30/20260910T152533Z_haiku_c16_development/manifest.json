@@ -1,0 +1,33 @@
+{
+  "protocol": "scene-rule30-v1",
+  "mode": "REAL",
+  "created": "2026-09-10T15:25:33.802634+00:00",
+  "files": {
+    "model_inputs.json": "3ec69c5eceac4ccf9b13071ef1b5da6a185d296c7399b4f5ab8231e349747f6e",
+    "mutation_audit.json": "1915df259053bc1acf8f38befbed3039e8abb232e2ff234f249246695a801913",
+    "gold_and_traces.json": "5dc2fa0a339467b29270b1289d447102a5cedae47358c7f81492d2ad0b2b7cc3",
+    "offline_validation.json": "610a025b5ccdc900915f28fff45cb83860fbd5d0cf860322d1900c105c754a0a",
+    "author_review_cases.json": "927f4d6fc2b48211e8f9db835d4b3c1a5f9c5882deed3acde2aa887af0511248",
+    "run_plan.json": "bc9b8a661fda4c9f2ad528345c9d5b5180ba9d7f11ed866b3aa076ad444764f0",
+    "CASE_REVIEW.md": "b8f14c670cb4009b3022816937924cd69cfb5e84b71f2c6eacd0d67646220533",
+    "config.json": "8857e3a329c62c942cf5d0d599a4dd5fbfe6d825b63148638b104863cdba8d4a"
+  },
+  "sources": {
+    "scripts/scene_rule30_run.py": "25391a91db414c54cd496af3689e35050b7532fd6c9fb59f67383acc8fbac0f2",
+    "scripts/scene_pilot12.py": "8aae62cbcdd1217066250c87acc2612e185e2c341954bf162f481d398ce4226f",
+    "scripts/scene_haiku_contract.py": "a157080adec1b2e476937b42a1e4c28357e0e9337eb479917149d972b800342e",
+    "scripts/prepare_scene_pilot12.py": "356988a65e82800bd4ed8bd4a1d6127cf6cdcc67ec49c69decff26e91562bea3",
+    "scripts/experiment.py": "3f32e1db828772b1ef05dd045d805817727feefd8eaef363839442fffad738a5",
+    "src/scene_policy.py": "00715e30b16ad4298b80b340dbc491531505b8fea64388e85d8c5accc0a2ba6f",
+    "src/llm_client.py": "ff086f6efce95bd8dba98ca150ba5f8b48b61dcc543a335c39cbdfbca076639b"
+  },
+  "scope": "UNREVIEWED_DEVELOPMENT_ONLY",
+  "human_review": "PENDING",
+  "authorization": "用户：推进180次调用，需要扩大并发加快试验速度。",
+  "planned": 180,
+  "concurrency": 16,
+  "max_recoveries": 18,
+  "max_attempts_per_unit": 2,
+  "prompt_revision": "scene-haiku-explicit-object-v1",
+  "stopping": "401/403/429 or exhausted transport recovery stops launch; no semantic retries"
+}

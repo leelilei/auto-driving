@@ -1,0 +1,29 @@
+{
+  "call_id": "pilot_01_v1::tradeoff::review_fields",
+  "role": "review_fields",
+  "graph_condition": "tradeoff",
+  "started_at": "2026-09-09T18:25:50.087179+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. The field-difference report only identifies disagreements; it does not identify the correct answer.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not infer user preference from a route or map.\n\nInstruction:\nYou will be stopping by the shopping mall and the supermarket today. Be sure to arrive back by 22:00. Prioritizing travel efficiency, keep the route as short and direct as feasible, and remember to visit the shopping mall prior to the supermarket.\n\nCandidate A:\n{\"dependencies\": [[\"shopping_mall\", \"supermarket\"]], \"pois\": [\"shopping_mall\", \"supermarket\"], \"quality_weight\": 0.0, \"time_limit\": 1320}\n\nCandidate B:\n{\"dependencies\": [[\"shopping_mall\", \"supermarket\"]], \"pois\": [\"shopping_mall\", \"supermarket\"], \"quality_weight\": 0.0, \"time_limit\": 1320}\n\nField differences:\n{\"fields\": []}\n"
+  },
+  "status": "TRANSPORT_FAILED",
+  "schema_valid": false,
+  "error_type": "RuntimeError",
+  "error_message": "curl request failed: curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to xcode.best:443",
+  "finished_at": "2026-09-09T18:25:55.103639+00:00",
+  "telemetry": {
+    "call_index": 1,
+    "prompt_sha256": "5e7c9e3947ade0c88cd06e6297c4ead53ecc5d5741e2d86193f1e7b001ced081",
+    "attempts": 1,
+    "latency_seconds": 5.016,
+    "input_chars": 1146,
+    "output_chars": 0,
+    "input_tokens": 287,
+    "output_tokens": 0,
+    "total_tokens": 287,
+    "usage_source": "character_estimate",
+    "success": false,
+    "error": "RuntimeError"
+  }
+}

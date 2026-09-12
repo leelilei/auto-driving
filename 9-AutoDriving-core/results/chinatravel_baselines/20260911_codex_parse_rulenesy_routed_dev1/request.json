@@ -1,0 +1,177 @@
+{
+  "uid": "e20241028160248698752",
+  "call": 1,
+  "wire_payload": {
+    "model": "claude-haiku-4-5-20251001",
+    "system": "Extract explicit travel requirements from the complete original query. Call parse_intent once. Do not plan an itinerary. Never invent requirements or silently drop unsupported clauses.",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"task\":{\"uid\":\"e20241028160248698752\",\"nature_language\":\"当前位置上海。我一个人想去杭州玩一天，预算1500人民币，请给我一个旅行规划。\"},\"instruction\":\"请完整读取原句。只提取起点城市、目标城市、天数、人数、总预算，调用 parse_intent。城市用中文。每个字段提供原句中的依据片段；缺失或不明确的字段为 null，依据用空串。五个字段以外的具体要求，或存在歧义的要求，逐条保留在 unsupported_requirements，不能自行忽略。\"}"
+      }
+    ],
+    "temperature": 0.0,
+    "max_tokens": 4096,
+    "tools": [
+      {
+        "name": "parse_intent",
+        "description": "Extract supported fields and quote their source evidence; flag all unsupported requirements.",
+        "input_schema": {
+          "type": "object",
+          "properties": {
+            "start_city": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "enum": [
+                "北京",
+                "上海",
+                "南京",
+                "苏州",
+                "杭州",
+                "深圳",
+                "成都",
+                "武汉",
+                "广州",
+                "重庆",
+                null
+              ]
+            },
+            "target_city": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "enum": [
+                "北京",
+                "上海",
+                "南京",
+                "苏州",
+                "杭州",
+                "深圳",
+                "成都",
+                "武汉",
+                "广州",
+                "重庆",
+                null
+              ]
+            },
+            "days": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 1
+            },
+            "people_number": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 1
+            },
+            "budget": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "evidence": {
+              "type": "object",
+              "properties": {
+                "start_city": {
+                  "type": "string"
+                },
+                "target_city": {
+                  "type": "string"
+                },
+                "days": {
+                  "type": "string"
+                },
+                "people_number": {
+                  "type": "string"
+                },
+                "budget": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "start_city",
+                "target_city",
+                "days",
+                "people_number",
+                "budget"
+              ],
+              "additionalProperties": false
+            },
+            "unsupported_requirements": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "start_city",
+            "target_city",
+            "days",
+            "people_number",
+            "budget",
+            "evidence",
+            "unsupported_requirements"
+          ],
+          "additionalProperties": false
+        }
+      }
+    ],
+    "tool_choice": {
+      "type": "tool",
+      "name": "parse_intent",
+      "disable_parallel_tool_use": true
+    }
+  },
+  "charged_chars": 1590,
+  "input_chars": 450,
+  "timeout_seconds": 60,
+  "provider_response": {
+    "content": [
+      {
+        "id": "toolu_YszjH87qcSQArAsGOBAAwN",
+        "input": {
+          "budget": 1500,
+          "days": 1,
+          "evidence": {
+            "budget": "预算1500人民币",
+            "days": "玩一天",
+            "people_number": "我一个人",
+            "start_city": "当前位置上海",
+            "target_city": "想去杭州"
+          },
+          "people_number": 1,
+          "start_city": "上海",
+          "target_city": "杭州",
+          "unsupported_requirements": [
+            "请给我一个旅行规划（具体行程规划）"
+          ]
+        },
+        "name": "parse_intent",
+        "type": "tool_use"
+      }
+    ],
+    "id": "msg_zbMDXjb4pW6ZWaVGy1G2Yphh",
+    "model": "claude-haiku-4-5-20251001",
+    "role": "assistant",
+    "stop_reason": "tool_use",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation_input_tokens": 304,
+      "cache_read_input_tokens": 74,
+      "input_tokens": 179,
+      "output_tokens": 113
+    }
+  },
+  "request_seconds": 3.0559244999894872
+}

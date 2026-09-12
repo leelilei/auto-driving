@@ -1,0 +1,48 @@
+{
+  "call_id": "pilot_08_v0::A3",
+  "role": "A3",
+  "graph_condition": null,
+  "started_at": "2026-09-10T01:52:37.949877+00:00",
+  "request": {
+    "system": "You extract route-planning intent from the user's instruction.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nUse only the instruction. Do not invent constraints. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Today, let's visit the library, the shopping mall, and the supermarket. I would like to keep a good balance between visiting well-rated places and having an efficient route. Make sure to stop by the shopping mall before heading to the supermarket."
+  },
+  "raw_response": "{\"pois\":[\"library\",\"shopping mall\",\"supermarket\"],\"time_limit\":null,\"dependencies\":[[\"shopping mall\",\"supermarket\"]],\"quality_weight\":0.5,\"evidence\":{\"pois\":\"visit the library, the shopping mall, and the supermarket\",\"dependencies\":\"stop by the shopping mall before heading to the supermarket\",\"quality_weight\":\"a good balance between visiting well-rated places and having an efficient route\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "library",
+      "shopping_mall",
+      "supermarket"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "shopping_mall",
+        "supermarket"
+      ]
+    ],
+    "quality_weight": 0.5
+  },
+  "evidence": {
+    "pois": "visit the library, the shopping mall, and the supermarket",
+    "dependencies": "stop by the shopping mall before heading to the supermarket",
+    "quality_weight": "a good balance between visiting well-rated places and having an efficient route"
+  },
+  "changes": [],
+  "finished_at": "2026-09-10T01:52:48.378718+00:00",
+  "telemetry": {
+    "call_index": 4,
+    "prompt_sha256": "db74f9c854a52b44c5506c9ebeab9cd640bbd9e3ec665ab7df9c63b62e350414",
+    "attempts": 1,
+    "latency_seconds": 10.428,
+    "input_chars": 902,
+    "output_chars": 394,
+    "input_tokens": 332,
+    "output_tokens": 165,
+    "total_tokens": 497,
+    "usage_source": "provider",
+    "success": true
+  }
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "path": "itinerary/0/activities/5/room_type",
+    "before": "2",
+    "after": 2,
+    "rule": "accommodation room_type numeric-string to integer"
+  },
+  {
+    "path": "itinerary/1/activities/8/room_type",
+    "before": "2",
+    "after": 2,
+    "rule": "accommodation room_type numeric-string to integer"
+  },
+  {
+    "path": "itinerary/2/activities/4/room_type",
+    "before": "2",
+    "after": 2,
+    "rule": "accommodation room_type numeric-string to integer"
+  },
+  {
+    "path": "itinerary/3/activities/1/room_type",
+    "before": "2",
+    "after": 2,
+    "rule": "accommodation room_type numeric-string to integer"
+  }
+]

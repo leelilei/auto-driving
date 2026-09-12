@@ -1,0 +1,12 @@
+{
+  "start_city": "北京",
+  "target_city": "重庆",
+  "days": 5,
+  "people_number": 2,
+  "budget": null,
+  "room_count": null,
+  "room_type": null,
+  "cuisine": null,
+  "intercity_mode": null,
+  "attraction_category": null
+}

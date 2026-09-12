@@ -1,0 +1,15 @@
+{
+  "nature_language": "当前位置深圳。我打算去广州玩两天，预算1000元，想吃火锅，开一间单床房。请给我一个旅行规划。",
+  "parsed_intent": {
+    "start_city": "深圳",
+    "target_city": "广州",
+    "days": 2,
+    "people_number": null,
+    "budget": 1000,
+    "room_count": 1,
+    "room_type": 1,
+    "cuisine": "火锅",
+    "intercity_mode": null,
+    "attraction_category": null
+  }
+}

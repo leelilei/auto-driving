@@ -1,0 +1,191 @@
+{
+  "protocol_version": "darc-v5.1-concurrency-probe-1",
+  "model": "claude-haiku-4-5-20251001",
+  "config": {
+    "provider": "xcode",
+    "model": "claude-haiku-4-5-20251001",
+    "wire_api": "anthropic_messages",
+    "base_url": "https://xcode.best",
+    "temperature": 0.0,
+    "timeout": 120,
+    "json_mode": true,
+    "retries": 0,
+    "retry_sleep": 1.0,
+    "sleep": 0.0,
+    "max_concurrency": 1,
+    "omit_temperature": false,
+    "reasoning_effort": null,
+    "max_output_tokens": 100,
+    "stream": false,
+    "service_tier": null,
+    "store": null,
+    "responses_input_mode": "messages",
+    "input_char_limit": null,
+    "transport": "urllib",
+    "api_key_env": "XCODE_API_KEY"
+  },
+  "started_at": "2026-09-10T14:55:30.974216+00:00",
+  "levels": [
+    {
+      "concurrency": 1,
+      "planned": 1,
+      "passed": 1,
+      "failed": 0,
+      "wall_seconds": 6.788095749972854,
+      "attempts": [
+        {
+          "index": 0,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":1,\"index\":0}",
+          "latency_seconds": 6.787087250035256,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "044f13568492d7fef4c861ff7156ea28636283042f1d3a86de869d635a5dee9e",
+            "attempts": 1,
+            "latency_seconds": 6.787,
+            "input_chars": 118,
+            "output_chars": 31,
+            "input_tokens": 19,
+            "output_tokens": 14,
+            "total_tokens": 33,
+            "usage_source": "provider",
+            "success": true
+          }
+        }
+      ]
+    },
+    {
+      "concurrency": 2,
+      "planned": 2,
+      "passed": 2,
+      "failed": 0,
+      "wall_seconds": 4.23826941603329,
+      "attempts": [
+        {
+          "index": 0,
+          "status": "PASS",
+          "raw_response": "```json\n{\"ok\":true,\"level\":2,\"index\":0}\n```",
+          "latency_seconds": 3.9584983329987153,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "e1b601c48800d5330e06e8d2b3e94fe71973b882457a728775092bbe18d2cdca",
+            "attempts": 1,
+            "latency_seconds": 3.957,
+            "input_chars": 118,
+            "output_chars": 43,
+            "input_tokens": 19,
+            "output_tokens": 19,
+            "total_tokens": 38,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 1,
+          "status": "PASS",
+          "raw_response": "```json\n{\"ok\":true,\"level\":2,\"index\":1}\n```",
+          "latency_seconds": 4.2359860420110635,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "47624c56a2281ecab3f061e9fcfc06ac57d1e03819488b70cdaa22fd6313cf38",
+            "attempts": 1,
+            "latency_seconds": 4.236,
+            "input_chars": 118,
+            "output_chars": 43,
+            "input_tokens": 19,
+            "output_tokens": 19,
+            "total_tokens": 38,
+            "usage_source": "provider",
+            "success": true
+          }
+        }
+      ]
+    },
+    {
+      "concurrency": 4,
+      "planned": 4,
+      "passed": 4,
+      "failed": 0,
+      "wall_seconds": 3.669041290995665,
+      "attempts": [
+        {
+          "index": 0,
+          "status": "PASS",
+          "raw_response": "```json\n{\"ok\":true,\"level\":4,\"index\":0}\n```",
+          "latency_seconds": 2.6274482499575242,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "a61ab48c943a1bcf9102d626e548b457d1708e12a66e74dfcacab7e4012be0d4",
+            "attempts": 1,
+            "latency_seconds": 2.627,
+            "input_chars": 118,
+            "output_chars": 43,
+            "input_tokens": 19,
+            "output_tokens": 19,
+            "total_tokens": 38,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 1,
+          "status": "PASS",
+          "raw_response": "```json\n{\"ok\":true,\"level\":4,\"index\":1}\n```",
+          "latency_seconds": 3.667984041967429,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "ba1c29f9c7d6034ae4f2968971511556090e4853fff1282d5e03a8ae144d32d5",
+            "attempts": 1,
+            "latency_seconds": 3.668,
+            "input_chars": 118,
+            "output_chars": 43,
+            "input_tokens": 19,
+            "output_tokens": 19,
+            "total_tokens": 38,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 2,
+          "status": "PASS",
+          "raw_response": "```json\n{\"ok\":true,\"level\":4,\"index\":2}\n```",
+          "latency_seconds": 3.624798250035383,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "8b46aacab27b74af11b5e5d6d71535eeb77891290d0550e6a17bb0ffbb499bfc",
+            "attempts": 1,
+            "latency_seconds": 3.625,
+            "input_chars": 118,
+            "output_chars": 43,
+            "input_tokens": 19,
+            "output_tokens": 19,
+            "total_tokens": 38,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 3,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":4,\"index\":3}",
+          "latency_seconds": 3.086667917028535,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "b69eda8453792a2c385d65e969627465d307c568c2bbab5db4b5d73d6bbcb297",
+            "attempts": 1,
+            "latency_seconds": 3.087,
+            "input_chars": 118,
+            "output_chars": 31,
+            "input_tokens": 19,
+            "output_tokens": 14,
+            "total_tokens": 33,
+            "usage_source": "provider",
+            "success": true
+          }
+        }
+      ]
+    }
+  ],
+  "finished_at": "2026-09-10T14:55:45.670080+00:00"
+}

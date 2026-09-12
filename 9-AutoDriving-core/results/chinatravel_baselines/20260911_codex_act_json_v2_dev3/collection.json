@@ -1,0 +1,22 @@
+{
+  "cases": {
+    "e20241028160248698752": {
+      "status": "two_consecutive_protocol_errors",
+      "calls": 2,
+      "query_calls": 2,
+      "chars": 6142,
+      "query_chars": 6142,
+      "query_stop": null,
+      "elapsed_seconds": 7.853918667009566,
+      "schema_valid": false
+    },
+    "e20241028160842228543": {
+      "status": "not_executed",
+      "calls": 0
+    },
+    "h20241029143447759844": {
+      "status": "not_executed",
+      "calls": 0
+    }
+  }
+}

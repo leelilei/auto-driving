@@ -1,0 +1,15 @@
+Read the user's route-planning instruction field by field before producing the final JSON.
+
+Check: requested POI categories, return deadline, explicit visit order, and the direction of the quality-versus-distance preference. Each conclusion must be supported by the instruction itself.
+
+Return one JSON object only, with exactly these keys:
+- pois: array of requested POI category strings
+- time_limit: return deadline as minutes after midnight, or null
+- dependencies: array of [before, after] category pairs
+- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance
+- evidence: object mapping each nonempty field to a short verbatim span from the instruction
+
+Do not infer a preference from any route or map. If no preference is stated, use 0.5.
+
+Instruction:
+{{instruction}}

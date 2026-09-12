@@ -1,0 +1,810 @@
+{
+  "people_number": 2,
+  "start_city": "杭州",
+  "target_city": "北京",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "start_time": "01:32",
+          "end_time": "02:56",
+          "start": "杭州萧山国际机场",
+          "end": "北京首都国际机场",
+          "price": 593.81,
+          "cost": 1187.62,
+          "tickets": 2,
+          "transports": [],
+          "FlightID": "FL493",
+          "type": "airplane"
+        },
+        {
+          "position": "御花园",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "08:30",
+          "end_time": "10:00",
+          "transports": [
+            {
+              "start": "北京首都国际机场",
+              "end": "2号航站楼-地铁站",
+              "mode": "walk",
+              "start_time": "02:56",
+              "end_time": "03:06",
+              "cost": 0,
+              "distance": 0.88,
+              "price": 0
+            },
+            {
+              "start": "2号航站楼-地铁站",
+              "end": "南锣鼓巷-地铁站",
+              "mode": "metro",
+              "start_time": "03:06",
+              "end_time": "03:51",
+              "cost": 12,
+              "distance": 22.81,
+              "price": 6,
+              "tickets": 2
+            },
+            {
+              "start": "南锣鼓巷-地铁站",
+              "end": "御花园",
+              "mode": "walk",
+              "start_time": "03:51",
+              "end_time": "03:59",
+              "cost": 0,
+              "distance": 0.7,
+              "price": 0
+            }
+          ],
+          "tickets": 2
+        },
+        {
+          "position": "北京城市图书馆",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "11:21",
+          "end_time": "12:51",
+          "transports": [
+            {
+              "start": "御花园",
+              "end": "南锣鼓巷-地铁站",
+              "mode": "walk",
+              "start_time": "10:00",
+              "end_time": "10:08",
+              "cost": 0,
+              "distance": 0.7,
+              "price": 0
+            },
+            {
+              "start": "南锣鼓巷-地铁站",
+              "end": "郝家府-地铁站",
+              "mode": "metro",
+              "start_time": "10:08",
+              "end_time": "11:02",
+              "cost": 12,
+              "distance": 27.03,
+              "price": 6,
+              "tickets": 2
+            },
+            {
+              "start": "郝家府-地铁站",
+              "end": "北京城市图书馆",
+              "mode": "walk",
+              "start_time": "11:02",
+              "end_time": "11:21",
+              "cost": 0,
+              "distance": 1.6,
+              "price": 0
+            }
+          ],
+          "tickets": 2
+        },
+        {
+          "position": "国家植物园南园",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "14:42",
+          "end_time": "16:12",
+          "transports": [
+            {
+              "start": "北京城市图书馆",
+              "end": "郝家府-地铁站",
+              "mode": "walk",
+              "start_time": "12:51",
+              "end_time": "13:10",
+              "cost": 0,
+              "distance": 1.6,
+              "price": 0
+            },
+            {
+              "start": "郝家府-地铁站",
+              "end": "国家植物园-地铁站",
+              "mode": "metro",
+              "start_time": "13:10",
+              "end_time": "14:38",
+              "cost": 16,
+              "distance": 44.07,
+              "price": 8,
+              "tickets": 2
+            },
+            {
+              "start": "国家植物园-地铁站",
+              "end": "国家植物园南园",
+              "mode": "walk",
+              "start_time": "14:38",
+              "end_time": "14:42",
+              "cost": 0,
+              "distance": 0.41,
+              "price": 0
+            }
+          ],
+          "tickets": 2
+        },
+        {
+          "position": "北京大学",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "16:39",
+          "end_time": "18:09",
+          "transports": [
+            {
+              "start": "国家植物园南园",
+              "end": "国家植物园-地铁站",
+              "mode": "walk",
+              "start_time": "16:12",
+              "end_time": "16:16",
+              "cost": 0,
+              "distance": 0.41,
+              "price": 0
+            },
+            {
+              "start": "国家植物园-地铁站",
+              "end": "圆明园-地铁站",
+              "mode": "metro",
+              "start_time": "16:16",
+              "end_time": "16:32",
+              "cost": 6,
+              "distance": 8.1,
+              "price": 3,
+              "tickets": 2
+            },
+            {
+              "start": "圆明园-地铁站",
+              "end": "北京大学",
+              "mode": "walk",
+              "start_time": "16:32",
+              "end_time": "16:39",
+              "cost": 0,
+              "distance": 0.6,
+              "price": 0
+            }
+          ],
+          "tickets": 2
+        },
+        {
+          "position": "Berry Beans(前门店)",
+          "type": "dinner",
+          "price": 66,
+          "cost": 132,
+          "start_time": "18:51",
+          "end_time": "19:00",
+          "transports": [
+            {
+              "start": "北京大学",
+              "end": "圆明园-地铁站",
+              "mode": "walk",
+              "start_time": "18:09",
+              "end_time": "18:16",
+              "cost": 0,
+              "distance": 0.6,
+              "price": 0
+            },
+            {
+              "start": "圆明园-地铁站",
+              "end": "珠市口-地铁站",
+              "mode": "metro",
+              "start_time": "18:16",
+              "end_time": "18:44",
+              "cost": 10,
+              "distance": 14.19,
+              "price": 5,
+              "tickets": 2
+            },
+            {
+              "start": "珠市口-地铁站",
+              "end": "Berry Beans(前门店)",
+              "mode": "walk",
+              "start_time": "18:44",
+              "end_time": "18:51",
+              "cost": 0,
+              "distance": 0.62,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "中粮祥云小镇",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "20:18",
+          "end_time": "21:00",
+          "transports": [
+            {
+              "start": "Berry Beans(前门店)",
+              "end": "珠市口-地铁站",
+              "mode": "walk",
+              "start_time": "19:00",
+              "end_time": "19:07",
+              "cost": 0,
+              "distance": 0.62,
+              "price": 0
+            },
+            {
+              "start": "珠市口-地铁站",
+              "end": "花梨坎-地铁站",
+              "mode": "metro",
+              "start_time": "19:07",
+              "end_time": "19:57",
+              "cost": 12,
+              "distance": 25.39,
+              "price": 6,
+              "tickets": 2
+            },
+            {
+              "start": "花梨坎-地铁站",
+              "end": "中粮祥云小镇",
+              "mode": "walk",
+              "start_time": "19:57",
+              "end_time": "20:18",
+              "cost": 0,
+              "distance": 1.77,
+              "price": 0
+            }
+          ],
+          "tickets": 2
+        },
+        {
+          "position": "北京蓝湾国际酒店(首都机场新国展店)",
+          "type": "accommodation",
+          "price": 269,
+          "cost": 269,
+          "start_time": "21:43",
+          "end_time": "24:00",
+          "transports": [
+            {
+              "start": "中粮祥云小镇",
+              "end": "花梨坎-地铁站",
+              "mode": "walk",
+              "start_time": "21:00",
+              "end_time": "21:21",
+              "cost": 0,
+              "distance": 1.77,
+              "price": 0
+            },
+            {
+              "start": "花梨坎-地铁站",
+              "end": "国展-地铁站",
+              "mode": "metro",
+              "start_time": "21:21",
+              "end_time": "21:24",
+              "cost": 4,
+              "distance": 1.61,
+              "price": 2,
+              "tickets": 2
+            },
+            {
+              "start": "国展-地铁站",
+              "end": "北京蓝湾国际酒店(首都机场新国展店)",
+              "mode": "walk",
+              "start_time": "21:24",
+              "end_time": "21:43",
+              "cost": 0,
+              "distance": 1.65,
+              "price": 0
+            }
+          ],
+          "room_type": 2,
+          "rooms": 1
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "activities": [
+        {
+          "position": "北京蓝湾国际酒店(首都机场新国展店)",
+          "type": "breakfast",
+          "price": 0,
+          "cost": 0,
+          "start_time": "08:00",
+          "end_time": "08:30",
+          "transports": []
+        },
+        {
+          "position": "南宫旅游度假区",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "11:15",
+          "end_time": "12:45",
+          "transports": [
+            {
+              "start": "北京蓝湾国际酒店(首都机场新国展店)",
+              "end": "国展-地铁站",
+              "mode": "walk",
+              "start_time": "08:30",
+              "end_time": "08:49",
+              "cost": 0,
+              "distance": 1.65,
+              "price": 0
+            },
+            {
+              "start": "国展-地铁站",
+              "end": "稻田-地铁站",
+              "mode": "metro",
+              "start_time": "08:49",
+              "end_time": "10:12",
+              "cost": 16,
+              "distance": 41.95,
+              "price": 8,
+              "tickets": 2
+            },
+            {
+              "start": "稻田-地铁站",
+              "end": "南宫旅游度假区",
+              "mode": "walk",
+              "start_time": "10:12",
+              "end_time": "11:15",
+              "cost": 0,
+              "distance": 5.32,
+              "price": 0
+            }
+          ],
+          "tickets": 2
+        },
+        {
+          "position": "北京市通州区博物馆",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "15:22",
+          "end_time": "16:52",
+          "transports": [
+            {
+              "start": "南宫旅游度假区",
+              "end": "稻田-地铁站",
+              "mode": "walk",
+              "start_time": "12:45",
+              "end_time": "13:48",
+              "cost": 0,
+              "distance": 5.32,
+              "price": 0
+            },
+            {
+              "start": "稻田-地铁站",
+              "end": "通州北关-地铁站",
+              "mode": "metro",
+              "start_time": "13:48",
+              "end_time": "15:08",
+              "cost": 16,
+              "distance": 40.24,
+              "price": 8,
+              "tickets": 2
+            },
+            {
+              "start": "通州北关-地铁站",
+              "end": "北京市通州区博物馆",
+              "mode": "walk",
+              "start_time": "15:08",
+              "end_time": "15:22",
+              "cost": 0,
+              "distance": 1.17,
+              "price": 0
+            }
+          ],
+          "tickets": 2
+        },
+        {
+          "position": "姚记炒肝店(鼓楼店)",
+          "type": "dinner",
+          "price": 33,
+          "cost": 66,
+          "start_time": "17:55",
+          "end_time": "18:55",
+          "transports": [
+            {
+              "start": "北京市通州区博物馆",
+              "end": "通州北关-地铁站",
+              "mode": "walk",
+              "start_time": "16:52",
+              "end_time": "17:06",
+              "cost": 0,
+              "distance": 1.17,
+              "price": 0
+            },
+            {
+              "start": "通州北关-地铁站",
+              "end": "什刹海-地铁站",
+              "mode": "metro",
+              "start_time": "17:06",
+              "end_time": "17:51",
+              "cost": 12,
+              "distance": 22.75,
+              "price": 6,
+              "tickets": 2
+            },
+            {
+              "start": "什刹海-地铁站",
+              "end": "姚记炒肝店(鼓楼店)",
+              "mode": "walk",
+              "start_time": "17:51",
+              "end_time": "17:55",
+              "cost": 0,
+              "distance": 0.37,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "北京温榆河公园",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "20:02",
+          "end_time": "21:00",
+          "transports": [
+            {
+              "start": "姚记炒肝店(鼓楼店)",
+              "end": "什刹海-地铁站",
+              "mode": "walk",
+              "start_time": "18:55",
+              "end_time": "18:59",
+              "cost": 0,
+              "distance": 0.37,
+              "price": 0
+            },
+            {
+              "start": "什刹海-地铁站",
+              "end": "天通苑东-地铁站",
+              "mode": "metro",
+              "start_time": "18:59",
+              "end_time": "19:29",
+              "cost": 10,
+              "distance": 15.1,
+              "price": 5,
+              "tickets": 2
+            },
+            {
+              "start": "天通苑东-地铁站",
+              "end": "北京温榆河公园",
+              "mode": "walk",
+              "start_time": "19:29",
+              "end_time": "20:02",
+              "cost": 0,
+              "distance": 2.82,
+              "price": 0
+            }
+          ],
+          "tickets": 2
+        },
+        {
+          "position": "北京蓝湾国际酒店(首都机场新国展店)",
+          "type": "accommodation",
+          "price": 269,
+          "cost": 269,
+          "start_time": "22:11",
+          "end_time": "24:00",
+          "transports": [
+            {
+              "start": "北京温榆河公园",
+              "end": "天通苑东-地铁站",
+              "mode": "walk",
+              "start_time": "21:00",
+              "end_time": "21:33",
+              "cost": 0,
+              "distance": 2.82,
+              "price": 0
+            },
+            {
+              "start": "天通苑东-地铁站",
+              "end": "国展-地铁站",
+              "mode": "metro",
+              "start_time": "21:33",
+              "end_time": "21:52",
+              "cost": 8,
+              "distance": 9.62,
+              "price": 4,
+              "tickets": 2
+            },
+            {
+              "start": "国展-地铁站",
+              "end": "北京蓝湾国际酒店(首都机场新国展店)",
+              "mode": "walk",
+              "start_time": "21:52",
+              "end_time": "22:11",
+              "cost": 0,
+              "distance": 1.65,
+              "price": 0
+            }
+          ],
+          "room_type": 2,
+          "rooms": 1
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "activities": [
+        {
+          "position": "北京蓝湾国际酒店(首都机场新国展店)",
+          "type": "breakfast",
+          "price": 0,
+          "cost": 0,
+          "start_time": "08:00",
+          "end_time": "08:30",
+          "transports": []
+        },
+        {
+          "position": "中国海关博物馆",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "09:37",
+          "end_time": "11:07",
+          "transports": [
+            {
+              "start": "北京蓝湾国际酒店(首都机场新国展店)",
+              "end": "国展-地铁站",
+              "mode": "walk",
+              "start_time": "08:30",
+              "end_time": "08:49",
+              "cost": 0,
+              "distance": 1.65,
+              "price": 0
+            },
+            {
+              "start": "国展-地铁站",
+              "end": "建国门-地铁站",
+              "mode": "metro",
+              "start_time": "08:49",
+              "end_time": "09:30",
+              "cost": 10,
+              "distance": 20.63,
+              "price": 5,
+              "tickets": 2
+            },
+            {
+              "start": "建国门-地铁站",
+              "end": "中国海关博物馆",
+              "mode": "walk",
+              "start_time": "09:30",
+              "end_time": "09:37",
+              "cost": 0,
+              "distance": 0.59,
+              "price": 0
+            }
+          ],
+          "tickets": 2
+        },
+        {
+          "position": "金阁Qi",
+          "type": "lunch",
+          "price": 525,
+          "cost": 1050,
+          "start_time": "11:33",
+          "end_time": "12:33",
+          "transports": [
+            {
+              "start": "中国海关博物馆",
+              "end": "建国门-地铁站",
+              "mode": "walk",
+              "start_time": "11:07",
+              "end_time": "11:14",
+              "cost": 0,
+              "distance": 0.59,
+              "price": 0
+            },
+            {
+              "start": "建国门-地铁站",
+              "end": "太平桥-地铁站",
+              "mode": "metro",
+              "start_time": "11:14",
+              "end_time": "11:26",
+              "cost": 6,
+              "distance": 6.21,
+              "price": 3,
+              "tickets": 2
+            },
+            {
+              "start": "太平桥-地铁站",
+              "end": "金阁Qi",
+              "mode": "walk",
+              "start_time": "11:26",
+              "end_time": "11:33",
+              "cost": 0,
+              "distance": 0.61,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "望京SOHO",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "13:10",
+          "end_time": "14:40",
+          "transports": [
+            {
+              "start": "金阁Qi",
+              "end": "太平桥-地铁站",
+              "mode": "walk",
+              "start_time": "12:33",
+              "end_time": "12:40",
+              "cost": 0,
+              "distance": 0.61,
+              "price": 0
+            },
+            {
+              "start": "太平桥-地铁站",
+              "end": "望京东-地铁站",
+              "mode": "metro",
+              "start_time": "12:40",
+              "end_time": "13:09",
+              "cost": 10,
+              "distance": 14.82,
+              "price": 5,
+              "tickets": 2
+            },
+            {
+              "start": "望京东-地铁站",
+              "end": "望京SOHO",
+              "mode": "walk",
+              "start_time": "13:09",
+              "end_time": "13:10",
+              "cost": 0,
+              "distance": 0.11,
+              "price": 0
+            }
+          ],
+          "tickets": 2
+        },
+        {
+          "position": "元大都城垣遗址公园",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "15:01",
+          "end_time": "16:31",
+          "transports": [
+            {
+              "start": "望京SOHO",
+              "end": "望京东-地铁站",
+              "mode": "walk",
+              "start_time": "14:40",
+              "end_time": "14:41",
+              "cost": 0,
+              "distance": 0.11,
+              "price": 0
+            },
+            {
+              "start": "望京东-地铁站",
+              "end": "惠新西街南口-地铁站",
+              "mode": "metro",
+              "start_time": "14:41",
+              "end_time": "14:54",
+              "cost": 6,
+              "distance": 6.61,
+              "price": 3,
+              "tickets": 2
+            },
+            {
+              "start": "惠新西街南口-地铁站",
+              "end": "元大都城垣遗址公园",
+              "mode": "walk",
+              "start_time": "14:54",
+              "end_time": "15:01",
+              "cost": 0,
+              "distance": 0.6,
+              "price": 0
+            }
+          ],
+          "tickets": 2
+        },
+        {
+          "position": "满满海佛跳墙(亚运村店)",
+          "type": "dinner",
+          "price": 500,
+          "cost": 1000,
+          "start_time": "17:00",
+          "end_time": "18:00",
+          "transports": [
+            {
+              "start": "元大都城垣遗址公园",
+              "end": "惠新西街南口-地铁站",
+              "mode": "walk",
+              "start_time": "16:31",
+              "end_time": "16:38",
+              "cost": 0,
+              "distance": 0.6,
+              "price": 0
+            },
+            {
+              "start": "惠新西街南口-地铁站",
+              "end": "关庄-地铁站",
+              "mode": "metro",
+              "start_time": "16:38",
+              "end_time": "16:43",
+              "cost": 4,
+              "distance": 2.9,
+              "price": 2,
+              "tickets": 2
+            },
+            {
+              "start": "关庄-地铁站",
+              "end": "满满海佛跳墙(亚运村店)",
+              "mode": "walk",
+              "start_time": "16:43",
+              "end_time": "16:52",
+              "cost": 0,
+              "distance": 0.81,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "start_time": "22:21",
+          "end_time": "23:45",
+          "start": "北京首都国际机场",
+          "end": "杭州萧山国际机场",
+          "price": 518.45,
+          "cost": 1036.9,
+          "tickets": 2,
+          "transports": [
+            {
+              "start": "满满海佛跳墙(亚运村店)",
+              "end": "关庄-地铁站",
+              "mode": "walk",
+              "start_time": "18:00",
+              "end_time": "18:09",
+              "cost": 0,
+              "distance": 0.81,
+              "price": 0
+            },
+            {
+              "start": "关庄-地铁站",
+              "end": "2号航站楼-地铁站",
+              "mode": "metro",
+              "start_time": "18:09",
+              "end_time": "18:41",
+              "cost": 10,
+              "distance": 16.31,
+              "price": 5,
+              "tickets": 2
+            },
+            {
+              "start": "2号航站楼-地铁站",
+              "end": "北京首都国际机场",
+              "mode": "walk",
+              "start_time": "18:41",
+              "end_time": "18:51",
+              "cost": 0,
+              "distance": 0.88,
+              "price": 0
+            }
+          ],
+          "FlightID": "FL131",
+          "type": "airplane"
+        }
+      ]
+    }
+  ],
+  "search_time_sec": 7.391558885574341,
+  "llm_inference_time_sec": 0
+}

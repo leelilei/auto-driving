@@ -1,0 +1,45 @@
+test_actual_tool_executor (test_chinatravel_pipeline.BoundaryTests.test_actual_tool_executor) ... ok
+test_bridge_and_budget (test_chinatravel_pipeline.BoundaryTests.test_bridge_and_budget) ... ok
+test_input_whitelist (test_chinatravel_pipeline.BoundaryTests.test_input_whitelist) ... ok
+test_invalid_response_stops (test_chinatravel_pipeline.BoundaryTests.test_invalid_response_stops) ... ok
+test_missing_text_fails (test_chinatravel_pipeline.BoundaryTests.test_missing_text_fails) ... ok
+test_official_schema_rejects_old_arrays (test_chinatravel_pipeline.BoundaryTests.test_official_schema_rejects_old_arrays) ... ok
+test_empty_fails (test_chinatravel_pipeline.OfficialScoringTests.test_empty_fails) ... ok
+test_hard_constraint_failure (test_chinatravel_pipeline.OfficialScoringTests.test_hard_constraint_failure) ... ok
+test_invalid_entity (test_chinatravel_pipeline.OfficialScoringTests.test_invalid_entity) ... ok
+test_known_valid_fixture (test_chinatravel_pipeline.OfficialScoringTests.test_known_valid_fixture) ... ok
+test_missing_prediction_stays_in_denominator (test_chinatravel_pipeline.OfficialScoringTests.test_missing_prediction_stays_in_denominator) ... ok
+test_time_conflict (test_chinatravel_pipeline.OfficialScoringTests.test_time_conflict) ... ok
+test_unexpected_id_rejected (test_chinatravel_pipeline.OfficialScoringTests.test_unexpected_id_rejected) ... ok
+test_consecutive_failures_hard_stop (test_chinatravel_pipeline_v2.CollectionTests.test_consecutive_failures_hard_stop) ... ok
+test_deterministic_fact_retention (test_chinatravel_pipeline_v2.CollectionTests.test_deterministic_fact_retention) ... ok
+test_eight_queries_then_final (test_chinatravel_pipeline_v2.CollectionTests.test_eight_queries_then_final) ... ok
+test_failed_transport_is_counted_and_persisted (test_chinatravel_pipeline_v2.CollectionTests.test_failed_transport_is_counted_and_persisted) ... ok
+test_final_raw_json_not_repaired (test_chinatravel_pipeline_v2.CollectionTests.test_final_raw_json_not_repaired) ... ok
+test_gold_sentinel_at_actual_request_and_feedback_boundary (test_chinatravel_pipeline_v2.CollectionTests.test_gold_sentinel_at_actual_request_and_feedback_boundary) ... ok
+test_physical_deadline_enforced (test_chinatravel_pipeline_v2.CollectionTests.test_physical_deadline_enforced) ... ok
+test_query_reservation_and_hard_limits (test_chinatravel_pipeline_v2.CollectionTests.test_query_reservation_and_hard_limits) ... ok
+test_serialized_http_request_gold_isolation (test_chinatravel_pipeline_v2.CollectionTests.test_serialized_http_request_gold_isolation) ... ok
+test_argument_errors_and_dangerous_expressions (test_chinatravel_pipeline_v2.ProtocolTests.test_argument_errors_and_dangerous_expressions) ... ok
+test_filter_and_no_match (test_chinatravel_pipeline_v2.ProtocolTests.test_filter_and_no_match) ... ok
+test_fixed_fence_conversion (test_chinatravel_pipeline_v2.ProtocolTests.test_fixed_fence_conversion) ... ok
+test_invalid_json_multiple_actions_and_duplicate_keys (test_chinatravel_pipeline_v2.ProtocolTests.test_invalid_json_multiple_actions_and_duplicate_keys) ... ok
+test_real_tool_and_pagination (test_chinatravel_pipeline_v2.ProtocolTests.test_real_tool_and_pagination) ... ok
+test_unknown_entity_distinct_from_internal_error (test_chinatravel_pipeline_v2.ProtocolTests.test_unknown_entity_distinct_from_internal_error) ... ok
+test_deleted_prediction_and_emptied_hash_map_detected (test_chinatravel_pipeline_v2.ReplayTests.test_deleted_prediction_and_emptied_hash_map_detected) ... ok
+test_evaluator_source_substitution_detected (test_chinatravel_pipeline_v2.ReplayTests.test_evaluator_source_substitution_detected) ... ok
+test_modified_response_and_missing_trace_detected (test_chinatravel_pipeline_v2.ReplayTests.test_modified_response_and_missing_trace_detected) ... ok
+test_repeated_offline_replay_and_complete_ids (test_chinatravel_pipeline_v2.ReplayTests.test_repeated_offline_replay_and_complete_ids) ... ok
+test_request_deletion_even_if_hash_entry_removed (test_chinatravel_pipeline_v2.ReplayTests.test_request_deletion_even_if_hash_entry_removed) ... ok
+test_failed_request_and_query_reservation (test_chinatravel_pipeline_v3.NativeTests.test_failed_request_and_query_reservation) ... ok
+test_frozen_archive_replay_and_response_tamper (test_chinatravel_pipeline_v3.NativeTests.test_frozen_archive_replay_and_response_tamper) ... ok
+test_multiple_wrong_or_truncated_native_tools_rejected (test_chinatravel_pipeline_v3.NativeTests.test_multiple_wrong_or_truncated_native_tools_rejected) ... ok
+test_native_action_and_final_official_schema (test_chinatravel_pipeline_v3.NativeTests.test_native_action_and_final_official_schema) ... ok
+test_native_text_is_separate_not_parsed_or_executed (test_chinatravel_pipeline_v3.NativeTests.test_native_text_is_separate_not_parsed_or_executed) ... ok
+test_v2_real_failures_cannot_be_executed_as_native_calls (test_chinatravel_pipeline_v3.NativeTests.test_v2_real_failures_cannot_be_executed_as_native_calls) ... ok
+test_wire_gold_sentinel_and_tool_budget_accounting (test_chinatravel_pipeline_v3.NativeTests.test_wire_gold_sentinel_and_tool_budget_accounting) ... ok
+
+----------------------------------------------------------------------
+Ran 40 tests in 5.598s
+
+OK

@@ -1,0 +1,42 @@
+{
+  "call_id": "stress_cancel_deadline_v0::A",
+  "role": "A",
+  "graph_condition": null,
+  "started_at": "2026-09-10T02:32:15.274586+00:00",
+  "request": {
+    "system": "You extract route-planning intent from the user's instruction.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nUse only the instruction. Do not invent constraints. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Visit the bank, library, and pharmacy. I originally planned to be back by 17:00, but that deadline no longer applies. Balance ratings and travel efficiency."
+  },
+  "raw_response": "{\"pois\":[\"bank\",\"library\",\"pharmacy\"],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5,\"evidence\":{\"pois\":\"Visit the bank, library, and pharmacy.\",\"quality_weight\":\"Balance ratings and travel efficiency.\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library",
+      "pharmacy"
+    ],
+    "time_limit": null,
+    "dependencies": [],
+    "quality_weight": 0.5
+  },
+  "evidence": {
+    "pois": "Visit the bank, library, and pharmacy.",
+    "quality_weight": "Balance ratings and travel efficiency."
+  },
+  "changes": [],
+  "finished_at": "2026-09-10T02:32:19.723534+00:00",
+  "telemetry": {
+    "call_index": 1,
+    "prompt_sha256": "d124caf23010f83350ae1242af289c7cea0bd514e6579fe87838381932bf75aa",
+    "attempts": 1,
+    "latency_seconds": 4.448,
+    "input_chars": 811,
+    "output_chars": 214,
+    "input_tokens": 223,
+    "output_tokens": 886,
+    "total_tokens": 1109,
+    "usage_source": "provider",
+    "success": true
+  }
+}

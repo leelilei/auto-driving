@@ -1,0 +1,12 @@
+{
+  "scope": "hand-authored decision-report development check; not a paper result",
+  "model": "deepseek-v4.1-flash-expires-on-0910",
+  "planned_calls": 2,
+  "attempted_calls": 1,
+  "collection_complete": false,
+  "schema_valid": 0,
+  "hard_exact": 0,
+  "direction_exact": 0,
+  "provider_total_tokens": 0,
+  "mean_latency_seconds": 0.79
+}

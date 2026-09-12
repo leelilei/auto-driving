@@ -1,0 +1,120 @@
+{
+  "protocol_version": "darc-v5.1-concurrency-probe-1",
+  "model": "gpt-5.6-luna",
+  "config": {
+    "provider": "xcode",
+    "model": "gpt-5.6-luna",
+    "wire_api": "chat_completions",
+    "base_url": "https://xcode.best",
+    "temperature": 0.0,
+    "timeout": 60,
+    "json_mode": true,
+    "retries": 0,
+    "retry_sleep": 2.0,
+    "sleep": 0.0,
+    "max_concurrency": 1,
+    "omit_temperature": true,
+    "reasoning_effort": null,
+    "max_output_tokens": 100,
+    "stream": false,
+    "service_tier": null,
+    "store": null,
+    "responses_input_mode": "messages",
+    "input_char_limit": null,
+    "transport": "urllib",
+    "api_key_env": "XCODE_API_KEY"
+  },
+  "started_at": "2026-09-09T17:44:47.362675+00:00",
+  "levels": [
+    {
+      "concurrency": 4,
+      "planned": 4,
+      "passed": 2,
+      "failed": 2,
+      "wall_seconds": 62.5759977499838,
+      "attempts": [
+        {
+          "index": 0,
+          "status": "FAILED",
+          "error_type": "RuntimeError",
+          "error_message": "provider request failed: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>",
+          "latency_seconds": 5.02821454097284,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "b898811562d450fa0407c5440e359fd7a1faf17723a69b9510360ecf5066aac3",
+            "attempts": 1,
+            "latency_seconds": 5.028,
+            "input_chars": 56,
+            "output_chars": 0,
+            "input_tokens": 14,
+            "output_tokens": 0,
+            "total_tokens": 14,
+            "usage_source": "character_estimate",
+            "success": false,
+            "error": "RuntimeError"
+          }
+        },
+        {
+          "index": 1,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":4,\"index\":1}",
+          "latency_seconds": 6.752740416966844,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "b321f218c1fd839730f3bf1b76ccffe995bc9ac99629d5eb0b526923c962f1af",
+            "attempts": 1,
+            "latency_seconds": 6.753,
+            "input_chars": 56,
+            "output_chars": 31,
+            "input_tokens": 28,
+            "output_tokens": 20,
+            "total_tokens": 48,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 2,
+          "status": "FAILED",
+          "error_type": "TimeoutError",
+          "error_message": "The read operation timed out",
+          "latency_seconds": 62.573889082996175,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "1dd266410d41dc78b5fe334bf33de0fb5cb9ace6ae89379af5640dc926fb6c31",
+            "attempts": 1,
+            "latency_seconds": 62.574,
+            "input_chars": 56,
+            "output_chars": 0,
+            "input_tokens": 14,
+            "output_tokens": 0,
+            "total_tokens": 14,
+            "usage_source": "character_estimate",
+            "success": false,
+            "error": "TimeoutError"
+          }
+        },
+        {
+          "index": 3,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":4,\"index\":3}",
+          "latency_seconds": 19.891529249958694,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "450d933ad8b9acd96f4d703679e3b6d9d1d6205844d5a7c18d9d9416ba8f4930",
+            "attempts": 1,
+            "latency_seconds": 19.891,
+            "input_chars": 56,
+            "output_chars": 31,
+            "input_tokens": 28,
+            "output_tokens": 20,
+            "total_tokens": 48,
+            "usage_source": "provider",
+            "success": true
+          }
+        }
+      ]
+    }
+  ],
+  "finished_at": "2026-09-09T17:45:49.939385+00:00"
+}

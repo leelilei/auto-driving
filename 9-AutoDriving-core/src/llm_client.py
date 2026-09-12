@@ -121,10 +121,106 @@ class OpenAICompatibleChatClient:
         choices = data.get("choices")
         if not choices:
             raise RuntimeError(f"chat completions response has no choices: {data}")
-        content = choices[0].get("message", {}).get("content")
-        if not isinstance(content, str):
-            raise RuntimeError(f"chat completions response has no text content: {data}")
-        return content
+        message = choices[0].get("message", {})
+
+        # Try standard content field first
+        content = message.get("content")
+        if isinstance(content, str):
+            return content
+
+        # DeepSeek V4 reasoning mode: extract from reasoning_content
+        reasoning_content = message.get("reasoning_content")
+        if isinstance(reasoning_content, str):
+            # Try to extract JSON from reasoning content
+            # The reasoning content may be truncated, but often contains valid JSON
+            extracted = parse_embedded_json_object(reasoning_content)
+            if extracted is not None:
+                return json.dumps(extracted, ensure_ascii=False)
+            # If no valid JSON found but we have reasoning content, return it as-is
+            # (the caller's JSON parser will handle it)
+            return reasoning_content
+
+        raise RuntimeError(f"chat completions response has no text content: {data}")
+
+
+@dataclass(frozen=True)
+class AnthropicMessagesClient:
+    config: LLMConfig
+    api_key: str
+
+    def _post_with_curl(self, url: str, payload: dict[str, Any], timeout: int) -> dict[str, Any]:
+        cmd = [
+            "curl", "-sS", url,
+            "-H", f"x-api-key: {self.api_key}",
+            "-H", "anthropic-version: 2023-06-01",
+            "-H", "Content-Type: application/json",
+            "--data-binary", json.dumps(payload),
+        ]
+        completed = subprocess.run(
+            cmd,
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+            timeout=timeout,
+            check=False,
+        )
+        if completed.returncode != 0:
+            raise RuntimeError(f"curl request failed: {completed.stderr.strip()}")
+        try:
+            return json.loads(completed.stdout)
+        except Exception as e:
+            raise RuntimeError(f"failed to parse json from curl output: {completed.stdout[:200]}") from e
+
+    def complete(self, prompt: dict[str, Any]) -> str:
+        url = f"{self.config.base_url.rstrip('/')}/v1/messages"
+        headers = {
+            "x-api-key": self.api_key,
+            "anthropic-version": "2023-06-01",
+            "content-type": "application/json",
+            "User-Agent": "Mozilla/5.0",
+        }
+        system_prompt = str(prompt.get("system_prompt", "")).strip()
+        user_prompt = str(prompt.get("user_prompt", "")).strip()
+        payload: dict[str, Any] = {
+            "model": self.config.model,
+            "messages": [{"role": "user", "content": user_prompt}],
+            "max_tokens": self.config.max_output_tokens or 1600,
+        }
+        if system_prompt:
+            payload["system"] = system_prompt
+        if not self.config.omit_temperature:
+            payload["temperature"] = self.config.temperature
+
+        if self.config.transport == "curl":
+            data = self._post_with_curl(url, payload, self.config.timeout)
+        else:
+            req = urllib.request.Request(
+                url,
+                data=json.dumps(payload).encode("utf-8"),
+                headers=headers,
+                method="POST",
+            )
+            try:
+                with urllib.request.urlopen(req, timeout=self.config.timeout) as resp:
+                    data = json.loads(resp.read().decode("utf-8"))
+            except (urllib.error.HTTPError, urllib.error.URLError) as exc:
+                try:
+                    data = self._post_with_curl(url, payload, self.config.timeout)
+                except Exception as curl_exc:
+                    if isinstance(exc, urllib.error.HTTPError):
+                        detail = exc.read().decode("utf-8", errors="replace")
+                        raise RuntimeError(f"provider HTTP {exc.code}: {detail}") from exc
+                    raise RuntimeError(f"provider request failed: {exc} | curl fallback failed: {curl_exc}") from exc
+
+        usage = data.get("usage")
+        object.__setattr__(self, "last_response", data)
+        object.__setattr__(self, "last_usage", usage)
+        content = data.get("content", [])
+        text = "".join(part.get("text", "") for part in content if isinstance(part, dict))
+        if not text:
+            raise RuntimeError(f"anthropic response has no text content: {data}")
+        return text
 
 
 def stream_sse_events(
@@ -414,7 +510,7 @@ def resolve_config(
     temperature: float | None = None,
     json_mode: bool | None = None,
 ) -> LLMConfig:
-    if isinstance(config, LLMConfig):
+    if isinstance(config, LLMConfig) or type(config).__name__ == "LLMConfig":
         base = config
     elif config is None:
         base = LLMConfig()
@@ -439,6 +535,8 @@ def build_client(config: LLMConfig) -> ModelClient:
         return OpenAICompatibleChatClient(config=config, api_key=api_key)
     if config.wire_api == "responses":
         return OpenAICompatibleResponsesClient(config=config, api_key=api_key)
+    if config.wire_api in {"anthropic_messages", "messages"}:
+        return AnthropicMessagesClient(config=config, api_key=api_key)
     raise ValueError(f"unsupported wire_api: {config.wire_api}")
 
 
@@ -446,6 +544,15 @@ def get_api_key(provider: str, api_key_env: str | None = None) -> str:
     env_names = []
     if api_key_env:
         env_names.append(api_key_env)
+    if provider == "anthropic":
+        env_names.extend(["ANTHROPIC_AUTH_TOKEN", "ANTHROPIC_API_KEY"])
+        claude_env = Path.home() / ".config/fhl/claude.env"
+        if claude_env.exists():
+            for line in claude_env.read_text(encoding="utf-8").splitlines():
+                if "ANTHROPIC_AUTH_TOKEN=" in line:
+                    token = line.split("ANTHROPIC_AUTH_TOKEN=", 1)[1].strip().strip('"').strip("'")
+                    if token:
+                        os.environ["ANTHROPIC_AUTH_TOKEN"] = token
     env_names.append(f"{provider.upper()}_API_KEY")
     env_names.append("OPENAI_API_KEY")
     for env_name in env_names:
@@ -540,6 +647,7 @@ def post_json_with_curl(url: str, payload: dict[str, Any], api_key: str, timeout
         cmd = [
             "curl",
             "-sS",
+            "--http1.1",
             url,
             "--config",
             config_path,

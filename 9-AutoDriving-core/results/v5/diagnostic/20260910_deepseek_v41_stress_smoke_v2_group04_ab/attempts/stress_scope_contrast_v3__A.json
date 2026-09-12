@@ -1,0 +1,49 @@
+{
+  "call_id": "stress_scope_contrast_v3::A",
+  "role": "A",
+  "graph_condition": null,
+  "started_at": "2026-09-10T02:32:37.228162+00:00",
+  "request": {
+    "system": "You extract route-planning intent from the user's instruction.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nUse only the instruction. Do not invent constraints. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Please visit the shopping mall, bank, library, and pharmacy. Only the pharmacy is required to come before the bank; do not infer that requirement for the library. Treat ratings and distance evenly."
+  },
+  "raw_response": "{\"pois\":[\"shopping mall\",\"bank\",\"library\",\"pharmacy\"],\"time_limit\":null,\"dependencies\":[[\"pharmacy\",\"bank\"]],\"quality_weight\":0.5,\"evidence\":{\"pois\":\"shopping mall, bank, library, and pharmacy\",\"dependencies\":\"Only the pharmacy is required to come before the bank\",\"quality_weight\":\"Treat ratings and distance evenly\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library",
+      "pharmacy",
+      "shopping_mall"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "pharmacy",
+        "bank"
+      ]
+    ],
+    "quality_weight": 0.5
+  },
+  "evidence": {
+    "pois": "shopping mall, bank, library, and pharmacy",
+    "dependencies": "Only the pharmacy is required to come before the bank",
+    "quality_weight": "Treat ratings and distance evenly"
+  },
+  "changes": [],
+  "finished_at": "2026-09-10T02:32:39.349484+00:00",
+  "telemetry": {
+    "call_index": 7,
+    "prompt_sha256": "5b16f343cd5bcaaebe520f4d890352bbec209bd65f0f198cf7de895f176e3915",
+    "attempts": 1,
+    "latency_seconds": 2.121,
+    "input_chars": 852,
+    "output_chars": 319,
+    "input_tokens": 228,
+    "output_tokens": 482,
+    "total_tokens": 710,
+    "usage_source": "provider",
+    "success": true
+  }
+}

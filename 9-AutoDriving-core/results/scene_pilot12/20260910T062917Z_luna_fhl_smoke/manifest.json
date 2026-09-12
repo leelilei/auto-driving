@@ -1,0 +1,23 @@
+{
+  "scope": "UNREVIEWED_DEVELOPMENT_SMOKE",
+  "human_review": "PENDING",
+  "authorization": "User: 用luna模型试下",
+  "model": "gpt-5.6-luna",
+  "provider": "fhl",
+  "planned_cases": [
+    "S01",
+    "S02"
+  ],
+  "planned_calls": 6,
+  "repetitions": 1,
+  "concurrency": 1,
+  "retries": 0,
+  "stopping": "Stop on first transport or schema failure. No method ranking.",
+  "files": {
+    "public.json": "89bee3732018671104b2ae3ff7c5712568924925bde8d4604ccb5adeb9373003",
+    "gold.json": "ac8c6a2b965c635d9129b9f88a0fe3f73fba9a7d7e63534b8ac35b470bbef7f1",
+    "config.json": "571f22a82e94a01bc582da88693809526a2dc2208a8d5361710d4e8a26fbd1d4",
+    "collector_source.py": "90cd0ec799aae5025b4362294cb91a22f0105afcebb2b9a675f10e71cdf39b69"
+  },
+  "policy_source_sha256": "4ced5301536ede161427a5e81d5852ef2e9cea0b554d9354bec16ec37b2f7868"
+}

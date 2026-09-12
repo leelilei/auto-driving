@@ -1,0 +1,17 @@
+{
+  "budget": 1500,
+  "days": 1,
+  "evidence": {
+    "budget": "预算1500人民币",
+    "days": "玩一天",
+    "people_number": "我一个人",
+    "start_city": "当前位置上海",
+    "target_city": "想去杭州"
+  },
+  "people_number": 1,
+  "start_city": "上海",
+  "target_city": "杭州",
+  "unsupported_requirements": [
+    "请给我一个旅行规划（具体行程规划）"
+  ]
+}

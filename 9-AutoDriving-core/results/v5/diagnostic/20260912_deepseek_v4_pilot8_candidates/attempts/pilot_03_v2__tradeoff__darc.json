@@ -1,0 +1,43 @@
+{
+  "call_id": "pilot_03_v2::tradeoff::darc",
+  "role": "darc",
+  "graph_condition": "tradeoff",
+  "started_at": "2026-09-12T05:41:19.680226+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. The decision-contrast report is diagnostic evidence about consequences; it is not a label and must not override the words of the instruction.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Use the report to locate consequential disagreements, then decide each field from the instruction alone.\n\nInstruction:\nToday you should visit both the shopping mall and the pharmacy in whichever order you prefer, balancing location quality with route efficiency.\n\nCandidate A:\n{\"dependencies\": [], \"pois\": [\"pharmacy\", \"shopping_mall\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nCandidate B:\n{\"dependencies\": [], \"pois\": [\"pharmacy\", \"shopping_mall\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nDecision-contrast report:\n{\"candidate_A\": {\"dependencies\": [], \"pois\": [\"pharmacy\", \"shopping_mall\"], \"quality_weight\": 0.5, \"time_limit\": null}, \"candidate_B\": {\"dependencies\": [], \"pois\": [\"pharmacy\", \"shopping_mall\"], \"quality_weight\": 0.5, \"time_limit\": null}, \"candidate_evidence\": {\"A\": {\"pois\": \"both the shopping mall and the pharmacy\", \"quality_weight\": \"balancing location quality with route efficiency\"}, \"B\": {\"pois\": \"shopping mall and the pharmacy\", \"quality_weight\": \"balancing location quality with route efficiency\"}}, \"cross_constraints\": {\"route_A_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_A_under_B\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_B\": {\"reasons\": [], \"task_success\": true}}, \"differing_fields\": [], \"instruction\": \"Today you should visit both the shopping mall and the pharmacy in whichever order you prefer, balancing location quality with route efficiency.\", \"limitations\": [\"The report does not identify the user's true intent.\", \"Both candidates may share the same error.\", \"Single-field swaps do not identify higher-order interactions.\"], \"report_version\": \"darc-v5.1-contrast-2\", \"routes\": {\"A\": {\"arrival_minutes\": 653, \"average_quality\": 0.9, \"categories\": [\"pharmacy\", \"shopping_mall\"], \"coverage_count\": 2, \"distance_km\": 19.025, \"duration_minutes\": 113.1, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"pharmacy_2\", \"shopping_mall_2\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": 0.2945720088008291}, \"B\": {\"arrival_minutes\": 653, \"average_quality\": 0.9, \"categories\": [\"pharmacy\", \"shopping_mall\"], \"coverage_count\": 2, \"distance_km\": 19.025, \"duration_minutes\": 113.1, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"pharmacy_2\", \"shopping_mall_2\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": 0.2945720088008291}}, \"single_field_swaps\": []}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"pharmacy\",\"shopping_mall\"],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{\"pois\":\"both the shopping mall and the pharmacy\",\"time_limit\":\"Today\",\"dependencies\":\"in whichever order you prefer\",\"quality_weight\":\"balancing location quality with route efficiency\"},\"changes\":[]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "pharmacy",
+      "shopping_mall"
+    ],
+    "time_limit": null,
+    "dependencies": [],
+    "quality_weight": 0.5
+  },
+  "evidence": {
+    "pois": "both the shopping mall and the pharmacy",
+    "time_limit": "Today",
+    "dependencies": "in whichever order you prefer",
+    "quality_weight": "balancing location quality with route efficiency"
+  },
+  "changes": [],
+  "finished_at": "2026-09-12T05:41:33.798021+00:00",
+  "telemetry": {
+    "call_index": 2,
+    "prompt_sha256": "8410f351b0f83cd12f670ea26d115a4f24eb051270e653438dc45372cd1b642c",
+    "attempts": 1,
+    "latency_seconds": 14.117,
+    "input_chars": 2941,
+    "output_chars": 316,
+    "input_tokens": 855,
+    "output_tokens": 2122,
+    "total_tokens": 2977,
+    "usage_source": "provider",
+    "success": true
+  }
+}

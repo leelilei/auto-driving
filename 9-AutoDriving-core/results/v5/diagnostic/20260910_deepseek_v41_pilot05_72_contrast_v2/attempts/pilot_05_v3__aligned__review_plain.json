@@ -1,0 +1,29 @@
+{
+  "call_id": "pilot_05_v3::aligned::review_plain",
+  "role": "review_plain",
+  "graph_condition": "aligned",
+  "started_at": "2026-09-09T16:36:10.321063+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. Candidate agreement is not proof of correctness.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not use route efficiency to infer what the user wants.\n\nInstruction:\nGo to the bank, library, and pharmacy today, making sure you hit the bank before heading to the library. Pick the top-rated spots since quality is the main priority.\n\nCandidate A:\n{\"dependencies\": [[\"bank\", \"library\"]], \"pois\": [\"bank\", \"library\", \"pharmacy\"], \"quality_weight\": 1.0, \"time_limit\": null}\n\nCandidate B:\n{\"dependencies\": [[\"bank\", \"library\"]], \"pois\": [\"bank\", \"library\", \"pharmacy\"], \"quality_weight\": 1.0, \"time_limit\": null}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"bank\",\"library\",\"pharmacy\"],\"time_limit\":\"today\",\"dependencies\":[[\"bank\",\"library\"]],\"quality_weight\":1.0},\"evidence\":{\"pois\":\"bank, library, and pharmacy\",\"time_limit\":\"today\",\"dependencies\":\"hit the bank before heading to the library\",\"quality_weight\":\"quality is the main priority\"},\"changes\":[\"time_limit\"]}",
+  "status": "SCHEMA_FAILED",
+  "schema_valid": false,
+  "error_type": "ValueError",
+  "error_message": "Deadline must be HH:MM or minutes",
+  "finished_at": "2026-09-09T16:36:20.748013+00:00",
+  "telemetry": {
+    "call_index": 61,
+    "prompt_sha256": "415565cafa33bae9db694c8040a0a564eef48e6b9af87cdc85b6e31a27b8cbb9",
+    "attempts": 1,
+    "latency_seconds": 10.427,
+    "input_chars": 958,
+    "output_chars": 331,
+    "input_tokens": 282,
+    "output_tokens": 2858,
+    "total_tokens": 3140,
+    "usage_source": "provider",
+    "success": true
+  }
+}

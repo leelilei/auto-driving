@@ -1,0 +1,43 @@
+{
+  "call_id": "pilot_04_v1::aligned::darc",
+  "role": "darc",
+  "graph_condition": "aligned",
+  "started_at": "2026-09-09T16:34:54.171524+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. The decision-contrast report is diagnostic evidence about consequences; it is not a label and must not override the words of the instruction.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Use the report to locate consequential disagreements, then decide each field from the instruction alone.\n\nInstruction:\nMake sure to visit the bank and the library today, returning by 18:00. It is crucial to prioritize an efficient, quick route for these stops.\n\nCandidate A:\n{\"dependencies\": [], \"pois\": [\"bank\", \"library\"], \"quality_weight\": 0.0, \"time_limit\": 1080}\n\nCandidate B:\n{\"dependencies\": [], \"pois\": [\"bank\", \"library\"], \"quality_weight\": 0.0, \"time_limit\": 1080}\n\nDecision-contrast report:\n{\"candidate_A\": {\"dependencies\": [], \"pois\": [\"bank\", \"library\"], \"quality_weight\": 0.0, \"time_limit\": 1080}, \"candidate_B\": {\"dependencies\": [], \"pois\": [\"bank\", \"library\"], \"quality_weight\": 0.0, \"time_limit\": 1080}, \"candidate_evidence\": {\"A\": {\"pois\": \"bank and the library\", \"quality_weight\": \"prioritize an efficient, quick route\", \"time_limit\": \"returning by 18:00\"}, \"B\": {\"pois\": \"visit the bank and the library\", \"quality_weight\": \"prioritize an efficient, quick route\", \"time_limit\": \"returning by 18:00\"}}, \"cross_constraints\": {\"route_A_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_A_under_B\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_B\": {\"reasons\": [], \"task_success\": true}}, \"differing_fields\": [], \"instruction\": \"Make sure to visit the bank and the library today, returning by 18:00. It is crucial to prioritize an efficient, quick route for these stops.\", \"limitations\": [\"The report does not identify the user's true intent.\", \"Both candidates may share the same error.\", \"Single-field swaps do not identify higher-order interactions.\"], \"report_version\": \"darc-v5.1-contrast-2\", \"routes\": {\"A\": {\"arrival_minutes\": 622, \"average_quality\": 0.5, \"categories\": [\"bank\", \"library\"], \"coverage_count\": 2, \"distance_km\": 3.686, \"duration_minutes\": 82.4, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"bank_1\", \"library_1\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": -0.0602309485453548}, \"B\": {\"arrival_minutes\": 622, \"average_quality\": 0.5, \"categories\": [\"bank\", \"library\"], \"coverage_count\": 2, \"distance_km\": 3.686, \"duration_minutes\": 82.4, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"bank_1\", \"library_1\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": -0.0602309485453548}}, \"single_field_swaps\": []}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"bank\",\"library\"],\"time_limit\":1080,\"dependencies\":[],\"quality_weight\":0.0},\"evidence\":{\"pois\":\"visit the bank and the library\",\"time_limit\":\"returning by 18:00\",\"dependencies\":\"the bank and the library\",\"quality_weight\":\"prioritize an efficient, quick route\"},\"changes\":[]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library"
+    ],
+    "time_limit": 1080,
+    "dependencies": [],
+    "quality_weight": 0.0
+  },
+  "evidence": {
+    "pois": "visit the bank and the library",
+    "time_limit": "returning by 18:00",
+    "dependencies": "the bank and the library",
+    "quality_weight": "prioritize an efficient, quick route"
+  },
+  "changes": [],
+  "finished_at": "2026-09-09T16:34:59.333081+00:00",
+  "telemetry": {
+    "call_index": 28,
+    "prompt_sha256": "9be6265e6b566cca4eca2240fde57fe5db14e666f20cee0cef846d91d1de2f7b",
+    "attempts": 1,
+    "latency_seconds": 5.161,
+    "input_chars": 2884,
+    "output_chars": 293,
+    "input_tokens": 872,
+    "output_tokens": 1472,
+    "total_tokens": 2344,
+    "usage_source": "provider",
+    "success": true
+  }
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "path": "itinerary/0/activities/9/room_type",
+    "before": "1",
+    "after": 1,
+    "rule": "accommodation room_type numeric-string to integer"
+  },
+  {
+    "path": "itinerary/1/activities/7/room_type",
+    "before": "1",
+    "after": 1,
+    "rule": "accommodation room_type numeric-string to integer"
+  }
+]

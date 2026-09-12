@@ -1,0 +1,2569 @@
+[
+  {
+    "case_id": "R01",
+    "block_id": "G1",
+    "field": "selection",
+    "alternate_value": "minimum_added_distance",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R01",
+    "block_id": "G1",
+    "field": "selection",
+    "alternate_value": "highest_rating",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R01",
+    "block_id": "G1",
+    "field": "availability_reference",
+    "alternate_value": "departure",
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R01",
+    "block_id": "G1",
+    "field": "return_by",
+    "alternate_value": 550,
+    "changed_decision": true,
+    "mutant_status": "INFEASIBLE",
+    "mutant_poi_ids": []
+  },
+  {
+    "case_id": "R01",
+    "block_id": "G1",
+    "field": "return_by",
+    "alternate_value": 590,
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R01",
+    "block_id": "G1",
+    "field": "return_by",
+    "alternate_value": 595,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R01",
+    "block_id": "G1",
+    "field": "return_by",
+    "alternate_value": 600,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R01",
+    "block_id": "G1",
+    "field": "return_by",
+    "alternate_value": 630,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R02",
+    "block_id": "G1",
+    "field": "selection",
+    "alternate_value": "nearest_from_bank",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R02",
+    "block_id": "G1",
+    "field": "selection",
+    "alternate_value": "highest_rating",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R02",
+    "block_id": "G1",
+    "field": "availability_reference",
+    "alternate_value": "departure",
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R02",
+    "block_id": "G1",
+    "field": "return_by",
+    "alternate_value": 550,
+    "changed_decision": true,
+    "mutant_status": "INFEASIBLE",
+    "mutant_poi_ids": []
+  },
+  {
+    "case_id": "R02",
+    "block_id": "G1",
+    "field": "return_by",
+    "alternate_value": 590,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R02",
+    "block_id": "G1",
+    "field": "return_by",
+    "alternate_value": 595,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R02",
+    "block_id": "G1",
+    "field": "return_by",
+    "alternate_value": 600,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R02",
+    "block_id": "G1",
+    "field": "return_by",
+    "alternate_value": 630,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R03",
+    "block_id": "G1",
+    "field": "selection",
+    "alternate_value": "nearest_from_bank",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R03",
+    "block_id": "G1",
+    "field": "selection",
+    "alternate_value": "minimum_added_distance",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R03",
+    "block_id": "G1",
+    "field": "availability_reference",
+    "alternate_value": "departure",
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R03",
+    "block_id": "G1",
+    "field": "return_by",
+    "alternate_value": 550,
+    "changed_decision": true,
+    "mutant_status": "INFEASIBLE",
+    "mutant_poi_ids": []
+  },
+  {
+    "case_id": "R03",
+    "block_id": "G1",
+    "field": "return_by",
+    "alternate_value": 590,
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R03",
+    "block_id": "G1",
+    "field": "return_by",
+    "alternate_value": 595,
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R03",
+    "block_id": "G1",
+    "field": "return_by",
+    "alternate_value": 600,
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R03",
+    "block_id": "G1",
+    "field": "return_by",
+    "alternate_value": 630,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R04",
+    "block_id": "G2",
+    "field": "selection",
+    "alternate_value": "minimum_added_distance",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R04",
+    "block_id": "G2",
+    "field": "selection",
+    "alternate_value": "highest_rating",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R04",
+    "block_id": "G2",
+    "field": "availability_reference",
+    "alternate_value": "departure",
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R04",
+    "block_id": "G2",
+    "field": "return_by",
+    "alternate_value": 550,
+    "changed_decision": true,
+    "mutant_status": "INFEASIBLE",
+    "mutant_poi_ids": []
+  },
+  {
+    "case_id": "R04",
+    "block_id": "G2",
+    "field": "return_by",
+    "alternate_value": 590,
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R04",
+    "block_id": "G2",
+    "field": "return_by",
+    "alternate_value": 595,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R04",
+    "block_id": "G2",
+    "field": "return_by",
+    "alternate_value": 600,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R04",
+    "block_id": "G2",
+    "field": "return_by",
+    "alternate_value": 630,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R05",
+    "block_id": "G2",
+    "field": "selection",
+    "alternate_value": "nearest_from_bank",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R05",
+    "block_id": "G2",
+    "field": "selection",
+    "alternate_value": "highest_rating",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R05",
+    "block_id": "G2",
+    "field": "availability_reference",
+    "alternate_value": "departure",
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R05",
+    "block_id": "G2",
+    "field": "return_by",
+    "alternate_value": 550,
+    "changed_decision": true,
+    "mutant_status": "INFEASIBLE",
+    "mutant_poi_ids": []
+  },
+  {
+    "case_id": "R05",
+    "block_id": "G2",
+    "field": "return_by",
+    "alternate_value": 590,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R05",
+    "block_id": "G2",
+    "field": "return_by",
+    "alternate_value": 595,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R05",
+    "block_id": "G2",
+    "field": "return_by",
+    "alternate_value": 600,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R05",
+    "block_id": "G2",
+    "field": "return_by",
+    "alternate_value": 630,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R06",
+    "block_id": "G2",
+    "field": "selection",
+    "alternate_value": "nearest_from_bank",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R06",
+    "block_id": "G2",
+    "field": "selection",
+    "alternate_value": "minimum_added_distance",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R06",
+    "block_id": "G2",
+    "field": "availability_reference",
+    "alternate_value": "departure",
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R06",
+    "block_id": "G2",
+    "field": "return_by",
+    "alternate_value": 550,
+    "changed_decision": true,
+    "mutant_status": "INFEASIBLE",
+    "mutant_poi_ids": []
+  },
+  {
+    "case_id": "R06",
+    "block_id": "G2",
+    "field": "return_by",
+    "alternate_value": 590,
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R06",
+    "block_id": "G2",
+    "field": "return_by",
+    "alternate_value": 595,
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R06",
+    "block_id": "G2",
+    "field": "return_by",
+    "alternate_value": 600,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R06",
+    "block_id": "G2",
+    "field": "return_by",
+    "alternate_value": 630,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R07",
+    "block_id": "G3",
+    "field": "selection",
+    "alternate_value": "minimum_added_distance",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R07",
+    "block_id": "G3",
+    "field": "selection",
+    "alternate_value": "highest_rating",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R07",
+    "block_id": "G3",
+    "field": "availability_reference",
+    "alternate_value": "departure",
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R07",
+    "block_id": "G3",
+    "field": "return_by",
+    "alternate_value": 550,
+    "changed_decision": true,
+    "mutant_status": "INFEASIBLE",
+    "mutant_poi_ids": []
+  },
+  {
+    "case_id": "R07",
+    "block_id": "G3",
+    "field": "return_by",
+    "alternate_value": 590,
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R07",
+    "block_id": "G3",
+    "field": "return_by",
+    "alternate_value": 595,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R07",
+    "block_id": "G3",
+    "field": "return_by",
+    "alternate_value": 600,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R07",
+    "block_id": "G3",
+    "field": "return_by",
+    "alternate_value": 630,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R08",
+    "block_id": "G3",
+    "field": "selection",
+    "alternate_value": "nearest_from_bank",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R08",
+    "block_id": "G3",
+    "field": "selection",
+    "alternate_value": "highest_rating",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R08",
+    "block_id": "G3",
+    "field": "availability_reference",
+    "alternate_value": "departure",
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R08",
+    "block_id": "G3",
+    "field": "return_by",
+    "alternate_value": 550,
+    "changed_decision": true,
+    "mutant_status": "INFEASIBLE",
+    "mutant_poi_ids": []
+  },
+  {
+    "case_id": "R08",
+    "block_id": "G3",
+    "field": "return_by",
+    "alternate_value": 590,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R08",
+    "block_id": "G3",
+    "field": "return_by",
+    "alternate_value": 595,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R08",
+    "block_id": "G3",
+    "field": "return_by",
+    "alternate_value": 600,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R08",
+    "block_id": "G3",
+    "field": "return_by",
+    "alternate_value": 630,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R09",
+    "block_id": "G3",
+    "field": "selection",
+    "alternate_value": "nearest_from_bank",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R09",
+    "block_id": "G3",
+    "field": "selection",
+    "alternate_value": "minimum_added_distance",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R09",
+    "block_id": "G3",
+    "field": "availability_reference",
+    "alternate_value": "departure",
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R09",
+    "block_id": "G3",
+    "field": "return_by",
+    "alternate_value": 550,
+    "changed_decision": true,
+    "mutant_status": "INFEASIBLE",
+    "mutant_poi_ids": []
+  },
+  {
+    "case_id": "R09",
+    "block_id": "G3",
+    "field": "return_by",
+    "alternate_value": 590,
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R09",
+    "block_id": "G3",
+    "field": "return_by",
+    "alternate_value": 595,
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R09",
+    "block_id": "G3",
+    "field": "return_by",
+    "alternate_value": 600,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R09",
+    "block_id": "G3",
+    "field": "return_by",
+    "alternate_value": 630,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R10",
+    "block_id": "G4",
+    "field": "selection",
+    "alternate_value": "minimum_added_distance",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R10",
+    "block_id": "G4",
+    "field": "selection",
+    "alternate_value": "highest_rating",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R10",
+    "block_id": "G4",
+    "field": "availability_reference",
+    "alternate_value": "departure",
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R10",
+    "block_id": "G4",
+    "field": "return_by",
+    "alternate_value": 550,
+    "changed_decision": true,
+    "mutant_status": "INFEASIBLE",
+    "mutant_poi_ids": []
+  },
+  {
+    "case_id": "R10",
+    "block_id": "G4",
+    "field": "return_by",
+    "alternate_value": 590,
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R10",
+    "block_id": "G4",
+    "field": "return_by",
+    "alternate_value": 595,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R10",
+    "block_id": "G4",
+    "field": "return_by",
+    "alternate_value": 600,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R10",
+    "block_id": "G4",
+    "field": "return_by",
+    "alternate_value": 630,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R11",
+    "block_id": "G4",
+    "field": "selection",
+    "alternate_value": "nearest_from_bank",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R11",
+    "block_id": "G4",
+    "field": "selection",
+    "alternate_value": "highest_rating",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R11",
+    "block_id": "G4",
+    "field": "availability_reference",
+    "alternate_value": "departure",
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R11",
+    "block_id": "G4",
+    "field": "return_by",
+    "alternate_value": 550,
+    "changed_decision": true,
+    "mutant_status": "INFEASIBLE",
+    "mutant_poi_ids": []
+  },
+  {
+    "case_id": "R11",
+    "block_id": "G4",
+    "field": "return_by",
+    "alternate_value": 590,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R11",
+    "block_id": "G4",
+    "field": "return_by",
+    "alternate_value": 595,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R11",
+    "block_id": "G4",
+    "field": "return_by",
+    "alternate_value": 600,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R11",
+    "block_id": "G4",
+    "field": "return_by",
+    "alternate_value": 630,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R12",
+    "block_id": "G4",
+    "field": "selection",
+    "alternate_value": "nearest_from_bank",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R12",
+    "block_id": "G4",
+    "field": "selection",
+    "alternate_value": "minimum_added_distance",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R12",
+    "block_id": "G4",
+    "field": "availability_reference",
+    "alternate_value": "departure",
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R12",
+    "block_id": "G4",
+    "field": "return_by",
+    "alternate_value": 550,
+    "changed_decision": true,
+    "mutant_status": "INFEASIBLE",
+    "mutant_poi_ids": []
+  },
+  {
+    "case_id": "R12",
+    "block_id": "G4",
+    "field": "return_by",
+    "alternate_value": 590,
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R12",
+    "block_id": "G4",
+    "field": "return_by",
+    "alternate_value": 595,
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R12",
+    "block_id": "G4",
+    "field": "return_by",
+    "alternate_value": 600,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R12",
+    "block_id": "G4",
+    "field": "return_by",
+    "alternate_value": 630,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R13",
+    "block_id": "G5",
+    "field": "selection",
+    "alternate_value": "minimum_added_distance",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R13",
+    "block_id": "G5",
+    "field": "selection",
+    "alternate_value": "highest_rating",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R13",
+    "block_id": "G5",
+    "field": "availability_reference",
+    "alternate_value": "departure",
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R13",
+    "block_id": "G5",
+    "field": "return_by",
+    "alternate_value": 550,
+    "changed_decision": true,
+    "mutant_status": "INFEASIBLE",
+    "mutant_poi_ids": []
+  },
+  {
+    "case_id": "R13",
+    "block_id": "G5",
+    "field": "return_by",
+    "alternate_value": 590,
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R13",
+    "block_id": "G5",
+    "field": "return_by",
+    "alternate_value": 595,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R13",
+    "block_id": "G5",
+    "field": "return_by",
+    "alternate_value": 600,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R13",
+    "block_id": "G5",
+    "field": "return_by",
+    "alternate_value": 630,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R14",
+    "block_id": "G5",
+    "field": "selection",
+    "alternate_value": "nearest_from_bank",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R14",
+    "block_id": "G5",
+    "field": "selection",
+    "alternate_value": "highest_rating",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R14",
+    "block_id": "G5",
+    "field": "availability_reference",
+    "alternate_value": "departure",
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R14",
+    "block_id": "G5",
+    "field": "return_by",
+    "alternate_value": 550,
+    "changed_decision": true,
+    "mutant_status": "INFEASIBLE",
+    "mutant_poi_ids": []
+  },
+  {
+    "case_id": "R14",
+    "block_id": "G5",
+    "field": "return_by",
+    "alternate_value": 590,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R14",
+    "block_id": "G5",
+    "field": "return_by",
+    "alternate_value": 595,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R14",
+    "block_id": "G5",
+    "field": "return_by",
+    "alternate_value": 600,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R14",
+    "block_id": "G5",
+    "field": "return_by",
+    "alternate_value": 630,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R15",
+    "block_id": "G5",
+    "field": "selection",
+    "alternate_value": "nearest_from_bank",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R15",
+    "block_id": "G5",
+    "field": "selection",
+    "alternate_value": "minimum_added_distance",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R15",
+    "block_id": "G5",
+    "field": "availability_reference",
+    "alternate_value": "departure",
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R15",
+    "block_id": "G5",
+    "field": "return_by",
+    "alternate_value": 550,
+    "changed_decision": true,
+    "mutant_status": "INFEASIBLE",
+    "mutant_poi_ids": []
+  },
+  {
+    "case_id": "R15",
+    "block_id": "G5",
+    "field": "return_by",
+    "alternate_value": 590,
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R15",
+    "block_id": "G5",
+    "field": "return_by",
+    "alternate_value": 595,
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R15",
+    "block_id": "G5",
+    "field": "return_by",
+    "alternate_value": 600,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R15",
+    "block_id": "G5",
+    "field": "return_by",
+    "alternate_value": 630,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R16",
+    "block_id": "G6",
+    "field": "selection",
+    "alternate_value": "minimum_added_distance",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R16",
+    "block_id": "G6",
+    "field": "selection",
+    "alternate_value": "highest_rating",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R16",
+    "block_id": "G6",
+    "field": "availability_reference",
+    "alternate_value": "departure",
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R16",
+    "block_id": "G6",
+    "field": "return_by",
+    "alternate_value": 550,
+    "changed_decision": true,
+    "mutant_status": "INFEASIBLE",
+    "mutant_poi_ids": []
+  },
+  {
+    "case_id": "R16",
+    "block_id": "G6",
+    "field": "return_by",
+    "alternate_value": 590,
+    "changed_decision": true,
+    "mutant_status": "INFEASIBLE",
+    "mutant_poi_ids": []
+  },
+  {
+    "case_id": "R16",
+    "block_id": "G6",
+    "field": "return_by",
+    "alternate_value": 595,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R16",
+    "block_id": "G6",
+    "field": "return_by",
+    "alternate_value": 600,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R16",
+    "block_id": "G6",
+    "field": "return_by",
+    "alternate_value": 630,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R17",
+    "block_id": "G6",
+    "field": "selection",
+    "alternate_value": "nearest_from_bank",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R17",
+    "block_id": "G6",
+    "field": "selection",
+    "alternate_value": "highest_rating",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R17",
+    "block_id": "G6",
+    "field": "availability_reference",
+    "alternate_value": "departure",
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R17",
+    "block_id": "G6",
+    "field": "return_by",
+    "alternate_value": 550,
+    "changed_decision": true,
+    "mutant_status": "INFEASIBLE",
+    "mutant_poi_ids": []
+  },
+  {
+    "case_id": "R17",
+    "block_id": "G6",
+    "field": "return_by",
+    "alternate_value": 590,
+    "changed_decision": true,
+    "mutant_status": "INFEASIBLE",
+    "mutant_poi_ids": []
+  },
+  {
+    "case_id": "R17",
+    "block_id": "G6",
+    "field": "return_by",
+    "alternate_value": 595,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R17",
+    "block_id": "G6",
+    "field": "return_by",
+    "alternate_value": 600,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R17",
+    "block_id": "G6",
+    "field": "return_by",
+    "alternate_value": 630,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R18",
+    "block_id": "G6",
+    "field": "selection",
+    "alternate_value": "nearest_from_bank",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R18",
+    "block_id": "G6",
+    "field": "selection",
+    "alternate_value": "minimum_added_distance",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R18",
+    "block_id": "G6",
+    "field": "availability_reference",
+    "alternate_value": "departure",
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R18",
+    "block_id": "G6",
+    "field": "return_by",
+    "alternate_value": 550,
+    "changed_decision": true,
+    "mutant_status": "INFEASIBLE",
+    "mutant_poi_ids": []
+  },
+  {
+    "case_id": "R18",
+    "block_id": "G6",
+    "field": "return_by",
+    "alternate_value": 590,
+    "changed_decision": true,
+    "mutant_status": "INFEASIBLE",
+    "mutant_poi_ids": []
+  },
+  {
+    "case_id": "R18",
+    "block_id": "G6",
+    "field": "return_by",
+    "alternate_value": 595,
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R18",
+    "block_id": "G6",
+    "field": "return_by",
+    "alternate_value": 600,
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R18",
+    "block_id": "G6",
+    "field": "return_by",
+    "alternate_value": 630,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R19",
+    "block_id": "C1",
+    "field": "selection",
+    "alternate_value": "minimum_added_distance",
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R19",
+    "block_id": "C1",
+    "field": "selection",
+    "alternate_value": "highest_rating",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R19",
+    "block_id": "C1",
+    "field": "availability_reference",
+    "alternate_value": "arrival",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R19",
+    "block_id": "C1",
+    "field": "return_by",
+    "alternate_value": 550,
+    "changed_decision": true,
+    "mutant_status": "INFEASIBLE",
+    "mutant_poi_ids": []
+  },
+  {
+    "case_id": "R19",
+    "block_id": "C1",
+    "field": "return_by",
+    "alternate_value": 590,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R19",
+    "block_id": "C1",
+    "field": "return_by",
+    "alternate_value": 595,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R19",
+    "block_id": "C1",
+    "field": "return_by",
+    "alternate_value": 600,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R19",
+    "block_id": "C1",
+    "field": "return_by",
+    "alternate_value": 630,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R20",
+    "block_id": "C1",
+    "field": "selection",
+    "alternate_value": "minimum_added_distance",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R20",
+    "block_id": "C1",
+    "field": "selection",
+    "alternate_value": "highest_rating",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R20",
+    "block_id": "C1",
+    "field": "availability_reference",
+    "alternate_value": "departure",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R20",
+    "block_id": "C1",
+    "field": "return_by",
+    "alternate_value": 550,
+    "changed_decision": true,
+    "mutant_status": "INFEASIBLE",
+    "mutant_poi_ids": []
+  },
+  {
+    "case_id": "R20",
+    "block_id": "C1",
+    "field": "return_by",
+    "alternate_value": 590,
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R20",
+    "block_id": "C1",
+    "field": "return_by",
+    "alternate_value": 595,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R20",
+    "block_id": "C1",
+    "field": "return_by",
+    "alternate_value": 600,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R20",
+    "block_id": "C1",
+    "field": "return_by",
+    "alternate_value": 630,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R21",
+    "block_id": "C2",
+    "field": "selection",
+    "alternate_value": "nearest_from_bank",
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R21",
+    "block_id": "C2",
+    "field": "selection",
+    "alternate_value": "minimum_added_distance",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R21",
+    "block_id": "C2",
+    "field": "availability_reference",
+    "alternate_value": "departure",
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R21",
+    "block_id": "C2",
+    "field": "return_by",
+    "alternate_value": null,
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R21",
+    "block_id": "C2",
+    "field": "return_by",
+    "alternate_value": 550,
+    "changed_decision": true,
+    "mutant_status": "INFEASIBLE",
+    "mutant_poi_ids": []
+  },
+  {
+    "case_id": "R21",
+    "block_id": "C2",
+    "field": "return_by",
+    "alternate_value": 590,
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R21",
+    "block_id": "C2",
+    "field": "return_by",
+    "alternate_value": 600,
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R21",
+    "block_id": "C2",
+    "field": "return_by",
+    "alternate_value": 630,
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R22",
+    "block_id": "C2",
+    "field": "selection",
+    "alternate_value": "nearest_from_bank",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R22",
+    "block_id": "C2",
+    "field": "selection",
+    "alternate_value": "minimum_added_distance",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R22",
+    "block_id": "C2",
+    "field": "availability_reference",
+    "alternate_value": "departure",
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R22",
+    "block_id": "C2",
+    "field": "return_by",
+    "alternate_value": null,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R22",
+    "block_id": "C2",
+    "field": "return_by",
+    "alternate_value": 550,
+    "changed_decision": true,
+    "mutant_status": "INFEASIBLE",
+    "mutant_poi_ids": []
+  },
+  {
+    "case_id": "R22",
+    "block_id": "C2",
+    "field": "return_by",
+    "alternate_value": 590,
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R22",
+    "block_id": "C2",
+    "field": "return_by",
+    "alternate_value": 595,
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R22",
+    "block_id": "C2",
+    "field": "return_by",
+    "alternate_value": 630,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R23",
+    "block_id": "C3",
+    "field": "selection",
+    "alternate_value": "nearest_from_bank",
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R23",
+    "block_id": "C3",
+    "field": "selection",
+    "alternate_value": "minimum_added_distance",
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R23",
+    "block_id": "C3",
+    "field": "availability_reference",
+    "alternate_value": "departure",
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R23",
+    "block_id": "C3",
+    "field": "return_by",
+    "alternate_value": 550,
+    "changed_decision": true,
+    "mutant_status": "INFEASIBLE",
+    "mutant_poi_ids": []
+  },
+  {
+    "case_id": "R23",
+    "block_id": "C3",
+    "field": "return_by",
+    "alternate_value": 590,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R23",
+    "block_id": "C3",
+    "field": "return_by",
+    "alternate_value": 595,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R23",
+    "block_id": "C3",
+    "field": "return_by",
+    "alternate_value": 600,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R23",
+    "block_id": "C3",
+    "field": "return_by",
+    "alternate_value": 630,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R24",
+    "block_id": "C3",
+    "field": "selection",
+    "alternate_value": "nearest_from_bank",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha",
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R24",
+    "block_id": "C3",
+    "field": "selection",
+    "alternate_value": "minimum_added_distance",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R24",
+    "block_id": "C3",
+    "field": "availability_reference",
+    "alternate_value": "departure",
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R24",
+    "block_id": "C3",
+    "field": "return_by",
+    "alternate_value": 550,
+    "changed_decision": true,
+    "mutant_status": "INFEASIBLE",
+    "mutant_poi_ids": []
+  },
+  {
+    "case_id": "R24",
+    "block_id": "C3",
+    "field": "return_by",
+    "alternate_value": 590,
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R24",
+    "block_id": "C3",
+    "field": "return_by",
+    "alternate_value": 595,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R24",
+    "block_id": "C3",
+    "field": "return_by",
+    "alternate_value": 600,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R24",
+    "block_id": "C3",
+    "field": "return_by",
+    "alternate_value": 630,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R25",
+    "block_id": "C4",
+    "field": "selection",
+    "alternate_value": "minimum_added_distance",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R25",
+    "block_id": "C4",
+    "field": "selection",
+    "alternate_value": "highest_rating",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R25",
+    "block_id": "C4",
+    "field": "availability_reference",
+    "alternate_value": "departure",
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R25",
+    "block_id": "C4",
+    "field": "return_by",
+    "alternate_value": 550,
+    "changed_decision": true,
+    "mutant_status": "INFEASIBLE",
+    "mutant_poi_ids": []
+  },
+  {
+    "case_id": "R25",
+    "block_id": "C4",
+    "field": "return_by",
+    "alternate_value": 590,
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R25",
+    "block_id": "C4",
+    "field": "return_by",
+    "alternate_value": 595,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R25",
+    "block_id": "C4",
+    "field": "return_by",
+    "alternate_value": 600,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R25",
+    "block_id": "C4",
+    "field": "return_by",
+    "alternate_value": 630,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R26",
+    "block_id": "C4",
+    "field": "selection",
+    "alternate_value": "minimum_added_distance",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R26",
+    "block_id": "C4",
+    "field": "selection",
+    "alternate_value": "highest_rating",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R26",
+    "block_id": "C4",
+    "field": "availability_reference",
+    "alternate_value": "departure",
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R26",
+    "block_id": "C4",
+    "field": "return_by",
+    "alternate_value": 550,
+    "changed_decision": true,
+    "mutant_status": "INFEASIBLE",
+    "mutant_poi_ids": []
+  },
+  {
+    "case_id": "R26",
+    "block_id": "C4",
+    "field": "return_by",
+    "alternate_value": 590,
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R26",
+    "block_id": "C4",
+    "field": "return_by",
+    "alternate_value": 595,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R26",
+    "block_id": "C4",
+    "field": "return_by",
+    "alternate_value": 600,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R26",
+    "block_id": "C4",
+    "field": "return_by",
+    "alternate_value": 630,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R27",
+    "block_id": "C5",
+    "field": "selection",
+    "alternate_value": "nearest_from_bank",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R27",
+    "block_id": "C5",
+    "field": "selection",
+    "alternate_value": "highest_rating",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R27",
+    "block_id": "C5",
+    "field": "availability_reference",
+    "alternate_value": "departure",
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R27",
+    "block_id": "C5",
+    "field": "return_by",
+    "alternate_value": 550,
+    "changed_decision": true,
+    "mutant_status": "INFEASIBLE",
+    "mutant_poi_ids": []
+  },
+  {
+    "case_id": "R27",
+    "block_id": "C5",
+    "field": "return_by",
+    "alternate_value": 590,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R27",
+    "block_id": "C5",
+    "field": "return_by",
+    "alternate_value": 595,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R27",
+    "block_id": "C5",
+    "field": "return_by",
+    "alternate_value": 600,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R27",
+    "block_id": "C5",
+    "field": "return_by",
+    "alternate_value": 630,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R28",
+    "block_id": "C5",
+    "field": "selection",
+    "alternate_value": "nearest_from_bank",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R28",
+    "block_id": "C5",
+    "field": "selection",
+    "alternate_value": "highest_rating",
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R28",
+    "block_id": "C5",
+    "field": "availability_reference",
+    "alternate_value": "departure",
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R28",
+    "block_id": "C5",
+    "field": "return_by",
+    "alternate_value": 550,
+    "changed_decision": true,
+    "mutant_status": "INFEASIBLE",
+    "mutant_poi_ids": []
+  },
+  {
+    "case_id": "R28",
+    "block_id": "C5",
+    "field": "return_by",
+    "alternate_value": 590,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R28",
+    "block_id": "C5",
+    "field": "return_by",
+    "alternate_value": 595,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R28",
+    "block_id": "C5",
+    "field": "return_by",
+    "alternate_value": 600,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R28",
+    "block_id": "C5",
+    "field": "return_by",
+    "alternate_value": 630,
+    "changed_decision": false,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R29",
+    "block_id": "C6",
+    "field": "selection",
+    "alternate_value": "nearest_from_bank",
+    "changed_decision": false,
+    "mutant_status": "INFEASIBLE",
+    "mutant_poi_ids": []
+  },
+  {
+    "case_id": "R29",
+    "block_id": "C6",
+    "field": "selection",
+    "alternate_value": "minimum_added_distance",
+    "changed_decision": false,
+    "mutant_status": "INFEASIBLE",
+    "mutant_poi_ids": []
+  },
+  {
+    "case_id": "R29",
+    "block_id": "C6",
+    "field": "availability_reference",
+    "alternate_value": "departure",
+    "changed_decision": false,
+    "mutant_status": "INFEASIBLE",
+    "mutant_poi_ids": []
+  },
+  {
+    "case_id": "R29",
+    "block_id": "C6",
+    "field": "return_by",
+    "alternate_value": null,
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R29",
+    "block_id": "C6",
+    "field": "return_by",
+    "alternate_value": 590,
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R29",
+    "block_id": "C6",
+    "field": "return_by",
+    "alternate_value": 595,
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R29",
+    "block_id": "C6",
+    "field": "return_by",
+    "alternate_value": 600,
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R29",
+    "block_id": "C6",
+    "field": "return_by",
+    "alternate_value": 630,
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_beta"
+    ]
+  },
+  {
+    "case_id": "R30",
+    "block_id": "C6",
+    "field": "selection",
+    "alternate_value": "nearest_from_bank",
+    "changed_decision": false,
+    "mutant_status": "INFEASIBLE",
+    "mutant_poi_ids": []
+  },
+  {
+    "case_id": "R30",
+    "block_id": "C6",
+    "field": "selection",
+    "alternate_value": "minimum_added_distance",
+    "changed_decision": false,
+    "mutant_status": "INFEASIBLE",
+    "mutant_poi_ids": []
+  },
+  {
+    "case_id": "R30",
+    "block_id": "C6",
+    "field": "availability_reference",
+    "alternate_value": "departure",
+    "changed_decision": false,
+    "mutant_status": "INFEASIBLE",
+    "mutant_poi_ids": []
+  },
+  {
+    "case_id": "R30",
+    "block_id": "C6",
+    "field": "return_by",
+    "alternate_value": null,
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R30",
+    "block_id": "C6",
+    "field": "return_by",
+    "alternate_value": 590,
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_alpha"
+    ]
+  },
+  {
+    "case_id": "R30",
+    "block_id": "C6",
+    "field": "return_by",
+    "alternate_value": 595,
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R30",
+    "block_id": "C6",
+    "field": "return_by",
+    "alternate_value": 600,
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  },
+  {
+    "case_id": "R30",
+    "block_id": "C6",
+    "field": "return_by",
+    "alternate_value": 630,
+    "changed_decision": true,
+    "mutant_status": "OK",
+    "mutant_poi_ids": [
+      "P_gamma"
+    ]
+  }
+]

@@ -1,0 +1,6 @@
+
+Definitions of the three selection values:
+- nearest_from_bank: minimize the straight-line distance d(B, P) from bank B to the pharmacy P among eligible pharmacies.
+- minimum_added_distance: minimize d(B, P) + d(P, H) - d(B, H) among eligible pharmacies, where H is home.
+- highest_rating: maximize the pharmacy rating among eligible pharmacies.
+These definitions specify the selection field. Read which objective is requested from the instruction; the availability_reference and return_by fields retain their definitions above.

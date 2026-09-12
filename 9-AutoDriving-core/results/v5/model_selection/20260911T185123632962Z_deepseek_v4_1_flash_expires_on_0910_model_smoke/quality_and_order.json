@@ -1,0 +1,41 @@
+{
+  "fixture_id": "quality_and_order",
+  "text": "Visit a bank and then a pharmacy. Choose the best-rated places even if the trip is longer.",
+  "gold": {
+    "pois": [
+      "bank",
+      "pharmacy"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "bank",
+        "pharmacy"
+      ]
+    ],
+    "quality_weight": 0.75
+  },
+  "started_at": "2026-09-11T18:51:23.633668+00:00",
+  "schema_valid": false,
+  "transport_error_type": "RuntimeError",
+  "error_message": "provider HTTP 503: {\"error\":{\"code\":\"model_not_found\",\"message\":\"No available channel for model deepseek-v4.1-flash-expires-on-0910 under group auto (distributor) (request id: 202609111851241950653538268d9d6hYPQvooW)\",\"type\":\"new_api_error\"}}",
+  "hard": {
+    "hard_exact": false
+  },
+  "direction_exact": false,
+  "finished_at": "2026-09-11T18:51:24.290852+00:00",
+  "telemetry": {
+    "call_index": 1,
+    "prompt_sha256": "e874e3c09d6b7e426bfb3dc4a2a691aca3d2d1da14f636957cc44cca1dd2c0bf",
+    "attempts": 1,
+    "latency_seconds": 0.657,
+    "input_chars": 514,
+    "output_chars": 0,
+    "input_tokens": 129,
+    "output_tokens": 0,
+    "total_tokens": 129,
+    "usage_source": "character_estimate",
+    "success": false,
+    "error": "RuntimeError"
+  }
+}

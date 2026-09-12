@@ -1,0 +1,81 @@
+{
+  "assessment": "PARTIAL",
+  "offline_acceptance": "PASS",
+  "live_end_to_end": "FAIL_PROTOCOL_BEFORE_TOOLS",
+  "fixed_ids": [
+    "e20241028160248698752",
+    "e20241028160842228543",
+    "h20241029143447759844"
+  ],
+  "executed_ids": [
+    "e20241028160248698752"
+  ],
+  "not_executed_ids": [
+    "e20241028160842228543",
+    "h20241029143447759844"
+  ],
+  "requests": 2,
+  "protocol_failures": 2,
+  "dispatched_actions": 0,
+  "transport_failures": 0,
+  "usage_unknown": 0,
+  "provider_input_tokens": 1468,
+  "provider_output_tokens": 163,
+  "actual_system_plus_user_chars": 6142,
+  "elapsed_case_seconds": 7.853918667009566,
+  "complete_query_at_http_boundary": true,
+  "exact_gold_snippet_leaks": [],
+  "provider_response_models": [
+    "claude-haiku-4-5-20251001",
+    "claude-haiku-4-5-20251001"
+  ],
+  "source_files_pinned": 75,
+  "tamper_tests": {
+    "delete_prediction": {
+      "detected": true,
+      "error_type": "FileNotFoundError",
+      "reason": "[Errno 2] No such file or directory: 'COPY/predictions.json'"
+    },
+    "change_response": {
+      "detected": true,
+      "error_type": "ValueError",
+      "reason": "Artifact integrity failure: requests/e20241028160248698752/call_002.json"
+    },
+    "erase_hash_dictionary": {
+      "detected": true,
+      "error_type": "ValueError",
+      "reason": "Required file roles missing or unexpected"
+    },
+    "delete_request_and_hash_entry": {
+      "detected": true,
+      "error_type": "ValueError",
+      "reason": "Required file roles missing or unexpected"
+    },
+    "replace_evaluator_source": {
+      "detected": true,
+      "error_type": "ValueError",
+      "reason": "Pinned source/data/config integrity failure"
+    }
+  },
+  "per_case": {
+    "e20241028160248698752": {
+      "schema_rate": 0.0,
+      "commonsense_macro": 0.0,
+      "hard_macro": 0.0,
+      "all_pass_rate": 0.0
+    },
+    "e20241028160842228543": {
+      "schema_rate": 0.0,
+      "commonsense_macro": 0.0,
+      "hard_macro": 0.0,
+      "all_pass_rate": 0.0
+    },
+    "h20241029143447759844": {
+      "schema_rate": 0.0,
+      "commonsense_macro": 0.0,
+      "hard_macro": 0.0,
+      "all_pass_rate": 0.0
+    }
+  },
+  "note": "same implementer separate-process and independently recomputed ledger review; not independent-person signoff; no research effectiveness claim"
+}

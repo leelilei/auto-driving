@@ -1,0 +1,16 @@
+{
+  "provider": "xcode",
+  "model": "gemini-3.1-flash-lite",
+  "wire_api": "chat_completions",
+  "base_url": "https://xcode.best",
+  "api_key_env": "XCODE_API_KEY",
+  "temperature": 0.0,
+  "omit_temperature": false,
+  "timeout": 60,
+  "sleep": 0,
+  "max_concurrency": 16,
+  "retries": 3,
+  "retry_sleep": 2,
+  "json_mode": true,
+  "transport": "curl"
+}

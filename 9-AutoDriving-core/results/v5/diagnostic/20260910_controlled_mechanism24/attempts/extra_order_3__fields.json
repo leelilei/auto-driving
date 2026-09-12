@@ -1,0 +1,29 @@
+{
+  "call_id": "extra_order_3__fields",
+  "role": "fields",
+  "graph_condition": "tradeoff",
+  "started_at": "2026-09-10T02:50:03.191421+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. The field-difference report only identifies disagreements; it does not identify the correct answer.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not infer user preference from a route or map.\n\nInstruction:\nToday, make sure to visit the library, pharmacy, and supermarket. Please return by 17:00. Focus on visiting high-rated places, even if the route is slightly longer.\n\nCandidate A:\n{\"dependencies\": [], \"pois\": [\"library\", \"pharmacy\", \"supermarket\"], \"quality_weight\": 0.75, \"time_limit\": 1020}\n\nCandidate B:\n{\"dependencies\": [[\"library\", \"pharmacy\"]], \"pois\": [\"library\", \"pharmacy\", \"supermarket\"], \"quality_weight\": 0.75, \"time_limit\": 1020}\n\nField differences:\n{\"fields\": [\"dependencies\"]}\n"
+  },
+  "status": "TRANSPORT_FAILED",
+  "schema_valid": false,
+  "error_type": "RuntimeError",
+  "error_message": "provider HTTP 401: {\"error\":{\"message\":\"Authentication Fails, Your api key: ****rKTY is invalid\",\"type\":\"authentication_error\",\"param\":null,\"code\":\"invalid_request_error\"}}",
+  "finished_at": "2026-09-10T02:50:03.316058+00:00",
+  "telemetry": {
+    "call_index": 1,
+    "prompt_sha256": "ebe47747b5f1765ef8cd9b334fa98ecd522e267babb513f3150f98b8b45fae0c",
+    "attempts": 1,
+    "latency_seconds": 0.125,
+    "input_chars": 1050,
+    "output_chars": 0,
+    "input_tokens": 263,
+    "output_tokens": 0,
+    "total_tokens": 263,
+    "usage_source": "character_estimate",
+    "success": false,
+    "error": "RuntimeError"
+  }
+}

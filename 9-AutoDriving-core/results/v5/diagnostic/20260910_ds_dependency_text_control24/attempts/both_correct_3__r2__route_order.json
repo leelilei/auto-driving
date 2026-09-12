@@ -1,0 +1,42 @@
+{
+  "call_id": "both_correct_3__r2__route_order",
+  "role": "route_order",
+  "graph_condition": "tradeoff",
+  "started_at": "2026-09-10T04:16:56.636134+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. Both candidates may be wrong, including when they agree. Supplementary information describes candidate differences or planning consequences; it does not identify the correct intent. Resolve every field from the instruction. Do not infer user preference from a route or map.\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised.\n\nInstruction:\nToday, make sure to visit the bank and the library. Please be back by 18:00. It's essential to prioritize a quick and efficient route for these visits.\n\nCandidate A:\n{\"dependencies\": [], \"pois\": [\"bank\", \"library\"], \"quality_weight\": 0.25, \"time_limit\": 1080}\n\nCandidate B:\n{\"dependencies\": [], \"pois\": [\"bank\", \"library\"], \"quality_weight\": 0.25, \"time_limit\": 1080}\n\nSupplementary information:\n{\"differing_fields\": [], \"routes\": {\"A\": {\"categories\": [\"bank\", \"library\"]}, \"B\": {\"categories\": [\"bank\", \"library\"]}}}"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"bank\",\"library\"],\"time_limit\":1080,\"dependencies\":[],\"quality_weight\":0.25},\"evidence\":{\"pois\":\"visit the bank and the library\",\"time_limit\":\"be back by 18:00\",\"quality_weight\":\"prioritize a quick and efficient route\"},\"changes\":[]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library"
+    ],
+    "time_limit": 1080,
+    "dependencies": [],
+    "quality_weight": 0.25
+  },
+  "evidence": {
+    "pois": "visit the bank and the library",
+    "time_limit": "be back by 18:00",
+    "quality_weight": "prioritize a quick and efficient route"
+  },
+  "changes": [],
+  "finished_at": "2026-09-10T04:17:38.218309+00:00",
+  "telemetry": {
+    "call_index": 1,
+    "prompt_sha256": "08ab711c14bc6b7f620f848f5abdfa19ecf9577620d5b06682bb74a7cdaddcb5",
+    "attempts": 1,
+    "latency_seconds": 41.582,
+    "input_chars": 1197,
+    "output_chars": 252,
+    "input_tokens": 330,
+    "output_tokens": 9472,
+    "total_tokens": 9802,
+    "usage_source": "provider",
+    "success": true
+  }
+}

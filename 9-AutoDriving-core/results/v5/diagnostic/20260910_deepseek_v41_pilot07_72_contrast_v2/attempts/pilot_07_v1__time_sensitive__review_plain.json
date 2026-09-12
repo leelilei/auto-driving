@@ -1,0 +1,51 @@
+{
+  "call_id": "pilot_07_v1::time_sensitive::review_plain",
+  "role": "review_plain",
+  "graph_condition": "time_sensitive",
+  "started_at": "2026-09-09T16:36:09.834109+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. Candidate agreement is not proof of correctness.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not use route efficiency to infer what the user wants.\n\nInstruction:\nPlease visit the library, pharmacy, and supermarket today and return by 17:00. Prioritize locations with high ratings, even if it requires extra driving distance.\n\nCandidate A:\n{\"dependencies\": [], \"pois\": [\"library\", \"pharmacy\", \"supermarket\"], \"quality_weight\": 1.0, \"time_limit\": 1020}\n\nCandidate B:\n{\"dependencies\": [], \"pois\": [\"library\", \"pharmacy\", \"supermarket\"], \"quality_weight\": 1.0, \"time_limit\": 1020}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"library\",\"pharmacy\",\"supermarket\"],\"time_limit\":1020,\"dependencies\":[],\"quality_weight\":1.0},\"evidence\":{\"pois\":[\"library, pharmacy, and supermarket\"],\"time_limit\":[\"return by 17:00\"],\"dependencies\":[],\"quality_weight\":[\"Prioritize locations with high ratings\",\"even if it requires extra driving distance\"]},\"changes\":[]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "library",
+      "pharmacy",
+      "supermarket"
+    ],
+    "time_limit": 1020,
+    "dependencies": [],
+    "quality_weight": 1.0
+  },
+  "evidence": {
+    "pois": [
+      "library, pharmacy, and supermarket"
+    ],
+    "time_limit": [
+      "return by 17:00"
+    ],
+    "dependencies": [],
+    "quality_weight": [
+      "Prioritize locations with high ratings",
+      "even if it requires extra driving distance"
+    ]
+  },
+  "changes": [],
+  "finished_at": "2026-09-09T16:36:19.370583+00:00",
+  "telemetry": {
+    "call_index": 33,
+    "prompt_sha256": "240243abb2d2e28ee4c3431d2d24bbff5b6b1a70ca640b1ddddd20cb001c72de",
+    "attempts": 1,
+    "latency_seconds": 9.536,
+    "input_chars": 931,
+    "output_chars": 341,
+    "input_tokens": 272,
+    "output_tokens": 2806,
+    "total_tokens": 3078,
+    "usage_source": "provider",
+    "success": true
+  }
+}

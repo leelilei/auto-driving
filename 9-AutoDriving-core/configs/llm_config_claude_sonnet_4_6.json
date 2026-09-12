@@ -1,0 +1,11 @@
+{
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "wire_api": "anthropic_messages",
+  "base_url": "https://www.fhl.mom",
+  "temperature": 0.0,
+  "timeout": 90,
+  "max_output_tokens": 1200,
+  "retries": 3,
+  "retry_sleep": 2.0
+}

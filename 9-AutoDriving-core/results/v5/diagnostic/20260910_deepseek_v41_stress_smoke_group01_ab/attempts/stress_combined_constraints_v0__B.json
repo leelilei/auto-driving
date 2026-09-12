@@ -1,0 +1,54 @@
+{
+  "call_id": "stress_combined_constraints_v0::B",
+  "role": "B",
+  "graph_condition": null,
+  "started_at": "2026-09-10T02:28:39.335342+00:00",
+  "request": {
+    "system": "Read the user's route-planning instruction field by field before producing the final JSON.\n\nCheck: requested POI categories, return deadline, explicit visit order, and the direction of the quality-versus-distance preference. Each conclusion must be supported by the instruction itself.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nDo not infer a preference from any route or map. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Visit the library, shopping mall, bank, and pharmacy and return by 17:30. Go to the library before the shopping mall and the bank before the pharmacy. Keep the route as short as practical."
+  },
+  "raw_response": "{\"pois\":[\"library\",\"shopping mall\",\"bank\",\"pharmacy\"],\"time_limit\":1050,\"dependencies\":[[\"library\",\"shopping mall\"],[\"bank\",\"pharmacy\"]],\"quality_weight\":0,\"evidence\":{\"pois\":\"library, shopping mall, bank, and pharmacy\",\"time_limit\":\"return by 17:30\",\"dependencies\":\"library before the shopping mall and the bank before the pharmacy\",\"quality_weight\":\"Keep the route as short as practical\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library",
+      "pharmacy",
+      "shopping_mall"
+    ],
+    "time_limit": 1050,
+    "dependencies": [
+      [
+        "bank",
+        "pharmacy"
+      ],
+      [
+        "library",
+        "shopping_mall"
+      ]
+    ],
+    "quality_weight": 0.0
+  },
+  "evidence": {
+    "pois": "library, shopping mall, bank, and pharmacy",
+    "time_limit": "return by 17:30",
+    "dependencies": "library before the shopping mall and the bank before the pharmacy",
+    "quality_weight": "Keep the route as short as practical"
+  },
+  "changes": [],
+  "finished_at": "2026-09-10T02:28:41.947783+00:00",
+  "telemetry": {
+    "call_index": 2,
+    "prompt_sha256": "a7bef915e378745c1b61b8494ff2b71733aa91b04dc23c7159b4aac0dbeda442",
+    "attempts": 1,
+    "latency_seconds": 2.612,
+    "input_chars": 1062,
+    "output_chars": 391,
+    "input_tokens": 272,
+    "output_tokens": 576,
+    "total_tokens": 848,
+    "usage_source": "provider",
+    "success": true
+  }
+}

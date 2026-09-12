@@ -1,0 +1,16 @@
+{
+  "created": "2026-09-10T15:15:33.485892+00:00",
+  "scope": "PROSPECTIVE_DEVELOPMENT_SUPPLEMENT",
+  "human_review": "PENDING",
+  "model_api_calls": 0,
+  "source_sha256": "4db617c6b06b2e9f03568aecec46653696d8327fb2599234b9987b491e93de09",
+  "files": {
+    "model_inputs.json": "3ec69c5eceac4ccf9b13071ef1b5da6a185d296c7399b4f5ab8231e349747f6e",
+    "mutation_audit.json": "1915df259053bc1acf8f38befbed3039e8abb232e2ff234f249246695a801913",
+    "gold_and_traces.json": "5dc2fa0a339467b29270b1289d447102a5cedae47358c7f81492d2ad0b2b7cc3",
+    "offline_validation.json": "610a025b5ccdc900915f28fff45cb83860fbd5d0cf860322d1900c105c754a0a",
+    "author_review_cases.json": "927f4d6fc2b48211e8f9db835d4b3c1a5f9c5882deed3acde2aa887af0511248",
+    "run_plan.json": "bc9b8a661fda4c9f2ad528345c9d5b5180ba9d7f11ed866b3aa076ad444764f0",
+    "CASE_REVIEW.md": "b8f14c670cb4009b3022816937924cd69cfb5e84b71f2c6eacd0d67646220533"
+  }
+}

@@ -1,0 +1,804 @@
+{
+  "status": "COLLECTED",
+  "provider": "official DeepSeek",
+  "request_model": "deepseek-v4-flash",
+  "logical_model_calls": 12,
+  "complete": 12,
+  "retry_policy": "No retry for semantic/structural output; provider failures eligible for one separately logged retry.",
+  "prompt_policy": "Frozen Repair v1 ten-field prompt with disclosed dataset party convention",
+  "records": [
+    {
+      "uid": "e20241028160251109186",
+      "request": {
+        "model": "deepseek-v4-flash",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Extract the explicitly requested travel constraints and return exactly one JSON object.\nRequired keys: start_city,target_city,days,people_number,budget,room_count,room_type,cuisine,intercity_mode,attraction_category.\nUse null only when the query does not specify a field. Do not plan an itinerary.\nDataset party convention: 我计划/我打算/我想 without a companion means 1; 我和朋友/男朋友/女朋友 means 2; 我们N个人 means N.\nroom_type is 1 for 单床房 and 2 for 双床房. intercity_mode is train or airplane.\nOnly extract an explicit cuisine or attraction category; do not invent proxies. No markdown or commentary."
+          },
+          {
+            "role": "user",
+            "content": "{\"uid\": \"e20241028160251109186\", \"nature_language\": \"当前位置广州。我一个人想去深圳玩一天，预算1000人民币，请给我一个旅行规划。\"}"
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 700,
+        "response_format": {
+          "type": "json_object"
+        },
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "logical_request": 1,
+      "status": "COMPLETE",
+      "provider_response": {
+        "id": "264960b8-21fa-4fc1-9248-cbb00874b11c",
+        "object": "chat.completion",
+        "created": 1789143908,
+        "model": "deepseek-flash",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\"start_city\": \"广州\", \"target_city\": \"深圳\", \"days\": 1, \"people_number\": 1, \"budget\": 1000, \"room_count\": null, \"room_type\": null, \"cuisine\": null, \"intercity_mode\": null, \"attraction_category\": null}"
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 218,
+          "completion_tokens": 69,
+          "total_tokens": 287,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 218
+        },
+        "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+      },
+      "parsed_intent": {
+        "start_city": "广州",
+        "target_city": "深圳",
+        "days": 1,
+        "people_number": 1,
+        "budget": 1000,
+        "room_count": null,
+        "room_type": null,
+        "cuisine": null,
+        "intercity_mode": null,
+        "attraction_category": null
+      }
+    },
+    {
+      "uid": "e20241028160253742452",
+      "request": {
+        "model": "deepseek-v4-flash",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Extract the explicitly requested travel constraints and return exactly one JSON object.\nRequired keys: start_city,target_city,days,people_number,budget,room_count,room_type,cuisine,intercity_mode,attraction_category.\nUse null only when the query does not specify a field. Do not plan an itinerary.\nDataset party convention: 我计划/我打算/我想 without a companion means 1; 我和朋友/男朋友/女朋友 means 2; 我们N个人 means N.\nroom_type is 1 for 单床房 and 2 for 双床房. intercity_mode is train or airplane.\nOnly extract an explicit cuisine or attraction category; do not invent proxies. No markdown or commentary."
+          },
+          {
+            "role": "user",
+            "content": "{\"uid\": \"e20241028160253742452\", \"nature_language\": \"当前位置重庆。我一个人想去成都玩一天，预算1200人民币，请给我一个旅行规划。\"}"
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 700,
+        "response_format": {
+          "type": "json_object"
+        },
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "logical_request": 1,
+      "status": "COMPLETE",
+      "provider_response": {
+        "id": "96234ae8-3acb-4aa5-99f8-92333496f2df",
+        "object": "chat.completion",
+        "created": 1789143909,
+        "model": "deepseek-flash",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\"start_city\": \"重庆\", \"target_city\": \"成都\", \"days\": 1, \"people_number\": 1, \"budget\": 1200, \"room_count\": null, \"room_type\": null, \"cuisine\": null, \"intercity_mode\": null, \"attraction_category\": null}"
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 218,
+          "completion_tokens": 69,
+          "total_tokens": 287,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 218
+        },
+        "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+      },
+      "parsed_intent": {
+        "start_city": "重庆",
+        "target_city": "成都",
+        "days": 1,
+        "people_number": 1,
+        "budget": 1200,
+        "room_count": null,
+        "room_type": null,
+        "cuisine": null,
+        "intercity_mode": null,
+        "attraction_category": null
+      }
+    },
+    {
+      "uid": "e20241028160255878579",
+      "request": {
+        "model": "deepseek-v4-flash",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Extract the explicitly requested travel constraints and return exactly one JSON object.\nRequired keys: start_city,target_city,days,people_number,budget,room_count,room_type,cuisine,intercity_mode,attraction_category.\nUse null only when the query does not specify a field. Do not plan an itinerary.\nDataset party convention: 我计划/我打算/我想 without a companion means 1; 我和朋友/男朋友/女朋友 means 2; 我们N个人 means N.\nroom_type is 1 for 单床房 and 2 for 双床房. intercity_mode is train or airplane.\nOnly extract an explicit cuisine or attraction category; do not invent proxies. No markdown or commentary."
+          },
+          {
+            "role": "user",
+            "content": "{\"uid\": \"e20241028160255878579\", \"nature_language\": \"当前位置武汉。我一个人想去南京玩一天，预算1800人民币，请给我一个旅行规划。\"}"
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 700,
+        "response_format": {
+          "type": "json_object"
+        },
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "logical_request": 1,
+      "status": "COMPLETE",
+      "provider_response": {
+        "id": "c4c7d7f4-ce87-4d1f-8ef1-edac034124d4",
+        "object": "chat.completion",
+        "created": 1789143910,
+        "model": "deepseek-flash",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\"start_city\": \"武汉\", \"target_city\": \"南京\", \"days\": 1, \"people_number\": 1, \"budget\": 1800, \"room_count\": null, \"room_type\": null, \"cuisine\": null, \"intercity_mode\": null, \"attraction_category\": null}"
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 218,
+          "completion_tokens": 69,
+          "total_tokens": 287,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 218
+        },
+        "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+      },
+      "parsed_intent": {
+        "start_city": "武汉",
+        "target_city": "南京",
+        "days": 1,
+        "people_number": 1,
+        "budget": 1800,
+        "room_count": null,
+        "room_type": null,
+        "cuisine": null,
+        "intercity_mode": null,
+        "attraction_category": null
+      }
+    },
+    {
+      "uid": "e20241028160258515151",
+      "request": {
+        "model": "deepseek-v4-flash",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Extract the explicitly requested travel constraints and return exactly one JSON object.\nRequired keys: start_city,target_city,days,people_number,budget,room_count,room_type,cuisine,intercity_mode,attraction_category.\nUse null only when the query does not specify a field. Do not plan an itinerary.\nDataset party convention: 我计划/我打算/我想 without a companion means 1; 我和朋友/男朋友/女朋友 means 2; 我们N个人 means N.\nroom_type is 1 for 单床房 and 2 for 双床房. intercity_mode is train or airplane.\nOnly extract an explicit cuisine or attraction category; do not invent proxies. No markdown or commentary."
+          },
+          {
+            "role": "user",
+            "content": "{\"uid\": \"e20241028160258515151\", \"nature_language\": \"当前位置杭州。我一个人想去上海玩一天，预算1600人民币，请给我一个旅行规划。\"}"
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 700,
+        "response_format": {
+          "type": "json_object"
+        },
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "logical_request": 1,
+      "status": "COMPLETE",
+      "provider_response": {
+        "id": "d600224c-a49b-4a6e-ac14-918a4749a484",
+        "object": "chat.completion",
+        "created": 1789143912,
+        "model": "deepseek-flash",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\"start_city\": \"杭州\", \"target_city\": \"上海\", \"days\": 1, \"people_number\": 1, \"budget\": 1600, \"room_count\": null, \"room_type\": null, \"cuisine\": null, \"intercity_mode\": null, \"attraction_category\": null}"
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 218,
+          "completion_tokens": 69,
+          "total_tokens": 287,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 218
+        },
+        "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+      },
+      "parsed_intent": {
+        "start_city": "杭州",
+        "target_city": "上海",
+        "days": 1,
+        "people_number": 1,
+        "budget": 1600,
+        "room_count": null,
+        "room_type": null,
+        "cuisine": null,
+        "intercity_mode": null,
+        "attraction_category": null
+      }
+    },
+    {
+      "uid": "e20241028160300570125",
+      "request": {
+        "model": "deepseek-v4-flash",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Extract the explicitly requested travel constraints and return exactly one JSON object.\nRequired keys: start_city,target_city,days,people_number,budget,room_count,room_type,cuisine,intercity_mode,attraction_category.\nUse null only when the query does not specify a field. Do not plan an itinerary.\nDataset party convention: 我计划/我打算/我想 without a companion means 1; 我和朋友/男朋友/女朋友 means 2; 我们N个人 means N.\nroom_type is 1 for 单床房 and 2 for 双床房. intercity_mode is train or airplane.\nOnly extract an explicit cuisine or attraction category; do not invent proxies. No markdown or commentary."
+          },
+          {
+            "role": "user",
+            "content": "{\"uid\": \"e20241028160300570125\", \"nature_language\": \"当前位置南京。我一个人想去武汉玩一天，预算1500人民币，请给我一个旅行规划。\"}"
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 700,
+        "response_format": {
+          "type": "json_object"
+        },
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "logical_request": 1,
+      "status": "COMPLETE",
+      "provider_response": {
+        "id": "4ca044b5-77eb-4eb1-a63c-35edc1c13537",
+        "object": "chat.completion",
+        "created": 1789143914,
+        "model": "deepseek-flash",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\"start_city\": \"南京\", \"target_city\": \"武汉\", \"days\": 1, \"people_number\": 1, \"budget\": 1500, \"room_count\": null, \"room_type\": null, \"cuisine\": null, \"intercity_mode\": null, \"attraction_category\": null}"
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 218,
+          "completion_tokens": 69,
+          "total_tokens": 287,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 218
+        },
+        "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+      },
+      "parsed_intent": {
+        "start_city": "南京",
+        "target_city": "武汉",
+        "days": 1,
+        "people_number": 1,
+        "budget": 1500,
+        "room_count": null,
+        "room_type": null,
+        "cuisine": null,
+        "intercity_mode": null,
+        "attraction_category": null
+      }
+    },
+    {
+      "uid": "e20241028160301887545",
+      "request": {
+        "model": "deepseek-v4-flash",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Extract the explicitly requested travel constraints and return exactly one JSON object.\nRequired keys: start_city,target_city,days,people_number,budget,room_count,room_type,cuisine,intercity_mode,attraction_category.\nUse null only when the query does not specify a field. Do not plan an itinerary.\nDataset party convention: 我计划/我打算/我想 without a companion means 1; 我和朋友/男朋友/女朋友 means 2; 我们N个人 means N.\nroom_type is 1 for 单床房 and 2 for 双床房. intercity_mode is train or airplane.\nOnly extract an explicit cuisine or attraction category; do not invent proxies. No markdown or commentary."
+          },
+          {
+            "role": "user",
+            "content": "{\"uid\": \"e20241028160301887545\", \"nature_language\": \"当前位置深圳。我一个人想去广州玩一天，预算800人民币，请给我一个旅行规划。\"}"
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 700,
+        "response_format": {
+          "type": "json_object"
+        },
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "logical_request": 1,
+      "status": "COMPLETE",
+      "provider_response": {
+        "id": "b723ea52-5f4c-4ecc-b46f-debf64b97ed0",
+        "object": "chat.completion",
+        "created": 1789143915,
+        "model": "deepseek-flash",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\"start_city\": \"深圳\", \"target_city\": \"广州\", \"days\": 1, \"people_number\": 1, \"budget\": 800, \"room_count\": null, \"room_type\": null, \"cuisine\": null, \"intercity_mode\": null, \"attraction_category\": null}"
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 217,
+          "completion_tokens": 68,
+          "total_tokens": 285,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 217
+        },
+        "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+      },
+      "parsed_intent": {
+        "start_city": "深圳",
+        "target_city": "广州",
+        "days": 1,
+        "people_number": 1,
+        "budget": 800,
+        "room_count": null,
+        "room_type": null,
+        "cuisine": null,
+        "intercity_mode": null,
+        "attraction_category": null
+      }
+    },
+    {
+      "uid": "e20241028160303262666",
+      "request": {
+        "model": "deepseek-v4-flash",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Extract the explicitly requested travel constraints and return exactly one JSON object.\nRequired keys: start_city,target_city,days,people_number,budget,room_count,room_type,cuisine,intercity_mode,attraction_category.\nUse null only when the query does not specify a field. Do not plan an itinerary.\nDataset party convention: 我计划/我打算/我想 without a companion means 1; 我和朋友/男朋友/女朋友 means 2; 我们N个人 means N.\nroom_type is 1 for 单床房 and 2 for 双床房. intercity_mode is train or airplane.\nOnly extract an explicit cuisine or attraction category; do not invent proxies. No markdown or commentary."
+          },
+          {
+            "role": "user",
+            "content": "{\"uid\": \"e20241028160303262666\", \"nature_language\": \"当前位置苏州。我一个人想去南京玩一天，预算900人民币，请给我一个旅行规划。\"}"
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 700,
+        "response_format": {
+          "type": "json_object"
+        },
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "logical_request": 1,
+      "status": "COMPLETE",
+      "provider_response": {
+        "id": "879261b7-e625-4526-8ca7-2094a423c1df",
+        "object": "chat.completion",
+        "created": 1789143916,
+        "model": "deepseek-flash",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\"start_city\": \"苏州\", \"target_city\": \"南京\", \"days\": 1, \"people_number\": 1, \"budget\": 900, \"room_count\": null, \"room_type\": null, \"cuisine\": null, \"intercity_mode\": null, \"attraction_category\": null}"
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 217,
+          "completion_tokens": 68,
+          "total_tokens": 285,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 217
+        },
+        "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+      },
+      "parsed_intent": {
+        "start_city": "苏州",
+        "target_city": "南京",
+        "days": 1,
+        "people_number": 1,
+        "budget": 900,
+        "room_count": null,
+        "room_type": null,
+        "cuisine": null,
+        "intercity_mode": null,
+        "attraction_category": null
+      }
+    },
+    {
+      "uid": "e20241028160306588034",
+      "request": {
+        "model": "deepseek-v4-flash",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Extract the explicitly requested travel constraints and return exactly one JSON object.\nRequired keys: start_city,target_city,days,people_number,budget,room_count,room_type,cuisine,intercity_mode,attraction_category.\nUse null only when the query does not specify a field. Do not plan an itinerary.\nDataset party convention: 我计划/我打算/我想 without a companion means 1; 我和朋友/男朋友/女朋友 means 2; 我们N个人 means N.\nroom_type is 1 for 单床房 and 2 for 双床房. intercity_mode is train or airplane.\nOnly extract an explicit cuisine or attraction category; do not invent proxies. No markdown or commentary."
+          },
+          {
+            "role": "user",
+            "content": "{\"uid\": \"e20241028160306588034\", \"nature_language\": \"当前位置成都。我一个人想去重庆玩一天，预算1100人民币，请给我一个旅行规划。\"}"
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 700,
+        "response_format": {
+          "type": "json_object"
+        },
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "logical_request": 1,
+      "status": "COMPLETE",
+      "provider_response": {
+        "id": "61c9ec89-d225-4cbd-8f63-b3d12faf78fa",
+        "object": "chat.completion",
+        "created": 1789143918,
+        "model": "deepseek-flash",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\"start_city\": \"成都\", \"target_city\": \"重庆\", \"days\": 1, \"people_number\": 1, \"budget\": 1100, \"room_count\": null, \"room_type\": null, \"cuisine\": null, \"intercity_mode\": null, \"attraction_category\": null}"
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 218,
+          "completion_tokens": 69,
+          "total_tokens": 287,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 218
+        },
+        "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+      },
+      "parsed_intent": {
+        "start_city": "成都",
+        "target_city": "重庆",
+        "days": 1,
+        "people_number": 1,
+        "budget": 1100,
+        "room_count": null,
+        "room_type": null,
+        "cuisine": null,
+        "intercity_mode": null,
+        "attraction_category": null
+      }
+    },
+    {
+      "uid": "e20241028160307743716",
+      "request": {
+        "model": "deepseek-v4-flash",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Extract the explicitly requested travel constraints and return exactly one JSON object.\nRequired keys: start_city,target_city,days,people_number,budget,room_count,room_type,cuisine,intercity_mode,attraction_category.\nUse null only when the query does not specify a field. Do not plan an itinerary.\nDataset party convention: 我计划/我打算/我想 without a companion means 1; 我和朋友/男朋友/女朋友 means 2; 我们N个人 means N.\nroom_type is 1 for 单床房 and 2 for 双床房. intercity_mode is train or airplane.\nOnly extract an explicit cuisine or attraction category; do not invent proxies. No markdown or commentary."
+          },
+          {
+            "role": "user",
+            "content": "{\"uid\": \"e20241028160307743716\", \"nature_language\": \"当前位置北京。我一个人想去上海玩一天，预算3000人民币，请给我一个旅行规划。\"}"
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 700,
+        "response_format": {
+          "type": "json_object"
+        },
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "logical_request": 1,
+      "status": "COMPLETE",
+      "provider_response": {
+        "id": "f2dfc001-00fd-4985-97a4-b6fb9434dfa3",
+        "object": "chat.completion",
+        "created": 1789143919,
+        "model": "deepseek-flash",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\"start_city\": \"北京\", \"target_city\": \"上海\", \"days\": 1, \"people_number\": 1, \"budget\": 3000, \"room_count\": null, \"room_type\": null, \"cuisine\": null, \"intercity_mode\": null, \"attraction_category\": null}"
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 218,
+          "completion_tokens": 69,
+          "total_tokens": 287,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 218
+        },
+        "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+      },
+      "parsed_intent": {
+        "start_city": "北京",
+        "target_city": "上海",
+        "days": 1,
+        "people_number": 1,
+        "budget": 3000,
+        "room_count": null,
+        "room_type": null,
+        "cuisine": null,
+        "intercity_mode": null,
+        "attraction_category": null
+      }
+    },
+    {
+      "uid": "e20241028160309165566",
+      "request": {
+        "model": "deepseek-v4-flash",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Extract the explicitly requested travel constraints and return exactly one JSON object.\nRequired keys: start_city,target_city,days,people_number,budget,room_count,room_type,cuisine,intercity_mode,attraction_category.\nUse null only when the query does not specify a field. Do not plan an itinerary.\nDataset party convention: 我计划/我打算/我想 without a companion means 1; 我和朋友/男朋友/女朋友 means 2; 我们N个人 means N.\nroom_type is 1 for 单床房 and 2 for 双床房. intercity_mode is train or airplane.\nOnly extract an explicit cuisine or attraction category; do not invent proxies. No markdown or commentary."
+          },
+          {
+            "role": "user",
+            "content": "{\"uid\": \"e20241028160309165566\", \"nature_language\": \"当前位置广州。我一个人想去武汉玩一天，预算3000人民币，请给我一个旅行规划。\"}"
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 700,
+        "response_format": {
+          "type": "json_object"
+        },
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "logical_request": 1,
+      "status": "COMPLETE",
+      "provider_response": {
+        "id": "babb36fc-eca3-4aef-9074-64ece064616d",
+        "object": "chat.completion",
+        "created": 1789143920,
+        "model": "deepseek-flash",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\"start_city\": \"广州\", \"target_city\": \"武汉\", \"days\": 1, \"people_number\": 1, \"budget\": 3000, \"room_count\": null, \"room_type\": null, \"cuisine\": null, \"intercity_mode\": null, \"attraction_category\": null}"
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 218,
+          "completion_tokens": 69,
+          "total_tokens": 287,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 218
+        },
+        "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+      },
+      "parsed_intent": {
+        "start_city": "广州",
+        "target_city": "武汉",
+        "days": 1,
+        "people_number": 1,
+        "budget": 3000,
+        "room_count": null,
+        "room_type": null,
+        "cuisine": null,
+        "intercity_mode": null,
+        "attraction_category": null
+      }
+    },
+    {
+      "uid": "e20241028160311039073",
+      "request": {
+        "model": "deepseek-v4-flash",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Extract the explicitly requested travel constraints and return exactly one JSON object.\nRequired keys: start_city,target_city,days,people_number,budget,room_count,room_type,cuisine,intercity_mode,attraction_category.\nUse null only when the query does not specify a field. Do not plan an itinerary.\nDataset party convention: 我计划/我打算/我想 without a companion means 1; 我和朋友/男朋友/女朋友 means 2; 我们N个人 means N.\nroom_type is 1 for 单床房 and 2 for 双床房. intercity_mode is train or airplane.\nOnly extract an explicit cuisine or attraction category; do not invent proxies. No markdown or commentary."
+          },
+          {
+            "role": "user",
+            "content": "{\"uid\": \"e20241028160311039073\", \"nature_language\": \"当前位置深圳。我一个人想去杭州玩一天，预算2000人民币，请给我一个旅行规划。\"}"
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 700,
+        "response_format": {
+          "type": "json_object"
+        },
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "logical_request": 1,
+      "status": "COMPLETE",
+      "provider_response": {
+        "id": "919d8528-b1a9-4bc6-979a-8cd7262aafad",
+        "object": "chat.completion",
+        "created": 1789143922,
+        "model": "deepseek-flash",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\"start_city\": \"深圳\", \"target_city\": \"杭州\", \"days\": 1, \"people_number\": 1, \"budget\": 2000, \"room_count\": null, \"room_type\": null, \"cuisine\": null, \"intercity_mode\": null, \"attraction_category\": null}"
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 218,
+          "completion_tokens": 69,
+          "total_tokens": 287,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 218
+        },
+        "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+      },
+      "parsed_intent": {
+        "start_city": "深圳",
+        "target_city": "杭州",
+        "days": 1,
+        "people_number": 1,
+        "budget": 2000,
+        "room_count": null,
+        "room_type": null,
+        "cuisine": null,
+        "intercity_mode": null,
+        "attraction_category": null
+      }
+    },
+    {
+      "uid": "e20241028160312706595",
+      "request": {
+        "model": "deepseek-v4-flash",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Extract the explicitly requested travel constraints and return exactly one JSON object.\nRequired keys: start_city,target_city,days,people_number,budget,room_count,room_type,cuisine,intercity_mode,attraction_category.\nUse null only when the query does not specify a field. Do not plan an itinerary.\nDataset party convention: 我计划/我打算/我想 without a companion means 1; 我和朋友/男朋友/女朋友 means 2; 我们N个人 means N.\nroom_type is 1 for 单床房 and 2 for 双床房. intercity_mode is train or airplane.\nOnly extract an explicit cuisine or attraction category; do not invent proxies. No markdown or commentary."
+          },
+          {
+            "role": "user",
+            "content": "{\"uid\": \"e20241028160312706595\", \"nature_language\": \"当前位置重庆。我一个人想去苏州玩一天，预算1400人民币，请给我一个旅行规划。\"}"
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 700,
+        "response_format": {
+          "type": "json_object"
+        },
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "logical_request": 1,
+      "status": "COMPLETE",
+      "provider_response": {
+        "id": "34c00992-ce65-4a0c-aa06-d59505f99bea",
+        "object": "chat.completion",
+        "created": 1789143924,
+        "model": "deepseek-flash",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\"start_city\": \"重庆\", \"target_city\": \"苏州\", \"days\": 1, \"people_number\": 1, \"budget\": 1400, \"room_count\": null, \"room_type\": null, \"cuisine\": null, \"intercity_mode\": null, \"attraction_category\": null}"
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 218,
+          "completion_tokens": 69,
+          "total_tokens": 287,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 218
+        },
+        "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+      },
+      "parsed_intent": {
+        "start_city": "重庆",
+        "target_city": "苏州",
+        "days": 1,
+        "people_number": 1,
+        "budget": 1400,
+        "room_count": null,
+        "room_type": null,
+        "cuisine": null,
+        "intercity_mode": null,
+        "attraction_category": null
+      }
+    }
+  ],
+  "retry_of": "collection.json"
+}

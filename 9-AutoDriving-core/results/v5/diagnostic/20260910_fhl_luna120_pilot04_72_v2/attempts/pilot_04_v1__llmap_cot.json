@@ -1,0 +1,38 @@
+{
+  "call_id": "pilot_04_v1::llmap_cot",
+  "role": "llmap_cot",
+  "graph_condition": null,
+  "started_at": "2026-09-10T01:50:25.907559+00:00",
+  "request": {
+    "system": "Extract POIs, constraints, and weights from human instruction through step-by-step reasoning:\n\n1. POIs Analysis:\n    - Look for POIs mentioned that need to be visited\n    - Create list of unique POIs\n\n2. Time Limit Analysis:\n    - Search for any specific return time\n    - Format as HH:00 or \"None\" if not specified\n\n3. Dependencies Analysis:\n    - Look for words indicating sequence (before, after, then, etc.)\n    - Create pairs of [POI1, POI2] for each sequence requirement\n\n4. Preference Analysis:\n    - Look for language about POI quality/rating importance vs route efficiency\n    - High POI rating emphasis (quality, best places, etc.) ->quality_weight should be large than 0.5\n    - High route efficiency emphasis (quick, shortest, save time) -> distance_weight should be large than 0.5\n    - Balanced language -> both weights around 0.5\n\nOutput must be valid JSON with structure:\n{\n    \"pois\": [\"poi1\", \"poi2\", ...],\n    \"time_limit\": \"HH:00\" or \"None\",\n    \"dependencies\": [[\"poi1\", \"poi2\"], ...],\n    \"quality_weight\": float,\n    \"distance_weight\": float\n}\n",
+    "user": "Extract POIs, constraints, and weights from this instruction as JSON:\nMake sure to visit the bank and the library today, returning by 18:00. It is crucial to prioritize an efficient, quick route for these stops.\n\nOnly output the JSON object. No prefix, additional text, or explanation.\n"
+  },
+  "raw_response": "{\"pois\":[\"bank\",\"library\"],\"time_limit\":\"18:00\",\"dependencies\":[],\"quality_weight\":0.2,\"distance_weight\":0.8}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library"
+    ],
+    "time_limit": 1080,
+    "dependencies": [],
+    "quality_weight": 0.2
+  },
+  "evidence": {},
+  "changes": [],
+  "finished_at": "2026-09-10T01:51:03.710355+00:00",
+  "telemetry": {
+    "call_index": 24,
+    "prompt_sha256": "76e72d756d0ad0f69a4c7c57f0ee60b072a3afcfda67b97fae24e50f41e549ab",
+    "attempts": 1,
+    "latency_seconds": 37.803,
+    "input_chars": 1353,
+    "output_chars": 109,
+    "input_tokens": 611,
+    "output_tokens": 75,
+    "total_tokens": 686,
+    "usage_source": "provider",
+    "success": true
+  }
+}

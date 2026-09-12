@@ -1,0 +1,1426 @@
+{
+  "gpt54_mini": {
+    "full_160_groups": {
+      "cohort_name": "gpt54_mini_full160",
+      "groups_count": 160,
+      "utterances_count": 640,
+      "audit_checks": {
+        "candidate_match_count": 0,
+        "candidate_match_ratio": 0.0,
+        "review_fallback_count": 0,
+        "review_fallback_ratio": 0.0,
+        "usage_missing_count": 3200
+      },
+      "tokens_ledger": {
+        "total_prompt_tokens": 0,
+        "total_completion_tokens": 0,
+        "total_cached_tokens": 0,
+        "mean_tokens_per_utterance": 0.0
+      },
+      "online_methods": {
+        "B0": {
+          "tsr": 1.0,
+          "gtsr": 1.0,
+          "failed_count": 0,
+          "failed_ids": [],
+          "corrected_count": 0,
+          "degraded_count": 0,
+          "degraded_ids": [],
+          "review_rate": 0.0,
+          "calls_per_utterance": 1.0,
+          "common_pairs_count": 960,
+          "common_pair_weighted_flip": 0.23854166666666668,
+          "common_group_macro_flip": 0.23854166666666668,
+          "all_pair_flip_or_failure": 0.23854166666666668,
+          "mean_route_utility": 0.2891937832983794,
+          "mean_regret": 0.0029235136598771004
+        },
+        "B4_online": {
+          "tsr": 1.0,
+          "gtsr": 1.0,
+          "failed_count": 0,
+          "failed_ids": [],
+          "corrected_count": 0,
+          "degraded_count": 0,
+          "degraded_ids": [],
+          "review_rate": 0.0765625,
+          "calls_per_utterance": 2.0765625,
+          "common_pairs_count": 960,
+          "common_pair_weighted_flip": 0.22708333333333333,
+          "common_group_macro_flip": 0.22708333333333333,
+          "all_pair_flip_or_failure": 0.22708333333333333,
+          "mean_route_utility": 0.2901178235435849,
+          "mean_regret": 0.0024614935372743764
+        },
+        "DARC_online": {
+          "tsr": 1.0,
+          "gtsr": 1.0,
+          "failed_count": 0,
+          "failed_ids": [],
+          "corrected_count": 0,
+          "degraded_count": 0,
+          "degraded_ids": [],
+          "review_rate": 0.0421875,
+          "calls_per_utterance": 2.0421875,
+          "common_pairs_count": 960,
+          "common_pair_weighted_flip": 0.203125,
+          "common_group_macro_flip": 0.203125,
+          "all_pair_flip_or_failure": 0.203125,
+          "mean_route_utility": 0.29031948263266166,
+          "mean_regret": 0.0023606639927359753
+        },
+        "B6": {
+          "tsr": 1.0,
+          "gtsr": 1.0,
+          "failed_count": 0,
+          "failed_ids": [],
+          "corrected_count": 0,
+          "degraded_count": 0,
+          "degraded_ids": [],
+          "review_rate": 1.0,
+          "calls_per_utterance": 3.0,
+          "common_pairs_count": 960,
+          "common_pair_weighted_flip": 0.16354166666666667,
+          "common_group_macro_flip": 0.16354166666666667,
+          "all_pair_flip_or_failure": 0.16354166666666667,
+          "mean_route_utility": 0.2910038158742596,
+          "mean_regret": 0.002018497371937005
+        }
+      },
+      "equal_quota": {
+        "5%": {
+          "quota_pct": "5%",
+          "quota_k": 32,
+          "h_protected_count": 1,
+          "common_pairs_count": 960,
+          "total_pairs_count": 960,
+          "darc_tsr": 1.0,
+          "b4_tsr": 1.0,
+          "darc_degraded_count": 0,
+          "darc_degraded_ids": [],
+          "pair_weighted_darc_flip": 0.19895833333333332,
+          "pair_weighted_b4_flip": 0.22083333333333333,
+          "pair_weighted_b3_flip": 0.23479166666666668,
+          "gain_pair_weighted_vs_random_pct": 3.5833333333333357,
+          "gain_pair_weighted_vs_b4_pct": 2.1875000000000004,
+          "group_macro_darc_flip": 0.19895833333333332,
+          "group_macro_b4_flip": 0.22083333333333333,
+          "group_macro_b3_flip": 0.23479166666666668,
+          "gain_group_macro_vs_random_pct": 3.5833333333333357,
+          "gain_group_macro_vs_b4_pct": 2.1875000000000004,
+          "ci95_darc_minus_b3": [
+            -0.0606,
+            -0.0129
+          ],
+          "ci95_darc_minus_b4": [
+            -0.0448,
+            -0.0021
+          ]
+        },
+        "10%": {
+          "quota_pct": "10%",
+          "quota_k": 64,
+          "h_protected_count": 1,
+          "common_pairs_count": 960,
+          "total_pairs_count": 960,
+          "darc_tsr": 1.0,
+          "b4_tsr": 1.0,
+          "darc_degraded_count": 0,
+          "darc_degraded_ids": [],
+          "pair_weighted_darc_flip": 0.16145833333333334,
+          "pair_weighted_b4_flip": 0.221875,
+          "pair_weighted_b3_flip": 0.23234375,
+          "gain_pair_weighted_vs_random_pct": 7.088541666666664,
+          "gain_pair_weighted_vs_b4_pct": 6.041666666666664,
+          "group_macro_darc_flip": 0.16145833333333334,
+          "group_macro_b4_flip": 0.221875,
+          "group_macro_b3_flip": 0.23234375,
+          "gain_group_macro_vs_random_pct": 7.088541666666664,
+          "gain_group_macro_vs_b4_pct": 6.041666666666664,
+          "ci95_darc_minus_b3": [
+            -0.0984,
+            -0.043
+          ],
+          "ci95_darc_minus_b4": [
+            -0.0875,
+            -0.0375
+          ]
+        },
+        "20%": {
+          "quota_pct": "20%",
+          "quota_k": 128,
+          "h_protected_count": 1,
+          "common_pairs_count": 960,
+          "total_pairs_count": 960,
+          "darc_tsr": 1.0,
+          "b4_tsr": 1.0,
+          "darc_degraded_count": 0,
+          "darc_degraded_ids": [],
+          "pair_weighted_darc_flip": 0.16145833333333334,
+          "pair_weighted_b4_flip": 0.18958333333333333,
+          "pair_weighted_b3_flip": 0.22567708333333333,
+          "gain_pair_weighted_vs_random_pct": 6.421874999999999,
+          "gain_pair_weighted_vs_b4_pct": 2.8124999999999982,
+          "group_macro_darc_flip": 0.16145833333333334,
+          "group_macro_b4_flip": 0.18958333333333333,
+          "group_macro_b3_flip": 0.22567708333333333,
+          "gain_group_macro_vs_random_pct": 6.421874999999999,
+          "gain_group_macro_vs_b4_pct": 2.8124999999999982,
+          "ci95_darc_minus_b3": [
+            -0.0899,
+            -0.039
+          ],
+          "ci95_darc_minus_b4": [
+            -0.0458,
+            -0.0125
+          ]
+        }
+      }
+    },
+    "clean_146_groups": {
+      "cohort_name": "gpt54_mini_clean146",
+      "groups_count": 146,
+      "utterances_count": 584,
+      "audit_checks": {
+        "candidate_match_count": 0,
+        "candidate_match_ratio": 0.0,
+        "review_fallback_count": 0,
+        "review_fallback_ratio": 0.0,
+        "usage_missing_count": 2920
+      },
+      "tokens_ledger": {
+        "total_prompt_tokens": 0,
+        "total_completion_tokens": 0,
+        "total_cached_tokens": 0,
+        "mean_tokens_per_utterance": 0.0
+      },
+      "online_methods": {
+        "B0": {
+          "tsr": 1.0,
+          "gtsr": 1.0,
+          "failed_count": 0,
+          "failed_ids": [],
+          "corrected_count": 0,
+          "degraded_count": 0,
+          "degraded_ids": [],
+          "review_rate": 0.0,
+          "calls_per_utterance": 1.0,
+          "common_pairs_count": 876,
+          "common_pair_weighted_flip": 0.23059360730593606,
+          "common_group_macro_flip": 0.23059360730593606,
+          "all_pair_flip_or_failure": 0.23059360730593606,
+          "mean_route_utility": 0.2791469497758276,
+          "mean_regret": 0.002931695662355554
+        },
+        "B4_online": {
+          "tsr": 1.0,
+          "gtsr": 1.0,
+          "failed_count": 0,
+          "failed_ids": [],
+          "corrected_count": 0,
+          "degraded_count": 0,
+          "degraded_ids": [],
+          "review_rate": 0.0839041095890411,
+          "calls_per_utterance": 2.083904109589041,
+          "common_pairs_count": 876,
+          "common_pair_weighted_flip": 0.2180365296803653,
+          "common_group_macro_flip": 0.2180365296803653,
+          "all_pair_flip_or_failure": 0.2180365296803653,
+          "mean_route_utility": 0.2801595966198884,
+          "mean_regret": 0.0024253722403251706
+        },
+        "DARC_online": {
+          "tsr": 1.0,
+          "gtsr": 1.0,
+          "failed_count": 0,
+          "failed_ids": [],
+          "corrected_count": 0,
+          "degraded_count": 0,
+          "degraded_ids": [],
+          "review_rate": 0.04452054794520548,
+          "calls_per_utterance": 2.0445205479452055,
+          "common_pairs_count": 876,
+          "common_pair_weighted_flip": 0.19406392694063926,
+          "common_group_macro_flip": 0.19406392694063926,
+          "all_pair_flip_or_failure": 0.19406392694063926,
+          "mean_route_utility": 0.28021751330626293,
+          "mean_regret": 0.0023964138971378692
+        },
+        "B6": {
+          "tsr": 1.0,
+          "gtsr": 1.0,
+          "failed_count": 0,
+          "failed_ids": [],
+          "corrected_count": 0,
+          "degraded_count": 0,
+          "degraded_ids": [],
+          "review_rate": 1.0,
+          "calls_per_utterance": 3.0,
+          "common_pairs_count": 876,
+          "common_pair_weighted_flip": 0.1506849315068493,
+          "common_group_macro_flip": 0.1506849315068493,
+          "all_pair_flip_or_failure": 0.1506849315068493,
+          "mean_route_utility": 0.28096746754363056,
+          "mean_regret": 0.002021436778454066
+        }
+      },
+      "equal_quota": {
+        "5%": {
+          "quota_pct": "5%",
+          "quota_k": 29,
+          "h_protected_count": 1,
+          "common_pairs_count": 876,
+          "total_pairs_count": 876,
+          "darc_tsr": 1.0,
+          "b4_tsr": 1.0,
+          "darc_degraded_count": 0,
+          "darc_degraded_ids": [],
+          "pair_weighted_darc_flip": 0.19406392694063926,
+          "pair_weighted_b4_flip": 0.2146118721461187,
+          "pair_weighted_b3_flip": 0.2266552511415525,
+          "gain_pair_weighted_vs_random_pct": 3.2591324200913236,
+          "gain_pair_weighted_vs_b4_pct": 2.054794520547945,
+          "group_macro_darc_flip": 0.19406392694063926,
+          "group_macro_b4_flip": 0.2146118721461187,
+          "group_macro_b3_flip": 0.2266552511415525,
+          "gain_group_macro_vs_random_pct": 3.2591324200913236,
+          "gain_group_macro_vs_b4_pct": 2.054794520547945,
+          "ci95_darc_minus_b3": [
+            -0.0594,
+            -0.0087
+          ],
+          "ci95_darc_minus_b4": [
+            -0.0411,
+            -0.0011
+          ]
+        },
+        "10%": {
+          "quota_pct": "10%",
+          "quota_k": 58,
+          "h_protected_count": 1,
+          "common_pairs_count": 876,
+          "total_pairs_count": 876,
+          "darc_tsr": 1.0,
+          "b4_tsr": 1.0,
+          "darc_degraded_count": 0,
+          "darc_degraded_ids": [],
+          "pair_weighted_darc_flip": 0.14840182648401826,
+          "pair_weighted_b4_flip": 0.2180365296803653,
+          "pair_weighted_b3_flip": 0.2230593607305936,
+          "gain_pair_weighted_vs_random_pct": 7.465753424657534,
+          "gain_pair_weighted_vs_b4_pct": 6.9634703196347045,
+          "group_macro_darc_flip": 0.14840182648401826,
+          "group_macro_b4_flip": 0.2180365296803653,
+          "group_macro_b3_flip": 0.2230593607305936,
+          "gain_group_macro_vs_random_pct": 7.465753424657534,
+          "gain_group_macro_vs_b4_pct": 6.9634703196347045,
+          "ci95_darc_minus_b3": [
+            -0.1048,
+            -0.0455
+          ],
+          "ci95_darc_minus_b4": [
+            -0.097,
+            -0.0445
+          ]
+        },
+        "20%": {
+          "quota_pct": "20%",
+          "quota_k": 116,
+          "h_protected_count": 1,
+          "common_pairs_count": 876,
+          "total_pairs_count": 876,
+          "darc_tsr": 1.0,
+          "b4_tsr": 1.0,
+          "darc_degraded_count": 0,
+          "darc_degraded_ids": [],
+          "pair_weighted_darc_flip": 0.14840182648401826,
+          "pair_weighted_b4_flip": 0.182648401826484,
+          "pair_weighted_b3_flip": 0.21621004566210045,
+          "gain_pair_weighted_vs_random_pct": 6.780821917808219,
+          "gain_pair_weighted_vs_b4_pct": 3.4246575342465753,
+          "group_macro_darc_flip": 0.14840182648401826,
+          "group_macro_b4_flip": 0.182648401826484,
+          "group_macro_b3_flip": 0.21621004566210045,
+          "gain_group_macro_vs_random_pct": 6.780821917808219,
+          "gain_group_macro_vs_b4_pct": 3.4246575342465753,
+          "ci95_darc_minus_b3": [
+            -0.0947,
+            -0.0413
+          ],
+          "ci95_darc_minus_b4": [
+            -0.0548,
+            -0.016
+          ]
+        }
+      }
+    }
+  },
+  "gpt56_luna": {
+    "full_160_groups": {
+      "cohort_name": "gpt56_luna_full160",
+      "groups_count": 160,
+      "utterances_count": 640,
+      "audit_checks": {
+        "candidate_match_count": 0,
+        "candidate_match_ratio": 0.0,
+        "review_fallback_count": 6,
+        "review_fallback_ratio": 0.009375,
+        "usage_missing_count": 1918
+      },
+      "tokens_ledger": {
+        "total_prompt_tokens": 0,
+        "total_completion_tokens": 0,
+        "total_cached_tokens": 0,
+        "mean_tokens_per_utterance": 0.0
+      },
+      "online_methods": {
+        "B0": {
+          "tsr": 1.0,
+          "gtsr": 1.0,
+          "failed_count": 0,
+          "failed_ids": [],
+          "corrected_count": 0,
+          "degraded_count": 0,
+          "degraded_ids": [],
+          "review_rate": 0.0,
+          "calls_per_utterance": 1.0,
+          "common_pairs_count": 960,
+          "common_pair_weighted_flip": 0.22916666666666666,
+          "common_group_macro_flip": 0.22916666666666666,
+          "all_pair_flip_or_failure": 0.22916666666666666,
+          "mean_route_utility": 0.2875941766127067,
+          "mean_regret": 0.0037233170027134574
+        },
+        "B4_online": {
+          "tsr": 1.0,
+          "gtsr": 1.0,
+          "failed_count": 0,
+          "failed_ids": [],
+          "corrected_count": 0,
+          "degraded_count": 0,
+          "degraded_ids": [],
+          "review_rate": 0.3859375,
+          "calls_per_utterance": 2.3859375,
+          "common_pairs_count": 960,
+          "common_pair_weighted_flip": 0.215625,
+          "common_group_macro_flip": 0.21562499999999998,
+          "all_pair_flip_or_failure": 0.215625,
+          "mean_route_utility": 0.28802766584011763,
+          "mean_regret": 0.0035065723890079902
+        },
+        "DARC_online": {
+          "tsr": 1.0,
+          "gtsr": 1.0,
+          "failed_count": 0,
+          "failed_ids": [],
+          "corrected_count": 0,
+          "degraded_count": 0,
+          "degraded_ids": [],
+          "review_rate": 0.1640625,
+          "calls_per_utterance": 2.1640625,
+          "common_pairs_count": 960,
+          "common_pair_weighted_flip": 0.21979166666666666,
+          "common_group_macro_flip": 0.21979166666666666,
+          "all_pair_flip_or_failure": 0.21979166666666666,
+          "mean_route_utility": 0.2878210253961794,
+          "mean_regret": 0.0036098926109771235
+        },
+        "B6": {
+          "tsr": 1.0,
+          "gtsr": 1.0,
+          "failed_count": 0,
+          "failed_ids": [],
+          "corrected_count": 0,
+          "degraded_count": 0,
+          "degraded_ids": [],
+          "review_rate": 1.0,
+          "calls_per_utterance": 3.0,
+          "common_pairs_count": 960,
+          "common_pair_weighted_flip": 0.22291666666666668,
+          "common_group_macro_flip": 0.22291666666666665,
+          "all_pair_flip_or_failure": 0.22291666666666668,
+          "mean_route_utility": 0.2873444380323949,
+          "mean_regret": 0.0038481862928693654
+        }
+      },
+      "equal_quota": {
+        "5%": {
+          "quota_pct": "5%",
+          "quota_k": 32,
+          "h_protected_count": 17,
+          "common_pairs_count": 960,
+          "total_pairs_count": 960,
+          "darc_tsr": 1.0,
+          "b4_tsr": 1.0,
+          "darc_degraded_count": 0,
+          "darc_degraded_ids": [],
+          "pair_weighted_darc_flip": 0.23125,
+          "pair_weighted_b4_flip": 0.22604166666666667,
+          "pair_weighted_b3_flip": 0.22885416666666666,
+          "gain_pair_weighted_vs_random_pct": -0.2395833333333347,
+          "gain_pair_weighted_vs_b4_pct": -0.5208333333333343,
+          "group_macro_darc_flip": 0.23124999999999998,
+          "group_macro_b4_flip": 0.22604166666666667,
+          "group_macro_b3_flip": 0.22885416666666666,
+          "gain_group_macro_vs_random_pct": -0.23958333333333193,
+          "gain_group_macro_vs_b4_pct": -0.5208333333333315,
+          "ci95_darc_minus_b3": [
+            -0.0061,
+            0.0117
+          ],
+          "ci95_darc_minus_b4": [
+            -0.0052,
+            0.0156
+          ]
+        },
+        "10%": {
+          "quota_pct": "10%",
+          "quota_k": 64,
+          "h_protected_count": 17,
+          "common_pairs_count": 960,
+          "total_pairs_count": 960,
+          "darc_tsr": 1.0,
+          "b4_tsr": 1.0,
+          "darc_degraded_count": 0,
+          "darc_degraded_ids": [],
+          "pair_weighted_darc_flip": 0.21770833333333334,
+          "pair_weighted_b4_flip": 0.23020833333333332,
+          "pair_weighted_b3_flip": 0.22864583333333333,
+          "gain_pair_weighted_vs_random_pct": 1.093749999999999,
+          "gain_pair_weighted_vs_b4_pct": 1.2499999999999982,
+          "group_macro_darc_flip": 0.21770833333333334,
+          "group_macro_b4_flip": 0.23020833333333332,
+          "group_macro_b3_flip": 0.22864583333333333,
+          "gain_group_macro_vs_random_pct": 1.093749999999999,
+          "gain_group_macro_vs_b4_pct": 1.2499999999999982,
+          "ci95_darc_minus_b3": [
+            -0.027,
+            0.0037
+          ],
+          "ci95_darc_minus_b4": [
+            -0.0312,
+            0.0052
+          ]
+        },
+        "20%": {
+          "quota_pct": "20%",
+          "quota_k": 128,
+          "h_protected_count": 17,
+          "common_pairs_count": 960,
+          "total_pairs_count": 960,
+          "darc_tsr": 1.0,
+          "b4_tsr": 1.0,
+          "darc_degraded_count": 0,
+          "darc_degraded_ids": [],
+          "pair_weighted_darc_flip": 0.21145833333333333,
+          "pair_weighted_b4_flip": 0.22395833333333334,
+          "pair_weighted_b3_flip": 0.228125,
+          "gain_pair_weighted_vs_random_pct": 1.6666666666666663,
+          "gain_pair_weighted_vs_b4_pct": 1.250000000000001,
+          "group_macro_darc_flip": 0.21145833333333333,
+          "group_macro_b4_flip": 0.22395833333333334,
+          "group_macro_b3_flip": 0.228125,
+          "gain_group_macro_vs_random_pct": 1.6666666666666663,
+          "gain_group_macro_vs_b4_pct": 1.250000000000001,
+          "ci95_darc_minus_b3": [
+            -0.043,
+            0.0094
+          ],
+          "ci95_darc_minus_b4": [
+            -0.0333,
+            0.0083
+          ]
+        }
+      }
+    },
+    "clean_146_groups": {
+      "cohort_name": "gpt56_luna_clean146",
+      "groups_count": 146,
+      "utterances_count": 584,
+      "audit_checks": {
+        "candidate_match_count": 0,
+        "candidate_match_ratio": 0.0,
+        "review_fallback_count": 5,
+        "review_fallback_ratio": 0.008561643835616438,
+        "usage_missing_count": 1751
+      },
+      "tokens_ledger": {
+        "total_prompt_tokens": 0,
+        "total_completion_tokens": 0,
+        "total_cached_tokens": 0,
+        "mean_tokens_per_utterance": 0.0
+      },
+      "online_methods": {
+        "B0": {
+          "tsr": 1.0,
+          "gtsr": 1.0,
+          "failed_count": 0,
+          "failed_ids": [],
+          "corrected_count": 0,
+          "degraded_count": 0,
+          "degraded_ids": [],
+          "review_rate": 0.0,
+          "calls_per_utterance": 1.0,
+          "common_pairs_count": 876,
+          "common_pair_weighted_flip": 0.2271689497716895,
+          "common_group_macro_flip": 0.2271689497716895,
+          "all_pair_flip_or_failure": 0.2271689497716895,
+          "mean_route_utility": 0.27727472293787486,
+          "mean_regret": 0.0038678090813319198
+        },
+        "B4_online": {
+          "tsr": 1.0,
+          "gtsr": 1.0,
+          "failed_count": 0,
+          "failed_ids": [],
+          "corrected_count": 0,
+          "degraded_count": 0,
+          "degraded_ids": [],
+          "review_rate": 0.3767123287671233,
+          "calls_per_utterance": 2.3767123287671232,
+          "common_pairs_count": 876,
+          "common_pair_weighted_flip": 0.21689497716894976,
+          "common_group_macro_flip": 0.21689497716894976,
+          "all_pair_flip_or_failure": 0.21689497716894976,
+          "mean_route_utility": 0.27749883489126403,
+          "mean_regret": 0.003755753104637333
+        },
+        "DARC_online": {
+          "tsr": 1.0,
+          "gtsr": 1.0,
+          "failed_count": 0,
+          "failed_ids": [],
+          "corrected_count": 0,
+          "degraded_count": 0,
+          "degraded_ids": [],
+          "review_rate": 0.1660958904109589,
+          "calls_per_utterance": 2.166095890410959,
+          "common_pairs_count": 876,
+          "common_pair_weighted_flip": 0.2191780821917808,
+          "common_group_macro_flip": 0.2191780821917808,
+          "all_pair_flip_or_failure": 0.2191780821917808,
+          "mean_route_utility": 0.2773602447687929,
+          "mean_regret": 0.003825048165872911
+        },
+        "B6": {
+          "tsr": 1.0,
+          "gtsr": 1.0,
+          "failed_count": 0,
+          "failed_ids": [],
+          "corrected_count": 0,
+          "degraded_count": 0,
+          "degraded_ids": [],
+          "review_rate": 1.0,
+          "calls_per_utterance": 3.0,
+          "common_pairs_count": 876,
+          "common_pair_weighted_flip": 0.22488584474885845,
+          "common_group_macro_flip": 0.22488584474885845,
+          "all_pair_flip_or_failure": 0.22488584474885845,
+          "mean_route_utility": 0.2767500920882802,
+          "mean_regret": 0.004130124506129252
+        }
+      },
+      "equal_quota": {
+        "5%": {
+          "quota_pct": "5%",
+          "quota_k": 29,
+          "h_protected_count": 12,
+          "common_pairs_count": 876,
+          "total_pairs_count": 876,
+          "darc_tsr": 1.0,
+          "b4_tsr": 1.0,
+          "darc_degraded_count": 0,
+          "darc_degraded_ids": [],
+          "pair_weighted_darc_flip": 0.22945205479452055,
+          "pair_weighted_b4_flip": 0.2237442922374429,
+          "pair_weighted_b3_flip": 0.22779680365296803,
+          "gain_pair_weighted_vs_random_pct": -0.16552511415525162,
+          "gain_pair_weighted_vs_b4_pct": -0.5707762557077639,
+          "group_macro_darc_flip": 0.22945205479452055,
+          "group_macro_b4_flip": 0.2237442922374429,
+          "group_macro_b3_flip": 0.22779680365296803,
+          "gain_group_macro_vs_random_pct": -0.16552511415525162,
+          "gain_group_macro_vs_b4_pct": -0.5707762557077639,
+          "ci95_darc_minus_b3": [
+            -0.008,
+            0.0119
+          ],
+          "ci95_darc_minus_b4": [
+            -0.0057,
+            0.0183
+          ]
+        },
+        "10%": {
+          "quota_pct": "10%",
+          "quota_k": 58,
+          "h_protected_count": 12,
+          "common_pairs_count": 876,
+          "total_pairs_count": 876,
+          "darc_tsr": 1.0,
+          "b4_tsr": 1.0,
+          "darc_degraded_count": 0,
+          "darc_degraded_ids": [],
+          "pair_weighted_darc_flip": 0.21689497716894976,
+          "pair_weighted_b4_flip": 0.228310502283105,
+          "pair_weighted_b3_flip": 0.22853881278538812,
+          "gain_pair_weighted_vs_random_pct": 1.1643835616438363,
+          "gain_pair_weighted_vs_b4_pct": 1.141552511415525,
+          "group_macro_darc_flip": 0.21689497716894976,
+          "group_macro_b4_flip": 0.228310502283105,
+          "group_macro_b3_flip": 0.22853881278538812,
+          "gain_group_macro_vs_random_pct": 1.1643835616438363,
+          "gain_group_macro_vs_b4_pct": 1.141552511415525,
+          "ci95_darc_minus_b3": [
+            -0.029,
+            0.0041
+          ],
+          "ci95_darc_minus_b4": [
+            -0.0308,
+            0.0068
+          ]
+        },
+        "20%": {
+          "quota_pct": "20%",
+          "quota_k": 116,
+          "h_protected_count": 12,
+          "common_pairs_count": 876,
+          "total_pairs_count": 876,
+          "darc_tsr": 1.0,
+          "b4_tsr": 1.0,
+          "darc_degraded_count": 0,
+          "darc_degraded_ids": [],
+          "pair_weighted_darc_flip": 0.21232876712328766,
+          "pair_weighted_b4_flip": 0.22488584474885845,
+          "pair_weighted_b3_flip": 0.22739726027397258,
+          "gain_pair_weighted_vs_random_pct": 1.5068493150684925,
+          "gain_pair_weighted_vs_b4_pct": 1.255707762557079,
+          "group_macro_darc_flip": 0.21232876712328766,
+          "group_macro_b4_flip": 0.22488584474885845,
+          "group_macro_b3_flip": 0.22739726027397258,
+          "gain_group_macro_vs_random_pct": 1.5068493150684925,
+          "gain_group_macro_vs_b4_pct": 1.255707762557079,
+          "ci95_darc_minus_b3": [
+            -0.0425,
+            0.0116
+          ],
+          "ci95_darc_minus_b4": [
+            -0.0365,
+            0.008
+          ]
+        }
+      }
+    }
+  },
+  "gpt56_sol": {
+    "full_160_groups": {
+      "cohort_name": "gpt56_sol_full160",
+      "groups_count": 160,
+      "utterances_count": 640,
+      "audit_checks": {
+        "candidate_match_count": 0,
+        "candidate_match_ratio": 0.0,
+        "review_fallback_count": 0,
+        "review_fallback_ratio": 0.0,
+        "usage_missing_count": 1920
+      },
+      "tokens_ledger": {
+        "total_prompt_tokens": 0,
+        "total_completion_tokens": 0,
+        "total_cached_tokens": 0,
+        "mean_tokens_per_utterance": 0.0
+      },
+      "online_methods": {
+        "B0": {
+          "tsr": 1.0,
+          "gtsr": 1.0,
+          "failed_count": 0,
+          "failed_ids": [],
+          "corrected_count": 0,
+          "degraded_count": 0,
+          "degraded_ids": [],
+          "review_rate": 0.0,
+          "calls_per_utterance": 1.0,
+          "common_pairs_count": 960,
+          "common_pair_weighted_flip": 0.2604166666666667,
+          "common_group_macro_flip": 0.2604166666666667,
+          "all_pair_flip_or_failure": 0.2604166666666667,
+          "mean_route_utility": 0.2883604890446569,
+          "mean_regret": 0.0033401607867383823
+        },
+        "B4_online": {
+          "tsr": 1.0,
+          "gtsr": 1.0,
+          "failed_count": 0,
+          "failed_ids": [],
+          "corrected_count": 0,
+          "degraded_count": 0,
+          "degraded_ids": [],
+          "review_rate": 0.3890625,
+          "calls_per_utterance": 2.3890625,
+          "common_pairs_count": 960,
+          "common_pair_weighted_flip": 0.225,
+          "common_group_macro_flip": 0.225,
+          "all_pair_flip_or_failure": 0.225,
+          "mean_route_utility": 0.2888294392493264,
+          "mean_regret": 0.003105685684403611
+        },
+        "DARC_online": {
+          "tsr": 1.0,
+          "gtsr": 1.0,
+          "failed_count": 0,
+          "failed_ids": [],
+          "corrected_count": 0,
+          "degraded_count": 0,
+          "degraded_ids": [],
+          "review_rate": 0.140625,
+          "calls_per_utterance": 2.140625,
+          "common_pairs_count": 960,
+          "common_pair_weighted_flip": 0.2375,
+          "common_group_macro_flip": 0.2375,
+          "all_pair_flip_or_failure": 0.2375,
+          "mean_route_utility": 0.2887521582740371,
+          "mean_regret": 0.0031443261720482713
+        },
+        "B6": {
+          "tsr": 1.0,
+          "gtsr": 1.0,
+          "failed_count": 0,
+          "failed_ids": [],
+          "corrected_count": 0,
+          "degraded_count": 0,
+          "degraded_ids": [],
+          "review_rate": 1.0,
+          "calls_per_utterance": 3.0,
+          "common_pairs_count": 960,
+          "common_pair_weighted_flip": 0.22708333333333333,
+          "common_group_macro_flip": 0.22708333333333333,
+          "all_pair_flip_or_failure": 0.22708333333333333,
+          "mean_route_utility": 0.28910373832889047,
+          "mean_regret": 0.002968536144621584
+        }
+      },
+      "equal_quota": {
+        "5%": {
+          "quota_pct": "5%",
+          "quota_k": 32,
+          "h_protected_count": 9,
+          "common_pairs_count": 960,
+          "total_pairs_count": 960,
+          "darc_tsr": 1.0,
+          "b4_tsr": 1.0,
+          "darc_degraded_count": 0,
+          "darc_degraded_ids": [],
+          "pair_weighted_darc_flip": 0.25416666666666665,
+          "pair_weighted_b4_flip": 0.24479166666666666,
+          "pair_weighted_b3_flip": 0.25942708333333336,
+          "gain_pair_weighted_vs_random_pct": 0.5260416666666712,
+          "gain_pair_weighted_vs_b4_pct": -0.9374999999999994,
+          "group_macro_darc_flip": 0.25416666666666665,
+          "group_macro_b4_flip": 0.24479166666666666,
+          "group_macro_b3_flip": 0.2594270833333333,
+          "gain_group_macro_vs_random_pct": 0.5260416666666656,
+          "gain_group_macro_vs_b4_pct": -0.9374999999999994,
+          "ci95_darc_minus_b3": [
+            -0.0192,
+            0.0071
+          ],
+          "ci95_darc_minus_b4": [
+            -0.0042,
+            0.0229
+          ]
+        },
+        "10%": {
+          "quota_pct": "10%",
+          "quota_k": 64,
+          "h_protected_count": 9,
+          "common_pairs_count": 960,
+          "total_pairs_count": 960,
+          "darc_tsr": 1.0,
+          "b4_tsr": 1.0,
+          "darc_degraded_count": 0,
+          "darc_degraded_ids": [],
+          "pair_weighted_darc_flip": 0.25,
+          "pair_weighted_b4_flip": 0.2375,
+          "pair_weighted_b3_flip": 0.25973958333333336,
+          "gain_pair_weighted_vs_random_pct": 0.9739583333333357,
+          "gain_pair_weighted_vs_b4_pct": -1.250000000000001,
+          "group_macro_darc_flip": 0.25,
+          "group_macro_b4_flip": 0.2375,
+          "group_macro_b3_flip": 0.25973958333333336,
+          "gain_group_macro_vs_random_pct": 0.9739583333333357,
+          "gain_group_macro_vs_b4_pct": -1.250000000000001,
+          "ci95_darc_minus_b3": [
+            -0.0277,
+            0.0069
+          ],
+          "ci95_darc_minus_b4": [
+            -0.0031,
+            0.0281
+          ]
+        },
+        "20%": {
+          "quota_pct": "20%",
+          "quota_k": 128,
+          "h_protected_count": 9,
+          "common_pairs_count": 960,
+          "total_pairs_count": 960,
+          "darc_tsr": 1.0,
+          "b4_tsr": 1.0,
+          "darc_degraded_count": 0,
+          "darc_degraded_ids": [],
+          "pair_weighted_darc_flip": 0.21666666666666667,
+          "pair_weighted_b4_flip": 0.24166666666666667,
+          "pair_weighted_b3_flip": 0.25677083333333334,
+          "gain_pair_weighted_vs_random_pct": 4.010416666666666,
+          "gain_pair_weighted_vs_b4_pct": 2.4999999999999996,
+          "group_macro_darc_flip": 0.21666666666666667,
+          "group_macro_b4_flip": 0.24166666666666667,
+          "group_macro_b3_flip": 0.25677083333333334,
+          "gain_group_macro_vs_random_pct": 4.010416666666666,
+          "gain_group_macro_vs_b4_pct": 2.4999999999999996,
+          "ci95_darc_minus_b3": [
+            -0.0645,
+            -0.0155
+          ],
+          "ci95_darc_minus_b4": [
+            -0.05,
+            -0.0031
+          ]
+        }
+      }
+    },
+    "clean_146_groups": {
+      "cohort_name": "gpt56_sol_clean146",
+      "groups_count": 146,
+      "utterances_count": 584,
+      "audit_checks": {
+        "candidate_match_count": 0,
+        "candidate_match_ratio": 0.0,
+        "review_fallback_count": 0,
+        "review_fallback_ratio": 0.0,
+        "usage_missing_count": 1752
+      },
+      "tokens_ledger": {
+        "total_prompt_tokens": 0,
+        "total_completion_tokens": 0,
+        "total_cached_tokens": 0,
+        "mean_tokens_per_utterance": 0.0
+      },
+      "online_methods": {
+        "B0": {
+          "tsr": 1.0,
+          "gtsr": 1.0,
+          "failed_count": 0,
+          "failed_ids": [],
+          "corrected_count": 0,
+          "degraded_count": 0,
+          "degraded_ids": [],
+          "review_rate": 0.0,
+          "calls_per_utterance": 1.0,
+          "common_pairs_count": 876,
+          "common_pair_weighted_flip": 0.2614155251141553,
+          "common_group_macro_flip": 0.2614155251141552,
+          "all_pair_flip_or_failure": 0.2614155251141553,
+          "mean_route_utility": 0.2779619021542513,
+          "mean_regret": 0.0035242194731436973
+        },
+        "B4_online": {
+          "tsr": 1.0,
+          "gtsr": 1.0,
+          "failed_count": 0,
+          "failed_ids": [],
+          "corrected_count": 0,
+          "degraded_count": 0,
+          "degraded_ids": [],
+          "review_rate": 0.3886986301369863,
+          "calls_per_utterance": 2.3886986301369864,
+          "common_pairs_count": 876,
+          "common_pair_weighted_flip": 0.2271689497716895,
+          "common_group_macro_flip": 0.2271689497716895,
+          "all_pair_flip_or_failure": 0.2271689497716895,
+          "mean_route_utility": 0.2783581740210681,
+          "mean_regret": 0.003326083539735305
+        },
+        "DARC_online": {
+          "tsr": 1.0,
+          "gtsr": 1.0,
+          "failed_count": 0,
+          "failed_ids": [],
+          "corrected_count": 0,
+          "degraded_count": 0,
+          "degraded_ids": [],
+          "review_rate": 0.1404109589041096,
+          "calls_per_utterance": 2.1404109589041096,
+          "common_pairs_count": 876,
+          "common_pair_weighted_flip": 0.2374429223744292,
+          "common_group_macro_flip": 0.2374429223744292,
+          "all_pair_flip_or_failure": 0.2374429223744292,
+          "mean_route_utility": 0.27831839009756626,
+          "mean_regret": 0.0033459755014862242
+        },
+        "B6": {
+          "tsr": 1.0,
+          "gtsr": 1.0,
+          "failed_count": 0,
+          "failed_ids": [],
+          "corrected_count": 0,
+          "degraded_count": 0,
+          "degraded_ids": [],
+          "review_rate": 1.0,
+          "calls_per_utterance": 3.0,
+          "common_pairs_count": 876,
+          "common_pair_weighted_flip": 0.228310502283105,
+          "common_group_macro_flip": 0.228310502283105,
+          "all_pair_flip_or_failure": 0.228310502283105,
+          "mean_route_utility": 0.27863940781845803,
+          "mean_regret": 0.0031854666410403203
+        }
+      },
+      "equal_quota": {
+        "5%": {
+          "quota_pct": "5%",
+          "quota_k": 29,
+          "h_protected_count": 7,
+          "common_pairs_count": 876,
+          "total_pairs_count": 876,
+          "darc_tsr": 1.0,
+          "b4_tsr": 1.0,
+          "darc_degraded_count": 0,
+          "darc_degraded_ids": [],
+          "pair_weighted_darc_flip": 0.2568493150684932,
+          "pair_weighted_b4_flip": 0.2454337899543379,
+          "pair_weighted_b3_flip": 0.25981735159817354,
+          "gain_pair_weighted_vs_random_pct": 0.29680365296803624,
+          "gain_pair_weighted_vs_b4_pct": -1.1415525114155278,
+          "group_macro_darc_flip": 0.2568493150684931,
+          "group_macro_b4_flip": 0.2454337899543379,
+          "group_macro_b3_flip": 0.2598173515981735,
+          "gain_group_macro_vs_random_pct": 0.29680365296803624,
+          "gain_group_macro_vs_b4_pct": -1.1415525114155223,
+          "ci95_darc_minus_b3": [
+            -0.0169,
+            0.0105
+          ],
+          "ci95_darc_minus_b4": [
+            -0.0034,
+            0.0263
+          ]
+        },
+        "10%": {
+          "quota_pct": "10%",
+          "quota_k": 58,
+          "h_protected_count": 7,
+          "common_pairs_count": 876,
+          "total_pairs_count": 876,
+          "darc_tsr": 1.0,
+          "b4_tsr": 1.0,
+          "darc_degraded_count": 0,
+          "darc_degraded_ids": [],
+          "pair_weighted_darc_flip": 0.25,
+          "pair_weighted_b4_flip": 0.2408675799086758,
+          "pair_weighted_b3_flip": 0.25724885844748857,
+          "gain_pair_weighted_vs_random_pct": 0.7248858447488571,
+          "gain_pair_weighted_vs_b4_pct": -0.91324200913242,
+          "group_macro_darc_flip": 0.25,
+          "group_macro_b4_flip": 0.2408675799086758,
+          "group_macro_b3_flip": 0.25724885844748857,
+          "gain_group_macro_vs_random_pct": 0.7248858447488571,
+          "gain_group_macro_vs_b4_pct": -0.91324200913242,
+          "ci95_darc_minus_b3": [
+            -0.024,
+            0.0104
+          ],
+          "ci95_darc_minus_b4": [
+            -0.008,
+            0.0263
+          ]
+        },
+        "20%": {
+          "quota_pct": "20%",
+          "quota_k": 116,
+          "h_protected_count": 7,
+          "common_pairs_count": 876,
+          "total_pairs_count": 876,
+          "darc_tsr": 1.0,
+          "b4_tsr": 1.0,
+          "darc_degraded_count": 0,
+          "darc_degraded_ids": [],
+          "pair_weighted_darc_flip": 0.2180365296803653,
+          "pair_weighted_b4_flip": 0.24429223744292236,
+          "pair_weighted_b3_flip": 0.25205479452054796,
+          "gain_pair_weighted_vs_random_pct": 3.4018264840182666,
+          "gain_pair_weighted_vs_b4_pct": 2.625570776255706,
+          "group_macro_darc_flip": 0.2180365296803653,
+          "group_macro_b4_flip": 0.24429223744292236,
+          "group_macro_b3_flip": 0.2520547945205479,
+          "gain_group_macro_vs_random_pct": 3.401826484018261,
+          "gain_group_macro_vs_b4_pct": 2.625570776255706,
+          "ci95_darc_minus_b3": [
+            -0.0582,
+            -0.0115
+          ],
+          "ci95_darc_minus_b4": [
+            -0.0525,
+            -0.0023
+          ]
+        }
+      }
+    }
+  },
+  "gemini31_flash_lite": {
+    "full_160_groups": {
+      "cohort_name": "gemini31_flash_lite_full160",
+      "groups_count": 160,
+      "utterances_count": 640,
+      "audit_checks": {
+        "candidate_match_count": 0,
+        "candidate_match_ratio": 0.0,
+        "review_fallback_count": 11,
+        "review_fallback_ratio": 0.0171875,
+        "usage_missing_count": 1920
+      },
+      "tokens_ledger": {
+        "total_prompt_tokens": 0,
+        "total_completion_tokens": 0,
+        "total_cached_tokens": 0,
+        "mean_tokens_per_utterance": 0.0
+      },
+      "online_methods": {
+        "B0": {
+          "tsr": 1.0,
+          "gtsr": 1.0,
+          "failed_count": 0,
+          "failed_ids": [],
+          "corrected_count": 0,
+          "degraded_count": 0,
+          "degraded_ids": [],
+          "review_rate": 0.0,
+          "calls_per_utterance": 1.0,
+          "common_pairs_count": 960,
+          "common_pair_weighted_flip": 0.046875,
+          "common_group_macro_flip": 0.046875,
+          "all_pair_flip_or_failure": 0.046875,
+          "mean_route_utility": 0.2921449948677884,
+          "mean_regret": 0.0014479078751726247
+        },
+        "B4_online": {
+          "tsr": 1.0,
+          "gtsr": 1.0,
+          "failed_count": 0,
+          "failed_ids": [],
+          "corrected_count": 0,
+          "degraded_count": 0,
+          "degraded_ids": [],
+          "review_rate": 0.0046875,
+          "calls_per_utterance": 2.0046875,
+          "common_pairs_count": 960,
+          "common_pair_weighted_flip": 0.040625,
+          "common_group_macro_flip": 0.040625,
+          "all_pair_flip_or_failure": 0.040625,
+          "mean_route_utility": 0.2924679249303238,
+          "mean_regret": 0.0012864428439048963
+        },
+        "DARC_online": {
+          "tsr": 1.0,
+          "gtsr": 1.0,
+          "failed_count": 0,
+          "failed_ids": [],
+          "corrected_count": 0,
+          "degraded_count": 0,
+          "degraded_ids": [],
+          "review_rate": 0.009375,
+          "calls_per_utterance": 2.009375,
+          "common_pairs_count": 960,
+          "common_pair_weighted_flip": 0.046875,
+          "common_group_macro_flip": 0.046875,
+          "all_pair_flip_or_failure": 0.046875,
+          "mean_route_utility": 0.2925230611513126,
+          "mean_regret": 0.00125887473341051
+        },
+        "B6": {
+          "tsr": 1.0,
+          "gtsr": 1.0,
+          "failed_count": 0,
+          "failed_ids": [],
+          "corrected_count": 0,
+          "degraded_count": 0,
+          "degraded_ids": [],
+          "review_rate": 1.0,
+          "calls_per_utterance": 3.0,
+          "common_pairs_count": 960,
+          "common_pair_weighted_flip": 0.04375,
+          "common_group_macro_flip": 0.04375,
+          "all_pair_flip_or_failure": 0.04375,
+          "mean_route_utility": 0.2925667988381041,
+          "mean_regret": 0.001237005890014756
+        }
+      },
+      "equal_quota": {
+        "5%": {
+          "quota_pct": "5%",
+          "quota_k": 32,
+          "h_protected_count": 0,
+          "common_pairs_count": 960,
+          "total_pairs_count": 960,
+          "darc_tsr": 1.0,
+          "b4_tsr": 1.0,
+          "darc_degraded_count": 0,
+          "darc_degraded_ids": [],
+          "pair_weighted_darc_flip": 0.04375,
+          "pair_weighted_b4_flip": 0.04375,
+          "pair_weighted_b3_flip": 0.046875,
+          "gain_pair_weighted_vs_random_pct": 0.3125000000000003,
+          "gain_pair_weighted_vs_b4_pct": 0.0,
+          "group_macro_darc_flip": 0.04375,
+          "group_macro_b4_flip": 0.04375,
+          "group_macro_b3_flip": 0.046875,
+          "gain_group_macro_vs_random_pct": 0.3125000000000003,
+          "gain_group_macro_vs_b4_pct": 0.0,
+          "ci95_darc_minus_b3": [
+            -0.0186,
+            0.0122
+          ],
+          "ci95_darc_minus_b4": [
+            0.0,
+            0.0
+          ]
+        },
+        "10%": {
+          "quota_pct": "10%",
+          "quota_k": 64,
+          "h_protected_count": 0,
+          "common_pairs_count": 960,
+          "total_pairs_count": 960,
+          "darc_tsr": 1.0,
+          "b4_tsr": 1.0,
+          "darc_degraded_count": 0,
+          "darc_degraded_ids": [],
+          "pair_weighted_darc_flip": 0.04375,
+          "pair_weighted_b4_flip": 0.04375,
+          "pair_weighted_b3_flip": 0.04671875,
+          "gain_pair_weighted_vs_random_pct": 0.2968750000000006,
+          "gain_pair_weighted_vs_b4_pct": 0.0,
+          "group_macro_darc_flip": 0.04375,
+          "group_macro_b4_flip": 0.04375,
+          "group_macro_b3_flip": 0.04671875,
+          "gain_group_macro_vs_random_pct": 0.2968750000000006,
+          "gain_group_macro_vs_b4_pct": 0.0,
+          "ci95_darc_minus_b3": [
+            -0.0178,
+            0.0119
+          ],
+          "ci95_darc_minus_b4": [
+            0.0,
+            0.0
+          ]
+        },
+        "20%": {
+          "quota_pct": "20%",
+          "quota_k": 128,
+          "h_protected_count": 0,
+          "common_pairs_count": 960,
+          "total_pairs_count": 960,
+          "darc_tsr": 1.0,
+          "b4_tsr": 1.0,
+          "darc_degraded_count": 0,
+          "darc_degraded_ids": [],
+          "pair_weighted_darc_flip": 0.04375,
+          "pair_weighted_b4_flip": 0.04375,
+          "pair_weighted_b3_flip": 0.04578125,
+          "gain_pair_weighted_vs_random_pct": 0.20312500000000053,
+          "gain_pair_weighted_vs_b4_pct": 0.0,
+          "group_macro_darc_flip": 0.04375,
+          "group_macro_b4_flip": 0.04375,
+          "group_macro_b3_flip": 0.04578125,
+          "gain_group_macro_vs_random_pct": 0.20312500000000053,
+          "gain_group_macro_vs_b4_pct": 0.0,
+          "ci95_darc_minus_b3": [
+            -0.0163,
+            0.0125
+          ],
+          "ci95_darc_minus_b4": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "clean_146_groups": {
+      "cohort_name": "gemini31_flash_lite_clean146",
+      "groups_count": 146,
+      "utterances_count": 584,
+      "audit_checks": {
+        "candidate_match_count": 0,
+        "candidate_match_ratio": 0.0,
+        "review_fallback_count": 10,
+        "review_fallback_ratio": 0.017123287671232876,
+        "usage_missing_count": 1752
+      },
+      "tokens_ledger": {
+        "total_prompt_tokens": 0,
+        "total_completion_tokens": 0,
+        "total_cached_tokens": 0,
+        "mean_tokens_per_utterance": 0.0
+      },
+      "online_methods": {
+        "B0": {
+          "tsr": 1.0,
+          "gtsr": 1.0,
+          "failed_count": 0,
+          "failed_ids": [],
+          "corrected_count": 0,
+          "degraded_count": 0,
+          "degraded_ids": [],
+          "review_rate": 0.0,
+          "calls_per_utterance": 1.0,
+          "common_pairs_count": 876,
+          "common_pair_weighted_flip": 0.03424657534246575,
+          "common_group_macro_flip": 0.03424657534246575,
+          "all_pair_flip_or_failure": 0.03424657534246575,
+          "mean_route_utility": 0.2819765330812149,
+          "mean_regret": 0.0015169040096618975
+        },
+        "B4_online": {
+          "tsr": 1.0,
+          "gtsr": 1.0,
+          "failed_count": 0,
+          "failed_ids": [],
+          "corrected_count": 0,
+          "degraded_count": 0,
+          "degraded_ids": [],
+          "review_rate": 0.005136986301369863,
+          "calls_per_utterance": 2.0051369863013697,
+          "common_pairs_count": 876,
+          "common_pair_weighted_flip": 0.0273972602739726,
+          "common_group_macro_flip": 0.0273972602739726,
+          "all_pair_flip_or_failure": 0.0273972602739726,
+          "mean_route_utility": 0.28233042904015787,
+          "mean_regret": 0.0013399560301904142
+        },
+        "DARC_online": {
+          "tsr": 1.0,
+          "gtsr": 1.0,
+          "failed_count": 0,
+          "failed_ids": [],
+          "corrected_count": 0,
+          "degraded_count": 0,
+          "degraded_ids": [],
+          "review_rate": 0.010273972602739725,
+          "calls_per_utterance": 2.01027397260274,
+          "common_pairs_count": 876,
+          "common_pair_weighted_flip": 0.03424657534246575,
+          "common_group_macro_flip": 0.03424657534246575,
+          "all_pair_flip_or_failure": 0.03424657534246575,
+          "mean_route_utility": 0.282390852296036,
+          "mean_regret": 0.0013097444022513607
+        },
+        "B6": {
+          "tsr": 1.0,
+          "gtsr": 1.0,
+          "failed_count": 0,
+          "failed_ids": [],
+          "corrected_count": 0,
+          "degraded_count": 0,
+          "degraded_ids": [],
+          "review_rate": 1.0,
+          "calls_per_utterance": 3.0,
+          "common_pairs_count": 876,
+          "common_pair_weighted_flip": 0.030821917808219176,
+          "common_group_macro_flip": 0.030821917808219176,
+          "all_pair_flip_or_failure": 0.030821917808219176,
+          "mean_route_utility": 0.2824387840075883,
+          "mean_regret": 0.001285778546475192
+        }
+      },
+      "equal_quota": {
+        "5%": {
+          "quota_pct": "5%",
+          "quota_k": 29,
+          "h_protected_count": 0,
+          "common_pairs_count": 876,
+          "total_pairs_count": 876,
+          "darc_tsr": 1.0,
+          "b4_tsr": 1.0,
+          "darc_degraded_count": 0,
+          "darc_degraded_ids": [],
+          "pair_weighted_darc_flip": 0.030821917808219176,
+          "pair_weighted_b4_flip": 0.030821917808219176,
+          "pair_weighted_b3_flip": 0.03407534246575342,
+          "gain_pair_weighted_vs_random_pct": 0.32534246575342474,
+          "gain_pair_weighted_vs_b4_pct": 0.0,
+          "group_macro_darc_flip": 0.030821917808219176,
+          "group_macro_b4_flip": 0.030821917808219176,
+          "group_macro_b3_flip": 0.03407534246575342,
+          "gain_group_macro_vs_random_pct": 0.32534246575342474,
+          "gain_group_macro_vs_b4_pct": 0.0,
+          "ci95_darc_minus_b3": [
+            -0.0199,
+            0.013
+          ],
+          "ci95_darc_minus_b4": [
+            0.0,
+            0.0
+          ]
+        },
+        "10%": {
+          "quota_pct": "10%",
+          "quota_k": 58,
+          "h_protected_count": 0,
+          "common_pairs_count": 876,
+          "total_pairs_count": 876,
+          "darc_tsr": 1.0,
+          "b4_tsr": 1.0,
+          "darc_degraded_count": 0,
+          "darc_degraded_ids": [],
+          "pair_weighted_darc_flip": 0.030821917808219176,
+          "pair_weighted_b4_flip": 0.030821917808219176,
+          "pair_weighted_b3_flip": 0.03424657534246575,
+          "gain_pair_weighted_vs_random_pct": 0.3424657534246575,
+          "gain_pair_weighted_vs_b4_pct": 0.0,
+          "group_macro_darc_flip": 0.030821917808219176,
+          "group_macro_b4_flip": 0.030821917808219176,
+          "group_macro_b3_flip": 0.03424657534246575,
+          "gain_group_macro_vs_random_pct": 0.3424657534246575,
+          "gain_group_macro_vs_b4_pct": 0.0,
+          "ci95_darc_minus_b3": [
+            -0.0195,
+            0.012
+          ],
+          "ci95_darc_minus_b4": [
+            0.0,
+            0.0
+          ]
+        },
+        "20%": {
+          "quota_pct": "20%",
+          "quota_k": 116,
+          "h_protected_count": 0,
+          "common_pairs_count": 876,
+          "total_pairs_count": 876,
+          "darc_tsr": 1.0,
+          "b4_tsr": 1.0,
+          "darc_degraded_count": 0,
+          "darc_degraded_ids": [],
+          "pair_weighted_darc_flip": 0.030821917808219176,
+          "pair_weighted_b4_flip": 0.030821917808219176,
+          "pair_weighted_b3_flip": 0.033390410958904104,
+          "gain_pair_weighted_vs_random_pct": 0.2568493150684928,
+          "gain_pair_weighted_vs_b4_pct": 0.0,
+          "group_macro_darc_flip": 0.030821917808219176,
+          "group_macro_b4_flip": 0.030821917808219176,
+          "group_macro_b3_flip": 0.033390410958904104,
+          "gain_group_macro_vs_random_pct": 0.2568493150684928,
+          "gain_group_macro_vs_b4_pct": 0.0,
+          "ci95_darc_minus_b3": [
+            -0.0171,
+            0.0113
+          ],
+          "ci95_darc_minus_b4": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  }
+}

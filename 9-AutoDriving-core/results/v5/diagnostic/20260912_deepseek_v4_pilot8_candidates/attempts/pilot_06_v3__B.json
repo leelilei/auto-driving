@@ -1,0 +1,49 @@
+{
+  "call_id": "pilot_06_v3::B",
+  "role": "B",
+  "graph_condition": null,
+  "started_at": "2026-09-11T19:04:32.299154+00:00",
+  "request": {
+    "system": "Read the user's route-planning instruction field by field before producing the final JSON.\n\nCheck: requested POI categories, return deadline, explicit visit order, and the direction of the quality-versus-distance preference. Each conclusion must be supported by the instruction itself.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nDo not infer a preference from any route or map. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Got to visit the library, supermarket, and bank today and be back by 18:00. Make sure supermarket comes before the bank, and focus on the fastest, most efficient route."
+  },
+  "raw_response": "{\"pois\":[\"library\",\"supermarket\",\"bank\"],\"time_limit\":1080,\"dependencies\":[[\"supermarket\",\"bank\"]],\"quality_weight\":0,\"evidence\":{\"pois\":\"library, supermarket, and bank\",\"time_limit\":\"back by 18:00\",\"dependencies\":\"supermarket comes before the bank\",\"quality_weight\":\"focus on the fastest, most efficient route\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library",
+      "supermarket"
+    ],
+    "time_limit": 1080,
+    "dependencies": [
+      [
+        "supermarket",
+        "bank"
+      ]
+    ],
+    "quality_weight": 0.0
+  },
+  "evidence": {
+    "pois": "library, supermarket, and bank",
+    "time_limit": "back by 18:00",
+    "dependencies": "supermarket comes before the bank",
+    "quality_weight": "focus on the fastest, most efficient route"
+  },
+  "changes": [],
+  "finished_at": "2026-09-11T19:04:39.613490+00:00",
+  "telemetry": {
+    "call_index": 21,
+    "prompt_sha256": "d6f2293ebd32f12fd83bc365726fd8366c01bb375757a4cab5c00dd72963b3d3",
+    "attempts": 1,
+    "latency_seconds": 7.314,
+    "input_chars": 1042,
+    "output_chars": 313,
+    "input_tokens": 268,
+    "output_tokens": 1053,
+    "total_tokens": 1321,
+    "usage_source": "provider",
+    "success": true
+  }
+}

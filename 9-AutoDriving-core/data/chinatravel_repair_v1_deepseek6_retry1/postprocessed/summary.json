@@ -1,0 +1,61 @@
+{
+  "status": "REPAIR_V1_POSTPROCESS_COMPLETE",
+  "model_api_calls": 0,
+  "invented_values": 0,
+  "cases": [
+    {
+      "uid": "e20241028160248698752",
+      "search_status": "search_success",
+      "raw_schema_valid": true,
+      "adapted_schema_valid": true,
+      "changes": 0,
+      "prediction_accepted": true,
+      "official_all_pass_rate": 100.0
+    },
+    {
+      "uid": "e20241028160845920703",
+      "search_status": "search_success",
+      "raw_schema_valid": false,
+      "adapted_schema_valid": true,
+      "changes": 1,
+      "prediction_accepted": true,
+      "official_all_pass_rate": 100.0
+    },
+    {
+      "uid": "e20241028160848776495",
+      "search_status": "search_failed",
+      "raw_schema_valid": false,
+      "adapted_schema_valid": false,
+      "changes": 0,
+      "prediction_accepted": false,
+      "official_all_pass_rate": 0.0
+    },
+    {
+      "uid": "e20241028160902013119",
+      "search_status": "search_success",
+      "raw_schema_valid": false,
+      "adapted_schema_valid": true,
+      "changes": 2,
+      "prediction_accepted": true,
+      "official_all_pass_rate": 100.0
+    },
+    {
+      "uid": "e20241028160913165493",
+      "search_status": "search_success",
+      "raw_schema_valid": false,
+      "adapted_schema_valid": true,
+      "changes": 2,
+      "prediction_accepted": true,
+      "official_all_pass_rate": 100.0
+    },
+    {
+      "uid": "h20241029143455115600",
+      "search_status": "search_success",
+      "raw_schema_valid": false,
+      "adapted_schema_valid": true,
+      "changes": 4,
+      "prediction_accepted": true,
+      "official_all_pass_rate": 100.0
+    }
+  ]
+}

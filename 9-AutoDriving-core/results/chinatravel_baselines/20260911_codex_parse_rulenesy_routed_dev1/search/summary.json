@@ -1,0 +1,10 @@
+{
+  "status": "search_success",
+  "search_success": true,
+  "seconds": 1.8167005829745904,
+  "tool_calls": 3396,
+  "tool_errors": 0,
+  "search_nodes": 1630,
+  "schema_valid": true,
+  "adapter": "RuleNeSy with meal-state correction; search_width=10; no plan postprocessing"
+}

@@ -1,0 +1,15 @@
+{
+  "protocol_version": "darc-v5.1-review-admission-1",
+  "status": "PASS",
+  "collection_allowed": true,
+  "dataset": "/Users/mac/Documents/6-Research/9-AutoDriving/9-AutoDriving-core/data/pilot/pilot_80_utterances.json",
+  "dataset_sha256": "28e4d39f993769eee929815eaae87f4231a568d2bef66b25a5b423679693610a",
+  "review": "/Users/mac/Documents/6-Research/9-AutoDriving/9-AutoDriving-core/results/v5/development/pilot8_human_review_user_attestation.json",
+  "review_sha256": "534667e57d8e4efb9bee23313ef4787aacad852a3a74a316578d63bea6f0f00e",
+  "reviewer": "research_lead_user",
+  "reviewed_at": "2026-09-09T15:28:13.246473+00:00",
+  "expected_utterances": 32,
+  "reviewed_utterances": 32,
+  "issues": [],
+  "nonpassing_utterances": []
+}

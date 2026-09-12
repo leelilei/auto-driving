@@ -1,0 +1,36 @@
+Created log directory: /Users/mac/Documents/6-Research/9-AutoDriving/9-AutoDriving-core/results/chinatravel_baselines/20260911_ds6_constraint_aware_v3/search/e20241028160248698752/logs
+cache dir: /Users/mac/Documents/6-Research/9-AutoDriving/9-AutoDriving-core/results/chinatravel_baselines/20260911_ds6_constraint_aware_v3/search/e20241028160248698752/cache
+上海 -> 杭州
+search: ...
+Can not go back source-city in time, current POI 杭州南站, station arrived time: 13:30
+The current time is too late to go hotel or back-transport, backtrack...
+No solution for the given Go Transport, backtrack...
+False [{'day': 1, 'activities': [{'start_time': '08:49', 'end_time': '10:51', 'start': '上海南站', 'end': '杭州南站', 'price': 65.95, 'cost': 65.95, 'tickets': 1, 'transports': [], 'TrainID': 'K379', 'type': 'train'}]}]
+search failed given the intercity-transport and hotels, backtrack...
+search: ...
+candidates_type:  ['attraction', 'lunch', 'dinner', 'back-intercity-transport']
+POI planning, day 0 10:51, 杭州南站, next-poi type: back-intercity-transport
+validate the plan [for query e20241028160248698752]: 
+{'people_number': 1, 'start_city': '上海', 'target_city': '杭州', 'itinerary': [{'day': 1, 'activities': [{'start_time': '08:49', 'end_time': '10:51', 'start': '上海南站', 'end': '杭州南站', 'price': 65.95, 'cost': 65.95, 'tickets': 1, 'transports': [], 'TrainID': 'K379', 'type': 'train'}, {'start_time': '13:43', 'end_time': '16:00', 'start': '杭州站', 'end': '上海南站', 'price': 65.95, 'cost': 65.95, 'tickets': 1, 'transports': [{'start': '杭州南站', 'end': '火车南站-地铁站', 'mode': 'walk', 'start_time': '10:51', 'end_time': '10:54', 'cost': 0, 'distance': 0.3, 'price': 0}, {'start': '火车南站-地铁站', 'end': '城站-地铁站', 'mode': 'metro', 'start_time': '10:54', 'end_time': '11:21', 'cost': 4, 'distance': 13.77, 'price': 4, 'tickets': 1}, {'start': '城站-地铁站', 'end': '杭州站', 'mode': 'walk', 'start_time': '11:21', 'end_time': '11:23', 'cost': 0, 'distance': 0.21, 'price': 0}], 'TrainID': 'K48', 'type': 'train'}]}]}
+Activity grounding passed!
+Intercity_transport passed!
+Attractions passed!
+Hotels passed!
+Restaurants passed!
+Innercity transport  passed!
+Time passed!
+Space passed!
+{'days': 1, 'people_number': 1, 'cost': 135.9, 'transport_type': {'metro'}, 'intercity_transport': {'train'}, 'train_type': {'K'}, 'food_type': set(), 'spot_type': set(), 'hotel_feature': set(), 'food_price': 0, 'hotel_price': 0, 'hotel_names': set(), 'restaurant_names': set(), 'attraction_names': set(), 'tickets': 1, 'rooms': None, 'room_type': None}
+[True, True, True]
+result=(day_count(plan)==1) passed!
+result=(people_count(plan)==1) passed!
+total=0
+for activity in allactivities(plan):
+ total+=activity_cost(activity)
+ total+=innercity_transport_cost(activity_transports(activity))
+result=(total<=1500) passed!
+
+ Pass! 
+
+True {'people_number': 1, 'start_city': '上海', 'target_city': '杭州', 'itinerary': [{'day': 1, 'activities': [{'start_time': '08:49', 'end_time': '10:51', 'start': '上海南站', 'end': '杭州南站', 'price': 65.95, 'cost': 65.95, 'tickets': 1, 'transports': [], 'TrainID': 'K379', 'type': 'train'}, {'start_time': '13:43', 'end_time': '16:00', 'start': '杭州站', 'end': '上海南站', 'price': 65.95, 'cost': 65.95, 'tickets': 1, 'transports': [{'start': '杭州南站', 'end': '火车南站-地铁站', 'mode': 'walk', 'start_time': '10:51', 'end_time': '10:54', 'cost': 0, 'distance': 0.3, 'price': 0}, {'start': '火车南站-地铁站', 'end': '城站-地铁站', 'mode': 'metro', 'start_time': '10:54', 'end_time': '11:21', 'cost': 4, 'distance': 13.77, 'price': 4, 'tickets': 1}, {'start': '城站-地铁站', 'end': '杭州站', 'mode': 'walk', 'start_time': '11:21', 'end_time': '11:23', 'cost': 0, 'distance': 0.21, 'price': 0}], 'TrainID': 'K48', 'type': 'train'}]}], 'search_time_sec': 0.3872072696685791, 'llm_inference_time_sec': 0}
+True {'people_number': 1, 'start_city': '上海', 'target_city': '杭州', 'itinerary': [{'day': 1, 'activities': [{'start_time': '08:49', 'end_time': '10:51', 'start': '上海南站', 'end': '杭州南站', 'price': 65.95, 'cost': 65.95, 'tickets': 1, 'transports': [], 'TrainID': 'K379', 'type': 'train'}, {'start_time': '13:43', 'end_time': '16:00', 'start': '杭州站', 'end': '上海南站', 'price': 65.95, 'cost': 65.95, 'tickets': 1, 'transports': [{'start': '杭州南站', 'end': '火车南站-地铁站', 'mode': 'walk', 'start_time': '10:51', 'end_time': '10:54', 'cost': 0, 'distance': 0.3, 'price': 0}, {'start': '火车南站-地铁站', 'end': '城站-地铁站', 'mode': 'metro', 'start_time': '10:54', 'end_time': '11:21', 'cost': 4, 'distance': 13.77, 'price': 4, 'tickets': 1}, {'start': '城站-地铁站', 'end': '杭州站', 'mode': 'walk', 'start_time': '11:21', 'end_time': '11:23', 'cost': 0, 'distance': 0.21, 'price': 0}], 'TrainID': 'K48', 'type': 'train'}]}], 'search_time_sec': 0.3872072696685791, 'llm_inference_time_sec': 0}

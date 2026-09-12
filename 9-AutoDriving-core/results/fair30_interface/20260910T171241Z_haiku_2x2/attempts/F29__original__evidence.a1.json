@@ -1,0 +1,61 @@
+{
+  "call_id": "F29__original__evidence",
+  "case_id": "F29",
+  "candidate_source": "F29__r1__direct",
+  "wording": "original",
+  "role": "evidence",
+  "request": {
+    "system": "Review the predicted selection rule against the instruction and full public scene. The prediction may be wrong. Supplementary computed facts are consequences only and cannot override what the instruction requests. Check every field, including when the prediction seems feasible. Return only a JSON object with exactly selection, availability_reference, return_by, evidence.\nselection is nearest_from_bank, minimum_added_distance, or highest_rating.\navailability_reference is departure only when already open at home departure is explicitly required, otherwise arrival.\nreturn_by is integer minutes since midnight or null when absent. It is the requested deadline, not a computed arrival time.\nevidence quotes instruction spans. Preserve the requirements even if infeasible. Do not choose a pharmacy ID or relax a rule.\nOUTPUT CONTRACT (applies to all fields):\nReturn one JSON object only, with no commentary before or after it and no Markdown fences.\nIt has exactly four keys: selection, availability_reference, return_by, evidence.\nThe first three fields follow the rules above. evidence MUST be a JSON object, never a string or array.\nInside evidence use field names as keys and instruction quotations as string values; an empty object {} is valid.\nDo not add a verdict, explanation paragraph, corrected_policy wrapper, or any extra top-level key.\n\nDefinitions of the three selection values:\n- nearest_from_bank: minimize the straight-line distance d(B, P) from bank B to the pharmacy P among eligible pharmacies.\n- minimum_added_distance: minimize d(B, P) + d(P, H) - d(B, H) among eligible pharmacies, where H is home.\n- highest_rating: maximize the pharmacy rating among eligible pharmacies.\nThese definitions specify the selection field. Read which objective is requested from the instruction; the availability_reference and return_by fields retain their definitions above.\n",
+    "user": "{\"candidate_policy\": {\"availability_reference\": \"arrival\", \"return_by\": 605, \"selection\": \"minimum_added_distance\"}, \"computed_scene_facts\": {\"bank_arrival\": 556.4924225024706, \"bank_service_finish\": 576.4924225024706, \"bank_service_window_ok\": true, \"candidates\": [{\"added_distance\": 1.1652879027094016, \"arrival\": 585.0947477695132, \"distance_from_bank\": 8.602325267042627, \"open_at_departure\": false, \"poi_id\": \"P_A\", \"rating\": 3.3, \"return_time\": 604.1501329076507, \"service_finish\": 595.0947477695132, \"service_window_ok\": true}, {\"added_distance\": 7.998674915965228, \"arrival\": 596.7408792337872, \"distance_from_bank\": 20.248456731316587, \"open_at_departure\": true, \"poi_id\": \"P_B\", \"rating\": 3.4, \"return_time\": 610.9835199209065, \"service_finish\": 606.7408792337872, \"service_window_ok\": false}, {\"added_distance\": 9.885135823961306, \"arrival\": 581.4924225024706, \"distance_from_bank\": 5.0, \"open_at_departure\": false, \"poi_id\": \"P_C\", \"rating\": 4.6, \"return_time\": 612.8699808289026, \"service_finish\": 591.4924225024706, \"service_window_ok\": true}, {\"added_distance\": 4.425187167298553, \"arrival\": 595.17396419474, \"distance_from_bank\": 18.681541692269406, \"open_at_departure\": false, \"poi_id\": \"P_D\", \"rating\": 2.6, \"return_time\": 607.4100321722399, \"service_finish\": 605.17396419474, \"service_window_ok\": false}, {\"added_distance\": 13.079359823455235, \"arrival\": 598.8531022774686, \"distance_from_bank\": 22.360679774997898, \"open_at_departure\": false, \"poi_id\": \"P_E\", \"rating\": 3.5, \"return_time\": 616.0642048283966, \"service_finish\": 608.8531022774686, \"service_window_ok\": false}], \"notes\": \"No waiting. Candidate facts do not identify the user selection rule.\"}, \"instruction\": \"Start at home at 09:00. Visit bank B first, then exactly one pharmacy, then return home. Travel along straight lines at 1 distance unit per minute. Bank service takes 20 minutes and pharmacy service takes 10 minutes. Do not wait for a place to open. Start service immediately on arrival; each service must finish no later than closing time. If no pharmacy can satisfy every requirement, report INFEASIBLE. Among pharmacies satisfying every requirement, choose the one adding the least travel distance compared with going directly from bank B to home. Added distance means distance(B, pharmacy) + distance(pharmacy, home) - distance(B, home). Restrict the choice to pharmacies already open when I leave home at 09:00; service must also fit their opening hours when visited. Return home no later than 10:05.\", \"scene\": {\"bank\": {\"close\": 660, \"open\": 500, \"rating\": 4, \"x\": 16, \"y\": 4}, \"bank_service\": 20, \"departure\": 540, \"home\": [0, 0], \"pharmacies\": {\"P_A\": {\"close\": 610, \"open\": 555, \"rating\": 3.3, \"x\": 9, \"y\": -1}, \"P_B\": {\"close\": 585, \"open\": 535, \"rating\": 3.4, \"x\": -3, \"y\": -3}, \"P_C\": {\"close\": 595, \"open\": 555, \"rating\": 4.6, \"x\": 21, \"y\": 4}, \"P_D\": {\"close\": 595, \"open\": 555, \"rating\": 2.6, \"x\": -2, \"y\": -1}, \"P_E\": {\"close\": 595, \"open\": 575, \"rating\": 3.5, \"x\": -4, \"y\": -6}}, \"pharmacy_service\": 10, \"speed_units_per_minute\": 1}}"
+  },
+  "source": "REAL",
+  "status": "SCHEMA_FAILED",
+  "started": "2026-09-10T17:25:27.730204+00:00",
+  "provider_response": {
+    "model": "claude-haiku-4-5-20251001",
+    "id": "msg_011Cev9d3547Ut5YNiaH3Nvo",
+    "type": "message",
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "```json\n{\n  \"selection\": \"INFEASIBLE\",\n  \"availability_reference\": \"arrival\",\n  \"return_by\": 605,\n  \"evidence\": {\n    \"constraint_1\": \"Restrict the choice to pharmacies already open when I leave home at 09:00\",\n    \"constraint_2\": \"service must also fit their opening hours when visited\",\n    \"constraint_3\": \"Return home no later than 10:05\",\n    \"analysis\": \"P_A: open_at_departure=false (violates availability at home departure); P_B: service_window_ok=false, return_time=610.98 > 605 (violates both service window and return deadline); P_C: open_at_departure=false (violates availability at home departure); P_D: open_at_departure=false (violates availability at home departure), service_window_ok=false, return_time=607.41 > 605 (violates all constraints); P_E: open_at_departure=false (violates availability at home departure). No pharmacy satisfies every requirement.\"\n  }\n}\n```"
+      }
+    ],
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "stop_details": null,
+    "usage": {
+      "input_tokens": 1587,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "output_tokens": 275,
+      "service_tier": "standard",
+      "inference_geo": "global"
+    },
+    "context_management": {
+      "applied_edits": []
+    }
+  },
+  "raw_response": "```json\n{\n  \"selection\": \"INFEASIBLE\",\n  \"availability_reference\": \"arrival\",\n  \"return_by\": 605,\n  \"evidence\": {\n    \"constraint_1\": \"Restrict the choice to pharmacies already open when I leave home at 09:00\",\n    \"constraint_2\": \"service must also fit their opening hours when visited\",\n    \"constraint_3\": \"Return home no later than 10:05\",\n    \"analysis\": \"P_A: open_at_departure=false (violates availability at home departure); P_B: service_window_ok=false, return_time=610.98 > 605 (violates both service window and return deadline); P_C: open_at_departure=false (violates availability at home departure); P_D: open_at_departure=false (violates availability at home departure), service_window_ok=false, return_time=607.41 > 605 (violates all constraints); P_E: open_at_departure=false (violates availability at home departure). No pharmacy satisfies every requirement.\"\n  }\n}\n```",
+  "error_type": "ValueError",
+  "error": "unknown selection or availability reference",
+  "finished": "2026-09-10T17:25:35.407062+00:00",
+  "telemetry": {
+    "call_index": 1,
+    "prompt_sha256": "3e74519404fe8ae61103a656fc0c4482768a16797d409d72beb51808f9a76874",
+    "attempts": 1,
+    "latency_seconds": 7.676,
+    "input_chars": 4925,
+    "output_chars": 885,
+    "input_tokens": 1587,
+    "output_tokens": 275,
+    "total_tokens": 1862,
+    "usage_source": "provider",
+    "success": true
+  }
+}

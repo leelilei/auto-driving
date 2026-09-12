@@ -1,0 +1,48 @@
+{
+  "call_id": "stress_implicit_distance_v0::B",
+  "role": "B",
+  "graph_condition": null,
+  "started_at": "2026-09-10T02:28:39.107810+00:00",
+  "request": {
+    "system": "Read the user's route-planning instruction field by field before producing the final JSON.\n\nCheck: requested POI categories, return deadline, explicit visit order, and the direction of the quality-versus-distance preference. Each conclusion must be supported by the instruction itself.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nDo not infer a preference from any route or map. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Visit the bank, pharmacy, and supermarket. My schedule is tight, so avoid any unnecessary detours. Go to the bank before the pharmacy."
+  },
+  "raw_response": "{\"pois\":[\"bank\",\"pharmacy\",\"supermarket\"],\"time_limit\":null,\"dependencies\":[[\"bank\",\"pharmacy\"]],\"quality_weight\":0.0,\"evidence\":{\"pois\":\"Visit the bank, pharmacy, and supermarket.\",\"dependencies\":\"Go to the bank before the pharmacy.\",\"quality_weight\":\"avoid any unnecessary detours\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "pharmacy",
+      "supermarket"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "bank",
+        "pharmacy"
+      ]
+    ],
+    "quality_weight": 0.0
+  },
+  "evidence": {
+    "pois": "Visit the bank, pharmacy, and supermarket.",
+    "dependencies": "Go to the bank before the pharmacy.",
+    "quality_weight": "avoid any unnecessary detours"
+  },
+  "changes": [],
+  "finished_at": "2026-09-10T02:28:46.286676+00:00",
+  "telemetry": {
+    "call_index": 2,
+    "prompt_sha256": "68a27d019cfa771d7fe19b91b4515a4bf5fb7ae63f36aed2f247e0482b8c316a",
+    "attempts": 1,
+    "latency_seconds": 7.179,
+    "input_chars": 1008,
+    "output_chars": 285,
+    "input_tokens": 259,
+    "output_tokens": 1528,
+    "total_tokens": 1787,
+    "usage_source": "provider",
+    "success": true
+  }
+}

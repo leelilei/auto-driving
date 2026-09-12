@@ -1,0 +1,42 @@
+{
+  "clean_group_count": 146,
+  "clean_utterance_count": 584,
+  "gemini-3.1-flash-lite": {
+    "B0": {
+      "TSR": 1.0,
+      "route_flip": 0.0342,
+      "mean_calls": 1.0,
+      "review_rate": 0.0
+    },
+    "B2": {
+      "TSR": 1.0,
+      "route_flip": 0.0342,
+      "mean_calls": 2.0,
+      "review_rate": 0.0
+    },
+    "B5": {
+      "TSR": 1.0,
+      "route_flip": 0.0342,
+      "mean_calls": 2.0,
+      "review_rate": 0.0
+    },
+    "B6": {
+      "TSR": 1.0,
+      "route_flip": 0.0308,
+      "mean_calls": 3.0,
+      "review_rate": 1.0
+    },
+    "B4": {
+      "TSR": 1.0,
+      "route_flip": 0.0274,
+      "mean_calls": 2.0051,
+      "review_rate": 0.0051
+    },
+    "Ours": {
+      "TSR": 1.0,
+      "route_flip": 0.0342,
+      "mean_calls": 2.0103,
+      "review_rate": 0.0103
+    }
+  }
+}

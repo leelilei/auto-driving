@@ -1,0 +1,49 @@
+{
+  "call_id": "pilot_06_v0::A2",
+  "role": "A2",
+  "graph_condition": null,
+  "started_at": "2026-09-09T17:54:27.275565+00:00",
+  "request": {
+    "system": "You extract route-planning intent from the user's instruction.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nUse only the instruction. Do not invent constraints. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Today, you need to visit the library, supermarket, and bank. Make sure to be back by 18:00. Aim for a route that allows you to complete everything efficiently. Also, remember to stop by the supermarket before heading to the bank."
+  },
+  "raw_response": "{\"pois\":[\"library\",\"supermarket\",\"bank\"],\"time_limit\":1080,\"dependencies\":[[\"supermarket\",\"bank\"]],\"quality_weight\":0.2,\"evidence\":{\"pois\":\"visit the library, supermarket, and bank\",\"time_limit\":\"be back by 18:00\",\"dependencies\":\"stop by the supermarket before heading to the bank\",\"quality_weight\":\"complete everything efficiently\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library",
+      "supermarket"
+    ],
+    "time_limit": 1080,
+    "dependencies": [
+      [
+        "supermarket",
+        "bank"
+      ]
+    ],
+    "quality_weight": 0.2
+  },
+  "evidence": {
+    "pois": "visit the library, supermarket, and bank",
+    "time_limit": "be back by 18:00",
+    "dependencies": "stop by the supermarket before heading to the bank",
+    "quality_weight": "complete everything efficiently"
+  },
+  "changes": [],
+  "finished_at": "2026-09-09T17:54:46.706460+00:00",
+  "telemetry": {
+    "call_index": 3,
+    "prompt_sha256": "ab789e2e5688f6dc26e1ed43bfcc5195718c5f114fc01dbb0cb44df213a777a9",
+    "attempts": 1,
+    "latency_seconds": 19.431,
+    "input_chars": 884,
+    "output_chars": 334,
+    "input_tokens": 196,
+    "output_tokens": 172,
+    "total_tokens": 368,
+    "usage_source": "provider",
+    "success": true
+  }
+}

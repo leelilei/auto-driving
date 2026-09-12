@@ -1,0 +1,40 @@
+{
+  "gemini-3.1-flash-lite": {
+    "B0": {
+      "TSR": 1.0,
+      "route_flip": 0.0469,
+      "mean_calls": 1.0,
+      "review_rate": 0.0
+    },
+    "B2": {
+      "TSR": 1.0,
+      "route_flip": 0.0469,
+      "mean_calls": 2.0,
+      "review_rate": 0.0
+    },
+    "B5": {
+      "TSR": 1.0,
+      "route_flip": 0.0469,
+      "mean_calls": 2.0,
+      "review_rate": 0.0
+    },
+    "B6": {
+      "TSR": 1.0,
+      "route_flip": 0.0437,
+      "mean_calls": 3.0,
+      "review_rate": 1.0
+    },
+    "B4": {
+      "TSR": 1.0,
+      "route_flip": 0.0406,
+      "mean_calls": 2.0047,
+      "review_rate": 0.0047
+    },
+    "Ours": {
+      "TSR": 1.0,
+      "route_flip": 0.0469,
+      "mean_calls": 2.0094,
+      "review_rate": 0.0094
+    }
+  }
+}

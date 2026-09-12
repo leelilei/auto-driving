@@ -1,0 +1,49 @@
+{
+  "call_id": "pilot_06_v3::A2",
+  "role": "A2",
+  "graph_condition": null,
+  "started_at": "2026-09-09T16:45:58.996441+00:00",
+  "request": {
+    "system": "You extract route-planning intent from the user's instruction.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nUse only the instruction. Do not invent constraints. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Got to visit the library, supermarket, and bank today and be back by 18:00. Make sure supermarket comes before the bank, and focus on the fastest, most efficient route."
+  },
+  "raw_response": "{\"pois\":[\"library\",\"supermarket\",\"bank\"],\"time_limit\":1080,\"dependencies\":[[\"supermarket\",\"bank\"]],\"quality_weight\":0.1,\"evidence\":{\"pois\":\"library, supermarket, and bank\",\"time_limit\":\"back by 18:00\",\"dependencies\":\"supermarket comes before the bank\",\"quality_weight\":\"fastest, most efficient route\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library",
+      "supermarket"
+    ],
+    "time_limit": 1080,
+    "dependencies": [
+      [
+        "supermarket",
+        "bank"
+      ]
+    ],
+    "quality_weight": 0.1
+  },
+  "evidence": {
+    "pois": "library, supermarket, and bank",
+    "time_limit": "back by 18:00",
+    "dependencies": "supermarket comes before the bank",
+    "quality_weight": "fastest, most efficient route"
+  },
+  "changes": [],
+  "finished_at": "2026-09-09T16:46:00.487894+00:00",
+  "telemetry": {
+    "call_index": 57,
+    "prompt_sha256": "99ca5af3d55e9e5643eb099ceadf9261a075ad19572147a8858cf1f8c0d62662",
+    "attempts": 1,
+    "latency_seconds": 1.491,
+    "input_chars": 823,
+    "output_chars": 302,
+    "input_tokens": 227,
+    "output_tokens": 383,
+    "total_tokens": 610,
+    "usage_source": "provider",
+    "success": true
+  }
+}

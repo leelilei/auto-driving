@@ -1,0 +1,39 @@
+{
+  "protocol": "scene-fair30-v1",
+  "mode": "MOCK",
+  "created": "2026-09-10T16:23:26.602402+00:00",
+  "files": {
+    "model_inputs.json": "d7bac479d5a43a28223ae1e96fe79975c99595a5fccb52693fc6352b5fae46a6",
+    "mutation_audit.json": "c643299b372110a6155d71df2ad79d7f7140b1f083765e9d79f889fbc7565ffb",
+    "gold_and_traces.json": "8416188b143e5487c8f18aba2916a64e2e7c83a184077ec8614983310c45c6c5",
+    "offline_validation.json": "b2e6f26122bb8ca90d737f59373a8d751cde72b17d9c33dedbb7729bd9a57cdf",
+    "author_review_cases.json": "2f5b9863221efe4c5fc25cabf380671e309ff1a069a2ba81224796693380ab3e",
+    "run_plan.json": "86f429149fd70f4a1e9a232c8d1ca301afbd17570ccd0c5aa0037503a168d33f",
+    "CASE_REVIEW.md": "90ba902f5b5e4594e034a10a0b90fcc6688c9795fa88c69960a16981bd96ea66",
+    "config.json": "dbd295d806b56b22f6bf0bb362a3f8555d7940e00051521bd22dd1c7f3f7d1c3"
+  },
+  "sources": {
+    "scripts/scene_rule30_run.py": "6862ccb555dc7f952af29cfd0e2ec8a7b364f760ed24f887a021623721a105f2",
+    "scripts/scene_pilot12.py": "8aae62cbcdd1217066250c87acc2612e185e2c341954bf162f481d398ce4226f",
+    "scripts/scene_haiku_contract.py": "a157080adec1b2e476937b42a1e4c28357e0e9337eb479917149d972b800342e",
+    "scripts/prepare_scene_pilot12.py": "356988a65e82800bd4ed8bd4a1d6127cf6cdcc67ec49c69decff26e91562bea3",
+    "scripts/experiment.py": "3f32e1db828772b1ef05dd045d805817727feefd8eaef363839442fffad738a5",
+    "src/scene_policy.py": "00715e30b16ad4298b80b340dbc491531505b8fea64388e85d8c5accc0a2ba6f",
+    "src/llm_client.py": "ff086f6efce95bd8dba98ca150ba5f8b48b61dcc543a335c39cbdfbca076639b",
+    "scripts/scene_fair30.py": "5360aa83eb3f8f6db7aef7cce1a806a7064ae5836262db6de6079ad61e016769",
+    "scripts/prepare_scene_fair30.py": "07d48e07291389ca558201dd04261ff5fa894844ab36f8f3f63c4ace8345ebe9",
+    "scripts/prepare_scene_rule30.py": "4db617c6b06b2e9f03568aecec46653696d8327fb2599234b9987b491e93de09",
+    "scripts/scene_rule30_glossary.py": "360d8d0ff087cb55bf21183a691efc5269ef83f567a16773f12b4e67b0f970f4",
+    "scripts/scene_glossary_http1.py": "4b354545a2374d6652caa7ce92eb575c6a89635ef4ab49c206bffaa40e40a7d2"
+  },
+  "scope": "MOCK_ENGINEERING_ONLY",
+  "human_review": "PENDING",
+  "authorization": "用户：按照统一DSL定义和新案例的建议推进。语义审阅完成后才采集。",
+  "planned": 180,
+  "concurrency": 2,
+  "max_recoveries": 18,
+  "max_attempts_per_unit": 2,
+  "prompt_revision": "same-glossary-all-three-arms-v1",
+  "stopping": "At most198 physical attempts, at most2 per call, concurrency2. Stop401/403/429; no semantic or schema retries.",
+  "dataset_manifest_sha256": "39065d276cbd6fcd90ab908d27286ff9a6ff47c122925cb214caa88dff084535"
+}

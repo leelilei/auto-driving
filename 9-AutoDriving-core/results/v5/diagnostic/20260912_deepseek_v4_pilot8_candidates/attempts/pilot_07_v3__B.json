@@ -1,0 +1,43 @@
+{
+  "call_id": "pilot_07_v3::B",
+  "role": "B",
+  "graph_condition": null,
+  "started_at": "2026-09-11T19:05:22.596092+00:00",
+  "request": {
+    "system": "Read the user's route-planning instruction field by field before producing the final JSON.\n\nCheck: requested POI categories, return deadline, explicit visit order, and the direction of the quality-versus-distance preference. Each conclusion must be supported by the instruction itself.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nDo not infer a preference from any route or map. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Head to the library, pharmacy, and supermarket today and be back by 17:00. Don't worry if the route takes a bit longer, just make sure to pick the best-rated places."
+  },
+  "raw_response": "{\"pois\":[\"library\",\"pharmacy\",\"supermarket\"],\"time_limit\":1020,\"dependencies\":[],\"quality_weight\":1,\"evidence\":{\"pois\":\"library, pharmacy, and supermarket\",\"time_limit\":\"be back by 17:00\",\"quality_weight\":\"Don't worry if the route takes a bit longer, just make sure to pick the best-rated places.\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "library",
+      "pharmacy",
+      "supermarket"
+    ],
+    "time_limit": 1020,
+    "dependencies": [],
+    "quality_weight": 1.0
+  },
+  "evidence": {
+    "pois": "library, pharmacy, and supermarket",
+    "time_limit": "be back by 17:00",
+    "quality_weight": "Don't worry if the route takes a bit longer, just make sure to pick the best-rated places."
+  },
+  "changes": [],
+  "finished_at": "2026-09-11T19:05:29.573973+00:00",
+  "telemetry": {
+    "call_index": 29,
+    "prompt_sha256": "cee7e2214814946d0e7b1355579aa2a2f830dfea31408c3f7f094704e1bdf522",
+    "attempts": 1,
+    "latency_seconds": 6.977,
+    "input_chars": 1039,
+    "output_chars": 299,
+    "input_tokens": 270,
+    "output_tokens": 1074,
+    "total_tokens": 1344,
+    "usage_source": "provider",
+    "success": true
+  }
+}

@@ -1,0 +1,381 @@
+{
+  "protocol_version": "darc-v5.1-graphs-1",
+  "dataset": "/Users/mac/Documents/6-Research/9-AutoDriving/9-AutoDriving-core/data/pilot/pilot_80_utterances.json",
+  "dataset_sha256": "28e4d39f993769eee929815eaae87f4231a568d2bef66b25a5b423679693610a",
+  "groups": [
+    {
+      "group_id": "pilot_01",
+      "intent": {
+        "pois": [
+          "shopping_mall",
+          "supermarket"
+        ],
+        "time_limit": 1320,
+        "dependencies": [
+          [
+            "shopping_mall",
+            "supermarket"
+          ]
+        ],
+        "quality_weight": 0.25
+      },
+      "validation": {
+        "aligned_to_tradeoff_diff": [
+          "pois.quality"
+        ],
+        "tradeoff_to_time_diff": [
+          "pois.close_time"
+        ],
+        "full_feasible_counts": {
+          "aligned": 4,
+          "tradeoff": 4,
+          "time_sensitive": 1
+        },
+        "time_is_strict_subset": true,
+        "aligned_extreme_sets_intersect": true,
+        "tradeoff_extreme_sets_disjoint": true,
+        "valid": true
+      },
+      "files": {
+        "aligned": {
+          "path": "pilot_01/aligned.json",
+          "sha256": "b83bfdd1a02e83fbf18958fccd434cf7d59d14a9fe7c43534f525b781bd1baf4"
+        },
+        "tradeoff": {
+          "path": "pilot_01/tradeoff.json",
+          "sha256": "606dc49e4538c6ccbd458e5f767997a90ed5c5ad1fa3fdb127e3b139ca2c34bc"
+        },
+        "time_sensitive": {
+          "path": "pilot_01/time_sensitive.json",
+          "sha256": "c31cea80cd9e8ab4b01d5f95395fce7542dfd6420e097664987e973cd1a12db9"
+        }
+      }
+    },
+    {
+      "group_id": "pilot_02",
+      "intent": {
+        "pois": [
+          "pharmacy",
+          "supermarket"
+        ],
+        "time_limit": null,
+        "dependencies": [
+          [
+            "supermarket",
+            "pharmacy"
+          ]
+        ],
+        "quality_weight": 0.5
+      },
+      "validation": {
+        "aligned_to_tradeoff_diff": [
+          "pois.quality"
+        ],
+        "tradeoff_to_time_diff": [
+          "pois.close_time"
+        ],
+        "full_feasible_counts": {
+          "aligned": 4,
+          "tradeoff": 4,
+          "time_sensitive": 1
+        },
+        "time_is_strict_subset": true,
+        "aligned_extreme_sets_intersect": true,
+        "tradeoff_extreme_sets_disjoint": true,
+        "valid": true
+      },
+      "files": {
+        "aligned": {
+          "path": "pilot_02/aligned.json",
+          "sha256": "be6f60ddd1dd1676787cf86ccd1cb40e988d75e162f622f97cb38b9755416bce"
+        },
+        "tradeoff": {
+          "path": "pilot_02/tradeoff.json",
+          "sha256": "d12edf79a52037073612e9998fb695122608561bd1ff2743e8168ba078700443"
+        },
+        "time_sensitive": {
+          "path": "pilot_02/time_sensitive.json",
+          "sha256": "e2bc72d2cd339e0c725962aed6bd6e18f7e5b91dc0d22fec5c09de3c525dbc9f"
+        }
+      }
+    },
+    {
+      "group_id": "pilot_03",
+      "intent": {
+        "pois": [
+          "pharmacy",
+          "shopping_mall"
+        ],
+        "time_limit": null,
+        "dependencies": [],
+        "quality_weight": 0.5
+      },
+      "validation": {
+        "aligned_to_tradeoff_diff": [
+          "pois.quality"
+        ],
+        "tradeoff_to_time_diff": [
+          "pois.close_time"
+        ],
+        "full_feasible_counts": {
+          "aligned": 8,
+          "tradeoff": 8,
+          "time_sensitive": 2
+        },
+        "time_is_strict_subset": true,
+        "aligned_extreme_sets_intersect": true,
+        "tradeoff_extreme_sets_disjoint": true,
+        "valid": true
+      },
+      "files": {
+        "aligned": {
+          "path": "pilot_03/aligned.json",
+          "sha256": "f66bcd7781985f539d2039e61106fe8939cc537a0f20bc4137faf9f66e28caad"
+        },
+        "tradeoff": {
+          "path": "pilot_03/tradeoff.json",
+          "sha256": "9942b7eeb074b1d6cd407f2331142f5e3e40be9b5c8b48a2797a84cf7f7dbb98"
+        },
+        "time_sensitive": {
+          "path": "pilot_03/time_sensitive.json",
+          "sha256": "5577663b9c0bad5104d61ccd5274f43b7ba24237c8869dc13f8b73fbea7038b9"
+        }
+      }
+    },
+    {
+      "group_id": "pilot_04",
+      "intent": {
+        "pois": [
+          "bank",
+          "library"
+        ],
+        "time_limit": 1080,
+        "dependencies": [],
+        "quality_weight": 0.25
+      },
+      "validation": {
+        "aligned_to_tradeoff_diff": [
+          "pois.quality"
+        ],
+        "tradeoff_to_time_diff": [
+          "pois.close_time"
+        ],
+        "full_feasible_counts": {
+          "aligned": 8,
+          "tradeoff": 8,
+          "time_sensitive": 2
+        },
+        "time_is_strict_subset": true,
+        "aligned_extreme_sets_intersect": true,
+        "tradeoff_extreme_sets_disjoint": true,
+        "valid": true
+      },
+      "files": {
+        "aligned": {
+          "path": "pilot_04/aligned.json",
+          "sha256": "18d176f30504ca46c93ecc7dc7bf6aeb4ba984dbd70a226a9ff7db06ad88de36"
+        },
+        "tradeoff": {
+          "path": "pilot_04/tradeoff.json",
+          "sha256": "57b4bb45f4eb4a7578b897075b91b43aac6a55537b0eb786f8d13072ded0ddb2"
+        },
+        "time_sensitive": {
+          "path": "pilot_04/time_sensitive.json",
+          "sha256": "d8ff49553cd679923759c4c656be83a0c2c15616833463203a4f461295c05435"
+        }
+      }
+    },
+    {
+      "group_id": "pilot_05",
+      "intent": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy"
+        ],
+        "time_limit": null,
+        "dependencies": [
+          [
+            "bank",
+            "library"
+          ]
+        ],
+        "quality_weight": 0.75
+      },
+      "validation": {
+        "aligned_to_tradeoff_diff": [
+          "pois.quality"
+        ],
+        "tradeoff_to_time_diff": [
+          "pois.close_time"
+        ],
+        "full_feasible_counts": {
+          "aligned": 24,
+          "tradeoff": 24,
+          "time_sensitive": 3
+        },
+        "time_is_strict_subset": true,
+        "aligned_extreme_sets_intersect": true,
+        "tradeoff_extreme_sets_disjoint": true,
+        "valid": true
+      },
+      "files": {
+        "aligned": {
+          "path": "pilot_05/aligned.json",
+          "sha256": "628e071f05058677d85b3f3c44722f4f95a562ac5d3adada161c4585881e7da1"
+        },
+        "tradeoff": {
+          "path": "pilot_05/tradeoff.json",
+          "sha256": "c9dd12b7205b13a2fa5b7e761b4f93a79ef45ecd37dac3af28941862c822ed43"
+        },
+        "time_sensitive": {
+          "path": "pilot_05/time_sensitive.json",
+          "sha256": "d614ec549005a263de557b3854936d63ac80b1ca908f6b3f86583f676e3e1a18"
+        }
+      }
+    },
+    {
+      "group_id": "pilot_06",
+      "intent": {
+        "pois": [
+          "bank",
+          "library",
+          "supermarket"
+        ],
+        "time_limit": 1080,
+        "dependencies": [
+          [
+            "supermarket",
+            "bank"
+          ]
+        ],
+        "quality_weight": 0.25
+      },
+      "validation": {
+        "aligned_to_tradeoff_diff": [
+          "pois.quality"
+        ],
+        "tradeoff_to_time_diff": [
+          "pois.close_time"
+        ],
+        "full_feasible_counts": {
+          "aligned": 24,
+          "tradeoff": 24,
+          "time_sensitive": 3
+        },
+        "time_is_strict_subset": true,
+        "aligned_extreme_sets_intersect": true,
+        "tradeoff_extreme_sets_disjoint": true,
+        "valid": true
+      },
+      "files": {
+        "aligned": {
+          "path": "pilot_06/aligned.json",
+          "sha256": "9427216d9d1a74410a33c0d38ad4783be6864bdb661df328526257b7e9725709"
+        },
+        "tradeoff": {
+          "path": "pilot_06/tradeoff.json",
+          "sha256": "930b74ae5ca28cd82226cac8ab334d20e2faa95ef99412a5b5204ed2c98268c1"
+        },
+        "time_sensitive": {
+          "path": "pilot_06/time_sensitive.json",
+          "sha256": "aaa4358c2a5e67e24c211e2387c16b75dd5887588ef81dbd14a290addad15a44"
+        }
+      }
+    },
+    {
+      "group_id": "pilot_07",
+      "intent": {
+        "pois": [
+          "library",
+          "pharmacy",
+          "supermarket"
+        ],
+        "time_limit": 1020,
+        "dependencies": [],
+        "quality_weight": 0.75
+      },
+      "validation": {
+        "aligned_to_tradeoff_diff": [
+          "pois.quality"
+        ],
+        "tradeoff_to_time_diff": [
+          "pois.close_time"
+        ],
+        "full_feasible_counts": {
+          "aligned": 48,
+          "tradeoff": 48,
+          "time_sensitive": 6
+        },
+        "time_is_strict_subset": true,
+        "aligned_extreme_sets_intersect": true,
+        "tradeoff_extreme_sets_disjoint": true,
+        "valid": true
+      },
+      "files": {
+        "aligned": {
+          "path": "pilot_07/aligned.json",
+          "sha256": "59b3b24d21de09dad53241e05b4cf8a02b6e5bcdee8b3a8149ab7fbe5f60fba3"
+        },
+        "tradeoff": {
+          "path": "pilot_07/tradeoff.json",
+          "sha256": "56c3d09a3fb39d839582b13cc099b33864bacfd4af6e51532cfeb70002ecae9f"
+        },
+        "time_sensitive": {
+          "path": "pilot_07/time_sensitive.json",
+          "sha256": "52843c9f0167195e5fb28511c616b90cd7037e7b8cb08541920da679f3ee18d4"
+        }
+      }
+    },
+    {
+      "group_id": "pilot_08",
+      "intent": {
+        "pois": [
+          "library",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "time_limit": null,
+        "dependencies": [
+          [
+            "shopping_mall",
+            "supermarket"
+          ]
+        ],
+        "quality_weight": 0.5
+      },
+      "validation": {
+        "aligned_to_tradeoff_diff": [
+          "pois.quality"
+        ],
+        "tradeoff_to_time_diff": [
+          "pois.close_time"
+        ],
+        "full_feasible_counts": {
+          "aligned": 24,
+          "tradeoff": 24,
+          "time_sensitive": 3
+        },
+        "time_is_strict_subset": true,
+        "aligned_extreme_sets_intersect": true,
+        "tradeoff_extreme_sets_disjoint": true,
+        "valid": true
+      },
+      "files": {
+        "aligned": {
+          "path": "pilot_08/aligned.json",
+          "sha256": "e303c6836d127c2c3cf3a692d03e7acb9d15d4b9555da52e7e0f6d816b8e71b7"
+        },
+        "tradeoff": {
+          "path": "pilot_08/tradeoff.json",
+          "sha256": "9ea7f84c7537fb5b505806bb3834766256cd33c64d70bde6aa77871e46be868d"
+        },
+        "time_sensitive": {
+          "path": "pilot_08/time_sensitive.json",
+          "sha256": "3ce383e01fd1ce08f11e40c4673543e716b84b761f936b5f045b4b0bbdf9e542"
+        }
+      }
+    }
+  ],
+  "development_only": true
+}

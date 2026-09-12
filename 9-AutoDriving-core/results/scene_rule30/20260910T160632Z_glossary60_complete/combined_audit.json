@@ -1,0 +1,104 @@
+{
+  "status": "PASS_OFFLINE_MATCHED_CONTROL",
+  "human_review": "PENDING",
+  "independent_decisions": 60,
+  "unchanged_inherited_answers": 21,
+  "combined_physical_calls": 111,
+  "combined_transport_failures": 51,
+  "usage_unknown_failures": 51,
+  "valid_response_tokens": {
+    "input_tokens": 39854,
+    "output_tokens": 8340,
+    "cache_creation_input_tokens": 9497,
+    "cache_read_input_tokens": 1175,
+    "token_components_sum": 58866,
+    "usage_unknown": 0,
+    "median_seconds": 6.3275
+  },
+  "glossary_vs_evidence_discordant": [
+    {
+      "case_id": "R04",
+      "rep": 1,
+      "block_id": "G2",
+      "glossary_correct": true,
+      "evidence_correct": false
+    },
+    {
+      "case_id": "R10",
+      "rep": 1,
+      "block_id": "G4",
+      "glossary_correct": true,
+      "evidence_correct": false
+    },
+    {
+      "case_id": "R13",
+      "rep": 1,
+      "block_id": "G5",
+      "glossary_correct": true,
+      "evidence_correct": false
+    },
+    {
+      "case_id": "R16",
+      "rep": 1,
+      "block_id": "G6",
+      "glossary_correct": true,
+      "evidence_correct": false
+    },
+    {
+      "case_id": "R25",
+      "rep": 1,
+      "block_id": "C4",
+      "glossary_correct": true,
+      "evidence_correct": false
+    },
+    {
+      "case_id": "R26",
+      "rep": 1,
+      "block_id": "C4",
+      "glossary_correct": true,
+      "evidence_correct": false
+    },
+    {
+      "case_id": "R04",
+      "rep": 2,
+      "block_id": "G2",
+      "glossary_correct": true,
+      "evidence_correct": false
+    },
+    {
+      "case_id": "R07",
+      "rep": 2,
+      "block_id": "G3",
+      "glossary_correct": true,
+      "evidence_correct": false
+    },
+    {
+      "case_id": "R10",
+      "rep": 2,
+      "block_id": "G4",
+      "glossary_correct": true,
+      "evidence_correct": false
+    },
+    {
+      "case_id": "R16",
+      "rep": 2,
+      "block_id": "G6",
+      "glossary_correct": true,
+      "evidence_correct": false
+    },
+    {
+      "case_id": "R25",
+      "rep": 2,
+      "block_id": "C4",
+      "glossary_correct": true,
+      "evidence_correct": false
+    },
+    {
+      "case_id": "R26",
+      "rep": 2,
+      "block_id": "C4",
+      "glossary_correct": true,
+      "evidence_correct": false
+    }
+  ]
+}

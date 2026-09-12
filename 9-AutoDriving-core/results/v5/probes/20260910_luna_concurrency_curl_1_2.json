@@ -1,0 +1,108 @@
+{
+  "protocol_version": "darc-v5.1-concurrency-probe-1",
+  "model": "gpt-5.6-luna",
+  "config": {
+    "provider": "fhl",
+    "model": "gpt-5.6-luna",
+    "wire_api": "chat_completions",
+    "base_url": "https://www.fhl.mom",
+    "temperature": 0.0,
+    "timeout": 60,
+    "json_mode": true,
+    "retries": 0,
+    "retry_sleep": 2.0,
+    "sleep": 0.0,
+    "max_concurrency": 1,
+    "omit_temperature": true,
+    "reasoning_effort": null,
+    "max_output_tokens": 100,
+    "stream": false,
+    "service_tier": null,
+    "store": null,
+    "responses_input_mode": "messages",
+    "input_char_limit": null,
+    "transport": "curl",
+    "api_key_env": "FHL_API_KEY"
+  },
+  "started_at": "2026-09-09T17:07:36.350091+00:00",
+  "levels": [
+    {
+      "concurrency": 1,
+      "planned": 1,
+      "passed": 1,
+      "failed": 0,
+      "wall_seconds": 14.649376250046771,
+      "attempts": [
+        {
+          "index": 0,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":1,\"index\":0}",
+          "latency_seconds": 14.649002708029002,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "186eca95e9bd4ca40ddd57bfb0a900e6afdc7d579c14d4399c0f143c1b395395",
+            "attempts": 1,
+            "latency_seconds": 14.649,
+            "input_chars": 56,
+            "output_chars": 31,
+            "input_tokens": 36,
+            "output_tokens": 33,
+            "total_tokens": 69,
+            "usage_source": "provider",
+            "success": true
+          }
+        }
+      ]
+    },
+    {
+      "concurrency": 2,
+      "planned": 2,
+      "passed": 1,
+      "failed": 1,
+      "wall_seconds": 16.15452933398774,
+      "attempts": [
+        {
+          "index": 0,
+          "status": "FAILED",
+          "error_type": "RuntimeError",
+          "error_message": "curl request failed: curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to www.fhl.mom:443",
+          "latency_seconds": 5.016404625028372,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "454175310143e513abd5013ebdbf4d76ddf510e3008f3657db8504d013048089",
+            "attempts": 1,
+            "latency_seconds": 5.016,
+            "input_chars": 56,
+            "output_chars": 0,
+            "input_tokens": 14,
+            "output_tokens": 0,
+            "total_tokens": 14,
+            "usage_source": "character_estimate",
+            "success": false,
+            "error": "RuntimeError"
+          }
+        },
+        {
+          "index": 1,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":2,\"index\":1}",
+          "latency_seconds": 16.154001749993768,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "f41d130869a89ffc0f65b6a062d00e85fc902518063e6a147395d4873d2bd0f1",
+            "attempts": 1,
+            "latency_seconds": 16.154,
+            "input_chars": 56,
+            "output_chars": 31,
+            "input_tokens": 36,
+            "output_tokens": 20,
+            "total_tokens": 56,
+            "usage_source": "provider",
+            "success": true
+          }
+        }
+      ]
+    }
+  ],
+  "finished_at": "2026-09-09T17:08:07.154541+00:00"
+}

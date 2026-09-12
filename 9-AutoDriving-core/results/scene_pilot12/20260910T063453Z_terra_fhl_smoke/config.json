@@ -1,0 +1,17 @@
+{
+  "provider": "fhl",
+  "model": "gpt-5.6-terra",
+  "wire_api": "chat_completions",
+  "base_url": "https://www.fhl.mom",
+  "api_key_env": "FHL_API_KEY",
+  "temperature": 0.0,
+  "omit_temperature": true,
+  "timeout": 120,
+  "sleep": 0,
+  "max_concurrency": 1,
+  "retries": 0,
+  "retry_sleep": 2,
+  "json_mode": true,
+  "transport": "curl",
+  "max_output_tokens": 1600
+}

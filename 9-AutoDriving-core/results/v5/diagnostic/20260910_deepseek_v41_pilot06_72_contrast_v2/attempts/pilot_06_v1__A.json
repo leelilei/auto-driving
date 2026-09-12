@@ -1,0 +1,49 @@
+{
+  "call_id": "pilot_06_v1::A",
+  "role": "A",
+  "graph_condition": null,
+  "started_at": "2026-09-09T16:37:11.199267+00:00",
+  "request": {
+    "system": "You extract route-planning intent from the user's instruction.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nUse only the instruction. Do not invent constraints. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "You must visit the library, supermarket, and bank today, returning by 18:00. Select an efficient route to complete all visits promptly, and stop by the supermarket before going to the bank."
+  },
+  "raw_response": "{\"pois\":[\"library\",\"supermarket\",\"bank\"],\"time_limit\":1080,\"dependencies\":[[\"supermarket\",\"bank\"]],\"quality_weight\":0.3,\"evidence\":{\"pois\":\"library, supermarket, and bank\",\"time_limit\":\"returning by 18:00\",\"dependencies\":\"supermarket before going to the bank\",\"quality_weight\":\"efficient route to complete all visits promptly\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library",
+      "supermarket"
+    ],
+    "time_limit": 1080,
+    "dependencies": [
+      [
+        "supermarket",
+        "bank"
+      ]
+    ],
+    "quality_weight": 0.3
+  },
+  "evidence": {
+    "pois": "library, supermarket, and bank",
+    "time_limit": "returning by 18:00",
+    "dependencies": "supermarket before going to the bank",
+    "quality_weight": "efficient route to complete all visits promptly"
+  },
+  "changes": [],
+  "finished_at": "2026-09-09T16:37:14.264700+00:00",
+  "telemetry": {
+    "call_index": 19,
+    "prompt_sha256": "02d0327f1917c1f11b063b6b5af1655a7f2635106f2005f6b4fb5d5f97a686fe",
+    "attempts": 1,
+    "latency_seconds": 3.065,
+    "input_chars": 844,
+    "output_chars": 328,
+    "input_tokens": 229,
+    "output_tokens": 939,
+    "total_tokens": 1168,
+    "usage_source": "provider",
+    "success": true
+  }
+}

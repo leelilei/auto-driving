@@ -1,0 +1,46 @@
+{
+  "status": "DEEPSEEK_STAGE4_PLANNING_COMPLETE",
+  "model_api_calls": 0,
+  "cases": [
+    {
+      "uid": "e20241028160248698752",
+      "status": "search_success",
+      "seconds": 1.7297947079641744,
+      "tool_calls": 3396,
+      "tool_errors": 0,
+      "schema_valid": true
+    },
+    {
+      "uid": "e20241028160845920703",
+      "status": "contract_failure",
+      "error": "Missing required field"
+    },
+    {
+      "uid": "e20241028160848776495",
+      "status": "search_error:TimeoutError",
+      "seconds": 30.259738458087668,
+      "tool_calls": 81499,
+      "tool_errors": 0,
+      "schema_valid": false
+    },
+    {
+      "uid": "e20241028160913165493",
+      "status": "contract_failure",
+      "error": "Missing required field"
+    },
+    {
+      "uid": "e20241028160902013119",
+      "status": "contract_failure",
+      "error": "Missing required field"
+    },
+    {
+      "uid": "h20241029143455115600",
+      "status": "search_success",
+      "seconds": 3.5257949579972774,
+      "tool_calls": 12818,
+      "tool_errors": 0,
+      "schema_valid": false
+    }
+  ],
+  "semantic_error_candidates": []
+}

@@ -1,0 +1,173 @@
+{
+  "selection_rule": "fixed text-requirement strata, first lexicographic unused UID in each; no model outputs or success metrics read",
+  "selection_scope": "development engineering plus diagnostic cases; selection after source review, not confirmatory preregistration",
+  "cases": [
+    {
+      "stratum": "regression_base",
+      "uid": "e20241028160248698752",
+      "reason": "已暴露回归例；现有五字段链路",
+      "track": "baseline",
+      "selection_candidates": [
+        "e20241028160248698752"
+      ],
+      "status": "not_executed",
+      "prior_exposed_regression": true
+    },
+    {
+      "stratum": "food_rooms",
+      "uid": "e20241028160845920703",
+      "reason": "餐饮类型＋房数/房型",
+      "track": "interface_extension",
+      "selection_candidates": [
+        "e20241028160845920703",
+        "e20241028160855113315",
+        "e20241028160904677400",
+        "e20241028160908981620",
+        "e20241028160911184742",
+        "e20241028160916850792",
+        "e20241028160918445815"
+      ],
+      "status": "not_executed",
+      "prior_exposed_regression": false
+    },
+    {
+      "stratum": "train_rooms",
+      "uid": "e20241028160848776495",
+      "reason": "火车＋多人住宿",
+      "track": "interface_extension",
+      "selection_candidates": [
+        "e20241028160848776495",
+        "e20241028160904677400",
+        "e20241028160916850792"
+      ],
+      "status": "not_executed",
+      "prior_exposed_regression": false
+    },
+    {
+      "stratum": "airplane_rooms",
+      "uid": "e20241028160913165493",
+      "reason": "飞机＋住宿",
+      "track": "interface_extension",
+      "selection_candidates": [
+        "e20241028160913165493"
+      ],
+      "status": "not_executed",
+      "prior_exposed_regression": false
+    },
+    {
+      "stratum": "attraction_category",
+      "uid": "e20241028160902013119",
+      "reason": "明确景点类别",
+      "track": "interface_extension",
+      "selection_candidates": [
+        "e20241028160902013119",
+        "e20241028160906602324"
+      ],
+      "status": "not_executed",
+      "prior_exposed_regression": false
+    },
+    {
+      "stratum": "unspecified_budget",
+      "uid": "h20241029143455115600",
+      "reason": "无预算、无额外偏好；不得虚构数值预算",
+      "track": "interface_extension",
+      "selection_candidates": [
+        "h20241029143455115600",
+        "h20241029143456235562"
+      ],
+      "status": "not_executed",
+      "prior_exposed_regression": false
+    },
+    {
+      "stratum": "majority_mode",
+      "uid": "e20241028160842228543",
+      "reason": "主要交通方式的量词边界",
+      "track": "diagnostic_only",
+      "selection_candidates": [
+        "e20241028160842228543",
+        "e20241028160851829629",
+        "e20241028160914767827"
+      ],
+      "status": "not_executed",
+      "prior_exposed_regression": false
+    },
+    {
+      "stratum": "hotel_budget_unit",
+      "uid": "e20241028160857444675",
+      "reason": "酒店每晚预算的单位边界",
+      "track": "diagnostic_only",
+      "selection_candidates": [
+        "e20241028160857444675"
+      ],
+      "status": "not_executed",
+      "prior_exposed_regression": false
+    },
+    {
+      "stratum": "omitted_explicit_budget",
+      "uid": "h20241029143450090032",
+      "reason": "明确预算未进入 DSL",
+      "track": "diagnostic_only",
+      "selection_candidates": [
+        "h20241029143450090032"
+      ],
+      "status": "not_executed",
+      "prior_exposed_regression": false
+    },
+    {
+      "stratum": "conflicting_duration",
+      "uid": "h20241029143500599951",
+      "reason": "前缀/正文天数冲突",
+      "track": "diagnostic_only",
+      "selection_candidates": [
+        "h20241029143500599951"
+      ],
+      "status": "not_executed",
+      "prior_exposed_regression": false
+    }
+  ],
+  "model_calls": 0,
+  "collection_status": "not_started",
+  "denominator_policy": "10 frozen IDs remain; diagnostic-only cases are not completed model trials and cannot be silently removed",
+  "public_inputs": [
+    {
+      "uid": "e20241028160248698752",
+      "nature_language": "当前位置上海。我一个人想去杭州玩一天，预算1500人民币，请给我一个旅行规划。"
+    },
+    {
+      "uid": "e20241028160845920703",
+      "nature_language": "当前位置深圳。我打算去广州玩两天，预算1000元，想吃火锅，开一间单床房。请给我一个旅行规划。"
+    },
+    {
+      "uid": "e20241028160848776495",
+      "nature_language": "当前位置广州。我们四个人计划去杭州玩两天，选择火车出行，预算5600元，开两间双床房。请给我一个旅行规划。"
+    },
+    {
+      "uid": "e20241028160913165493",
+      "nature_language": "当前位置杭州。我和朋友计划去北京玩三天，选择飞机出行，预算8000元，开一间双床房。请给我一个旅行规划。"
+    },
+    {
+      "uid": "e20241028160902013119",
+      "nature_language": "当前位置北京。我计划去武汉玩三天，预算3000元，想欣赏历史古迹，开一间单床房。请给我一个旅行规划。"
+    },
+    {
+      "uid": "h20241029143455115600",
+      "nature_language": "[当前位置北京,目标位置重庆,旅行人数2,旅行天数5] 重庆应该怎么玩"
+    },
+    {
+      "uid": "e20241028160842228543",
+      "nature_language": "当前位置上海。我和朋友计划去北京玩三天，预算6000元，市内交通主要使用地铁，开一间单床房。请给我一个旅行规划。"
+    },
+    {
+      "uid": "e20241028160857444675",
+      "nature_language": "当前位置苏州。我和女朋友打算去上海玩两天，预算1300元，希望酒店每晚不超过500元，开一间单床房。请给我一个旅行规划。"
+    },
+    {
+      "uid": "h20241029143450090032",
+      "nature_language": "[当前位置上海,目标位置重庆,旅行人数2,旅行天数3] 我要和女朋友从上海出发去重庆玩，大概三天。市内交通要求最省时间，预算4000的差旅费，帮我规划行程。"
+    },
+    {
+      "uid": "h20241029143500599951",
+      "nature_language": "[当前位置南京,目标位置成都,旅行人数3,旅行天数5] 我们一家三口想去成都旅游一周，主要想逛一些适合带小朋友的景点，预算8000元，然后品尝一些当地的美食"
+    }
+  ]
+}

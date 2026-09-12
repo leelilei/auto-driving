@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "model": "deepseek-v4-flash",
+  "calls": 100,
+  "complete": 100,
+  "unique_cases": 60,
+  "unique_semantic_matches_on_audited_fields": 58,
+  "unique_semantic_mismatch_cases": 2,
+  "mismatches": [
+    {
+      "uid": "h20241029143502525564",
+      "fields": {
+        "cuisine": {
+          "expected": null,
+          "actual": "重庆美食"
+        }
+      }
+    },
+    {
+      "uid": "h20241029143504074288",
+      "fields": {
+        "attraction_category": {
+          "expected": null,
+          "actual": "历史人文"
+        }
+      }
+    }
+  ],
+  "repeat_pairs": 40,
+  "repeat_agreement_pairs": 40,
+  "repeat_disagreement_uids": [],
+  "scope": "offline parse-level diagnostic; not official all-pass and not independent 100-case coverage"
+}

@@ -1,0 +1,60 @@
+{
+  "protocol_version": "darc-v5.1-concurrency-probe-1",
+  "model": "claude-haiku-4-5-20251001",
+  "config": {
+    "provider": "anthropic",
+    "model": "claude-haiku-4-5-20251001",
+    "wire_api": "anthropic_messages",
+    "base_url": "https://www.fhl.mom",
+    "temperature": 0.0,
+    "timeout": 60,
+    "json_mode": true,
+    "retries": 0,
+    "retry_sleep": 2.0,
+    "sleep": 0.0,
+    "max_concurrency": 16,
+    "omit_temperature": false,
+    "reasoning_effort": null,
+    "max_output_tokens": 100,
+    "stream": false,
+    "service_tier": null,
+    "store": null,
+    "responses_input_mode": "messages",
+    "input_char_limit": null,
+    "transport": "urllib",
+    "api_key_env": "ANTHROPIC_AUTH_TOKEN"
+  },
+  "started_at": "2026-09-10T14:52:52.251065+00:00",
+  "levels": [
+    {
+      "concurrency": 1,
+      "planned": 1,
+      "passed": 0,
+      "failed": 1,
+      "wall_seconds": 5.1063662089873105,
+      "attempts": [
+        {
+          "index": 0,
+          "status": "FAILED",
+          "error_type": "JSONDecodeError",
+          "error_message": "Expecting value: line 1 column 1 (char 0)",
+          "latency_seconds": 5.103410082985647,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "186eca95e9bd4ca40ddd57bfb0a900e6afdc7d579c14d4399c0f143c1b395395",
+            "attempts": 1,
+            "latency_seconds": 5.103,
+            "input_chars": 56,
+            "output_chars": 43,
+            "input_tokens": 81,
+            "output_tokens": 18,
+            "total_tokens": 99,
+            "usage_source": "provider",
+            "success": true
+          }
+        }
+      ]
+    }
+  ],
+  "finished_at": "2026-09-10T14:52:57.357834+00:00"
+}

@@ -1,0 +1,64 @@
+{
+  "call_id": "F11__clarified__language",
+  "case_id": "F11",
+  "candidate_source": "F11__r1__direct",
+  "wording": "clarified",
+  "role": "language",
+  "request": {
+    "system": "Review the predicted selection rule against the instruction and full public scene. The prediction may be wrong. Supplementary computed facts are consequences only and cannot override what the instruction requests. Check every field, including when the prediction seems feasible. Return only a JSON object with exactly selection, availability_reference, return_by, evidence.\nselection is nearest_from_bank, minimum_added_distance, or highest_rating.\navailability_reference is departure only when already open at home departure is explicitly required, otherwise arrival.\nreturn_by is integer minutes since midnight or null when absent. It is the requested deadline, not a computed arrival time.\nevidence quotes instruction spans. Preserve the requirements even if infeasible. Do not choose a pharmacy ID or relax a rule.\nOUTPUT CONTRACT (applies to all fields):\nReturn one JSON object only, with no commentary before or after it and no Markdown fences.\nIt has exactly four keys: selection, availability_reference, return_by, evidence.\nThe first three fields follow the rules above. evidence MUST be a JSON object, never a string or array.\nInside evidence use field names as keys and instruction quotations as string values; an empty object {} is valid.\nDo not add a verdict, explanation paragraph, corrected_policy wrapper, or any extra top-level key.\n\nDefinitions of the three selection values:\n- nearest_from_bank: minimize the straight-line distance d(B, P) from bank B to the pharmacy P among eligible pharmacies.\n- minimum_added_distance: minimize d(B, P) + d(P, H) - d(B, H) among eligible pharmacies, where H is home.\n- highest_rating: maximize the pharmacy rating among eligible pharmacies.\nThese definitions specify the selection field. Read which objective is requested from the instruction; the availability_reference and return_by fields retain their definitions above.\n",
+    "user": "{\"candidate_policy\": {\"availability_reference\": \"departure\", \"return_by\": null, \"selection\": \"minimum_added_distance\"}, \"computed_scene_facts\": null, \"instruction\": \"Start at home at 09:00. Visit bank B first, then exactly one pharmacy, then return home. Travel along straight lines at 1 distance unit per minute. Bank service takes 20 minutes and pharmacy service takes 10 minutes. Do not wait for a place to open. Start service immediately on arrival; each service must finish no later than closing time. If no pharmacy can satisfy every requirement, the downstream executor reports INFEASIBLE. Your task is only to extract the requested rule fields; preserve those rules even when no pharmacy is feasible. Among pharmacies satisfying every requirement, choose the one adding the least travel distance compared with going directly from bank B to home. Added distance means distance(B, pharmacy) + distance(pharmacy, home) - distance(B, home). Restrict the choice to pharmacies already open when I leave home at 09:00; service must also fit their opening hours when visited.\", \"scene\": {\"bank\": {\"close\": 660, \"open\": 500, \"rating\": 4, \"x\": 16, \"y\": 1}, \"bank_service\": 20, \"departure\": 540, \"home\": [0, 0], \"pharmacies\": {\"P_A\": {\"close\": 660, \"open\": 500, \"rating\": 4.9, \"x\": -1, \"y\": -6}, \"P_B\": {\"close\": 660, \"open\": 555, \"rating\": 3.7, \"x\": 14, \"y\": -6}, \"P_C\": {\"close\": 660, \"open\": 555, \"rating\": 2.1, \"x\": -5, \"y\": -8}, \"P_D\": {\"close\": 660, \"open\": 555, \"rating\": 4.6, \"x\": 16, \"y\": -2}, \"P_E\": {\"close\": 660, \"open\": 535, \"rating\": 2.2, \"x\": 9, \"y\": 7}}, \"pharmacy_service\": 10, \"speed_units_per_minute\": 1}}"
+  },
+  "source": "REAL",
+  "status": "COMPLETE",
+  "started": "2026-09-10T17:14:51.505240+00:00",
+  "provider_response": {
+    "model": "claude-haiku-4-5-20251001",
+    "id": "msg_011Cev8ozgsrZuue8fk1Eo9R",
+    "type": "message",
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "```json\n{\n  \"selection\": \"minimum_added_distance\",\n  \"availability_reference\": \"departure\",\n  \"return_by\": null,\n  \"evidence\": {\n    \"selection\": \"Among pharmacies satisfying every requirement, choose the one adding the least travel distance compared with going directly from bank B to home. Added distance means distance(B, pharmacy) + distance(pharmacy, home) - distance(B, home).\",\n    \"availability_reference\": \"Restrict the choice to pharmacies already open when I leave home at 09:00\",\n    \"return_by\": \"No explicit deadline specified in the instruction\"\n  }\n}\n```"
+      }
+    ],
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "stop_details": null,
+    "usage": {
+      "input_tokens": 1021,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "output_tokens": 162,
+      "service_tier": "standard",
+      "inference_geo": "global"
+    },
+    "context_management": {
+      "applied_edits": []
+    }
+  },
+  "raw_response": "```json\n{\n  \"selection\": \"minimum_added_distance\",\n  \"availability_reference\": \"departure\",\n  \"return_by\": null,\n  \"evidence\": {\n    \"selection\": \"Among pharmacies satisfying every requirement, choose the one adding the least travel distance compared with going directly from bank B to home. Added distance means distance(B, pharmacy) + distance(pharmacy, home) - distance(B, home).\",\n    \"availability_reference\": \"Restrict the choice to pharmacies already open when I leave home at 09:00\",\n    \"return_by\": \"No explicit deadline specified in the instruction\"\n  }\n}\n```",
+  "parsed_policy": {
+    "selection": "minimum_added_distance",
+    "availability_reference": "departure",
+    "return_by": null
+  },
+  "finished": "2026-09-10T17:14:54.467285+00:00",
+  "telemetry": {
+    "call_index": 1,
+    "prompt_sha256": "f9609abc5d665c9842b390d5373c4511f70b0db0450c2154eb2a8c2a3c7c8d24",
+    "attempts": 1,
+    "latency_seconds": 2.961,
+    "input_chars": 3501,
+    "output_chars": 570,
+    "input_tokens": 1021,
+    "output_tokens": 162,
+    "total_tokens": 1183,
+    "usage_source": "provider",
+    "success": true
+  }
+}

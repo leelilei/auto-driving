@@ -1,0 +1,382 @@
+{
+  "overlap_old_e2": [
+    42,
+    56,
+    325,
+    345,
+    361,
+    369,
+    433,
+    501
+  ],
+  "runs": {
+    "20260912T073141Z_e2_confirmation_gemini-3_1-flash-lite": {
+      "checks": {
+        "candidate_exact_match": 160,
+        "usage_missing": 0,
+        "returned_model_saved": 0,
+        "review_invalid_fallback": 124
+      },
+      "n_common_pairs": 240,
+      "n_all_pairs": 240,
+      "metrics": {
+        "B0": {
+          "tsr": 1.0,
+          "failed_ids": [],
+          "common_pair_weighted_flip": 0.05,
+          "common_group_macro_flip": 0.05,
+          "all_pair_flip_or_failure": 0.05
+        },
+        "B6": {
+          "tsr": 1.0,
+          "failed_ids": [],
+          "common_pair_weighted_flip": 0.025,
+          "common_group_macro_flip": 0.025,
+          "all_pair_flip_or_failure": 0.025
+        },
+        "darc_selected": {
+          "tsr": 1.0,
+          "failed_ids": [],
+          "common_pair_weighted_flip": 0.025,
+          "common_group_macro_flip": 0.025,
+          "all_pair_flip_or_failure": 0.025
+        },
+        "b4_selected": {
+          "tsr": 1.0,
+          "failed_ids": [],
+          "common_pair_weighted_flip": 0.025,
+          "common_group_macro_flip": 0.025,
+          "all_pair_flip_or_failure": 0.025
+        },
+        "b3_selected_seed0": {
+          "tsr": 1.0,
+          "failed_ids": [],
+          "common_pair_weighted_flip": 0.05,
+          "common_group_macro_flip": 0.05,
+          "all_pair_flip_or_failure": 0.05
+        },
+        "b3_selected_seed1": {
+          "tsr": 1.0,
+          "failed_ids": [],
+          "common_pair_weighted_flip": 0.0375,
+          "common_group_macro_flip": 0.0375,
+          "all_pair_flip_or_failure": 0.0375
+        },
+        "b3_selected_seed2": {
+          "tsr": 1.0,
+          "failed_ids": [],
+          "common_pair_weighted_flip": 0.05,
+          "common_group_macro_flip": 0.05,
+          "all_pair_flip_or_failure": 0.05
+        },
+        "b3_selected_seed3": {
+          "tsr": 1.0,
+          "failed_ids": [],
+          "common_pair_weighted_flip": 0.05,
+          "common_group_macro_flip": 0.05,
+          "all_pair_flip_or_failure": 0.05
+        },
+        "b3_selected_seed4": {
+          "tsr": 1.0,
+          "failed_ids": [],
+          "common_pair_weighted_flip": 0.05,
+          "common_group_macro_flip": 0.05,
+          "all_pair_flip_or_failure": 0.05
+        },
+        "b3_selected_seed5": {
+          "tsr": 1.0,
+          "failed_ids": [],
+          "common_pair_weighted_flip": 0.05,
+          "common_group_macro_flip": 0.05,
+          "all_pair_flip_or_failure": 0.05
+        },
+        "b3_selected_seed6": {
+          "tsr": 1.0,
+          "failed_ids": [],
+          "common_pair_weighted_flip": 0.05,
+          "common_group_macro_flip": 0.05,
+          "all_pair_flip_or_failure": 0.05
+        },
+        "b3_selected_seed7": {
+          "tsr": 1.0,
+          "failed_ids": [],
+          "common_pair_weighted_flip": 0.05,
+          "common_group_macro_flip": 0.05,
+          "all_pair_flip_or_failure": 0.05
+        },
+        "b3_selected_seed8": {
+          "tsr": 1.0,
+          "failed_ids": [],
+          "common_pair_weighted_flip": 0.05,
+          "common_group_macro_flip": 0.05,
+          "all_pair_flip_or_failure": 0.05
+        },
+        "b3_selected_seed9": {
+          "tsr": 1.0,
+          "failed_ids": [],
+          "common_pair_weighted_flip": 0.05,
+          "common_group_macro_flip": 0.05,
+          "all_pair_flip_or_failure": 0.05
+        },
+        "b3_selected_seed10": {
+          "tsr": 1.0,
+          "failed_ids": [],
+          "common_pair_weighted_flip": 0.05,
+          "common_group_macro_flip": 0.05,
+          "all_pair_flip_or_failure": 0.05
+        },
+        "b3_selected_seed11": {
+          "tsr": 1.0,
+          "failed_ids": [],
+          "common_pair_weighted_flip": 0.0375,
+          "common_group_macro_flip": 0.0375,
+          "all_pair_flip_or_failure": 0.0375
+        },
+        "b3_selected_seed12": {
+          "tsr": 1.0,
+          "failed_ids": [],
+          "common_pair_weighted_flip": 0.05,
+          "common_group_macro_flip": 0.05,
+          "all_pair_flip_or_failure": 0.05
+        },
+        "b3_selected_seed13": {
+          "tsr": 1.0,
+          "failed_ids": [],
+          "common_pair_weighted_flip": 0.05,
+          "common_group_macro_flip": 0.05,
+          "all_pair_flip_or_failure": 0.05
+        },
+        "b3_selected_seed14": {
+          "tsr": 1.0,
+          "failed_ids": [],
+          "common_pair_weighted_flip": 0.05,
+          "common_group_macro_flip": 0.05,
+          "all_pair_flip_or_failure": 0.05
+        },
+        "b3_selected_seed15": {
+          "tsr": 1.0,
+          "failed_ids": [],
+          "common_pair_weighted_flip": 0.05,
+          "common_group_macro_flip": 0.05,
+          "all_pair_flip_or_failure": 0.05
+        },
+        "b3_selected_seed16": {
+          "tsr": 1.0,
+          "failed_ids": [],
+          "common_pair_weighted_flip": 0.05,
+          "common_group_macro_flip": 0.05,
+          "all_pair_flip_or_failure": 0.05
+        },
+        "b3_selected_seed17": {
+          "tsr": 1.0,
+          "failed_ids": [],
+          "common_pair_weighted_flip": 0.0375,
+          "common_group_macro_flip": 0.0375,
+          "all_pair_flip_or_failure": 0.0375
+        },
+        "b3_selected_seed18": {
+          "tsr": 1.0,
+          "failed_ids": [],
+          "common_pair_weighted_flip": 0.05,
+          "common_group_macro_flip": 0.05,
+          "all_pair_flip_or_failure": 0.05
+        },
+        "b3_selected_seed19": {
+          "tsr": 1.0,
+          "failed_ids": [],
+          "common_pair_weighted_flip": 0.05,
+          "common_group_macro_flip": 0.05,
+          "all_pair_flip_or_failure": 0.05
+        }
+      }
+    },
+    "20260912T074558Z_e2_confirmation_gpt-5_6-luna": {
+      "checks": {
+        "candidate_exact_match": 160,
+        "usage_missing": 0,
+        "returned_model_saved": 0,
+        "review_invalid_fallback": 0
+      },
+      "n_common_pairs": 237,
+      "n_all_pairs": 240,
+      "metrics": {
+        "B0": {
+          "tsr": 1.0,
+          "failed_ids": [],
+          "common_pair_weighted_flip": 0.1940928270042194,
+          "common_group_macro_flip": 0.20416666666666666,
+          "all_pair_flip_or_failure": 0.2
+        },
+        "B6": {
+          "tsr": 0.99375,
+          "failed_ids": [
+            "e2_clean_028_v0"
+          ],
+          "common_pair_weighted_flip": 0.16455696202531644,
+          "common_group_macro_flip": 0.17083333333333334,
+          "all_pair_flip_or_failure": 0.175
+        },
+        "darc_selected": {
+          "tsr": 0.99375,
+          "failed_ids": [
+            "e2_clean_028_v0"
+          ],
+          "common_pair_weighted_flip": 0.14345991561181434,
+          "common_group_macro_flip": 0.15,
+          "all_pair_flip_or_failure": 0.15416666666666667
+        },
+        "b4_selected": {
+          "tsr": 0.99375,
+          "failed_ids": [
+            "e2_clean_028_v0"
+          ],
+          "common_pair_weighted_flip": 0.20253164556962025,
+          "common_group_macro_flip": 0.2125,
+          "all_pair_flip_or_failure": 0.2125
+        },
+        "b3_selected_seed0": {
+          "tsr": 1.0,
+          "failed_ids": [],
+          "common_pair_weighted_flip": 0.1940928270042194,
+          "common_group_macro_flip": 0.20416666666666666,
+          "all_pair_flip_or_failure": 0.2
+        },
+        "b3_selected_seed1": {
+          "tsr": 1.0,
+          "failed_ids": [],
+          "common_pair_weighted_flip": 0.18143459915611815,
+          "common_group_macro_flip": 0.19166666666666668,
+          "all_pair_flip_or_failure": 0.1875
+        },
+        "b3_selected_seed2": {
+          "tsr": 1.0,
+          "failed_ids": [],
+          "common_pair_weighted_flip": 0.1940928270042194,
+          "common_group_macro_flip": 0.20416666666666666,
+          "all_pair_flip_or_failure": 0.2
+        },
+        "b3_selected_seed3": {
+          "tsr": 1.0,
+          "failed_ids": [],
+          "common_pair_weighted_flip": 0.189873417721519,
+          "common_group_macro_flip": 0.19583333333333333,
+          "all_pair_flip_or_failure": 0.19166666666666668
+        },
+        "b3_selected_seed4": {
+          "tsr": 1.0,
+          "failed_ids": [],
+          "common_pair_weighted_flip": 0.1940928270042194,
+          "common_group_macro_flip": 0.20416666666666666,
+          "all_pair_flip_or_failure": 0.2
+        },
+        "b3_selected_seed5": {
+          "tsr": 1.0,
+          "failed_ids": [],
+          "common_pair_weighted_flip": 0.18565400843881857,
+          "common_group_macro_flip": 0.19583333333333333,
+          "all_pair_flip_or_failure": 0.19166666666666668
+        },
+        "b3_selected_seed6": {
+          "tsr": 1.0,
+          "failed_ids": [],
+          "common_pair_weighted_flip": 0.189873417721519,
+          "common_group_macro_flip": 0.19583333333333333,
+          "all_pair_flip_or_failure": 0.19166666666666668
+        },
+        "b3_selected_seed7": {
+          "tsr": 1.0,
+          "failed_ids": [],
+          "common_pair_weighted_flip": 0.189873417721519,
+          "common_group_macro_flip": 0.2,
+          "all_pair_flip_or_failure": 0.19583333333333333
+        },
+        "b3_selected_seed8": {
+          "tsr": 1.0,
+          "failed_ids": [],
+          "common_pair_weighted_flip": 0.189873417721519,
+          "common_group_macro_flip": 0.19583333333333333,
+          "all_pair_flip_or_failure": 0.19166666666666668
+        },
+        "b3_selected_seed9": {
+          "tsr": 1.0,
+          "failed_ids": [],
+          "common_pair_weighted_flip": 0.1940928270042194,
+          "common_group_macro_flip": 0.20416666666666666,
+          "all_pair_flip_or_failure": 0.2
+        },
+        "b3_selected_seed10": {
+          "tsr": 1.0,
+          "failed_ids": [],
+          "common_pair_weighted_flip": 0.1940928270042194,
+          "common_group_macro_flip": 0.20416666666666666,
+          "all_pair_flip_or_failure": 0.2
+        },
+        "b3_selected_seed11": {
+          "tsr": 1.0,
+          "failed_ids": [],
+          "common_pair_weighted_flip": 0.189873417721519,
+          "common_group_macro_flip": 0.2,
+          "all_pair_flip_or_failure": 0.19583333333333333
+        },
+        "b3_selected_seed12": {
+          "tsr": 1.0,
+          "failed_ids": [],
+          "common_pair_weighted_flip": 0.16455696202531644,
+          "common_group_macro_flip": 0.175,
+          "all_pair_flip_or_failure": 0.17083333333333334
+        },
+        "b3_selected_seed13": {
+          "tsr": 1.0,
+          "failed_ids": [],
+          "common_pair_weighted_flip": 0.20675105485232068,
+          "common_group_macro_flip": 0.21666666666666665,
+          "all_pair_flip_or_failure": 0.2125
+        },
+        "b3_selected_seed14": {
+          "tsr": 1.0,
+          "failed_ids": [],
+          "common_pair_weighted_flip": 0.20675105485232068,
+          "common_group_macro_flip": 0.21666666666666665,
+          "all_pair_flip_or_failure": 0.2125
+        },
+        "b3_selected_seed15": {
+          "tsr": 1.0,
+          "failed_ids": [],
+          "common_pair_weighted_flip": 0.18565400843881857,
+          "common_group_macro_flip": 0.19583333333333333,
+          "all_pair_flip_or_failure": 0.19166666666666668
+        },
+        "b3_selected_seed16": {
+          "tsr": 1.0,
+          "failed_ids": [],
+          "common_pair_weighted_flip": 0.17721518987341772,
+          "common_group_macro_flip": 0.1875,
+          "all_pair_flip_or_failure": 0.18333333333333332
+        },
+        "b3_selected_seed17": {
+          "tsr": 1.0,
+          "failed_ids": [],
+          "common_pair_weighted_flip": 0.1940928270042194,
+          "common_group_macro_flip": 0.20416666666666666,
+          "all_pair_flip_or_failure": 0.2
+        },
+        "b3_selected_seed18": {
+          "tsr": 0.99375,
+          "failed_ids": [
+            "e2_clean_028_v0"
+          ],
+          "common_pair_weighted_flip": 0.21940928270042195,
+          "common_group_macro_flip": 0.22916666666666666,
+          "all_pair_flip_or_failure": 0.22916666666666666
+        },
+        "b3_selected_seed19": {
+          "tsr": 1.0,
+          "failed_ids": [],
+          "common_pair_weighted_flip": 0.19831223628691982,
+          "common_group_macro_flip": 0.20833333333333334,
+          "all_pair_flip_or_failure": 0.20416666666666666
+        }
+      }
+    }
+  }
+}

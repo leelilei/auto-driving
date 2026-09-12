@@ -1,0 +1,48 @@
+{
+  "call_id": "pilot_05_v2::A3",
+  "role": "A3",
+  "graph_condition": null,
+  "started_at": "2026-09-09T16:35:07.558196+00:00",
+  "request": {
+    "system": "You extract route-planning intent from the user's instruction.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nUse only the instruction. Do not invent constraints. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Today's stops include the bank, library, and pharmacy, going to the bank prior to the library. Focus on maximizing place quality and reviews above all."
+  },
+  "raw_response": "{\"pois\":[\"bank\",\"library\",\"pharmacy\"],\"time_limit\":null,\"dependencies\":[[\"bank\",\"library\"]],\"quality_weight\":1.0,\"evidence\":{\"pois\":\"bank, library, and pharmacy\",\"dependencies\":\"bank prior to the library\",\"quality_weight\":\"Focus on maximizing place quality and reviews above all\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library",
+      "pharmacy"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "bank",
+        "library"
+      ]
+    ],
+    "quality_weight": 1.0
+  },
+  "evidence": {
+    "pois": "bank, library, and pharmacy",
+    "dependencies": "bank prior to the library",
+    "quality_weight": "Focus on maximizing place quality and reviews above all"
+  },
+  "changes": [],
+  "finished_at": "2026-09-09T16:35:10.466393+00:00",
+  "telemetry": {
+    "call_index": 40,
+    "prompt_sha256": "0048a58daca82bfa9f6ad50965cbc507797e8de9f3d94d5b98a4a93dc8b8e1cc",
+    "attempts": 1,
+    "latency_seconds": 2.908,
+    "input_chars": 806,
+    "output_chars": 281,
+    "input_tokens": 220,
+    "output_tokens": 826,
+    "total_tokens": 1046,
+    "usage_source": "provider",
+    "success": true
+  }
+}

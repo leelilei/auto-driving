@@ -1,0 +1,43 @@
+{
+  "call_id": "pilot_01_v0::llmap_cot",
+  "role": "llmap_cot",
+  "graph_condition": null,
+  "started_at": "2026-09-09T17:10:19.017636+00:00",
+  "request": {
+    "system": "Extract POIs, constraints, and weights from human instruction through step-by-step reasoning:\n\n1. POIs Analysis:\n    - Look for POIs mentioned that need to be visited\n    - Create list of unique POIs\n\n2. Time Limit Analysis:\n    - Search for any specific return time\n    - Format as HH:00 or \"None\" if not specified\n\n3. Dependencies Analysis:\n    - Look for words indicating sequence (before, after, then, etc.)\n    - Create pairs of [POI1, POI2] for each sequence requirement\n\n4. Preference Analysis:\n    - Look for language about POI quality/rating importance vs route efficiency\n    - High POI rating emphasis (quality, best places, etc.) ->quality_weight should be large than 0.5\n    - High route efficiency emphasis (quick, shortest, save time) -> distance_weight should be large than 0.5\n    - Balanced language -> both weights around 0.5\n\nOutput must be valid JSON with structure:\n{\n    \"pois\": [\"poi1\", \"poi2\", ...],\n    \"time_limit\": \"HH:00\" or \"None\",\n    \"dependencies\": [[\"poi1\", \"poi2\"], ...],\n    \"quality_weight\": float,\n    \"distance_weight\": float\n}\n",
+    "user": "Extract POIs, constraints, and weights from this instruction as JSON:\nToday, you'll be visiting the shopping mall and the supermarket. Make sure to be back by 22:00. Since time efficiency is a priority, try to keep your route as direct as possible. Remember to visit the shopping mall before heading to the supermarket.\n\nOnly output the JSON object. No prefix, additional text, or explanation.\n"
+  },
+  "raw_response": "{\n  \"pois\": [\"shopping mall\", \"supermarket\"],\n  \"time_limit\": \"22:00\",\n  \"dependencies\": [[\"shopping mall\", \"supermarket\"]],\n  \"quality_weight\": 0.2,\n  \"distance_weight\": 0.8\n}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "shopping_mall",
+      "supermarket"
+    ],
+    "time_limit": 1320,
+    "dependencies": [
+      [
+        "shopping_mall",
+        "supermarket"
+      ]
+    ],
+    "quality_weight": 0.2
+  },
+  "evidence": {},
+  "changes": [],
+  "finished_at": "2026-09-09T17:10:25.998722+00:00",
+  "telemetry": {
+    "call_index": 6,
+    "prompt_sha256": "6f80ff2f9fcc040785632e5d67d9cee90eb4c8be8b17cdcb302cb1681665933f",
+    "attempts": 1,
+    "latency_seconds": 6.981,
+    "input_chars": 1461,
+    "output_chars": 176,
+    "input_tokens": 631,
+    "output_tokens": 63,
+    "total_tokens": 694,
+    "usage_source": "provider",
+    "success": true
+  }
+}

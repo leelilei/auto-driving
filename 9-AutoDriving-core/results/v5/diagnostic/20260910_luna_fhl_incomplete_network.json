@@ -1,0 +1,15 @@
+{
+  "status": "INCOMPLETE_NETWORK",
+  "analysis_allowed": false,
+  "provider": "fhl",
+  "model": "gpt-5.6-luna",
+  "planned_logical_units": 576,
+  "terminal_logical_units_observed": 166,
+  "attempt_files": 238,
+  "complete_attempts": 160,
+  "schema_failed_attempts": 8,
+  "transport_failed_attempts": 70,
+  "known_provider_tokens": 106003,
+  "reason": "FHL produced repeated TLS EOF/SSL errors under serial and bounded concurrent recovery. Collection was stopped and will not be combined with another provider.",
+  "replacement": "Fresh xcode run using the exact gpt-5.6-luna model ID."
+}

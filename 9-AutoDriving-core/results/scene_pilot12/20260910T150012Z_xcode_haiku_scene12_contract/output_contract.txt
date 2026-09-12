@@ -1,0 +1,7 @@
+
+OUTPUT CONTRACT (applies to all fields):
+Return one JSON object only, with no commentary before or after it and no Markdown fences.
+It has exactly four keys: selection, availability_reference, return_by, evidence.
+The first three fields follow the rules above. evidence MUST be a JSON object, never a string or array.
+Inside evidence use field names as keys and instruction quotations as string values; an empty object {} is valid.
+Do not add a verdict, explanation paragraph, corrected_policy wrapper, or any extra top-level key.

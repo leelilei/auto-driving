@@ -1,0 +1,111 @@
+{
+  "status": "STAGE4_READY_FOR_PLANNING",
+  "model_api_calls": 0,
+  "source_calls": 6,
+  "rows": [
+    {
+      "uid": "e20241028160248698752",
+      "attribution": "planning_ready",
+      "normalized_intent": {
+        "start_city": "上海",
+        "target_city": "杭州",
+        "days": 1,
+        "people_number": 1,
+        "budget": 1500,
+        "room_count": null,
+        "room_type": null,
+        "cuisine": null,
+        "intercity_mode": null,
+        "attraction_category": null
+      }
+    },
+    {
+      "uid": "e20241028160845920703",
+      "attribution": "contract_or_compile_failure",
+      "normalized_intent": {
+        "start_city": "深圳",
+        "target_city": "广州",
+        "days": 2,
+        "people_number": null,
+        "budget": 1000,
+        "room_count": 1,
+        "room_type": 1,
+        "cuisine": "火锅",
+        "intercity_mode": null,
+        "attraction_category": null
+      },
+      "error": "Missing required field"
+    },
+    {
+      "uid": "e20241028160848776495",
+      "attribution": "planning_ready",
+      "normalized_intent": {
+        "start_city": "广州",
+        "target_city": "杭州",
+        "days": 2,
+        "people_number": 4,
+        "budget": 5600,
+        "room_count": 2,
+        "room_type": 2,
+        "cuisine": null,
+        "intercity_mode": "train",
+        "attraction_category": null
+      }
+    },
+    {
+      "uid": "e20241028160913165493",
+      "attribution": "planning_ready",
+      "normalized_intent": {
+        "start_city": "杭州",
+        "target_city": "北京",
+        "days": 3,
+        "people_number": 2,
+        "budget": 8000,
+        "room_count": 1,
+        "room_type": 2,
+        "cuisine": null,
+        "intercity_mode": "airplane",
+        "attraction_category": null
+      }
+    },
+    {
+      "uid": "e20241028160902013119",
+      "attribution": "contract_or_compile_failure",
+      "normalized_intent": {
+        "start_city": "北京",
+        "target_city": "武汉",
+        "days": 3,
+        "people_number": null,
+        "budget": 3000,
+        "room_count": 1,
+        "room_type": 1,
+        "cuisine": null,
+        "intercity_mode": null,
+        "attraction_category": "历史古迹"
+      },
+      "error": "Missing required field"
+    },
+    {
+      "uid": "h20241029143455115600",
+      "attribution": "planning_ready",
+      "normalized_intent": {
+        "start_city": "北京",
+        "target_city": "重庆",
+        "days": 5,
+        "people_number": 2,
+        "budget": null,
+        "room_count": null,
+        "room_type": null,
+        "cuisine": null,
+        "intercity_mode": null,
+        "attraction_category": null
+      }
+    }
+  ],
+  "counts": {
+    "planning_ready": 4,
+    "contract_or_compile_failure": 2,
+    "semantic_error": null
+  },
+  "stage5": "blocked_until_planning_and_adjudication"
+}

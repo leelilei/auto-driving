@@ -1,0 +1,54 @@
+{
+  "call_id": "R29__r2__language",
+  "case_id": "R29",
+  "rep": 2,
+  "role": "language",
+  "request": {
+    "system": "Review the predicted selection rule against the instruction and full public scene. The prediction may be wrong. Supplementary computed facts are consequences only and cannot override what the instruction requests. Check every field, including when the prediction seems feasible. Return only a JSON object with exactly selection, availability_reference, return_by, evidence.\nselection is nearest_from_bank, minimum_added_distance, or highest_rating.\navailability_reference is departure only when already open at home departure is explicitly required, otherwise arrival.\nreturn_by is integer minutes since midnight or null when absent. It is the requested deadline, not a computed arrival time.\nevidence quotes instruction spans. Preserve the requirements even if infeasible. Do not choose a pharmacy ID or relax a rule.\nOUTPUT CONTRACT (applies to all fields):\nReturn one JSON object only, with no commentary before or after it and no Markdown fences.\nIt has exactly four keys: selection, availability_reference, return_by, evidence.\nThe first three fields follow the rules above. evidence MUST be a JSON object, never a string or array.\nInside evidence use field names as keys and instruction quotations as string values; an empty object {} is valid.\nDo not add a verdict, explanation paragraph, corrected_policy wrapper, or any extra top-level key.\n",
+    "user": "{\"candidate_policy\": {\"availability_reference\": \"arrival\", \"return_by\": 550, \"selection\": \"highest_rating\"}, \"computed_scene_facts\": null, \"instruction\": \"Start at home at 09:00. Visit bank B first, then exactly one pharmacy, then return home. Travel along straight lines at 1 distance unit per minute. Bank service takes 20 minutes and pharmacy service takes 10 minutes. Do not wait for a place to open. Start service immediately on arrival; each service must finish no later than closing time. If no pharmacy can satisfy every requirement, report INFEASIBLE. Among pharmacies satisfying every requirement, choose the one with the highest rating. Return home no later than 09:10.\", \"scene\": {\"bank\": {\"close\": 660, \"open\": 500, \"rating\": 4, \"x\": 10, \"y\": 0}, \"bank_service\": 20, \"departure\": 540, \"home\": [0, 0], \"pharmacies\": {\"P_alpha\": {\"close\": 660, \"open\": 500, \"rating\": 3.5, \"x\": 2, \"y\": 0}, \"P_beta\": {\"close\": 660, \"open\": 500, \"rating\": 4.9, \"x\": 13, \"y\": -4}, \"P_gamma\": {\"close\": 660, \"open\": 500, \"rating\": 4, \"x\": 9, \"y\": 2}}, \"pharmacy_service\": 10, \"speed_units_per_minute\": 1}}"
+  },
+  "status": "COMPLETE",
+  "source": "REAL",
+  "started": "2026-09-10T15:30:09.958390+00:00",
+  "transport_revision": "recovery-v1",
+  "telemetry": {
+    "call_index": 1,
+    "prompt_sha256": "fe361ed8e52456af4b3c93a1d9572b094b1c8965b6e5a07ea863dcaf6d5bed4c",
+    "attempts": 1,
+    "latency_seconds": 3.89,
+    "input_chars": 2445,
+    "output_chars": 443,
+    "input_tokens": 343,
+    "output_tokens": 114,
+    "total_tokens": 457,
+    "usage_source": "provider",
+    "success": true
+  },
+  "provider_response": {
+    "content": [
+      {
+        "text": "```json\n{\n  \"selection\": \"highest_rating\",\n  \"availability_reference\": \"arrival\",\n  \"return_by\": 550,\n  \"evidence\": {\n    \"selection\": \"Among pharmacies satisfying every requirement, choose the one with the highest rating.\",\n    \"return_by\": \"Return home no later than 09:10.\",\n    \"availability_reference\": \"Do not wait for a place to open. Start service immediately on arrival; each service must finish no later than closing time.\"\n  }\n}\n```",
+        "type": "text"
+      }
+    ],
+    "id": "msg_xm6B57pDTM0FENWPLzkeIZ3J",
+    "model": "claude-haiku-4-5-20251001",
+    "role": "assistant",
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation_input_tokens": 302,
+      "cache_read_input_tokens": 36,
+      "input_tokens": 343,
+      "output_tokens": 114
+    }
+  },
+  "raw_response": "```json\n{\n  \"selection\": \"highest_rating\",\n  \"availability_reference\": \"arrival\",\n  \"return_by\": 550,\n  \"evidence\": {\n    \"selection\": \"Among pharmacies satisfying every requirement, choose the one with the highest rating.\",\n    \"return_by\": \"Return home no later than 09:10.\",\n    \"availability_reference\": \"Do not wait for a place to open. Start service immediately on arrival; each service must finish no later than closing time.\"\n  }\n}\n```",
+  "parsed_policy": {
+    "selection": "highest_rating",
+    "availability_reference": "arrival",
+    "return_by": 550
+  },
+  "finished": "2026-09-10T15:30:13.849019+00:00"
+}

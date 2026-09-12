@@ -1,0 +1,52 @@
+{
+  "protocol_version": "darc-v5.1-probe-1",
+  "started_at": "2026-09-09T16:02:22.742698+00:00",
+  "planned_calls": 1,
+  "config": {
+    "provider": "deepseek",
+    "model": "deepseek-v4-flash",
+    "wire_api": "chat_completions",
+    "base_url": "https://api.deepseek.com",
+    "temperature": 0.0,
+    "timeout": 45,
+    "json_mode": true,
+    "retries": 0,
+    "retry_sleep": 1.0,
+    "sleep": 0.0,
+    "max_concurrency": 1,
+    "omit_temperature": false,
+    "reasoning_effort": null,
+    "max_output_tokens": 200,
+    "stream": false,
+    "service_tier": null,
+    "store": null,
+    "responses_input_mode": "messages",
+    "input_char_limit": null,
+    "transport": "curl",
+    "api_key_env": "DEEPSEEK_API_KEY"
+  },
+  "request": {
+    "system": "Return only a JSON object with keys status and capability.",
+    "user": "Connectivity probe for DARC-Route v5.1. Set status to ok and capability to json."
+  },
+  "raw_response": "{\"status\":\"ok\",\"capability\":\"json\"}",
+  "json_valid": true,
+  "parsed_response": {
+    "status": "ok",
+    "capability": "json"
+  },
+  "finished_at": "2026-09-09T16:02:24.240316+00:00",
+  "telemetry": {
+    "call_index": 1,
+    "prompt_sha256": "243c3b40ad5485fdd827bb0ad6e78b56099eb060c87b57181bdcede9c935ea1a",
+    "attempts": 1,
+    "latency_seconds": 1.498,
+    "input_chars": 138,
+    "output_chars": 35,
+    "input_tokens": 136,
+    "output_tokens": 120,
+    "total_tokens": 256,
+    "usage_source": "provider",
+    "success": true
+  }
+}

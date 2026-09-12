@@ -1,0 +1,4953 @@
+[
+  {
+    "id": "missing_deadline_1",
+    "family": "missing_deadline",
+    "source_group": "pilot_01",
+    "instruction": "Today, you'll be visiting the shopping mall and the supermarket. Make sure to be back by 22:00. Since time efficiency is a priority, try to keep your route as direct as possible. Remember to visit the shopping mall before heading to the supermarket.",
+    "gold": {
+      "pois": [
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": 1320,
+      "dependencies": [
+        [
+          "shopping_mall",
+          "supermarket"
+        ]
+      ],
+      "quality_weight": 0.25
+    },
+    "a": {
+      "pois": [
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": 1320,
+      "dependencies": [
+        [
+          "shopping_mall",
+          "supermarket"
+        ]
+      ],
+      "quality_weight": 0.25
+    },
+    "b": {
+      "pois": [
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "shopping_mall",
+          "supermarket"
+        ]
+      ],
+      "quality_weight": 0.25
+    },
+    "graph": "results/v5/development/20260909_s1_graphs_v3/pilot_01/tradeoff.json",
+    "baseline": {
+      "hard": true,
+      "direction": true,
+      "correct": true,
+      "tsr": true
+    },
+    "report": {
+      "report_version": "darc-v5.1-contrast-2",
+      "instruction": "Today, you'll be visiting the shopping mall and the supermarket. Make sure to be back by 22:00. Since time efficiency is a priority, try to keep your route as direct as possible. Remember to visit the shopping mall before heading to the supermarket.",
+      "candidate_A": {
+        "pois": [
+          "shopping_mall",
+          "supermarket"
+        ],
+        "time_limit": 1320,
+        "dependencies": [
+          [
+            "shopping_mall",
+            "supermarket"
+          ]
+        ],
+        "quality_weight": 0.25
+      },
+      "candidate_B": {
+        "pois": [
+          "shopping_mall",
+          "supermarket"
+        ],
+        "time_limit": null,
+        "dependencies": [
+          [
+            "shopping_mall",
+            "supermarket"
+          ]
+        ],
+        "quality_weight": 0.25
+      },
+      "candidate_evidence": {
+        "A": {},
+        "B": {}
+      },
+      "differing_fields": [
+        "time_limit"
+      ],
+      "routes": {
+        "A": {
+          "poi_ids": [
+            "shopping_mall_2",
+            "supermarket_2"
+          ],
+          "categories": [
+            "shopping_mall",
+            "supermarket"
+          ],
+          "coverage_count": 2,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.9,
+          "distance_km": 14.063,
+          "duration_minutes": 128.1,
+          "arrival_minutes": 668,
+          "utility_under_own_candidate": 0.05266712035904311,
+          "status": "SUCCESS"
+        },
+        "B": {
+          "poi_ids": [
+            "shopping_mall_2",
+            "supermarket_2"
+          ],
+          "categories": [
+            "shopping_mall",
+            "supermarket"
+          ],
+          "coverage_count": 2,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.9,
+          "distance_km": 14.063,
+          "duration_minutes": 128.1,
+          "arrival_minutes": 668,
+          "utility_under_own_candidate": 0.05266712035904311,
+          "status": "SUCCESS"
+        }
+      },
+      "cross_constraints": {
+        "route_A_under_A": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_A_under_B": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_B_under_A": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_B_under_B": {
+          "task_success": true,
+          "reasons": []
+        }
+      },
+      "single_field_swaps": [
+        {
+          "base": "A",
+          "field_from_other": "time_limit",
+          "hybrid_intent": {
+            "pois": [
+              "shopping_mall",
+              "supermarket"
+            ],
+            "time_limit": null,
+            "dependencies": [
+              [
+                "shopping_mall",
+                "supermarket"
+              ]
+            ],
+            "quality_weight": 0.25
+          },
+          "route": {
+            "poi_ids": [
+              "shopping_mall_2",
+              "supermarket_2"
+            ],
+            "categories": [
+              "shopping_mall",
+              "supermarket"
+            ],
+            "coverage_count": 2,
+            "is_valid": true,
+            "is_full_coverage": true,
+            "average_quality": 0.9,
+            "distance_km": 14.063,
+            "duration_minutes": 128.1,
+            "arrival_minutes": 668,
+            "utility_under_own_candidate": 0.05266712035904311,
+            "status": "SUCCESS"
+          }
+        },
+        {
+          "base": "B",
+          "field_from_other": "time_limit",
+          "hybrid_intent": {
+            "pois": [
+              "shopping_mall",
+              "supermarket"
+            ],
+            "time_limit": 1320,
+            "dependencies": [
+              [
+                "shopping_mall",
+                "supermarket"
+              ]
+            ],
+            "quality_weight": 0.25
+          },
+          "route": {
+            "poi_ids": [
+              "shopping_mall_2",
+              "supermarket_2"
+            ],
+            "categories": [
+              "shopping_mall",
+              "supermarket"
+            ],
+            "coverage_count": 2,
+            "is_valid": true,
+            "is_full_coverage": true,
+            "average_quality": 0.9,
+            "distance_km": 14.063,
+            "duration_minutes": 128.1,
+            "arrival_minutes": 668,
+            "utility_under_own_candidate": 0.05266712035904311,
+            "status": "SUCCESS"
+          }
+        }
+      ],
+      "limitations": [
+        "The report does not identify the user's true intent.",
+        "Both candidates may share the same error.",
+        "Single-field swaps do not identify higher-order interactions."
+      ]
+    }
+  },
+  {
+    "id": "missing_deadline_2",
+    "family": "missing_deadline",
+    "source_group": "pilot_04",
+    "instruction": "Today, make sure to visit the bank and the library. Please be back by 18:00. It's essential to prioritize a quick and efficient route for these visits.",
+    "gold": {
+      "pois": [
+        "bank",
+        "library"
+      ],
+      "time_limit": 1080,
+      "dependencies": [],
+      "quality_weight": 0.25
+    },
+    "a": {
+      "pois": [
+        "bank",
+        "library"
+      ],
+      "time_limit": null,
+      "dependencies": [],
+      "quality_weight": 0.25
+    },
+    "b": {
+      "pois": [
+        "bank",
+        "library"
+      ],
+      "time_limit": 1080,
+      "dependencies": [],
+      "quality_weight": 0.25
+    },
+    "graph": "results/v5/development/20260909_s1_graphs_v3/pilot_04/tradeoff.json",
+    "baseline": {
+      "hard": false,
+      "direction": true,
+      "correct": false,
+      "tsr": true
+    },
+    "report": {
+      "report_version": "darc-v5.1-contrast-2",
+      "instruction": "Today, make sure to visit the bank and the library. Please be back by 18:00. It's essential to prioritize a quick and efficient route for these visits.",
+      "candidate_A": {
+        "pois": [
+          "bank",
+          "library"
+        ],
+        "time_limit": null,
+        "dependencies": [],
+        "quality_weight": 0.25
+      },
+      "candidate_B": {
+        "pois": [
+          "bank",
+          "library"
+        ],
+        "time_limit": 1080,
+        "dependencies": [],
+        "quality_weight": 0.25
+      },
+      "candidate_evidence": {
+        "A": {},
+        "B": {}
+      },
+      "differing_fields": [
+        "time_limit"
+      ],
+      "routes": {
+        "A": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage_count": 2,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.9,
+          "distance_km": 17.486,
+          "duration_minutes": 110.0,
+          "arrival_minutes": 650,
+          "utility_under_own_candidate": 0.010715210057114177,
+          "status": "SUCCESS"
+        },
+        "B": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage_count": 2,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.9,
+          "distance_km": 17.486,
+          "duration_minutes": 110.0,
+          "arrival_minutes": 650,
+          "utility_under_own_candidate": 0.010715210057114177,
+          "status": "SUCCESS"
+        }
+      },
+      "cross_constraints": {
+        "route_A_under_A": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_A_under_B": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_B_under_A": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_B_under_B": {
+          "task_success": true,
+          "reasons": []
+        }
+      },
+      "single_field_swaps": [
+        {
+          "base": "A",
+          "field_from_other": "time_limit",
+          "hybrid_intent": {
+            "pois": [
+              "bank",
+              "library"
+            ],
+            "time_limit": 1080,
+            "dependencies": [],
+            "quality_weight": 0.25
+          },
+          "route": {
+            "poi_ids": [
+              "bank_2",
+              "library_2"
+            ],
+            "categories": [
+              "bank",
+              "library"
+            ],
+            "coverage_count": 2,
+            "is_valid": true,
+            "is_full_coverage": true,
+            "average_quality": 0.9,
+            "distance_km": 17.486,
+            "duration_minutes": 110.0,
+            "arrival_minutes": 650,
+            "utility_under_own_candidate": 0.010715210057114177,
+            "status": "SUCCESS"
+          }
+        },
+        {
+          "base": "B",
+          "field_from_other": "time_limit",
+          "hybrid_intent": {
+            "pois": [
+              "bank",
+              "library"
+            ],
+            "time_limit": null,
+            "dependencies": [],
+            "quality_weight": 0.25
+          },
+          "route": {
+            "poi_ids": [
+              "bank_2",
+              "library_2"
+            ],
+            "categories": [
+              "bank",
+              "library"
+            ],
+            "coverage_count": 2,
+            "is_valid": true,
+            "is_full_coverage": true,
+            "average_quality": 0.9,
+            "distance_km": 17.486,
+            "duration_minutes": 110.0,
+            "arrival_minutes": 650,
+            "utility_under_own_candidate": 0.010715210057114177,
+            "status": "SUCCESS"
+          }
+        }
+      ],
+      "limitations": [
+        "The report does not identify the user's true intent.",
+        "Both candidates may share the same error.",
+        "Single-field swaps do not identify higher-order interactions."
+      ]
+    }
+  },
+  {
+    "id": "missing_deadline_3",
+    "family": "missing_deadline",
+    "source_group": "pilot_06",
+    "instruction": "Today, you need to visit the library, supermarket, and bank. Make sure to be back by 18:00. Aim for a route that allows you to complete everything efficiently. Also, remember to stop by the supermarket before heading to the bank.",
+    "gold": {
+      "pois": [
+        "bank",
+        "library",
+        "supermarket"
+      ],
+      "time_limit": 1080,
+      "dependencies": [
+        [
+          "supermarket",
+          "bank"
+        ]
+      ],
+      "quality_weight": 0.25
+    },
+    "a": {
+      "pois": [
+        "bank",
+        "library",
+        "supermarket"
+      ],
+      "time_limit": 1080,
+      "dependencies": [
+        [
+          "supermarket",
+          "bank"
+        ]
+      ],
+      "quality_weight": 0.25
+    },
+    "b": {
+      "pois": [
+        "bank",
+        "library",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "supermarket",
+          "bank"
+        ]
+      ],
+      "quality_weight": 0.25
+    },
+    "graph": "results/v5/development/20260909_s1_graphs_v3/pilot_06/tradeoff.json",
+    "baseline": {
+      "hard": true,
+      "direction": true,
+      "correct": true,
+      "tsr": true
+    },
+    "report": {
+      "report_version": "darc-v5.1-contrast-2",
+      "instruction": "Today, you need to visit the library, supermarket, and bank. Make sure to be back by 18:00. Aim for a route that allows you to complete everything efficiently. Also, remember to stop by the supermarket before heading to the bank.",
+      "candidate_A": {
+        "pois": [
+          "bank",
+          "library",
+          "supermarket"
+        ],
+        "time_limit": 1080,
+        "dependencies": [
+          [
+            "supermarket",
+            "bank"
+          ]
+        ],
+        "quality_weight": 0.25
+      },
+      "candidate_B": {
+        "pois": [
+          "bank",
+          "library",
+          "supermarket"
+        ],
+        "time_limit": null,
+        "dependencies": [
+          [
+            "supermarket",
+            "bank"
+          ]
+        ],
+        "quality_weight": 0.25
+      },
+      "candidate_evidence": {
+        "A": {},
+        "B": {}
+      },
+      "differing_fields": [
+        "time_limit"
+      ],
+      "routes": {
+        "A": {
+          "poi_ids": [
+            "supermarket_1",
+            "library_1",
+            "bank_1"
+          ],
+          "categories": [
+            "supermarket",
+            "library",
+            "bank"
+          ],
+          "coverage_count": 3,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.20000000000000004,
+          "distance_km": 5.972,
+          "duration_minutes": 126.9,
+          "arrival_minutes": 667,
+          "utility_under_own_candidate": -0.023180024278629786,
+          "status": "SUCCESS"
+        },
+        "B": {
+          "poi_ids": [
+            "supermarket_1",
+            "library_1",
+            "bank_1"
+          ],
+          "categories": [
+            "supermarket",
+            "library",
+            "bank"
+          ],
+          "coverage_count": 3,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.20000000000000004,
+          "distance_km": 5.972,
+          "duration_minutes": 126.9,
+          "arrival_minutes": 667,
+          "utility_under_own_candidate": -0.023180024278629786,
+          "status": "SUCCESS"
+        }
+      },
+      "cross_constraints": {
+        "route_A_under_A": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_A_under_B": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_B_under_A": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_B_under_B": {
+          "task_success": true,
+          "reasons": []
+        }
+      },
+      "single_field_swaps": [
+        {
+          "base": "A",
+          "field_from_other": "time_limit",
+          "hybrid_intent": {
+            "pois": [
+              "bank",
+              "library",
+              "supermarket"
+            ],
+            "time_limit": null,
+            "dependencies": [
+              [
+                "supermarket",
+                "bank"
+              ]
+            ],
+            "quality_weight": 0.25
+          },
+          "route": {
+            "poi_ids": [
+              "supermarket_1",
+              "library_1",
+              "bank_1"
+            ],
+            "categories": [
+              "supermarket",
+              "library",
+              "bank"
+            ],
+            "coverage_count": 3,
+            "is_valid": true,
+            "is_full_coverage": true,
+            "average_quality": 0.20000000000000004,
+            "distance_km": 5.972,
+            "duration_minutes": 126.9,
+            "arrival_minutes": 667,
+            "utility_under_own_candidate": -0.023180024278629786,
+            "status": "SUCCESS"
+          }
+        },
+        {
+          "base": "B",
+          "field_from_other": "time_limit",
+          "hybrid_intent": {
+            "pois": [
+              "bank",
+              "library",
+              "supermarket"
+            ],
+            "time_limit": 1080,
+            "dependencies": [
+              [
+                "supermarket",
+                "bank"
+              ]
+            ],
+            "quality_weight": 0.25
+          },
+          "route": {
+            "poi_ids": [
+              "supermarket_1",
+              "library_1",
+              "bank_1"
+            ],
+            "categories": [
+              "supermarket",
+              "library",
+              "bank"
+            ],
+            "coverage_count": 3,
+            "is_valid": true,
+            "is_full_coverage": true,
+            "average_quality": 0.20000000000000004,
+            "distance_km": 5.972,
+            "duration_minutes": 126.9,
+            "arrival_minutes": 667,
+            "utility_under_own_candidate": -0.023180024278629786,
+            "status": "SUCCESS"
+          }
+        }
+      ],
+      "limitations": [
+        "The report does not identify the user's true intent.",
+        "Both candidates may share the same error.",
+        "Single-field swaps do not identify higher-order interactions."
+      ]
+    }
+  },
+  {
+    "id": "missing_deadline_4",
+    "family": "missing_deadline",
+    "source_group": "pilot_07",
+    "instruction": "Today, make sure to visit the library, pharmacy, and supermarket. Please return by 17:00. Focus on visiting high-rated places, even if the route is slightly longer.",
+    "gold": {
+      "pois": [
+        "library",
+        "pharmacy",
+        "supermarket"
+      ],
+      "time_limit": 1020,
+      "dependencies": [],
+      "quality_weight": 0.75
+    },
+    "a": {
+      "pois": [
+        "library",
+        "pharmacy",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [],
+      "quality_weight": 0.75
+    },
+    "b": {
+      "pois": [
+        "library",
+        "pharmacy",
+        "supermarket"
+      ],
+      "time_limit": 1020,
+      "dependencies": [],
+      "quality_weight": 0.75
+    },
+    "graph": "results/v5/development/20260909_s1_graphs_v3/pilot_07/tradeoff.json",
+    "baseline": {
+      "hard": false,
+      "direction": true,
+      "correct": false,
+      "tsr": true
+    },
+    "report": {
+      "report_version": "darc-v5.1-contrast-2",
+      "instruction": "Today, make sure to visit the library, pharmacy, and supermarket. Please return by 17:00. Focus on visiting high-rated places, even if the route is slightly longer.",
+      "candidate_A": {
+        "pois": [
+          "library",
+          "pharmacy",
+          "supermarket"
+        ],
+        "time_limit": null,
+        "dependencies": [],
+        "quality_weight": 0.75
+      },
+      "candidate_B": {
+        "pois": [
+          "library",
+          "pharmacy",
+          "supermarket"
+        ],
+        "time_limit": 1020,
+        "dependencies": [],
+        "quality_weight": 0.75
+      },
+      "candidate_evidence": {
+        "A": {},
+        "B": {}
+      },
+      "differing_fields": [
+        "time_limit"
+      ],
+      "routes": {
+        "A": {
+          "poi_ids": [
+            "library_2",
+            "supermarket_2",
+            "pharmacy_2"
+          ],
+          "categories": [
+            "library",
+            "supermarket",
+            "pharmacy"
+          ],
+          "coverage_count": 3,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.9,
+          "distance_km": 26.025,
+          "duration_minutes": 152.0,
+          "arrival_minutes": 692,
+          "utility_under_own_candidate": 0.5686952608957413,
+          "status": "SUCCESS"
+        },
+        "B": {
+          "poi_ids": [
+            "library_2",
+            "supermarket_2",
+            "pharmacy_2"
+          ],
+          "categories": [
+            "library",
+            "supermarket",
+            "pharmacy"
+          ],
+          "coverage_count": 3,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.9,
+          "distance_km": 26.025,
+          "duration_minutes": 152.0,
+          "arrival_minutes": 692,
+          "utility_under_own_candidate": 0.5686952608957413,
+          "status": "SUCCESS"
+        }
+      },
+      "cross_constraints": {
+        "route_A_under_A": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_A_under_B": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_B_under_A": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_B_under_B": {
+          "task_success": true,
+          "reasons": []
+        }
+      },
+      "single_field_swaps": [
+        {
+          "base": "A",
+          "field_from_other": "time_limit",
+          "hybrid_intent": {
+            "pois": [
+              "library",
+              "pharmacy",
+              "supermarket"
+            ],
+            "time_limit": 1020,
+            "dependencies": [],
+            "quality_weight": 0.75
+          },
+          "route": {
+            "poi_ids": [
+              "library_2",
+              "supermarket_2",
+              "pharmacy_2"
+            ],
+            "categories": [
+              "library",
+              "supermarket",
+              "pharmacy"
+            ],
+            "coverage_count": 3,
+            "is_valid": true,
+            "is_full_coverage": true,
+            "average_quality": 0.9,
+            "distance_km": 26.025,
+            "duration_minutes": 152.0,
+            "arrival_minutes": 692,
+            "utility_under_own_candidate": 0.5686952608957413,
+            "status": "SUCCESS"
+          }
+        },
+        {
+          "base": "B",
+          "field_from_other": "time_limit",
+          "hybrid_intent": {
+            "pois": [
+              "library",
+              "pharmacy",
+              "supermarket"
+            ],
+            "time_limit": null,
+            "dependencies": [],
+            "quality_weight": 0.75
+          },
+          "route": {
+            "poi_ids": [
+              "library_2",
+              "supermarket_2",
+              "pharmacy_2"
+            ],
+            "categories": [
+              "library",
+              "supermarket",
+              "pharmacy"
+            ],
+            "coverage_count": 3,
+            "is_valid": true,
+            "is_full_coverage": true,
+            "average_quality": 0.9,
+            "distance_km": 26.025,
+            "duration_minutes": 152.0,
+            "arrival_minutes": 692,
+            "utility_under_own_candidate": 0.5686952608957413,
+            "status": "SUCCESS"
+          }
+        }
+      ],
+      "limitations": [
+        "The report does not identify the user's true intent.",
+        "Both candidates may share the same error.",
+        "Single-field swaps do not identify higher-order interactions."
+      ]
+    }
+  },
+  {
+    "id": "reversed_order_1",
+    "family": "reversed_order",
+    "source_group": "pilot_01",
+    "instruction": "Today, you'll be visiting the shopping mall and the supermarket. Make sure to be back by 22:00. Since time efficiency is a priority, try to keep your route as direct as possible. Remember to visit the shopping mall before heading to the supermarket.",
+    "gold": {
+      "pois": [
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": 1320,
+      "dependencies": [
+        [
+          "shopping_mall",
+          "supermarket"
+        ]
+      ],
+      "quality_weight": 0.25
+    },
+    "a": {
+      "pois": [
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": 1320,
+      "dependencies": [
+        [
+          "shopping_mall",
+          "supermarket"
+        ]
+      ],
+      "quality_weight": 0.25
+    },
+    "b": {
+      "pois": [
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": 1320,
+      "dependencies": [
+        [
+          "supermarket",
+          "shopping_mall"
+        ]
+      ],
+      "quality_weight": 0.25
+    },
+    "graph": "results/v5/development/20260909_s1_graphs_v3/pilot_01/tradeoff.json",
+    "baseline": {
+      "hard": true,
+      "direction": true,
+      "correct": true,
+      "tsr": true
+    },
+    "report": {
+      "report_version": "darc-v5.1-contrast-2",
+      "instruction": "Today, you'll be visiting the shopping mall and the supermarket. Make sure to be back by 22:00. Since time efficiency is a priority, try to keep your route as direct as possible. Remember to visit the shopping mall before heading to the supermarket.",
+      "candidate_A": {
+        "pois": [
+          "shopping_mall",
+          "supermarket"
+        ],
+        "time_limit": 1320,
+        "dependencies": [
+          [
+            "shopping_mall",
+            "supermarket"
+          ]
+        ],
+        "quality_weight": 0.25
+      },
+      "candidate_B": {
+        "pois": [
+          "shopping_mall",
+          "supermarket"
+        ],
+        "time_limit": 1320,
+        "dependencies": [
+          [
+            "supermarket",
+            "shopping_mall"
+          ]
+        ],
+        "quality_weight": 0.25
+      },
+      "candidate_evidence": {
+        "A": {},
+        "B": {}
+      },
+      "differing_fields": [
+        "dependencies"
+      ],
+      "routes": {
+        "A": {
+          "poi_ids": [
+            "shopping_mall_2",
+            "supermarket_2"
+          ],
+          "categories": [
+            "shopping_mall",
+            "supermarket"
+          ],
+          "coverage_count": 2,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.9,
+          "distance_km": 14.063,
+          "duration_minutes": 128.1,
+          "arrival_minutes": 668,
+          "utility_under_own_candidate": 0.05266712035904311,
+          "status": "SUCCESS"
+        },
+        "B": {
+          "poi_ids": [
+            "supermarket_2",
+            "shopping_mall_2"
+          ],
+          "categories": [
+            "supermarket",
+            "shopping_mall"
+          ],
+          "coverage_count": 2,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.9,
+          "distance_km": 14.063,
+          "duration_minutes": 128.1,
+          "arrival_minutes": 668,
+          "utility_under_own_candidate": 0.05266712035904311,
+          "status": "SUCCESS"
+        }
+      },
+      "cross_constraints": {
+        "route_A_under_A": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_A_under_B": {
+          "task_success": false,
+          "reasons": [
+            "candidate_dependency_violation"
+          ]
+        },
+        "route_B_under_A": {
+          "task_success": false,
+          "reasons": [
+            "candidate_dependency_violation"
+          ]
+        },
+        "route_B_under_B": {
+          "task_success": true,
+          "reasons": []
+        }
+      },
+      "single_field_swaps": [
+        {
+          "base": "A",
+          "field_from_other": "dependencies",
+          "hybrid_intent": {
+            "pois": [
+              "shopping_mall",
+              "supermarket"
+            ],
+            "time_limit": 1320,
+            "dependencies": [
+              [
+                "supermarket",
+                "shopping_mall"
+              ]
+            ],
+            "quality_weight": 0.25
+          },
+          "route": {
+            "poi_ids": [
+              "supermarket_2",
+              "shopping_mall_2"
+            ],
+            "categories": [
+              "supermarket",
+              "shopping_mall"
+            ],
+            "coverage_count": 2,
+            "is_valid": true,
+            "is_full_coverage": true,
+            "average_quality": 0.9,
+            "distance_km": 14.063,
+            "duration_minutes": 128.1,
+            "arrival_minutes": 668,
+            "utility_under_own_candidate": 0.05266712035904311,
+            "status": "SUCCESS"
+          }
+        },
+        {
+          "base": "B",
+          "field_from_other": "dependencies",
+          "hybrid_intent": {
+            "pois": [
+              "shopping_mall",
+              "supermarket"
+            ],
+            "time_limit": 1320,
+            "dependencies": [
+              [
+                "shopping_mall",
+                "supermarket"
+              ]
+            ],
+            "quality_weight": 0.25
+          },
+          "route": {
+            "poi_ids": [
+              "shopping_mall_2",
+              "supermarket_2"
+            ],
+            "categories": [
+              "shopping_mall",
+              "supermarket"
+            ],
+            "coverage_count": 2,
+            "is_valid": true,
+            "is_full_coverage": true,
+            "average_quality": 0.9,
+            "distance_km": 14.063,
+            "duration_minutes": 128.1,
+            "arrival_minutes": 668,
+            "utility_under_own_candidate": 0.05266712035904311,
+            "status": "SUCCESS"
+          }
+        }
+      ],
+      "limitations": [
+        "The report does not identify the user's true intent.",
+        "Both candidates may share the same error.",
+        "Single-field swaps do not identify higher-order interactions."
+      ]
+    }
+  },
+  {
+    "id": "reversed_order_2",
+    "family": "reversed_order",
+    "source_group": "pilot_02",
+    "instruction": "Make sure to visit the supermarket and the pharmacy today. Balance your stops to maintain both reasonable ratings and efficiency along the route. Start your trip at the supermarket before heading to the pharmacy.",
+    "gold": {
+      "pois": [
+        "pharmacy",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "supermarket",
+          "pharmacy"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "a": {
+      "pois": [
+        "pharmacy",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "pharmacy",
+          "supermarket"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "b": {
+      "pois": [
+        "pharmacy",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "supermarket",
+          "pharmacy"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "graph": "results/v5/development/20260909_s1_graphs_v3/pilot_02/tradeoff.json",
+    "baseline": {
+      "hard": false,
+      "direction": true,
+      "correct": false,
+      "tsr": false
+    },
+    "report": {
+      "report_version": "darc-v5.1-contrast-2",
+      "instruction": "Make sure to visit the supermarket and the pharmacy today. Balance your stops to maintain both reasonable ratings and efficiency along the route. Start your trip at the supermarket before heading to the pharmacy.",
+      "candidate_A": {
+        "pois": [
+          "pharmacy",
+          "supermarket"
+        ],
+        "time_limit": null,
+        "dependencies": [
+          [
+            "pharmacy",
+            "supermarket"
+          ]
+        ],
+        "quality_weight": 0.5
+      },
+      "candidate_B": {
+        "pois": [
+          "pharmacy",
+          "supermarket"
+        ],
+        "time_limit": null,
+        "dependencies": [
+          [
+            "supermarket",
+            "pharmacy"
+          ]
+        ],
+        "quality_weight": 0.5
+      },
+      "candidate_evidence": {
+        "A": {},
+        "B": {}
+      },
+      "differing_fields": [
+        "dependencies"
+      ],
+      "routes": {
+        "A": {
+          "poi_ids": [
+            "pharmacy_2",
+            "supermarket_2"
+          ],
+          "categories": [
+            "pharmacy",
+            "supermarket"
+          ],
+          "coverage_count": 2,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.9,
+          "distance_km": 17.043,
+          "duration_minutes": 89.1,
+          "arrival_minutes": 629,
+          "utility_under_own_candidate": 0.3107691137809123,
+          "status": "SUCCESS"
+        },
+        "B": {
+          "poi_ids": [
+            "supermarket_2",
+            "pharmacy_2"
+          ],
+          "categories": [
+            "supermarket",
+            "pharmacy"
+          ],
+          "coverage_count": 2,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.9,
+          "distance_km": 17.043,
+          "duration_minutes": 89.1,
+          "arrival_minutes": 629,
+          "utility_under_own_candidate": 0.3107691137809123,
+          "status": "SUCCESS"
+        }
+      },
+      "cross_constraints": {
+        "route_A_under_A": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_A_under_B": {
+          "task_success": false,
+          "reasons": [
+            "candidate_dependency_violation"
+          ]
+        },
+        "route_B_under_A": {
+          "task_success": false,
+          "reasons": [
+            "candidate_dependency_violation"
+          ]
+        },
+        "route_B_under_B": {
+          "task_success": true,
+          "reasons": []
+        }
+      },
+      "single_field_swaps": [
+        {
+          "base": "A",
+          "field_from_other": "dependencies",
+          "hybrid_intent": {
+            "pois": [
+              "pharmacy",
+              "supermarket"
+            ],
+            "time_limit": null,
+            "dependencies": [
+              [
+                "supermarket",
+                "pharmacy"
+              ]
+            ],
+            "quality_weight": 0.5
+          },
+          "route": {
+            "poi_ids": [
+              "supermarket_2",
+              "pharmacy_2"
+            ],
+            "categories": [
+              "supermarket",
+              "pharmacy"
+            ],
+            "coverage_count": 2,
+            "is_valid": true,
+            "is_full_coverage": true,
+            "average_quality": 0.9,
+            "distance_km": 17.043,
+            "duration_minutes": 89.1,
+            "arrival_minutes": 629,
+            "utility_under_own_candidate": 0.3107691137809123,
+            "status": "SUCCESS"
+          }
+        },
+        {
+          "base": "B",
+          "field_from_other": "dependencies",
+          "hybrid_intent": {
+            "pois": [
+              "pharmacy",
+              "supermarket"
+            ],
+            "time_limit": null,
+            "dependencies": [
+              [
+                "pharmacy",
+                "supermarket"
+              ]
+            ],
+            "quality_weight": 0.5
+          },
+          "route": {
+            "poi_ids": [
+              "pharmacy_2",
+              "supermarket_2"
+            ],
+            "categories": [
+              "pharmacy",
+              "supermarket"
+            ],
+            "coverage_count": 2,
+            "is_valid": true,
+            "is_full_coverage": true,
+            "average_quality": 0.9,
+            "distance_km": 17.043,
+            "duration_minutes": 89.1,
+            "arrival_minutes": 629,
+            "utility_under_own_candidate": 0.3107691137809123,
+            "status": "SUCCESS"
+          }
+        }
+      ],
+      "limitations": [
+        "The report does not identify the user's true intent.",
+        "Both candidates may share the same error.",
+        "Single-field swaps do not identify higher-order interactions."
+      ]
+    }
+  },
+  {
+    "id": "reversed_order_3",
+    "family": "reversed_order",
+    "source_group": "pilot_05",
+    "instruction": "Today, make sure to visit the bank, library, and pharmacy. It's important to prioritize places with the best ratings. Also, please go to the bank before heading to the library.",
+    "gold": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "bank",
+          "library"
+        ]
+      ],
+      "quality_weight": 0.75
+    },
+    "a": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "bank",
+          "library"
+        ]
+      ],
+      "quality_weight": 0.75
+    },
+    "b": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "library",
+          "bank"
+        ]
+      ],
+      "quality_weight": 0.75
+    },
+    "graph": "results/v5/development/20260909_s1_graphs_v3/pilot_05/tradeoff.json",
+    "baseline": {
+      "hard": true,
+      "direction": true,
+      "correct": true,
+      "tsr": true
+    },
+    "report": {
+      "report_version": "darc-v5.1-contrast-2",
+      "instruction": "Today, make sure to visit the bank, library, and pharmacy. It's important to prioritize places with the best ratings. Also, please go to the bank before heading to the library.",
+      "candidate_A": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy"
+        ],
+        "time_limit": null,
+        "dependencies": [
+          [
+            "bank",
+            "library"
+          ]
+        ],
+        "quality_weight": 0.75
+      },
+      "candidate_B": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy"
+        ],
+        "time_limit": null,
+        "dependencies": [
+          [
+            "library",
+            "bank"
+          ]
+        ],
+        "quality_weight": 0.75
+      },
+      "candidate_evidence": {
+        "A": {},
+        "B": {}
+      },
+      "differing_fields": [
+        "dependencies"
+      ],
+      "routes": {
+        "A": {
+          "poi_ids": [
+            "pharmacy_2",
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "pharmacy",
+            "bank",
+            "library"
+          ],
+          "coverage_count": 3,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.9,
+          "distance_km": 23.273,
+          "duration_minutes": 136.5,
+          "arrival_minutes": 677,
+          "utility_under_own_candidate": 0.5799365402145622,
+          "status": "SUCCESS"
+        },
+        "B": {
+          "poi_ids": [
+            "library_2",
+            "bank_2",
+            "pharmacy_2"
+          ],
+          "categories": [
+            "library",
+            "bank",
+            "pharmacy"
+          ],
+          "coverage_count": 3,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.9,
+          "distance_km": 23.273,
+          "duration_minutes": 136.5,
+          "arrival_minutes": 677,
+          "utility_under_own_candidate": 0.5799365402145622,
+          "status": "SUCCESS"
+        }
+      },
+      "cross_constraints": {
+        "route_A_under_A": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_A_under_B": {
+          "task_success": false,
+          "reasons": [
+            "candidate_dependency_violation"
+          ]
+        },
+        "route_B_under_A": {
+          "task_success": false,
+          "reasons": [
+            "candidate_dependency_violation"
+          ]
+        },
+        "route_B_under_B": {
+          "task_success": true,
+          "reasons": []
+        }
+      },
+      "single_field_swaps": [
+        {
+          "base": "A",
+          "field_from_other": "dependencies",
+          "hybrid_intent": {
+            "pois": [
+              "bank",
+              "library",
+              "pharmacy"
+            ],
+            "time_limit": null,
+            "dependencies": [
+              [
+                "library",
+                "bank"
+              ]
+            ],
+            "quality_weight": 0.75
+          },
+          "route": {
+            "poi_ids": [
+              "library_2",
+              "bank_2",
+              "pharmacy_2"
+            ],
+            "categories": [
+              "library",
+              "bank",
+              "pharmacy"
+            ],
+            "coverage_count": 3,
+            "is_valid": true,
+            "is_full_coverage": true,
+            "average_quality": 0.9,
+            "distance_km": 23.273,
+            "duration_minutes": 136.5,
+            "arrival_minutes": 677,
+            "utility_under_own_candidate": 0.5799365402145622,
+            "status": "SUCCESS"
+          }
+        },
+        {
+          "base": "B",
+          "field_from_other": "dependencies",
+          "hybrid_intent": {
+            "pois": [
+              "bank",
+              "library",
+              "pharmacy"
+            ],
+            "time_limit": null,
+            "dependencies": [
+              [
+                "bank",
+                "library"
+              ]
+            ],
+            "quality_weight": 0.75
+          },
+          "route": {
+            "poi_ids": [
+              "pharmacy_2",
+              "bank_2",
+              "library_2"
+            ],
+            "categories": [
+              "pharmacy",
+              "bank",
+              "library"
+            ],
+            "coverage_count": 3,
+            "is_valid": true,
+            "is_full_coverage": true,
+            "average_quality": 0.9,
+            "distance_km": 23.273,
+            "duration_minutes": 136.5,
+            "arrival_minutes": 677,
+            "utility_under_own_candidate": 0.5799365402145622,
+            "status": "SUCCESS"
+          }
+        }
+      ],
+      "limitations": [
+        "The report does not identify the user's true intent.",
+        "Both candidates may share the same error.",
+        "Single-field swaps do not identify higher-order interactions."
+      ]
+    }
+  },
+  {
+    "id": "reversed_order_4",
+    "family": "reversed_order",
+    "source_group": "pilot_06",
+    "instruction": "Today, you need to visit the library, supermarket, and bank. Make sure to be back by 18:00. Aim for a route that allows you to complete everything efficiently. Also, remember to stop by the supermarket before heading to the bank.",
+    "gold": {
+      "pois": [
+        "bank",
+        "library",
+        "supermarket"
+      ],
+      "time_limit": 1080,
+      "dependencies": [
+        [
+          "supermarket",
+          "bank"
+        ]
+      ],
+      "quality_weight": 0.25
+    },
+    "a": {
+      "pois": [
+        "bank",
+        "library",
+        "supermarket"
+      ],
+      "time_limit": 1080,
+      "dependencies": [
+        [
+          "bank",
+          "supermarket"
+        ]
+      ],
+      "quality_weight": 0.25
+    },
+    "b": {
+      "pois": [
+        "bank",
+        "library",
+        "supermarket"
+      ],
+      "time_limit": 1080,
+      "dependencies": [
+        [
+          "supermarket",
+          "bank"
+        ]
+      ],
+      "quality_weight": 0.25
+    },
+    "graph": "results/v5/development/20260909_s1_graphs_v3/pilot_06/tradeoff.json",
+    "baseline": {
+      "hard": false,
+      "direction": true,
+      "correct": false,
+      "tsr": false
+    },
+    "report": {
+      "report_version": "darc-v5.1-contrast-2",
+      "instruction": "Today, you need to visit the library, supermarket, and bank. Make sure to be back by 18:00. Aim for a route that allows you to complete everything efficiently. Also, remember to stop by the supermarket before heading to the bank.",
+      "candidate_A": {
+        "pois": [
+          "bank",
+          "library",
+          "supermarket"
+        ],
+        "time_limit": 1080,
+        "dependencies": [
+          [
+            "bank",
+            "supermarket"
+          ]
+        ],
+        "quality_weight": 0.25
+      },
+      "candidate_B": {
+        "pois": [
+          "bank",
+          "library",
+          "supermarket"
+        ],
+        "time_limit": 1080,
+        "dependencies": [
+          [
+            "supermarket",
+            "bank"
+          ]
+        ],
+        "quality_weight": 0.25
+      },
+      "candidate_evidence": {
+        "A": {},
+        "B": {}
+      },
+      "differing_fields": [
+        "dependencies"
+      ],
+      "routes": {
+        "A": {
+          "poi_ids": [
+            "bank_1",
+            "library_1",
+            "supermarket_1"
+          ],
+          "categories": [
+            "bank",
+            "library",
+            "supermarket"
+          ],
+          "coverage_count": 3,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.20000000000000004,
+          "distance_km": 5.972,
+          "duration_minutes": 126.9,
+          "arrival_minutes": 667,
+          "utility_under_own_candidate": -0.023180024278629786,
+          "status": "SUCCESS"
+        },
+        "B": {
+          "poi_ids": [
+            "supermarket_1",
+            "library_1",
+            "bank_1"
+          ],
+          "categories": [
+            "supermarket",
+            "library",
+            "bank"
+          ],
+          "coverage_count": 3,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.20000000000000004,
+          "distance_km": 5.972,
+          "duration_minutes": 126.9,
+          "arrival_minutes": 667,
+          "utility_under_own_candidate": -0.023180024278629786,
+          "status": "SUCCESS"
+        }
+      },
+      "cross_constraints": {
+        "route_A_under_A": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_A_under_B": {
+          "task_success": false,
+          "reasons": [
+            "candidate_dependency_violation"
+          ]
+        },
+        "route_B_under_A": {
+          "task_success": false,
+          "reasons": [
+            "candidate_dependency_violation"
+          ]
+        },
+        "route_B_under_B": {
+          "task_success": true,
+          "reasons": []
+        }
+      },
+      "single_field_swaps": [
+        {
+          "base": "A",
+          "field_from_other": "dependencies",
+          "hybrid_intent": {
+            "pois": [
+              "bank",
+              "library",
+              "supermarket"
+            ],
+            "time_limit": 1080,
+            "dependencies": [
+              [
+                "supermarket",
+                "bank"
+              ]
+            ],
+            "quality_weight": 0.25
+          },
+          "route": {
+            "poi_ids": [
+              "supermarket_1",
+              "library_1",
+              "bank_1"
+            ],
+            "categories": [
+              "supermarket",
+              "library",
+              "bank"
+            ],
+            "coverage_count": 3,
+            "is_valid": true,
+            "is_full_coverage": true,
+            "average_quality": 0.20000000000000004,
+            "distance_km": 5.972,
+            "duration_minutes": 126.9,
+            "arrival_minutes": 667,
+            "utility_under_own_candidate": -0.023180024278629786,
+            "status": "SUCCESS"
+          }
+        },
+        {
+          "base": "B",
+          "field_from_other": "dependencies",
+          "hybrid_intent": {
+            "pois": [
+              "bank",
+              "library",
+              "supermarket"
+            ],
+            "time_limit": 1080,
+            "dependencies": [
+              [
+                "bank",
+                "supermarket"
+              ]
+            ],
+            "quality_weight": 0.25
+          },
+          "route": {
+            "poi_ids": [
+              "bank_1",
+              "library_1",
+              "supermarket_1"
+            ],
+            "categories": [
+              "bank",
+              "library",
+              "supermarket"
+            ],
+            "coverage_count": 3,
+            "is_valid": true,
+            "is_full_coverage": true,
+            "average_quality": 0.20000000000000004,
+            "distance_km": 5.972,
+            "duration_minutes": 126.9,
+            "arrival_minutes": 667,
+            "utility_under_own_candidate": -0.023180024278629786,
+            "status": "SUCCESS"
+          }
+        }
+      ],
+      "limitations": [
+        "The report does not identify the user's true intent.",
+        "Both candidates may share the same error.",
+        "Single-field swaps do not identify higher-order interactions."
+      ]
+    }
+  },
+  {
+    "id": "extra_order_1",
+    "family": "extra_order",
+    "source_group": "pilot_03",
+    "instruction": "Today, make sure to visit the pharmacy and the shopping mall. Try to find a balance between visiting well-rated places and keeping the route efficient. There are no specific dependencies on the order of visits, so feel free to choose the sequence that works best for you.",
+    "gold": {
+      "pois": [
+        "pharmacy",
+        "shopping_mall"
+      ],
+      "time_limit": null,
+      "dependencies": [],
+      "quality_weight": 0.5
+    },
+    "a": {
+      "pois": [
+        "pharmacy",
+        "shopping_mall"
+      ],
+      "time_limit": null,
+      "dependencies": [],
+      "quality_weight": 0.5
+    },
+    "b": {
+      "pois": [
+        "pharmacy",
+        "shopping_mall"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "pharmacy",
+          "shopping_mall"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "graph": "results/v5/development/20260909_s1_graphs_v3/pilot_03/tradeoff.json",
+    "baseline": {
+      "hard": true,
+      "direction": true,
+      "correct": true,
+      "tsr": true
+    },
+    "report": {
+      "report_version": "darc-v5.1-contrast-2",
+      "instruction": "Today, make sure to visit the pharmacy and the shopping mall. Try to find a balance between visiting well-rated places and keeping the route efficient. There are no specific dependencies on the order of visits, so feel free to choose the sequence that works best for you.",
+      "candidate_A": {
+        "pois": [
+          "pharmacy",
+          "shopping_mall"
+        ],
+        "time_limit": null,
+        "dependencies": [],
+        "quality_weight": 0.5
+      },
+      "candidate_B": {
+        "pois": [
+          "pharmacy",
+          "shopping_mall"
+        ],
+        "time_limit": null,
+        "dependencies": [
+          [
+            "pharmacy",
+            "shopping_mall"
+          ]
+        ],
+        "quality_weight": 0.5
+      },
+      "candidate_evidence": {
+        "A": {},
+        "B": {}
+      },
+      "differing_fields": [
+        "dependencies"
+      ],
+      "routes": {
+        "A": {
+          "poi_ids": [
+            "pharmacy_2",
+            "shopping_mall_2"
+          ],
+          "categories": [
+            "pharmacy",
+            "shopping_mall"
+          ],
+          "coverage_count": 2,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.9,
+          "distance_km": 19.025,
+          "duration_minutes": 113.1,
+          "arrival_minutes": 653,
+          "utility_under_own_candidate": 0.2945720088008291,
+          "status": "SUCCESS"
+        },
+        "B": {
+          "poi_ids": [
+            "pharmacy_2",
+            "shopping_mall_2"
+          ],
+          "categories": [
+            "pharmacy",
+            "shopping_mall"
+          ],
+          "coverage_count": 2,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.9,
+          "distance_km": 19.025,
+          "duration_minutes": 113.1,
+          "arrival_minutes": 653,
+          "utility_under_own_candidate": 0.2945720088008291,
+          "status": "SUCCESS"
+        }
+      },
+      "cross_constraints": {
+        "route_A_under_A": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_A_under_B": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_B_under_A": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_B_under_B": {
+          "task_success": true,
+          "reasons": []
+        }
+      },
+      "single_field_swaps": [
+        {
+          "base": "A",
+          "field_from_other": "dependencies",
+          "hybrid_intent": {
+            "pois": [
+              "pharmacy",
+              "shopping_mall"
+            ],
+            "time_limit": null,
+            "dependencies": [
+              [
+                "pharmacy",
+                "shopping_mall"
+              ]
+            ],
+            "quality_weight": 0.5
+          },
+          "route": {
+            "poi_ids": [
+              "pharmacy_2",
+              "shopping_mall_2"
+            ],
+            "categories": [
+              "pharmacy",
+              "shopping_mall"
+            ],
+            "coverage_count": 2,
+            "is_valid": true,
+            "is_full_coverage": true,
+            "average_quality": 0.9,
+            "distance_km": 19.025,
+            "duration_minutes": 113.1,
+            "arrival_minutes": 653,
+            "utility_under_own_candidate": 0.2945720088008291,
+            "status": "SUCCESS"
+          }
+        },
+        {
+          "base": "B",
+          "field_from_other": "dependencies",
+          "hybrid_intent": {
+            "pois": [
+              "pharmacy",
+              "shopping_mall"
+            ],
+            "time_limit": null,
+            "dependencies": [],
+            "quality_weight": 0.5
+          },
+          "route": {
+            "poi_ids": [
+              "pharmacy_2",
+              "shopping_mall_2"
+            ],
+            "categories": [
+              "pharmacy",
+              "shopping_mall"
+            ],
+            "coverage_count": 2,
+            "is_valid": true,
+            "is_full_coverage": true,
+            "average_quality": 0.9,
+            "distance_km": 19.025,
+            "duration_minutes": 113.1,
+            "arrival_minutes": 653,
+            "utility_under_own_candidate": 0.2945720088008291,
+            "status": "SUCCESS"
+          }
+        }
+      ],
+      "limitations": [
+        "The report does not identify the user's true intent.",
+        "Both candidates may share the same error.",
+        "Single-field swaps do not identify higher-order interactions."
+      ]
+    }
+  },
+  {
+    "id": "extra_order_2",
+    "family": "extra_order",
+    "source_group": "pilot_04",
+    "instruction": "Today, make sure to visit the bank and the library. Please be back by 18:00. It's essential to prioritize a quick and efficient route for these visits.",
+    "gold": {
+      "pois": [
+        "bank",
+        "library"
+      ],
+      "time_limit": 1080,
+      "dependencies": [],
+      "quality_weight": 0.25
+    },
+    "a": {
+      "pois": [
+        "bank",
+        "library"
+      ],
+      "time_limit": 1080,
+      "dependencies": [
+        [
+          "bank",
+          "library"
+        ]
+      ],
+      "quality_weight": 0.25
+    },
+    "b": {
+      "pois": [
+        "bank",
+        "library"
+      ],
+      "time_limit": 1080,
+      "dependencies": [],
+      "quality_weight": 0.25
+    },
+    "graph": "results/v5/development/20260909_s1_graphs_v3/pilot_04/tradeoff.json",
+    "baseline": {
+      "hard": false,
+      "direction": true,
+      "correct": false,
+      "tsr": true
+    },
+    "report": {
+      "report_version": "darc-v5.1-contrast-2",
+      "instruction": "Today, make sure to visit the bank and the library. Please be back by 18:00. It's essential to prioritize a quick and efficient route for these visits.",
+      "candidate_A": {
+        "pois": [
+          "bank",
+          "library"
+        ],
+        "time_limit": 1080,
+        "dependencies": [
+          [
+            "bank",
+            "library"
+          ]
+        ],
+        "quality_weight": 0.25
+      },
+      "candidate_B": {
+        "pois": [
+          "bank",
+          "library"
+        ],
+        "time_limit": 1080,
+        "dependencies": [],
+        "quality_weight": 0.25
+      },
+      "candidate_evidence": {
+        "A": {},
+        "B": {}
+      },
+      "differing_fields": [
+        "dependencies"
+      ],
+      "routes": {
+        "A": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage_count": 2,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.9,
+          "distance_km": 17.486,
+          "duration_minutes": 110.0,
+          "arrival_minutes": 650,
+          "utility_under_own_candidate": 0.010715210057114177,
+          "status": "SUCCESS"
+        },
+        "B": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage_count": 2,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.9,
+          "distance_km": 17.486,
+          "duration_minutes": 110.0,
+          "arrival_minutes": 650,
+          "utility_under_own_candidate": 0.010715210057114177,
+          "status": "SUCCESS"
+        }
+      },
+      "cross_constraints": {
+        "route_A_under_A": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_A_under_B": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_B_under_A": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_B_under_B": {
+          "task_success": true,
+          "reasons": []
+        }
+      },
+      "single_field_swaps": [
+        {
+          "base": "A",
+          "field_from_other": "dependencies",
+          "hybrid_intent": {
+            "pois": [
+              "bank",
+              "library"
+            ],
+            "time_limit": 1080,
+            "dependencies": [],
+            "quality_weight": 0.25
+          },
+          "route": {
+            "poi_ids": [
+              "bank_2",
+              "library_2"
+            ],
+            "categories": [
+              "bank",
+              "library"
+            ],
+            "coverage_count": 2,
+            "is_valid": true,
+            "is_full_coverage": true,
+            "average_quality": 0.9,
+            "distance_km": 17.486,
+            "duration_minutes": 110.0,
+            "arrival_minutes": 650,
+            "utility_under_own_candidate": 0.010715210057114177,
+            "status": "SUCCESS"
+          }
+        },
+        {
+          "base": "B",
+          "field_from_other": "dependencies",
+          "hybrid_intent": {
+            "pois": [
+              "bank",
+              "library"
+            ],
+            "time_limit": 1080,
+            "dependencies": [
+              [
+                "bank",
+                "library"
+              ]
+            ],
+            "quality_weight": 0.25
+          },
+          "route": {
+            "poi_ids": [
+              "bank_2",
+              "library_2"
+            ],
+            "categories": [
+              "bank",
+              "library"
+            ],
+            "coverage_count": 2,
+            "is_valid": true,
+            "is_full_coverage": true,
+            "average_quality": 0.9,
+            "distance_km": 17.486,
+            "duration_minutes": 110.0,
+            "arrival_minutes": 650,
+            "utility_under_own_candidate": 0.010715210057114177,
+            "status": "SUCCESS"
+          }
+        }
+      ],
+      "limitations": [
+        "The report does not identify the user's true intent.",
+        "Both candidates may share the same error.",
+        "Single-field swaps do not identify higher-order interactions."
+      ]
+    }
+  },
+  {
+    "id": "extra_order_3",
+    "family": "extra_order",
+    "source_group": "pilot_07",
+    "instruction": "Today, make sure to visit the library, pharmacy, and supermarket. Please return by 17:00. Focus on visiting high-rated places, even if the route is slightly longer.",
+    "gold": {
+      "pois": [
+        "library",
+        "pharmacy",
+        "supermarket"
+      ],
+      "time_limit": 1020,
+      "dependencies": [],
+      "quality_weight": 0.75
+    },
+    "a": {
+      "pois": [
+        "library",
+        "pharmacy",
+        "supermarket"
+      ],
+      "time_limit": 1020,
+      "dependencies": [],
+      "quality_weight": 0.75
+    },
+    "b": {
+      "pois": [
+        "library",
+        "pharmacy",
+        "supermarket"
+      ],
+      "time_limit": 1020,
+      "dependencies": [
+        [
+          "library",
+          "pharmacy"
+        ]
+      ],
+      "quality_weight": 0.75
+    },
+    "graph": "results/v5/development/20260909_s1_graphs_v3/pilot_07/tradeoff.json",
+    "baseline": {
+      "hard": true,
+      "direction": true,
+      "correct": true,
+      "tsr": true
+    },
+    "report": {
+      "report_version": "darc-v5.1-contrast-2",
+      "instruction": "Today, make sure to visit the library, pharmacy, and supermarket. Please return by 17:00. Focus on visiting high-rated places, even if the route is slightly longer.",
+      "candidate_A": {
+        "pois": [
+          "library",
+          "pharmacy",
+          "supermarket"
+        ],
+        "time_limit": 1020,
+        "dependencies": [],
+        "quality_weight": 0.75
+      },
+      "candidate_B": {
+        "pois": [
+          "library",
+          "pharmacy",
+          "supermarket"
+        ],
+        "time_limit": 1020,
+        "dependencies": [
+          [
+            "library",
+            "pharmacy"
+          ]
+        ],
+        "quality_weight": 0.75
+      },
+      "candidate_evidence": {
+        "A": {},
+        "B": {}
+      },
+      "differing_fields": [
+        "dependencies"
+      ],
+      "routes": {
+        "A": {
+          "poi_ids": [
+            "library_2",
+            "supermarket_2",
+            "pharmacy_2"
+          ],
+          "categories": [
+            "library",
+            "supermarket",
+            "pharmacy"
+          ],
+          "coverage_count": 3,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.9,
+          "distance_km": 26.025,
+          "duration_minutes": 152.0,
+          "arrival_minutes": 692,
+          "utility_under_own_candidate": 0.5686952608957413,
+          "status": "SUCCESS"
+        },
+        "B": {
+          "poi_ids": [
+            "library_2",
+            "supermarket_2",
+            "pharmacy_2"
+          ],
+          "categories": [
+            "library",
+            "supermarket",
+            "pharmacy"
+          ],
+          "coverage_count": 3,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.9,
+          "distance_km": 26.025,
+          "duration_minutes": 152.0,
+          "arrival_minutes": 692,
+          "utility_under_own_candidate": 0.5686952608957413,
+          "status": "SUCCESS"
+        }
+      },
+      "cross_constraints": {
+        "route_A_under_A": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_A_under_B": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_B_under_A": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_B_under_B": {
+          "task_success": true,
+          "reasons": []
+        }
+      },
+      "single_field_swaps": [
+        {
+          "base": "A",
+          "field_from_other": "dependencies",
+          "hybrid_intent": {
+            "pois": [
+              "library",
+              "pharmacy",
+              "supermarket"
+            ],
+            "time_limit": 1020,
+            "dependencies": [
+              [
+                "library",
+                "pharmacy"
+              ]
+            ],
+            "quality_weight": 0.75
+          },
+          "route": {
+            "poi_ids": [
+              "library_2",
+              "supermarket_2",
+              "pharmacy_2"
+            ],
+            "categories": [
+              "library",
+              "supermarket",
+              "pharmacy"
+            ],
+            "coverage_count": 3,
+            "is_valid": true,
+            "is_full_coverage": true,
+            "average_quality": 0.9,
+            "distance_km": 26.025,
+            "duration_minutes": 152.0,
+            "arrival_minutes": 692,
+            "utility_under_own_candidate": 0.5686952608957413,
+            "status": "SUCCESS"
+          }
+        },
+        {
+          "base": "B",
+          "field_from_other": "dependencies",
+          "hybrid_intent": {
+            "pois": [
+              "library",
+              "pharmacy",
+              "supermarket"
+            ],
+            "time_limit": 1020,
+            "dependencies": [],
+            "quality_weight": 0.75
+          },
+          "route": {
+            "poi_ids": [
+              "library_2",
+              "supermarket_2",
+              "pharmacy_2"
+            ],
+            "categories": [
+              "library",
+              "supermarket",
+              "pharmacy"
+            ],
+            "coverage_count": 3,
+            "is_valid": true,
+            "is_full_coverage": true,
+            "average_quality": 0.9,
+            "distance_km": 26.025,
+            "duration_minutes": 152.0,
+            "arrival_minutes": 692,
+            "utility_under_own_candidate": 0.5686952608957413,
+            "status": "SUCCESS"
+          }
+        }
+      ],
+      "limitations": [
+        "The report does not identify the user's true intent.",
+        "Both candidates may share the same error.",
+        "Single-field swaps do not identify higher-order interactions."
+      ]
+    }
+  },
+  {
+    "id": "extra_order_4",
+    "family": "extra_order",
+    "source_group": "pilot_08",
+    "instruction": "Today, let's visit the library, the shopping mall, and the supermarket. I would like to keep a good balance between visiting well-rated places and having an efficient route. Make sure to stop by the shopping mall before heading to the supermarket.",
+    "gold": {
+      "pois": [
+        "library",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "shopping_mall",
+          "supermarket"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "a": {
+      "pois": [
+        "library",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "library",
+          "shopping_mall"
+        ],
+        [
+          "shopping_mall",
+          "supermarket"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "b": {
+      "pois": [
+        "library",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "shopping_mall",
+          "supermarket"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "graph": "results/v5/development/20260909_s1_graphs_v3/pilot_08/tradeoff.json",
+    "baseline": {
+      "hard": false,
+      "direction": true,
+      "correct": false,
+      "tsr": true
+    },
+    "report": {
+      "report_version": "darc-v5.1-contrast-2",
+      "instruction": "Today, let's visit the library, the shopping mall, and the supermarket. I would like to keep a good balance between visiting well-rated places and having an efficient route. Make sure to stop by the shopping mall before heading to the supermarket.",
+      "candidate_A": {
+        "pois": [
+          "library",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "time_limit": null,
+        "dependencies": [
+          [
+            "library",
+            "shopping_mall"
+          ],
+          [
+            "shopping_mall",
+            "supermarket"
+          ]
+        ],
+        "quality_weight": 0.5
+      },
+      "candidate_B": {
+        "pois": [
+          "library",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "time_limit": null,
+        "dependencies": [
+          [
+            "shopping_mall",
+            "supermarket"
+          ]
+        ],
+        "quality_weight": 0.5
+      },
+      "candidate_evidence": {
+        "A": {},
+        "B": {}
+      },
+      "differing_fields": [
+        "dependencies"
+      ],
+      "routes": {
+        "A": {
+          "poi_ids": [
+            "library_2",
+            "shopping_mall_2",
+            "supermarket_2"
+          ],
+          "categories": [
+            "library",
+            "shopping_mall",
+            "supermarket"
+          ],
+          "coverage_count": 3,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.9,
+          "distance_km": 20.441,
+          "duration_minutes": 185.9,
+          "arrival_minutes": 726,
+          "utility_under_own_candidate": 0.28300601790843904,
+          "status": "SUCCESS"
+        },
+        "B": {
+          "poi_ids": [
+            "library_2",
+            "shopping_mall_2",
+            "supermarket_2"
+          ],
+          "categories": [
+            "library",
+            "shopping_mall",
+            "supermarket"
+          ],
+          "coverage_count": 3,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.9,
+          "distance_km": 20.441,
+          "duration_minutes": 185.9,
+          "arrival_minutes": 726,
+          "utility_under_own_candidate": 0.28300601790843904,
+          "status": "SUCCESS"
+        }
+      },
+      "cross_constraints": {
+        "route_A_under_A": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_A_under_B": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_B_under_A": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_B_under_B": {
+          "task_success": true,
+          "reasons": []
+        }
+      },
+      "single_field_swaps": [
+        {
+          "base": "A",
+          "field_from_other": "dependencies",
+          "hybrid_intent": {
+            "pois": [
+              "library",
+              "shopping_mall",
+              "supermarket"
+            ],
+            "time_limit": null,
+            "dependencies": [
+              [
+                "shopping_mall",
+                "supermarket"
+              ]
+            ],
+            "quality_weight": 0.5
+          },
+          "route": {
+            "poi_ids": [
+              "library_2",
+              "shopping_mall_2",
+              "supermarket_2"
+            ],
+            "categories": [
+              "library",
+              "shopping_mall",
+              "supermarket"
+            ],
+            "coverage_count": 3,
+            "is_valid": true,
+            "is_full_coverage": true,
+            "average_quality": 0.9,
+            "distance_km": 20.441,
+            "duration_minutes": 185.9,
+            "arrival_minutes": 726,
+            "utility_under_own_candidate": 0.28300601790843904,
+            "status": "SUCCESS"
+          }
+        },
+        {
+          "base": "B",
+          "field_from_other": "dependencies",
+          "hybrid_intent": {
+            "pois": [
+              "library",
+              "shopping_mall",
+              "supermarket"
+            ],
+            "time_limit": null,
+            "dependencies": [
+              [
+                "library",
+                "shopping_mall"
+              ],
+              [
+                "shopping_mall",
+                "supermarket"
+              ]
+            ],
+            "quality_weight": 0.5
+          },
+          "route": {
+            "poi_ids": [
+              "library_2",
+              "shopping_mall_2",
+              "supermarket_2"
+            ],
+            "categories": [
+              "library",
+              "shopping_mall",
+              "supermarket"
+            ],
+            "coverage_count": 3,
+            "is_valid": true,
+            "is_full_coverage": true,
+            "average_quality": 0.9,
+            "distance_km": 20.441,
+            "duration_minutes": 185.9,
+            "arrival_minutes": 726,
+            "utility_under_own_candidate": 0.28300601790843904,
+            "status": "SUCCESS"
+          }
+        }
+      ],
+      "limitations": [
+        "The report does not identify the user's true intent.",
+        "Both candidates may share the same error.",
+        "Single-field swaps do not identify higher-order interactions."
+      ]
+    }
+  },
+  {
+    "id": "reversed_preference_1",
+    "family": "reversed_preference",
+    "source_group": "pilot_01",
+    "instruction": "Today, you'll be visiting the shopping mall and the supermarket. Make sure to be back by 22:00. Since time efficiency is a priority, try to keep your route as direct as possible. Remember to visit the shopping mall before heading to the supermarket.",
+    "gold": {
+      "pois": [
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": 1320,
+      "dependencies": [
+        [
+          "shopping_mall",
+          "supermarket"
+        ]
+      ],
+      "quality_weight": 0.25
+    },
+    "a": {
+      "pois": [
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": 1320,
+      "dependencies": [
+        [
+          "shopping_mall",
+          "supermarket"
+        ]
+      ],
+      "quality_weight": 0.25
+    },
+    "b": {
+      "pois": [
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": 1320,
+      "dependencies": [
+        [
+          "shopping_mall",
+          "supermarket"
+        ]
+      ],
+      "quality_weight": 0.75
+    },
+    "graph": "results/v5/development/20260909_s1_graphs_v3/pilot_01/tradeoff.json",
+    "baseline": {
+      "hard": true,
+      "direction": true,
+      "correct": true,
+      "tsr": true
+    },
+    "report": {
+      "report_version": "darc-v5.1-contrast-2",
+      "instruction": "Today, you'll be visiting the shopping mall and the supermarket. Make sure to be back by 22:00. Since time efficiency is a priority, try to keep your route as direct as possible. Remember to visit the shopping mall before heading to the supermarket.",
+      "candidate_A": {
+        "pois": [
+          "shopping_mall",
+          "supermarket"
+        ],
+        "time_limit": 1320,
+        "dependencies": [
+          [
+            "shopping_mall",
+            "supermarket"
+          ]
+        ],
+        "quality_weight": 0.25
+      },
+      "candidate_B": {
+        "pois": [
+          "shopping_mall",
+          "supermarket"
+        ],
+        "time_limit": 1320,
+        "dependencies": [
+          [
+            "shopping_mall",
+            "supermarket"
+          ]
+        ],
+        "quality_weight": 0.75
+      },
+      "candidate_evidence": {
+        "A": {},
+        "B": {}
+      },
+      "differing_fields": [
+        "quality_weight"
+      ],
+      "routes": {
+        "A": {
+          "poi_ids": [
+            "shopping_mall_2",
+            "supermarket_2"
+          ],
+          "categories": [
+            "shopping_mall",
+            "supermarket"
+          ],
+          "coverage_count": 2,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.9,
+          "distance_km": 14.063,
+          "duration_minutes": 128.1,
+          "arrival_minutes": 668,
+          "utility_under_own_candidate": 0.05266712035904311,
+          "status": "SUCCESS"
+        },
+        "B": {
+          "poi_ids": [
+            "shopping_mall_2",
+            "supermarket_2"
+          ],
+          "categories": [
+            "shopping_mall",
+            "supermarket"
+          ],
+          "coverage_count": 2,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.9,
+          "distance_km": 14.063,
+          "duration_minutes": 128.1,
+          "arrival_minutes": 668,
+          "utility_under_own_candidate": 0.6175557067863477,
+          "status": "SUCCESS"
+        }
+      },
+      "cross_constraints": {
+        "route_A_under_A": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_A_under_B": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_B_under_A": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_B_under_B": {
+          "task_success": true,
+          "reasons": []
+        }
+      },
+      "single_field_swaps": [
+        {
+          "base": "A",
+          "field_from_other": "quality_weight",
+          "hybrid_intent": {
+            "pois": [
+              "shopping_mall",
+              "supermarket"
+            ],
+            "time_limit": 1320,
+            "dependencies": [
+              [
+                "shopping_mall",
+                "supermarket"
+              ]
+            ],
+            "quality_weight": 0.75
+          },
+          "route": {
+            "poi_ids": [
+              "shopping_mall_2",
+              "supermarket_2"
+            ],
+            "categories": [
+              "shopping_mall",
+              "supermarket"
+            ],
+            "coverage_count": 2,
+            "is_valid": true,
+            "is_full_coverage": true,
+            "average_quality": 0.9,
+            "distance_km": 14.063,
+            "duration_minutes": 128.1,
+            "arrival_minutes": 668,
+            "utility_under_own_candidate": 0.6175557067863477,
+            "status": "SUCCESS"
+          }
+        },
+        {
+          "base": "B",
+          "field_from_other": "quality_weight",
+          "hybrid_intent": {
+            "pois": [
+              "shopping_mall",
+              "supermarket"
+            ],
+            "time_limit": 1320,
+            "dependencies": [
+              [
+                "shopping_mall",
+                "supermarket"
+              ]
+            ],
+            "quality_weight": 0.25
+          },
+          "route": {
+            "poi_ids": [
+              "shopping_mall_2",
+              "supermarket_2"
+            ],
+            "categories": [
+              "shopping_mall",
+              "supermarket"
+            ],
+            "coverage_count": 2,
+            "is_valid": true,
+            "is_full_coverage": true,
+            "average_quality": 0.9,
+            "distance_km": 14.063,
+            "duration_minutes": 128.1,
+            "arrival_minutes": 668,
+            "utility_under_own_candidate": 0.05266712035904311,
+            "status": "SUCCESS"
+          }
+        }
+      ],
+      "limitations": [
+        "The report does not identify the user's true intent.",
+        "Both candidates may share the same error.",
+        "Single-field swaps do not identify higher-order interactions."
+      ]
+    }
+  },
+  {
+    "id": "reversed_preference_2",
+    "family": "reversed_preference",
+    "source_group": "pilot_05",
+    "instruction": "Today, make sure to visit the bank, library, and pharmacy. It's important to prioritize places with the best ratings. Also, please go to the bank before heading to the library.",
+    "gold": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "bank",
+          "library"
+        ]
+      ],
+      "quality_weight": 0.75
+    },
+    "a": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "bank",
+          "library"
+        ]
+      ],
+      "quality_weight": 0.25
+    },
+    "b": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "bank",
+          "library"
+        ]
+      ],
+      "quality_weight": 0.75
+    },
+    "graph": "results/v5/development/20260909_s1_graphs_v3/pilot_05/tradeoff.json",
+    "baseline": {
+      "hard": true,
+      "direction": false,
+      "correct": false,
+      "tsr": true
+    },
+    "report": {
+      "report_version": "darc-v5.1-contrast-2",
+      "instruction": "Today, make sure to visit the bank, library, and pharmacy. It's important to prioritize places with the best ratings. Also, please go to the bank before heading to the library.",
+      "candidate_A": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy"
+        ],
+        "time_limit": null,
+        "dependencies": [
+          [
+            "bank",
+            "library"
+          ]
+        ],
+        "quality_weight": 0.25
+      },
+      "candidate_B": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy"
+        ],
+        "time_limit": null,
+        "dependencies": [
+          [
+            "bank",
+            "library"
+          ]
+        ],
+        "quality_weight": 0.75
+      },
+      "candidate_evidence": {
+        "A": {},
+        "B": {}
+      },
+      "differing_fields": [
+        "quality_weight"
+      ],
+      "routes": {
+        "A": {
+          "poi_ids": [
+            "pharmacy_1",
+            "bank_1",
+            "library_1"
+          ],
+          "categories": [
+            "pharmacy",
+            "bank",
+            "library"
+          ],
+          "coverage_count": 3,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.20000000000000004,
+          "distance_km": 4.972,
+          "duration_minutes": 99.9,
+          "arrival_minutes": 640,
+          "utility_under_own_candidate": -0.010926527425954506,
+          "status": "SUCCESS"
+        },
+        "B": {
+          "poi_ids": [
+            "pharmacy_2",
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "pharmacy",
+            "bank",
+            "library"
+          ],
+          "coverage_count": 3,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.9,
+          "distance_km": 23.273,
+          "duration_minutes": 136.5,
+          "arrival_minutes": 677,
+          "utility_under_own_candidate": 0.5799365402145622,
+          "status": "SUCCESS"
+        }
+      },
+      "cross_constraints": {
+        "route_A_under_A": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_A_under_B": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_B_under_A": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_B_under_B": {
+          "task_success": true,
+          "reasons": []
+        }
+      },
+      "single_field_swaps": [
+        {
+          "base": "A",
+          "field_from_other": "quality_weight",
+          "hybrid_intent": {
+            "pois": [
+              "bank",
+              "library",
+              "pharmacy"
+            ],
+            "time_limit": null,
+            "dependencies": [
+              [
+                "bank",
+                "library"
+              ]
+            ],
+            "quality_weight": 0.75
+          },
+          "route": {
+            "poi_ids": [
+              "pharmacy_2",
+              "bank_2",
+              "library_2"
+            ],
+            "categories": [
+              "pharmacy",
+              "bank",
+              "library"
+            ],
+            "coverage_count": 3,
+            "is_valid": true,
+            "is_full_coverage": true,
+            "average_quality": 0.9,
+            "distance_km": 23.273,
+            "duration_minutes": 136.5,
+            "arrival_minutes": 677,
+            "utility_under_own_candidate": 0.5799365402145622,
+            "status": "SUCCESS"
+          }
+        },
+        {
+          "base": "B",
+          "field_from_other": "quality_weight",
+          "hybrid_intent": {
+            "pois": [
+              "bank",
+              "library",
+              "pharmacy"
+            ],
+            "time_limit": null,
+            "dependencies": [
+              [
+                "bank",
+                "library"
+              ]
+            ],
+            "quality_weight": 0.25
+          },
+          "route": {
+            "poi_ids": [
+              "pharmacy_1",
+              "bank_1",
+              "library_1"
+            ],
+            "categories": [
+              "pharmacy",
+              "bank",
+              "library"
+            ],
+            "coverage_count": 3,
+            "is_valid": true,
+            "is_full_coverage": true,
+            "average_quality": 0.20000000000000004,
+            "distance_km": 4.972,
+            "duration_minutes": 99.9,
+            "arrival_minutes": 640,
+            "utility_under_own_candidate": -0.010926527425954506,
+            "status": "SUCCESS"
+          }
+        }
+      ],
+      "limitations": [
+        "The report does not identify the user's true intent.",
+        "Both candidates may share the same error.",
+        "Single-field swaps do not identify higher-order interactions."
+      ]
+    }
+  },
+  {
+    "id": "reversed_preference_3",
+    "family": "reversed_preference",
+    "source_group": "pilot_06",
+    "instruction": "Today, you need to visit the library, supermarket, and bank. Make sure to be back by 18:00. Aim for a route that allows you to complete everything efficiently. Also, remember to stop by the supermarket before heading to the bank.",
+    "gold": {
+      "pois": [
+        "bank",
+        "library",
+        "supermarket"
+      ],
+      "time_limit": 1080,
+      "dependencies": [
+        [
+          "supermarket",
+          "bank"
+        ]
+      ],
+      "quality_weight": 0.25
+    },
+    "a": {
+      "pois": [
+        "bank",
+        "library",
+        "supermarket"
+      ],
+      "time_limit": 1080,
+      "dependencies": [
+        [
+          "supermarket",
+          "bank"
+        ]
+      ],
+      "quality_weight": 0.25
+    },
+    "b": {
+      "pois": [
+        "bank",
+        "library",
+        "supermarket"
+      ],
+      "time_limit": 1080,
+      "dependencies": [
+        [
+          "supermarket",
+          "bank"
+        ]
+      ],
+      "quality_weight": 0.75
+    },
+    "graph": "results/v5/development/20260909_s1_graphs_v3/pilot_06/tradeoff.json",
+    "baseline": {
+      "hard": true,
+      "direction": true,
+      "correct": true,
+      "tsr": true
+    },
+    "report": {
+      "report_version": "darc-v5.1-contrast-2",
+      "instruction": "Today, you need to visit the library, supermarket, and bank. Make sure to be back by 18:00. Aim for a route that allows you to complete everything efficiently. Also, remember to stop by the supermarket before heading to the bank.",
+      "candidate_A": {
+        "pois": [
+          "bank",
+          "library",
+          "supermarket"
+        ],
+        "time_limit": 1080,
+        "dependencies": [
+          [
+            "supermarket",
+            "bank"
+          ]
+        ],
+        "quality_weight": 0.25
+      },
+      "candidate_B": {
+        "pois": [
+          "bank",
+          "library",
+          "supermarket"
+        ],
+        "time_limit": 1080,
+        "dependencies": [
+          [
+            "supermarket",
+            "bank"
+          ]
+        ],
+        "quality_weight": 0.75
+      },
+      "candidate_evidence": {
+        "A": {},
+        "B": {}
+      },
+      "differing_fields": [
+        "quality_weight"
+      ],
+      "routes": {
+        "A": {
+          "poi_ids": [
+            "supermarket_1",
+            "library_1",
+            "bank_1"
+          ],
+          "categories": [
+            "supermarket",
+            "library",
+            "bank"
+          ],
+          "coverage_count": 3,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.20000000000000004,
+          "distance_km": 5.972,
+          "duration_minutes": 126.9,
+          "arrival_minutes": 667,
+          "utility_under_own_candidate": -0.023180024278629786,
+          "status": "SUCCESS"
+        },
+        "B": {
+          "poi_ids": [
+            "supermarket_2",
+            "library_2",
+            "bank_2"
+          ],
+          "categories": [
+            "supermarket",
+            "library",
+            "bank"
+          ],
+          "coverage_count": 3,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.9,
+          "distance_km": 26.522,
+          "duration_minutes": 168.0,
+          "arrival_minutes": 708,
+          "utility_under_own_candidate": 0.5666625720437751,
+          "status": "SUCCESS"
+        }
+      },
+      "cross_constraints": {
+        "route_A_under_A": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_A_under_B": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_B_under_A": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_B_under_B": {
+          "task_success": true,
+          "reasons": []
+        }
+      },
+      "single_field_swaps": [
+        {
+          "base": "A",
+          "field_from_other": "quality_weight",
+          "hybrid_intent": {
+            "pois": [
+              "bank",
+              "library",
+              "supermarket"
+            ],
+            "time_limit": 1080,
+            "dependencies": [
+              [
+                "supermarket",
+                "bank"
+              ]
+            ],
+            "quality_weight": 0.75
+          },
+          "route": {
+            "poi_ids": [
+              "supermarket_2",
+              "library_2",
+              "bank_2"
+            ],
+            "categories": [
+              "supermarket",
+              "library",
+              "bank"
+            ],
+            "coverage_count": 3,
+            "is_valid": true,
+            "is_full_coverage": true,
+            "average_quality": 0.9,
+            "distance_km": 26.522,
+            "duration_minutes": 168.0,
+            "arrival_minutes": 708,
+            "utility_under_own_candidate": 0.5666625720437751,
+            "status": "SUCCESS"
+          }
+        },
+        {
+          "base": "B",
+          "field_from_other": "quality_weight",
+          "hybrid_intent": {
+            "pois": [
+              "bank",
+              "library",
+              "supermarket"
+            ],
+            "time_limit": 1080,
+            "dependencies": [
+              [
+                "supermarket",
+                "bank"
+              ]
+            ],
+            "quality_weight": 0.25
+          },
+          "route": {
+            "poi_ids": [
+              "supermarket_1",
+              "library_1",
+              "bank_1"
+            ],
+            "categories": [
+              "supermarket",
+              "library",
+              "bank"
+            ],
+            "coverage_count": 3,
+            "is_valid": true,
+            "is_full_coverage": true,
+            "average_quality": 0.20000000000000004,
+            "distance_km": 5.972,
+            "duration_minutes": 126.9,
+            "arrival_minutes": 667,
+            "utility_under_own_candidate": -0.023180024278629786,
+            "status": "SUCCESS"
+          }
+        }
+      ],
+      "limitations": [
+        "The report does not identify the user's true intent.",
+        "Both candidates may share the same error.",
+        "Single-field swaps do not identify higher-order interactions."
+      ]
+    }
+  },
+  {
+    "id": "reversed_preference_4",
+    "family": "reversed_preference",
+    "source_group": "pilot_07",
+    "instruction": "Today, make sure to visit the library, pharmacy, and supermarket. Please return by 17:00. Focus on visiting high-rated places, even if the route is slightly longer.",
+    "gold": {
+      "pois": [
+        "library",
+        "pharmacy",
+        "supermarket"
+      ],
+      "time_limit": 1020,
+      "dependencies": [],
+      "quality_weight": 0.75
+    },
+    "a": {
+      "pois": [
+        "library",
+        "pharmacy",
+        "supermarket"
+      ],
+      "time_limit": 1020,
+      "dependencies": [],
+      "quality_weight": 0.25
+    },
+    "b": {
+      "pois": [
+        "library",
+        "pharmacy",
+        "supermarket"
+      ],
+      "time_limit": 1020,
+      "dependencies": [],
+      "quality_weight": 0.75
+    },
+    "graph": "results/v5/development/20260909_s1_graphs_v3/pilot_07/tradeoff.json",
+    "baseline": {
+      "hard": true,
+      "direction": false,
+      "correct": false,
+      "tsr": true
+    },
+    "report": {
+      "report_version": "darc-v5.1-contrast-2",
+      "instruction": "Today, make sure to visit the library, pharmacy, and supermarket. Please return by 17:00. Focus on visiting high-rated places, even if the route is slightly longer.",
+      "candidate_A": {
+        "pois": [
+          "library",
+          "pharmacy",
+          "supermarket"
+        ],
+        "time_limit": 1020,
+        "dependencies": [],
+        "quality_weight": 0.25
+      },
+      "candidate_B": {
+        "pois": [
+          "library",
+          "pharmacy",
+          "supermarket"
+        ],
+        "time_limit": 1020,
+        "dependencies": [],
+        "quality_weight": 0.75
+      },
+      "candidate_evidence": {
+        "A": {},
+        "B": {}
+      },
+      "differing_fields": [
+        "quality_weight"
+      ],
+      "routes": {
+        "A": {
+          "poi_ids": [
+            "library_1",
+            "supermarket_1",
+            "pharmacy_1"
+          ],
+          "categories": [
+            "library",
+            "supermarket",
+            "pharmacy"
+          ],
+          "coverage_count": 3,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.20000000000000004,
+          "distance_km": 5.334,
+          "duration_minutes": 110.7,
+          "arrival_minutes": 651,
+          "utility_under_own_candidate": -0.015366126760486425,
+          "status": "SUCCESS"
+        },
+        "B": {
+          "poi_ids": [
+            "library_2",
+            "supermarket_2",
+            "pharmacy_2"
+          ],
+          "categories": [
+            "library",
+            "supermarket",
+            "pharmacy"
+          ],
+          "coverage_count": 3,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.9,
+          "distance_km": 26.025,
+          "duration_minutes": 152.0,
+          "arrival_minutes": 692,
+          "utility_under_own_candidate": 0.5686952608957413,
+          "status": "SUCCESS"
+        }
+      },
+      "cross_constraints": {
+        "route_A_under_A": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_A_under_B": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_B_under_A": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_B_under_B": {
+          "task_success": true,
+          "reasons": []
+        }
+      },
+      "single_field_swaps": [
+        {
+          "base": "A",
+          "field_from_other": "quality_weight",
+          "hybrid_intent": {
+            "pois": [
+              "library",
+              "pharmacy",
+              "supermarket"
+            ],
+            "time_limit": 1020,
+            "dependencies": [],
+            "quality_weight": 0.75
+          },
+          "route": {
+            "poi_ids": [
+              "library_2",
+              "supermarket_2",
+              "pharmacy_2"
+            ],
+            "categories": [
+              "library",
+              "supermarket",
+              "pharmacy"
+            ],
+            "coverage_count": 3,
+            "is_valid": true,
+            "is_full_coverage": true,
+            "average_quality": 0.9,
+            "distance_km": 26.025,
+            "duration_minutes": 152.0,
+            "arrival_minutes": 692,
+            "utility_under_own_candidate": 0.5686952608957413,
+            "status": "SUCCESS"
+          }
+        },
+        {
+          "base": "B",
+          "field_from_other": "quality_weight",
+          "hybrid_intent": {
+            "pois": [
+              "library",
+              "pharmacy",
+              "supermarket"
+            ],
+            "time_limit": 1020,
+            "dependencies": [],
+            "quality_weight": 0.25
+          },
+          "route": {
+            "poi_ids": [
+              "library_1",
+              "supermarket_1",
+              "pharmacy_1"
+            ],
+            "categories": [
+              "library",
+              "supermarket",
+              "pharmacy"
+            ],
+            "coverage_count": 3,
+            "is_valid": true,
+            "is_full_coverage": true,
+            "average_quality": 0.20000000000000004,
+            "distance_km": 5.334,
+            "duration_minutes": 110.7,
+            "arrival_minutes": 651,
+            "utility_under_own_candidate": -0.015366126760486425,
+            "status": "SUCCESS"
+          }
+        }
+      ],
+      "limitations": [
+        "The report does not identify the user's true intent.",
+        "Both candidates may share the same error.",
+        "Single-field swaps do not identify higher-order interactions."
+      ]
+    }
+  },
+  {
+    "id": "both_correct_1",
+    "family": "both_correct",
+    "source_group": "pilot_02",
+    "instruction": "Make sure to visit the supermarket and the pharmacy today. Balance your stops to maintain both reasonable ratings and efficiency along the route. Start your trip at the supermarket before heading to the pharmacy.",
+    "gold": {
+      "pois": [
+        "pharmacy",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "supermarket",
+          "pharmacy"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "a": {
+      "pois": [
+        "pharmacy",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "supermarket",
+          "pharmacy"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "b": {
+      "pois": [
+        "pharmacy",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "supermarket",
+          "pharmacy"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "graph": "results/v5/development/20260909_s1_graphs_v3/pilot_02/tradeoff.json",
+    "baseline": {
+      "hard": true,
+      "direction": true,
+      "correct": true,
+      "tsr": true
+    },
+    "report": {
+      "report_version": "darc-v5.1-contrast-2",
+      "instruction": "Make sure to visit the supermarket and the pharmacy today. Balance your stops to maintain both reasonable ratings and efficiency along the route. Start your trip at the supermarket before heading to the pharmacy.",
+      "candidate_A": {
+        "pois": [
+          "pharmacy",
+          "supermarket"
+        ],
+        "time_limit": null,
+        "dependencies": [
+          [
+            "supermarket",
+            "pharmacy"
+          ]
+        ],
+        "quality_weight": 0.5
+      },
+      "candidate_B": {
+        "pois": [
+          "pharmacy",
+          "supermarket"
+        ],
+        "time_limit": null,
+        "dependencies": [
+          [
+            "supermarket",
+            "pharmacy"
+          ]
+        ],
+        "quality_weight": 0.5
+      },
+      "candidate_evidence": {
+        "A": {},
+        "B": {}
+      },
+      "differing_fields": [],
+      "routes": {
+        "A": {
+          "poi_ids": [
+            "supermarket_2",
+            "pharmacy_2"
+          ],
+          "categories": [
+            "supermarket",
+            "pharmacy"
+          ],
+          "coverage_count": 2,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.9,
+          "distance_km": 17.043,
+          "duration_minutes": 89.1,
+          "arrival_minutes": 629,
+          "utility_under_own_candidate": 0.3107691137809123,
+          "status": "SUCCESS"
+        },
+        "B": {
+          "poi_ids": [
+            "supermarket_2",
+            "pharmacy_2"
+          ],
+          "categories": [
+            "supermarket",
+            "pharmacy"
+          ],
+          "coverage_count": 2,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.9,
+          "distance_km": 17.043,
+          "duration_minutes": 89.1,
+          "arrival_minutes": 629,
+          "utility_under_own_candidate": 0.3107691137809123,
+          "status": "SUCCESS"
+        }
+      },
+      "cross_constraints": {
+        "route_A_under_A": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_A_under_B": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_B_under_A": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_B_under_B": {
+          "task_success": true,
+          "reasons": []
+        }
+      },
+      "single_field_swaps": [],
+      "limitations": [
+        "The report does not identify the user's true intent.",
+        "Both candidates may share the same error.",
+        "Single-field swaps do not identify higher-order interactions."
+      ]
+    }
+  },
+  {
+    "id": "both_correct_2",
+    "family": "both_correct",
+    "source_group": "pilot_03",
+    "instruction": "Today, make sure to visit the pharmacy and the shopping mall. Try to find a balance between visiting well-rated places and keeping the route efficient. There are no specific dependencies on the order of visits, so feel free to choose the sequence that works best for you.",
+    "gold": {
+      "pois": [
+        "pharmacy",
+        "shopping_mall"
+      ],
+      "time_limit": null,
+      "dependencies": [],
+      "quality_weight": 0.5
+    },
+    "a": {
+      "pois": [
+        "pharmacy",
+        "shopping_mall"
+      ],
+      "time_limit": null,
+      "dependencies": [],
+      "quality_weight": 0.5
+    },
+    "b": {
+      "pois": [
+        "pharmacy",
+        "shopping_mall"
+      ],
+      "time_limit": null,
+      "dependencies": [],
+      "quality_weight": 0.5
+    },
+    "graph": "results/v5/development/20260909_s1_graphs_v3/pilot_03/tradeoff.json",
+    "baseline": {
+      "hard": true,
+      "direction": true,
+      "correct": true,
+      "tsr": true
+    },
+    "report": {
+      "report_version": "darc-v5.1-contrast-2",
+      "instruction": "Today, make sure to visit the pharmacy and the shopping mall. Try to find a balance between visiting well-rated places and keeping the route efficient. There are no specific dependencies on the order of visits, so feel free to choose the sequence that works best for you.",
+      "candidate_A": {
+        "pois": [
+          "pharmacy",
+          "shopping_mall"
+        ],
+        "time_limit": null,
+        "dependencies": [],
+        "quality_weight": 0.5
+      },
+      "candidate_B": {
+        "pois": [
+          "pharmacy",
+          "shopping_mall"
+        ],
+        "time_limit": null,
+        "dependencies": [],
+        "quality_weight": 0.5
+      },
+      "candidate_evidence": {
+        "A": {},
+        "B": {}
+      },
+      "differing_fields": [],
+      "routes": {
+        "A": {
+          "poi_ids": [
+            "pharmacy_2",
+            "shopping_mall_2"
+          ],
+          "categories": [
+            "pharmacy",
+            "shopping_mall"
+          ],
+          "coverage_count": 2,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.9,
+          "distance_km": 19.025,
+          "duration_minutes": 113.1,
+          "arrival_minutes": 653,
+          "utility_under_own_candidate": 0.2945720088008291,
+          "status": "SUCCESS"
+        },
+        "B": {
+          "poi_ids": [
+            "pharmacy_2",
+            "shopping_mall_2"
+          ],
+          "categories": [
+            "pharmacy",
+            "shopping_mall"
+          ],
+          "coverage_count": 2,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.9,
+          "distance_km": 19.025,
+          "duration_minutes": 113.1,
+          "arrival_minutes": 653,
+          "utility_under_own_candidate": 0.2945720088008291,
+          "status": "SUCCESS"
+        }
+      },
+      "cross_constraints": {
+        "route_A_under_A": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_A_under_B": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_B_under_A": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_B_under_B": {
+          "task_success": true,
+          "reasons": []
+        }
+      },
+      "single_field_swaps": [],
+      "limitations": [
+        "The report does not identify the user's true intent.",
+        "Both candidates may share the same error.",
+        "Single-field swaps do not identify higher-order interactions."
+      ]
+    }
+  },
+  {
+    "id": "both_correct_3",
+    "family": "both_correct",
+    "source_group": "pilot_04",
+    "instruction": "Today, make sure to visit the bank and the library. Please be back by 18:00. It's essential to prioritize a quick and efficient route for these visits.",
+    "gold": {
+      "pois": [
+        "bank",
+        "library"
+      ],
+      "time_limit": 1080,
+      "dependencies": [],
+      "quality_weight": 0.25
+    },
+    "a": {
+      "pois": [
+        "bank",
+        "library"
+      ],
+      "time_limit": 1080,
+      "dependencies": [],
+      "quality_weight": 0.25
+    },
+    "b": {
+      "pois": [
+        "bank",
+        "library"
+      ],
+      "time_limit": 1080,
+      "dependencies": [],
+      "quality_weight": 0.25
+    },
+    "graph": "results/v5/development/20260909_s1_graphs_v3/pilot_04/tradeoff.json",
+    "baseline": {
+      "hard": true,
+      "direction": true,
+      "correct": true,
+      "tsr": true
+    },
+    "report": {
+      "report_version": "darc-v5.1-contrast-2",
+      "instruction": "Today, make sure to visit the bank and the library. Please be back by 18:00. It's essential to prioritize a quick and efficient route for these visits.",
+      "candidate_A": {
+        "pois": [
+          "bank",
+          "library"
+        ],
+        "time_limit": 1080,
+        "dependencies": [],
+        "quality_weight": 0.25
+      },
+      "candidate_B": {
+        "pois": [
+          "bank",
+          "library"
+        ],
+        "time_limit": 1080,
+        "dependencies": [],
+        "quality_weight": 0.25
+      },
+      "candidate_evidence": {
+        "A": {},
+        "B": {}
+      },
+      "differing_fields": [],
+      "routes": {
+        "A": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage_count": 2,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.9,
+          "distance_km": 17.486,
+          "duration_minutes": 110.0,
+          "arrival_minutes": 650,
+          "utility_under_own_candidate": 0.010715210057114177,
+          "status": "SUCCESS"
+        },
+        "B": {
+          "poi_ids": [
+            "bank_2",
+            "library_2"
+          ],
+          "categories": [
+            "bank",
+            "library"
+          ],
+          "coverage_count": 2,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.9,
+          "distance_km": 17.486,
+          "duration_minutes": 110.0,
+          "arrival_minutes": 650,
+          "utility_under_own_candidate": 0.010715210057114177,
+          "status": "SUCCESS"
+        }
+      },
+      "cross_constraints": {
+        "route_A_under_A": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_A_under_B": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_B_under_A": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_B_under_B": {
+          "task_success": true,
+          "reasons": []
+        }
+      },
+      "single_field_swaps": [],
+      "limitations": [
+        "The report does not identify the user's true intent.",
+        "Both candidates may share the same error.",
+        "Single-field swaps do not identify higher-order interactions."
+      ]
+    }
+  },
+  {
+    "id": "both_correct_4",
+    "family": "both_correct",
+    "source_group": "pilot_08",
+    "instruction": "Today, let's visit the library, the shopping mall, and the supermarket. I would like to keep a good balance between visiting well-rated places and having an efficient route. Make sure to stop by the shopping mall before heading to the supermarket.",
+    "gold": {
+      "pois": [
+        "library",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "shopping_mall",
+          "supermarket"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "a": {
+      "pois": [
+        "library",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "shopping_mall",
+          "supermarket"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "b": {
+      "pois": [
+        "library",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "shopping_mall",
+          "supermarket"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "graph": "results/v5/development/20260909_s1_graphs_v3/pilot_08/tradeoff.json",
+    "baseline": {
+      "hard": true,
+      "direction": true,
+      "correct": true,
+      "tsr": true
+    },
+    "report": {
+      "report_version": "darc-v5.1-contrast-2",
+      "instruction": "Today, let's visit the library, the shopping mall, and the supermarket. I would like to keep a good balance between visiting well-rated places and having an efficient route. Make sure to stop by the shopping mall before heading to the supermarket.",
+      "candidate_A": {
+        "pois": [
+          "library",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "time_limit": null,
+        "dependencies": [
+          [
+            "shopping_mall",
+            "supermarket"
+          ]
+        ],
+        "quality_weight": 0.5
+      },
+      "candidate_B": {
+        "pois": [
+          "library",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "time_limit": null,
+        "dependencies": [
+          [
+            "shopping_mall",
+            "supermarket"
+          ]
+        ],
+        "quality_weight": 0.5
+      },
+      "candidate_evidence": {
+        "A": {},
+        "B": {}
+      },
+      "differing_fields": [],
+      "routes": {
+        "A": {
+          "poi_ids": [
+            "library_2",
+            "shopping_mall_2",
+            "supermarket_2"
+          ],
+          "categories": [
+            "library",
+            "shopping_mall",
+            "supermarket"
+          ],
+          "coverage_count": 3,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.9,
+          "distance_km": 20.441,
+          "duration_minutes": 185.9,
+          "arrival_minutes": 726,
+          "utility_under_own_candidate": 0.28300601790843904,
+          "status": "SUCCESS"
+        },
+        "B": {
+          "poi_ids": [
+            "library_2",
+            "shopping_mall_2",
+            "supermarket_2"
+          ],
+          "categories": [
+            "library",
+            "shopping_mall",
+            "supermarket"
+          ],
+          "coverage_count": 3,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.9,
+          "distance_km": 20.441,
+          "duration_minutes": 185.9,
+          "arrival_minutes": 726,
+          "utility_under_own_candidate": 0.28300601790843904,
+          "status": "SUCCESS"
+        }
+      },
+      "cross_constraints": {
+        "route_A_under_A": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_A_under_B": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_B_under_A": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_B_under_B": {
+          "task_success": true,
+          "reasons": []
+        }
+      },
+      "single_field_swaps": [],
+      "limitations": [
+        "The report does not identify the user's true intent.",
+        "Both candidates may share the same error.",
+        "Single-field swaps do not identify higher-order interactions."
+      ]
+    }
+  },
+  {
+    "id": "common_error_1",
+    "family": "common_error",
+    "source_group": "pilot_01",
+    "instruction": "Today, you'll be visiting the shopping mall and the supermarket. Make sure to be back by 22:00. Since time efficiency is a priority, try to keep your route as direct as possible. Remember to visit the shopping mall before heading to the supermarket.",
+    "gold": {
+      "pois": [
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": 1320,
+      "dependencies": [
+        [
+          "shopping_mall",
+          "supermarket"
+        ]
+      ],
+      "quality_weight": 0.25
+    },
+    "a": {
+      "pois": [
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": 1320,
+      "dependencies": [
+        [
+          "supermarket",
+          "shopping_mall"
+        ]
+      ],
+      "quality_weight": 0.25
+    },
+    "b": {
+      "pois": [
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": 1320,
+      "dependencies": [
+        [
+          "supermarket",
+          "shopping_mall"
+        ]
+      ],
+      "quality_weight": 0.25
+    },
+    "graph": "results/v5/development/20260909_s1_graphs_v3/pilot_01/tradeoff.json",
+    "baseline": {
+      "hard": false,
+      "direction": true,
+      "correct": false,
+      "tsr": false
+    },
+    "report": {
+      "report_version": "darc-v5.1-contrast-2",
+      "instruction": "Today, you'll be visiting the shopping mall and the supermarket. Make sure to be back by 22:00. Since time efficiency is a priority, try to keep your route as direct as possible. Remember to visit the shopping mall before heading to the supermarket.",
+      "candidate_A": {
+        "pois": [
+          "shopping_mall",
+          "supermarket"
+        ],
+        "time_limit": 1320,
+        "dependencies": [
+          [
+            "supermarket",
+            "shopping_mall"
+          ]
+        ],
+        "quality_weight": 0.25
+      },
+      "candidate_B": {
+        "pois": [
+          "shopping_mall",
+          "supermarket"
+        ],
+        "time_limit": 1320,
+        "dependencies": [
+          [
+            "supermarket",
+            "shopping_mall"
+          ]
+        ],
+        "quality_weight": 0.25
+      },
+      "candidate_evidence": {
+        "A": {},
+        "B": {}
+      },
+      "differing_fields": [],
+      "routes": {
+        "A": {
+          "poi_ids": [
+            "supermarket_2",
+            "shopping_mall_2"
+          ],
+          "categories": [
+            "supermarket",
+            "shopping_mall"
+          ],
+          "coverage_count": 2,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.9,
+          "distance_km": 14.063,
+          "duration_minutes": 128.1,
+          "arrival_minutes": 668,
+          "utility_under_own_candidate": 0.05266712035904311,
+          "status": "SUCCESS"
+        },
+        "B": {
+          "poi_ids": [
+            "supermarket_2",
+            "shopping_mall_2"
+          ],
+          "categories": [
+            "supermarket",
+            "shopping_mall"
+          ],
+          "coverage_count": 2,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.9,
+          "distance_km": 14.063,
+          "duration_minutes": 128.1,
+          "arrival_minutes": 668,
+          "utility_under_own_candidate": 0.05266712035904311,
+          "status": "SUCCESS"
+        }
+      },
+      "cross_constraints": {
+        "route_A_under_A": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_A_under_B": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_B_under_A": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_B_under_B": {
+          "task_success": true,
+          "reasons": []
+        }
+      },
+      "single_field_swaps": [],
+      "limitations": [
+        "The report does not identify the user's true intent.",
+        "Both candidates may share the same error.",
+        "Single-field swaps do not identify higher-order interactions."
+      ]
+    }
+  },
+  {
+    "id": "common_error_2",
+    "family": "common_error",
+    "source_group": "pilot_02",
+    "instruction": "Make sure to visit the supermarket and the pharmacy today. Balance your stops to maintain both reasonable ratings and efficiency along the route. Start your trip at the supermarket before heading to the pharmacy.",
+    "gold": {
+      "pois": [
+        "pharmacy",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "supermarket",
+          "pharmacy"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "a": {
+      "pois": [
+        "pharmacy",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "pharmacy",
+          "supermarket"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "b": {
+      "pois": [
+        "pharmacy",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "pharmacy",
+          "supermarket"
+        ]
+      ],
+      "quality_weight": 0.5
+    },
+    "graph": "results/v5/development/20260909_s1_graphs_v3/pilot_02/tradeoff.json",
+    "baseline": {
+      "hard": false,
+      "direction": true,
+      "correct": false,
+      "tsr": false
+    },
+    "report": {
+      "report_version": "darc-v5.1-contrast-2",
+      "instruction": "Make sure to visit the supermarket and the pharmacy today. Balance your stops to maintain both reasonable ratings and efficiency along the route. Start your trip at the supermarket before heading to the pharmacy.",
+      "candidate_A": {
+        "pois": [
+          "pharmacy",
+          "supermarket"
+        ],
+        "time_limit": null,
+        "dependencies": [
+          [
+            "pharmacy",
+            "supermarket"
+          ]
+        ],
+        "quality_weight": 0.5
+      },
+      "candidate_B": {
+        "pois": [
+          "pharmacy",
+          "supermarket"
+        ],
+        "time_limit": null,
+        "dependencies": [
+          [
+            "pharmacy",
+            "supermarket"
+          ]
+        ],
+        "quality_weight": 0.5
+      },
+      "candidate_evidence": {
+        "A": {},
+        "B": {}
+      },
+      "differing_fields": [],
+      "routes": {
+        "A": {
+          "poi_ids": [
+            "pharmacy_2",
+            "supermarket_2"
+          ],
+          "categories": [
+            "pharmacy",
+            "supermarket"
+          ],
+          "coverage_count": 2,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.9,
+          "distance_km": 17.043,
+          "duration_minutes": 89.1,
+          "arrival_minutes": 629,
+          "utility_under_own_candidate": 0.3107691137809123,
+          "status": "SUCCESS"
+        },
+        "B": {
+          "poi_ids": [
+            "pharmacy_2",
+            "supermarket_2"
+          ],
+          "categories": [
+            "pharmacy",
+            "supermarket"
+          ],
+          "coverage_count": 2,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.9,
+          "distance_km": 17.043,
+          "duration_minutes": 89.1,
+          "arrival_minutes": 629,
+          "utility_under_own_candidate": 0.3107691137809123,
+          "status": "SUCCESS"
+        }
+      },
+      "cross_constraints": {
+        "route_A_under_A": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_A_under_B": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_B_under_A": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_B_under_B": {
+          "task_success": true,
+          "reasons": []
+        }
+      },
+      "single_field_swaps": [],
+      "limitations": [
+        "The report does not identify the user's true intent.",
+        "Both candidates may share the same error.",
+        "Single-field swaps do not identify higher-order interactions."
+      ]
+    }
+  },
+  {
+    "id": "common_error_3",
+    "family": "common_error",
+    "source_group": "pilot_05",
+    "instruction": "Today, make sure to visit the bank, library, and pharmacy. It's important to prioritize places with the best ratings. Also, please go to the bank before heading to the library.",
+    "gold": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "bank",
+          "library"
+        ]
+      ],
+      "quality_weight": 0.75
+    },
+    "a": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "library",
+          "bank"
+        ]
+      ],
+      "quality_weight": 0.75
+    },
+    "b": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "library",
+          "bank"
+        ]
+      ],
+      "quality_weight": 0.75
+    },
+    "graph": "results/v5/development/20260909_s1_graphs_v3/pilot_05/tradeoff.json",
+    "baseline": {
+      "hard": false,
+      "direction": true,
+      "correct": false,
+      "tsr": false
+    },
+    "report": {
+      "report_version": "darc-v5.1-contrast-2",
+      "instruction": "Today, make sure to visit the bank, library, and pharmacy. It's important to prioritize places with the best ratings. Also, please go to the bank before heading to the library.",
+      "candidate_A": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy"
+        ],
+        "time_limit": null,
+        "dependencies": [
+          [
+            "library",
+            "bank"
+          ]
+        ],
+        "quality_weight": 0.75
+      },
+      "candidate_B": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy"
+        ],
+        "time_limit": null,
+        "dependencies": [
+          [
+            "library",
+            "bank"
+          ]
+        ],
+        "quality_weight": 0.75
+      },
+      "candidate_evidence": {
+        "A": {},
+        "B": {}
+      },
+      "differing_fields": [],
+      "routes": {
+        "A": {
+          "poi_ids": [
+            "library_2",
+            "bank_2",
+            "pharmacy_2"
+          ],
+          "categories": [
+            "library",
+            "bank",
+            "pharmacy"
+          ],
+          "coverage_count": 3,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.9,
+          "distance_km": 23.273,
+          "duration_minutes": 136.5,
+          "arrival_minutes": 677,
+          "utility_under_own_candidate": 0.5799365402145622,
+          "status": "SUCCESS"
+        },
+        "B": {
+          "poi_ids": [
+            "library_2",
+            "bank_2",
+            "pharmacy_2"
+          ],
+          "categories": [
+            "library",
+            "bank",
+            "pharmacy"
+          ],
+          "coverage_count": 3,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.9,
+          "distance_km": 23.273,
+          "duration_minutes": 136.5,
+          "arrival_minutes": 677,
+          "utility_under_own_candidate": 0.5799365402145622,
+          "status": "SUCCESS"
+        }
+      },
+      "cross_constraints": {
+        "route_A_under_A": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_A_under_B": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_B_under_A": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_B_under_B": {
+          "task_success": true,
+          "reasons": []
+        }
+      },
+      "single_field_swaps": [],
+      "limitations": [
+        "The report does not identify the user's true intent.",
+        "Both candidates may share the same error.",
+        "Single-field swaps do not identify higher-order interactions."
+      ]
+    }
+  },
+  {
+    "id": "common_error_4",
+    "family": "common_error",
+    "source_group": "pilot_06",
+    "instruction": "Today, you need to visit the library, supermarket, and bank. Make sure to be back by 18:00. Aim for a route that allows you to complete everything efficiently. Also, remember to stop by the supermarket before heading to the bank.",
+    "gold": {
+      "pois": [
+        "bank",
+        "library",
+        "supermarket"
+      ],
+      "time_limit": 1080,
+      "dependencies": [
+        [
+          "supermarket",
+          "bank"
+        ]
+      ],
+      "quality_weight": 0.25
+    },
+    "a": {
+      "pois": [
+        "bank",
+        "library",
+        "supermarket"
+      ],
+      "time_limit": 1080,
+      "dependencies": [
+        [
+          "bank",
+          "supermarket"
+        ]
+      ],
+      "quality_weight": 0.25
+    },
+    "b": {
+      "pois": [
+        "bank",
+        "library",
+        "supermarket"
+      ],
+      "time_limit": 1080,
+      "dependencies": [
+        [
+          "bank",
+          "supermarket"
+        ]
+      ],
+      "quality_weight": 0.25
+    },
+    "graph": "results/v5/development/20260909_s1_graphs_v3/pilot_06/tradeoff.json",
+    "baseline": {
+      "hard": false,
+      "direction": true,
+      "correct": false,
+      "tsr": false
+    },
+    "report": {
+      "report_version": "darc-v5.1-contrast-2",
+      "instruction": "Today, you need to visit the library, supermarket, and bank. Make sure to be back by 18:00. Aim for a route that allows you to complete everything efficiently. Also, remember to stop by the supermarket before heading to the bank.",
+      "candidate_A": {
+        "pois": [
+          "bank",
+          "library",
+          "supermarket"
+        ],
+        "time_limit": 1080,
+        "dependencies": [
+          [
+            "bank",
+            "supermarket"
+          ]
+        ],
+        "quality_weight": 0.25
+      },
+      "candidate_B": {
+        "pois": [
+          "bank",
+          "library",
+          "supermarket"
+        ],
+        "time_limit": 1080,
+        "dependencies": [
+          [
+            "bank",
+            "supermarket"
+          ]
+        ],
+        "quality_weight": 0.25
+      },
+      "candidate_evidence": {
+        "A": {},
+        "B": {}
+      },
+      "differing_fields": [],
+      "routes": {
+        "A": {
+          "poi_ids": [
+            "bank_1",
+            "library_1",
+            "supermarket_1"
+          ],
+          "categories": [
+            "bank",
+            "library",
+            "supermarket"
+          ],
+          "coverage_count": 3,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.20000000000000004,
+          "distance_km": 5.972,
+          "duration_minutes": 126.9,
+          "arrival_minutes": 667,
+          "utility_under_own_candidate": -0.023180024278629786,
+          "status": "SUCCESS"
+        },
+        "B": {
+          "poi_ids": [
+            "bank_1",
+            "library_1",
+            "supermarket_1"
+          ],
+          "categories": [
+            "bank",
+            "library",
+            "supermarket"
+          ],
+          "coverage_count": 3,
+          "is_valid": true,
+          "is_full_coverage": true,
+          "average_quality": 0.20000000000000004,
+          "distance_km": 5.972,
+          "duration_minutes": 126.9,
+          "arrival_minutes": 667,
+          "utility_under_own_candidate": -0.023180024278629786,
+          "status": "SUCCESS"
+        }
+      },
+      "cross_constraints": {
+        "route_A_under_A": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_A_under_B": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_B_under_A": {
+          "task_success": true,
+          "reasons": []
+        },
+        "route_B_under_B": {
+          "task_success": true,
+          "reasons": []
+        }
+      },
+      "single_field_swaps": [],
+      "limitations": [
+        "The report does not identify the user's true intent.",
+        "Both candidates may share the same error.",
+        "Single-field swaps do not identify higher-order interactions."
+      ]
+    }
+  }
+]

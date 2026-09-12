@@ -1,0 +1,102 @@
+{
+  "status": "PASS_OFFLINE_COUNTERFACTUAL",
+  "cases": [
+    {
+      "uid": "h20241029143502525564",
+      "nature_language": "[当前位置深圳,目标位置重庆,旅行人数3,旅行天数3] 我们一家人想去重庆玩，打算坐飞机，预算4000，帮我们安排一个行程，想品尝重庆美食。",
+      "field": "cuisine",
+      "model_value": "重庆美食",
+      "official_clauses": [
+        "restaurant_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_type_set.add(restaurant_type(activity, target_city(plan)))\nresult=({'川菜'}<=restaurant_type_set)"
+      ],
+      "variants": [
+        {
+          "variant": "model_raw",
+          "value": "重庆美食",
+          "compiled_clauses": [
+            "result=(day_count(plan)==3)",
+            "result=(people_count(plan)==3)",
+            "total=0\nfor activity in allactivities(plan):\n total+=activity_cost(activity)\n total+=innercity_transport_cost(activity_transports(activity))\nresult=(total<=4000)",
+            "result=True\nfor activity in allactivities(plan):\n if activity_type(activity) in [\"train\",\"airplane\"] and intercity_transport_type(activity)!=\"airplane\": result=False",
+            "found=False\nfor activity in allactivities(plan):\n if activity_type(activity) in [\"breakfast\",\"lunch\",\"dinner\"] and restaurant_type(activity,target_city(plan))==\"重庆美食\": found=True\nresult=found"
+          ],
+          "target_function": "restaurant_type"
+        },
+        {
+          "variant": "null",
+          "value": null,
+          "compiled_clauses": [
+            "result=(day_count(plan)==3)",
+            "result=(people_count(plan)==3)",
+            "total=0\nfor activity in allactivities(plan):\n total+=activity_cost(activity)\n total+=innercity_transport_cost(activity_transports(activity))\nresult=(total<=4000)",
+            "result=True\nfor activity in allactivities(plan):\n if activity_type(activity) in [\"train\",\"airplane\"] and intercity_transport_type(activity)!=\"airplane\": result=False"
+          ],
+          "target_function": "restaurant_type"
+        },
+        {
+          "variant": "official_mapped",
+          "value": "川菜",
+          "compiled_clauses": [
+            "result=(day_count(plan)==3)",
+            "result=(people_count(plan)==3)",
+            "total=0\nfor activity in allactivities(plan):\n total+=activity_cost(activity)\n total+=innercity_transport_cost(activity_transports(activity))\nresult=(total<=4000)",
+            "result=True\nfor activity in allactivities(plan):\n if activity_type(activity) in [\"train\",\"airplane\"] and intercity_transport_type(activity)!=\"airplane\": result=False",
+            "found=False\nfor activity in allactivities(plan):\n if activity_type(activity) in [\"breakfast\",\"lunch\",\"dinner\"] and restaurant_type(activity,target_city(plan))==\"川菜\": found=True\nresult=found"
+          ],
+          "target_function": "restaurant_type"
+        }
+      ],
+      "interpretation": "官方 DSL hard_logic_py 要求 restaurant_type=川菜；原句的重庆美食是自然语言地域描述。",
+      "status": "ONTOLOGY_MISMATCH_REQUIRES_REVIEW"
+    },
+    {
+      "uid": "h20241029143504074288",
+      "nature_language": "[当前位置苏州,目标位置北京,旅行人数2,旅行天数4] 我和男朋友想从苏州出发去北京玩，大约4天，预算两个人共3000左右，希望游览历史人文相关的景点，想去看北京大学，请给我一个旅行计划",
+      "field": "attraction_category",
+      "model_value": "历史人文",
+      "official_clauses": [
+        "attraction_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_type_set.add(attraction_type(activity, target_city(plan)))\nresult=({'历史古迹'}<=attraction_type_set or {'人文景观'}<=attraction_type_set)"
+      ],
+      "variants": [
+        {
+          "variant": "model_raw",
+          "value": "历史人文",
+          "compiled_clauses": [
+            "result=(day_count(plan)==4)",
+            "result=(people_count(plan)==2)",
+            "total=0\nfor activity in allactivities(plan):\n total+=activity_cost(activity)\n total+=innercity_transport_cost(activity_transports(activity))\nresult=(total<=3000)",
+            "found=False\nfor activity in allactivities(plan):\n if activity_type(activity)==\"attraction\" and attraction_type(activity,target_city(plan))==\"历史人文\": found=True\nresult=found"
+          ],
+          "target_function": "attraction_type"
+        },
+        {
+          "variant": "null",
+          "value": null,
+          "compiled_clauses": [
+            "result=(day_count(plan)==4)",
+            "result=(people_count(plan)==2)",
+            "total=0\nfor activity in allactivities(plan):\n total+=activity_cost(activity)\n total+=innercity_transport_cost(activity_transports(activity))\nresult=(total<=3000)"
+          ],
+          "target_function": "attraction_type"
+        },
+        {
+          "variant": "official_mapped",
+          "value": "人文景观",
+          "compiled_clauses": [
+            "result=(day_count(plan)==4)",
+            "result=(people_count(plan)==2)",
+            "total=0\nfor activity in allactivities(plan):\n total+=activity_cost(activity)\n total+=innercity_transport_cost(activity_transports(activity))\nresult=(total<=3000)",
+            "found=False\nfor activity in allactivities(plan):\n if activity_type(activity)==\"attraction\" and attraction_type(activity,target_city(plan))==\"人文景观\": found=True\nresult=found"
+          ],
+          "target_function": "attraction_type"
+        }
+      ],
+      "interpretation": "官方 DSL 接受 历史古迹 或 人文景观；原句的历史人文是较宽泛描述。",
+      "status": "ONTOLOGY_MISMATCH_REQUIRES_REVIEW"
+    }
+  ],
+  "model_calls": 0,
+  "planner_calls": 0,
+  "conclusion": "Both mismatches change the compiled ontology constraint; no end-to-end score was imputed because no model plan was generated in this analysis.",
+  "next_action": "If continuing, implement an explicit ontology-aware parser contract and test it on a fresh audited slice; do not silently map values in scoring."
+}

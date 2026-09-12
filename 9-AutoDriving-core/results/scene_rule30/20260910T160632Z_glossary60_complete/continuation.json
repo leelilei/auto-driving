@@ -1,0 +1,30 @@
+{
+  "parent": "9-AutoDriving-core/results/scene_rule30/20260910T155338Z_glossary60_c2_finish",
+  "inherited_answers": {
+    "R01__r1__glossary.a1.json": "96c0b87711ffebe87e4b0614d4a300dcd4ae8cdff9b585aca5c269a721fc0cab",
+    "R02__r1__glossary.a1.json": "6b6aa66e0f0b33a7f63cbb98b545c80ed6d388f0d15e49dacb827e8dcb18926c",
+    "R03__r1__glossary.a1.json": "bfd115d8a29400d2982c7a5f4e6f0cbefe6ae35a0da6b0f73a33df880d8f970e",
+    "R04__r1__glossary.a1.json": "0e29b9382f8192a56a0a38182199fb36becd947554d036139e349e2ef9ea8ccb",
+    "R05__r1__glossary.a1.json": "3737cbb36f12b28a8d4a550b7ca7ad3fda594b280f58477daa51b9ca9f0e1c36",
+    "R06__r1__glossary.a1.json": "bb0e4e640704088814e537e84abc25e88ccd36e1059cfe09141e690a1ac08a77",
+    "R09__r1__glossary.a1.json": "c42412cf349a61237e4455f7688a684590c257dc443cb6124da65c3ad7bb1c32",
+    "R10__r1__glossary.a1.json": "c317b47bae6364c1432d06c28157a202d544c1dcb7cb1e9755e9d48ec79364ad",
+    "R11__r1__glossary.a1.json": "b58f15b16d716a956f063623f7424af75f8aaa468fd8ad63df6ede2b2058f160",
+    "R13__r1__glossary.a1.json": "9cb61cfe0e97bf50d8be9fcdc088bb1e1d0afe927b260b48b350a13aa4232703",
+    "R15__r1__glossary.a1.json": "3bf82dee0b2e21c0a6e9129cc4f900599b5809ebb2caed2da90efdcf8f1fb197",
+    "R16__r1__glossary.a1.json": "5cc98e0a9f7dbb176199278d942d66a15da223808e62f15642416862a5f8e11b",
+    "R18__r1__glossary.a1.json": "9bf9f1f0f53e2d5b9b3c0a27ec04ef16f8826f062530545126939f41cd398342",
+    "R20__r1__glossary.a1.json": "b3c712a1ce424e823bbbf4d02feda3e2f2396a56b283f37917b034adc952ab40",
+    "R21__r1__glossary.a1.json": "a05b76cf12a4348eb8548fbee490533de8fb7de5f8aa0340ff58f2df5682ae0f",
+    "R22__r1__glossary.a1.json": "8873e2a47f98b37f003df4a01111dbbd1a5c8df4db1350e2655accac8913c706",
+    "R23__r1__glossary.a1.json": "e7faa480b56f05ff0695ae60c880e15503d505b70f29b3d96007db85d6543561",
+    "R24__r1__glossary.a1.json": "c9c778d9a54c803a7a0237424fb8e6f6b7246ed299d3145fd3831f7b89b9bd47",
+    "R27__r1__glossary.a1.json": "825cfc130d102405d828801ca4c3575415d64b8bc2c34ce817da5d35749258dc",
+    "R28__r1__glossary.a1.json": "5ad3319182d6c602dae0fdf2dac194e88c135dc5e8f21f1ddbee0969d06e807b",
+    "R01__r2__glossary.a1.json": "fb7362d58da14f0d27559ecfda009901ee83befd456092f1c6de0cf693d92994"
+  },
+  "previous_transport_failures": 51,
+  "combined_budget": 123,
+  "reason": "Same task over HTTP/1.1 c2 after transient TLS failures; delay retries to later batches. Valid answers remain unchanged.",
+  "diagnostic": "User authorized completing remaining39; HEAD returned200 before this continuation. New physical budget51:39 pending plus12 retries. Same endpoint and model."
+}

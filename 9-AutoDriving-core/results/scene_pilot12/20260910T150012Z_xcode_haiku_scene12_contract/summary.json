@@ -1,0 +1,2343 @@
+{
+  "collection_complete": true,
+  "scope": "UNREVIEWED_DEVELOPMENT_ONLY",
+  "logical_units": 72,
+  "physical_calls": 72,
+  "methods": {
+    "direct": {
+      "n": 24,
+      "rule_correct": 12,
+      "raw_rule_correct": 12,
+      "object_success": 24,
+      "feasible_success": 24,
+      "false_infeasible": 0,
+      "fallback": 0,
+      "corrected": 0,
+      "damaged": 0
+    },
+    "language": {
+      "n": 24,
+      "rule_correct": 14,
+      "raw_rule_correct": 14,
+      "object_success": 22,
+      "feasible_success": 22,
+      "false_infeasible": 0,
+      "fallback": 0,
+      "corrected": 0,
+      "damaged": 2
+    },
+    "evidence": {
+      "n": 24,
+      "rule_correct": 22,
+      "raw_rule_correct": 21,
+      "object_success": 24,
+      "feasible_success": 24,
+      "false_infeasible": 0,
+      "fallback": 1,
+      "corrected": 0,
+      "damaged": 0
+    }
+  },
+  "stage_cost": {
+    "direct": {
+      "physical_calls": 24,
+      "known_provider_tokens": 9073,
+      "usage_unknown_calls": 0,
+      "latency_observed_calls": 24,
+      "sum_request_seconds": 118.426,
+      "median_request_seconds": 4.797499999999999
+    },
+    "language": {
+      "physical_calls": 24,
+      "known_provider_tokens": 9934,
+      "usage_unknown_calls": 0,
+      "latency_observed_calls": 24,
+      "sum_request_seconds": 154.21699999999998,
+      "median_request_seconds": 4.253500000000001
+    },
+    "evidence": {
+      "physical_calls": 24,
+      "known_provider_tokens": 15730,
+      "usage_unknown_calls": 0,
+      "latency_observed_calls": 24,
+      "sum_request_seconds": 156.637,
+      "median_request_seconds": 5.162
+    }
+  },
+  "deployment_known_tokens": {
+    "direct": 9073,
+    "language": 19007,
+    "evidence": 24803
+  },
+  "status_counts": {
+    "direct": {
+      "COMPLETE": 24,
+      "SCHEMA_FAILED": 0,
+      "UPSTREAM_SCHEMA_FAILED": 0
+    },
+    "language": {
+      "COMPLETE": 24,
+      "SCHEMA_FAILED": 0,
+      "UPSTREAM_SCHEMA_FAILED": 0
+    },
+    "evidence": {
+      "COMPLETE": 23,
+      "SCHEMA_FAILED": 1,
+      "UPSTREAM_SCHEMA_FAILED": 0
+    }
+  },
+  "by_rep": {
+    "1": {
+      "direct": 12,
+      "language": 11,
+      "evidence": 12
+    },
+    "2": {
+      "direct": 12,
+      "language": 11,
+      "evidence": 12
+    }
+  },
+  "by_gold_status": {
+    "OK": {
+      "direct": {
+        "n": 20,
+        "object_success": 20
+      },
+      "language": {
+        "n": 20,
+        "object_success": 18
+      },
+      "evidence": {
+        "n": 20,
+        "object_success": 20
+      }
+    },
+    "INFEASIBLE": {
+      "direct": {
+        "n": 4,
+        "object_success": 4
+      },
+      "language": {
+        "n": 4,
+        "object_success": 4
+      },
+      "evidence": {
+        "n": 4,
+        "object_success": 4
+      }
+    }
+  },
+  "pair_results": [
+    {
+      "role": "direct",
+      "rep": 1,
+      "pair_id": "F1",
+      "both_correct": true
+    },
+    {
+      "role": "direct",
+      "rep": 1,
+      "pair_id": "F2",
+      "both_correct": true
+    },
+    {
+      "role": "direct",
+      "rep": 1,
+      "pair_id": "F3",
+      "both_correct": true
+    },
+    {
+      "role": "direct",
+      "rep": 1,
+      "pair_id": "F4",
+      "both_correct": true
+    },
+    {
+      "role": "direct",
+      "rep": 1,
+      "pair_id": "F5",
+      "both_correct": true
+    },
+    {
+      "role": "direct",
+      "rep": 1,
+      "pair_id": "F6",
+      "both_correct": true
+    },
+    {
+      "role": "direct",
+      "rep": 2,
+      "pair_id": "F1",
+      "both_correct": true
+    },
+    {
+      "role": "direct",
+      "rep": 2,
+      "pair_id": "F2",
+      "both_correct": true
+    },
+    {
+      "role": "direct",
+      "rep": 2,
+      "pair_id": "F3",
+      "both_correct": true
+    },
+    {
+      "role": "direct",
+      "rep": 2,
+      "pair_id": "F4",
+      "both_correct": true
+    },
+    {
+      "role": "direct",
+      "rep": 2,
+      "pair_id": "F5",
+      "both_correct": true
+    },
+    {
+      "role": "direct",
+      "rep": 2,
+      "pair_id": "F6",
+      "both_correct": true
+    },
+    {
+      "role": "language",
+      "rep": 1,
+      "pair_id": "F1",
+      "both_correct": true
+    },
+    {
+      "role": "language",
+      "rep": 1,
+      "pair_id": "F2",
+      "both_correct": true
+    },
+    {
+      "role": "language",
+      "rep": 1,
+      "pair_id": "F3",
+      "both_correct": true
+    },
+    {
+      "role": "language",
+      "rep": 1,
+      "pair_id": "F4",
+      "both_correct": true
+    },
+    {
+      "role": "language",
+      "rep": 1,
+      "pair_id": "F5",
+      "both_correct": false
+    },
+    {
+      "role": "language",
+      "rep": 1,
+      "pair_id": "F6",
+      "both_correct": true
+    },
+    {
+      "role": "language",
+      "rep": 2,
+      "pair_id": "F1",
+      "both_correct": true
+    },
+    {
+      "role": "language",
+      "rep": 2,
+      "pair_id": "F2",
+      "both_correct": true
+    },
+    {
+      "role": "language",
+      "rep": 2,
+      "pair_id": "F3",
+      "both_correct": true
+    },
+    {
+      "role": "language",
+      "rep": 2,
+      "pair_id": "F4",
+      "both_correct": true
+    },
+    {
+      "role": "language",
+      "rep": 2,
+      "pair_id": "F5",
+      "both_correct": false
+    },
+    {
+      "role": "language",
+      "rep": 2,
+      "pair_id": "F6",
+      "both_correct": true
+    },
+    {
+      "role": "evidence",
+      "rep": 1,
+      "pair_id": "F1",
+      "both_correct": true
+    },
+    {
+      "role": "evidence",
+      "rep": 1,
+      "pair_id": "F2",
+      "both_correct": true
+    },
+    {
+      "role": "evidence",
+      "rep": 1,
+      "pair_id": "F3",
+      "both_correct": true
+    },
+    {
+      "role": "evidence",
+      "rep": 1,
+      "pair_id": "F4",
+      "both_correct": true
+    },
+    {
+      "role": "evidence",
+      "rep": 1,
+      "pair_id": "F5",
+      "both_correct": true
+    },
+    {
+      "role": "evidence",
+      "rep": 1,
+      "pair_id": "F6",
+      "both_correct": true
+    },
+    {
+      "role": "evidence",
+      "rep": 2,
+      "pair_id": "F1",
+      "both_correct": true
+    },
+    {
+      "role": "evidence",
+      "rep": 2,
+      "pair_id": "F2",
+      "both_correct": true
+    },
+    {
+      "role": "evidence",
+      "rep": 2,
+      "pair_id": "F3",
+      "both_correct": true
+    },
+    {
+      "role": "evidence",
+      "rep": 2,
+      "pair_id": "F4",
+      "both_correct": true
+    },
+    {
+      "role": "evidence",
+      "rep": 2,
+      "pair_id": "F5",
+      "both_correct": true
+    },
+    {
+      "role": "evidence",
+      "rep": 2,
+      "pair_id": "F6",
+      "both_correct": true
+    }
+  ],
+  "rows": [
+    {
+      "call_id": "S01__r1__direct",
+      "case_id": "S01",
+      "rep": 1,
+      "role": "direct",
+      "pair_id": "F1",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "raw_rule_correct": false,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S01__r1__language",
+      "case_id": "S01",
+      "rep": 1,
+      "role": "language",
+      "pair_id": "F1",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "raw_rule_correct": false,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S01__r1__evidence",
+      "case_id": "S01",
+      "rep": 1,
+      "role": "evidence",
+      "pair_id": "F1",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S02__r1__direct",
+      "case_id": "S02",
+      "rep": 1,
+      "role": "direct",
+      "pair_id": "F1",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "raw_rule_correct": false,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S02__r1__language",
+      "case_id": "S02",
+      "rep": 1,
+      "role": "language",
+      "pair_id": "F1",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "departure",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "raw_rule_correct": false,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S02__r1__evidence",
+      "case_id": "S02",
+      "rep": 1,
+      "role": "evidence",
+      "pair_id": "F1",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S03__r1__direct",
+      "case_id": "S03",
+      "rep": 1,
+      "role": "direct",
+      "pair_id": "F2",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": 595
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S03__r1__language",
+      "case_id": "S03",
+      "rep": 1,
+      "role": "language",
+      "pair_id": "F2",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": 595
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S03__r1__evidence",
+      "case_id": "S03",
+      "rep": 1,
+      "role": "evidence",
+      "pair_id": "F2",
+      "gold_status": "OK",
+      "status": "SCHEMA_FAILED",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": 595
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "raw_rule_correct": false,
+      "fallback": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S04__r1__direct",
+      "case_id": "S04",
+      "rep": 1,
+      "role": "direct",
+      "pair_id": "F2",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": 605
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S04__r1__language",
+      "case_id": "S04",
+      "rep": 1,
+      "role": "language",
+      "pair_id": "F2",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": 605
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S04__r1__evidence",
+      "case_id": "S04",
+      "rep": 1,
+      "role": "evidence",
+      "pair_id": "F2",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": 605
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S05__r1__direct",
+      "case_id": "S05",
+      "rep": 1,
+      "role": "direct",
+      "pair_id": "F3",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S05__r1__language",
+      "case_id": "S05",
+      "rep": 1,
+      "role": "language",
+      "pair_id": "F3",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S05__r1__evidence",
+      "case_id": "S05",
+      "rep": 1,
+      "role": "evidence",
+      "pair_id": "F3",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S06__r1__direct",
+      "case_id": "S06",
+      "rep": 1,
+      "role": "direct",
+      "pair_id": "F3",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S06__r1__language",
+      "case_id": "S06",
+      "rep": 1,
+      "role": "language",
+      "pair_id": "F3",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S06__r1__evidence",
+      "case_id": "S06",
+      "rep": 1,
+      "role": "evidence",
+      "pair_id": "F3",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S07__r1__direct",
+      "case_id": "S07",
+      "rep": 1,
+      "role": "direct",
+      "pair_id": "F4",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S07__r1__language",
+      "case_id": "S07",
+      "rep": 1,
+      "role": "language",
+      "pair_id": "F4",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S07__r1__evidence",
+      "case_id": "S07",
+      "rep": 1,
+      "role": "evidence",
+      "pair_id": "F4",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S08__r1__direct",
+      "case_id": "S08",
+      "rep": 1,
+      "role": "direct",
+      "pair_id": "F4",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S08__r1__language",
+      "case_id": "S08",
+      "rep": 1,
+      "role": "language",
+      "pair_id": "F4",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S08__r1__evidence",
+      "case_id": "S08",
+      "rep": 1,
+      "role": "evidence",
+      "pair_id": "F4",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S09__r1__direct",
+      "case_id": "S09",
+      "rep": 1,
+      "role": "direct",
+      "pair_id": "F5",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "departure",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "raw_rule_correct": false,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S09__r1__language",
+      "case_id": "S09",
+      "rep": 1,
+      "role": "language",
+      "pair_id": "F5",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "raw_rule_correct": false,
+      "fallback": false,
+      "corrected": false,
+      "damaged": true,
+      "rule_correct": false,
+      "object_success": false,
+      "feasible_success": false,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S09__r1__evidence",
+      "case_id": "S09",
+      "rep": 1,
+      "role": "evidence",
+      "pair_id": "F5",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "departure",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "raw_rule_correct": false,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S10__r1__direct",
+      "case_id": "S10",
+      "rep": 1,
+      "role": "direct",
+      "pair_id": "F5",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "raw_rule_correct": false,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S10__r1__language",
+      "case_id": "S10",
+      "rep": 1,
+      "role": "language",
+      "pair_id": "F5",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S10__r1__evidence",
+      "case_id": "S10",
+      "rep": 1,
+      "role": "evidence",
+      "pair_id": "F5",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S11__r1__direct",
+      "case_id": "S11",
+      "rep": 1,
+      "role": "direct",
+      "pair_id": "F6",
+      "gold_status": "INFEASIBLE",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": 550
+      },
+      "decision": {
+        "status": "INFEASIBLE",
+        "selected_poi_ids": []
+      },
+      "raw_rule_correct": false,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S11__r1__language",
+      "case_id": "S11",
+      "rep": 1,
+      "role": "language",
+      "pair_id": "F6",
+      "gold_status": "INFEASIBLE",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": 550
+      },
+      "decision": {
+        "status": "INFEASIBLE",
+        "selected_poi_ids": []
+      },
+      "raw_rule_correct": false,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S11__r1__evidence",
+      "case_id": "S11",
+      "rep": 1,
+      "role": "evidence",
+      "pair_id": "F6",
+      "gold_status": "INFEASIBLE",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": 550
+      },
+      "decision": {
+        "status": "INFEASIBLE",
+        "selected_poi_ids": []
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S12__r1__direct",
+      "case_id": "S12",
+      "rep": 1,
+      "role": "direct",
+      "pair_id": "F6",
+      "gold_status": "INFEASIBLE",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": 550
+      },
+      "decision": {
+        "status": "INFEASIBLE",
+        "selected_poi_ids": []
+      },
+      "raw_rule_correct": false,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S12__r1__language",
+      "case_id": "S12",
+      "rep": 1,
+      "role": "language",
+      "pair_id": "F6",
+      "gold_status": "INFEASIBLE",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": 550
+      },
+      "decision": {
+        "status": "INFEASIBLE",
+        "selected_poi_ids": []
+      },
+      "raw_rule_correct": false,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S12__r1__evidence",
+      "case_id": "S12",
+      "rep": 1,
+      "role": "evidence",
+      "pair_id": "F6",
+      "gold_status": "INFEASIBLE",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": 550
+      },
+      "decision": {
+        "status": "INFEASIBLE",
+        "selected_poi_ids": []
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S01__r2__direct",
+      "case_id": "S01",
+      "rep": 2,
+      "role": "direct",
+      "pair_id": "F1",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "raw_rule_correct": false,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S01__r2__language",
+      "case_id": "S01",
+      "rep": 2,
+      "role": "language",
+      "pair_id": "F1",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "raw_rule_correct": false,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S01__r2__evidence",
+      "case_id": "S01",
+      "rep": 2,
+      "role": "evidence",
+      "pair_id": "F1",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S02__r2__direct",
+      "case_id": "S02",
+      "rep": 2,
+      "role": "direct",
+      "pair_id": "F1",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "raw_rule_correct": false,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S02__r2__language",
+      "case_id": "S02",
+      "rep": 2,
+      "role": "language",
+      "pair_id": "F1",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "departure",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "raw_rule_correct": false,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S02__r2__evidence",
+      "case_id": "S02",
+      "rep": 2,
+      "role": "evidence",
+      "pair_id": "F1",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S03__r2__direct",
+      "case_id": "S03",
+      "rep": 2,
+      "role": "direct",
+      "pair_id": "F2",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": 595
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S03__r2__language",
+      "case_id": "S03",
+      "rep": 2,
+      "role": "language",
+      "pair_id": "F2",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": 595
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S03__r2__evidence",
+      "case_id": "S03",
+      "rep": 2,
+      "role": "evidence",
+      "pair_id": "F2",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": 595
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S04__r2__direct",
+      "case_id": "S04",
+      "rep": 2,
+      "role": "direct",
+      "pair_id": "F2",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": 605
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S04__r2__language",
+      "case_id": "S04",
+      "rep": 2,
+      "role": "language",
+      "pair_id": "F2",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": 605
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S04__r2__evidence",
+      "case_id": "S04",
+      "rep": 2,
+      "role": "evidence",
+      "pair_id": "F2",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": 605
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S05__r2__direct",
+      "case_id": "S05",
+      "rep": 2,
+      "role": "direct",
+      "pair_id": "F3",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S05__r2__language",
+      "case_id": "S05",
+      "rep": 2,
+      "role": "language",
+      "pair_id": "F3",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S05__r2__evidence",
+      "case_id": "S05",
+      "rep": 2,
+      "role": "evidence",
+      "pair_id": "F3",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S06__r2__direct",
+      "case_id": "S06",
+      "rep": 2,
+      "role": "direct",
+      "pair_id": "F3",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S06__r2__language",
+      "case_id": "S06",
+      "rep": 2,
+      "role": "language",
+      "pair_id": "F3",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S06__r2__evidence",
+      "case_id": "S06",
+      "rep": 2,
+      "role": "evidence",
+      "pair_id": "F3",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S07__r2__direct",
+      "case_id": "S07",
+      "rep": 2,
+      "role": "direct",
+      "pair_id": "F4",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S07__r2__language",
+      "case_id": "S07",
+      "rep": 2,
+      "role": "language",
+      "pair_id": "F4",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S07__r2__evidence",
+      "case_id": "S07",
+      "rep": 2,
+      "role": "evidence",
+      "pair_id": "F4",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S08__r2__direct",
+      "case_id": "S08",
+      "rep": 2,
+      "role": "direct",
+      "pair_id": "F4",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S08__r2__language",
+      "case_id": "S08",
+      "rep": 2,
+      "role": "language",
+      "pair_id": "F4",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S08__r2__evidence",
+      "case_id": "S08",
+      "rep": 2,
+      "role": "evidence",
+      "pair_id": "F4",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S09__r2__direct",
+      "case_id": "S09",
+      "rep": 2,
+      "role": "direct",
+      "pair_id": "F5",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "departure",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "raw_rule_correct": false,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S09__r2__language",
+      "case_id": "S09",
+      "rep": 2,
+      "role": "language",
+      "pair_id": "F5",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "raw_rule_correct": false,
+      "fallback": false,
+      "corrected": false,
+      "damaged": true,
+      "rule_correct": false,
+      "object_success": false,
+      "feasible_success": false,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S09__r2__evidence",
+      "case_id": "S09",
+      "rep": 2,
+      "role": "evidence",
+      "pair_id": "F5",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "departure",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "raw_rule_correct": false,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S10__r2__direct",
+      "case_id": "S10",
+      "rep": 2,
+      "role": "direct",
+      "pair_id": "F5",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "raw_rule_correct": false,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S10__r2__language",
+      "case_id": "S10",
+      "rep": 2,
+      "role": "language",
+      "pair_id": "F5",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S10__r2__evidence",
+      "case_id": "S10",
+      "rep": 2,
+      "role": "evidence",
+      "pair_id": "F5",
+      "gold_status": "OK",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S11__r2__direct",
+      "case_id": "S11",
+      "rep": 2,
+      "role": "direct",
+      "pair_id": "F6",
+      "gold_status": "INFEASIBLE",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": 550
+      },
+      "decision": {
+        "status": "INFEASIBLE",
+        "selected_poi_ids": []
+      },
+      "raw_rule_correct": false,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S11__r2__language",
+      "case_id": "S11",
+      "rep": 2,
+      "role": "language",
+      "pair_id": "F6",
+      "gold_status": "INFEASIBLE",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": 550
+      },
+      "decision": {
+        "status": "INFEASIBLE",
+        "selected_poi_ids": []
+      },
+      "raw_rule_correct": false,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S11__r2__evidence",
+      "case_id": "S11",
+      "rep": 2,
+      "role": "evidence",
+      "pair_id": "F6",
+      "gold_status": "INFEASIBLE",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": 550
+      },
+      "decision": {
+        "status": "INFEASIBLE",
+        "selected_poi_ids": []
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S12__r2__direct",
+      "case_id": "S12",
+      "rep": 2,
+      "role": "direct",
+      "pair_id": "F6",
+      "gold_status": "INFEASIBLE",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": 550
+      },
+      "decision": {
+        "status": "INFEASIBLE",
+        "selected_poi_ids": []
+      },
+      "raw_rule_correct": false,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S12__r2__language",
+      "case_id": "S12",
+      "rep": 2,
+      "role": "language",
+      "pair_id": "F6",
+      "gold_status": "INFEASIBLE",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": 550
+      },
+      "decision": {
+        "status": "INFEASIBLE",
+        "selected_poi_ids": []
+      },
+      "raw_rule_correct": false,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "S12__r2__evidence",
+      "case_id": "S12",
+      "rep": 2,
+      "role": "evidence",
+      "pair_id": "F6",
+      "gold_status": "INFEASIBLE",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": 550
+      },
+      "decision": {
+        "status": "INFEASIBLE",
+        "selected_poi_ids": []
+      },
+      "raw_rule_correct": true,
+      "fallback": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "status": "COLLECTED",
+  "model": "deepseek-v4-flash",
+  "provider": "official DeepSeek",
+  "model_api_calls": 6,
+  "complete": 0,
+  "prompt_policy": "dataset party convention disclosed in system prompt",
+  "records": [
+    {
+      "uid": "e20241028160248698752",
+      "request": {
+        "model": "deepseek-v4-flash",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Extract the explicitly requested travel constraints and return exactly one JSON object.\nRequired keys: start_city,target_city,days,people_number,budget,room_count,room_type,cuisine,intercity_mode,attraction_category.\nUse null only when the query does not specify a field. Do not plan an itinerary.\nDataset party convention: 我计划/我打算/我想 without a companion means 1; 我和朋友/男朋友/女朋友 means 2; 我们N个人 means N.\nroom_type is 1 for 单床房 and 2 for 双床房. intercity_mode is train or airplane.\nOnly extract an explicit cuisine or attraction category; do not invent proxies. No markdown or commentary."
+          },
+          {
+            "role": "user",
+            "content": "{\"uid\": \"e20241028160248698752\", \"nature_language\": \"当前位置上海。我一个人想去杭州玩一天，预算1500人民币，请给我一个旅行规划。\"}"
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 700,
+        "response_format": {
+          "type": "json_object"
+        },
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "max_requests": 1,
+      "status": "FAILED",
+      "error_type": "URLError",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "uid": "e20241028160845920703",
+      "request": {
+        "model": "deepseek-v4-flash",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Extract the explicitly requested travel constraints and return exactly one JSON object.\nRequired keys: start_city,target_city,days,people_number,budget,room_count,room_type,cuisine,intercity_mode,attraction_category.\nUse null only when the query does not specify a field. Do not plan an itinerary.\nDataset party convention: 我计划/我打算/我想 without a companion means 1; 我和朋友/男朋友/女朋友 means 2; 我们N个人 means N.\nroom_type is 1 for 单床房 and 2 for 双床房. intercity_mode is train or airplane.\nOnly extract an explicit cuisine or attraction category; do not invent proxies. No markdown or commentary."
+          },
+          {
+            "role": "user",
+            "content": "{\"uid\": \"e20241028160845920703\", \"nature_language\": \"当前位置深圳。我打算去广州玩两天，预算1000元，想吃火锅，开一间单床房。请给我一个旅行规划。\"}"
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 700,
+        "response_format": {
+          "type": "json_object"
+        },
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "max_requests": 1,
+      "status": "FAILED",
+      "error_type": "URLError",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "uid": "e20241028160848776495",
+      "request": {
+        "model": "deepseek-v4-flash",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Extract the explicitly requested travel constraints and return exactly one JSON object.\nRequired keys: start_city,target_city,days,people_number,budget,room_count,room_type,cuisine,intercity_mode,attraction_category.\nUse null only when the query does not specify a field. Do not plan an itinerary.\nDataset party convention: 我计划/我打算/我想 without a companion means 1; 我和朋友/男朋友/女朋友 means 2; 我们N个人 means N.\nroom_type is 1 for 单床房 and 2 for 双床房. intercity_mode is train or airplane.\nOnly extract an explicit cuisine or attraction category; do not invent proxies. No markdown or commentary."
+          },
+          {
+            "role": "user",
+            "content": "{\"uid\": \"e20241028160848776495\", \"nature_language\": \"当前位置广州。我们四个人计划去杭州玩两天，选择火车出行，预算5600元，开两间双床房。请给我一个旅行规划。\"}"
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 700,
+        "response_format": {
+          "type": "json_object"
+        },
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "max_requests": 1,
+      "status": "FAILED",
+      "error_type": "URLError",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "uid": "e20241028160913165493",
+      "request": {
+        "model": "deepseek-v4-flash",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Extract the explicitly requested travel constraints and return exactly one JSON object.\nRequired keys: start_city,target_city,days,people_number,budget,room_count,room_type,cuisine,intercity_mode,attraction_category.\nUse null only when the query does not specify a field. Do not plan an itinerary.\nDataset party convention: 我计划/我打算/我想 without a companion means 1; 我和朋友/男朋友/女朋友 means 2; 我们N个人 means N.\nroom_type is 1 for 单床房 and 2 for 双床房. intercity_mode is train or airplane.\nOnly extract an explicit cuisine or attraction category; do not invent proxies. No markdown or commentary."
+          },
+          {
+            "role": "user",
+            "content": "{\"uid\": \"e20241028160913165493\", \"nature_language\": \"当前位置杭州。我和朋友计划去北京玩三天，选择飞机出行，预算8000元，开一间双床房。请给我一个旅行规划。\"}"
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 700,
+        "response_format": {
+          "type": "json_object"
+        },
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "max_requests": 1,
+      "status": "FAILED",
+      "error_type": "URLError",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "uid": "e20241028160902013119",
+      "request": {
+        "model": "deepseek-v4-flash",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Extract the explicitly requested travel constraints and return exactly one JSON object.\nRequired keys: start_city,target_city,days,people_number,budget,room_count,room_type,cuisine,intercity_mode,attraction_category.\nUse null only when the query does not specify a field. Do not plan an itinerary.\nDataset party convention: 我计划/我打算/我想 without a companion means 1; 我和朋友/男朋友/女朋友 means 2; 我们N个人 means N.\nroom_type is 1 for 单床房 and 2 for 双床房. intercity_mode is train or airplane.\nOnly extract an explicit cuisine or attraction category; do not invent proxies. No markdown or commentary."
+          },
+          {
+            "role": "user",
+            "content": "{\"uid\": \"e20241028160902013119\", \"nature_language\": \"当前位置北京。我计划去武汉玩三天，预算3000元，想欣赏历史古迹，开一间单床房。请给我一个旅行规划。\"}"
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 700,
+        "response_format": {
+          "type": "json_object"
+        },
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "max_requests": 1,
+      "status": "FAILED",
+      "error_type": "URLError",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "uid": "h20241029143455115600",
+      "request": {
+        "model": "deepseek-v4-flash",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Extract the explicitly requested travel constraints and return exactly one JSON object.\nRequired keys: start_city,target_city,days,people_number,budget,room_count,room_type,cuisine,intercity_mode,attraction_category.\nUse null only when the query does not specify a field. Do not plan an itinerary.\nDataset party convention: 我计划/我打算/我想 without a companion means 1; 我和朋友/男朋友/女朋友 means 2; 我们N个人 means N.\nroom_type is 1 for 单床房 and 2 for 双床房. intercity_mode is train or airplane.\nOnly extract an explicit cuisine or attraction category; do not invent proxies. No markdown or commentary."
+          },
+          {
+            "role": "user",
+            "content": "{\"uid\": \"h20241029143455115600\", \"nature_language\": \"[当前位置北京,目标位置重庆,旅行人数2,旅行天数5] 重庆应该怎么玩\"}"
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 700,
+        "response_format": {
+          "type": "json_object"
+        },
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "max_requests": 1,
+      "status": "FAILED",
+      "error_type": "URLError",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    }
+  ]
+}

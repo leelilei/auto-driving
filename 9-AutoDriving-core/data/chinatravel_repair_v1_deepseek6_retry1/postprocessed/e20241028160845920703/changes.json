@@ -1,0 +1,8 @@
+[
+  {
+    "path": "itinerary/0/activities/6/room_type",
+    "before": "1",
+    "after": 1,
+    "rule": "accommodation room_type numeric-string to integer"
+  }
+]

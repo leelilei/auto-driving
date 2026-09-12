@@ -1,0 +1,15 @@
+{
+  "parent": "9-AutoDriving-core/results/scene_rule30/20260910T154901Z_glossary60_http1",
+  "inherited_answers": {
+    "R01__r1__glossary.a1.json": "96c0b87711ffebe87e4b0614d4a300dcd4ae8cdff9b585aca5c269a721fc0cab",
+    "R02__r1__glossary.a1.json": "6b6aa66e0f0b33a7f63cbb98b545c80ed6d388f0d15e49dacb827e8dcb18926c",
+    "R03__r1__glossary.a1.json": "bfd115d8a29400d2982c7a5f4e6f0cbefe6ae35a0da6b0f73a33df880d8f970e",
+    "R04__r1__glossary.a1.json": "0e29b9382f8192a56a0a38182199fb36becd947554d036139e349e2ef9ea8ccb",
+    "R05__r1__glossary.a1.json": "3737cbb36f12b28a8d4a550b7ca7ad3fda594b280f58477daa51b9ca9f0e1c36",
+    "R06__r1__glossary.a1.json": "bb0e4e640704088814e537e84abc25e88ccd36e1059cfe09141e690a1ac08a77"
+  },
+  "previous_transport_failures": 6,
+  "combined_budget": 72,
+  "reason": "Same task over HTTP/1.1 c2 after transient TLS failures; delay retries to later batches. Valid answers remain unchanged.",
+  "diagnostic": "HEAD / returned200; xcode resolved to198.18.0.149 via utun0. Root cause not determined."
+}

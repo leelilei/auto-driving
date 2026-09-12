@@ -1,0 +1,10 @@
+{
+  "gemini_run_dir": "results/runs/20260912T065000Z_main_test_gemini-3_1-flash-lite_full160",
+  "gemini_run_test001_hash": "00882f2a9701656fb6d9b1d53689cb3d496150dfcb7ac0b0232efb9a6084a2b9",
+  "v1_test_file": "data/test/test_640_utterances.json",
+  "v1_test_hash": "82ec91230a1901a9bb36e51afdf0800e1e1a50713d7c5a9d8de737d824e3ec2f",
+  "v2_confirmed_file": "data/test/test_640_utterances_v2_confirmed.json",
+  "v2_confirmed_hash": "25ba3bfeeff02c63c4f2be0890d9d9f87fc8dc6730704fc6258a817879585444",
+  "changelog_file": "data/test/test_640_v1_to_v2_changelog.json",
+  "changelog_hash": "92475ffc85ebdb0226e85a54be92d1c29824d54bb6d10fa77c0a0230727571fd"
+}

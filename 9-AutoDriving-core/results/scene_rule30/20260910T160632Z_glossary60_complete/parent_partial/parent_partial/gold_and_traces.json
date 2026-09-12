@@ -1,0 +1,1516 @@
+[
+  {
+    "case_id": "R01",
+    "policy": {
+      "selection": "nearest_from_bank",
+      "availability_reference": "arrival",
+      "return_by": null
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_alpha"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_alpha",
+        "arrival": 572.0,
+        "service_finish": 582.0,
+        "return_time": 592.1980390271856,
+        "distance_from_bank": 2.0,
+        "added_distance": 2.198039027185569,
+        "rating": 4,
+        "feasible": true,
+        "reasons": [],
+        "objective": 2.0
+      },
+      {
+        "poi_id": "P_beta",
+        "arrival": 576.0,
+        "service_finish": 586.0,
+        "return_time": 590.0,
+        "distance_from_bank": 6.0,
+        "added_distance": 0.0,
+        "rating": 3.5,
+        "feasible": true,
+        "reasons": [],
+        "objective": 6.0
+      },
+      {
+        "poi_id": "P_gamma",
+        "arrival": 577.8102496759067,
+        "service_finish": 587.8102496759067,
+        "return_time": 603.9657440973102,
+        "distance_from_bank": 7.810249675906654,
+        "added_distance": 13.965744097310164,
+        "rating": 4.9,
+        "feasible": true,
+        "reasons": [],
+        "objective": 7.810249675906654
+      }
+    ]
+  },
+  {
+    "case_id": "R02",
+    "policy": {
+      "selection": "minimum_added_distance",
+      "availability_reference": "arrival",
+      "return_by": null
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_beta"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_alpha",
+        "arrival": 572.0,
+        "service_finish": 582.0,
+        "return_time": 592.1980390271856,
+        "distance_from_bank": 2.0,
+        "added_distance": 2.198039027185569,
+        "rating": 4,
+        "feasible": true,
+        "reasons": [],
+        "objective": 2.198039027185569
+      },
+      {
+        "poi_id": "P_beta",
+        "arrival": 576.0,
+        "service_finish": 586.0,
+        "return_time": 590.0,
+        "distance_from_bank": 6.0,
+        "added_distance": 0.0,
+        "rating": 3.5,
+        "feasible": true,
+        "reasons": [],
+        "objective": 0.0
+      },
+      {
+        "poi_id": "P_gamma",
+        "arrival": 577.8102496759067,
+        "service_finish": 587.8102496759067,
+        "return_time": 603.9657440973102,
+        "distance_from_bank": 7.810249675906654,
+        "added_distance": 13.965744097310164,
+        "rating": 4.9,
+        "feasible": true,
+        "reasons": [],
+        "objective": 13.965744097310164
+      }
+    ]
+  },
+  {
+    "case_id": "R03",
+    "policy": {
+      "selection": "highest_rating",
+      "availability_reference": "arrival",
+      "return_by": null
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_gamma"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_alpha",
+        "arrival": 572.0,
+        "service_finish": 582.0,
+        "return_time": 592.1980390271856,
+        "distance_from_bank": 2.0,
+        "added_distance": 2.198039027185569,
+        "rating": 4,
+        "feasible": true,
+        "reasons": [],
+        "objective": -4
+      },
+      {
+        "poi_id": "P_beta",
+        "arrival": 576.0,
+        "service_finish": 586.0,
+        "return_time": 590.0,
+        "distance_from_bank": 6.0,
+        "added_distance": 0.0,
+        "rating": 3.5,
+        "feasible": true,
+        "reasons": [],
+        "objective": -3.5
+      },
+      {
+        "poi_id": "P_gamma",
+        "arrival": 577.8102496759067,
+        "service_finish": 587.8102496759067,
+        "return_time": 603.9657440973102,
+        "distance_from_bank": 7.810249675906654,
+        "added_distance": 13.965744097310164,
+        "rating": 4.9,
+        "feasible": true,
+        "reasons": [],
+        "objective": -4.9
+      }
+    ]
+  },
+  {
+    "case_id": "R04",
+    "policy": {
+      "selection": "nearest_from_bank",
+      "availability_reference": "arrival",
+      "return_by": null
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_beta"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_alpha",
+        "arrival": 577.211102550928,
+        "service_finish": 587.211102550928,
+        "return_time": 595.6963839251665,
+        "distance_from_bank": 7.211102550927978,
+        "added_distance": 5.696383925166547,
+        "rating": 4.9,
+        "feasible": true,
+        "reasons": [],
+        "objective": 7.211102550927978
+      },
+      {
+        "poi_id": "P_beta",
+        "arrival": 571.4142135623731,
+        "service_finish": 581.4142135623731,
+        "return_time": 592.4595745795604,
+        "distance_from_bank": 1.4142135623730951,
+        "added_distance": 2.459574579560357,
+        "rating": 4,
+        "feasible": true,
+        "reasons": [],
+        "objective": 1.4142135623730951
+      },
+      {
+        "poi_id": "P_gamma",
+        "arrival": 574.0,
+        "service_finish": 584.0,
+        "return_time": 590.0,
+        "distance_from_bank": 4.0,
+        "added_distance": 0.0,
+        "rating": 3.5,
+        "feasible": true,
+        "reasons": [],
+        "objective": 4.0
+      }
+    ]
+  },
+  {
+    "case_id": "R05",
+    "policy": {
+      "selection": "minimum_added_distance",
+      "availability_reference": "arrival",
+      "return_by": null
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_gamma"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_alpha",
+        "arrival": 577.211102550928,
+        "service_finish": 587.211102550928,
+        "return_time": 595.6963839251665,
+        "distance_from_bank": 7.211102550927978,
+        "added_distance": 5.696383925166547,
+        "rating": 4.9,
+        "feasible": true,
+        "reasons": [],
+        "objective": 5.696383925166547
+      },
+      {
+        "poi_id": "P_beta",
+        "arrival": 571.4142135623731,
+        "service_finish": 581.4142135623731,
+        "return_time": 592.4595745795604,
+        "distance_from_bank": 1.4142135623730951,
+        "added_distance": 2.459574579560357,
+        "rating": 4,
+        "feasible": true,
+        "reasons": [],
+        "objective": 2.459574579560357
+      },
+      {
+        "poi_id": "P_gamma",
+        "arrival": 574.0,
+        "service_finish": 584.0,
+        "return_time": 590.0,
+        "distance_from_bank": 4.0,
+        "added_distance": 0.0,
+        "rating": 3.5,
+        "feasible": true,
+        "reasons": [],
+        "objective": 0.0
+      }
+    ]
+  },
+  {
+    "case_id": "R06",
+    "policy": {
+      "selection": "highest_rating",
+      "availability_reference": "arrival",
+      "return_by": null
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_alpha"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_alpha",
+        "arrival": 577.211102550928,
+        "service_finish": 587.211102550928,
+        "return_time": 595.6963839251665,
+        "distance_from_bank": 7.211102550927978,
+        "added_distance": 5.696383925166547,
+        "rating": 4.9,
+        "feasible": true,
+        "reasons": [],
+        "objective": -4.9
+      },
+      {
+        "poi_id": "P_beta",
+        "arrival": 571.4142135623731,
+        "service_finish": 581.4142135623731,
+        "return_time": 592.4595745795604,
+        "distance_from_bank": 1.4142135623730951,
+        "added_distance": 2.459574579560357,
+        "rating": 4,
+        "feasible": true,
+        "reasons": [],
+        "objective": -4
+      },
+      {
+        "poi_id": "P_gamma",
+        "arrival": 574.0,
+        "service_finish": 584.0,
+        "return_time": 590.0,
+        "distance_from_bank": 4.0,
+        "added_distance": 0.0,
+        "rating": 3.5,
+        "feasible": true,
+        "reasons": [],
+        "objective": -3.5
+      }
+    ]
+  },
+  {
+    "case_id": "R07",
+    "policy": {
+      "selection": "nearest_from_bank",
+      "availability_reference": "arrival",
+      "return_by": null
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_gamma"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_alpha",
+        "arrival": 578.0,
+        "service_finish": 588.0,
+        "return_time": 590.0,
+        "distance_from_bank": 8.0,
+        "added_distance": 0.0,
+        "rating": 3.5,
+        "feasible": true,
+        "reasons": [],
+        "objective": 8.0
+      },
+      {
+        "poi_id": "P_beta",
+        "arrival": 575.0,
+        "service_finish": 585.0,
+        "return_time": 598.6014705087355,
+        "distance_from_bank": 5.0,
+        "added_distance": 8.601470508735446,
+        "rating": 4.9,
+        "feasible": true,
+        "reasons": [],
+        "objective": 5.0
+      },
+      {
+        "poi_id": "P_gamma",
+        "arrival": 572.2360679774998,
+        "service_finish": 582.2360679774998,
+        "return_time": 591.4556124347927,
+        "distance_from_bank": 2.23606797749979,
+        "added_distance": 1.4556124347926769,
+        "rating": 4,
+        "feasible": true,
+        "reasons": [],
+        "objective": 2.23606797749979
+      }
+    ]
+  },
+  {
+    "case_id": "R08",
+    "policy": {
+      "selection": "minimum_added_distance",
+      "availability_reference": "arrival",
+      "return_by": null
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_alpha"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_alpha",
+        "arrival": 578.0,
+        "service_finish": 588.0,
+        "return_time": 590.0,
+        "distance_from_bank": 8.0,
+        "added_distance": 0.0,
+        "rating": 3.5,
+        "feasible": true,
+        "reasons": [],
+        "objective": 0.0
+      },
+      {
+        "poi_id": "P_beta",
+        "arrival": 575.0,
+        "service_finish": 585.0,
+        "return_time": 598.6014705087355,
+        "distance_from_bank": 5.0,
+        "added_distance": 8.601470508735446,
+        "rating": 4.9,
+        "feasible": true,
+        "reasons": [],
+        "objective": 8.601470508735446
+      },
+      {
+        "poi_id": "P_gamma",
+        "arrival": 572.2360679774998,
+        "service_finish": 582.2360679774998,
+        "return_time": 591.4556124347927,
+        "distance_from_bank": 2.23606797749979,
+        "added_distance": 1.4556124347926769,
+        "rating": 4,
+        "feasible": true,
+        "reasons": [],
+        "objective": 1.4556124347926769
+      }
+    ]
+  },
+  {
+    "case_id": "R09",
+    "policy": {
+      "selection": "highest_rating",
+      "availability_reference": "arrival",
+      "return_by": null
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_beta"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_alpha",
+        "arrival": 578.0,
+        "service_finish": 588.0,
+        "return_time": 590.0,
+        "distance_from_bank": 8.0,
+        "added_distance": 0.0,
+        "rating": 3.5,
+        "feasible": true,
+        "reasons": [],
+        "objective": -3.5
+      },
+      {
+        "poi_id": "P_beta",
+        "arrival": 575.0,
+        "service_finish": 585.0,
+        "return_time": 598.6014705087355,
+        "distance_from_bank": 5.0,
+        "added_distance": 8.601470508735446,
+        "rating": 4.9,
+        "feasible": true,
+        "reasons": [],
+        "objective": -4.9
+      },
+      {
+        "poi_id": "P_gamma",
+        "arrival": 572.2360679774998,
+        "service_finish": 582.2360679774998,
+        "return_time": 591.4556124347927,
+        "distance_from_bank": 2.23606797749979,
+        "added_distance": 1.4556124347926769,
+        "rating": 4,
+        "feasible": true,
+        "reasons": [],
+        "objective": -4
+      }
+    ]
+  },
+  {
+    "case_id": "R10",
+    "policy": {
+      "selection": "nearest_from_bank",
+      "availability_reference": "arrival",
+      "return_by": null
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_alpha"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_alpha",
+        "arrival": 572.2360679774998,
+        "service_finish": 582.2360679774998,
+        "return_time": 594.2776625562922,
+        "distance_from_bank": 2.23606797749979,
+        "added_distance": 4.277662556292086,
+        "rating": 4,
+        "feasible": true,
+        "reasons": [],
+        "objective": 2.23606797749979
+      },
+      {
+        "poi_id": "P_beta",
+        "arrival": 573.0,
+        "service_finish": 583.0,
+        "return_time": 590.0,
+        "distance_from_bank": 3.0,
+        "added_distance": 0.0,
+        "rating": 3.5,
+        "feasible": true,
+        "reasons": [],
+        "objective": 3.0
+      },
+      {
+        "poi_id": "P_gamma",
+        "arrival": 581.1803398874989,
+        "service_finish": 591.1803398874989,
+        "return_time": 596.1803398874989,
+        "distance_from_bank": 11.180339887498949,
+        "added_distance": 6.180339887498949,
+        "rating": 4.9,
+        "feasible": true,
+        "reasons": [],
+        "objective": 11.180339887498949
+      }
+    ]
+  },
+  {
+    "case_id": "R11",
+    "policy": {
+      "selection": "minimum_added_distance",
+      "availability_reference": "arrival",
+      "return_by": null
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_beta"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_alpha",
+        "arrival": 572.2360679774998,
+        "service_finish": 582.2360679774998,
+        "return_time": 594.2776625562922,
+        "distance_from_bank": 2.23606797749979,
+        "added_distance": 4.277662556292086,
+        "rating": 4,
+        "feasible": true,
+        "reasons": [],
+        "objective": 4.277662556292086
+      },
+      {
+        "poi_id": "P_beta",
+        "arrival": 573.0,
+        "service_finish": 583.0,
+        "return_time": 590.0,
+        "distance_from_bank": 3.0,
+        "added_distance": 0.0,
+        "rating": 3.5,
+        "feasible": true,
+        "reasons": [],
+        "objective": 0.0
+      },
+      {
+        "poi_id": "P_gamma",
+        "arrival": 581.1803398874989,
+        "service_finish": 591.1803398874989,
+        "return_time": 596.1803398874989,
+        "distance_from_bank": 11.180339887498949,
+        "added_distance": 6.180339887498949,
+        "rating": 4.9,
+        "feasible": true,
+        "reasons": [],
+        "objective": 6.180339887498949
+      }
+    ]
+  },
+  {
+    "case_id": "R12",
+    "policy": {
+      "selection": "highest_rating",
+      "availability_reference": "arrival",
+      "return_by": null
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_gamma"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_alpha",
+        "arrival": 572.2360679774998,
+        "service_finish": 582.2360679774998,
+        "return_time": 594.2776625562922,
+        "distance_from_bank": 2.23606797749979,
+        "added_distance": 4.277662556292086,
+        "rating": 4,
+        "feasible": true,
+        "reasons": [],
+        "objective": -4
+      },
+      {
+        "poi_id": "P_beta",
+        "arrival": 573.0,
+        "service_finish": 583.0,
+        "return_time": 590.0,
+        "distance_from_bank": 3.0,
+        "added_distance": 0.0,
+        "rating": 3.5,
+        "feasible": true,
+        "reasons": [],
+        "objective": -3.5
+      },
+      {
+        "poi_id": "P_gamma",
+        "arrival": 581.1803398874989,
+        "service_finish": 591.1803398874989,
+        "return_time": 596.1803398874989,
+        "distance_from_bank": 11.180339887498949,
+        "added_distance": 6.180339887498949,
+        "rating": 4.9,
+        "feasible": true,
+        "reasons": [],
+        "objective": -4.9
+      }
+    ]
+  },
+  {
+    "case_id": "R13",
+    "policy": {
+      "selection": "nearest_from_bank",
+      "availability_reference": "arrival",
+      "return_by": null
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_beta"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_alpha",
+        "arrival": 576.3245553203368,
+        "service_finish": 586.3245553203368,
+        "return_time": 599.7409631853355,
+        "distance_from_bank": 6.324555320336759,
+        "added_distance": 9.740963185335499,
+        "rating": 4.9,
+        "feasible": true,
+        "reasons": [],
+        "objective": 6.324555320336759
+      },
+      {
+        "poi_id": "P_beta",
+        "arrival": 572.2360679774998,
+        "service_finish": 582.2360679774998,
+        "return_time": 590.2983257257983,
+        "distance_from_bank": 2.23606797749979,
+        "added_distance": 0.29832572579833894,
+        "rating": 4,
+        "feasible": true,
+        "reasons": [],
+        "objective": 2.23606797749979
+      },
+      {
+        "poi_id": "P_gamma",
+        "arrival": 577.0,
+        "service_finish": 587.0,
+        "return_time": 590.0,
+        "distance_from_bank": 7.0,
+        "added_distance": 0.0,
+        "rating": 3.5,
+        "feasible": true,
+        "reasons": [],
+        "objective": 7.0
+      }
+    ]
+  },
+  {
+    "case_id": "R14",
+    "policy": {
+      "selection": "minimum_added_distance",
+      "availability_reference": "arrival",
+      "return_by": null
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_gamma"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_alpha",
+        "arrival": 576.3245553203368,
+        "service_finish": 586.3245553203368,
+        "return_time": 599.7409631853355,
+        "distance_from_bank": 6.324555320336759,
+        "added_distance": 9.740963185335499,
+        "rating": 4.9,
+        "feasible": true,
+        "reasons": [],
+        "objective": 9.740963185335499
+      },
+      {
+        "poi_id": "P_beta",
+        "arrival": 572.2360679774998,
+        "service_finish": 582.2360679774998,
+        "return_time": 590.2983257257983,
+        "distance_from_bank": 2.23606797749979,
+        "added_distance": 0.29832572579833894,
+        "rating": 4,
+        "feasible": true,
+        "reasons": [],
+        "objective": 0.29832572579833894
+      },
+      {
+        "poi_id": "P_gamma",
+        "arrival": 577.0,
+        "service_finish": 587.0,
+        "return_time": 590.0,
+        "distance_from_bank": 7.0,
+        "added_distance": 0.0,
+        "rating": 3.5,
+        "feasible": true,
+        "reasons": [],
+        "objective": 0.0
+      }
+    ]
+  },
+  {
+    "case_id": "R15",
+    "policy": {
+      "selection": "highest_rating",
+      "availability_reference": "arrival",
+      "return_by": null
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_alpha"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_alpha",
+        "arrival": 576.3245553203368,
+        "service_finish": 586.3245553203368,
+        "return_time": 599.7409631853355,
+        "distance_from_bank": 6.324555320336759,
+        "added_distance": 9.740963185335499,
+        "rating": 4.9,
+        "feasible": true,
+        "reasons": [],
+        "objective": -4.9
+      },
+      {
+        "poi_id": "P_beta",
+        "arrival": 572.2360679774998,
+        "service_finish": 582.2360679774998,
+        "return_time": 590.2983257257983,
+        "distance_from_bank": 2.23606797749979,
+        "added_distance": 0.29832572579833894,
+        "rating": 4,
+        "feasible": true,
+        "reasons": [],
+        "objective": -4
+      },
+      {
+        "poi_id": "P_gamma",
+        "arrival": 577.0,
+        "service_finish": 587.0,
+        "return_time": 590.0,
+        "distance_from_bank": 7.0,
+        "added_distance": 0.0,
+        "rating": 3.5,
+        "feasible": true,
+        "reasons": [],
+        "objective": -3.5
+      }
+    ]
+  },
+  {
+    "case_id": "R16",
+    "policy": {
+      "selection": "nearest_from_bank",
+      "availability_reference": "arrival",
+      "return_by": null
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_gamma"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_alpha",
+        "arrival": 575.0990195135928,
+        "service_finish": 585.0990195135928,
+        "return_time": 590.1980390271856,
+        "distance_from_bank": 5.0990195135927845,
+        "added_distance": 0.19803902718556898,
+        "rating": 3.5,
+        "feasible": true,
+        "reasons": [],
+        "objective": 5.0990195135927845
+      },
+      {
+        "poi_id": "P_beta",
+        "arrival": 576.3245553203368,
+        "service_finish": 586.3245553203368,
+        "return_time": 602.449070816934,
+        "distance_from_bank": 6.324555320336759,
+        "added_distance": 12.449070816933858,
+        "rating": 4.9,
+        "feasible": true,
+        "reasons": [],
+        "objective": 6.324555320336759
+      },
+      {
+        "poi_id": "P_gamma",
+        "arrival": 573.0,
+        "service_finish": 583.0,
+        "return_time": 593.4403065089106,
+        "distance_from_bank": 3.0,
+        "added_distance": 3.4403065089105507,
+        "rating": 4,
+        "feasible": true,
+        "reasons": [],
+        "objective": 3.0
+      }
+    ]
+  },
+  {
+    "case_id": "R17",
+    "policy": {
+      "selection": "minimum_added_distance",
+      "availability_reference": "arrival",
+      "return_by": null
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_alpha"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_alpha",
+        "arrival": 575.0990195135928,
+        "service_finish": 585.0990195135928,
+        "return_time": 590.1980390271856,
+        "distance_from_bank": 5.0990195135927845,
+        "added_distance": 0.19803902718556898,
+        "rating": 3.5,
+        "feasible": true,
+        "reasons": [],
+        "objective": 0.19803902718556898
+      },
+      {
+        "poi_id": "P_beta",
+        "arrival": 576.3245553203368,
+        "service_finish": 586.3245553203368,
+        "return_time": 602.449070816934,
+        "distance_from_bank": 6.324555320336759,
+        "added_distance": 12.449070816933858,
+        "rating": 4.9,
+        "feasible": true,
+        "reasons": [],
+        "objective": 12.449070816933858
+      },
+      {
+        "poi_id": "P_gamma",
+        "arrival": 573.0,
+        "service_finish": 583.0,
+        "return_time": 593.4403065089106,
+        "distance_from_bank": 3.0,
+        "added_distance": 3.4403065089105507,
+        "rating": 4,
+        "feasible": true,
+        "reasons": [],
+        "objective": 3.4403065089105507
+      }
+    ]
+  },
+  {
+    "case_id": "R18",
+    "policy": {
+      "selection": "highest_rating",
+      "availability_reference": "arrival",
+      "return_by": null
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_beta"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_alpha",
+        "arrival": 575.0990195135928,
+        "service_finish": 585.0990195135928,
+        "return_time": 590.1980390271856,
+        "distance_from_bank": 5.0990195135927845,
+        "added_distance": 0.19803902718556898,
+        "rating": 3.5,
+        "feasible": true,
+        "reasons": [],
+        "objective": -3.5
+      },
+      {
+        "poi_id": "P_beta",
+        "arrival": 576.3245553203368,
+        "service_finish": 586.3245553203368,
+        "return_time": 602.449070816934,
+        "distance_from_bank": 6.324555320336759,
+        "added_distance": 12.449070816933858,
+        "rating": 4.9,
+        "feasible": true,
+        "reasons": [],
+        "objective": -4.9
+      },
+      {
+        "poi_id": "P_gamma",
+        "arrival": 573.0,
+        "service_finish": 583.0,
+        "return_time": 593.4403065089106,
+        "distance_from_bank": 3.0,
+        "added_distance": 3.4403065089105507,
+        "rating": 4,
+        "feasible": true,
+        "reasons": [],
+        "objective": -4
+      }
+    ]
+  },
+  {
+    "case_id": "R19",
+    "policy": {
+      "selection": "nearest_from_bank",
+      "availability_reference": "departure",
+      "return_by": null
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_beta"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_alpha",
+        "arrival": 572.0,
+        "service_finish": 582.0,
+        "return_time": 592.1980390271856,
+        "distance_from_bank": 2.0,
+        "added_distance": 2.198039027185569,
+        "rating": 4,
+        "feasible": false,
+        "reasons": [
+          "not_open_at_departure"
+        ],
+        "objective": 2.0
+      },
+      {
+        "poi_id": "P_beta",
+        "arrival": 576.0,
+        "service_finish": 586.0,
+        "return_time": 590.0,
+        "distance_from_bank": 6.0,
+        "added_distance": 0.0,
+        "rating": 3.5,
+        "feasible": true,
+        "reasons": [],
+        "objective": 6.0
+      },
+      {
+        "poi_id": "P_gamma",
+        "arrival": 577.8102496759067,
+        "service_finish": 587.8102496759067,
+        "return_time": 603.9657440973102,
+        "distance_from_bank": 7.810249675906654,
+        "added_distance": 13.965744097310164,
+        "rating": 4.9,
+        "feasible": true,
+        "reasons": [],
+        "objective": 7.810249675906654
+      }
+    ]
+  },
+  {
+    "case_id": "R20",
+    "policy": {
+      "selection": "nearest_from_bank",
+      "availability_reference": "arrival",
+      "return_by": null
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_alpha"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_alpha",
+        "arrival": 572.0,
+        "service_finish": 582.0,
+        "return_time": 592.1980390271856,
+        "distance_from_bank": 2.0,
+        "added_distance": 2.198039027185569,
+        "rating": 4,
+        "feasible": true,
+        "reasons": [],
+        "objective": 2.0
+      },
+      {
+        "poi_id": "P_beta",
+        "arrival": 576.0,
+        "service_finish": 586.0,
+        "return_time": 590.0,
+        "distance_from_bank": 6.0,
+        "added_distance": 0.0,
+        "rating": 3.5,
+        "feasible": true,
+        "reasons": [],
+        "objective": 6.0
+      },
+      {
+        "poi_id": "P_gamma",
+        "arrival": 577.8102496759067,
+        "service_finish": 587.8102496759067,
+        "return_time": 603.9657440973102,
+        "distance_from_bank": 7.810249675906654,
+        "added_distance": 13.965744097310164,
+        "rating": 4.9,
+        "feasible": true,
+        "reasons": [],
+        "objective": 7.810249675906654
+      }
+    ]
+  },
+  {
+    "case_id": "R21",
+    "policy": {
+      "selection": "highest_rating",
+      "availability_reference": "arrival",
+      "return_by": 595
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_alpha"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_alpha",
+        "arrival": 571.0,
+        "service_finish": 581.0,
+        "return_time": 592.0,
+        "distance_from_bank": 1.0,
+        "added_distance": 2.0,
+        "rating": 4,
+        "feasible": true,
+        "reasons": [],
+        "objective": -4
+      },
+      {
+        "poi_id": "P_beta",
+        "arrival": 572.0,
+        "service_finish": 582.0,
+        "return_time": 590.0,
+        "distance_from_bank": 2.0,
+        "added_distance": 0.0,
+        "rating": 3.5,
+        "feasible": true,
+        "reasons": [],
+        "objective": -3.5
+      },
+      {
+        "poi_id": "P_gamma",
+        "arrival": 575.0,
+        "service_finish": 585.0,
+        "return_time": 600.0,
+        "distance_from_bank": 5.0,
+        "added_distance": 10.0,
+        "rating": 4.9,
+        "feasible": false,
+        "reasons": [
+          "return_deadline"
+        ],
+        "objective": -4.9
+      }
+    ]
+  },
+  {
+    "case_id": "R22",
+    "policy": {
+      "selection": "highest_rating",
+      "availability_reference": "arrival",
+      "return_by": 600
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_gamma"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_alpha",
+        "arrival": 571.0,
+        "service_finish": 581.0,
+        "return_time": 592.0,
+        "distance_from_bank": 1.0,
+        "added_distance": 2.0,
+        "rating": 4,
+        "feasible": true,
+        "reasons": [],
+        "objective": -4
+      },
+      {
+        "poi_id": "P_beta",
+        "arrival": 572.0,
+        "service_finish": 582.0,
+        "return_time": 590.0,
+        "distance_from_bank": 2.0,
+        "added_distance": 0.0,
+        "rating": 3.5,
+        "feasible": true,
+        "reasons": [],
+        "objective": -3.5
+      },
+      {
+        "poi_id": "P_gamma",
+        "arrival": 575.0,
+        "service_finish": 585.0,
+        "return_time": 600.0,
+        "distance_from_bank": 5.0,
+        "added_distance": 10.0,
+        "rating": 4.9,
+        "feasible": true,
+        "reasons": [],
+        "objective": -4.9
+      }
+    ]
+  },
+  {
+    "case_id": "R23",
+    "policy": {
+      "selection": "highest_rating",
+      "availability_reference": "arrival",
+      "return_by": null
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_beta"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_alpha",
+        "arrival": 572.0,
+        "service_finish": 582.0,
+        "return_time": 594.0,
+        "distance_from_bank": 2.0,
+        "added_distance": 4.0,
+        "rating": 4.9,
+        "feasible": false,
+        "reasons": [
+          "pharmacy_service_finishes_after_close"
+        ],
+        "objective": -4.9
+      },
+      {
+        "poi_id": "P_beta",
+        "arrival": 572.0,
+        "service_finish": 582.0,
+        "return_time": 590.0,
+        "distance_from_bank": 2.0,
+        "added_distance": 0.0,
+        "rating": 4,
+        "feasible": true,
+        "reasons": [],
+        "objective": -4
+      },
+      {
+        "poi_id": "P_gamma",
+        "arrival": 575.0,
+        "service_finish": 585.0,
+        "return_time": 600.0,
+        "distance_from_bank": 5.0,
+        "added_distance": 10.0,
+        "rating": 3.5,
+        "feasible": true,
+        "reasons": [],
+        "objective": -3.5
+      }
+    ]
+  },
+  {
+    "case_id": "R24",
+    "policy": {
+      "selection": "highest_rating",
+      "availability_reference": "arrival",
+      "return_by": null
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_alpha"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_alpha",
+        "arrival": 572.0,
+        "service_finish": 582.0,
+        "return_time": 594.0,
+        "distance_from_bank": 2.0,
+        "added_distance": 4.0,
+        "rating": 4.9,
+        "feasible": true,
+        "reasons": [],
+        "objective": -4.9
+      },
+      {
+        "poi_id": "P_beta",
+        "arrival": 572.0,
+        "service_finish": 582.0,
+        "return_time": 590.0,
+        "distance_from_bank": 2.0,
+        "added_distance": 0.0,
+        "rating": 4,
+        "feasible": true,
+        "reasons": [],
+        "objective": -4
+      },
+      {
+        "poi_id": "P_gamma",
+        "arrival": 575.0,
+        "service_finish": 585.0,
+        "return_time": 600.0,
+        "distance_from_bank": 5.0,
+        "added_distance": 10.0,
+        "rating": 3.5,
+        "feasible": true,
+        "reasons": [],
+        "objective": -3.5
+      }
+    ]
+  },
+  {
+    "case_id": "R25",
+    "policy": {
+      "selection": "nearest_from_bank",
+      "availability_reference": "arrival",
+      "return_by": null
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_beta"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_alpha",
+        "arrival": 577.211102550928,
+        "service_finish": 587.211102550928,
+        "return_time": 595.6963839251665,
+        "distance_from_bank": 7.211102550927978,
+        "added_distance": 5.696383925166547,
+        "rating": 4.9,
+        "feasible": true,
+        "reasons": [],
+        "objective": 7.211102550927978
+      },
+      {
+        "poi_id": "P_beta",
+        "arrival": 571.4142135623731,
+        "service_finish": 581.4142135623731,
+        "return_time": 592.4595745795604,
+        "distance_from_bank": 1.4142135623730951,
+        "added_distance": 2.459574579560357,
+        "rating": 4,
+        "feasible": true,
+        "reasons": [],
+        "objective": 1.4142135623730951
+      },
+      {
+        "poi_id": "P_gamma",
+        "arrival": 574.0,
+        "service_finish": 584.0,
+        "return_time": 590.0,
+        "distance_from_bank": 4.0,
+        "added_distance": 0.0,
+        "rating": 3.5,
+        "feasible": true,
+        "reasons": [],
+        "objective": 4.0
+      }
+    ]
+  },
+  {
+    "case_id": "R26",
+    "policy": {
+      "selection": "nearest_from_bank",
+      "availability_reference": "arrival",
+      "return_by": null
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_beta"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_alpha",
+        "arrival": 577.211102550928,
+        "service_finish": 587.211102550928,
+        "return_time": 595.6963839251665,
+        "distance_from_bank": 7.211102550927978,
+        "added_distance": 5.696383925166547,
+        "rating": 4.9,
+        "feasible": true,
+        "reasons": [],
+        "objective": 7.211102550927978
+      },
+      {
+        "poi_id": "P_beta",
+        "arrival": 571.4142135623731,
+        "service_finish": 581.4142135623731,
+        "return_time": 592.4595745795604,
+        "distance_from_bank": 1.4142135623730951,
+        "added_distance": 2.459574579560357,
+        "rating": 0.5,
+        "feasible": true,
+        "reasons": [],
+        "objective": 1.4142135623730951
+      },
+      {
+        "poi_id": "P_gamma",
+        "arrival": 574.0,
+        "service_finish": 584.0,
+        "return_time": 590.0,
+        "distance_from_bank": 4.0,
+        "added_distance": 0.0,
+        "rating": 3.5,
+        "feasible": true,
+        "reasons": [],
+        "objective": 4.0
+      }
+    ]
+  },
+  {
+    "case_id": "R27",
+    "policy": {
+      "selection": "minimum_added_distance",
+      "availability_reference": "arrival",
+      "return_by": null
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_gamma"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_alpha",
+        "arrival": 576.3245553203368,
+        "service_finish": 586.3245553203368,
+        "return_time": 599.7409631853355,
+        "distance_from_bank": 6.324555320336759,
+        "added_distance": 9.740963185335499,
+        "rating": 4.9,
+        "feasible": true,
+        "reasons": [],
+        "objective": 9.740963185335499
+      },
+      {
+        "poi_id": "P_beta",
+        "arrival": 572.2360679774998,
+        "service_finish": 582.2360679774998,
+        "return_time": 590.2983257257983,
+        "distance_from_bank": 2.23606797749979,
+        "added_distance": 0.29832572579833894,
+        "rating": 4,
+        "feasible": true,
+        "reasons": [],
+        "objective": 0.29832572579833894
+      },
+      {
+        "poi_id": "P_gamma",
+        "arrival": 577.0,
+        "service_finish": 587.0,
+        "return_time": 590.0,
+        "distance_from_bank": 7.0,
+        "added_distance": 0.0,
+        "rating": 3.5,
+        "feasible": true,
+        "reasons": [],
+        "objective": 0.0
+      }
+    ]
+  },
+  {
+    "case_id": "R28",
+    "policy": {
+      "selection": "minimum_added_distance",
+      "availability_reference": "arrival",
+      "return_by": null
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_alpha"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_alpha",
+        "arrival": 577.0,
+        "service_finish": 587.0,
+        "return_time": 590.0,
+        "distance_from_bank": 7.0,
+        "added_distance": 0.0,
+        "rating": 3.5,
+        "feasible": true,
+        "reasons": [],
+        "objective": 0.0
+      },
+      {
+        "poi_id": "P_beta",
+        "arrival": 576.3245553203368,
+        "service_finish": 586.3245553203368,
+        "return_time": 599.7409631853355,
+        "distance_from_bank": 6.324555320336759,
+        "added_distance": 9.740963185335499,
+        "rating": 4.9,
+        "feasible": true,
+        "reasons": [],
+        "objective": 9.740963185335499
+      },
+      {
+        "poi_id": "P_gamma",
+        "arrival": 572.2360679774998,
+        "service_finish": 582.2360679774998,
+        "return_time": 590.2983257257983,
+        "distance_from_bank": 2.23606797749979,
+        "added_distance": 0.29832572579833894,
+        "rating": 4,
+        "feasible": true,
+        "reasons": [],
+        "objective": 0.29832572579833894
+      }
+    ]
+  },
+  {
+    "case_id": "R29",
+    "policy": {
+      "selection": "highest_rating",
+      "availability_reference": "arrival",
+      "return_by": 550
+    },
+    "status": "INFEASIBLE",
+    "accepted_poi_ids": [],
+    "candidates": [
+      {
+        "poi_id": "P_alpha",
+        "arrival": 578.0,
+        "service_finish": 588.0,
+        "return_time": 590.0,
+        "distance_from_bank": 8.0,
+        "added_distance": 0.0,
+        "rating": 3.5,
+        "feasible": false,
+        "reasons": [
+          "return_deadline"
+        ],
+        "objective": -3.5
+      },
+      {
+        "poi_id": "P_beta",
+        "arrival": 575.0,
+        "service_finish": 585.0,
+        "return_time": 598.6014705087355,
+        "distance_from_bank": 5.0,
+        "added_distance": 8.601470508735446,
+        "rating": 4.9,
+        "feasible": false,
+        "reasons": [
+          "return_deadline"
+        ],
+        "objective": -4.9
+      },
+      {
+        "poi_id": "P_gamma",
+        "arrival": 572.2360679774998,
+        "service_finish": 582.2360679774998,
+        "return_time": 591.4556124347927,
+        "distance_from_bank": 2.23606797749979,
+        "added_distance": 1.4556124347926769,
+        "rating": 4,
+        "feasible": false,
+        "reasons": [
+          "return_deadline"
+        ],
+        "objective": -4
+      }
+    ]
+  },
+  {
+    "case_id": "R30",
+    "policy": {
+      "selection": "highest_rating",
+      "availability_reference": "arrival",
+      "return_by": 550
+    },
+    "status": "INFEASIBLE",
+    "accepted_poi_ids": [],
+    "candidates": [
+      {
+        "poi_id": "P_alpha",
+        "arrival": 578.0,
+        "service_finish": 588.0,
+        "return_time": 590.0,
+        "distance_from_bank": 8.0,
+        "added_distance": 0.0,
+        "rating": 3.5,
+        "feasible": false,
+        "reasons": [
+          "return_deadline"
+        ],
+        "objective": -3.5
+      },
+      {
+        "poi_id": "P_beta",
+        "arrival": 575.0,
+        "service_finish": 585.0,
+        "return_time": 598.6014705087355,
+        "distance_from_bank": 5.0,
+        "added_distance": 8.601470508735446,
+        "rating": 1,
+        "feasible": false,
+        "reasons": [
+          "return_deadline"
+        ],
+        "objective": -1
+      },
+      {
+        "poi_id": "P_gamma",
+        "arrival": 572.2360679774998,
+        "service_finish": 582.2360679774998,
+        "return_time": 591.4556124347927,
+        "distance_from_bank": 2.23606797749979,
+        "added_distance": 1.4556124347926769,
+        "rating": 4,
+        "feasible": false,
+        "reasons": [
+          "return_deadline"
+        ],
+        "objective": -4
+      }
+    ]
+  }
+]

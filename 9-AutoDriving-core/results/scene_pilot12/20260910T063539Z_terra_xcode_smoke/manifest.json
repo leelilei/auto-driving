@@ -1,0 +1,23 @@
+{
+  "scope": "UNREVIEWED_DEVELOPMENT_SMOKE",
+  "human_review": "PENDING",
+  "authorization": "User: 用5.6-terra",
+  "model": "gpt-5.6-terra",
+  "provider": "xcode",
+  "planned_cases": [
+    "S01",
+    "S02"
+  ],
+  "planned_calls": 6,
+  "repetitions": 1,
+  "concurrency": 1,
+  "retries": 0,
+  "stopping": "Stop on first transport or schema failure. No method ranking.",
+  "files": {
+    "public.json": "89bee3732018671104b2ae3ff7c5712568924925bde8d4604ccb5adeb9373003",
+    "gold.json": "ac8c6a2b965c635d9129b9f88a0fe3f73fba9a7d7e63534b8ac35b470bbef7f1",
+    "config.json": "e6691de17c300510205e41e2da632b0cb5d1aad394f72b147746eecf973da52e",
+    "collector_source.py": "1b7c72dcb695436f9384c23820d28f074651793a3bcecb2bfbbd02e7bed1327d"
+  },
+  "policy_source_sha256": "4ced5301536ede161427a5e81d5852ef2e9cea0b554d9354bec16ec37b2f7868"
+}

@@ -1,0 +1,15 @@
+{
+  "created": "2026-09-10T16:22:29.374017+00:00",
+  "human_review": "PENDING",
+  "model_api_calls": 0,
+  "source_sha256": "07d48e07291389ca558201dd04261ff5fa894844ab36f8f3f63c4ace8345ebe9",
+  "files": {
+    "model_inputs.json": "d7bac479d5a43a28223ae1e96fe79975c99595a5fccb52693fc6352b5fae46a6",
+    "mutation_audit.json": "c643299b372110a6155d71df2ad79d7f7140b1f083765e9d79f889fbc7565ffb",
+    "gold_and_traces.json": "8416188b143e5487c8f18aba2916a64e2e7c83a184077ec8614983310c45c6c5",
+    "offline_validation.json": "b2e6f26122bb8ca90d737f59373a8d751cde72b17d9c33dedbb7729bd9a57cdf",
+    "author_review_cases.json": "2f5b9863221efe4c5fc25cabf380671e309ff1a069a2ba81224796693380ab3e",
+    "run_plan.json": "86f429149fd70f4a1e9a232c8d1ca301afbd17570ccd0c5aa0037503a168d33f",
+    "CASE_REVIEW.md": "90ba902f5b5e4594e034a10a0b90fcc6688c9795fa88c69960a16981bd96ea66"
+  }
+}

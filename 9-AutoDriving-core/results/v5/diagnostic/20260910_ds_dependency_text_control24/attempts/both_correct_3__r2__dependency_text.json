@@ -1,0 +1,51 @@
+{
+  "call_id": "both_correct_3__r2__dependency_text",
+  "role": "dependency_text",
+  "graph_condition": "tradeoff",
+  "started_at": "2026-09-10T04:16:56.616424+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. Both candidates may be wrong, including when they agree. Supplementary information describes candidate differences or planning consequences; it does not identify the correct intent. Resolve every field from the instruction. Do not infer user preference from a route or map.\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised.\n\nInstruction:\nToday, make sure to visit the bank and the library. Please be back by 18:00. It's essential to prioritize a quick and efficient route for these visits.\n\nCandidate A:\n{\"dependencies\": [], \"pois\": [\"bank\", \"library\"], \"quality_weight\": 0.25, \"time_limit\": 1080}\n\nCandidate B:\n{\"dependencies\": [], \"pois\": [\"bank\", \"library\"], \"quality_weight\": 0.25, \"time_limit\": 1080}\n\nSupplementary information:\n{\"candidate_order_requirements\": {\"A\": [\"No visit-order requirement is specified in this candidate.\"], \"B\": [\"No visit-order requirement is specified in this candidate.\"]}, \"differing_fields\": []}"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"bank\",\"library\"],\"time_limit\":1080,\"dependencies\":[],\"quality_weight\":1.0},\"evidence\":{\"pois\":[\"visit the bank and the library\"],\"time_limit\":[\"back by 18:00\"],\"dependencies\":[],\"quality_weight\":[\"essential to prioritize a quick and efficient route\"]},\"changes\":[\"quality_weight\"]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library"
+    ],
+    "time_limit": 1080,
+    "dependencies": [],
+    "quality_weight": 1.0
+  },
+  "evidence": {
+    "pois": [
+      "visit the bank and the library"
+    ],
+    "time_limit": [
+      "back by 18:00"
+    ],
+    "dependencies": [],
+    "quality_weight": [
+      "essential to prioritize a quick and efficient route"
+    ]
+  },
+  "changes": [
+    "quality_weight"
+  ],
+  "finished_at": "2026-09-10T04:17:10.462578+00:00",
+  "telemetry": {
+    "call_index": 1,
+    "prompt_sha256": "d1e096130a5bbffd0a598621a07bb7c2de7630684f37dd55e6d90f4dba1c5860",
+    "attempts": 1,
+    "latency_seconds": 13.846,
+    "input_chars": 1273,
+    "output_chars": 301,
+    "input_tokens": 340,
+    "output_tokens": 3085,
+    "total_tokens": 3425,
+    "usage_source": "provider",
+    "success": true
+  }
+}

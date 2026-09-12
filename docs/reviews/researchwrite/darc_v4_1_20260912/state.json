@@ -1,0 +1,18 @@
+{
+  "mode": "hybrid",
+  "round": 1,
+  "status": "proposal_revised_conditional_execution",
+  "paper": "CLOSED",
+  "reviews": [
+    "independent_evidence_statistics",
+    "independent_feasibility"
+  ],
+  "technical_debts": [
+    "historical_data_response_binding",
+    "utility_evaluation_unification",
+    "unexposed_cluster_availability",
+    "model_identity_availability",
+    "nearest_literature_full_comparison"
+  ],
+  "new_api_calls": 0
+}

@@ -1,0 +1,55 @@
+{
+  "status": "FROZEN_BEFORE_MODEL_CALLS",
+  "date": "2026-09-12",
+  "n": 12,
+  "selection_rule": "First 12 UIDs in audited manifest expected_ids order after excluding fixed6; no outcome, difficulty, solvability, or tag filtering.",
+  "selected_ids": [
+    "e20241028160251109186",
+    "e20241028160253742452",
+    "e20241028160255878579",
+    "e20241028160258515151",
+    "e20241028160300570125",
+    "e20241028160301887545",
+    "e20241028160303262666",
+    "e20241028160306588034",
+    "e20241028160307743716",
+    "e20241028160309165566",
+    "e20241028160311039073",
+    "e20241028160312706595"
+  ],
+  "excluded_prior_fixed6": [
+    "e20241028160248698752",
+    "e20241028160845920703",
+    "e20241028160848776495",
+    "e20241028160902013119",
+    "e20241028160913165493",
+    "h20241029143455115600"
+  ],
+  "model_input_keys": [
+    "uid",
+    "nature_language"
+  ],
+  "planned_model": "DeepSeek official API request model deepseek-v4-flash",
+  "planned_calls": 12,
+  "retries": "At most one retry for network/provider failure; never retry a semantic or structural response.",
+  "planning": {
+    "search_width": 10,
+    "seconds_per_case": 30,
+    "strategy": "unchanged Repair v1 backend"
+  },
+  "scope": "development baseline error-distribution diagnostic; not benchmark, SOTA, or DARC evidence",
+  "source_hashes": {
+    "external/ChinaTravel/chinatravel/data/dev_split/e20241028160251109186.json": "b6e0500fceeea0d20c7ba0c93518aeff79c041642399c560eaf87e2c6942d82e",
+    "external/ChinaTravel/chinatravel/data/dev_split/e20241028160253742452.json": "fe23b7e99c34e1130975b2760a9b3d0888ce40acd8e4dcb7b28acda84279e698",
+    "external/ChinaTravel/chinatravel/data/dev_split/e20241028160255878579.json": "2727e150582695a04ed59f1db8d4db6c8918647aecb1e401ce1484661415dc46",
+    "external/ChinaTravel/chinatravel/data/dev_split/e20241028160258515151.json": "1aa537a8d373171569ded12bbaa39e9e61724ff97e5b494a4fa7e3446dd31fbb",
+    "external/ChinaTravel/chinatravel/data/dev_split/e20241028160300570125.json": "ea3f28b58d585cd5c153b7b6d59c3fe4f3f9c1f63314dbf5ff0c55f70d956cbf",
+    "external/ChinaTravel/chinatravel/data/dev_split/e20241028160301887545.json": "b894433a531af073aaa373f9e173b8c8a2782c5d6977d910275ea659b774268b",
+    "external/ChinaTravel/chinatravel/data/dev_split/e20241028160303262666.json": "974879ab3d0f8c44a7ae169a75e1d20405bbb714c8590fecbee6b4948db93935",
+    "external/ChinaTravel/chinatravel/data/dev_split/e20241028160306588034.json": "9d54b01cceedb599b1e860e8b7b995ea4ebd883cdf90c9762c91ae72d9649f44",
+    "external/ChinaTravel/chinatravel/data/dev_split/e20241028160307743716.json": "8ce451a0bf955605c78265911e702af3765c2809c54de84fec9fc4e0ed7ed1f7",
+    "external/ChinaTravel/chinatravel/data/dev_split/e20241028160309165566.json": "21539a93a741cebf16947ceb82f72d283f855e166cfee600600ab412b38bac38",
+    "external/ChinaTravel/chinatravel/data/dev_split/e20241028160311039073.json": "54e96db5f7d309000b22474a9e794f3a543d3ebff69a89b09328bba9843cb7f3",
+    "external/ChinaTravel/chinatravel/data/dev_split/e20241028160312706595.json": "059f7276f55a9ba25b446866d882ecd1055bef6a4c31c9ad89976d792776b076"
+  }
+}

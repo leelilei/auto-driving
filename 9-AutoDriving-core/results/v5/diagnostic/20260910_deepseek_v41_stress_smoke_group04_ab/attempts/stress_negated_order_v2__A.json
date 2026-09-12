@@ -1,0 +1,48 @@
+{
+  "call_id": "stress_negated_order_v2::A",
+  "role": "A",
+  "graph_condition": null,
+  "started_at": "2026-09-10T02:28:44.536934+00:00",
+  "request": {
+    "system": "You extract route-planning intent from the user's instruction.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nUse only the instruction. Do not invent constraints. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "I need the pharmacy, bank, and library. Only visit the pharmacy once the bank visit is complete, while giving equal weight to ratings and efficient travel."
+  },
+  "raw_response": "{\"pois\":[\"pharmacy\",\"bank\",\"library\"],\"time_limit\":null,\"dependencies\":[[\"bank\",\"pharmacy\"]],\"quality_weight\":0.5,\"evidence\":{\"pois\":\"I need the pharmacy, bank, and library.\",\"dependencies\":\"Only visit the pharmacy once the bank visit is complete\",\"quality_weight\":\"giving equal weight to ratings and efficient travel\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library",
+      "pharmacy"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "bank",
+        "pharmacy"
+      ]
+    ],
+    "quality_weight": 0.5
+  },
+  "evidence": {
+    "pois": "I need the pharmacy, bank, and library.",
+    "dependencies": "Only visit the pharmacy once the bank visit is complete",
+    "quality_weight": "giving equal weight to ratings and efficient travel"
+  },
+  "changes": [],
+  "finished_at": "2026-09-10T02:28:46.339079+00:00",
+  "telemetry": {
+    "call_index": 5,
+    "prompt_sha256": "4f95232402caf50f3df165db682529f598ed34fae5d23c24ef3bb04d2539cb00",
+    "attempts": 1,
+    "latency_seconds": 1.802,
+    "input_chars": 810,
+    "output_chars": 320,
+    "input_tokens": 220,
+    "output_tokens": 401,
+    "total_tokens": 621,
+    "usage_source": "provider",
+    "success": true
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "call_id": "pilot_02_v0::aligned::review_plain",
+  "role": "review_plain",
+  "graph_condition": "aligned",
+  "started_at": "2026-09-09T18:17:29.613144+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. Candidate agreement is not proof of correctness.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not use route efficiency to infer what the user wants.\n\nInstruction:\nMake sure to visit the supermarket and the pharmacy today. Balance your stops to maintain both reasonable ratings and efficiency along the route. Start your trip at the supermarket before heading to the pharmacy.\n\nCandidate A:\n{\"dependencies\": [[\"supermarket\", \"pharmacy\"]], \"pois\": [\"pharmacy\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nCandidate B:\n{\"dependencies\": [[\"supermarket\", \"pharmacy\"]], \"pois\": [\"pharmacy\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}\n"
+  },
+  "status": "TRANSPORT_FAILED",
+  "schema_valid": false,
+  "error_type": "RuntimeError",
+  "error_message": "curl request failed: curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to xcode.best:443",
+  "finished_at": "2026-09-09T18:17:34.630797+00:00",
+  "telemetry": {
+    "call_index": 1,
+    "prompt_sha256": "befecb0e5584e29c5bf2e4584507dbb7bb06a47b58b256cc85ff8698d76d2d72",
+    "attempts": 1,
+    "latency_seconds": 5.017,
+    "input_chars": 1013,
+    "output_chars": 0,
+    "input_tokens": 254,
+    "output_tokens": 0,
+    "total_tokens": 254,
+    "usage_source": "character_estimate",
+    "success": false,
+    "error": "RuntimeError"
+  }
+}

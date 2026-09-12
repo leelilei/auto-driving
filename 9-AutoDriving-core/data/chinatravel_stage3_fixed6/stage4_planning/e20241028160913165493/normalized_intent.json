@@ -1,0 +1,12 @@
+{
+  "start_city": "杭州",
+  "target_city": "北京",
+  "days": 3,
+  "people_number": 2,
+  "budget": 8000,
+  "room_count": 1,
+  "room_type": 2,
+  "cuisine": null,
+  "intercity_mode": "airplane",
+  "attraction_category": null
+}

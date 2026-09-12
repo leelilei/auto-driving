@@ -1,0 +1,9 @@
+{
+  "status": "PLAN_FOUND",
+  "new_model_calls": 0,
+  "officially_evaluated": false,
+  "seconds_limit": 30,
+  "missing_fields": [],
+  "question": null,
+  "elapsed_seconds": 0.9413848329568282
+}

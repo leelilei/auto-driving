@@ -1,0 +1,69 @@
+{
+  "status": "COLLECTED",
+  "n_cases": 6,
+  "model_api_calls": 2,
+  "contract_valid": 0,
+  "stopped_on_auth_or_rate_limit": true,
+  "records": [
+    {
+      "uid": "e20241028160248698752",
+      "max_requests": 1,
+      "provider_response": {
+        "model": "claude-haiku-4-5-20251001",
+        "id": "msg_011CewiLsXizMLXVcRdAh88H",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_014uku2FXufBWaV5eH7HJCv9",
+            "name": "parse_intent",
+            "input": {
+              "attraction_category": null,
+              "people_number": 1,
+              "intercity_mode": "train",
+              "target_city": "杭州",
+              "budget": 1500,
+              "room_count": 0,
+              "cuisine": null,
+              "days": 1,
+              "room_type": null,
+              "start_city": "上海"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "stop_reason": "tool_use",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 1039,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 93,
+          "service_tier": "standard",
+          "inference_geo": "global"
+        },
+        "context_management": {
+          "applied_edits": []
+        }
+      },
+      "status": "FAILED",
+      "error_type": "ValueError",
+      "error": "invalid room_count"
+    },
+    {
+      "uid": "e20241028160845920703",
+      "max_requests": 1,
+      "status": "FAILED",
+      "error_type": "HTTPError",
+      "error": "HTTP Error 401: Unauthorized"
+    }
+  ]
+}

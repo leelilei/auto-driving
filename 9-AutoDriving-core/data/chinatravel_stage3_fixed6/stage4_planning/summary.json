@@ -1,0 +1,43 @@
+{
+  "status": "STAGE4_PLANNING_COMPLETE",
+  "model_api_calls": 0,
+  "cases": [
+    {
+      "uid": "e20241028160248698752",
+      "status": "search_success",
+      "search_success": true,
+      "seconds": 1.8251910409890115,
+      "tool_calls": 3396,
+      "tool_errors": 0,
+      "schema_valid": true
+    },
+    {
+      "uid": "e20241028160848776495",
+      "status": "search_error:TimeoutError",
+      "search_success": false,
+      "seconds": 30.263925082981586,
+      "tool_calls": 72983,
+      "tool_errors": 0,
+      "schema_valid": false
+    },
+    {
+      "uid": "e20241028160913165493",
+      "status": "search_success",
+      "search_success": true,
+      "seconds": 7.650136582902633,
+      "tool_calls": 12183,
+      "tool_errors": 0,
+      "schema_valid": false
+    },
+    {
+      "uid": "h20241029143455115600",
+      "status": "search_success",
+      "search_success": true,
+      "seconds": 4.593033624929376,
+      "tool_calls": 12818,
+      "tool_errors": 0,
+      "schema_valid": false
+    }
+  ],
+  "semantic_error_candidates": []
+}

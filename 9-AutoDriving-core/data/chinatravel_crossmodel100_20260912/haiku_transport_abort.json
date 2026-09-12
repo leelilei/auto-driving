@@ -1,0 +1,9 @@
+{
+  "status": "ABORTED_TRANSPORT_FAILURES",
+  "model": "claude-haiku-4-5-20251001",
+  "attempted_calls": 11,
+  "valid_responses": 0,
+  "observed": "11 consecutive TLS handshake failures before bounded stop",
+  "not_a_model_result": true,
+  "next_action": "Do not resume in the same collection file; require a fresh transport preflight and new separately named run."
+}

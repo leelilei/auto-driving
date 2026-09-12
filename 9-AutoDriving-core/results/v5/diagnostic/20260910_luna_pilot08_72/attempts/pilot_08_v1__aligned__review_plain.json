@@ -1,0 +1,29 @@
+{
+  "call_id": "pilot_08_v1::aligned::review_plain",
+  "role": "review_plain",
+  "graph_condition": "aligned",
+  "started_at": "2026-09-09T17:32:13.249157+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. Candidate agreement is not proof of correctness.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not use route efficiency to infer what the user wants.\n\nInstruction:\nPlease stop by the library, shopping mall, and supermarket today. Balance good ratings with route efficiency, and ensure you visit the shopping mall before the supermarket.\n\nCandidate A:\n{\"dependencies\": [[\"shopping_mall\", \"supermarket\"]], \"pois\": [\"library\", \"shopping_mall\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nCandidate B:\n{\"dependencies\": [[\"shopping_mall\", \"supermarket\"]], \"pois\": [\"library\", \"shopping_mall\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"library\",\"shopping_mall\",\"supermarket\"],\"time_limit\":\"today\",\"dependencies\":[[\"shopping_mall\",\"supermarket\"]],\"quality_weight\":0.5},\"evidence\":{\"pois\":\"stop by the library, shopping mall, and supermarket\",\"time_limit\":\"today\",\"dependencies\":\"visit the shopping mall before the supermarket\",\"quality_weight\":\"Balance good ratings with route efficiency\"},\"changes\":[\"time_limit\"]}",
+  "status": "SCHEMA_FAILED",
+  "schema_valid": false,
+  "error_type": "ValueError",
+  "error_message": "Deadline must be HH:MM or minutes",
+  "finished_at": "2026-09-09T17:32:33.761447+00:00",
+  "telemetry": {
+    "call_index": 4,
+    "prompt_sha256": "931e2dd6909c45f8e5d01496914d2172662107fee4fd8a1cd8f793a6a423098e",
+    "attempts": 1,
+    "latency_seconds": 20.512,
+    "input_chars": 1015,
+    "output_chars": 398,
+    "input_tokens": 244,
+    "output_tokens": 267,
+    "total_tokens": 511,
+    "usage_source": "provider",
+    "success": true
+  }
+}

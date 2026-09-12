@@ -1,0 +1,42 @@
+{
+  "call_id": "stress_concession_quality_v2::A",
+  "role": "A",
+  "graph_condition": null,
+  "started_at": "2026-09-10T02:28:54.513173+00:00",
+  "request": {
+    "system": "You extract route-planning intent from the user's instruction.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nUse only the instruction. Do not invent constraints. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Cover the shopping mall, supermarket, and library. Taking a somewhat longer route is fine; the ratings of the places matter most."
+  },
+  "raw_response": "{\"pois\":[\"shopping mall\",\"supermarket\",\"library\"],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.9,\"evidence\":{\"pois\":\"shopping mall, supermarket, and library\",\"quality_weight\":\"ratings of the places matter most\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "library",
+      "shopping_mall",
+      "supermarket"
+    ],
+    "time_limit": null,
+    "dependencies": [],
+    "quality_weight": 0.9
+  },
+  "evidence": {
+    "pois": "shopping mall, supermarket, and library",
+    "quality_weight": "ratings of the places matter most"
+  },
+  "changes": [],
+  "finished_at": "2026-09-10T02:28:56.770326+00:00",
+  "telemetry": {
+    "call_index": 5,
+    "prompt_sha256": "adcd01216b714c06caf8fc1caf00ea9e5f71e62a338474ae1a74ac0c6c434c83",
+    "attempts": 1,
+    "latency_seconds": 2.257,
+    "input_chars": 784,
+    "output_chars": 222,
+    "input_tokens": 215,
+    "output_tokens": 436,
+    "total_tokens": 651,
+    "usage_source": "provider",
+    "success": true
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "call_id": "pilot_02_v3::llmap_cot",
+  "role": "llmap_cot",
+  "graph_condition": null,
+  "started_at": "2026-09-09T16:41:46.427887+00:00",
+  "request": {
+    "system": "Extract POIs, constraints, and weights from human instruction through step-by-step reasoning:\n\n1. POIs Analysis:\n    - Look for POIs mentioned that need to be visited\n    - Create list of unique POIs\n\n2. Time Limit Analysis:\n    - Search for any specific return time\n    - Format as HH:00 or \"None\" if not specified\n\n3. Dependencies Analysis:\n    - Look for words indicating sequence (before, after, then, etc.)\n    - Create pairs of [POI1, POI2] for each sequence requirement\n\n4. Preference Analysis:\n    - Look for language about POI quality/rating importance vs route efficiency\n    - High POI rating emphasis (quality, best places, etc.) ->quality_weight should be large than 0.5\n    - High route efficiency emphasis (quick, shortest, save time) -> distance_weight should be large than 0.5\n    - Balanced language -> both weights around 0.5\n\nOutput must be valid JSON with structure:\n{\n    \"pois\": [\"poi1\", \"poi2\", ...],\n    \"time_limit\": \"HH:00\" or \"None\",\n    \"dependencies\": [[\"poi1\", \"poi2\"], ...],\n    \"quality_weight\": float,\n    \"distance_weight\": float\n}\n",
+    "user": "Extract POIs, constraints, and weights from this instruction as JSON:\nMake sure you stop at the supermarket and pharmacy today, starting off at the supermarket then hitting the pharmacy. Try to strike a good balance between decent reviews and not driving too far out of the way.\n\nOnly output the JSON object. No prefix, additional text, or explanation.\n"
+  },
+  "raw_response": "{\"pois\":[\"supermarket\",\"pharmacy\"],\"time_limit\":\"None\",\"dependencies\":[[\"supermarket\",\"pharmacy\"]],\"quality_weight\":0.5,\"distance_weight\":0.5}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "pharmacy",
+      "supermarket"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "supermarket",
+        "pharmacy"
+      ]
+    ],
+    "quality_weight": 0.5
+  },
+  "evidence": {},
+  "changes": [],
+  "finished_at": "2026-09-09T16:41:47.423033+00:00",
+  "telemetry": {
+    "call_index": 60,
+    "prompt_sha256": "c5b9e87eb409686bb85f53e1b0981011c19fb35dd4410a7bac6b34d166413266",
+    "attempts": 1,
+    "latency_seconds": 0.995,
+    "input_chars": 1420,
+    "output_chars": 142,
+    "input_tokens": 399,
+    "output_tokens": 131,
+    "total_tokens": 530,
+    "usage_source": "provider",
+    "success": true
+  }
+}

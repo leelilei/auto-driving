@@ -1,0 +1,109 @@
+[
+  {
+    "call_id": "F12__r1__evidence",
+    "official_status": "SCHEMA_FAILED",
+    "diagnostic_only": true,
+    "original_error": "unknown selection or availability reference",
+    "invalid_selection": "P_A",
+    "kind": "poi_id_in_rule_slot",
+    "alternate_decision_agrees_with_gold": true
+  },
+  {
+    "call_id": "F28__r1__evidence",
+    "official_status": "SCHEMA_FAILED",
+    "diagnostic_only": true,
+    "original_error": "unknown selection or availability reference",
+    "invalid_selection": "INFEASIBLE",
+    "kind": "decision_status_in_rule_slot",
+    "alternate_decision_agrees_with_gold": true
+  },
+  {
+    "call_id": "F30__r1__evidence",
+    "official_status": "SCHEMA_FAILED",
+    "diagnostic_only": true,
+    "original_error": "unknown selection or availability reference",
+    "invalid_selection": "P_B",
+    "kind": "poi_id_in_rule_slot",
+    "alternate_decision_agrees_with_gold": true
+  },
+  {
+    "call_id": "F12__r2__evidence",
+    "official_status": "SCHEMA_FAILED",
+    "diagnostic_only": true,
+    "original_error": "unknown selection or availability reference",
+    "invalid_selection": "P_A",
+    "kind": "poi_id_in_rule_slot",
+    "alternate_decision_agrees_with_gold": true
+  },
+  {
+    "call_id": "F28__r2__evidence",
+    "official_status": "SCHEMA_FAILED",
+    "diagnostic_only": true,
+    "original_error": "unknown selection or availability reference",
+    "invalid_selection": "INFEASIBLE",
+    "kind": "decision_status_in_rule_slot",
+    "alternate_decision_agrees_with_gold": true
+  },
+  {
+    "call_id": "F27__r2__evidence",
+    "official_status": "SCHEMA_FAILED",
+    "diagnostic_only": true,
+    "original_error": "Extra data: line 13 column 1 (char 983)",
+    "kind": "not_one_json_object",
+    "alternate_decision_agrees_with_gold": null
+  },
+  {
+    "call_id": "F29__r1__evidence",
+    "official_status": "SCHEMA_FAILED",
+    "diagnostic_only": true,
+    "original_error": "unknown selection or availability reference",
+    "invalid_selection": "INFEASIBLE",
+    "kind": "decision_status_in_rule_slot",
+    "alternate_decision_agrees_with_gold": true
+  },
+  {
+    "call_id": "F27__r1__evidence",
+    "official_status": "SCHEMA_FAILED",
+    "diagnostic_only": true,
+    "original_error": "unknown selection or availability reference",
+    "invalid_selection": "INFEASIBLE",
+    "kind": "decision_status_in_rule_slot",
+    "alternate_decision_agrees_with_gold": true
+  },
+  {
+    "call_id": "F29__r2__evidence",
+    "official_status": "SCHEMA_FAILED",
+    "diagnostic_only": true,
+    "original_error": "unknown selection or availability reference",
+    "invalid_selection": "INFEASIBLE",
+    "kind": "decision_status_in_rule_slot",
+    "alternate_decision_agrees_with_gold": true
+  },
+  {
+    "call_id": "F09__r1__evidence",
+    "official_status": "SCHEMA_FAILED",
+    "diagnostic_only": true,
+    "original_error": "unknown selection or availability reference",
+    "invalid_selection": "P_D",
+    "kind": "poi_id_in_rule_slot",
+    "alternate_decision_agrees_with_gold": true
+  },
+  {
+    "call_id": "F07__r2__evidence",
+    "official_status": "SCHEMA_FAILED",
+    "diagnostic_only": true,
+    "original_error": "unknown selection or availability reference",
+    "invalid_selection": "P_C",
+    "kind": "poi_id_in_rule_slot",
+    "alternate_decision_agrees_with_gold": false
+  },
+  {
+    "call_id": "F25__r1__evidence",
+    "official_status": "SCHEMA_FAILED",
+    "diagnostic_only": true,
+    "original_error": "unknown selection or availability reference",
+    "invalid_selection": "INFEASIBLE",
+    "kind": "decision_status_in_rule_slot",
+    "alternate_decision_agrees_with_gold": false
+  }
+]

@@ -1,0 +1,46 @@
+{
+  "call_id": "pilot_04_v0::aligned::darc",
+  "role": "darc",
+  "graph_condition": "aligned",
+  "started_at": "2026-09-09T18:15:09.786016+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. The decision-contrast report is diagnostic evidence about consequences; it is not a label and must not override the words of the instruction.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Use the report to locate consequential disagreements, then decide each field from the instruction alone.\n\nInstruction:\nToday, make sure to visit the bank and the library. Please be back by 18:00. It's essential to prioritize a quick and efficient route for these visits.\n\nCandidate A:\n{\"dependencies\": [], \"pois\": [\"bank\", \"library\"], \"quality_weight\": 0.1, \"time_limit\": 1080}\n\nCandidate B:\n{\"dependencies\": [], \"pois\": [\"bank\", \"library\"], \"quality_weight\": 0.0, \"time_limit\": 1080}\n\nDecision-contrast report:\n{\"candidate_A\": {\"dependencies\": [], \"pois\": [\"bank\", \"library\"], \"quality_weight\": 0.1, \"time_limit\": 1080}, \"candidate_B\": {\"dependencies\": [], \"pois\": [\"bank\", \"library\"], \"quality_weight\": 0.0, \"time_limit\": 1080}, \"candidate_evidence\": {\"A\": {\"pois\": \"visit the bank and the library\", \"quality_weight\": \"prioritize a quick and efficient route\", \"time_limit\": \"be back by 18:00\"}, \"B\": {\"pois\": \"visit the bank and the library\", \"quality_weight\": \"prioritize a quick and efficient route\", \"time_limit\": \"be back by 18:00\"}}, \"cross_constraints\": {\"route_A_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_A_under_B\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_B\": {\"reasons\": [], \"task_success\": true}}, \"differing_fields\": [\"quality_weight\"], \"instruction\": \"Today, make sure to visit the bank and the library. Please be back by 18:00. It's essential to prioritize a quick and efficient route for these visits.\", \"limitations\": [\"The report does not identify the user's true intent.\", \"Both candidates may share the same error.\", \"Single-field swaps do not identify higher-order interactions.\"], \"report_version\": \"darc-v5.1-contrast-2\", \"routes\": {\"A\": {\"arrival_minutes\": 622, \"average_quality\": 0.5, \"categories\": [\"bank\", \"library\"], \"coverage_count\": 2, \"distance_km\": 3.686, \"duration_minutes\": 82.4, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"bank_1\", \"library_1\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": -0.004207853690819323}, \"B\": {\"arrival_minutes\": 622, \"average_quality\": 0.5, \"categories\": [\"bank\", \"library\"], \"coverage_count\": 2, \"distance_km\": 3.686, \"duration_minutes\": 82.4, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"bank_1\", \"library_1\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": -0.0602309485453548}}, \"single_field_swaps\": [{\"base\": \"A\", \"field_from_other\": \"quality_weight\", \"hybrid_intent\": {\"dependencies\": [], \"pois\": [\"bank\", \"library\"], \"quality_weight\": 0.0, \"time_limit\": 1080}, \"route\": {\"arrival_minutes\": 622, \"average_quality\": 0.5, \"categories\": [\"bank\", \"library\"], \"coverage_count\": 2, \"distance_km\": 3.686, \"duration_minutes\": 82.4, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"bank_1\", \"library_1\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": -0.0602309485453548}}, {\"base\": \"B\", \"field_from_other\": \"quality_weight\", \"hybrid_intent\": {\"dependencies\": [], \"pois\": [\"bank\", \"library\"], \"quality_weight\": 0.1, \"time_limit\": 1080}, \"route\": {\"arrival_minutes\": 622, \"average_quality\": 0.5, \"categories\": [\"bank\", \"library\"], \"coverage_count\": 2, \"distance_km\": 3.686, \"duration_minutes\": 82.4, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"bank_1\", \"library_1\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": -0.004207853690819323}}]}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"bank\",\"library\"],\"time_limit\":1080,\"dependencies\":[],\"quality_weight\":0.0},\"evidence\":{\"pois\":\"visit the bank and the library\",\"time_limit\":\"be back by 18:00\",\"quality_weight\":\"prioritize a quick and efficient route\"},\"changes\":[\"pois\",\"time_limit\",\"quality_weight\"]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library"
+    ],
+    "time_limit": 1080,
+    "dependencies": [],
+    "quality_weight": 0.0
+  },
+  "evidence": {
+    "pois": "visit the bank and the library",
+    "time_limit": "be back by 18:00",
+    "quality_weight": "prioritize a quick and efficient route"
+  },
+  "changes": [
+    "pois",
+    "time_limit",
+    "quality_weight"
+  ],
+  "finished_at": "2026-09-09T18:15:51.565483+00:00",
+  "telemetry": {
+    "call_index": 3,
+    "prompt_sha256": "a883424033f152178872d0c380edbcf6a77c8e7109363b9f9496f0ebb202138b",
+    "attempts": 1,
+    "latency_seconds": 41.779,
+    "input_chars": 3892,
+    "output_chars": 287,
+    "input_tokens": 1095,
+    "output_tokens": 256,
+    "total_tokens": 1351,
+    "usage_source": "provider",
+    "success": true
+  }
+}

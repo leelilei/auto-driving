@@ -1,0 +1,8 @@
+{
+  "status": "COMPLETE",
+  "planned": 60,
+  "completed": 60,
+  "pending": 0,
+  "combined_physical_calls": 111,
+  "combined_transport_failures": 51
+}

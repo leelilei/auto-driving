@@ -1,0 +1,41 @@
+{
+  "call_id": "pilot_03_v0::A",
+  "role": "A",
+  "graph_condition": null,
+  "started_at": "2026-09-09T18:04:43.184397+00:00",
+  "request": {
+    "system": "You extract route-planning intent from the user's instruction.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nUse only the instruction. Do not invent constraints. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Today, make sure to visit the pharmacy and the shopping mall. Try to find a balance between visiting well-rated places and keeping the route efficient. There are no specific dependencies on the order of visits, so feel free to choose the sequence that works best for you."
+  },
+  "raw_response": "{\"pois\":[\"pharmacy\",\"shopping mall\"],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5,\"evidence\":{\"pois\":\"visit the pharmacy and the shopping mall\",\"quality_weight\":\"find a balance between visiting well-rated places and keeping the route efficient\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "pharmacy",
+      "shopping_mall"
+    ],
+    "time_limit": null,
+    "dependencies": [],
+    "quality_weight": 0.5
+  },
+  "evidence": {
+    "pois": "visit the pharmacy and the shopping mall",
+    "quality_weight": "find a balance between visiting well-rated places and keeping the route efficient"
+  },
+  "changes": [],
+  "finished_at": "2026-09-09T18:04:51.871209+00:00",
+  "telemetry": {
+    "call_index": 1,
+    "prompt_sha256": "d63e539f88aa13be408090679684b98303f540bf8133c26fc07480d680b45fd2",
+    "attempts": 1,
+    "latency_seconds": 8.686,
+    "input_chars": 926,
+    "output_chars": 258,
+    "input_tokens": 198,
+    "output_tokens": 134,
+    "total_tokens": 332,
+    "usage_source": "provider",
+    "success": true
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "call_id": "stress_combined_constraints_v3::A",
+  "role": "A",
+  "graph_condition": null,
+  "started_at": "2026-09-10T02:29:03.935798+00:00",
+  "request": {
+    "system": "You extract route-planning intent from the user's instruction.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nUse only the instruction. Do not invent constraints. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Please visit the shopping mall, pharmacy, library, and bank and get back by half past five. Do the library before the shopping mall and do not visit the pharmacy before the bank. Minimize avoidable distance."
+  },
+  "raw_response": "{\"pois\":[\"shopping mall\",\"pharmacy\",\"library\",\"bank\"],\"time_limit\":1050,\"dependencies\":[[\"library\",\"shopping mall\"],[\"bank\",\"pharmacy\"]],\"quality_weight\":0.0,\"evidence\":{\"pois\":\"shopping mall, pharmacy, library, and bank\",\"time_limit\":\"by half past five\",\"dependencies\":\"Do the library before the shopping mall and do not visit the pharmacy before the bank\",\"quality_weight\":\"Minimize avoidable distance\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library",
+      "pharmacy",
+      "shopping_mall"
+    ],
+    "time_limit": 1050,
+    "dependencies": [
+      [
+        "bank",
+        "pharmacy"
+      ],
+      [
+        "library",
+        "shopping_mall"
+      ]
+    ],
+    "quality_weight": 0.0
+  },
+  "evidence": {
+    "pois": "shopping mall, pharmacy, library, and bank",
+    "time_limit": "by half past five",
+    "dependencies": "Do the library before the shopping mall and do not visit the pharmacy before the bank",
+    "quality_weight": "Minimize avoidable distance"
+  },
+  "changes": [],
+  "finished_at": "2026-09-10T02:29:07.479455+00:00",
+  "telemetry": {
+    "call_index": 7,
+    "prompt_sha256": "406db961d425dbae955afff00d576d6dd65cadb391bf26ca495c232575bd472c",
+    "attempts": 1,
+    "latency_seconds": 3.544,
+    "input_chars": 862,
+    "output_chars": 406,
+    "input_tokens": 232,
+    "output_tokens": 756,
+    "total_tokens": 988,
+    "usage_source": "provider",
+    "success": true
+  }
+}

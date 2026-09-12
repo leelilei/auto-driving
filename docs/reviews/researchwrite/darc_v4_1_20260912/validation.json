@@ -1,0 +1,18 @@
+{
+  "checks": [
+    {
+      "file": "docs/plans/proposal_v4_1_budgeted_stability_20260912.md",
+      "broken_local_links": []
+    },
+    {
+      "file": "docs/plans/proposal.md",
+      "broken_local_links": []
+    },
+    {
+      "file": "docs/plans/PROJECT_RESET_V4_1_20260912.md",
+      "broken_local_links": []
+    }
+  ],
+  "canonical_matches_version": true,
+  "old_proposal_archive_exists": true
+}

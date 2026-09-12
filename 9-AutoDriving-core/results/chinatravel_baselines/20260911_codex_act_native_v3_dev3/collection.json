@@ -1,0 +1,22 @@
+{
+  "cases": {
+    "e20241028160248698752": {
+      "status": "final_schema_invalid",
+      "calls": 9,
+      "query_calls": 8,
+      "chars": 57795,
+      "query_chars": 47568,
+      "query_stop": "model_finish",
+      "elapsed_seconds": 54.275662416999694,
+      "schema_valid": false
+    },
+    "e20241028160842228543": {
+      "status": "not_executed",
+      "calls": 0
+    },
+    "h20241029143447759844": {
+      "status": "not_executed",
+      "calls": 0
+    }
+  }
+}

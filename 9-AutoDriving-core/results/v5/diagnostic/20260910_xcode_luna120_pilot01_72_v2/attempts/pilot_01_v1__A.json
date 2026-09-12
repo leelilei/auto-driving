@@ -1,0 +1,48 @@
+{
+  "call_id": "pilot_01_v1::A",
+  "role": "A",
+  "graph_condition": null,
+  "started_at": "2026-09-09T18:18:52.315475+00:00",
+  "request": {
+    "system": "You extract route-planning intent from the user's instruction.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nUse only the instruction. Do not invent constraints. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "You will be stopping by the shopping mall and the supermarket today. Be sure to arrive back by 22:00. Prioritizing travel efficiency, keep the route as short and direct as feasible, and remember to visit the shopping mall prior to the supermarket."
+  },
+  "raw_response": "{\n  \"pois\": [\"shopping mall\", \"supermarket\"],\n  \"time_limit\": 1320,\n  \"dependencies\": [[\"shopping mall\", \"supermarket\"]],\n  \"quality_weight\": 0,\n  \"evidence\": {\n    \"pois\": \"shopping mall and the supermarket\",\n    \"time_limit\": \"arrive back by 22:00\",\n    \"dependencies\": \"visit the shopping mall prior to the supermarket\",\n    \"quality_weight\": \"Prioritizing travel efficiency, keep the route as short and direct as feasible\"\n  }\n}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "shopping_mall",
+      "supermarket"
+    ],
+    "time_limit": 1320,
+    "dependencies": [
+      [
+        "shopping_mall",
+        "supermarket"
+      ]
+    ],
+    "quality_weight": 0.0
+  },
+  "evidence": {
+    "pois": "shopping mall and the supermarket",
+    "time_limit": "arrive back by 22:00",
+    "dependencies": "visit the shopping mall prior to the supermarket",
+    "quality_weight": "Prioritizing travel efficiency, keep the route as short and direct as feasible"
+  },
+  "changes": [],
+  "finished_at": "2026-09-09T18:19:23.124396+00:00",
+  "telemetry": {
+    "call_index": 2,
+    "prompt_sha256": "cb296102f5956b7011ff77562a0620977d4797f6731b3306798032961e5f0753",
+    "attempts": 1,
+    "latency_seconds": 30.809,
+    "input_chars": 902,
+    "output_chars": 432,
+    "input_tokens": 197,
+    "output_tokens": 227,
+    "total_tokens": 424,
+    "usage_source": "provider",
+    "success": true
+  }
+}

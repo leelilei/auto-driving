@@ -1,0 +1,12 @@
+{
+  "status": "PASS_OFFLINE",
+  "scope": "MOCK_ENGINEERING_ONLY",
+  "independent_decisions": 180,
+  "logical_units": 180,
+  "review_receipt_present": false,
+  "raw_task_success": {
+    "direct": 28,
+    "language": 28,
+    "evidence": 28
+  }
+}

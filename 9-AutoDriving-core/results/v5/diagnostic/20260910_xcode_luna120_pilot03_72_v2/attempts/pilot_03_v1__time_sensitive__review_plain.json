@@ -1,0 +1,43 @@
+{
+  "call_id": "pilot_03_v1::time_sensitive::review_plain",
+  "role": "review_plain",
+  "graph_condition": "time_sensitive",
+  "started_at": "2026-09-09T18:45:33.044279+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. Candidate agreement is not proof of correctness.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not use route efficiency to infer what the user wants.\n\nInstruction:\nPlease stop by the pharmacy and the shopping mall today. Seek a balance between high ratings and efficient travel distance. There is no required sequence between them, so choose whichever order suits you.\n\nCandidate A:\n{\"dependencies\": [], \"pois\": [\"pharmacy\", \"shopping_mall\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nCandidate B:\n{\"dependencies\": [], \"pois\": [\"pharmacy\", \"shopping_mall\"], \"quality_weight\": 0.5, \"time_limit\": null}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"pharmacy\",\"shopping_mall\"],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{\"pois\":\"\\\"stop by the pharmacy and the shopping mall\\\"\",\"time_limit\":\"\\\"today\\\" does not specify a duration or deadline\",\"dependencies\":\"\\\"There is no required sequence between them\\\"\",\"quality_weight\":\"\\\"Seek a balance between high ratings and efficient travel distance\\\"\"},\"changes\":[]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "pharmacy",
+      "shopping_mall"
+    ],
+    "time_limit": null,
+    "dependencies": [],
+    "quality_weight": 0.5
+  },
+  "evidence": {
+    "pois": "\"stop by the pharmacy and the shopping mall\"",
+    "time_limit": "\"today\" does not specify a duration or deadline",
+    "dependencies": "\"There is no required sequence between them\"",
+    "quality_weight": "\"Seek a balance between high ratings and efficient travel distance\""
+  },
+  "changes": [],
+  "finished_at": "2026-09-09T18:46:15.263866+00:00",
+  "telemetry": {
+    "call_index": 7,
+    "prompt_sha256": "dd3418aa61344e7ff62620711dbe0505f3e9de5eab7a6ed19c4716372c59ec2d",
+    "attempts": 1,
+    "latency_seconds": 42.219,
+    "input_chars": 955,
+    "output_chars": 405,
+    "input_tokens": 215,
+    "output_tokens": 371,
+    "total_tokens": 586,
+    "usage_source": "provider",
+    "success": true
+  }
+}

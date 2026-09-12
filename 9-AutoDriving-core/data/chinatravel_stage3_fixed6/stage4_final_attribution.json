@@ -1,0 +1,48 @@
+{
+  "status": "STAGE4_COMPLETE_PENDING_SEMANTIC_ADJUDICATION",
+  "source": "collection_report.json",
+  "model_api_calls_attempted": 6,
+  "provider_responses_archived": 1,
+  "counts": {
+    "contract_validation_failure": 1,
+    "authentication_or_transport_failure": 5,
+    "compile_failure": 0,
+    "planning_runs": 0,
+    "semantic_error": 0
+  },
+  "case_findings": [
+    {
+      "uid": "e20241028160248698752",
+      "attribution": "contract_validation_failure",
+      "detail": "Provider returned room_count=0, room_type='null', and intercity_mode='train' for a base day-trip query. The v4 contract rejected the invalid room fields; no plan was compiled. This is an invalid structured response, not yet a DARC semantic-error adjudication."
+    },
+    {
+      "uid": "e20241028160845920703",
+      "attribution": "authentication_or_transport_failure",
+      "detail": "HTTP 401; no provider response."
+    },
+    {
+      "uid": "e20241028160848776495",
+      "attribution": "authentication_or_transport_failure",
+      "detail": "HTTP 401; no provider response."
+    },
+    {
+      "uid": "e20241028160913165493",
+      "attribution": "authentication_or_transport_failure",
+      "detail": "HTTP 401; no provider response."
+    },
+    {
+      "uid": "e20241028160902013119",
+      "attribution": "authentication_or_transport_failure",
+      "detail": "HTTP 401; no provider response."
+    },
+    {
+      "uid": "h20241029143455115600",
+      "attribution": "authentication_or_transport_failure",
+      "detail": "HTTP 401; no provider response."
+    }
+  ],
+  "stage5_decision": "NOT_ELIGIBLE",
+  "reason": "No complete candidate plan and no independently adjudicated semantic error. Stage 5 feedback comparison must not run on invalid structured output or 401 failures.",
+  "next_gate": "Restore valid XCODE authentication, then run a fresh bounded pilot with stop-on-401 and archived raw responses before any planning or DARC comparison."
+}

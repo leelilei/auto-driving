@@ -1,0 +1,23 @@
+{
+  "scope": "development_single_case_integration_smoke",
+  "uid": "e20241028160248698752",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "xcode",
+  "base_url": "https://xcode.best",
+  "max_calls": 12,
+  "max_seconds": 900,
+  "max_request_chars_total": 160000,
+  "adaptation": "official Act with explicit text-tool bridge and bounded execution",
+  "input_fields": [
+    "uid",
+    "nature_language"
+  ],
+  "oracle_translation": false,
+  "sandbox_verified": {
+    "zh": 132,
+    "en": 132
+  },
+  "data_sha256": "4cd9da804975fa0a265c6f038d61cdfc880670094b2e819fc0c5ff315371860f",
+  "pipeline_sha256": "30543474fc8cdd2ca0bf35e2e57dd11be693f6ed47faa21371c69805bc325eda",
+  "schema_sha256": "5259e2620d100104163b560cb193b450f64660507f0a9588be129860764cb120"
+}

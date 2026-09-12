@@ -1,0 +1,315 @@
+{
+  "haiku": {
+    "counts": {
+      "utterances": 640,
+      "method_slots": 1920,
+      "schema_valid": 1896,
+      "retained_nonempty_responses": 1910,
+      "retained_provider_tokens": 842264,
+      "raw_parse_failure": 14,
+      "all_three_schema_valid_utterances": 619,
+      "empty_or_transport_failure": 7,
+      "missing_usage_slots": 7,
+      "skipped": 3
+    },
+    "failed_slots": [
+      {
+        "uid": "test_001_v0",
+        "method": "review",
+        "kind": "raw_parse_failure"
+      },
+      {
+        "uid": "test_004_v2",
+        "method": "review",
+        "kind": "raw_parse_failure"
+      },
+      {
+        "uid": "test_021_v3",
+        "method": "review",
+        "kind": "raw_parse_failure"
+      },
+      {
+        "uid": "test_025_v3",
+        "method": "review",
+        "kind": "empty_or_transport_failure"
+      },
+      {
+        "uid": "test_029_v0",
+        "method": "review",
+        "kind": "empty_or_transport_failure"
+      },
+      {
+        "uid": "test_029_v2",
+        "method": "review",
+        "kind": "empty_or_transport_failure"
+      },
+      {
+        "uid": "test_033_v2",
+        "method": "review",
+        "kind": "raw_parse_failure"
+      },
+      {
+        "uid": "test_033_v3",
+        "method": "review",
+        "kind": "raw_parse_failure"
+      },
+      {
+        "uid": "test_034_v2",
+        "method": "review",
+        "kind": "raw_parse_failure"
+      },
+      {
+        "uid": "test_035_v0",
+        "method": "review",
+        "kind": "raw_parse_failure"
+      },
+      {
+        "uid": "test_043_v1",
+        "method": "review",
+        "kind": "raw_parse_failure"
+      },
+      {
+        "uid": "test_047_v0",
+        "method": "review",
+        "kind": "raw_parse_failure"
+      },
+      {
+        "uid": "test_050_v1",
+        "method": "review",
+        "kind": "raw_parse_failure"
+      },
+      {
+        "uid": "test_052_v2",
+        "method": "review",
+        "kind": "raw_parse_failure"
+      },
+      {
+        "uid": "test_057_v3",
+        "method": "review",
+        "kind": "raw_parse_failure"
+      },
+      {
+        "uid": "test_071_v3",
+        "method": "review",
+        "kind": "raw_parse_failure"
+      },
+      {
+        "uid": "test_082_v3",
+        "method": "review",
+        "kind": "raw_parse_failure"
+      },
+      {
+        "uid": "test_107_v1",
+        "method": "B",
+        "kind": "empty_or_transport_failure"
+      },
+      {
+        "uid": "test_107_v1",
+        "method": "review",
+        "kind": "skipped"
+      },
+      {
+        "uid": "test_108_v1",
+        "method": "B",
+        "kind": "empty_or_transport_failure"
+      },
+      {
+        "uid": "test_108_v1",
+        "method": "review",
+        "kind": "skipped"
+      },
+      {
+        "uid": "test_109_v0",
+        "method": "A",
+        "kind": "empty_or_transport_failure"
+      },
+      {
+        "uid": "test_109_v0",
+        "method": "review",
+        "kind": "skipped"
+      },
+      {
+        "uid": "test_110_v0",
+        "method": "review",
+        "kind": "empty_or_transport_failure"
+      }
+    ],
+    "groups": 160,
+    "run_dir": "/Users/mac/Documents/6-Research/9-AutoDriving/9-AutoDriving-core/results/runs/20260912T112707Z_main_test_claude-haiku-4-5-20251001_full160",
+    "unique_ids": 640,
+    "text_matches": 640,
+    "missing_ids": [],
+    "existing_assets_unchanged": true,
+    "repair_records": {
+      "counts": {
+        "utterances": 21,
+        "method_slots": 63,
+        "schema_valid": 63,
+        "retained_nonempty_responses": 63,
+        "retained_provider_tokens": 26456,
+        "all_three_schema_valid_utterances": 21
+      },
+      "failed_slots": []
+    },
+    "recovery_combined": {
+      "counts": {
+        "utterances": 640,
+        "method_slots": 1920,
+        "schema_valid": 1920,
+        "retained_nonempty_responses": 1920,
+        "retained_provider_tokens": 846128,
+        "all_three_schema_valid_utterances": 640
+      },
+      "failed_slots": []
+    },
+    "checkpointed_completion_calls": 26,
+    "checkpointed_completion_errors": 0,
+    "checkpointed_response_tokens": 13632,
+    "cost_note": "Provider token records only; nested transport attempts and overwritten historical retries may be missing. No verified monetary charge available. Repaired outcomes are a separate recovery cohort."
+  },
+  "sonnet": {
+    "counts": {
+      "utterances": 640,
+      "method_slots": 1920,
+      "schema_valid": 1911,
+      "retained_nonempty_responses": 1919,
+      "retained_provider_tokens": 777335,
+      "all_three_schema_valid_utterances": 632,
+      "raw_parse_failure": 8,
+      "skipped": 1
+    },
+    "failed_slots": [
+      {
+        "uid": "test_018_v3",
+        "method": "review",
+        "kind": "raw_parse_failure"
+      },
+      {
+        "uid": "test_028_v3",
+        "method": "review",
+        "kind": "raw_parse_failure"
+      },
+      {
+        "uid": "test_030_v0",
+        "method": "B",
+        "kind": "raw_parse_failure"
+      },
+      {
+        "uid": "test_030_v0",
+        "method": "review",
+        "kind": "skipped"
+      },
+      {
+        "uid": "test_045_v1",
+        "method": "review",
+        "kind": "raw_parse_failure"
+      },
+      {
+        "uid": "test_060_v0",
+        "method": "review",
+        "kind": "raw_parse_failure"
+      },
+      {
+        "uid": "test_072_v0",
+        "method": "review",
+        "kind": "raw_parse_failure"
+      },
+      {
+        "uid": "test_140_v3",
+        "method": "review",
+        "kind": "raw_parse_failure"
+      },
+      {
+        "uid": "test_148_v3",
+        "method": "review",
+        "kind": "raw_parse_failure"
+      }
+    ],
+    "groups": 160,
+    "run_dir": "/Users/mac/Documents/6-Research/9-AutoDriving/9-AutoDriving-core/results/runs/20260912T135800Z_main_test_claude-sonnet-4-6_full160",
+    "unique_ids": 640,
+    "text_matches": 640,
+    "missing_ids": [],
+    "existing_assets_unchanged": true,
+    "repair_records": {
+      "counts": {
+        "utterances": 8,
+        "method_slots": 24,
+        "schema_valid": 19,
+        "retained_nonempty_responses": 24,
+        "retained_provider_tokens": 9209,
+        "raw_parse_failure": 5,
+        "all_three_schema_valid_utterances": 3
+      },
+      "failed_slots": [
+        {
+          "uid": "test_018_v3",
+          "method": "review",
+          "kind": "raw_parse_failure"
+        },
+        {
+          "uid": "test_148_v3",
+          "method": "review",
+          "kind": "raw_parse_failure"
+        },
+        {
+          "uid": "test_060_v0",
+          "method": "review",
+          "kind": "raw_parse_failure"
+        },
+        {
+          "uid": "test_140_v3",
+          "method": "review",
+          "kind": "raw_parse_failure"
+        },
+        {
+          "uid": "test_028_v3",
+          "method": "review",
+          "kind": "raw_parse_failure"
+        }
+      ]
+    },
+    "recovery_combined": {
+      "counts": {
+        "utterances": 640,
+        "method_slots": 1920,
+        "schema_valid": 1915,
+        "retained_nonempty_responses": 1920,
+        "retained_provider_tokens": 777894,
+        "all_three_schema_valid_utterances": 635,
+        "raw_parse_failure": 5
+      },
+      "failed_slots": [
+        {
+          "uid": "test_018_v3",
+          "method": "review",
+          "kind": "raw_parse_failure"
+        },
+        {
+          "uid": "test_028_v3",
+          "method": "review",
+          "kind": "raw_parse_failure"
+        },
+        {
+          "uid": "test_060_v0",
+          "method": "review",
+          "kind": "raw_parse_failure"
+        },
+        {
+          "uid": "test_140_v3",
+          "method": "review",
+          "kind": "raw_parse_failure"
+        },
+        {
+          "uid": "test_148_v3",
+          "method": "review",
+          "kind": "raw_parse_failure"
+        }
+      ]
+    },
+    "checkpointed_completion_calls": 1986,
+    "checkpointed_completion_errors": 0,
+    "checkpointed_response_tokens": 815731,
+    "cost_note": "Provider token records only; nested transport attempts and overwritten historical retries may be missing. No verified monetary charge available. Repaired outcomes are a separate recovery cohort."
+  }
+}

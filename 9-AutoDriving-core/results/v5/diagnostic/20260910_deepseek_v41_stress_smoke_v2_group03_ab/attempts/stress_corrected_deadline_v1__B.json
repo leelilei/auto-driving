@@ -1,0 +1,43 @@
+{
+  "call_id": "stress_corrected_deadline_v1::B",
+  "role": "B",
+  "graph_condition": null,
+  "started_at": "2026-09-10T02:32:30.557165+00:00",
+  "request": {
+    "system": "Read the user's route-planning instruction field by field before producing the final JSON.\n\nCheck: requested POI categories, return deadline, explicit visit order, and the direction of the quality-versus-distance preference. Each conclusion must be supported by the instruction itself.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nDo not infer a preference from any route or map. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Choose top-rated options for the supermarket, library, and shopping mall. Replace the old 5 PM return time with 6:30 PM."
+  },
+  "raw_response": "{\"pois\":[\"supermarket\",\"library\",\"shopping mall\"],\"time_limit\":1110,\"dependencies\":[],\"quality_weight\":1.0,\"evidence\":{\"pois\":\"supermarket, library, and shopping mall\",\"time_limit\":\"6:30 PM\",\"quality_weight\":\"Choose top-rated options\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "library",
+      "shopping_mall",
+      "supermarket"
+    ],
+    "time_limit": 1110,
+    "dependencies": [],
+    "quality_weight": 1.0
+  },
+  "evidence": {
+    "pois": "supermarket, library, and shopping mall",
+    "time_limit": "6:30 PM",
+    "quality_weight": "Choose top-rated options"
+  },
+  "changes": [],
+  "finished_at": "2026-09-10T02:32:34.624566+00:00",
+  "telemetry": {
+    "call_index": 4,
+    "prompt_sha256": "b789df31b9a4d985a75262ab1db979d26cb810b1b815c252a4378bde13707523",
+    "attempts": 1,
+    "latency_seconds": 4.067,
+    "input_chars": 994,
+    "output_chars": 236,
+    "input_tokens": 259,
+    "output_tokens": 836,
+    "total_tokens": 1095,
+    "usage_source": "provider",
+    "success": true
+  }
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "group_id": "stress_implicit_distance", "utterance_id": "stress_implicit_distance_v0", "variant_type": "V0",
+    "text": "Visit the bank, pharmacy, and supermarket. My schedule is tight, so avoid any unnecessary detours. Go to the bank before the pharmacy.",
+    "gold_hard": {"pois": ["bank", "pharmacy", "supermarket"], "time_limit": null, "dependencies": [["bank", "pharmacy"]]},
+    "preference_direction": "distance_first", "stratum": "implicit_preference", "annotation_status": "author_constructed_pending_human_review"
+  },
+  {
+    "group_id": "stress_implicit_distance", "utterance_id": "stress_implicit_distance_v1", "variant_type": "V1",
+    "text": "Stop at the supermarket, the bank, and the pharmacy. I have little time to spare, so please don't take needless detours, and make sure the bank comes before the pharmacy.",
+    "gold_hard": {"pois": ["bank", "pharmacy", "supermarket"], "time_limit": null, "dependencies": [["bank", "pharmacy"]]},
+    "preference_direction": "distance_first", "stratum": "implicit_preference", "annotation_status": "author_constructed_pending_human_review"
+  },
+  {
+    "group_id": "stress_implicit_distance", "utterance_id": "stress_implicit_distance_v2", "variant_type": "V2",
+    "text": "I need the bank, pharmacy, and supermarket covered. Keep the trip free of avoidable detours because my schedule is tight. The pharmacy must be after the bank.",
+    "gold_hard": {"pois": ["bank", "pharmacy", "supermarket"], "time_limit": null, "dependencies": [["bank", "pharmacy"]]},
+    "preference_direction": "distance_first", "stratum": "implicit_preference", "annotation_status": "author_constructed_pending_human_review"
+  },
+  {
+    "group_id": "stress_implicit_distance", "utterance_id": "stress_implicit_distance_v3", "variant_type": "V3",
+    "text": "Please cover the pharmacy, supermarket, and bank without wasting travel, as I am short on time. Visit the bank earlier than the pharmacy.",
+    "gold_hard": {"pois": ["bank", "pharmacy", "supermarket"], "time_limit": null, "dependencies": [["bank", "pharmacy"]]},
+    "preference_direction": "distance_first", "stratum": "implicit_preference", "annotation_status": "author_constructed_pending_human_review"
+  },
+  {
+    "group_id": "stress_concession_quality", "utterance_id": "stress_concession_quality_v0", "variant_type": "V0",
+    "text": "Visit the library, shopping mall, and supermarket. Even if the trip takes a little longer, choose the best-rated places.",
+    "gold_hard": {"pois": ["library", "shopping_mall", "supermarket"], "time_limit": null, "dependencies": []},
+    "preference_direction": "quality_first", "stratum": "concession", "annotation_status": "author_constructed_pending_human_review"
+  },
+  {
+    "group_id": "stress_concession_quality", "utterance_id": "stress_concession_quality_v1", "variant_type": "V1",
+    "text": "Go to a supermarket, a library, and a shopping mall. I can accept some extra travel if that gets me the highest-rated options.",
+    "gold_hard": {"pois": ["library", "shopping_mall", "supermarket"], "time_limit": null, "dependencies": []},
+    "preference_direction": "quality_first", "stratum": "concession", "annotation_status": "author_constructed_pending_human_review"
+  },
+  {
+    "group_id": "stress_concession_quality", "utterance_id": "stress_concession_quality_v2", "variant_type": "V2",
+    "text": "Cover the shopping mall, supermarket, and library. Taking a somewhat longer route is fine; the ratings of the places matter most.",
+    "gold_hard": {"pois": ["library", "shopping_mall", "supermarket"], "time_limit": null, "dependencies": []},
+    "preference_direction": "quality_first", "stratum": "concession", "annotation_status": "author_constructed_pending_human_review"
+  },
+  {
+    "group_id": "stress_concession_quality", "utterance_id": "stress_concession_quality_v3", "variant_type": "V3",
+    "text": "Stop by the library, supermarket, and shopping mall. Favor the top-rated choices, even when doing so adds distance.",
+    "gold_hard": {"pois": ["library", "shopping_mall", "supermarket"], "time_limit": null, "dependencies": []},
+    "preference_direction": "quality_first", "stratum": "concession", "annotation_status": "author_constructed_pending_human_review"
+  },
+  {
+    "group_id": "stress_negated_order", "utterance_id": "stress_negated_order_v0", "variant_type": "V0",
+    "text": "Visit the bank, library, and pharmacy. Do not go to the pharmacy until after the bank. Treat ratings and travel efficiency as equally important.",
+    "gold_hard": {"pois": ["bank", "library", "pharmacy"], "time_limit": null, "dependencies": [["bank", "pharmacy"]]},
+    "preference_direction": "balanced", "stratum": "negated_order", "annotation_status": "author_constructed_pending_human_review"
+  },
+  {
+    "group_id": "stress_negated_order", "utterance_id": "stress_negated_order_v1", "variant_type": "V1",
+    "text": "Stop at the library, pharmacy, and bank, but the pharmacy must not come before the bank. Balance place ratings with route efficiency.",
+    "gold_hard": {"pois": ["bank", "library", "pharmacy"], "time_limit": null, "dependencies": [["bank", "pharmacy"]]},
+    "preference_direction": "balanced", "stratum": "negated_order", "annotation_status": "author_constructed_pending_human_review"
+  },
+  {
+    "group_id": "stress_negated_order", "utterance_id": "stress_negated_order_v2", "variant_type": "V2",
+    "text": "I need the pharmacy, bank, and library. Only visit the pharmacy once the bank visit is complete, while giving equal weight to ratings and efficient travel.",
+    "gold_hard": {"pois": ["bank", "library", "pharmacy"], "time_limit": null, "dependencies": [["bank", "pharmacy"]]},
+    "preference_direction": "balanced", "stratum": "negated_order", "annotation_status": "author_constructed_pending_human_review"
+  },
+  {
+    "group_id": "stress_negated_order", "utterance_id": "stress_negated_order_v3", "variant_type": "V3",
+    "text": "Cover the bank, pharmacy, and library. The bank has to be finished before you proceed to the pharmacy. Neither ratings nor route efficiency should dominate the other.",
+    "gold_hard": {"pois": ["bank", "library", "pharmacy"], "time_limit": null, "dependencies": [["bank", "pharmacy"]]},
+    "preference_direction": "balanced", "stratum": "negated_order", "annotation_status": "author_constructed_pending_human_review"
+  },
+  {
+    "group_id": "stress_combined_constraints", "utterance_id": "stress_combined_constraints_v0", "variant_type": "V0",
+    "text": "Visit the library, shopping mall, bank, and pharmacy and return by 17:30. Go to the library before the shopping mall and the bank before the pharmacy. Keep the route as short as practical.",
+    "gold_hard": {"pois": ["library", "shopping_mall", "bank", "pharmacy"], "time_limit": 1050, "dependencies": [["library", "shopping_mall"], ["bank", "pharmacy"]]},
+    "preference_direction": "distance_first", "stratum": "combined_constraints", "annotation_status": "author_constructed_pending_human_review"
+  },
+  {
+    "group_id": "stress_combined_constraints", "utterance_id": "stress_combined_constraints_v1", "variant_type": "V1",
+    "text": "Be back by 5:30 PM after stopping at the pharmacy, library, bank, and shopping mall. The library precedes the mall, and the bank precedes the pharmacy. Prefer the shortest practical trip.",
+    "gold_hard": {"pois": ["library", "shopping_mall", "bank", "pharmacy"], "time_limit": 1050, "dependencies": [["library", "shopping_mall"], ["bank", "pharmacy"]]},
+    "preference_direction": "distance_first", "stratum": "combined_constraints", "annotation_status": "author_constructed_pending_human_review"
+  },
+  {
+    "group_id": "stress_combined_constraints", "utterance_id": "stress_combined_constraints_v2", "variant_type": "V2",
+    "text": "Cover the bank, shopping mall, pharmacy, and library, returning no later than 17:30. Finish the library before the mall and the bank before the pharmacy, without unnecessary travel.",
+    "gold_hard": {"pois": ["library", "shopping_mall", "bank", "pharmacy"], "time_limit": 1050, "dependencies": [["library", "shopping_mall"], ["bank", "pharmacy"]]},
+    "preference_direction": "distance_first", "stratum": "combined_constraints", "annotation_status": "author_constructed_pending_human_review"
+  },
+  {
+    "group_id": "stress_combined_constraints", "utterance_id": "stress_combined_constraints_v3", "variant_type": "V3",
+    "text": "Please visit the shopping mall, pharmacy, library, and bank and get back by half past five. Do the library before the shopping mall and do not visit the pharmacy before the bank. Minimize avoidable distance.",
+    "gold_hard": {"pois": ["library", "shopping_mall", "bank", "pharmacy"], "time_limit": 1050, "dependencies": [["library", "shopping_mall"], ["bank", "pharmacy"]]},
+    "preference_direction": "distance_first", "stratum": "combined_constraints", "annotation_status": "author_constructed_pending_human_review"
+  }
+]

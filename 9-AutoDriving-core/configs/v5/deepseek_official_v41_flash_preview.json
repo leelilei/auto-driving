@@ -1,0 +1,15 @@
+{
+  "provider": "deepseek",
+  "model": "deepseek-v4.1-flash-expires-on-0910",
+  "wire_api": "chat_completions",
+  "base_url": "https://api.deepseek.com",
+  "api_key_env": "DEEPSEEK_API_KEY",
+  "temperature": 0.0,
+  "omit_temperature": false,
+  "timeout": 60,
+  "sleep": 0,
+  "max_concurrency": 1,
+  "retries": 0,
+  "json_mode": true,
+  "transport": "curl"
+}

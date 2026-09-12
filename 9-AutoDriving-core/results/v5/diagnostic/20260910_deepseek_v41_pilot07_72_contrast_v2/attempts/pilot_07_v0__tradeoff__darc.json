@@ -1,0 +1,45 @@
+{
+  "call_id": "pilot_07_v0::tradeoff::darc",
+  "role": "darc",
+  "graph_condition": "tradeoff",
+  "started_at": "2026-09-09T16:33:49.342715+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. The decision-contrast report is diagnostic evidence about consequences; it is not a label and must not override the words of the instruction.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Use the report to locate consequential disagreements, then decide each field from the instruction alone.\n\nInstruction:\nToday, make sure to visit the library, pharmacy, and supermarket. Please return by 17:00. Focus on visiting high-rated places, even if the route is slightly longer.\n\nCandidate A:\n{\"dependencies\": [], \"pois\": [\"library\", \"pharmacy\", \"supermarket\"], \"quality_weight\": 1.0, \"time_limit\": 1020}\n\nCandidate B:\n{\"dependencies\": [], \"pois\": [\"library\", \"pharmacy\", \"supermarket\"], \"quality_weight\": 0.8, \"time_limit\": 1020}\n\nDecision-contrast report:\n{\"candidate_A\": {\"dependencies\": [], \"pois\": [\"library\", \"pharmacy\", \"supermarket\"], \"quality_weight\": 1.0, \"time_limit\": 1020}, \"candidate_B\": {\"dependencies\": [], \"pois\": [\"library\", \"pharmacy\", \"supermarket\"], \"quality_weight\": 0.8, \"time_limit\": 1020}, \"candidate_evidence\": {\"A\": {\"pois\": \"library, pharmacy, and supermarket\", \"quality_weight\": \"Focus on visiting high-rated places, even if the route is slightly longer.\", \"time_limit\": \"return by 17:00\"}, \"B\": {\"pois\": \"library, pharmacy, and supermarket\", \"quality_weight\": \"Focus on visiting high-rated places, even if the route is slightly longer.\", \"time_limit\": \"return by 17:00\"}}, \"cross_constraints\": {\"route_A_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_A_under_B\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_B\": {\"reasons\": [], \"task_success\": true}}, \"differing_fields\": [\"quality_weight\"], \"instruction\": \"Today, make sure to visit the library, pharmacy, and supermarket. Please return by 17:00. Focus on visiting high-rated places, even if the route is slightly longer.\", \"limitations\": [\"The report does not identify the user's true intent.\", \"Both candidates may share the same error.\", \"Single-field swaps do not identify higher-order interactions.\"], \"report_version\": \"darc-v5.1-contrast-2\", \"routes\": {\"A\": {\"arrival_minutes\": 695, \"average_quality\": 0.9, \"categories\": [\"library\", \"pharmacy\", \"supermarket\"], \"coverage_count\": 3, \"distance_km\": 27.265, \"duration_minutes\": 154.5, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"library_2\", \"pharmacy_2\", \"supermarket_2\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": 0.9}, \"B\": {\"arrival_minutes\": 692, \"average_quality\": 0.9, \"categories\": [\"library\", \"supermarket\", \"pharmacy\"], \"coverage_count\": 3, \"distance_km\": 26.025, \"duration_minutes\": 152.0, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"library_2\", \"supermarket_2\", \"pharmacy_2\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": 0.6349562087165931}}, \"single_field_swaps\": [{\"base\": \"A\", \"field_from_other\": \"quality_weight\", \"hybrid_intent\": {\"dependencies\": [], \"pois\": [\"library\", \"pharmacy\", \"supermarket\"], \"quality_weight\": 0.8, \"time_limit\": 1020}, \"route\": {\"arrival_minutes\": 692, \"average_quality\": 0.9, \"categories\": [\"library\", \"supermarket\", \"pharmacy\"], \"coverage_count\": 3, \"distance_km\": 26.025, \"duration_minutes\": 152.0, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"library_2\", \"supermarket_2\", \"pharmacy_2\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": 0.6349562087165931}}, {\"base\": \"B\", \"field_from_other\": \"quality_weight\", \"hybrid_intent\": {\"dependencies\": [], \"pois\": [\"library\", \"pharmacy\", \"supermarket\"], \"quality_weight\": 1.0, \"time_limit\": 1020}, \"route\": {\"arrival_minutes\": 695, \"average_quality\": 0.9, \"categories\": [\"library\", \"pharmacy\", \"supermarket\"], \"coverage_count\": 3, \"distance_km\": 27.265, \"duration_minutes\": 154.5, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"library_2\", \"pharmacy_2\", \"supermarket_2\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": 0.9}}]}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"library\",\"pharmacy\",\"supermarket\"],\"time_limit\":1020,\"dependencies\":[],\"quality_weight\":0.8},\"evidence\":{\"pois\":\"library, pharmacy, and supermarket\",\"time_limit\":\"return by 17:00\",\"quality_weight\":\"Focus on visiting high-rated places, even if the route is slightly longer.\"},\"changes\":[\"quality_weight\"]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "library",
+      "pharmacy",
+      "supermarket"
+    ],
+    "time_limit": 1020,
+    "dependencies": [],
+    "quality_weight": 0.8
+  },
+  "evidence": {
+    "pois": "library, pharmacy, and supermarket",
+    "time_limit": "return by 17:00",
+    "quality_weight": "Focus on visiting high-rated places, even if the route is slightly longer."
+  },
+  "changes": [
+    "quality_weight"
+  ],
+  "finished_at": "2026-09-09T16:34:13.799827+00:00",
+  "telemetry": {
+    "call_index": 14,
+    "prompt_sha256": "29447075a304f32e3a1a3e1da836a958c0958dd33133f6aad68b318b0b1e9c14",
+    "attempts": 1,
+    "latency_seconds": 24.457,
+    "input_chars": 4240,
+    "output_chars": 324,
+    "input_tokens": 1301,
+    "output_tokens": 7178,
+    "total_tokens": 8479,
+    "usage_source": "provider",
+    "success": true
+  }
+}

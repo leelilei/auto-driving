@@ -1,0 +1,62 @@
+{
+  "protocol_name": "darc-v4.1-e0-e1",
+  "date": "2026-09-12",
+  "scope": "Budgeted Route Stability via Selective Decision-Aware Verification",
+  "models_evaluated": [
+    "gpt-5.4-mini",
+    "deepseek-v4-flash"
+  ],
+  "total_test_groups": 160,
+  "clean_test_groups": 146,
+  "drift_test_groups": 14,
+  "quotas": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "primary_quota": 0.1,
+  "h_protection_policy": "strict_first_allocation",
+  "b3_random_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "bootstrap_resamples": 2000,
+  "bootstrap_seed": 20260912,
+  "solvers": "ExactRouteSolver v1.0 (deterministic lexicographical tie-break)",
+  "utility_scale": "v2 (U_w = w*Q - (1-w)*D_bar, D_bar = dist / (6*max_edge))",
+  "weights_regimes": {
+    "standard": {
+      "quality_first": 0.75,
+      "balanced": 0.5,
+      "distance_first": 0.25
+    },
+    "narrow": {
+      "quality_first": 0.65,
+      "balanced": 0.5,
+      "distance_first": 0.35
+    },
+    "wide": {
+      "quality_first": 0.85,
+      "balanced": 0.5,
+      "distance_first": 0.15
+    }
+  }
+}

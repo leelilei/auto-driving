@@ -1,0 +1,49 @@
+{
+  "call_id": "stress_scope_contrast_v1::B",
+  "role": "B",
+  "graph_condition": null,
+  "started_at": "2026-09-10T02:32:29.962037+00:00",
+  "request": {
+    "system": "Read the user's route-planning instruction field by field before producing the final JSON.\n\nCheck: requested POI categories, return deadline, explicit visit order, and the direction of the quality-versus-distance preference. Each conclusion must be supported by the instruction itself.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nDo not infer a preference from any route or map. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Stop at the bank, shopping mall, pharmacy, and library. The pharmacy must precede the bank; the library does not have to precede the bank. Balance route efficiency with ratings."
+  },
+  "raw_response": "{\"pois\":[\"bank\",\"shopping mall\",\"pharmacy\",\"library\"],\"time_limit\":null,\"dependencies\":[[\"pharmacy\",\"bank\"]],\"quality_weight\":0.5,\"evidence\":{\"pois\":\"Stop at the bank, shopping mall, pharmacy, and library.\",\"dependencies\":\"The pharmacy must precede the bank\",\"quality_weight\":\"Balance route efficiency with ratings.\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library",
+      "pharmacy",
+      "shopping_mall"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "pharmacy",
+        "bank"
+      ]
+    ],
+    "quality_weight": 0.5
+  },
+  "evidence": {
+    "pois": "Stop at the bank, shopping mall, pharmacy, and library.",
+    "dependencies": "The pharmacy must precede the bank",
+    "quality_weight": "Balance route efficiency with ratings."
+  },
+  "changes": [],
+  "finished_at": "2026-09-10T02:32:32.771698+00:00",
+  "telemetry": {
+    "call_index": 4,
+    "prompt_sha256": "8a6e45f5300fe84593f80eace98f8b95654a30c2952d97c926086b12cba1f604",
+    "attempts": 1,
+    "latency_seconds": 2.809,
+    "input_chars": 1051,
+    "output_chars": 318,
+    "input_tokens": 266,
+    "output_tokens": 573,
+    "total_tokens": 839,
+    "usage_source": "provider",
+    "success": true
+  }
+}

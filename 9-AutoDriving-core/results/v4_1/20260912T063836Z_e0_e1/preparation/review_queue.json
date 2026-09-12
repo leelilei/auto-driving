@@ -1,0 +1,1078 @@
+[
+  {
+    "candidate_cluster_id": 40,
+    "source_index": 41,
+    "instruction": "Today, you need to visit the supermarket, the shopping mall, the pharmacy, and the library. Please ensure you return by 18:00. Prioritize visiting places with higher ratings as much as possible. Make sure to visit the supermarket before heading to the shopping mall and stop by the pharmacy before going to the library.",
+    "intent_key": {
+      "pois": [
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "poi_count": 4,
+      "time_limit": 1080,
+      "closure": [
+        [
+          "pharmacy",
+          "library"
+        ],
+        [
+          "supermarket",
+          "shopping_mall"
+        ]
+      ],
+      "direction": "quality_first"
+    },
+    "review_status": "AI_REVIEW",
+    "reviewer": "PENDING_HUMAN_CONFIRMATION",
+    "confirmed_direction": "quality_first",
+    "audit_date": "2026-09-12"
+  },
+  {
+    "candidate_cluster_id": 497,
+    "source_index": 772,
+    "instruction": "Today, let's visit the shopping mall, library, bank, and pharmacy. It's important to have a balance between visiting well-rated places and having an efficient route. Start with the shopping mall and then head to the library, and ensure to stop by the bank before going to the pharmacy.",
+    "intent_key": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall"
+      ],
+      "poi_count": 4,
+      "time_limit": null,
+      "closure": [
+        [
+          "bank",
+          "pharmacy"
+        ],
+        [
+          "shopping_mall",
+          "library"
+        ]
+      ],
+      "direction": "balanced"
+    },
+    "review_status": "AI_REVIEW",
+    "reviewer": "PENDING_HUMAN_CONFIRMATION",
+    "confirmed_direction": "balanced",
+    "audit_date": "2026-09-12"
+  },
+  {
+    "candidate_cluster_id": 310,
+    "source_index": 437,
+    "instruction": "Today, the places we need to visit include a shopping mall, a supermarket, a pharmacy, and a bank. While we don’t have a set return time, it’s important to focus on visiting places with higher ratings to enhance our experience. Please make sure to stop by the pharmacy before heading to the bank.",
+    "intent_key": {
+      "pois": [
+        "bank",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "poi_count": 4,
+      "time_limit": null,
+      "closure": [
+        [
+          "pharmacy",
+          "bank"
+        ]
+      ],
+      "direction": "quality_first"
+    },
+    "review_status": "AI_REVIEW",
+    "reviewer": "PENDING_HUMAN_CONFIRMATION",
+    "confirmed_direction": "quality_first",
+    "audit_date": "2026-09-12"
+  },
+  {
+    "candidate_cluster_id": 147,
+    "source_index": 175,
+    "instruction": "Make sure to visit the shopping mall, pharmacy, supermarket, and bank today. Prioritize visiting places with high ratings for a more enjoyable experience. Be sure to stop by the shopping mall before heading to the pharmacy. Also, remember to visit the supermarket before the bank.",
+    "intent_key": {
+      "pois": [
+        "bank",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "poi_count": 4,
+      "time_limit": null,
+      "closure": [
+        [
+          "shopping_mall",
+          "pharmacy"
+        ],
+        [
+          "supermarket",
+          "bank"
+        ]
+      ],
+      "direction": "quality_first"
+    },
+    "review_status": "AI_REVIEW",
+    "reviewer": "PENDING_HUMAN_CONFIRMATION",
+    "confirmed_direction": "quality_first",
+    "audit_date": "2026-09-12"
+  },
+  {
+    "candidate_cluster_id": 88,
+    "source_index": 96,
+    "instruction": "Today, we need to visit both the pharmacy and the supermarket. It's important that we go to the pharmacy before heading to the supermarket. Make sure we focus on finding the places with the best reviews, even if it means taking a bit more time.",
+    "intent_key": {
+      "pois": [
+        "pharmacy",
+        "supermarket"
+      ],
+      "poi_count": 2,
+      "time_limit": null,
+      "closure": [
+        [
+          "pharmacy",
+          "supermarket"
+        ]
+      ],
+      "direction": "quality_first"
+    },
+    "review_status": "AI_REVIEW",
+    "reviewer": "PENDING_HUMAN_CONFIRMATION",
+    "confirmed_direction": "quality_first",
+    "audit_date": "2026-09-12"
+  },
+  {
+    "candidate_cluster_id": 22,
+    "source_index": 23,
+    "instruction": "Today, you need to visit the library and the supermarket. Please make sure to return by 20:00. Focus on visiting places with high ratings, even if it means taking a slightly longer route. There are no particular places that you must visit in a specific order.",
+    "intent_key": {
+      "pois": [
+        "library",
+        "supermarket"
+      ],
+      "poi_count": 2,
+      "time_limit": 1200,
+      "closure": [],
+      "direction": "quality_first"
+    },
+    "review_status": "AI_REVIEW",
+    "reviewer": "PENDING_HUMAN_CONFIRMATION",
+    "confirmed_direction": "quality_first",
+    "audit_date": "2026-09-12"
+  },
+  {
+    "candidate_cluster_id": 446,
+    "source_index": 673,
+    "instruction": "Please make sure to visit the pharmacy today. Be sure to return by 19:00. It's important to consider both the quality of the destination and an efficient route when planning your trip.",
+    "intent_key": {
+      "pois": [
+        "pharmacy"
+      ],
+      "poi_count": 1,
+      "time_limit": 1140,
+      "closure": [],
+      "direction": "balanced"
+    },
+    "review_status": "AI_REVIEW",
+    "reviewer": "PENDING_HUMAN_CONFIRMATION",
+    "confirmed_direction": "balanced",
+    "audit_date": "2026-09-12"
+  },
+  {
+    "candidate_cluster_id": 511,
+    "source_index": 803,
+    "instruction": "Today, make sure to visit the shopping mall, pharmacy, bank, library, and supermarket. Please return by 20:00. It's important to focus on visiting places with the highest ratings. Remember to stop by the bank before heading to the library.",
+    "intent_key": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "poi_count": 5,
+      "time_limit": 1200,
+      "closure": [
+        [
+          "bank",
+          "library"
+        ]
+      ],
+      "direction": "quality_first"
+    },
+    "review_status": "AI_REVIEW",
+    "reviewer": "PENDING_HUMAN_CONFIRMATION",
+    "confirmed_direction": "quality_first",
+    "audit_date": "2026-09-12"
+  },
+  {
+    "candidate_cluster_id": 418,
+    "source_index": 618,
+    "instruction": "Please visit the library and the bank today. It's important to check out the spots that have higher ratings for a better experience. Make sure to go to the library before heading to the bank.",
+    "intent_key": {
+      "pois": [
+        "bank",
+        "library"
+      ],
+      "poi_count": 2,
+      "time_limit": null,
+      "closure": [
+        [
+          "library",
+          "bank"
+        ]
+      ],
+      "direction": "quality_first"
+    },
+    "review_status": "AI_REVIEW",
+    "reviewer": "PENDING_HUMAN_CONFIRMATION",
+    "confirmed_direction": "quality_first",
+    "audit_date": "2026-09-12"
+  },
+  {
+    "candidate_cluster_id": 494,
+    "source_index": 762,
+    "instruction": "Today, you need to visit the library, supermarket, and pharmacy. Please ensure you're back by 10 PM. Try your best to balance between choosing places with decent ratings and keeping your route efficient.",
+    "intent_key": {
+      "pois": [
+        "library",
+        "pharmacy",
+        "supermarket"
+      ],
+      "poi_count": 3,
+      "time_limit": 1320,
+      "closure": [],
+      "direction": "quality_first"
+    },
+    "review_status": "AI_REVIEW",
+    "reviewer": "PENDING_HUMAN_CONFIRMATION",
+    "confirmed_direction": "quality_first",
+    "audit_date": "2026-09-12"
+  },
+  {
+    "candidate_cluster_id": 433,
+    "source_index": 652,
+    "instruction": "Today, make sure to visit the supermarket, bank, and pharmacy. Focus on spending time at the places with the best ratings. There are no specific order requirements for your visits.",
+    "intent_key": {
+      "pois": [
+        "bank",
+        "pharmacy",
+        "supermarket"
+      ],
+      "poi_count": 3,
+      "time_limit": null,
+      "closure": [],
+      "direction": "quality_first"
+    },
+    "review_status": "AI_REVIEW",
+    "reviewer": "PENDING_HUMAN_CONFIRMATION",
+    "confirmed_direction": "quality_first",
+    "audit_date": "2026-09-12"
+  },
+  {
+    "candidate_cluster_id": 606,
+    "source_index": 992,
+    "instruction": "Today, you need to visit the bank, library, pharmacy, shopping mall, and supermarket. Please ensure you return by 18:00. Given our schedule, we should aim to be as efficient as possible in planning your route. Start by visiting the bank, then head to the library, and make sure you visit the pharmacy after the library.",
+    "intent_key": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "poi_count": 5,
+      "time_limit": 1080,
+      "closure": [
+        [
+          "bank",
+          "library"
+        ],
+        [
+          "bank",
+          "pharmacy"
+        ],
+        [
+          "library",
+          "pharmacy"
+        ]
+      ],
+      "direction": "distance_first"
+    },
+    "review_status": "AI_REVIEW",
+    "reviewer": "PENDING_HUMAN_CONFIRMATION",
+    "confirmed_direction": "distance_first",
+    "audit_date": "2026-09-12"
+  },
+  {
+    "candidate_cluster_id": 346,
+    "source_index": 490,
+    "instruction": "Today, make sure to visit the bank and the supermarket. Be sure to prioritize places with high ratings. Begin your journey at the bank before heading to the supermarket.",
+    "intent_key": {
+      "pois": [
+        "bank",
+        "supermarket"
+      ],
+      "poi_count": 2,
+      "time_limit": null,
+      "closure": [
+        [
+          "bank",
+          "supermarket"
+        ]
+      ],
+      "direction": "quality_first"
+    },
+    "review_status": "AI_REVIEW",
+    "reviewer": "PENDING_HUMAN_CONFIRMATION",
+    "confirmed_direction": "quality_first",
+    "audit_date": "2026-09-12"
+  },
+  {
+    "candidate_cluster_id": 56,
+    "source_index": 60,
+    "instruction": "Today, make sure to visit the bank, library, supermarket, and shopping mall. Please be home by 19:00. Prioritize visiting places with high ratings as they are more important today. Start at the bank before heading to the library, and continue to the supermarket right after the library.",
+    "intent_key": {
+      "pois": [
+        "bank",
+        "library",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "poi_count": 4,
+      "time_limit": 1140,
+      "closure": [
+        [
+          "bank",
+          "library"
+        ],
+        [
+          "bank",
+          "supermarket"
+        ],
+        [
+          "library",
+          "supermarket"
+        ]
+      ],
+      "direction": "quality_first"
+    },
+    "review_status": "AI_REVIEW",
+    "reviewer": "PENDING_HUMAN_CONFIRMATION",
+    "confirmed_direction": "quality_first",
+    "audit_date": "2026-09-12"
+  },
+  {
+    "candidate_cluster_id": 140,
+    "source_index": 165,
+    "instruction": "Today, we need to visit the library, bank, supermarket, and shopping mall. Make sure to prioritize visiting places with high ratings. Additionally, ensure that the supermarket is visited before the shopping mall.",
+    "intent_key": {
+      "pois": [
+        "bank",
+        "library",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "poi_count": 4,
+      "time_limit": null,
+      "closure": [
+        [
+          "supermarket",
+          "shopping_mall"
+        ]
+      ],
+      "direction": "quality_first"
+    },
+    "review_status": "AI_REVIEW",
+    "reviewer": "PENDING_HUMAN_CONFIRMATION",
+    "confirmed_direction": "quality_first",
+    "audit_date": "2026-09-12"
+  },
+  {
+    "candidate_cluster_id": 505,
+    "source_index": 787,
+    "instruction": "Today, we need to visit the supermarket, shopping mall, and library. Let's make sure we balance our time efficiently while still choosing places with decent ratings.",
+    "intent_key": {
+      "pois": [
+        "library",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "poi_count": 3,
+      "time_limit": null,
+      "closure": [],
+      "direction": "balanced"
+    },
+    "review_status": "AI_REVIEW",
+    "reviewer": "PENDING_HUMAN_CONFIRMATION",
+    "confirmed_direction": "balanced",
+    "audit_date": "2026-09-12"
+  },
+  {
+    "candidate_cluster_id": 53,
+    "source_index": 54,
+    "instruction": "Today, make sure to stop by the shopping mall, library, pharmacy, supermarket, and bank. Since time is of the essence, focus on finding the most efficient route between these places. Visit the pharmacy before heading to the supermarket.",
+    "intent_key": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "poi_count": 5,
+      "time_limit": null,
+      "closure": [
+        [
+          "pharmacy",
+          "supermarket"
+        ]
+      ],
+      "direction": "distance_first"
+    },
+    "review_status": "AI_REVIEW",
+    "reviewer": "PENDING_HUMAN_CONFIRMATION",
+    "confirmed_direction": "distance_first",
+    "audit_date": "2026-09-12"
+  },
+  {
+    "candidate_cluster_id": 355,
+    "source_index": 506,
+    "instruction": "Today's itinerary includes visiting the bank, supermarket, shopping mall, and pharmacy. Please make sure to return by 21:00. As time efficiency is important, try to optimize the route for the shortest travel distance.",
+    "intent_key": {
+      "pois": [
+        "bank",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "poi_count": 4,
+      "time_limit": 1260,
+      "closure": [],
+      "direction": "distance_first"
+    },
+    "review_status": "AI_REVIEW",
+    "reviewer": "PENDING_HUMAN_CONFIRMATION",
+    "confirmed_direction": "distance_first",
+    "audit_date": "2026-09-12"
+  },
+  {
+    "candidate_cluster_id": 322,
+    "source_index": 452,
+    "instruction": "Today, we need to visit the shopping mall, pharmacy, library, bank, and supermarket. Let's make sure to keep the trip efficient by prioritizing a shorter route overall. We'll start at the shopping mall before heading to the pharmacy, and then ensure we visit the bank before moving on to the supermarket.",
+    "intent_key": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "poi_count": 5,
+      "time_limit": null,
+      "closure": [
+        [
+          "bank",
+          "supermarket"
+        ],
+        [
+          "shopping_mall",
+          "pharmacy"
+        ]
+      ],
+      "direction": "distance_first"
+    },
+    "review_status": "AI_REVIEW",
+    "reviewer": "PENDING_HUMAN_CONFIRMATION",
+    "confirmed_direction": "distance_first",
+    "audit_date": "2026-09-12"
+  },
+  {
+    "candidate_cluster_id": 404,
+    "source_index": 592,
+    "instruction": "Today, you need to visit the shopping mall, bank, pharmacy, supermarket, and library. Please make sure to return by 17:00. Aim to balance both the quality of places you visit and the efficiency of your route. Be sure to visit the shopping mall before going to the bank, and ensure you stop at the bank prior to heading to the pharmacy.",
+    "intent_key": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "poi_count": 5,
+      "time_limit": 1020,
+      "closure": [
+        [
+          "bank",
+          "pharmacy"
+        ],
+        [
+          "shopping_mall",
+          "bank"
+        ],
+        [
+          "shopping_mall",
+          "pharmacy"
+        ]
+      ],
+      "direction": "balanced"
+    },
+    "review_status": "AI_REVIEW",
+    "reviewer": "PENDING_HUMAN_CONFIRMATION",
+    "confirmed_direction": "balanced",
+    "audit_date": "2026-09-12"
+  },
+  {
+    "candidate_cluster_id": 503,
+    "source_index": 785,
+    "instruction": "Today, make sure to visit the pharmacy, library, bank, supermarket, and shopping mall. It's important to prioritize places with good ratings, but don't worry too much about the total travel time. Be sure to stop by the bank before you head to the supermarket.",
+    "intent_key": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "poi_count": 5,
+      "time_limit": null,
+      "closure": [
+        [
+          "bank",
+          "supermarket"
+        ]
+      ],
+      "direction": "quality_first"
+    },
+    "review_status": "AI_REVIEW",
+    "reviewer": "PENDING_HUMAN_CONFIRMATION",
+    "confirmed_direction": "quality_first",
+    "audit_date": "2026-09-12"
+  },
+  {
+    "candidate_cluster_id": 406,
+    "source_index": 594,
+    "instruction": "Today, we need to visit the supermarket, shopping mall, and library. Since there is no specific return time, let's aim to be as efficient as possible in our visits. Please make sure to go to the supermarket before heading to the shopping mall, and then proceed to the library last.",
+    "intent_key": {
+      "pois": [
+        "library",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "poi_count": 3,
+      "time_limit": null,
+      "closure": [
+        [
+          "shopping_mall",
+          "library"
+        ],
+        [
+          "supermarket",
+          "library"
+        ],
+        [
+          "supermarket",
+          "shopping_mall"
+        ]
+      ],
+      "direction": "distance_first"
+    },
+    "review_status": "AI_REVIEW",
+    "reviewer": "PENDING_HUMAN_CONFIRMATION",
+    "confirmed_direction": "distance_first",
+    "audit_date": "2026-09-12"
+  },
+  {
+    "candidate_cluster_id": 37,
+    "source_index": 38,
+    "instruction": "Today, make sure to visit the supermarket, bank, shopping mall, library, and pharmacy. You need to be back by 5 PM. Prioritize visiting places with higher ratings for a more satisfying trip. Remember, you must visit the shopping mall before heading to the library.",
+    "intent_key": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "poi_count": 5,
+      "time_limit": 1020,
+      "closure": [
+        [
+          "shopping_mall",
+          "library"
+        ]
+      ],
+      "direction": "quality_first"
+    },
+    "review_status": "AI_REVIEW",
+    "reviewer": "PENDING_HUMAN_CONFIRMATION",
+    "confirmed_direction": "quality_first",
+    "audit_date": "2026-09-12"
+  },
+  {
+    "candidate_cluster_id": 478,
+    "source_index": 738,
+    "instruction": "Today, we'll be visiting the shopping mall, bank, and library. We should aim for a journey that balances both place ratings and efficiency in our route. First, we'll head to the shopping mall before we stop by the bank, and make sure we visit the bank before heading to the library.",
+    "intent_key": {
+      "pois": [
+        "bank",
+        "library",
+        "shopping_mall"
+      ],
+      "poi_count": 3,
+      "time_limit": null,
+      "closure": [
+        [
+          "bank",
+          "library"
+        ],
+        [
+          "shopping_mall",
+          "bank"
+        ],
+        [
+          "shopping_mall",
+          "library"
+        ]
+      ],
+      "direction": "quality_first"
+    },
+    "review_status": "AI_REVIEW",
+    "reviewer": "PENDING_HUMAN_CONFIRMATION",
+    "confirmed_direction": "quality_first",
+    "audit_date": "2026-09-12"
+  },
+  {
+    "candidate_cluster_id": 430,
+    "source_index": 649,
+    "instruction": "Today, you'll need to visit the supermarket, library, bank, pharmacy, and shopping mall. Please make sure to return by 18:00. Time is of the essence, so a swift and efficient route is essential. Be sure to stop by the bank before heading to the pharmacy.",
+    "intent_key": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "poi_count": 5,
+      "time_limit": 1080,
+      "closure": [
+        [
+          "bank",
+          "pharmacy"
+        ]
+      ],
+      "direction": "distance_first"
+    },
+    "review_status": "AI_REVIEW",
+    "reviewer": "PENDING_HUMAN_CONFIRMATION",
+    "confirmed_direction": "distance_first",
+    "audit_date": "2026-09-12"
+  },
+  {
+    "candidate_cluster_id": 42,
+    "source_index": 43,
+    "instruction": "Please make sure to visit the supermarket and the library today. You need to be back by 21:00. Since we're pressed for time, let's prioritize a quick and efficient route. Make sure to stop at the supermarket before heading to the library.",
+    "intent_key": {
+      "pois": [
+        "library",
+        "supermarket"
+      ],
+      "poi_count": 2,
+      "time_limit": 1260,
+      "closure": [
+        [
+          "supermarket",
+          "library"
+        ]
+      ],
+      "direction": "distance_first"
+    },
+    "review_status": "AI_REVIEW",
+    "reviewer": "PENDING_HUMAN_CONFIRMATION",
+    "confirmed_direction": "distance_first",
+    "audit_date": "2026-09-12"
+  },
+  {
+    "candidate_cluster_id": 241,
+    "source_index": 319,
+    "instruction": "Today, make sure to visit the shopping mall. You should be back by 22:00. A balance between finding a decent place and making the trip efficiently is key. There are no specific orders to worry about, just enjoy your visit!",
+    "intent_key": {
+      "pois": [
+        "shopping_mall"
+      ],
+      "poi_count": 1,
+      "time_limit": 1320,
+      "closure": [],
+      "direction": "balanced"
+    },
+    "review_status": "AI_REVIEW",
+    "reviewer": "PENDING_HUMAN_CONFIRMATION",
+    "confirmed_direction": "balanced",
+    "audit_date": "2026-09-12"
+  },
+  {
+    "candidate_cluster_id": 589,
+    "source_index": 960,
+    "instruction": "Today, we need to visit the shopping mall, supermarket, and pharmacy. Please prioritize a quick and efficient route for the trip. Make sure to stop by the shopping mall before heading to the supermarket.",
+    "intent_key": {
+      "pois": [
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "poi_count": 3,
+      "time_limit": null,
+      "closure": [
+        [
+          "shopping_mall",
+          "supermarket"
+        ]
+      ],
+      "direction": "distance_first"
+    },
+    "review_status": "AI_REVIEW",
+    "reviewer": "PENDING_HUMAN_CONFIRMATION",
+    "confirmed_direction": "distance_first",
+    "audit_date": "2026-09-12"
+  },
+  {
+    "candidate_cluster_id": 501,
+    "source_index": 781,
+    "instruction": "Please visit the library, shopping mall, pharmacy, and supermarket today. Make sure to return by 23:00. It would be wonderful if you could prioritize visiting places with high ratings.",
+    "intent_key": {
+      "pois": [
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "poi_count": 4,
+      "time_limit": 1380,
+      "closure": [],
+      "direction": "quality_first"
+    },
+    "review_status": "AI_REVIEW",
+    "reviewer": "PENDING_HUMAN_CONFIRMATION",
+    "confirmed_direction": "quality_first",
+    "audit_date": "2026-09-12"
+  },
+  {
+    "candidate_cluster_id": 391,
+    "source_index": 569,
+    "instruction": "Today's stops include the bank, supermarket, shopping mall, library, and pharmacy. We need to be back by 6 PM. Let's aim for both a reasonable route and decent ratings as we plan our visit. Make sure to stop by the bank before heading to the supermarket and visit the library prior to the pharmacy.",
+    "intent_key": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "poi_count": 5,
+      "time_limit": 1080,
+      "closure": [
+        [
+          "bank",
+          "supermarket"
+        ],
+        [
+          "library",
+          "pharmacy"
+        ]
+      ],
+      "direction": "quality_first"
+    },
+    "review_status": "AI_REVIEW",
+    "reviewer": "PENDING_HUMAN_CONFIRMATION",
+    "confirmed_direction": "quality_first",
+    "audit_date": "2026-09-12"
+  },
+  {
+    "candidate_cluster_id": 361,
+    "source_index": 519,
+    "instruction": "Today, you need to visit the library, bank, supermarket, and pharmacy. While balancing time and quality, aim to make both efficient choices and choose spots that offer reasonably good experiences. Make sure to stop by the library before heading to the bank.",
+    "intent_key": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "supermarket"
+      ],
+      "poi_count": 4,
+      "time_limit": null,
+      "closure": [
+        [
+          "library",
+          "bank"
+        ]
+      ],
+      "direction": "quality_first"
+    },
+    "review_status": "AI_REVIEW",
+    "reviewer": "PENDING_HUMAN_CONFIRMATION",
+    "confirmed_direction": "quality_first",
+    "audit_date": "2026-09-12"
+  },
+  {
+    "candidate_cluster_id": 566,
+    "source_index": 918,
+    "instruction": "Today, make sure to visit the library, supermarket, bank, and pharmacy. Please be back by 21:00. Try to maintain a balance between visiting well-rated places and keeping the route efficient. Remember to go to the bank before heading to the pharmacy.",
+    "intent_key": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "supermarket"
+      ],
+      "poi_count": 4,
+      "time_limit": 1260,
+      "closure": [
+        [
+          "bank",
+          "pharmacy"
+        ]
+      ],
+      "direction": "quality_first"
+    },
+    "review_status": "AI_REVIEW",
+    "reviewer": "PENDING_HUMAN_CONFIRMATION",
+    "confirmed_direction": "quality_first",
+    "audit_date": "2026-09-12"
+  },
+  {
+    "candidate_cluster_id": 30,
+    "source_index": 31,
+    "instruction": "\nToday, let's make sure to visit the pharmacy. It's important to prioritize visiting places with high ratings.",
+    "intent_key": {
+      "pois": [
+        "pharmacy"
+      ],
+      "poi_count": 1,
+      "time_limit": null,
+      "closure": [],
+      "direction": "quality_first"
+    },
+    "review_status": "AI_REVIEW",
+    "reviewer": "PENDING_HUMAN_CONFIRMATION",
+    "confirmed_direction": "quality_first",
+    "audit_date": "2026-09-12"
+  },
+  {
+    "candidate_cluster_id": 325,
+    "source_index": 456,
+    "instruction": "Today, you need to visit the pharmacy, bank, shopping mall, and library. Efficiency is key, so prioritize the shortest route. Start by stopping at the pharmacy, then head to the bank. After that, make your way to the shopping mall, and finish your errands at the library.",
+    "intent_key": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall"
+      ],
+      "poi_count": 4,
+      "time_limit": null,
+      "closure": [
+        [
+          "bank",
+          "library"
+        ],
+        [
+          "bank",
+          "shopping_mall"
+        ],
+        [
+          "pharmacy",
+          "bank"
+        ],
+        [
+          "pharmacy",
+          "library"
+        ],
+        [
+          "pharmacy",
+          "shopping_mall"
+        ],
+        [
+          "shopping_mall",
+          "library"
+        ]
+      ],
+      "direction": "distance_first"
+    },
+    "review_status": "AI_REVIEW",
+    "reviewer": "PENDING_HUMAN_CONFIRMATION",
+    "confirmed_direction": "distance_first",
+    "audit_date": "2026-09-12"
+  },
+  {
+    "candidate_cluster_id": 369,
+    "source_index": 527,
+    "instruction": "Today, we need to visit the shopping mall, supermarket, pharmacy, library, and bank. It's important to focus on visiting places with higher ratings. Remember, we must stop by the pharmacy before heading to the library.",
+    "intent_key": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "poi_count": 5,
+      "time_limit": null,
+      "closure": [
+        [
+          "pharmacy",
+          "library"
+        ]
+      ],
+      "direction": "quality_first"
+    },
+    "review_status": "AI_REVIEW",
+    "reviewer": "PENDING_HUMAN_CONFIRMATION",
+    "confirmed_direction": "quality_first",
+    "audit_date": "2026-09-12"
+  },
+  {
+    "candidate_cluster_id": 80,
+    "source_index": 85,
+    "instruction": "Today, make sure to visit the pharmacy, shopping mall, library, and bank. Please return home by 17:00. It's important to be efficient and quick with this route. Don't forget to stop by the library before heading to the bank.",
+    "intent_key": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall"
+      ],
+      "poi_count": 4,
+      "time_limit": 1020,
+      "closure": [
+        [
+          "library",
+          "bank"
+        ]
+      ],
+      "direction": "distance_first"
+    },
+    "review_status": "AI_REVIEW",
+    "reviewer": "PENDING_HUMAN_CONFIRMATION",
+    "confirmed_direction": "distance_first",
+    "audit_date": "2026-09-12"
+  },
+  {
+    "candidate_cluster_id": 345,
+    "source_index": 488,
+    "instruction": "Today, we need to visit the shopping mall, supermarket, and library. Please ensure we return by 21:00. I’d appreciate a balance between visiting highly-rated places and keeping the route efficient. There are no specific orders in which these places must be visited.",
+    "intent_key": {
+      "pois": [
+        "library",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "poi_count": 3,
+      "time_limit": 1260,
+      "closure": [],
+      "direction": "balanced"
+    },
+    "review_status": "AI_REVIEW",
+    "reviewer": "PENDING_HUMAN_CONFIRMATION",
+    "confirmed_direction": "balanced",
+    "audit_date": "2026-09-12"
+  },
+  {
+    "candidate_cluster_id": 318,
+    "source_index": 448,
+    "instruction": "Today, you'll need to visit the supermarket, bank, pharmacy, and library. Please try to balance both the quality of the places and your travel efficiency. Make sure to first go to the supermarket before heading to the bank, visit the bank prior to the pharmacy, and stop by the pharmacy before ending at the library.",
+    "intent_key": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "supermarket"
+      ],
+      "poi_count": 4,
+      "time_limit": null,
+      "closure": [
+        [
+          "bank",
+          "library"
+        ],
+        [
+          "bank",
+          "pharmacy"
+        ],
+        [
+          "pharmacy",
+          "library"
+        ],
+        [
+          "supermarket",
+          "bank"
+        ],
+        [
+          "supermarket",
+          "library"
+        ],
+        [
+          "supermarket",
+          "pharmacy"
+        ]
+      ],
+      "direction": "balanced"
+    },
+    "review_status": "AI_REVIEW",
+    "reviewer": "PENDING_HUMAN_CONFIRMATION",
+    "confirmed_direction": "balanced",
+    "audit_date": "2026-09-12"
+  },
+  {
+    "candidate_cluster_id": 44,
+    "source_index": 45,
+    "instruction": "Today, you'll need to visit the library, supermarket, pharmacy, shopping mall, and bank. Make sure to prioritize places with excellent ratings. You'll need to visit the supermarket before heading to the pharmacy.",
+    "intent_key": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "poi_count": 5,
+      "time_limit": null,
+      "closure": [
+        [
+          "supermarket",
+          "pharmacy"
+        ]
+      ],
+      "direction": "quality_first"
+    },
+    "review_status": "AI_REVIEW",
+    "reviewer": "PENDING_HUMAN_CONFIRMATION",
+    "confirmed_direction": "quality_first",
+    "audit_date": "2026-09-12"
+  },
+  {
+    "candidate_cluster_id": 107,
+    "source_index": 119,
+    "instruction": "Today, we need to visit the library, pharmacy, bank, supermarket, and shopping mall. Since there's no specific time to return, let's focus on optimizing our route to be as efficient as possible. It's important to go to the bank before heading to the supermarket.",
+    "intent_key": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "poi_count": 5,
+      "time_limit": null,
+      "closure": [
+        [
+          "bank",
+          "supermarket"
+        ]
+      ],
+      "direction": "distance_first"
+    },
+    "review_status": "AI_REVIEW",
+    "reviewer": "PENDING_HUMAN_CONFIRMATION",
+    "confirmed_direction": "distance_first",
+    "audit_date": "2026-09-12"
+  }
+]

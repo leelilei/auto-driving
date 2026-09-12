@@ -1,0 +1,36 @@
+{
+  "protocol_version": "darc-v5.1-development-1",
+  "seed": 42,
+  "graph": {
+    "coordinates_km": "fixed in src/v5/graph_family.py within [-5, 5]",
+    "departure_time": 540,
+    "speed_km_h": 30.0,
+    "aligned_quality": 0.5,
+    "tradeoff_quality": [0.2, 0.9],
+    "time_sensitive_far_close": 550,
+    "construction_attempt_limit": 1,
+    "numeric_tolerance": 1e-09
+  },
+  "evaluation_weight_map": {
+    "quality_first": 0.75,
+    "balanced": 0.5,
+    "distance_first": 0.25
+  },
+  "bootstrap": {
+    "replicates": 10000,
+    "seed": 42
+  },
+  "model_policy": {
+    "primary": {
+      "model": "gpt-5.6-terra",
+      "config": "configs/llm_config_gpt56_terra.json",
+      "selected_by": "research_lead",
+      "selected_on": "2026-09-09",
+      "selection_evidence": "docs/experiments/v5_1/deliveries/20260909_codex_kickoff/MODEL_SELECTION_20260909.md"
+    },
+    "strong_baseline": "gpt-5.5",
+    "diagnostic_only": "gpt-5.6-luna",
+    "unavailable_alias": "gpt-5.5-mini"
+  },
+  "status": "development_only_not_frozen_for_confirmatory_test"
+}

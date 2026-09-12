@@ -1,0 +1,54 @@
+{
+  "call_id": "F13__r2__direct",
+  "case_id": "F13",
+  "rep": 2,
+  "role": "direct",
+  "request": {
+    "system": "Extract the selection rule expressed by the instruction, using the full public scene when needed. Return only a JSON object with exactly selection, availability_reference, return_by, evidence.\nselection is nearest_from_bank, minimum_added_distance, or highest_rating.\navailability_reference is departure only when already open at home departure is explicitly required, otherwise arrival.\nreturn_by is integer minutes since midnight or null when absent. It is the requested deadline, not a computed arrival time.\nevidence is an object quoting instruction spans. Keep the instruction's requirements even if they are infeasible. Do not choose a pharmacy ID or relax a rule. The shared executor handles travel, service windows, no waiting and final selection.\nOUTPUT CONTRACT (applies to all fields):\nReturn one JSON object only, with no commentary before or after it and no Markdown fences.\nIt has exactly four keys: selection, availability_reference, return_by, evidence.\nThe first three fields follow the rules above. evidence MUST be a JSON object, never a string or array.\nInside evidence use field names as keys and instruction quotations as string values; an empty object {} is valid.\nDo not add a verdict, explanation paragraph, corrected_policy wrapper, or any extra top-level key.\n\nDefinitions of the three selection values:\n- nearest_from_bank: minimize the straight-line distance d(B, P) from bank B to the pharmacy P among eligible pharmacies.\n- minimum_added_distance: minimize d(B, P) + d(P, H) - d(B, H) among eligible pharmacies, where H is home.\n- highest_rating: maximize the pharmacy rating among eligible pharmacies.\nThese definitions specify the selection field. Read which objective is requested from the instruction; the availability_reference and return_by fields retain their definitions above.\n",
+    "user": "{\"instruction\": \"Start at home at 09:00. Visit bank B first, then exactly one pharmacy, then return home. Travel along straight lines at 1 distance unit per minute. Bank service takes 20 minutes and pharmacy service takes 10 minutes. Do not wait for a place to open. Start service immediately on arrival; each service must finish no later than closing time. If no pharmacy can satisfy every requirement, report INFEASIBLE. Among pharmacies satisfying every requirement, choose the one with the smallest straight-line distance from bank B. Pharmacies need not be open when I leave home; they must be open when I arrive and allow the full service. Return home no later than 10:05.\", \"scene\": {\"bank\": {\"close\": 660, \"open\": 500, \"rating\": 4, \"x\": 11, \"y\": 4}, \"bank_service\": 20, \"departure\": 540, \"home\": [0, 0], \"pharmacies\": {\"P_A\": {\"close\": 660, \"open\": 500, \"rating\": 4.3, \"x\": -4, \"y\": -1}, \"P_B\": {\"close\": 660, \"open\": 500, \"rating\": 4.5, \"x\": 22, \"y\": 8}, \"P_C\": {\"close\": 660, \"open\": 500, \"rating\": 2.6, \"x\": 19, \"y\": -1}, \"P_D\": {\"close\": 660, \"open\": 500, \"rating\": 3.1, \"x\": 17, \"y\": 0}, \"P_E\": {\"close\": 660, \"open\": 500, \"rating\": 3.5, \"x\": 6, \"y\": 6}}, \"pharmacy_service\": 10, \"speed_units_per_minute\": 1}}"
+  },
+  "status": "COMPLETE",
+  "source": "REAL",
+  "started": "2026-09-10T16:42:16.015393+00:00",
+  "transport_revision": "original-c2",
+  "telemetry": {
+    "call_index": 1,
+    "prompt_sha256": "1f5c1474f91f4c38318e048b0d70a21c7e23a24c18643b08440b56af18c27c40",
+    "attempts": 1,
+    "latency_seconds": 2.371,
+    "input_chars": 3039,
+    "output_chars": 316,
+    "input_tokens": 410,
+    "output_tokens": 90,
+    "total_tokens": 500,
+    "usage_source": "provider",
+    "success": true
+  },
+  "provider_response": {
+    "content": [
+      {
+        "text": "```json\n{\n  \"selection\": \"nearest_from_bank\",\n  \"availability_reference\": \"arrival\",\n  \"return_by\": 605,\n  \"evidence\": {\n    \"selection\": \"Among pharmacies satisfying every requirement, choose the one with the smallest straight-line distance from bank B\",\n    \"return_by\": \"Return home no later than 10:05\"\n  }\n}\n```",
+        "type": "text"
+      }
+    ],
+    "id": "msg_Z7on1waMmiwwqPCPwTmIPgHl",
+    "model": "claude-haiku-4-5-20251001",
+    "role": "assistant",
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation_input_tokens": 405,
+      "cache_read_input_tokens": 53,
+      "input_tokens": 410,
+      "output_tokens": 90
+    }
+  },
+  "raw_response": "```json\n{\n  \"selection\": \"nearest_from_bank\",\n  \"availability_reference\": \"arrival\",\n  \"return_by\": 605,\n  \"evidence\": {\n    \"selection\": \"Among pharmacies satisfying every requirement, choose the one with the smallest straight-line distance from bank B\",\n    \"return_by\": \"Return home no later than 10:05\"\n  }\n}\n```",
+  "parsed_policy": {
+    "selection": "nearest_from_bank",
+    "availability_reference": "arrival",
+    "return_by": 605
+  },
+  "finished": "2026-09-10T16:42:18.390421+00:00"
+}

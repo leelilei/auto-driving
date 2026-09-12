@@ -1,0 +1,602 @@
+[
+  {
+    "call_index": 1,
+    "uid": "e20241028160248698752",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 2,
+    "uid": "e20241028160251109186",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 3,
+    "uid": "e20241028160253742452",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 4,
+    "uid": "e20241028160255878579",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 5,
+    "uid": "e20241028160258515151",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 6,
+    "uid": "e20241028160300570125",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 7,
+    "uid": "e20241028160301887545",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 8,
+    "uid": "e20241028160303262666",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 9,
+    "uid": "e20241028160306588034",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 10,
+    "uid": "e20241028160307743716",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 11,
+    "uid": "e20241028160309165566",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 12,
+    "uid": "e20241028160311039073",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 13,
+    "uid": "e20241028160312706595",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 14,
+    "uid": "e20241028160314145526",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 15,
+    "uid": "e20241028160317745984",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 16,
+    "uid": "e20241028160319013029",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 17,
+    "uid": "e20241028160320866976",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 18,
+    "uid": "e20241028160321868761",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 19,
+    "uid": "e20241028160323008998",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 20,
+    "uid": "e20241028160324401047",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 21,
+    "uid": "e20241028160332826857",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 22,
+    "uid": "e20241028160336568120",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 23,
+    "uid": "e20241028160339524446",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 24,
+    "uid": "e20241028160342578788",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 25,
+    "uid": "e20241028160344635426",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 26,
+    "uid": "e20241028160347041172",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 27,
+    "uid": "e20241028160349812056",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 28,
+    "uid": "e20241028160351641015",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 29,
+    "uid": "e20241028160353644992",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 30,
+    "uid": "e20241028160355814749",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 31,
+    "uid": "e20241028160842228543",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 32,
+    "uid": "e20241028160845920703",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 33,
+    "uid": "e20241028160848776495",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 34,
+    "uid": "e20241028160851829629",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 35,
+    "uid": "e20241028160855113315",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 36,
+    "uid": "e20241028160857444675",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 37,
+    "uid": "e20241028160902013119",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 38,
+    "uid": "e20241028160904677400",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 39,
+    "uid": "e20241028160906602324",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 40,
+    "uid": "e20241028160908981620",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 41,
+    "uid": "e20241028160911184742",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 42,
+    "uid": "e20241028160913165493",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 43,
+    "uid": "e20241028160914767827",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 44,
+    "uid": "e20241028160916850792",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 45,
+    "uid": "e20241028160918445815",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 46,
+    "uid": "h20241029143447759844",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 47,
+    "uid": "h20241029143450090032",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 48,
+    "uid": "h20241029143451793119",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 49,
+    "uid": "h20241029143453343691",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 50,
+    "uid": "h20241029143455115600",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 51,
+    "uid": "h20241029143456235562",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 52,
+    "uid": "h20241029143457494209",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 53,
+    "uid": "h20241029143458760702",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 54,
+    "uid": "h20241029143500599951",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 55,
+    "uid": "h20241029143502525564",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 56,
+    "uid": "h20241029143504074288",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 57,
+    "uid": "h20241029143506461809",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 58,
+    "uid": "h20241029143508251643",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 59,
+    "uid": "h20241029143509607671",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 60,
+    "uid": "h20241029143510880048",
+    "independent_case": true,
+    "repeat_index": 0
+  },
+  {
+    "call_index": 61,
+    "uid": "e20241028160248698752",
+    "independent_case": false,
+    "repeat_index": 1
+  },
+  {
+    "call_index": 62,
+    "uid": "e20241028160251109186",
+    "independent_case": false,
+    "repeat_index": 1
+  },
+  {
+    "call_index": 63,
+    "uid": "e20241028160253742452",
+    "independent_case": false,
+    "repeat_index": 1
+  },
+  {
+    "call_index": 64,
+    "uid": "e20241028160255878579",
+    "independent_case": false,
+    "repeat_index": 1
+  },
+  {
+    "call_index": 65,
+    "uid": "e20241028160258515151",
+    "independent_case": false,
+    "repeat_index": 1
+  },
+  {
+    "call_index": 66,
+    "uid": "e20241028160300570125",
+    "independent_case": false,
+    "repeat_index": 1
+  },
+  {
+    "call_index": 67,
+    "uid": "e20241028160301887545",
+    "independent_case": false,
+    "repeat_index": 1
+  },
+  {
+    "call_index": 68,
+    "uid": "e20241028160303262666",
+    "independent_case": false,
+    "repeat_index": 1
+  },
+  {
+    "call_index": 69,
+    "uid": "e20241028160306588034",
+    "independent_case": false,
+    "repeat_index": 1
+  },
+  {
+    "call_index": 70,
+    "uid": "e20241028160307743716",
+    "independent_case": false,
+    "repeat_index": 1
+  },
+  {
+    "call_index": 71,
+    "uid": "e20241028160309165566",
+    "independent_case": false,
+    "repeat_index": 1
+  },
+  {
+    "call_index": 72,
+    "uid": "e20241028160311039073",
+    "independent_case": false,
+    "repeat_index": 1
+  },
+  {
+    "call_index": 73,
+    "uid": "e20241028160312706595",
+    "independent_case": false,
+    "repeat_index": 1
+  },
+  {
+    "call_index": 74,
+    "uid": "e20241028160314145526",
+    "independent_case": false,
+    "repeat_index": 1
+  },
+  {
+    "call_index": 75,
+    "uid": "e20241028160317745984",
+    "independent_case": false,
+    "repeat_index": 1
+  },
+  {
+    "call_index": 76,
+    "uid": "e20241028160319013029",
+    "independent_case": false,
+    "repeat_index": 1
+  },
+  {
+    "call_index": 77,
+    "uid": "e20241028160320866976",
+    "independent_case": false,
+    "repeat_index": 1
+  },
+  {
+    "call_index": 78,
+    "uid": "e20241028160321868761",
+    "independent_case": false,
+    "repeat_index": 1
+  },
+  {
+    "call_index": 79,
+    "uid": "e20241028160323008998",
+    "independent_case": false,
+    "repeat_index": 1
+  },
+  {
+    "call_index": 80,
+    "uid": "e20241028160324401047",
+    "independent_case": false,
+    "repeat_index": 1
+  },
+  {
+    "call_index": 81,
+    "uid": "e20241028160332826857",
+    "independent_case": false,
+    "repeat_index": 1
+  },
+  {
+    "call_index": 82,
+    "uid": "e20241028160336568120",
+    "independent_case": false,
+    "repeat_index": 1
+  },
+  {
+    "call_index": 83,
+    "uid": "e20241028160339524446",
+    "independent_case": false,
+    "repeat_index": 1
+  },
+  {
+    "call_index": 84,
+    "uid": "e20241028160342578788",
+    "independent_case": false,
+    "repeat_index": 1
+  },
+  {
+    "call_index": 85,
+    "uid": "e20241028160344635426",
+    "independent_case": false,
+    "repeat_index": 1
+  },
+  {
+    "call_index": 86,
+    "uid": "e20241028160347041172",
+    "independent_case": false,
+    "repeat_index": 1
+  },
+  {
+    "call_index": 87,
+    "uid": "e20241028160349812056",
+    "independent_case": false,
+    "repeat_index": 1
+  },
+  {
+    "call_index": 88,
+    "uid": "e20241028160351641015",
+    "independent_case": false,
+    "repeat_index": 1
+  },
+  {
+    "call_index": 89,
+    "uid": "e20241028160353644992",
+    "independent_case": false,
+    "repeat_index": 1
+  },
+  {
+    "call_index": 90,
+    "uid": "e20241028160355814749",
+    "independent_case": false,
+    "repeat_index": 1
+  },
+  {
+    "call_index": 91,
+    "uid": "e20241028160842228543",
+    "independent_case": false,
+    "repeat_index": 1
+  },
+  {
+    "call_index": 92,
+    "uid": "e20241028160845920703",
+    "independent_case": false,
+    "repeat_index": 1
+  },
+  {
+    "call_index": 93,
+    "uid": "e20241028160848776495",
+    "independent_case": false,
+    "repeat_index": 1
+  },
+  {
+    "call_index": 94,
+    "uid": "e20241028160851829629",
+    "independent_case": false,
+    "repeat_index": 1
+  },
+  {
+    "call_index": 95,
+    "uid": "e20241028160855113315",
+    "independent_case": false,
+    "repeat_index": 1
+  },
+  {
+    "call_index": 96,
+    "uid": "e20241028160857444675",
+    "independent_case": false,
+    "repeat_index": 1
+  },
+  {
+    "call_index": 97,
+    "uid": "e20241028160902013119",
+    "independent_case": false,
+    "repeat_index": 1
+  },
+  {
+    "call_index": 98,
+    "uid": "e20241028160904677400",
+    "independent_case": false,
+    "repeat_index": 1
+  },
+  {
+    "call_index": 99,
+    "uid": "e20241028160906602324",
+    "independent_case": false,
+    "repeat_index": 1
+  },
+  {
+    "call_index": 100,
+    "uid": "e20241028160908981620",
+    "independent_case": false,
+    "repeat_index": 1
+  }
+]

@@ -1,0 +1,462 @@
+[
+  {
+    "group_id": "e2_control_001",
+    "utterance_id": "e2_control_001_c0",
+    "variant_type": "C0",
+    "text": "Today, you need to visit the supermarket, the shopping mall, the pharmacy, and the library. Please ensure you return by 18:00. Prioritize visiting places with higher ratings as much as possible. Make sure to visit the supermarket before heading to the shopping mall and stop by the pharmacy before going to the library.",
+    "is_equivalent": false,
+    "gold_hard": {
+      "pois": [
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": 1080,
+      "dependencies": [
+        [
+          "pharmacy",
+          "library"
+        ],
+        [
+          "supermarket",
+          "shopping_mall"
+        ]
+      ]
+    },
+    "preference_direction": "quality_first",
+    "w_synthetic": 0.75
+  },
+  {
+    "group_id": "e2_control_001",
+    "utterance_id": "e2_control_001_c1",
+    "variant_type": "C1",
+    "text": "Today, you need to visit the supermarket, the shopping mall, the pharmacy, and the library. Please ensure you return by 18:00. Prioritize visiting places with higher ratings as much as possible. Make sure to visit the supermarket before heading to the shopping mall and stop by the pharmacy before going to the library. Disregard previous preference; now strictly focus on route efficiency.",
+    "is_equivalent": false,
+    "gold_hard": {
+      "pois": [
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": 1080,
+      "dependencies": [
+        [
+          "pharmacy",
+          "library"
+        ],
+        [
+          "supermarket",
+          "shopping_mall"
+        ]
+      ]
+    },
+    "preference_direction": "distance_first",
+    "w_synthetic": 0.25
+  },
+  {
+    "group_id": "e2_control_002",
+    "utterance_id": "e2_control_002_c0",
+    "variant_type": "C0",
+    "text": "Today, let's visit the shopping mall, library, bank, and pharmacy. It's important to have a balance between visiting well-rated places and having an efficient route. Start with the shopping mall and then head to the library, and ensure to stop by the bank before going to the pharmacy.",
+    "is_equivalent": false,
+    "gold_hard": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "bank",
+          "pharmacy"
+        ],
+        [
+          "shopping_mall",
+          "library"
+        ]
+      ]
+    },
+    "preference_direction": "balanced",
+    "w_synthetic": 0.5
+  },
+  {
+    "group_id": "e2_control_002",
+    "utterance_id": "e2_control_002_c1",
+    "variant_type": "C1",
+    "text": "Today, let's visit the shopping mall, library, bank, and pharmacy. It's important to have a balance between visiting well-rated places and having an efficient route. Start with the shopping mall and then head to the library, and ensure to stop by the bank before going to the pharmacy. Also add a quick stop at the supermarket.",
+    "is_equivalent": false,
+    "gold_hard": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "bank",
+          "pharmacy"
+        ],
+        [
+          "shopping_mall",
+          "library"
+        ]
+      ]
+    },
+    "preference_direction": "balanced",
+    "w_synthetic": 0.5
+  },
+  {
+    "group_id": "e2_control_003",
+    "utterance_id": "e2_control_003_c0",
+    "variant_type": "C0",
+    "text": "Today, the places we need to visit include a shopping mall, a supermarket, a pharmacy, and a bank. While we don’t have a set return time, it’s important to focus on visiting places with higher ratings to enhance our experience. Please make sure to stop by the pharmacy before heading to the bank.",
+    "is_equivalent": false,
+    "gold_hard": {
+      "pois": [
+        "bank",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "pharmacy",
+          "bank"
+        ]
+      ]
+    },
+    "preference_direction": "quality_first",
+    "w_synthetic": 0.75
+  },
+  {
+    "group_id": "e2_control_003",
+    "utterance_id": "e2_control_003_c1",
+    "variant_type": "C1",
+    "text": "Today, the places we need to visit include a shopping mall, a supermarket, a pharmacy, and a bank. While we don’t have a set return time, it’s important to focus on visiting places with higher ratings to enhance our experience. Please make sure to stop by the pharmacy before heading to the bank. Disregard previous preference; now strictly focus on route efficiency.",
+    "is_equivalent": false,
+    "gold_hard": {
+      "pois": [
+        "bank",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "pharmacy",
+          "bank"
+        ]
+      ]
+    },
+    "preference_direction": "distance_first",
+    "w_synthetic": 0.25
+  },
+  {
+    "group_id": "e2_control_004",
+    "utterance_id": "e2_control_004_c0",
+    "variant_type": "C0",
+    "text": "Make sure to visit the shopping mall, pharmacy, supermarket, and bank today. Prioritize visiting places with high ratings for a more enjoyable experience. Be sure to stop by the shopping mall before heading to the pharmacy. Also, remember to visit the supermarket before the bank.",
+    "is_equivalent": false,
+    "gold_hard": {
+      "pois": [
+        "bank",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "shopping_mall",
+          "pharmacy"
+        ],
+        [
+          "supermarket",
+          "bank"
+        ]
+      ]
+    },
+    "preference_direction": "quality_first",
+    "w_synthetic": 0.75
+  },
+  {
+    "group_id": "e2_control_004",
+    "utterance_id": "e2_control_004_c1",
+    "variant_type": "C1",
+    "text": "Make sure to visit the shopping mall, pharmacy, supermarket, and bank today. Prioritize visiting places with high ratings for a more enjoyable experience. Be sure to stop by the shopping mall before heading to the pharmacy. Also, remember to visit the supermarket before the bank. Also add a quick stop at the library.",
+    "is_equivalent": false,
+    "gold_hard": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "shopping_mall",
+          "pharmacy"
+        ],
+        [
+          "supermarket",
+          "bank"
+        ]
+      ]
+    },
+    "preference_direction": "quality_first",
+    "w_synthetic": 0.75
+  },
+  {
+    "group_id": "e2_control_005",
+    "utterance_id": "e2_control_005_c0",
+    "variant_type": "C0",
+    "text": "Today, we need to visit both the pharmacy and the supermarket. It's important that we go to the pharmacy before heading to the supermarket. Make sure we focus on finding the places with the best reviews, even if it means taking a bit more time.",
+    "is_equivalent": false,
+    "gold_hard": {
+      "pois": [
+        "pharmacy",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "pharmacy",
+          "supermarket"
+        ]
+      ]
+    },
+    "preference_direction": "quality_first",
+    "w_synthetic": 0.75
+  },
+  {
+    "group_id": "e2_control_005",
+    "utterance_id": "e2_control_005_c1",
+    "variant_type": "C1",
+    "text": "Today, we need to visit both the pharmacy and the supermarket. It's important that we go to the pharmacy before heading to the supermarket. Make sure we focus on finding the places with the best reviews, even if it means taking a bit more time. Disregard previous preference; now strictly focus on route efficiency.",
+    "is_equivalent": false,
+    "gold_hard": {
+      "pois": [
+        "pharmacy",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "pharmacy",
+          "supermarket"
+        ]
+      ]
+    },
+    "preference_direction": "distance_first",
+    "w_synthetic": 0.25
+  },
+  {
+    "group_id": "e2_control_006",
+    "utterance_id": "e2_control_006_c0",
+    "variant_type": "C0",
+    "text": "Today, you need to visit the library and the supermarket. Please make sure to return by 20:00. Focus on visiting places with high ratings, even if it means taking a slightly longer route. There are no particular places that you must visit in a specific order.",
+    "is_equivalent": false,
+    "gold_hard": {
+      "pois": [
+        "library",
+        "supermarket"
+      ],
+      "time_limit": 1200,
+      "dependencies": []
+    },
+    "preference_direction": "quality_first",
+    "w_synthetic": 0.75
+  },
+  {
+    "group_id": "e2_control_006",
+    "utterance_id": "e2_control_006_c1",
+    "variant_type": "C1",
+    "text": "Today, you need to visit the library and the supermarket. Please make sure to return by 20:00. Focus on visiting places with high ratings, even if it means taking a slightly longer route. There are no particular places that you must visit in a specific order. Also add a quick stop at the shopping mall.",
+    "is_equivalent": false,
+    "gold_hard": {
+      "pois": [
+        "library",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": 1200,
+      "dependencies": []
+    },
+    "preference_direction": "quality_first",
+    "w_synthetic": 0.75
+  },
+  {
+    "group_id": "e2_control_007",
+    "utterance_id": "e2_control_007_c0",
+    "variant_type": "C0",
+    "text": "Please make sure to visit the pharmacy today. Be sure to return by 19:00. It's important to consider both the quality of the destination and an efficient route when planning your trip.",
+    "is_equivalent": false,
+    "gold_hard": {
+      "pois": [
+        "pharmacy"
+      ],
+      "time_limit": 1140,
+      "dependencies": []
+    },
+    "preference_direction": "balanced",
+    "w_synthetic": 0.5
+  },
+  {
+    "group_id": "e2_control_007",
+    "utterance_id": "e2_control_007_c1",
+    "variant_type": "C1",
+    "text": "Please make sure to visit the pharmacy today. Be sure to return by 19:00. It's important to consider both the quality of the destination and an efficient route when planning your trip. Disregard previous preference; now strictly focus on highest ratings.",
+    "is_equivalent": false,
+    "gold_hard": {
+      "pois": [
+        "pharmacy"
+      ],
+      "time_limit": 1140,
+      "dependencies": []
+    },
+    "preference_direction": "quality_first",
+    "w_synthetic": 0.75
+  },
+  {
+    "group_id": "e2_control_008",
+    "utterance_id": "e2_control_008_c0",
+    "variant_type": "C0",
+    "text": "Today, make sure to visit the shopping mall, pharmacy, bank, library, and supermarket. Please return by 20:00. It's important to focus on visiting places with the highest ratings. Remember to stop by the bank before heading to the library.",
+    "is_equivalent": false,
+    "gold_hard": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": 1200,
+      "dependencies": [
+        [
+          "bank",
+          "library"
+        ]
+      ]
+    },
+    "preference_direction": "quality_first",
+    "w_synthetic": 0.75
+  },
+  {
+    "group_id": "e2_control_008",
+    "utterance_id": "e2_control_008_c1",
+    "variant_type": "C1",
+    "text": "Today, make sure to visit the shopping mall, pharmacy, bank, library, and supermarket. Please return by 20:00. It's important to focus on visiting places with the highest ratings. Remember to stop by the bank before heading to the library. Also add a quick stop at the bank.",
+    "is_equivalent": false,
+    "gold_hard": {
+      "pois": [
+        "bank",
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": 1200,
+      "dependencies": [
+        [
+          "bank",
+          "library"
+        ]
+      ]
+    },
+    "preference_direction": "quality_first",
+    "w_synthetic": 0.75
+  },
+  {
+    "group_id": "e2_control_009",
+    "utterance_id": "e2_control_009_c0",
+    "variant_type": "C0",
+    "text": "Please visit the library and the bank today. It's important to check out the spots that have higher ratings for a better experience. Make sure to go to the library before heading to the bank.",
+    "is_equivalent": false,
+    "gold_hard": {
+      "pois": [
+        "bank",
+        "library"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "library",
+          "bank"
+        ]
+      ]
+    },
+    "preference_direction": "quality_first",
+    "w_synthetic": 0.75
+  },
+  {
+    "group_id": "e2_control_009",
+    "utterance_id": "e2_control_009_c1",
+    "variant_type": "C1",
+    "text": "Please visit the library and the bank today. It's important to check out the spots that have higher ratings for a better experience. Make sure to go to the library before heading to the bank. Disregard previous preference; now strictly focus on route efficiency.",
+    "is_equivalent": false,
+    "gold_hard": {
+      "pois": [
+        "bank",
+        "library"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "library",
+          "bank"
+        ]
+      ]
+    },
+    "preference_direction": "distance_first",
+    "w_synthetic": 0.25
+  },
+  {
+    "group_id": "e2_control_010",
+    "utterance_id": "e2_control_010_c0",
+    "variant_type": "C0",
+    "text": "Today, you need to visit the library, supermarket, and pharmacy. Please ensure you're back by 10 PM. Try your best to balance between choosing places with decent ratings and keeping your route efficient.",
+    "is_equivalent": false,
+    "gold_hard": {
+      "pois": [
+        "library",
+        "pharmacy",
+        "supermarket"
+      ],
+      "time_limit": 1320,
+      "dependencies": []
+    },
+    "preference_direction": "quality_first",
+    "w_synthetic": 0.75
+  },
+  {
+    "group_id": "e2_control_010",
+    "utterance_id": "e2_control_010_c1",
+    "variant_type": "C1",
+    "text": "Today, you need to visit the library, supermarket, and pharmacy. Please ensure you're back by 10 PM. Try your best to balance between choosing places with decent ratings and keeping your route efficient. Also add a quick stop at the shopping mall.",
+    "is_equivalent": false,
+    "gold_hard": {
+      "pois": [
+        "library",
+        "pharmacy",
+        "shopping_mall",
+        "supermarket"
+      ],
+      "time_limit": 1320,
+      "dependencies": []
+    },
+    "preference_direction": "quality_first",
+    "w_synthetic": 0.75
+  }
+]

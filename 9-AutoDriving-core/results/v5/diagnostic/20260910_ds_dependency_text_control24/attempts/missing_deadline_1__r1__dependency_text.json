@@ -1,0 +1,51 @@
+{
+  "call_id": "missing_deadline_1__r1__dependency_text",
+  "role": "dependency_text",
+  "graph_condition": "tradeoff",
+  "started_at": "2026-09-10T04:07:36.120673+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. Both candidates may be wrong, including when they agree. Supplementary information describes candidate differences or planning consequences; it does not identify the correct intent. Resolve every field from the instruction. Do not infer user preference from a route or map.\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised.\n\nInstruction:\nToday, you'll be visiting the shopping mall and the supermarket. Make sure to be back by 22:00. Since time efficiency is a priority, try to keep your route as direct as possible. Remember to visit the shopping mall before heading to the supermarket.\n\nCandidate A:\n{\"dependencies\": [[\"shopping_mall\", \"supermarket\"]], \"pois\": [\"shopping_mall\", \"supermarket\"], \"quality_weight\": 0.25, \"time_limit\": 1320}\n\nCandidate B:\n{\"dependencies\": [[\"shopping_mall\", \"supermarket\"]], \"pois\": [\"shopping_mall\", \"supermarket\"], \"quality_weight\": 0.25, \"time_limit\": null}\n\nSupplementary information:\n{\"candidate_order_requirements\": {\"A\": [\"Visit shopping mall before supermarket.\"], \"B\": [\"Visit shopping mall before supermarket.\"]}, \"differing_fields\": [\"time_limit\"]}"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"shopping_mall\",\"supermarket\"],\"time_limit\":1320,\"dependencies\":[[\"shopping_mall\",\"supermarket\"]],\"quality_weight\":0.5},\"evidence\":{\"pois\":\"shopping mall and the supermarket\",\"time_limit\":\"be back by 22:00\",\"dependencies\":\"visit the shopping mall before heading to the supermarket\",\"quality_weight\":\"time efficiency is a priority\"},\"changes\":[\"time_limit\",\"quality_weight\"]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "shopping_mall",
+      "supermarket"
+    ],
+    "time_limit": 1320,
+    "dependencies": [
+      [
+        "shopping_mall",
+        "supermarket"
+      ]
+    ],
+    "quality_weight": 0.5
+  },
+  "evidence": {
+    "pois": "shopping mall and the supermarket",
+    "time_limit": "be back by 22:00",
+    "dependencies": "visit the shopping mall before heading to the supermarket",
+    "quality_weight": "time efficiency is a priority"
+  },
+  "changes": [
+    "time_limit",
+    "quality_weight"
+  ],
+  "finished_at": "2026-09-10T04:08:48.164840+00:00",
+  "telemetry": {
+    "call_index": 1,
+    "prompt_sha256": "bdb2ee935fd0b9ffbb9a30dcbb76ec3ddb8d5057802265b60993ac51ed52fbb2",
+    "attempts": 1,
+    "latency_seconds": 72.044,
+    "input_chars": 1435,
+    "output_chars": 393,
+    "input_tokens": 381,
+    "output_tokens": 17079,
+    "total_tokens": 17460,
+    "usage_source": "provider",
+    "success": true
+  }
+}

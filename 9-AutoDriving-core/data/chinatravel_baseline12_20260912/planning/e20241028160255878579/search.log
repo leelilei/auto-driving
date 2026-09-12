@@ -1,0 +1,70 @@
+Created log directory: /Users/mac/Documents/6-Research/9-AutoDriving/9-AutoDriving-core/data/chinatravel_baseline12_20260912/planning/e20241028160255878579/logs
+cache dir: /Users/mac/Documents/6-Research/9-AutoDriving/9-AutoDriving-core/data/chinatravel_baseline12_20260912/planning/e20241028160255878579/cache
+武汉 -> 南京
+   id           name  ... price numbed
+0   0       南京南站逸扉酒店  ...   379      2
+1   1         南京玄武饭店  ...   556      1
+2   2       南京城市名人酒店  ...   431      1
+3   3      南京维景国际大酒店  ...   467      1
+4   4  南京高淳域见芳草地度假酒店  ...   541      1
+
+[5 rows x 8 columns]
+search: ...
+candidates_type:  ['attraction', 'lunch', 'dinner', 'back-intercity-transport']
+POI planning, day 0 12:33, 南京南站, next-poi type: attraction
+Can not go back source-city in time, current POI 凤凰山公园, station arrived time: 24:14
+The current time is too late to go hotel or back-transport, backtrack...
+add_attraction failed, backtrack...
+Can not go back source-city in time, current POI 凤凰山公园, station arrived time: 23:43
+The current time is too late to go hotel or back-transport, backtrack...
+add_attraction failed, backtrack...
+The current time is too late...
+candidates_type:  ['attraction', 'lunch', 'dinner', 'back-intercity-transport']
+POI planning, day 0 14:40, 南京天文历史博物馆, next-poi type: attraction
+The attraction is closed now...
+Can not go back source-city in time, current POI 南京玫瑰园, station arrived time: 25:35
+The current time is too late to go hotel or back-transport, backtrack...
+add_attraction failed, backtrack...
+The current time is too late...
+The current time is too late...
+Can not go back source-city in time, current POI 高淳国际慢城, station arrived time: 23:01
+The current time is too late to go hotel or back-transport, backtrack...
+add_attraction failed, backtrack...
+The current time is too late...
+candidates_type:  ['attraction', 'lunch', 'dinner', 'back-intercity-transport']
+POI planning, day 0 16:50, 南京中国绿化博览园, next-poi type: dinner
+Can not go back source-city in time, current POI 褚记北京烤鸭店(新城市广场店), station arrived time: 20:20
+The current time is too late to go hotel or back-transport, backtrack...
+add_restaurant failed, backtrack...
+Can not go back source-city in time, current POI 褚记北京烤鸭店(新城市广场店), station arrived time: 20:13
+The current time is too late to go hotel or back-transport, backtrack...
+add_restaurant failed, backtrack...
+Can not go back source-city in time, current POI 褚记北京烤鸭店(新城市广场店), station arrived time: 20:48
+The current time is too late to go hotel or back-transport, backtrack...
+add_restaurant failed, backtrack...
+candidates_type:  ['attraction', 'lunch', 'back-intercity-transport']
+POI planning, day 0 18:16, 南城燕归楼(老门东店), next-poi type: back-intercity-transport
+validate the plan [for query e20241028160255878579]: 
+{'people_number': 1, 'start_city': '武汉', 'target_city': '南京', 'itinerary': [{'day': 1, 'activities': [{'start_time': '09:37', 'end_time': '12:33', 'start': '武汉站', 'end': '南京南站', 'price': 296.86, 'cost': 296.86, 'tickets': 1, 'transports': [], 'TrainID': 'G1775', 'type': 'train'}, {'position': '南京天文历史博物馆', 'type': 'attraction', 'price': 0, 'cost': 0, 'start_time': '13:10', 'end_time': '14:40', 'transports': [{'start': '南京南站', 'end': '南京南站-地铁站', 'mode': 'walk', 'start_time': '12:33', 'end_time': '12:36', 'cost': 0, 'distance': 0.29, 'price': 0}, {'start': '南京南站-地铁站', 'end': '蒋王庙-地铁站', 'mode': 'metro', 'start_time': '12:36', 'end_time': '13:00', 'cost': 4, 'distance': 12.25, 'price': 4, 'tickets': 1}, {'start': '蒋王庙-地铁站', 'end': '南京天文历史博物馆', 'mode': 'walk', 'start_time': '13:00', 'end_time': '13:10', 'cost': 0, 'distance': 0.84, 'price': 0}], 'tickets': 1}, {'position': '南京中国绿化博览园', 'type': 'attraction', 'price': 0, 'cost': 0, 'start_time': '15:20', 'end_time': '16:50', 'transports': [{'start': '南京天文历史博物馆', 'end': '蒋王庙-地铁站', 'mode': 'walk', 'start_time': '14:40', 'end_time': '14:50', 'cost': 0, 'distance': 0.84, 'price': 0}, {'start': '蒋王庙-地铁站', 'end': '绿博园-地铁站', 'mode': 'metro', 'start_time': '14:50', 'end_time': '15:14', 'cost': 4, 'distance': 12.32, 'price': 4, 'tickets': 1}, {'start': '绿博园-地铁站', 'end': '南京中国绿化博览园', 'mode': 'walk', 'start_time': '15:14', 'end_time': '15:20', 'cost': 0, 'distance': 0.53, 'price': 0}], 'tickets': 1}, {'position': '南城燕归楼(老门东店)', 'type': 'dinner', 'price': 90, 'cost': 90, 'start_time': '17:16', 'end_time': '18:16', 'transports': [{'start': '南京中国绿化博览园', 'end': '绿博园-地铁站', 'mode': 'walk', 'start_time': '16:50', 'end_time': '16:56', 'cost': 0, 'distance': 0.53, 'price': 0}, {'start': '绿博园-地铁站', 'end': '武定门-地铁站', 'mode': 'metro', 'start_time': '16:56', 'end_time': '17:10', 'cost': 3, 'distance': 7.45, 'price': 3, 'tickets': 1}, {'start': '武定门-地铁站', 'end': '南城燕归楼(老门东店)', 'mode': 'walk', 'start_time': '17:10', 'end_time': '17:16', 'cost': 0, 'distance': 0.56, 'price': 0}]}, {'start_time': '20:13', 'end_time': '23:51', 'start': '南京南站', 'end': '武汉站', 'price': 274.02, 'cost': 274.02, 'tickets': 1, 'transports': [{'start': '南城燕归楼(老门东店)', 'end': '武定门-地铁站', 'mode': 'walk', 'start_time': '18:16', 'end_time': '18:22', 'cost': 0, 'distance': 0.56, 'price': 0}, {'start': '武定门-地铁站', 'end': '南京南站-地铁站', 'mode': 'metro', 'start_time': '18:22', 'end_time': '18:31', 'cost': 3, 'distance': 4.75, 'price': 3, 'tickets': 1}, {'start': '南京南站-地铁站', 'end': '南京南站', 'mode': 'walk', 'start_time': '18:31', 'end_time': '18:34', 'cost': 0, 'distance': 0.29, 'price': 0}], 'TrainID': 'D2184', 'type': 'train'}]}]}
+Activity grounding passed!
+Intercity_transport passed!
+Attractions passed!
+Hotels passed!
+Restaurants passed!
+Innercity transport  passed!
+Time passed!
+Space passed!
+{'days': 1, 'people_number': 1, 'cost': 674.88, 'transport_type': {'metro'}, 'intercity_transport': {'train'}, 'train_type': {'G', 'D'}, 'food_type': {'江浙菜'}, 'spot_type': {'公园', '博物馆/纪念馆'}, 'hotel_feature': set(), 'food_price': 90.0, 'hotel_price': 0, 'hotel_names': set(), 'restaurant_names': {'南城燕归楼(老门东店)'}, 'attraction_names': {'南京中国绿化博览园', '南京天文历史博物馆'}, 'tickets': 1, 'rooms': None, 'room_type': None}
+[True, True, True]
+result=(day_count(plan)==1) passed!
+result=(people_count(plan)==1) passed!
+total=0
+for activity in allactivities(plan):
+ total+=activity_cost(activity)
+ total+=innercity_transport_cost(activity_transports(activity))
+result=(total<=1800) passed!
+
+ Pass! 
+
+True {'people_number': 1, 'start_city': '武汉', 'target_city': '南京', 'itinerary': [{'day': 1, 'activities': [{'start_time': '09:37', 'end_time': '12:33', 'start': '武汉站', 'end': '南京南站', 'price': 296.86, 'cost': 296.86, 'tickets': 1, 'transports': [], 'TrainID': 'G1775', 'type': 'train'}, {'position': '南京天文历史博物馆', 'type': 'attraction', 'price': 0, 'cost': 0, 'start_time': '13:10', 'end_time': '14:40', 'transports': [{'start': '南京南站', 'end': '南京南站-地铁站', 'mode': 'walk', 'start_time': '12:33', 'end_time': '12:36', 'cost': 0, 'distance': 0.29, 'price': 0}, {'start': '南京南站-地铁站', 'end': '蒋王庙-地铁站', 'mode': 'metro', 'start_time': '12:36', 'end_time': '13:00', 'cost': 4, 'distance': 12.25, 'price': 4, 'tickets': 1}, {'start': '蒋王庙-地铁站', 'end': '南京天文历史博物馆', 'mode': 'walk', 'start_time': '13:00', 'end_time': '13:10', 'cost': 0, 'distance': 0.84, 'price': 0}], 'tickets': 1}, {'position': '南京中国绿化博览园', 'type': 'attraction', 'price': 0, 'cost': 0, 'start_time': '15:20', 'end_time': '16:50', 'transports': [{'start': '南京天文历史博物馆', 'end': '蒋王庙-地铁站', 'mode': 'walk', 'start_time': '14:40', 'end_time': '14:50', 'cost': 0, 'distance': 0.84, 'price': 0}, {'start': '蒋王庙-地铁站', 'end': '绿博园-地铁站', 'mode': 'metro', 'start_time': '14:50', 'end_time': '15:14', 'cost': 4, 'distance': 12.32, 'price': 4, 'tickets': 1}, {'start': '绿博园-地铁站', 'end': '南京中国绿化博览园', 'mode': 'walk', 'start_time': '15:14', 'end_time': '15:20', 'cost': 0, 'distance': 0.53, 'price': 0}], 'tickets': 1}, {'position': '南城燕归楼(老门东店)', 'type': 'dinner', 'price': 90, 'cost': 90, 'start_time': '17:16', 'end_time': '18:16', 'transports': [{'start': '南京中国绿化博览园', 'end': '绿博园-地铁站', 'mode': 'walk', 'start_time': '16:50', 'end_time': '16:56', 'cost': 0, 'distance': 0.53, 'price': 0}, {'start': '绿博园-地铁站', 'end': '武定门-地铁站', 'mode': 'metro', 'start_time': '16:56', 'end_time': '17:10', 'cost': 3, 'distance': 7.45, 'price': 3, 'tickets': 1}, {'start': '武定门-地铁站', 'end': '南城燕归楼(老门东店)', 'mode': 'walk', 'start_time': '17:10', 'end_time': '17:16', 'cost': 0, 'distance': 0.56, 'price': 0}]}, {'start_time': '20:13', 'end_time': '23:51', 'start': '南京南站', 'end': '武汉站', 'price': 274.02, 'cost': 274.02, 'tickets': 1, 'transports': [{'start': '南城燕归楼(老门东店)', 'end': '武定门-地铁站', 'mode': 'walk', 'start_time': '18:16', 'end_time': '18:22', 'cost': 0, 'distance': 0.56, 'price': 0}, {'start': '武定门-地铁站', 'end': '南京南站-地铁站', 'mode': 'metro', 'start_time': '18:22', 'end_time': '18:31', 'cost': 3, 'distance': 4.75, 'price': 3, 'tickets': 1}, {'start': '南京南站-地铁站', 'end': '南京南站', 'mode': 'walk', 'start_time': '18:31', 'end_time': '18:34', 'cost': 0, 'distance': 0.29, 'price': 0}], 'TrainID': 'D2184', 'type': 'train'}]}], 'search_time_sec': 0.7852790355682373, 'llm_inference_time_sec': 0}
+True {'people_number': 1, 'start_city': '武汉', 'target_city': '南京', 'itinerary': [{'day': 1, 'activities': [{'start_time': '09:37', 'end_time': '12:33', 'start': '武汉站', 'end': '南京南站', 'price': 296.86, 'cost': 296.86, 'tickets': 1, 'transports': [], 'TrainID': 'G1775', 'type': 'train'}, {'position': '南京天文历史博物馆', 'type': 'attraction', 'price': 0, 'cost': 0, 'start_time': '13:10', 'end_time': '14:40', 'transports': [{'start': '南京南站', 'end': '南京南站-地铁站', 'mode': 'walk', 'start_time': '12:33', 'end_time': '12:36', 'cost': 0, 'distance': 0.29, 'price': 0}, {'start': '南京南站-地铁站', 'end': '蒋王庙-地铁站', 'mode': 'metro', 'start_time': '12:36', 'end_time': '13:00', 'cost': 4, 'distance': 12.25, 'price': 4, 'tickets': 1}, {'start': '蒋王庙-地铁站', 'end': '南京天文历史博物馆', 'mode': 'walk', 'start_time': '13:00', 'end_time': '13:10', 'cost': 0, 'distance': 0.84, 'price': 0}], 'tickets': 1}, {'position': '南京中国绿化博览园', 'type': 'attraction', 'price': 0, 'cost': 0, 'start_time': '15:20', 'end_time': '16:50', 'transports': [{'start': '南京天文历史博物馆', 'end': '蒋王庙-地铁站', 'mode': 'walk', 'start_time': '14:40', 'end_time': '14:50', 'cost': 0, 'distance': 0.84, 'price': 0}, {'start': '蒋王庙-地铁站', 'end': '绿博园-地铁站', 'mode': 'metro', 'start_time': '14:50', 'end_time': '15:14', 'cost': 4, 'distance': 12.32, 'price': 4, 'tickets': 1}, {'start': '绿博园-地铁站', 'end': '南京中国绿化博览园', 'mode': 'walk', 'start_time': '15:14', 'end_time': '15:20', 'cost': 0, 'distance': 0.53, 'price': 0}], 'tickets': 1}, {'position': '南城燕归楼(老门东店)', 'type': 'dinner', 'price': 90, 'cost': 90, 'start_time': '17:16', 'end_time': '18:16', 'transports': [{'start': '南京中国绿化博览园', 'end': '绿博园-地铁站', 'mode': 'walk', 'start_time': '16:50', 'end_time': '16:56', 'cost': 0, 'distance': 0.53, 'price': 0}, {'start': '绿博园-地铁站', 'end': '武定门-地铁站', 'mode': 'metro', 'start_time': '16:56', 'end_time': '17:10', 'cost': 3, 'distance': 7.45, 'price': 3, 'tickets': 1}, {'start': '武定门-地铁站', 'end': '南城燕归楼(老门东店)', 'mode': 'walk', 'start_time': '17:10', 'end_time': '17:16', 'cost': 0, 'distance': 0.56, 'price': 0}]}, {'start_time': '20:13', 'end_time': '23:51', 'start': '南京南站', 'end': '武汉站', 'price': 274.02, 'cost': 274.02, 'tickets': 1, 'transports': [{'start': '南城燕归楼(老门东店)', 'end': '武定门-地铁站', 'mode': 'walk', 'start_time': '18:16', 'end_time': '18:22', 'cost': 0, 'distance': 0.56, 'price': 0}, {'start': '武定门-地铁站', 'end': '南京南站-地铁站', 'mode': 'metro', 'start_time': '18:22', 'end_time': '18:31', 'cost': 3, 'distance': 4.75, 'price': 3, 'tickets': 1}, {'start': '南京南站-地铁站', 'end': '南京南站', 'mode': 'walk', 'start_time': '18:31', 'end_time': '18:34', 'cost': 0, 'distance': 0.29, 'price': 0}], 'TrainID': 'D2184', 'type': 'train'}]}], 'search_time_sec': 0.7852790355682373, 'llm_inference_time_sec': 0}

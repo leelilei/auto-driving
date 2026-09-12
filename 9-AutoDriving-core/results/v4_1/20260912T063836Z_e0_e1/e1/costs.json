@@ -1,0 +1,44 @@
+{
+  "5%": {
+    "darc": {
+      "tokens_total": 698624,
+      "calls_per_req": 2.05
+    },
+    "b4": {
+      "tokens_total": 699057,
+      "calls_per_req": 2.05
+    },
+    "b3_mean": {
+      "tokens_total": 699520.6,
+      "calls_per_req": 2.05
+    }
+  },
+  "10%": {
+    "darc": {
+      "tokens_total": 722360,
+      "calls_per_req": 2.1
+    },
+    "b4": {
+      "tokens_total": 721865,
+      "calls_per_req": 2.1
+    },
+    "b3_mean": {
+      "tokens_total": 722816.5,
+      "calls_per_req": 2.1
+    }
+  },
+  "20%": {
+    "darc": {
+      "tokens_total": 770442,
+      "calls_per_req": 2.2
+    },
+    "b4": {
+      "tokens_total": 768941,
+      "calls_per_req": 2.2
+    },
+    "b3_mean": {
+      "tokens_total": 769661.8,
+      "calls_per_req": 2.2
+    }
+  }
+}

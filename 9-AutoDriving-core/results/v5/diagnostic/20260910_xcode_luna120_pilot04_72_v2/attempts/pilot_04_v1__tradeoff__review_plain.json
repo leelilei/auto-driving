@@ -1,0 +1,29 @@
+{
+  "call_id": "pilot_04_v1::tradeoff::review_plain",
+  "role": "review_plain",
+  "graph_condition": "tradeoff",
+  "started_at": "2026-09-09T18:51:30.501722+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. Candidate agreement is not proof of correctness.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not use route efficiency to infer what the user wants.\n\nInstruction:\nMake sure to visit the bank and the library today, returning by 18:00. It is crucial to prioritize an efficient, quick route for these stops.\n\nCandidate A:\n{\"dependencies\": [], \"pois\": [\"bank\", \"library\"], \"quality_weight\": 0.1, \"time_limit\": 1080}\n\nCandidate B:\n{\"dependencies\": [], \"pois\": [\"bank\", \"library\"], \"quality_weight\": 0.1, \"time_limit\": 1080}\n"
+  },
+  "status": "TRANSPORT_FAILED",
+  "schema_valid": false,
+  "error_type": "RuntimeError",
+  "error_message": "provider curl request timed out after 120 seconds",
+  "finished_at": "2026-09-09T18:53:30.509281+00:00",
+  "telemetry": {
+    "call_index": 2,
+    "prompt_sha256": "b7114ab1af0ae853ac46d05c41dcc84512a9f7081cdc8592f922bfb888261956",
+    "attempts": 1,
+    "latency_seconds": 120.007,
+    "input_chars": 872,
+    "output_chars": 0,
+    "input_tokens": 218,
+    "output_tokens": 0,
+    "total_tokens": 218,
+    "usage_source": "character_estimate",
+    "success": false,
+    "error": "RuntimeError"
+  }
+}

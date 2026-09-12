@@ -1,0 +1,18 @@
+check_id,stage,self_status,evidence_path,counts,notes
+V01,S0,PASS,docs/plans/proposal.md,sha256=8711391ae946b74fde9c66da6531772f9e37f302984dbc54c9a9c7a783e4db2c,proposal bound
+V02,S0,PASS,docs/experiments/v5_1/deliveries/20260909_codex_kickoff/HANDOFF_RESULTS.md,69 tests,existing plus 5 v5 tests
+D01,S1,PASS,9-AutoDriving-core/results/v5/development/20260909_data_qualification.json,1000 HIPP records,source hash verified
+D02,S1,PASS,9-AutoDriving-core/results/v5/development/20260909_data_qualification.json,200 exposed groups,all historical candidate splits conservatively exposed
+D03,S1,BLOCKED,9-AutoDriving-core/results/v5/development/20260909_data_qualification.json,409 candidate clusters,no test selected or reviewed
+D04,S1,BLOCKED,9-AutoDriving-core/data/pilot/pilot_80_utterances.json,80 pending,no human approval inferred
+G01,S1,PASS,9-AutoDriving-core/results/v5/development/20260909_s1_graphs_v3/manifest.json,8 valid families,field-local changes and file hashes verified
+G02,S1,PASS,9-AutoDriving-core/results/v5/development/20260909_s1_graphs_v3/manifest.json,8 accepted and 0 failed,fixed deterministic development construction
+M02,S1,PASS,9-AutoDriving-core/results/v5/development/20260909_contrast_smoke.json,4 swaps in fixture,cross constraints included
+M03,S1,PARTIAL,9-AutoDriving-core/src/v5/contrast.py,gold not in function interface,request serialization test still needed
+R01,S1,PASS,9-AutoDriving-core/results/v5/development/20260909_diagnostic8_plan/expected_units.jsonl,576 unique units,collection blocked
+R02,S1,PARTIAL,9-AutoDriving-core/results/v5/probes,2 failed attempts,raw failures and telemetry retained; full collector pending
+R04,S1,NOT_RUN,,0,full replay not implemented
+R05,S1,NOT_RUN,,0,tamper suite not implemented
+B01,S2,BLOCKED,9-AutoDriving-core/results/v5/development/20260909_diagnostic8_plan/budget.json,576 calls,token and price budget pending prompt freeze
+P01,S2,FAIL,9-AutoDriving-core/results/v5/probes,0 successful calls,two independent HTTP 502 probes
+C04,S6,PASS,docs/project/EXPERIMENT_FIRST_POLICY.md,0 paper actions,paper writing remains CLOSED

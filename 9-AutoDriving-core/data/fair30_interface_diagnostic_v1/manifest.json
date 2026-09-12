@@ -1,0 +1,16 @@
+{
+  "created": "2026-09-10T16:57:06.951943+00:00",
+  "reference": "/Users/mac/Documents/6-Research/9-AutoDriving/9-AutoDriving-core/results/scene_fair30/20260910T163441Z_haiku_reviewed",
+  "reference_manifest_sha256": "9ee252b912ec296f86255c2ac3f1af6724f6791f635f11ebf87a808138322a29",
+  "source_sha256": "af99a9e8fc09bb1aaca9fde4db926827623616755c54eea0e58a55fcb4a90db5",
+  "model_api_calls": 0,
+  "files": {
+    "reference_direct_records.json": "60c8f30d917187fe9ac63f517feb4adfc9601eb202c5fff6ac2eb6a959f4a057",
+    "gold_for_offline_scoring_only.json": "8416188b143e5487c8f18aba2916a64e2e7c83a184077ec8614983310c45c6c5",
+    "failure_diagnosis.json": "1e1d372752c6237b2c4bbebf2e8652fd25d4500753fe5550de235b1e4d65eb13",
+    "clarified_model_inputs.json": "4b29ac59ff9cfba3458722c37841b05402ce328445108573a28db8fa60ef8ec8",
+    "request_plan.json": "cffca783d73399db13c4b65e7acd3cb84e887179220d258029c89786d76e6e4f",
+    "original_model_inputs.json": "d7bac479d5a43a28223ae1e96fe79975c99595a5fccb52693fc6352b5fae46a6",
+    "protocol.json": "af9c186266f54deb0a7ee7f5ae95fbd9663b1a683d6eb1ce856daa634d29cc51"
+  }
+}

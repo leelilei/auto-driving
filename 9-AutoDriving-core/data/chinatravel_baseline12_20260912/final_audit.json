@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "n_expected": 12,
+  "source_model_calls": 12,
+  "complete_parses": 12,
+  "search_successes": 12,
+  "search_failures": 0,
+  "raw_schema_valid": 12,
+  "adapted_schema_valid": 12,
+  "schema_adapter_changes": 0,
+  "invented_values": 0,
+  "official_all_pass": 12,
+  "full_denominator_all_pass_rate": 100.0,
+  "semantic_error_candidate": false,
+  "scope": "development baseline diagnostic; simple non-fixed6 ordered slice; not benchmark or DARC evidence",
+  "next_action": "Do not start stage 5; retain 12-case diagnostic and reassess whether a harder audited slice is justified.",
+  "ids": [
+    "e20241028160251109186",
+    "e20241028160253742452",
+    "e20241028160255878579",
+    "e20241028160258515151",
+    "e20241028160300570125",
+    "e20241028160301887545",
+    "e20241028160303262666",
+    "e20241028160306588034",
+    "e20241028160307743716",
+    "e20241028160309165566",
+    "e20241028160311039073",
+    "e20241028160312706595"
+  ],
+  "artifact_hashes": {
+    "public_inputs.json": "81e01b0a8d28a1b3fa10a5dc29f9c9ef80fe95aa7e24d49369ba79e60cb72dd4",
+    "preregistration.json": "34e4080d285e59f8b359914829cb04b90d8f9bc8822a3291b436daffd1c85596",
+    "collection_retry1.json": "fbd14a49aeb32991288a1371857bce46ccaf7baffb0b16818399a0ab3c626a1c"
+  }
+}

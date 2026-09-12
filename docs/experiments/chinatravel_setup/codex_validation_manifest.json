@@ -1,0 +1,11 @@
+{
+  "9-AutoDriving-core/scripts/chinatravel_pipeline.py": "30543474fc8cdd2ca0bf35e2e57dd11be693f6ed47faa21371c69805bc325eda",
+  "9-AutoDriving-core/tests/test_chinatravel_pipeline.py": "0033bebb8901bdb34ea9d63f2fa7d9c583e802319ab49144f05f3079baabe7f8",
+  "9-AutoDriving-core/scripts/stage2_evaluator_test.py": "813578934a3ec24b923c7f68942ed3e77c4466098cbe51de96b9158154a6cacb",
+  "9-AutoDriving-core/scripts/stage3_baseline_experiment.py": "907ae16793c9d7f823f623a27113ce02eaf86e50ef888201d1eed65b055a6ae9",
+  "docs/experiments/chinatravel_setup/CODEX_REMEDIATION_20260911.md": "578b865feed7a240041fc2d7307f6437aae553a6d94d90b76bff73954e1f639b",
+  "docs/experiments/chinatravel_setup/codex_validation/smoke_summary.json": "51f049942a26d795deceb6d9b7cbbd877c3ea657b307024ac3383ce36669428a",
+  "docs/experiments/chinatravel_setup/codex_validation/fixture_candidate.json": "7481fa18e3dbf55649860b719e6c39b6828b2f09ba6f9c66063bc41155ebb104",
+  "docs/experiments/chinatravel_setup/codex_validation/fixture_build.log": "3b7fa5f454e8dc810533abbece07e80b43c261d62e535d446629fe585391808c",
+  "docs/experiments/chinatravel_setup/codex_validation/tests.log": "b4affed7ce9ca070549db6b7a17f566cf75543a9f938ac4891c6b54f5aaf360a"
+}

@@ -1,0 +1,38 @@
+{
+  "call_id": "pilot_03_v3::llmap_direct",
+  "role": "llmap_direct",
+  "graph_condition": null,
+  "started_at": "2026-09-09T16:34:43.617043+00:00",
+  "request": {
+    "system": "Extract POIs, constraints, and weights from a human instruction. POIs should be a simple string array. Dependencies should be an empty list if no sequence requirements are mentioned. Weights should be between 0 and 1, and sum to 1. Extract them from language about importance of POI rating vs route length.\n\nOutput must be valid JSON with structure:\n{\n    \"pois\": [\"poi1\", \"poi2\", ...],\n    \"time_limit\": \"HH:00\" or \"None\",\n    \"dependencies\": [[\"poi1\", \"poi2\"], ...],\n    \"quality_weight\": float,\n    \"distance_weight\": float\n}\n",
+    "user": "Extract POIs, constraints, and weights from this instruction as JSON:\nToday go visit the pharmacy and the shopping mall. No strict order needed between the two, just pick what works best while keeping a healthy balance between good ratings and travel efficiency.\n\nOnly output the JSON object. No prefix, additional text, or explanation.\n"
+  },
+  "raw_response": "{\n  \"pois\": [\"pharmacy\", \"shopping mall\"],\n  \"time_limit\": \"None\",\n  \"dependencies\": [],\n  \"quality_weight\": 0.5,\n  \"distance_weight\": 0.5\n}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "pharmacy",
+      "shopping_mall"
+    ],
+    "time_limit": null,
+    "dependencies": [],
+    "quality_weight": 0.5
+  },
+  "evidence": {},
+  "changes": [],
+  "finished_at": "2026-09-09T16:34:45.239913+00:00",
+  "telemetry": {
+    "call_index": 59,
+    "prompt_sha256": "66e0966e304f366397c1ee8d5d212cf1166df916bed945af209ea6f87ce99b24",
+    "attempts": 1,
+    "latency_seconds": 1.623,
+    "input_chars": 866,
+    "output_chars": 140,
+    "input_tokens": 258,
+    "output_tokens": 371,
+    "total_tokens": 629,
+    "usage_source": "provider",
+    "success": true
+  }
+}

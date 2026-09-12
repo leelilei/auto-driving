@@ -1,0 +1,9 @@
+{
+  "uid": "h20241029143455115600",
+  "status": "search_success",
+  "search_success": true,
+  "seconds": 4.593033624929376,
+  "tool_calls": 12818,
+  "tool_errors": 0,
+  "schema_valid": false
+}

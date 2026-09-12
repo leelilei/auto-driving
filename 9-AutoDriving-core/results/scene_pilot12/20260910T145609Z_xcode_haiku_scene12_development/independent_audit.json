@@ -1,0 +1,659 @@
+{
+  "status": "PASS_OFFLINE_ENGINEERING_AUDIT",
+  "research_status": "UNREVIEWED_DEVELOPMENT_ONLY",
+  "full_summary_replay_equal": true,
+  "independent_prediction_executions": 69,
+  "human_review": "PENDING",
+  "methods": {
+    "direct": {
+      "n": 24,
+      "rule_correct": 14,
+      "raw_rule_correct": 14,
+      "object_success": 23,
+      "feasible_success": 23,
+      "false_infeasible": 0,
+      "fallback": 0,
+      "corrected": 0,
+      "damaged": 0
+    },
+    "language": {
+      "n": 24,
+      "rule_correct": 14,
+      "raw_rule_correct": 0,
+      "object_success": 23,
+      "feasible_success": 23,
+      "false_infeasible": 0,
+      "fallback": 23,
+      "corrected": 0,
+      "damaged": 0
+    },
+    "evidence": {
+      "n": 24,
+      "rule_correct": 14,
+      "raw_rule_correct": 0,
+      "object_success": 23,
+      "feasible_success": 23,
+      "false_infeasible": 0,
+      "fallback": 23,
+      "corrected": 0,
+      "damaged": 0
+    }
+  },
+  "cost_including_cache": {
+    "direct": {
+      "physical_attempts": 24,
+      "provider_usage_records": 24,
+      "input_tokens": 6378,
+      "output_tokens": 3478,
+      "cache_creation_input_tokens": 3656,
+      "cache_read_input_tokens": 1504,
+      "total_including_cache": 15016,
+      "reported_total_excludes_cache_warning": "Main summary tokens omit Anthropic cache fields; use this breakdown. No price assumed."
+    },
+    "language": {
+      "physical_attempts": 23,
+      "provider_usage_records": 23,
+      "input_tokens": 7049,
+      "output_tokens": 5320,
+      "cache_creation_input_tokens": 3757,
+      "cache_read_input_tokens": 1326,
+      "total_including_cache": 17452,
+      "reported_total_excludes_cache_warning": "Main summary tokens omit Anthropic cache fields; use this breakdown. No price assumed."
+    },
+    "evidence": {
+      "physical_attempts": 23,
+      "provider_usage_records": 23,
+      "input_tokens": 12225,
+      "output_tokens": 5059,
+      "cache_creation_input_tokens": 3714,
+      "cache_read_input_tokens": 1369,
+      "total_including_cache": 22367,
+      "reported_total_excludes_cache_warning": "Main summary tokens omit Anthropic cache fields; use this breakdown. No price assumed."
+    }
+  },
+  "disagreements": [
+    {
+      "case_id": "S01",
+      "rep": 1,
+      "gold_policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "methods": {
+        "direct": {
+          "policy": {
+            "selection": "minimum_added_distance",
+            "availability_reference": "arrival",
+            "return_by": null
+          },
+          "decision": {
+            "status": "OK",
+            "selected_poi_ids": [
+              "P_beta"
+            ]
+          },
+          "rule_correct": false,
+          "object_success": true,
+          "corrected": false,
+          "damaged": false
+        },
+        "language": {
+          "policy": {
+            "selection": "minimum_added_distance",
+            "availability_reference": "arrival",
+            "return_by": null
+          },
+          "decision": {
+            "status": "OK",
+            "selected_poi_ids": [
+              "P_beta"
+            ]
+          },
+          "rule_correct": false,
+          "object_success": true,
+          "corrected": false,
+          "damaged": false
+        },
+        "evidence": {
+          "policy": {
+            "selection": "minimum_added_distance",
+            "availability_reference": "arrival",
+            "return_by": null
+          },
+          "decision": {
+            "status": "OK",
+            "selected_poi_ids": [
+              "P_beta"
+            ]
+          },
+          "rule_correct": false,
+          "object_success": true,
+          "corrected": false,
+          "damaged": false
+        }
+      }
+    },
+    {
+      "case_id": "S01",
+      "rep": 2,
+      "gold_policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "methods": {
+        "direct": {
+          "policy": {
+            "selection": "minimum_added_distance",
+            "availability_reference": "arrival",
+            "return_by": null
+          },
+          "decision": {
+            "status": "OK",
+            "selected_poi_ids": [
+              "P_beta"
+            ]
+          },
+          "rule_correct": false,
+          "object_success": true,
+          "corrected": false,
+          "damaged": false
+        },
+        "language": {
+          "policy": {
+            "selection": "minimum_added_distance",
+            "availability_reference": "arrival",
+            "return_by": null
+          },
+          "decision": {
+            "status": "OK",
+            "selected_poi_ids": [
+              "P_beta"
+            ]
+          },
+          "rule_correct": false,
+          "object_success": true,
+          "corrected": false,
+          "damaged": false
+        },
+        "evidence": {
+          "policy": {
+            "selection": "minimum_added_distance",
+            "availability_reference": "arrival",
+            "return_by": null
+          },
+          "decision": {
+            "status": "OK",
+            "selected_poi_ids": [
+              "P_beta"
+            ]
+          },
+          "rule_correct": false,
+          "object_success": true,
+          "corrected": false,
+          "damaged": false
+        }
+      }
+    },
+    {
+      "case_id": "S02",
+      "rep": 1,
+      "gold_policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "methods": {
+        "direct": {
+          "policy": {
+            "selection": "minimum_added_distance",
+            "availability_reference": "arrival",
+            "return_by": null
+          },
+          "decision": {
+            "status": "OK",
+            "selected_poi_ids": [
+              "P_alpha"
+            ]
+          },
+          "rule_correct": false,
+          "object_success": true,
+          "corrected": false,
+          "damaged": false
+        },
+        "language": {
+          "policy": {
+            "selection": "minimum_added_distance",
+            "availability_reference": "arrival",
+            "return_by": null
+          },
+          "decision": {
+            "status": "OK",
+            "selected_poi_ids": [
+              "P_alpha"
+            ]
+          },
+          "rule_correct": false,
+          "object_success": true,
+          "corrected": false,
+          "damaged": false
+        },
+        "evidence": {
+          "policy": {
+            "selection": "minimum_added_distance",
+            "availability_reference": "arrival",
+            "return_by": null
+          },
+          "decision": {
+            "status": "OK",
+            "selected_poi_ids": [
+              "P_alpha"
+            ]
+          },
+          "rule_correct": false,
+          "object_success": true,
+          "corrected": false,
+          "damaged": false
+        }
+      }
+    },
+    {
+      "case_id": "S02",
+      "rep": 2,
+      "gold_policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "methods": {
+        "direct": {
+          "policy": null,
+          "decision": null,
+          "rule_correct": false,
+          "object_success": false,
+          "corrected": false,
+          "damaged": false
+        },
+        "language": {
+          "policy": null,
+          "decision": null,
+          "rule_correct": false,
+          "object_success": false,
+          "corrected": false,
+          "damaged": false
+        },
+        "evidence": {
+          "policy": null,
+          "decision": null,
+          "rule_correct": false,
+          "object_success": false,
+          "corrected": false,
+          "damaged": false
+        }
+      }
+    },
+    {
+      "case_id": "S09",
+      "rep": 1,
+      "gold_policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "departure",
+        "return_by": null
+      },
+      "methods": {
+        "direct": {
+          "policy": {
+            "selection": "minimum_added_distance",
+            "availability_reference": "departure",
+            "return_by": null
+          },
+          "decision": {
+            "status": "OK",
+            "selected_poi_ids": [
+              "P_beta"
+            ]
+          },
+          "rule_correct": false,
+          "object_success": true,
+          "corrected": false,
+          "damaged": false
+        },
+        "language": {
+          "policy": {
+            "selection": "minimum_added_distance",
+            "availability_reference": "departure",
+            "return_by": null
+          },
+          "decision": {
+            "status": "OK",
+            "selected_poi_ids": [
+              "P_beta"
+            ]
+          },
+          "rule_correct": false,
+          "object_success": true,
+          "corrected": false,
+          "damaged": false
+        },
+        "evidence": {
+          "policy": {
+            "selection": "minimum_added_distance",
+            "availability_reference": "departure",
+            "return_by": null
+          },
+          "decision": {
+            "status": "OK",
+            "selected_poi_ids": [
+              "P_beta"
+            ]
+          },
+          "rule_correct": false,
+          "object_success": true,
+          "corrected": false,
+          "damaged": false
+        }
+      }
+    },
+    {
+      "case_id": "S09",
+      "rep": 2,
+      "gold_policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "departure",
+        "return_by": null
+      },
+      "methods": {
+        "direct": {
+          "policy": {
+            "selection": "minimum_added_distance",
+            "availability_reference": "departure",
+            "return_by": null
+          },
+          "decision": {
+            "status": "OK",
+            "selected_poi_ids": [
+              "P_beta"
+            ]
+          },
+          "rule_correct": false,
+          "object_success": true,
+          "corrected": false,
+          "damaged": false
+        },
+        "language": {
+          "policy": {
+            "selection": "minimum_added_distance",
+            "availability_reference": "departure",
+            "return_by": null
+          },
+          "decision": {
+            "status": "OK",
+            "selected_poi_ids": [
+              "P_beta"
+            ]
+          },
+          "rule_correct": false,
+          "object_success": true,
+          "corrected": false,
+          "damaged": false
+        },
+        "evidence": {
+          "policy": {
+            "selection": "minimum_added_distance",
+            "availability_reference": "departure",
+            "return_by": null
+          },
+          "decision": {
+            "status": "OK",
+            "selected_poi_ids": [
+              "P_beta"
+            ]
+          },
+          "rule_correct": false,
+          "object_success": true,
+          "corrected": false,
+          "damaged": false
+        }
+      }
+    },
+    {
+      "case_id": "S10",
+      "rep": 1,
+      "gold_policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "methods": {
+        "direct": {
+          "policy": {
+            "selection": "minimum_added_distance",
+            "availability_reference": "arrival",
+            "return_by": null
+          },
+          "decision": {
+            "status": "OK",
+            "selected_poi_ids": [
+              "P_alpha"
+            ]
+          },
+          "rule_correct": false,
+          "object_success": true,
+          "corrected": false,
+          "damaged": false
+        },
+        "language": {
+          "policy": {
+            "selection": "minimum_added_distance",
+            "availability_reference": "arrival",
+            "return_by": null
+          },
+          "decision": {
+            "status": "OK",
+            "selected_poi_ids": [
+              "P_alpha"
+            ]
+          },
+          "rule_correct": false,
+          "object_success": true,
+          "corrected": false,
+          "damaged": false
+        },
+        "evidence": {
+          "policy": {
+            "selection": "minimum_added_distance",
+            "availability_reference": "arrival",
+            "return_by": null
+          },
+          "decision": {
+            "status": "OK",
+            "selected_poi_ids": [
+              "P_alpha"
+            ]
+          },
+          "rule_correct": false,
+          "object_success": true,
+          "corrected": false,
+          "damaged": false
+        }
+      }
+    },
+    {
+      "case_id": "S10",
+      "rep": 2,
+      "gold_policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "methods": {
+        "direct": {
+          "policy": {
+            "selection": "minimum_added_distance",
+            "availability_reference": "arrival",
+            "return_by": null
+          },
+          "decision": {
+            "status": "OK",
+            "selected_poi_ids": [
+              "P_alpha"
+            ]
+          },
+          "rule_correct": false,
+          "object_success": true,
+          "corrected": false,
+          "damaged": false
+        },
+        "language": {
+          "policy": {
+            "selection": "minimum_added_distance",
+            "availability_reference": "arrival",
+            "return_by": null
+          },
+          "decision": {
+            "status": "OK",
+            "selected_poi_ids": [
+              "P_alpha"
+            ]
+          },
+          "rule_correct": false,
+          "object_success": true,
+          "corrected": false,
+          "damaged": false
+        },
+        "evidence": {
+          "policy": {
+            "selection": "minimum_added_distance",
+            "availability_reference": "arrival",
+            "return_by": null
+          },
+          "decision": {
+            "status": "OK",
+            "selected_poi_ids": [
+              "P_alpha"
+            ]
+          },
+          "rule_correct": false,
+          "object_success": true,
+          "corrected": false,
+          "damaged": false
+        }
+      }
+    },
+    {
+      "case_id": "S11",
+      "rep": 1,
+      "gold_policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": 550
+      },
+      "methods": {
+        "direct": {
+          "policy": {
+            "selection": "minimum_added_distance",
+            "availability_reference": "arrival",
+            "return_by": 550
+          },
+          "decision": {
+            "status": "INFEASIBLE",
+            "selected_poi_ids": []
+          },
+          "rule_correct": false,
+          "object_success": true,
+          "corrected": false,
+          "damaged": false
+        },
+        "language": {
+          "policy": {
+            "selection": "minimum_added_distance",
+            "availability_reference": "arrival",
+            "return_by": 550
+          },
+          "decision": {
+            "status": "INFEASIBLE",
+            "selected_poi_ids": []
+          },
+          "rule_correct": false,
+          "object_success": true,
+          "corrected": false,
+          "damaged": false
+        },
+        "evidence": {
+          "policy": {
+            "selection": "minimum_added_distance",
+            "availability_reference": "arrival",
+            "return_by": 550
+          },
+          "decision": {
+            "status": "INFEASIBLE",
+            "selected_poi_ids": []
+          },
+          "rule_correct": false,
+          "object_success": true,
+          "corrected": false,
+          "damaged": false
+        }
+      }
+    },
+    {
+      "case_id": "S11",
+      "rep": 2,
+      "gold_policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": 550
+      },
+      "methods": {
+        "direct": {
+          "policy": {
+            "selection": "minimum_added_distance",
+            "availability_reference": "arrival",
+            "return_by": 550
+          },
+          "decision": {
+            "status": "INFEASIBLE",
+            "selected_poi_ids": []
+          },
+          "rule_correct": false,
+          "object_success": true,
+          "corrected": false,
+          "damaged": false
+        },
+        "language": {
+          "policy": {
+            "selection": "minimum_added_distance",
+            "availability_reference": "arrival",
+            "return_by": 550
+          },
+          "decision": {
+            "status": "INFEASIBLE",
+            "selected_poi_ids": []
+          },
+          "rule_correct": false,
+          "object_success": true,
+          "corrected": false,
+          "damaged": false
+        },
+        "evidence": {
+          "policy": {
+            "selection": "minimum_added_distance",
+            "availability_reference": "arrival",
+            "return_by": 550
+          },
+          "decision": {
+            "status": "INFEASIBLE",
+            "selected_poi_ids": []
+          },
+          "rule_correct": false,
+          "object_success": true,
+          "corrected": false,
+          "damaged": false
+        }
+      }
+    }
+  ],
+  "source_sha256": "f2b1d0f2058d35f4cb2ecc6490e57d855d7c29c6cb73bd0dec6ac7ddafef49e0",
+  "reference_source_sha256": "356988a65e82800bd4ed8bd4a1d6127cf6cdcc67ec49c69decff26e91562bea3"
+}

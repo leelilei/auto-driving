@@ -1,0 +1,19 @@
+{
+  "paired_clarified_task_discordances": [
+    {
+      "case_id": "F25",
+      "language": false,
+      "evidence": true
+    },
+    {
+      "case_id": "F29",
+      "language": true,
+      "evidence": false
+    }
+  ],
+  "wall_seconds": 827.869249,
+  "total_known_token_components": 168134,
+  "decision": "STOP_CURRENT_FACT_REVIEW_SCALEUP",
+  "paper_writing": "CLOSED",
+  "all_120_responses_have_usage": true
+}

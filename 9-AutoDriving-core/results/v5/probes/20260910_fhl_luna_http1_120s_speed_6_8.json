@@ -1,0 +1,158 @@
+{
+  "protocol_version": "darc-v5.1-concurrency-probe-1",
+  "model": "gpt-5.6-luna",
+  "config": {
+    "provider": "fhl",
+    "model": "gpt-5.6-luna",
+    "wire_api": "chat_completions",
+    "base_url": "https://www.fhl.mom",
+    "temperature": 0.0,
+    "timeout": 120,
+    "json_mode": true,
+    "retries": 0,
+    "retry_sleep": 2.0,
+    "sleep": 0.0,
+    "max_concurrency": 1,
+    "omit_temperature": true,
+    "reasoning_effort": null,
+    "max_output_tokens": 100,
+    "stream": false,
+    "service_tier": null,
+    "store": null,
+    "responses_input_mode": "messages",
+    "input_char_limit": null,
+    "transport": "curl",
+    "api_key_env": "FHL_API_KEY"
+  },
+  "started_at": "2026-09-10T02:02:04.798169+00:00",
+  "levels": [
+    {
+      "concurrency": 6,
+      "planned": 6,
+      "passed": 4,
+      "failed": 2,
+      "wall_seconds": 24.725871542003006,
+      "attempts": [
+        {
+          "index": 0,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":6,\"index\":0}",
+          "latency_seconds": 24.724938500032295,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "57d5f68c136ecd44e2b8abfd6ced1ba0bc2ece570009bd0032fd7020a9cfc095",
+            "attempts": 1,
+            "latency_seconds": 24.725,
+            "input_chars": 56,
+            "output_chars": 31,
+            "input_tokens": 36,
+            "output_tokens": 20,
+            "total_tokens": 56,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 1,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":6,\"index\":1}",
+          "latency_seconds": 14.573580167023465,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "fbb89627e1e3baf0723aefd85f0e73422f3c4d625c278e15ade6289b5778d8bc",
+            "attempts": 1,
+            "latency_seconds": 14.574,
+            "input_chars": 56,
+            "output_chars": 31,
+            "input_tokens": 36,
+            "output_tokens": 20,
+            "total_tokens": 56,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 2,
+          "status": "FAILED",
+          "error_type": "RuntimeError",
+          "error_message": "provider HTTP 502: error code: 502\n",
+          "latency_seconds": 4.454067833023146,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "6914ffca3ae9f580adbf18e9afa130237b66bead850b07cc564349efa6823e8a",
+            "attempts": 1,
+            "latency_seconds": 4.454,
+            "input_chars": 56,
+            "output_chars": 0,
+            "input_tokens": 14,
+            "output_tokens": 0,
+            "total_tokens": 14,
+            "usage_source": "character_estimate",
+            "success": false,
+            "error": "RuntimeError"
+          }
+        },
+        {
+          "index": 3,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":6,\"index\":3}",
+          "latency_seconds": 18.184370709001087,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "a68c4b37aeb723c6f633affe8ed4e1d0634b713126723df33bc4da9c06320d0e",
+            "attempts": 1,
+            "latency_seconds": 18.184,
+            "input_chars": 56,
+            "output_chars": 31,
+            "input_tokens": 36,
+            "output_tokens": 34,
+            "total_tokens": 70,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 4,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":6,\"index\":4}",
+          "latency_seconds": 14.649714417057112,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "28e8e4310e202b60a23941552492388b3c5635b5a29b35b0509b42c978c17c19",
+            "attempts": 1,
+            "latency_seconds": 14.65,
+            "input_chars": 56,
+            "output_chars": 31,
+            "input_tokens": 36,
+            "output_tokens": 34,
+            "total_tokens": 70,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 5,
+          "status": "FAILED",
+          "error_type": "RuntimeError",
+          "error_message": "provider HTTP 502: error code: 502\n",
+          "latency_seconds": 4.028821166022681,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "3ff8b2f144a507c3950153b478abd0a1f80437c2268e3e351c417ca3fd7cf903",
+            "attempts": 1,
+            "latency_seconds": 4.029,
+            "input_chars": 56,
+            "output_chars": 0,
+            "input_tokens": 14,
+            "output_tokens": 0,
+            "total_tokens": 14,
+            "usage_source": "character_estimate",
+            "success": false,
+            "error": "RuntimeError"
+          }
+        }
+      ]
+    }
+  ],
+  "finished_at": "2026-09-10T02:02:29.524456+00:00"
+}

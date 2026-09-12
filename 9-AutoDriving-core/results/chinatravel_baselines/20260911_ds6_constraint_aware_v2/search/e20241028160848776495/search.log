@@ -1,0 +1,6 @@
+Created log directory: /Users/mac/Documents/6-Research/9-AutoDriving/9-AutoDriving-core/results/chinatravel_baselines/20260911_ds6_constraint_aware_v2/search/e20241028160848776495/logs
+cache dir: /Users/mac/Documents/6-Research/9-AutoDriving/9-AutoDriving-core/results/chinatravel_baselines/20260911_ds6_constraint_aware_v2/search/e20241028160848776495/cache
+广州 -> 杭州
+search: ...
+candidates_type:  ['attraction', 'lunch', 'dinner', 'hotel']
+POI planning, day 0 04:24, 杭州南站, next-poi type: attraction

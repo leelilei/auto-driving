@@ -1,0 +1,29 @@
+{
+  "call_id": "pilot_03_v1::time_sensitive::review_constraints",
+  "role": "review_constraints",
+  "graph_condition": "time_sensitive",
+  "started_at": "2026-09-12T05:36:18.869734+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. Cross-constraint checks show consequences of candidates and do not establish the user's intent.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not select a preference because one candidate yields a better route.\n\nInstruction:\nPlease stop by the pharmacy and the shopping mall today. Seek a balance between high ratings and efficient travel distance. There is no required sequence between them, so choose whichever order suits you.\n\nCandidate A:\n{\"dependencies\": [], \"pois\": [\"pharmacy\", \"shopping_mall\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nCandidate B:\n{\"dependencies\": [], \"pois\": [\"pharmacy\", \"shopping_mall\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nField differences:\n{\"fields\": []}\n\nCross-constraint checks:\n{\"route_A_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_A_under_B\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_B\": {\"reasons\": [], \"task_success\": true}}\n"
+  },
+  "status": "TRANSPORT_FAILED",
+  "schema_valid": false,
+  "error_type": "RuntimeError",
+  "error_message": "provider curl request timed out after 60 seconds",
+  "finished_at": "2026-09-12T05:37:18.879170+00:00",
+  "telemetry": {
+    "call_index": 14,
+    "prompt_sha256": "5d77870b93ccbedabed9fbd0699f543c08d8a639974efba6e4b2ee73a8f96df3",
+    "attempts": 1,
+    "latency_seconds": 60.009,
+    "input_chars": 1310,
+    "output_chars": 0,
+    "input_tokens": 328,
+    "output_tokens": 0,
+    "total_tokens": 328,
+    "usage_source": "character_estimate",
+    "success": false,
+    "error": "RuntimeError"
+  }
+}

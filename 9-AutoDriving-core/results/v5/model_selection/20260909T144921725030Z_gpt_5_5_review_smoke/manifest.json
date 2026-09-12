@@ -1,0 +1,27 @@
+{
+  "config": {
+    "provider": "fhl",
+    "model": "gpt-5.5",
+    "wire_api": "chat_completions",
+    "base_url": "https://www.fhl.mom",
+    "temperature": 0.0,
+    "timeout": 60,
+    "json_mode": true,
+    "retries": 0,
+    "retry_sleep": 2.0,
+    "sleep": 0.0,
+    "max_concurrency": 1,
+    "omit_temperature": true,
+    "reasoning_effort": null,
+    "max_output_tokens": 800,
+    "stream": false,
+    "service_tier": null,
+    "store": null,
+    "responses_input_mode": "messages",
+    "input_char_limit": null,
+    "transport": "urllib",
+    "api_key_env": "FHL_API_KEY"
+  },
+  "system_prompt": "Review two candidate route intents using the original instruction as the only evidence of user intent. The decision report shows consequences, not truth. Never change a preference merely because one route looks more efficient. Return only JSON with pois, time_limit, dependencies, quality_weight.",
+  "summary_sha256": "bcb3fd38d27b321213b1448899bee10cc24fbf7109748cf345f4b95adceb0312"
+}

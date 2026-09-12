@@ -1,0 +1,28 @@
+{
+  "status": "PASS_ARITHMETIC_ONLY",
+  "human_review": "PENDING",
+  "model_api_calls": 0,
+  "seed": 20260911,
+  "cases": 30,
+  "independent_geometry_draws": 30,
+  "pharmacies_per_case": 5,
+  "scenarios": {
+    "open": 6,
+    "departure": 6,
+    "deadline": 6,
+    "closing": 6,
+    "combined": 6
+  },
+  "selections": {
+    "nearest_from_bank": 10,
+    "minimum_added_distance": 10,
+    "highest_rating": 10
+  },
+  "feasible": 26,
+  "infeasible": 4,
+  "unique_solutions": 25,
+  "mutations": 180,
+  "mutations_changing_decision": 75,
+  "sampling": "One deterministic pass, retain all draws including easy/infeasible/tied cases; no rejection or winner balancing.",
+  "limitation": "Synthetic development sample using existing instruction templates; neither external benchmark nor evidence of a method gain."
+}

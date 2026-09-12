@@ -1,0 +1,48 @@
+{
+  "call_id": "pilot_02_v0::aligned::darc",
+  "role": "darc",
+  "graph_condition": "aligned",
+  "started_at": "2026-09-09T16:33:06.698536+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. The decision-contrast report is diagnostic evidence about consequences; it is not a label and must not override the words of the instruction.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Use the report to locate consequential disagreements, then decide each field from the instruction alone.\n\nInstruction:\nMake sure to visit the supermarket and the pharmacy today. Balance your stops to maintain both reasonable ratings and efficiency along the route. Start your trip at the supermarket before heading to the pharmacy.\n\nCandidate A:\n{\"dependencies\": [[\"supermarket\", \"pharmacy\"]], \"pois\": [\"pharmacy\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nCandidate B:\n{\"dependencies\": [[\"supermarket\", \"pharmacy\"]], \"pois\": [\"pharmacy\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nDecision-contrast report:\n{\"candidate_A\": {\"dependencies\": [[\"supermarket\", \"pharmacy\"]], \"pois\": [\"pharmacy\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}, \"candidate_B\": {\"dependencies\": [[\"supermarket\", \"pharmacy\"]], \"pois\": [\"pharmacy\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}, \"candidate_evidence\": {\"A\": {\"dependencies\": \"Start your trip at the supermarket before heading to the pharmacy\", \"pois\": \"visit the supermarket and the pharmacy\", \"quality_weight\": \"Balance your stops to maintain both reasonable ratings and efficiency along the route\"}, \"B\": {\"dependencies\": \"Start your trip at the supermarket before heading to the pharmacy.\", \"pois\": \"visit the supermarket and the pharmacy today\", \"quality_weight\": \"Balance your stops to maintain both reasonable ratings and efficiency along the route.\"}}, \"cross_constraints\": {\"route_A_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_A_under_B\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_B\": {\"reasons\": [], \"task_success\": true}}, \"differing_fields\": [], \"instruction\": \"Make sure to visit the supermarket and the pharmacy today. Balance your stops to maintain both reasonable ratings and efficiency along the route. Start your trip at the supermarket before heading to the pharmacy.\", \"limitations\": [\"The report does not identify the user's true intent.\", \"Both candidates may share the same error.\", \"Single-field swaps do not identify higher-order interactions.\"], \"report_version\": \"darc-v5.1-contrast-2\", \"routes\": {\"A\": {\"arrival_minutes\": 602, \"average_quality\": 0.5, \"categories\": [\"supermarket\", \"pharmacy\"], \"coverage_count\": 2, \"distance_km\": 3.401, \"duration_minutes\": 61.8, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"supermarket_1\", \"pharmacy_1\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": 0.22221870918274783}, \"B\": {\"arrival_minutes\": 602, \"average_quality\": 0.5, \"categories\": [\"supermarket\", \"pharmacy\"], \"coverage_count\": 2, \"distance_km\": 3.401, \"duration_minutes\": 61.8, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"supermarket_1\", \"pharmacy_1\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": 0.22221870918274783}}, \"single_field_swaps\": []}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"pharmacy\",\"supermarket\"],\"time_limit\":null,\"dependencies\":[[\"supermarket\",\"pharmacy\"]],\"quality_weight\":0.5},\"evidence\":{\"pois\":\"visit the supermarket and the pharmacy\",\"time_limit\":\"today\",\"dependencies\":\"Start your trip at the supermarket before heading to the pharmacy\",\"quality_weight\":\"Balance your stops to maintain both reasonable ratings and efficiency\"},\"changes\":[]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "pharmacy",
+      "supermarket"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "supermarket",
+        "pharmacy"
+      ]
+    ],
+    "quality_weight": 0.5
+  },
+  "evidence": {
+    "pois": "visit the supermarket and the pharmacy",
+    "time_limit": "today",
+    "dependencies": "Start your trip at the supermarket before heading to the pharmacy",
+    "quality_weight": "Balance your stops to maintain both reasonable ratings and efficiency"
+  },
+  "changes": [],
+  "finished_at": "2026-09-09T16:33:24.171984+00:00",
+  "telemetry": {
+    "call_index": 10,
+    "prompt_sha256": "e391c63a65fddc31ac7fea60f3c4e79d2514dca0db82f155d99e0cc746e75fc9",
+    "attempts": 1,
+    "latency_seconds": 17.473,
+    "input_chars": 3428,
+    "output_chars": 396,
+    "input_tokens": 947,
+    "output_tokens": 5013,
+    "total_tokens": 5960,
+    "usage_source": "provider",
+    "success": true
+  }
+}

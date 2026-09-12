@@ -1,0 +1,47 @@
+{
+  "fixture_id": "distance_and_deadline",
+  "text": "Go to a library and a supermarket, return by 18:30, and keep the route as short as possible.",
+  "gold": {
+    "pois": [
+      "library",
+      "supermarket"
+    ],
+    "time_limit": 1110,
+    "dependencies": [],
+    "quality_weight": 0.25
+  },
+  "started_at": "2026-09-09T14:48:35.641258+00:00",
+  "raw_response": "{\"pois\":[\"library\",\"supermarket\"],\"time_limit\":\"18:30\",\"dependencies\":[],\"quality_weight\":0.2}",
+  "schema_valid": true,
+  "predicted": {
+    "pois": [
+      "library",
+      "supermarket"
+    ],
+    "time_limit": 1110,
+    "dependencies": [],
+    "quality_weight": 0.2
+  },
+  "hard": {
+    "poi_exact": true,
+    "time_exact": true,
+    "dependency_exact": true,
+    "hard_exact": true
+  },
+  "direction_predicted": "distance_first",
+  "direction_exact": true,
+  "finished_at": "2026-09-09T14:48:43.012088+00:00",
+  "telemetry": {
+    "call_index": 2,
+    "prompt_sha256": "c85cca81949d8efcc1560ecd885df9044dd23dafcf53cedac98a112e2a1425cd",
+    "attempts": 1,
+    "latency_seconds": 7.37,
+    "input_chars": 516,
+    "output_chars": 94,
+    "input_tokens": 246,
+    "output_tokens": 77,
+    "total_tokens": 323,
+    "usage_source": "provider",
+    "success": true
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "call_id": "pilot_05_v0::aligned::review_fields",
+  "role": "review_fields",
+  "graph_condition": "aligned",
+  "started_at": "2026-09-10T01:47:26.656646+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. The field-difference report only identifies disagreements; it does not identify the correct answer.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not infer user preference from a route or map.\n\nInstruction:\nToday, make sure to visit the bank, library, and pharmacy. It's important to prioritize places with the best ratings. Also, please go to the bank before heading to the library.\n\nCandidate A:\n{\"dependencies\": [[\"bank\", \"library\"]], \"pois\": [\"bank\", \"library\", \"pharmacy\"], \"quality_weight\": 1.0, \"time_limit\": null}\n\nCandidate B:\n{\"dependencies\": [[\"bank\", \"library\"]], \"pois\": [\"bank\", \"library\", \"pharmacy\"], \"quality_weight\": 1.0, \"time_limit\": null}\n\nField differences:\n{\"fields\": []}\n"
+  },
+  "status": "TRANSPORT_FAILED",
+  "schema_valid": false,
+  "error_type": "RuntimeError",
+  "error_message": "provider HTTP 502: error code: 502\n",
+  "finished_at": "2026-09-10T01:47:29.371404+00:00",
+  "telemetry": {
+    "call_index": 8,
+    "prompt_sha256": "468d54010972527d8b32eccef6872af1e865e1beff4bf4132d6fb2f4f36f4fe5",
+    "attempts": 1,
+    "latency_seconds": 2.715,
+    "input_chars": 1047,
+    "output_chars": 0,
+    "input_tokens": 262,
+    "output_tokens": 0,
+    "total_tokens": 262,
+    "usage_source": "character_estimate",
+    "success": false,
+    "error": "RuntimeError"
+  }
+}

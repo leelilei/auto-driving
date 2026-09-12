@@ -1,0 +1,57 @@
+{
+  "call_id": "pilot_01_v2::aligned::review_fields",
+  "role": "review_fields",
+  "graph_condition": "aligned",
+  "started_at": "2026-09-11T19:15:30.721208+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. The field-difference report only identifies disagreements; it does not identify the correct answer.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not infer user preference from a route or map.\n\nInstruction:\nEnsure your return by 22:00 today after visiting the shopping mall and the supermarket. Because efficiency is paramount, choose the most direct path possible, stopping at the shopping mall before you head to the supermarket.\n\nCandidate A:\n{\"dependencies\": [[\"shopping_mall\", \"supermarket\"]], \"pois\": [\"shopping_mall\", \"supermarket\"], \"quality_weight\": 0.0, \"time_limit\": 1320}\n\nCandidate B:\n{\"dependencies\": [[\"shopping_mall\", \"supermarket\"]], \"pois\": [\"shopping_mall\", \"supermarket\"], \"quality_weight\": 0.0, \"time_limit\": 1320}\n\nField differences:\n{\"fields\": []}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"shopping_mall\",\"supermarket\"],\"time_limit\":1320,\"dependencies\":[[\"shopping_mall\",\"supermarket\"]],\"quality_weight\":0.0},\"evidence\":{\"pois\":[\"visiting the shopping mall and the supermarket\"],\"time_limit\":[\"by 22:00 today\"],\"dependencies\":[\"stopping at the shopping mall before you head to the supermarket\"],\"quality_weight\":[\"efficiency is paramount\",\"most direct path possible\"]},\"changes\":[]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "shopping_mall",
+      "supermarket"
+    ],
+    "time_limit": 1320,
+    "dependencies": [
+      [
+        "shopping_mall",
+        "supermarket"
+      ]
+    ],
+    "quality_weight": 0.0
+  },
+  "evidence": {
+    "pois": [
+      "visiting the shopping mall and the supermarket"
+    ],
+    "time_limit": [
+      "by 22:00 today"
+    ],
+    "dependencies": [
+      "stopping at the shopping mall before you head to the supermarket"
+    ],
+    "quality_weight": [
+      "efficiency is paramount",
+      "most direct path possible"
+    ]
+  },
+  "changes": [],
+  "finished_at": "2026-09-11T19:15:38.280636+00:00",
+  "telemetry": {
+    "call_index": 15,
+    "prompt_sha256": "0363c4d3fc1ddea9de527ff321bf30c01d48548a89bda5dfd1432a1c1493d81e",
+    "attempts": 1,
+    "latency_seconds": 7.559,
+    "input_chars": 1123,
+    "output_chars": 412,
+    "input_tokens": 317,
+    "output_tokens": 1210,
+    "total_tokens": 1527,
+    "usage_source": "provider",
+    "success": true
+  }
+}

@@ -1,0 +1,279 @@
+{
+  "protocol_version": "darc-v5.1-concurrency-probe-1",
+  "model": "gpt-5.6-luna",
+  "config": {
+    "provider": "xcode",
+    "model": "gpt-5.6-luna",
+    "wire_api": "chat_completions",
+    "base_url": "https://xcode.best",
+    "temperature": 0.0,
+    "timeout": 60,
+    "json_mode": true,
+    "retries": 0,
+    "retry_sleep": 2.0,
+    "sleep": 0.0,
+    "max_concurrency": 1,
+    "omit_temperature": true,
+    "reasoning_effort": null,
+    "max_output_tokens": 100,
+    "stream": false,
+    "service_tier": null,
+    "store": null,
+    "responses_input_mode": "messages",
+    "input_char_limit": null,
+    "transport": "curl",
+    "api_key_env": "XCODE_API_KEY"
+  },
+  "started_at": "2026-09-09T17:39:59.741147+00:00",
+  "levels": [
+    {
+      "concurrency": 4,
+      "planned": 4,
+      "passed": 4,
+      "failed": 0,
+      "wall_seconds": 54.29931266600033,
+      "attempts": [
+        {
+          "index": 0,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":4,\"index\":0}",
+          "latency_seconds": 54.29888266604394,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "b898811562d450fa0407c5440e359fd7a1faf17723a69b9510360ecf5066aac3",
+            "attempts": 1,
+            "latency_seconds": 54.299,
+            "input_chars": 56,
+            "output_chars": 31,
+            "input_tokens": 28,
+            "output_tokens": 20,
+            "total_tokens": 48,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 1,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":4,\"index\":1}",
+          "latency_seconds": 4.198216082993895,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "b321f218c1fd839730f3bf1b76ccffe995bc9ac99629d5eb0b526923c962f1af",
+            "attempts": 1,
+            "latency_seconds": 4.198,
+            "input_chars": 56,
+            "output_chars": 31,
+            "input_tokens": 28,
+            "output_tokens": 20,
+            "total_tokens": 48,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 2,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":4,\"index\":2}",
+          "latency_seconds": 24.225435917032883,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "1dd266410d41dc78b5fe334bf33de0fb5cb9ace6ae89379af5640dc926fb6c31",
+            "attempts": 1,
+            "latency_seconds": 24.225,
+            "input_chars": 56,
+            "output_chars": 31,
+            "input_tokens": 28,
+            "output_tokens": 20,
+            "total_tokens": 48,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 3,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":4,\"index\":3}",
+          "latency_seconds": 43.359927249955945,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "450d933ad8b9acd96f4d703679e3b6d9d1d6205844d5a7c18d9d9416ba8f4930",
+            "attempts": 1,
+            "latency_seconds": 43.36,
+            "input_chars": 56,
+            "output_chars": 31,
+            "input_tokens": 28,
+            "output_tokens": 34,
+            "total_tokens": 62,
+            "usage_source": "provider",
+            "success": true
+          }
+        }
+      ]
+    },
+    {
+      "concurrency": 8,
+      "planned": 8,
+      "passed": 7,
+      "failed": 1,
+      "wall_seconds": 60.058335624984466,
+      "attempts": [
+        {
+          "index": 0,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":8,\"index\":0}",
+          "latency_seconds": 16.50114599999506,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "94340cbeedff51a9acf6fa4c8372a6dedbd18e9ea5f730d4c9f9f3502ad7c080",
+            "attempts": 1,
+            "latency_seconds": 16.501,
+            "input_chars": 56,
+            "output_chars": 31,
+            "input_tokens": 28,
+            "output_tokens": 34,
+            "total_tokens": 62,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 1,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":8,\"index\":1}",
+          "latency_seconds": 3.8887448749737814,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "00e6cc7c45bfaf9c97db8b35d59409dd545e0565439f57ba0ad1a2b7cd61b0d2",
+            "attempts": 1,
+            "latency_seconds": 3.889,
+            "input_chars": 56,
+            "output_chars": 31,
+            "input_tokens": 28,
+            "output_tokens": 20,
+            "total_tokens": 48,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 2,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":8,\"index\":2}",
+          "latency_seconds": 34.15604641701793,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "2ca78d77766f93974bf1ba45065d41d50269d5df3ed72d1041a28aa63d399f15",
+            "attempts": 1,
+            "latency_seconds": 34.156,
+            "input_chars": 56,
+            "output_chars": 31,
+            "input_tokens": 28,
+            "output_tokens": 34,
+            "total_tokens": 62,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 3,
+          "status": "FAILED",
+          "error_type": "RuntimeError",
+          "error_message": "provider curl request timed out after 60 seconds",
+          "latency_seconds": 60.05716016696533,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "c856ac934259ce77b31d8b8e75e8a139117aefa999a66ac6f55dfbbfe999a4e2",
+            "attempts": 1,
+            "latency_seconds": 60.057,
+            "input_chars": 56,
+            "output_chars": 0,
+            "input_tokens": 14,
+            "output_tokens": 0,
+            "total_tokens": 14,
+            "usage_source": "character_estimate",
+            "success": false,
+            "error": "RuntimeError"
+          }
+        },
+        {
+          "index": 4,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":8,\"index\":4}",
+          "latency_seconds": 25.49982650001766,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "7d03263c355354f068233f4a4f057341adcdb9d021548b61a94d3ef15a5b3965",
+            "attempts": 1,
+            "latency_seconds": 25.5,
+            "input_chars": 56,
+            "output_chars": 31,
+            "input_tokens": 28,
+            "output_tokens": 34,
+            "total_tokens": 62,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 5,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":8,\"index\":5}",
+          "latency_seconds": 36.42274304101011,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "264e0e24a17b8c89a0cff299ea4e8e0e16ec040c76533ef2aca3cb937def68d1",
+            "attempts": 1,
+            "latency_seconds": 36.423,
+            "input_chars": 56,
+            "output_chars": 31,
+            "input_tokens": 28,
+            "output_tokens": 33,
+            "total_tokens": 61,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 6,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":8,\"index\":6}",
+          "latency_seconds": 17.214417584007606,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "a80d62ae055a8f1bbf9a800b1ed024e205af953de4fd5b38a8f3b0754bd8bedc",
+            "attempts": 1,
+            "latency_seconds": 17.214,
+            "input_chars": 56,
+            "output_chars": 31,
+            "input_tokens": 28,
+            "output_tokens": 33,
+            "total_tokens": 61,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 7,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":8,\"index\":7}",
+          "latency_seconds": 26.655569583992474,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "f624ab31d0ab812ccc5143d2a639c6b809e9330ddb5257943fdea4d5e83b76d0",
+            "attempts": 1,
+            "latency_seconds": 26.656,
+            "input_chars": 56,
+            "output_chars": 31,
+            "input_tokens": 28,
+            "output_tokens": 20,
+            "total_tokens": 48,
+            "usage_source": "provider",
+            "success": true
+          }
+        }
+      ]
+    }
+  ],
+  "finished_at": "2026-09-09T17:41:54.099963+00:00"
+}

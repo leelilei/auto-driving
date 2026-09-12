@@ -1,0 +1,44 @@
+{
+  "call_id": "pilot_07_v2::time_sensitive::darc",
+  "role": "darc",
+  "graph_condition": "time_sensitive",
+  "started_at": "2026-09-09T16:38:32.090025+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. The decision-contrast report is diagnostic evidence about consequences; it is not a label and must not override the words of the instruction.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Use the report to locate consequential disagreements, then decide each field from the instruction alone.\n\nInstruction:\nMake sure to return by 17:00 after visiting the library, pharmacy, and supermarket. Quality is the key objective, so choose top-rated spots even if the route is longer.\n\nCandidate A:\n{\"dependencies\": [], \"pois\": [\"library\", \"pharmacy\", \"supermarket\"], \"quality_weight\": 1.0, \"time_limit\": 1020}\n\nCandidate B:\n{\"dependencies\": [], \"pois\": [\"library\", \"pharmacy\", \"supermarket\"], \"quality_weight\": 1.0, \"time_limit\": 1020}\n\nDecision-contrast report:\n{\"candidate_A\": {\"dependencies\": [], \"pois\": [\"library\", \"pharmacy\", \"supermarket\"], \"quality_weight\": 1.0, \"time_limit\": 1020}, \"candidate_B\": {\"dependencies\": [], \"pois\": [\"library\", \"pharmacy\", \"supermarket\"], \"quality_weight\": 1.0, \"time_limit\": 1020}, \"candidate_evidence\": {\"A\": {\"pois\": \"library, pharmacy, and supermarket\", \"quality_weight\": \"Quality is the key objective, so choose top-rated spots even if the route is longer.\", \"time_limit\": \"return by 17:00\"}, \"B\": {\"pois\": \"library, pharmacy, and supermarket\", \"quality_weight\": \"Quality is the key objective, so choose top-rated spots even if the route is longer.\", \"time_limit\": \"by 17:00\"}}, \"cross_constraints\": {\"route_A_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_A_under_B\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_B\": {\"reasons\": [], \"task_success\": true}}, \"differing_fields\": [], \"instruction\": \"Make sure to return by 17:00 after visiting the library, pharmacy, and supermarket. Quality is the key objective, so choose top-rated spots even if the route is longer.\", \"limitations\": [\"The report does not identify the user's true intent.\", \"Both candidates may share the same error.\", \"Single-field swaps do not identify higher-order interactions.\"], \"report_version\": \"darc-v5.1-contrast-2\", \"routes\": {\"A\": {\"arrival_minutes\": 651, \"average_quality\": 0.20000000000000004, \"categories\": [\"library\", \"pharmacy\", \"supermarket\"], \"coverage_count\": 3, \"distance_km\": 5.55, \"duration_minutes\": 111.1, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"library_1\", \"pharmacy_1\", \"supermarket_1\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": 0.20000000000000004}, \"B\": {\"arrival_minutes\": 651, \"average_quality\": 0.20000000000000004, \"categories\": [\"library\", \"pharmacy\", \"supermarket\"], \"coverage_count\": 3, \"distance_km\": 5.55, \"duration_minutes\": 111.1, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"library_1\", \"pharmacy_1\", \"supermarket_1\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": 0.20000000000000004}}, \"single_field_swaps\": []}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"library\",\"pharmacy\",\"supermarket\"],\"time_limit\":1020,\"dependencies\":[],\"quality_weight\":1.0},\"evidence\":{\"pois\":\"library, pharmacy, and supermarket\",\"time_limit\":\"return by 17:00\",\"quality_weight\":\"Quality is the key objective, so choose top-rated spots even if the route is longer\",\"dependencies\":\"after visiting the library, pharmacy, and supermarket\"},\"changes\":[]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "library",
+      "pharmacy",
+      "supermarket"
+    ],
+    "time_limit": 1020,
+    "dependencies": [],
+    "quality_weight": 1.0
+  },
+  "evidence": {
+    "pois": "library, pharmacy, and supermarket",
+    "time_limit": "return by 17:00",
+    "quality_weight": "Quality is the key objective, so choose top-rated spots even if the route is longer",
+    "dependencies": "after visiting the library, pharmacy, and supermarket"
+  },
+  "changes": [],
+  "finished_at": "2026-09-09T16:38:43.185735+00:00",
+  "telemetry": {
+    "call_index": 54,
+    "prompt_sha256": "ad87db10ed7673492e63a274c9f8438c6be1b450934f810ea8229f5c93921f31",
+    "attempts": 1,
+    "latency_seconds": 11.095,
+    "input_chars": 3227,
+    "output_chars": 388,
+    "input_tokens": 953,
+    "output_tokens": 3195,
+    "total_tokens": 4148,
+    "usage_source": "provider",
+    "success": true
+  }
+}

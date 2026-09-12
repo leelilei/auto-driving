@@ -1,0 +1,153 @@
+{
+  "status": "BASELINE12_PLANNING_COMPLETE",
+  "model_api_calls": 0,
+  "search_seconds_per_case": 30,
+  "search_width": 10,
+  "adapter": "room_type numeric-string coercion only",
+  "cases": [
+    {
+      "uid": "e20241028160251109186",
+      "status": "search_success",
+      "seconds": 2.1737177500035614,
+      "tool_calls": 3702,
+      "tool_errors": 0,
+      "raw_schema_valid": true,
+      "adapted_schema_valid": true,
+      "schema_changes": 0,
+      "prediction_accepted": true,
+      "official_all_pass_rate": 100.0
+    },
+    {
+      "uid": "e20241028160253742452",
+      "status": "search_success",
+      "seconds": 2.0579544169595465,
+      "tool_calls": 4740,
+      "tool_errors": 0,
+      "raw_schema_valid": true,
+      "adapted_schema_valid": true,
+      "schema_changes": 0,
+      "prediction_accepted": true,
+      "official_all_pass_rate": 100.0
+    },
+    {
+      "uid": "e20241028160255878579",
+      "status": "search_success",
+      "seconds": 1.2772430409677327,
+      "tool_calls": 2406,
+      "tool_errors": 0,
+      "raw_schema_valid": true,
+      "adapted_schema_valid": true,
+      "schema_changes": 0,
+      "prediction_accepted": true,
+      "official_all_pass_rate": 100.0
+    },
+    {
+      "uid": "e20241028160258515151",
+      "status": "search_success",
+      "seconds": 1.8247866249876097,
+      "tool_calls": 3361,
+      "tool_errors": 0,
+      "raw_schema_valid": true,
+      "adapted_schema_valid": true,
+      "schema_changes": 0,
+      "prediction_accepted": true,
+      "official_all_pass_rate": 100.0
+    },
+    {
+      "uid": "e20241028160300570125",
+      "status": "search_success",
+      "seconds": 1.3200250000227243,
+      "tool_calls": 2407,
+      "tool_errors": 0,
+      "raw_schema_valid": true,
+      "adapted_schema_valid": true,
+      "schema_changes": 0,
+      "prediction_accepted": true,
+      "official_all_pass_rate": 100.0
+    },
+    {
+      "uid": "e20241028160301887545",
+      "status": "search_success",
+      "seconds": 2.1552636669948697,
+      "tool_calls": 4831,
+      "tool_errors": 0,
+      "raw_schema_valid": true,
+      "adapted_schema_valid": true,
+      "schema_changes": 0,
+      "prediction_accepted": true,
+      "official_all_pass_rate": 100.0
+    },
+    {
+      "uid": "e20241028160303262666",
+      "status": "search_success",
+      "seconds": 1.7881865829695016,
+      "tool_calls": 3733,
+      "tool_errors": 0,
+      "raw_schema_valid": true,
+      "adapted_schema_valid": true,
+      "schema_changes": 0,
+      "prediction_accepted": true,
+      "official_all_pass_rate": 100.0
+    },
+    {
+      "uid": "e20241028160306588034",
+      "status": "search_success",
+      "seconds": 1.5300566669320688,
+      "tool_calls": 3138,
+      "tool_errors": 0,
+      "raw_schema_valid": true,
+      "adapted_schema_valid": true,
+      "schema_changes": 0,
+      "prediction_accepted": true,
+      "official_all_pass_rate": 100.0
+    },
+    {
+      "uid": "e20241028160307743716",
+      "status": "search_success",
+      "seconds": 2.460858582984656,
+      "tool_calls": 5169,
+      "tool_errors": 0,
+      "raw_schema_valid": true,
+      "adapted_schema_valid": true,
+      "schema_changes": 0,
+      "prediction_accepted": true,
+      "official_all_pass_rate": 100.0
+    },
+    {
+      "uid": "e20241028160309165566",
+      "status": "search_success",
+      "seconds": 1.5194059580098838,
+      "tool_calls": 3174,
+      "tool_errors": 0,
+      "raw_schema_valid": true,
+      "adapted_schema_valid": true,
+      "schema_changes": 0,
+      "prediction_accepted": true,
+      "official_all_pass_rate": 100.0
+    },
+    {
+      "uid": "e20241028160311039073",
+      "status": "search_success",
+      "seconds": 2.1814497080631554,
+      "tool_calls": 5043,
+      "tool_errors": 0,
+      "raw_schema_valid": true,
+      "adapted_schema_valid": true,
+      "schema_changes": 0,
+      "prediction_accepted": true,
+      "official_all_pass_rate": 100.0
+    },
+    {
+      "uid": "e20241028160312706595",
+      "status": "search_success",
+      "seconds": 0.5945584160508588,
+      "tool_calls": 126,
+      "tool_errors": 0,
+      "raw_schema_valid": true,
+      "adapted_schema_valid": true,
+      "schema_changes": 0,
+      "prediction_accepted": true,
+      "official_all_pass_rate": 100.0
+    }
+  ]
+}

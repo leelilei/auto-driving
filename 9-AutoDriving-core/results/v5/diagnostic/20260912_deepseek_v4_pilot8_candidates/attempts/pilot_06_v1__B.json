@@ -1,0 +1,49 @@
+{
+  "call_id": "pilot_06_v1::B",
+  "role": "B",
+  "graph_condition": null,
+  "started_at": "2026-09-11T19:04:03.891756+00:00",
+  "request": {
+    "system": "Read the user's route-planning instruction field by field before producing the final JSON.\n\nCheck: requested POI categories, return deadline, explicit visit order, and the direction of the quality-versus-distance preference. Each conclusion must be supported by the instruction itself.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nDo not infer a preference from any route or map. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "You must visit the library, supermarket, and bank today, returning by 18:00. Select an efficient route to complete all visits promptly, and stop by the supermarket before going to the bank."
+  },
+  "raw_response": "{\"pois\":[\"library\",\"supermarket\",\"bank\"],\"time_limit\":1080,\"dependencies\":[[\"supermarket\",\"bank\"]],\"quality_weight\":0.0,\"evidence\":{\"pois\":\"visit the library, supermarket, and bank\",\"time_limit\":\"returning by 18:00\",\"dependencies\":\"supermarket before going to the bank\",\"quality_weight\":\"efficient route\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library",
+      "supermarket"
+    ],
+    "time_limit": 1080,
+    "dependencies": [
+      [
+        "supermarket",
+        "bank"
+      ]
+    ],
+    "quality_weight": 0.0
+  },
+  "evidence": {
+    "pois": "visit the library, supermarket, and bank",
+    "time_limit": "returning by 18:00",
+    "dependencies": "supermarket before going to the bank",
+    "quality_weight": "efficient route"
+  },
+  "changes": [],
+  "finished_at": "2026-09-11T19:04:10.327659+00:00",
+  "telemetry": {
+    "call_index": 17,
+    "prompt_sha256": "4db27d69183868c6e02a51cb076c67dbc8dbeaf9af437b4ebdac19371af272fe",
+    "attempts": 1,
+    "latency_seconds": 6.436,
+    "input_chars": 1063,
+    "output_chars": 306,
+    "input_tokens": 270,
+    "output_tokens": 1085,
+    "total_tokens": 1355,
+    "usage_source": "provider",
+    "success": true
+  }
+}

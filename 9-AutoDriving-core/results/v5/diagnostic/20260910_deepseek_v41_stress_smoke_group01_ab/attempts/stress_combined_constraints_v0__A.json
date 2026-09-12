@@ -1,0 +1,54 @@
+{
+  "call_id": "stress_combined_constraints_v0::A",
+  "role": "A",
+  "graph_condition": null,
+  "started_at": "2026-09-10T02:28:35.607493+00:00",
+  "request": {
+    "system": "You extract route-planning intent from the user's instruction.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nUse only the instruction. Do not invent constraints. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Visit the library, shopping mall, bank, and pharmacy and return by 17:30. Go to the library before the shopping mall and the bank before the pharmacy. Keep the route as short as practical."
+  },
+  "raw_response": "{\"pois\":[\"library\",\"shopping mall\",\"bank\",\"pharmacy\"],\"time_limit\":1050,\"dependencies\":[[\"library\",\"shopping mall\"],[\"bank\",\"pharmacy\"]],\"quality_weight\":0.0,\"evidence\":{\"pois\":\"library, shopping mall, bank, and pharmacy\",\"time_limit\":\"return by 17:30\",\"dependencies\":\"library before the shopping mall and the bank before the pharmacy\",\"quality_weight\":\"Keep the route as short as practical\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library",
+      "pharmacy",
+      "shopping_mall"
+    ],
+    "time_limit": 1050,
+    "dependencies": [
+      [
+        "bank",
+        "pharmacy"
+      ],
+      [
+        "library",
+        "shopping_mall"
+      ]
+    ],
+    "quality_weight": 0.0
+  },
+  "evidence": {
+    "pois": "library, shopping mall, bank, and pharmacy",
+    "time_limit": "return by 17:30",
+    "dependencies": "library before the shopping mall and the bank before the pharmacy",
+    "quality_weight": "Keep the route as short as practical"
+  },
+  "changes": [],
+  "finished_at": "2026-09-10T02:28:39.334764+00:00",
+  "telemetry": {
+    "call_index": 1,
+    "prompt_sha256": "a0347518e71899dcb898ee8d1d89c5abfebfb58760c5e00e0931d255b33836c8",
+    "attempts": 1,
+    "latency_seconds": 3.727,
+    "input_chars": 843,
+    "output_chars": 393,
+    "input_tokens": 231,
+    "output_tokens": 847,
+    "total_tokens": 1078,
+    "usage_source": "provider",
+    "success": true
+  }
+}

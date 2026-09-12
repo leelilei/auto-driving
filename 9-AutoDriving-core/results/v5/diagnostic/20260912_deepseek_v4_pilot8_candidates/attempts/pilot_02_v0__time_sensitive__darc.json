@@ -1,0 +1,29 @@
+{
+  "call_id": "pilot_02_v0::time_sensitive::darc",
+  "role": "darc",
+  "graph_condition": "time_sensitive",
+  "started_at": "2026-09-12T04:55:26.403167+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. The decision-contrast report is diagnostic evidence about consequences; it is not a label and must not override the words of the instruction.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Use the report to locate consequential disagreements, then decide each field from the instruction alone.\n\nInstruction:\nMake sure to visit the supermarket and the pharmacy today. Balance your stops to maintain both reasonable ratings and efficiency along the route. Start your trip at the supermarket before heading to the pharmacy.\n\nCandidate A:\n{\"dependencies\": [[\"supermarket\", \"pharmacy\"]], \"pois\": [\"pharmacy\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nCandidate B:\n{\"dependencies\": [[\"supermarket\", \"pharmacy\"]], \"pois\": [\"pharmacy\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nDecision-contrast report:\n{\"candidate_A\": {\"dependencies\": [[\"supermarket\", \"pharmacy\"]], \"pois\": [\"pharmacy\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}, \"candidate_B\": {\"dependencies\": [[\"supermarket\", \"pharmacy\"]], \"pois\": [\"pharmacy\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}, \"candidate_evidence\": {\"A\": {\"dependencies\": \"supermarket before heading to the pharmacy\", \"pois\": \"supermarket and the pharmacy\", \"quality_weight\": \"Balance your stops to maintain both reasonable ratings and efficiency along the route\"}, \"B\": {\"dependencies\": \"Start your trip at the supermarket before heading to the pharmacy\", \"pois\": \"visit the supermarket and the pharmacy\", \"quality_weight\": \"Balance your stops to maintain both reasonable ratings and efficiency\"}}, \"cross_constraints\": {\"route_A_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_A_under_B\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_B\": {\"reasons\": [], \"task_success\": true}}, \"differing_fields\": [], \"instruction\": \"Make sure to visit the supermarket and the pharmacy today. Balance your stops to maintain both reasonable ratings and efficiency along the route. Start your trip at the supermarket before heading to the pharmacy.\", \"limitations\": [\"The report does not identify the user's true intent.\", \"Both candidates may share the same error.\", \"Single-field swaps do not identify higher-order interactions.\"], \"report_version\": \"darc-v5.1-contrast-2\", \"routes\": {\"A\": {\"arrival_minutes\": 602, \"average_quality\": 0.2, \"categories\": [\"supermarket\", \"pharmacy\"], \"coverage_count\": 2, \"distance_km\": 3.401, \"duration_minutes\": 61.8, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"supermarket_1\", \"pharmacy_1\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": 0.07221870918274785}, \"B\": {\"arrival_minutes\": 602, \"average_quality\": 0.2, \"categories\": [\"supermarket\", \"pharmacy\"], \"coverage_count\": 2, \"distance_km\": 3.401, \"duration_minutes\": 61.8, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"supermarket_1\", \"pharmacy_1\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": 0.07221870918274785}}, \"single_field_swaps\": []}\n"
+  },
+  "status": "TRANSPORT_FAILED",
+  "schema_valid": false,
+  "error_type": "RuntimeError",
+  "error_message": "provider curl request timed out after 60 seconds",
+  "finished_at": "2026-09-12T04:56:26.425088+00:00",
+  "telemetry": {
+    "call_index": 6,
+    "prompt_sha256": "8060a670dfe66d796178bf427cce860e868c8aa94b5a9d1cbba38fbe4a07ee72",
+    "attempts": 1,
+    "latency_seconds": 60.022,
+    "input_chars": 3371,
+    "output_chars": 0,
+    "input_tokens": 843,
+    "output_tokens": 0,
+    "total_tokens": 843,
+    "usage_source": "character_estimate",
+    "success": false,
+    "error": "RuntimeError"
+  }
+}

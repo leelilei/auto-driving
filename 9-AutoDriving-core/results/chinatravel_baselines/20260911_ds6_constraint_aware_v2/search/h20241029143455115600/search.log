@@ -1,0 +1,6 @@
+Created log directory: /Users/mac/Documents/6-Research/9-AutoDriving/9-AutoDriving-core/results/chinatravel_baselines/20260911_ds6_constraint_aware_v2/search/h20241029143455115600/logs
+cache dir: /Users/mac/Documents/6-Research/9-AutoDriving/9-AutoDriving-core/results/chinatravel_baselines/20260911_ds6_constraint_aware_v2/search/h20241029143455115600/cache
+北京 -> 重庆
+search: ...
+candidates_type:  ['attraction', 'lunch', 'dinner', 'hotel']
+POI planning, day 0 08:58, 重庆西站, next-poi type: attraction

@@ -1,0 +1,55 @@
+{
+  "call_id": "pilot_05_v2::tradeoff::review_constraints",
+  "role": "review_constraints",
+  "graph_condition": "tradeoff",
+  "started_at": "2026-09-09T16:35:40.072563+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. Cross-constraint checks show consequences of candidates and do not establish the user's intent.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not select a preference because one candidate yields a better route.\n\nInstruction:\nToday's stops include the bank, library, and pharmacy, going to the bank prior to the library. Focus on maximizing place quality and reviews above all.\n\nCandidate A:\n{\"dependencies\": [[\"bank\", \"library\"]], \"pois\": [\"bank\", \"library\", \"pharmacy\"], \"quality_weight\": 1.0, \"time_limit\": null}\n\nCandidate B:\n{\"dependencies\": [[\"bank\", \"library\"]], \"pois\": [\"bank\", \"library\", \"pharmacy\"], \"quality_weight\": 1.0, \"time_limit\": null}\n\nField differences:\n{\"fields\": []}\n\nCross-constraint checks:\n{\"route_A_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_A_under_B\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_B\": {\"reasons\": [], \"task_success\": true}}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"bank\",\"library\",\"pharmacy\"],\"time_limit\":null,\"dependencies\":[[\"bank\",\"library\"]],\"quality_weight\":1.0},\"evidence\":{\"pois\":[\"stops include the bank, library, and pharmacy\"],\"dependencies\":[\"going to the bank prior to the library\"],\"quality_weight\":[\"maximizing place quality and reviews above all\"],\"time_limit\":[]},\"changes\":[]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library",
+      "pharmacy"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "bank",
+        "library"
+      ]
+    ],
+    "quality_weight": 1.0
+  },
+  "evidence": {
+    "pois": [
+      "stops include the bank, library, and pharmacy"
+    ],
+    "dependencies": [
+      "going to the bank prior to the library"
+    ],
+    "quality_weight": [
+      "maximizing place quality and reviews above all"
+    ],
+    "time_limit": []
+  },
+  "changes": [],
+  "finished_at": "2026-09-09T16:35:42.661627+00:00",
+  "telemetry": {
+    "call_index": 49,
+    "prompt_sha256": "943d90601fa8e609caa7aa82b783472f049414c008b03c38a79a42363caad8f5",
+    "attempts": 1,
+    "latency_seconds": 2.589,
+    "input_chars": 1299,
+    "output_chars": 349,
+    "input_tokens": 379,
+    "output_tokens": 620,
+    "total_tokens": 999,
+    "usage_source": "provider",
+    "success": true
+  }
+}

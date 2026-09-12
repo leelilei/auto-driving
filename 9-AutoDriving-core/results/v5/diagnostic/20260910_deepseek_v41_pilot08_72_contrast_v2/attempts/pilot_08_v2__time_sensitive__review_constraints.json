@@ -1,0 +1,49 @@
+{
+  "call_id": "pilot_08_v2::time_sensitive::review_constraints",
+  "role": "review_constraints",
+  "graph_condition": "time_sensitive",
+  "started_at": "2026-09-09T16:34:09.835872+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. Cross-constraint checks show consequences of candidates and do not establish the user's intent.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not select a preference because one candidate yields a better route.\n\nInstruction:\nToday's destination categories are the library, shopping mall, and supermarket. Head to the shopping mall prior to the supermarket, maintaining a balance between quality and distance.\n\nCandidate A:\n{\"dependencies\": [[\"shopping_mall\", \"supermarket\"]], \"pois\": [\"library\", \"shopping_mall\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nCandidate B:\n{\"dependencies\": [[\"shopping_mall\", \"supermarket\"]], \"pois\": [\"library\", \"shopping_mall\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nField differences:\n{\"fields\": []}\n\nCross-constraint checks:\n{\"route_A_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_A_under_B\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_B\": {\"reasons\": [], \"task_success\": true}}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"library\",\"shopping_mall\",\"supermarket\"],\"time_limit\":null,\"dependencies\":[[\"shopping_mall\",\"supermarket\"]],\"quality_weight\":0.5},\"evidence\":{\"pois\":\"Today's destination categories are the library, shopping mall, and supermarket\",\"dependencies\":\"Head to the shopping mall prior to the supermarket\",\"quality_weight\":\"maintaining a balance between quality and distance\",\"time_limit\":\"Today's destination categories\"},\"changes\":[]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "library",
+      "shopping_mall",
+      "supermarket"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "shopping_mall",
+        "supermarket"
+      ]
+    ],
+    "quality_weight": 0.5
+  },
+  "evidence": {
+    "pois": "Today's destination categories are the library, shopping mall, and supermarket",
+    "dependencies": "Head to the shopping mall prior to the supermarket",
+    "quality_weight": "maintaining a balance between quality and distance",
+    "time_limit": "Today's destination categories"
+  },
+  "changes": [],
+  "finished_at": "2026-09-09T16:34:10.817820+00:00",
+  "telemetry": {
+    "call_index": 53,
+    "prompt_sha256": "c8d2a79c327a87b19e235b7bcfd0fbd4097b71e7bd929959976595c9cd28a3a8",
+    "attempts": 1,
+    "latency_seconds": 0.982,
+    "input_chars": 1381,
+    "output_chars": 447,
+    "input_tokens": 394,
+    "output_tokens": 253,
+    "total_tokens": 647,
+    "usage_source": "provider",
+    "success": true
+  }
+}

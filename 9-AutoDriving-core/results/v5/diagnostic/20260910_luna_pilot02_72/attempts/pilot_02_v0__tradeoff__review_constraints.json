@@ -1,0 +1,29 @@
+{
+  "call_id": "pilot_02_v0::tradeoff::review_constraints",
+  "role": "review_constraints",
+  "graph_condition": "tradeoff",
+  "started_at": "2026-09-09T17:34:13.267335+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. Cross-constraint checks show consequences of candidates and do not establish the user's intent.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not select a preference because one candidate yields a better route.\n\nInstruction:\nMake sure to visit the supermarket and the pharmacy today. Balance your stops to maintain both reasonable ratings and efficiency along the route. Start your trip at the supermarket before heading to the pharmacy.\n\nCandidate A:\n{\"dependencies\": [[\"supermarket\", \"pharmacy\"]], \"pois\": [\"pharmacy\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nCandidate B:\n{\"dependencies\": [[\"supermarket\", \"pharmacy\"]], \"pois\": [\"pharmacy\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nField differences:\n{\"fields\": []}\n\nCross-constraint checks:\n{\"route_A_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_A_under_B\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_B\": {\"reasons\": [], \"task_success\": true}}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"supermarket\",\"pharmacy\"],\"time_limit\":\"today\",\"dependencies\":[[\"supermarket\",\"pharmacy\"]],\"quality_weight\":0.5},\"evidence\":{\"pois\":\"\\\"Start your trip at the supermarket before heading to the pharmacy.\\\"\",\"time_limit\":\"\\\"today\\\"\",\"dependencies\":\"\\\"before heading to the pharmacy\\\"\",\"quality_weight\":\"\\\"Balance your stops to maintain both reasonable ratings and efficiency\\\"\"},\"changes\":[\"pois\",\"time_limit\"]}",
+  "status": "SCHEMA_FAILED",
+  "schema_valid": false,
+  "error_type": "ValueError",
+  "error_message": "Deadline must be HH:MM or minutes",
+  "finished_at": "2026-09-09T17:34:48.353866+00:00",
+  "telemetry": {
+    "call_index": 7,
+    "prompt_sha256": "1e4402cfb7e772c4bee4930bb167cb145bb2f3389a14c6338cfda5e8293549ba",
+    "attempts": 1,
+    "latency_seconds": 35.086,
+    "input_chars": 1368,
+    "output_chars": 427,
+    "input_tokens": 330,
+    "output_tokens": 434,
+    "total_tokens": 764,
+    "usage_source": "provider",
+    "success": true
+  }
+}

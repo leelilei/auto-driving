@@ -1,0 +1,49 @@
+{
+  "call_id": "pilot_04_v1::time_sensitive::review_fields",
+  "role": "review_fields",
+  "graph_condition": "time_sensitive",
+  "started_at": "2026-09-09T16:35:52.104409+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. The field-difference report only identifies disagreements; it does not identify the correct answer.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not infer user preference from a route or map.\n\nInstruction:\nMake sure to visit the bank and the library today, returning by 18:00. It is crucial to prioritize an efficient, quick route for these stops.\n\nCandidate A:\n{\"dependencies\": [], \"pois\": [\"bank\", \"library\"], \"quality_weight\": 0.0, \"time_limit\": 1080}\n\nCandidate B:\n{\"dependencies\": [], \"pois\": [\"bank\", \"library\"], \"quality_weight\": 0.0, \"time_limit\": 1080}\n\nField differences:\n{\"fields\": []}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"bank\",\"library\"],\"time_limit\":1080,\"dependencies\":[],\"quality_weight\":1.0},\"evidence\":{\"pois\":\"visit the bank and the library today\",\"time_limit\":\"returning by 18:00\",\"quality_weight\":\"It is crucial to prioritize an efficient, quick route for these stops\"},\"changes\":[{\"field\":\"quality_weight\",\"from\":0.0,\"to\":1.0,\"reason\":\"Instruction stresses prioritizing an efficient, quick route, so route quality must be weighted maximally rather than ignored.\"}]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library"
+    ],
+    "time_limit": 1080,
+    "dependencies": [],
+    "quality_weight": 1.0
+  },
+  "evidence": {
+    "pois": "visit the bank and the library today",
+    "time_limit": "returning by 18:00",
+    "quality_weight": "It is crucial to prioritize an efficient, quick route for these stops"
+  },
+  "changes": [
+    {
+      "field": "quality_weight",
+      "from": 0.0,
+      "to": 1.0,
+      "reason": "Instruction stresses prioritizing an efficient, quick route, so route quality must be weighted maximally rather than ignored."
+    }
+  ],
+  "finished_at": "2026-09-09T16:35:53.661991+00:00",
+  "telemetry": {
+    "call_index": 34,
+    "prompt_sha256": "2b303b309f188437aada368f0ffdceec605669c16a4fe5409014baf24fc0ca97",
+    "attempts": 1,
+    "latency_seconds": 1.557,
+    "input_chars": 950,
+    "output_chars": 473,
+    "input_tokens": 277,
+    "output_tokens": 377,
+    "total_tokens": 654,
+    "usage_source": "provider",
+    "success": true
+  }
+}

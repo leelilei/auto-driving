@@ -1,0 +1,42 @@
+{
+  "call_id": "pilot_04_v2::aligned::review_fields",
+  "role": "review_fields",
+  "graph_condition": "aligned",
+  "started_at": "2026-09-09T16:36:39.262837+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. The field-difference report only identifies disagreements; it does not identify the correct answer.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not infer user preference from a route or map.\n\nInstruction:\nPlease return by 18:00 after stopping at the bank and the library. Focus on minimizing travel distance and keeping the journey as fast as possible.\n\nCandidate A:\n{\"dependencies\": [], \"pois\": [\"bank\", \"library\"], \"quality_weight\": 0.0, \"time_limit\": 1080}\n\nCandidate B:\n{\"dependencies\": [], \"pois\": [\"bank\", \"library\"], \"quality_weight\": 0.0, \"time_limit\": 1080}\n\nField differences:\n{\"fields\": []}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"bank\",\"library\"],\"time_limit\":1080,\"dependencies\":[],\"quality_weight\":0.0},\"evidence\":{\"pois\":\"stopping at the bank and the library\",\"time_limit\":\"return by 18:00\",\"quality_weight\":\"minimizing travel distance and keeping the journey as fast as possible\"},\"changes\":[]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library"
+    ],
+    "time_limit": 1080,
+    "dependencies": [],
+    "quality_weight": 0.0
+  },
+  "evidence": {
+    "pois": "stopping at the bank and the library",
+    "time_limit": "return by 18:00",
+    "quality_weight": "minimizing travel distance and keeping the journey as fast as possible"
+  },
+  "changes": [],
+  "finished_at": "2026-09-09T16:36:41.309009+00:00",
+  "telemetry": {
+    "call_index": 44,
+    "prompt_sha256": "bbffc7e5e0f634d8de64f59f39be9cfc5db6fca7fe476d634fbf7d743276907d",
+    "attempts": 1,
+    "latency_seconds": 2.046,
+    "input_chars": 956,
+    "output_chars": 288,
+    "input_tokens": 275,
+    "output_tokens": 601,
+    "total_tokens": 876,
+    "usage_source": "provider",
+    "success": true
+  }
+}

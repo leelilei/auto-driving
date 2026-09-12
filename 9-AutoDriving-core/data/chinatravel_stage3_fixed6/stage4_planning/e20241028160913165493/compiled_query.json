@@ -1,0 +1,15 @@
+{
+  "start_city": "杭州",
+  "target_city": "北京",
+  "days": 3,
+  "people_number": 2,
+  "uid": "e20241028160913165493",
+  "hard_logic_py": [
+    "result=(day_count(plan)==3)",
+    "result=(people_count(plan)==2)",
+    "total=0\nfor activity in allactivities(plan):\n total+=activity_cost(activity)\n total+=innercity_transport_cost(activity_transports(activity))\nresult=(total<=8000)",
+    "result=True\nfor activity in allactivities(plan):\n if activity_type(activity)==\"accommodation\" and room_count(activity)!=1: result=False",
+    "result=True\nfor activity in allactivities(plan):\n if activity_type(activity)==\"accommodation\" and room_type(activity)!=2: result=False",
+    "result=True\nfor activity in allactivities(plan):\n if activity_type(activity) in [\"train\",\"airplane\"] and intercity_transport_type(activity)!=\"airplane\": result=False"
+  ]
+}

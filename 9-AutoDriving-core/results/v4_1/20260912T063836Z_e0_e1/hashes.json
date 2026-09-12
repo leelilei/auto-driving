@@ -1,0 +1,17 @@
+{
+  "CODEX_REVIEW_REQUEST.md": "51fa7aba3a0184f3660bdeca8780d0085ae40a8d6cbc4b32893c569144e8b2b6",
+  "SUMMARY.md": "fc39b6c406fdc2974cf20a6d35ffaf685a3de34a4b970c5388a395e9c528789d",
+  "binding_audit.json": "c6e831d7e1efd27e4217586f635a0815b52ac1886d73966ad8bb2d69dc16da77",
+  "e0/metrics_clean_subset.json": "4396ac43392872a3bd3df50c12bfe856df7fb28bbe191c1adfa0035b358e0c8e",
+  "e0/metrics_historical.json": "8671e5c2f61639f0aaeb43d3107534ad9b0d268b279efbc6466b7c87c208ea00",
+  "e0/version_differences.md": "6ac72e893345ddc96b022db23c3d7d302ccc49a7b9edf7fedcae06c7898a1915",
+  "e1/confidence_intervals.json": "54027b88c7b0da4a1a0e494b08e4d62acef55ded8aa5e619e33cdaaf6a73cfe1",
+  "e1/costs.json": "74ef078ccb7a97a2b441a85b842094c10ee0cf3816bcd4567de1ffa193df7a48",
+  "e1/metrics.json": "909f3ae71f40d21f5b844971a4228d21d48aa6a85aa47a20fa077031c19ee1aa",
+  "e1/selections.jsonl": "94e7c714b4d41d1825e0abd4061e00ddce03e8e8219999035e725e569fd75453",
+  "evidence_ledger.jsonl": "a9eacf9a94dce92aeedd551a01a1f20eaa0b617c598611c686ee96801860c0b7",
+  "input_manifest.json": "e82115bf82141d195fd0b34778bbd0ffd885a2d6ea1897e3604a3ca78eaae2ce",
+  "preparation/exposure_audit.json": "ad4cb310c21968eb8cb1b8cc3bccc2029c38438d9ad2ba4f53816e22a2c77cc2",
+  "preparation/review_queue.json": "4e9158d0883d97fea6888c321401bea8f9dda089b218e35c0f52824792030a9b",
+  "protocol.json": "3e3c5a15dc4b226ec479cbb38e23731e6ccd7a211e3cd473a8cefc341ea2eadc"
+}

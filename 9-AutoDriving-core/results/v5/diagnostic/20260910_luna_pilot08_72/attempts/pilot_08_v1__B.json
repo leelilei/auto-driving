@@ -1,0 +1,48 @@
+{
+  "call_id": "pilot_08_v1::B",
+  "role": "B",
+  "graph_condition": null,
+  "started_at": "2026-09-09T17:25:40.228067+00:00",
+  "request": {
+    "system": "Read the user's route-planning instruction field by field before producing the final JSON.\n\nCheck: requested POI categories, return deadline, explicit visit order, and the direction of the quality-versus-distance preference. Each conclusion must be supported by the instruction itself.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nDo not infer a preference from any route or map. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Please stop by the library, shopping mall, and supermarket today. Balance good ratings with route efficiency, and ensure you visit the shopping mall before the supermarket."
+  },
+  "raw_response": "{\"pois\":[\"library\",\"shopping mall\",\"supermarket\"],\"time_limit\":null,\"dependencies\":[[\"shopping mall\",\"supermarket\"]],\"quality_weight\":0.5,\"evidence\":{\"pois\":\"library, shopping mall, and supermarket\",\"dependencies\":\"visit the shopping mall before the supermarket\",\"quality_weight\":\"Balance good ratings with route efficiency\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "library",
+      "shopping_mall",
+      "supermarket"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "shopping_mall",
+        "supermarket"
+      ]
+    ],
+    "quality_weight": 0.5
+  },
+  "evidence": {
+    "pois": "library, shopping mall, and supermarket",
+    "dependencies": "visit the shopping mall before the supermarket",
+    "quality_weight": "Balance good ratings with route efficiency"
+  },
+  "changes": [],
+  "finished_at": "2026-09-09T17:26:02.190993+00:00",
+  "telemetry": {
+    "call_index": 7,
+    "prompt_sha256": "526576dbbec5b39da32f8fc001bc168c1c73180d890afe07b8a9469cae33a8f0",
+    "attempts": 1,
+    "latency_seconds": 21.962,
+    "input_chars": 1046,
+    "output_chars": 326,
+    "input_tokens": 397,
+    "output_tokens": 171,
+    "total_tokens": 568,
+    "usage_source": "provider",
+    "success": true
+  }
+}

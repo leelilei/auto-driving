@@ -1,0 +1,11 @@
+{
+  "status": "USER_APPROVED",
+  "reviewer": "项目负责人（本对话用户）",
+  "statement": "你直接推进吧； 人工审核我已经都通过了",
+  "recorded_date": "2026-09-12",
+  "scope": "当前提交的40组E2（32/8工作表）人工审核；不追加声称历史160组获本轮审核",
+  "data_hashes": {
+    "data/e2/e2_strictly_unexposed_utterances.json": "de6d5fac90f5c3a1539d6797d690fef9cb4ecd5f21fde3a60c1dd70a673f27b1"
+  },
+  "does_not_change": "历史暴露/事后协议状态；不是论文写作批准"
+}

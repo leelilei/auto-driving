@@ -1,0 +1,43 @@
+{
+  "call_id": "stress_corrected_deadline_v0::B",
+  "role": "B",
+  "graph_condition": null,
+  "started_at": "2026-09-10T02:32:20.969748+00:00",
+  "request": {
+    "system": "Read the user's route-planning instruction field by field before producing the final JSON.\n\nCheck: requested POI categories, return deadline, explicit visit order, and the direction of the quality-versus-distance preference. Each conclusion must be supported by the instruction itself.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nDo not infer a preference from any route or map. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Visit the library, shopping mall, and supermarket. I first said 17:00, but please use the corrected return deadline of 18:30. Favor highly rated places even if the route is longer."
+  },
+  "raw_response": "{\"pois\":[\"library\",\"shopping mall\",\"supermarket\"],\"time_limit\":1110,\"dependencies\":[],\"quality_weight\":1.0,\"evidence\":{\"pois\":\"Visit the library, shopping mall, and supermarket\",\"time_limit\":\"corrected return deadline of 18:30\",\"quality_weight\":\"Favor highly rated places even if the route is longer\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "library",
+      "shopping_mall",
+      "supermarket"
+    ],
+    "time_limit": 1110,
+    "dependencies": [],
+    "quality_weight": 1.0
+  },
+  "evidence": {
+    "pois": "Visit the library, shopping mall, and supermarket",
+    "time_limit": "corrected return deadline of 18:30",
+    "quality_weight": "Favor highly rated places even if the route is longer"
+  },
+  "changes": [],
+  "finished_at": "2026-09-10T02:32:26.512479+00:00",
+  "telemetry": {
+    "call_index": 2,
+    "prompt_sha256": "1207f8b56c169276de8f4c5dbc31268cdc84668b33cf13367c235b6608e9afc1",
+    "attempts": 1,
+    "latency_seconds": 5.543,
+    "input_chars": 1054,
+    "output_chars": 302,
+    "input_tokens": 273,
+    "output_tokens": 1332,
+    "total_tokens": 1605,
+    "usage_source": "provider",
+    "success": true
+  }
+}

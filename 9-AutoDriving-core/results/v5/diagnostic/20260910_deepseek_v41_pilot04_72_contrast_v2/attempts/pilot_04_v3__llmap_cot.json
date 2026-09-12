@@ -1,0 +1,38 @@
+{
+  "call_id": "pilot_04_v3::llmap_cot",
+  "role": "llmap_cot",
+  "graph_condition": null,
+  "started_at": "2026-09-09T16:37:57.872631+00:00",
+  "request": {
+    "system": "Extract POIs, constraints, and weights from human instruction through step-by-step reasoning:\n\n1. POIs Analysis:\n    - Look for POIs mentioned that need to be visited\n    - Create list of unique POIs\n\n2. Time Limit Analysis:\n    - Search for any specific return time\n    - Format as HH:00 or \"None\" if not specified\n\n3. Dependencies Analysis:\n    - Look for words indicating sequence (before, after, then, etc.)\n    - Create pairs of [POI1, POI2] for each sequence requirement\n\n4. Preference Analysis:\n    - Look for language about POI quality/rating importance vs route efficiency\n    - High POI rating emphasis (quality, best places, etc.) ->quality_weight should be large than 0.5\n    - High route efficiency emphasis (quick, shortest, save time) -> distance_weight should be large than 0.5\n    - Balanced language -> both weights around 0.5\n\nOutput must be valid JSON with structure:\n{\n    \"pois\": [\"poi1\", \"poi2\", ...],\n    \"time_limit\": \"HH:00\" or \"None\",\n    \"dependencies\": [[\"poi1\", \"poi2\"], ...],\n    \"quality_weight\": float,\n    \"distance_weight\": float\n}\n",
+    "user": "Extract POIs, constraints, and weights from this instruction as JSON:\nNeed to stop by the bank and library today and be back before 18:00. Keep it super quick and take the most efficient route possible.\n\nOnly output the JSON object. No prefix, additional text, or explanation.\n"
+  },
+  "raw_response": "{\"pois\":[\"bank\",\"library\"],\"time_limit\":\"18:00\",\"dependencies\":[],\"quality_weight\":0.1,\"distance_weight\":0.9}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library"
+    ],
+    "time_limit": 1080,
+    "dependencies": [],
+    "quality_weight": 0.1
+  },
+  "evidence": {},
+  "changes": [],
+  "finished_at": "2026-09-09T16:37:58.922005+00:00",
+  "telemetry": {
+    "call_index": 60,
+    "prompt_sha256": "d38133d16780a0c349e3ac3c2a9ec429c34ddddc27ae134cbaaf0db64055a8b7",
+    "attempts": 1,
+    "latency_seconds": 1.049,
+    "input_chars": 1344,
+    "output_chars": 109,
+    "input_tokens": 389,
+    "output_tokens": 214,
+    "total_tokens": 603,
+    "usage_source": "provider",
+    "success": true
+  }
+}

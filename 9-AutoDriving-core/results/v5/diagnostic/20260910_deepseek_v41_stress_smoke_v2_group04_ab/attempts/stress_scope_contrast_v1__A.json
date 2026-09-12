@@ -1,0 +1,49 @@
+{
+  "call_id": "stress_scope_contrast_v1::A",
+  "role": "A",
+  "graph_condition": null,
+  "started_at": "2026-09-10T02:32:27.305279+00:00",
+  "request": {
+    "system": "You extract route-planning intent from the user's instruction.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nUse only the instruction. Do not invent constraints. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Stop at the bank, shopping mall, pharmacy, and library. The pharmacy must precede the bank; the library does not have to precede the bank. Balance route efficiency with ratings."
+  },
+  "raw_response": "{\"pois\":[\"bank\",\"shopping mall\",\"pharmacy\",\"library\"],\"time_limit\":null,\"dependencies\":[[\"pharmacy\",\"bank\"]],\"quality_weight\":0.5,\"evidence\":{\"pois\":\"Stop at the bank, shopping mall, pharmacy, and library.\",\"dependencies\":\"The pharmacy must precede the bank\",\"quality_weight\":\"Balance route efficiency with ratings.\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library",
+      "pharmacy",
+      "shopping_mall"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "pharmacy",
+        "bank"
+      ]
+    ],
+    "quality_weight": 0.5
+  },
+  "evidence": {
+    "pois": "Stop at the bank, shopping mall, pharmacy, and library.",
+    "dependencies": "The pharmacy must precede the bank",
+    "quality_weight": "Balance route efficiency with ratings."
+  },
+  "changes": [],
+  "finished_at": "2026-09-10T02:32:29.961509+00:00",
+  "telemetry": {
+    "call_index": 3,
+    "prompt_sha256": "3f309196c73e1e3d47af8f3dc4bd0fb9a9102d7d0df470a6f583c9296ccdad79",
+    "attempts": 1,
+    "latency_seconds": 2.656,
+    "input_chars": 832,
+    "output_chars": 318,
+    "input_tokens": 225,
+    "output_tokens": 507,
+    "total_tokens": 732,
+    "usage_source": "provider",
+    "success": true
+  }
+}

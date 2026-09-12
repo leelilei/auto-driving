@@ -1,0 +1,15 @@
+Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. Candidate agreement is not proof of correctness.
+
+Return one JSON object only:
+{"intent":{"pois":[],"time_limit":null,"dependencies":[],"quality_weight":0.5},"evidence":{},"changes":[]}
+
+Evidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not use route efficiency to infer what the user wants.
+
+Instruction:
+{{instruction}}
+
+Candidate A:
+{{candidate_a}}
+
+Candidate B:
+{{candidate_b}}

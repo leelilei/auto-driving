@@ -1,0 +1,44 @@
+{
+  "call_id": "pilot_08_v1::llmap_direct",
+  "role": "llmap_direct",
+  "graph_condition": null,
+  "started_at": "2026-09-09T16:32:42.822929+00:00",
+  "request": {
+    "system": "Extract POIs, constraints, and weights from a human instruction. POIs should be a simple string array. Dependencies should be an empty list if no sequence requirements are mentioned. Weights should be between 0 and 1, and sum to 1. Extract them from language about importance of POI rating vs route length.\n\nOutput must be valid JSON with structure:\n{\n    \"pois\": [\"poi1\", \"poi2\", ...],\n    \"time_limit\": \"HH:00\" or \"None\",\n    \"dependencies\": [[\"poi1\", \"poi2\"], ...],\n    \"quality_weight\": float,\n    \"distance_weight\": float\n}\n",
+    "user": "Extract POIs, constraints, and weights from this instruction as JSON:\nPlease stop by the library, shopping mall, and supermarket today. Balance good ratings with route efficiency, and ensure you visit the shopping mall before the supermarket.\n\nOnly output the JSON object. No prefix, additional text, or explanation.\n"
+  },
+  "raw_response": "{\"pois\":[\"library\",\"shopping mall\",\"supermarket\"],\"time_limit\":\"None\",\"dependencies\":[[\"shopping mall\",\"supermarket\"]],\"quality_weight\":0.5,\"distance_weight\":0.5}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "library",
+      "shopping_mall",
+      "supermarket"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "shopping_mall",
+        "supermarket"
+      ]
+    ],
+    "quality_weight": 0.5
+  },
+  "evidence": {},
+  "changes": [],
+  "finished_at": "2026-09-09T16:32:44.957271+00:00",
+  "telemetry": {
+    "call_index": 23,
+    "prompt_sha256": "68340e98cf8ae3e2c053ecbc570371cb091e326ee821e90813e7ee9ca3ca9d0c",
+    "attempts": 1,
+    "latency_seconds": 2.134,
+    "input_chars": 846,
+    "output_chars": 162,
+    "input_tokens": 254,
+    "output_tokens": 341,
+    "total_tokens": 595,
+    "usage_source": "provider",
+    "success": true
+  }
+}

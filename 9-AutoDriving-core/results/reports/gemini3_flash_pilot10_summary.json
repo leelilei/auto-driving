@@ -1,0 +1,189 @@
+{
+  "run_id": "20260911T181131Z_main_test_gemini-3-flash_pilot10_net",
+  "model": "gemini-3-flash",
+  "telemetry": {
+    "total_calls_issued": 120,
+    "schema_valid_calls": 113,
+    "transport_failures": 0,
+    "provider_tokens_input": 0,
+    "provider_tokens_output": 0,
+    "provider_tokens_total": 122269,
+    "total_latency_seconds": 737.33
+  },
+  "frozen_parameters": {
+    "tau_star": 0.02,
+    "tau_sem_star": 0.1,
+    "p_star": 0.4805194805194805
+  },
+  "results": {
+    "B0": {
+      "method": "B0",
+      "TSR": 1.0,
+      "GTSR": 1.0,
+      "variant_TSR": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 1.0,
+        "V3": 1.0
+      },
+      "route_flip": 0.0667,
+      "mean_calls_used": 1.0,
+      "review_rate": 0.0,
+      "h_trigger_rate": 0.0,
+      "delta_u_trigger_rate": 0.0,
+      "mean_utility_loss": 0.056739
+    },
+    "B2": {
+      "method": "B2",
+      "TSR": 1.0,
+      "GTSR": 1.0,
+      "variant_TSR": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 1.0,
+        "V3": 1.0
+      },
+      "route_flip": 0.0667,
+      "mean_calls_used": 2.0,
+      "review_rate": 0.0,
+      "h_trigger_rate": 0.0,
+      "delta_u_trigger_rate": 0.0,
+      "mean_utility_loss": 0.056739
+    },
+    "B5": {
+      "method": "B5",
+      "TSR": 1.0,
+      "GTSR": 1.0,
+      "variant_TSR": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 1.0,
+        "V3": 1.0
+      },
+      "route_flip": 0.0667,
+      "mean_calls_used": 2.0,
+      "review_rate": 0.0,
+      "h_trigger_rate": 0.0,
+      "delta_u_trigger_rate": 0.0,
+      "mean_utility_loss": 0.056739
+    },
+    "B6": {
+      "method": "B6",
+      "TSR": 1.0,
+      "GTSR": 1.0,
+      "variant_TSR": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 1.0,
+        "V3": 1.0
+      },
+      "route_flip": 0.0667,
+      "mean_calls_used": 3.0,
+      "review_rate": 1.0,
+      "h_trigger_rate": 0.0,
+      "delta_u_trigger_rate": 0.0,
+      "mean_utility_loss": 0.056739
+    },
+    "B3": {
+      "method": "B3",
+      "TSR": 1.0,
+      "GTSR": 1.0,
+      "variant_TSR": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 1.0,
+        "V3": 1.0
+      },
+      "route_flip": 0.0667,
+      "mean_calls_used": 2.55,
+      "review_rate": 0.55,
+      "h_trigger_rate": 0.0,
+      "delta_u_trigger_rate": 0.0,
+      "mean_utility_loss": 0.056739
+    },
+    "B4": {
+      "method": "B4",
+      "TSR": 1.0,
+      "GTSR": 1.0,
+      "variant_TSR": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 1.0,
+        "V3": 1.0
+      },
+      "route_flip": 0.0667,
+      "mean_calls_used": 2.05,
+      "review_rate": 0.05,
+      "h_trigger_rate": 0.0,
+      "delta_u_trigger_rate": 0.0,
+      "mean_utility_loss": 0.056739
+    },
+    "Ours": {
+      "method": "Ours",
+      "TSR": 1.0,
+      "GTSR": 1.0,
+      "variant_TSR": {
+        "V0": 1.0,
+        "V1": 1.0,
+        "V2": 1.0,
+        "V3": 1.0
+      },
+      "route_flip": 0.0667,
+      "mean_calls_used": 2.0,
+      "review_rate": 0.0,
+      "h_trigger_rate": 0.0,
+      "delta_u_trigger_rate": 0.0,
+      "mean_utility_loss": 0.056739
+    }
+  },
+  "bootstrap": {
+    "Ours_vs_B0": {
+      "delta_tsr": {
+        "diff": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0
+      },
+      "delta_route_flip": {
+        "diff": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0
+      }
+    },
+    "Ours_vs_B3": {
+      "delta_tsr": {
+        "diff": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0
+      },
+      "delta_route_flip": {
+        "diff": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0
+      }
+    },
+    "Ours_vs_B4": {
+      "delta_tsr": {
+        "diff": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0
+      },
+      "delta_route_flip": {
+        "diff": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0
+      }
+    },
+    "Ours_vs_B6": {
+      "delta_tsr": {
+        "diff": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0
+      },
+      "delta_route_flip": {
+        "diff": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0
+      }
+    }
+  }
+}

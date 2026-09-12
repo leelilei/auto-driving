@@ -1,0 +1,14 @@
+{
+  "gpt_run_dir": "results/runs/20260906T051339Z_main_test",
+  "gpt_run_hash": "f906290534c1d160da1135aace1f4d391fb6641cf2a280346073e5998a130c9b",
+  "ds_run_dir": "results/runs/20260906T081920Z_main_test_deepseek_v4",
+  "ds_run_hash": "d823faa907134ea7354f148dd6901bc2d6a014a30b1fe8d80b6665c3b9544bc1",
+  "v1_test_file": "data/test/test_640_utterances.json",
+  "v1_test_hash": "82ec91230a1901a9bb36e51afdf0800e1e1a50713d7c5a9d8de737d824e3ec2f",
+  "v2_confirmed_file": "data/test/test_640_utterances_v2_confirmed.json",
+  "v2_confirmed_hash": "25ba3bfeeff02c63c4f2be0890d9d9f87fc8dc6730704fc6258a817879585444",
+  "changelog_file": "data/test/test_640_v1_to_v2_changelog.json",
+  "changelog_hash": "92475ffc85ebdb0226e85a54be92d1c29824d54bb6d10fa77c0a0230727571fd",
+  "clusters_file": "data/processed/hipp_clusters.json",
+  "clusters_hash": "13872438d7b9216474f63b23f910f0077750b0abe78f5b71cc684e635a0d663e"
+}

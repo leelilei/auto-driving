@@ -1,0 +1,29 @@
+{
+  "call_id": "missing_deadline_2__fields",
+  "role": "fields",
+  "graph_condition": "tradeoff",
+  "started_at": "2026-09-10T02:50:01.985282+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. The field-difference report only identifies disagreements; it does not identify the correct answer.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not infer user preference from a route or map.\n\nInstruction:\nToday, make sure to visit the bank and the library. Please be back by 18:00. It's essential to prioritize a quick and efficient route for these visits.\n\nCandidate A:\n{\"dependencies\": [], \"pois\": [\"bank\", \"library\"], \"quality_weight\": 0.25, \"time_limit\": null}\n\nCandidate B:\n{\"dependencies\": [], \"pois\": [\"bank\", \"library\"], \"quality_weight\": 0.25, \"time_limit\": 1080}\n\nField differences:\n{\"fields\": [\"time_limit\"]}\n"
+  },
+  "status": "TRANSPORT_FAILED",
+  "schema_valid": false,
+  "error_type": "RuntimeError",
+  "error_message": "provider HTTP 401: {\"error\":{\"message\":\"Authentication Fails, Your api key: ****rKTY is invalid\",\"type\":\"authentication_error\",\"param\":null,\"code\":\"invalid_request_error\"}}",
+  "finished_at": "2026-09-10T02:50:02.551794+00:00",
+  "telemetry": {
+    "call_index": 1,
+    "prompt_sha256": "5095ca6077ede05ab8e27edcfa0d85caaa0c23ec88b81c93fc975e26b16aa63d",
+    "attempts": 1,
+    "latency_seconds": 0.566,
+    "input_chars": 974,
+    "output_chars": 0,
+    "input_tokens": 244,
+    "output_tokens": 0,
+    "total_tokens": 244,
+    "usage_source": "character_estimate",
+    "success": false,
+    "error": "RuntimeError"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "collection_complete": false,
+  "planned": 144,
+  "physical_attempts": 144,
+  "statuses": {
+    "COMPLETE": 132,
+    "TRANSPORT_FAILED": 11,
+    "SCHEMA_FAILED": 1
+  },
+  "physical_transport_failures": 11,
+  "unknown_failed_request_billing": true
+}

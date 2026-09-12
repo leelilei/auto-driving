@@ -1,0 +1,49 @@
+{
+  "call_id": "pilot_05_v1::aligned::review_plain",
+  "role": "review_plain",
+  "graph_condition": "aligned",
+  "started_at": "2026-09-09T16:33:46.330093+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. Candidate agreement is not proof of correctness.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not use route efficiency to infer what the user wants.\n\nInstruction:\nPlease visit the bank, library, and pharmacy today. Give top priority to locations with the highest ratings, and make sure to visit the bank before the library.\n\nCandidate A:\n{\"dependencies\": [[\"bank\", \"library\"]], \"pois\": [\"bank\", \"library\", \"pharmacy\"], \"quality_weight\": 1.0, \"time_limit\": null}\n\nCandidate B:\n{\"dependencies\": [[\"bank\", \"library\"]], \"pois\": [\"bank\", \"library\", \"pharmacy\"], \"quality_weight\": 1.0, \"time_limit\": null}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"bank\",\"library\",\"pharmacy\"],\"time_limit\":null,\"dependencies\":[[\"bank\",\"library\"]],\"quality_weight\":1.0},\"evidence\":{\"pois\":\"visit the bank, library, and pharmacy\",\"time_limit\":\"today\",\"dependencies\":\"visit the bank before the library\",\"quality_weight\":\"top priority to locations with the highest ratings\"},\"changes\":[]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library",
+      "pharmacy"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "bank",
+        "library"
+      ]
+    ],
+    "quality_weight": 1.0
+  },
+  "evidence": {
+    "pois": "visit the bank, library, and pharmacy",
+    "time_limit": "today",
+    "dependencies": "visit the bank before the library",
+    "quality_weight": "top priority to locations with the highest ratings"
+  },
+  "changes": [],
+  "finished_at": "2026-09-09T16:33:57.194971+00:00",
+  "telemetry": {
+    "call_index": 25,
+    "prompt_sha256": "ec4a00fc18307662632a24be3b8d9f44d71c8986d3b5a671761abfc0abe1cb24",
+    "attempts": 1,
+    "latency_seconds": 10.865,
+    "input_chars": 953,
+    "output_chars": 339,
+    "input_tokens": 279,
+    "output_tokens": 3245,
+    "total_tokens": 3524,
+    "usage_source": "provider",
+    "success": true
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "call_id": "pilot_02_v1::A",
+  "role": "A",
+  "graph_condition": null,
+  "started_at": "2026-09-11T18:59:56.420879+00:00",
+  "request": {
+    "system": "You extract route-planning intent from the user's instruction.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nUse only the instruction. Do not invent constraints. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Please visit the supermarket and the pharmacy today. Keep a balance between selecting well-rated locations and maintaining route efficiency. Begin your stops at the supermarket prior to going to the pharmacy."
+  },
+  "raw_response": "{\"pois\":[\"supermarket\",\"pharmacy\"],\"time_limit\":null,\"dependencies\":[[\"supermarket\",\"pharmacy\"]],\"quality_weight\":0.5,\"evidence\":{\"pois\":\"supermarket and the pharmacy\",\"dependencies\":\"Begin your stops at the supermarket prior to going to the pharmacy.\",\"quality_weight\":\"Keep a balance between selecting well-rated locations and maintaining route efficiency.\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "pharmacy",
+      "supermarket"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "supermarket",
+        "pharmacy"
+      ]
+    ],
+    "quality_weight": 0.5
+  },
+  "evidence": {
+    "pois": "supermarket and the pharmacy",
+    "dependencies": "Begin your stops at the supermarket prior to going to the pharmacy.",
+    "quality_weight": "Keep a balance between selecting well-rated locations and maintaining route efficiency."
+  },
+  "changes": [],
+  "finished_at": "2026-09-11T19:00:00.460257+00:00",
+  "telemetry": {
+    "call_index": 11,
+    "prompt_sha256": "2de987752c447b2107601e31a8d6d1be2cdd5b56752d4ec163137728e215b9ea",
+    "attempts": 1,
+    "latency_seconds": 4.039,
+    "input_chars": 863,
+    "output_chars": 361,
+    "input_tokens": 224,
+    "output_tokens": 392,
+    "total_tokens": 616,
+    "usage_source": "provider",
+    "success": true
+  }
+}

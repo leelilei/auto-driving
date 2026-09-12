@@ -1,0 +1,51 @@
+{
+  "call_id": "pilot_06_v2::time_sensitive::review_fields",
+  "role": "review_fields",
+  "graph_condition": "time_sensitive",
+  "started_at": "2026-09-09T16:45:02.343685+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. The field-difference report only identifies disagreements; it does not identify the correct answer.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not infer user preference from a route or map.\n\nInstruction:\nPlease be back by 18:00 after visiting the supermarket, bank, and library. Ensure the supermarket is visited before the bank, and prioritize travel efficiency.\n\nCandidate A:\n{\"dependencies\": [[\"supermarket\", \"bank\"]], \"pois\": [\"bank\", \"library\", \"supermarket\"], \"quality_weight\": 0.2, \"time_limit\": 1080}\n\nCandidate B:\n{\"dependencies\": [[\"supermarket\", \"bank\"]], \"pois\": [\"bank\", \"library\", \"supermarket\"], \"quality_weight\": 0.0, \"time_limit\": 1080}\n\nField differences:\n{\"fields\": [\"quality_weight\"]}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"bank\",\"library\",\"supermarket\"],\"time_limit\":1080,\"dependencies\":[[\"supermarket\",\"bank\"]],\"quality_weight\":0.2},\"evidence\":{\"time_limit\":\"be back by 18:00\",\"pois\":\"supermarket, bank, and library\",\"dependencies\":\"supermarket is visited before the bank\",\"quality_weight\":\"prioritize travel efficiency\"},\"changes\":[\"quality_weight\"]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library",
+      "supermarket"
+    ],
+    "time_limit": 1080,
+    "dependencies": [
+      [
+        "supermarket",
+        "bank"
+      ]
+    ],
+    "quality_weight": 0.2
+  },
+  "evidence": {
+    "time_limit": "be back by 18:00",
+    "pois": "supermarket, bank, and library",
+    "dependencies": "supermarket is visited before the bank",
+    "quality_weight": "prioritize travel efficiency"
+  },
+  "changes": [
+    "quality_weight"
+  ],
+  "finished_at": "2026-09-09T16:45:13.759167+00:00",
+  "telemetry": {
+    "call_index": 52,
+    "prompt_sha256": "e81e3dab5cdbe20891136b73a9f234f303bd3ef2e6449108a3414e1e93f5e2ef",
+    "attempts": 1,
+    "latency_seconds": 11.415,
+    "input_chars": 1060,
+    "output_chars": 349,
+    "input_tokens": 304,
+    "output_tokens": 3431,
+    "total_tokens": 3735,
+    "usage_source": "provider",
+    "success": true
+  }
+}

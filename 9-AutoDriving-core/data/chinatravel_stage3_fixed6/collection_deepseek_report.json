@@ -1,0 +1,277 @@
+{
+  "status": "COLLECTED_DEEPSEEK_OFFICIAL",
+  "model_api_calls": 6,
+  "json_valid": 6,
+  "records": [
+    {
+      "uid": "e20241028160248698752",
+      "max_requests": 1,
+      "provider_response": {
+        "id": "9f7bc0c9-652f-4268-9e0f-79a608e78839",
+        "object": "chat.completion",
+        "created": 1789134034,
+        "model": "deepseek-flash",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\"start_city\": \"上海\", \"target_city\": \"杭州\", \"days\": 1, \"people_number\": 1, \"budget\": 1500, \"room_count\": null, \"room_type\": null, \"cuisine\": null, \"intercity_mode\": null, \"attraction_category\": null}"
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 117,
+          "completion_tokens": 69,
+          "total_tokens": 186,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 117
+        },
+        "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+      },
+      "status": "JSON_VALID",
+      "parsed_intent": {
+        "start_city": "上海",
+        "target_city": "杭州",
+        "days": 1,
+        "people_number": 1,
+        "budget": 1500,
+        "room_count": null,
+        "room_type": null,
+        "cuisine": null,
+        "intercity_mode": null,
+        "attraction_category": null
+      }
+    },
+    {
+      "uid": "e20241028160845920703",
+      "max_requests": 1,
+      "provider_response": {
+        "id": "c00f8d7b-9b72-4e29-a69b-47b8bcd716cf",
+        "object": "chat.completion",
+        "created": 1789134036,
+        "model": "deepseek-flash",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\"start_city\": \"深圳\", \"target_city\": \"广州\", \"days\": 2, \"people_number\": null, \"budget\": 1000, \"room_count\": 1, \"room_type\": \"单床房\", \"cuisine\": \"火锅\", \"intercity_mode\": null, \"attraction_category\": null}"
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 127,
+          "completion_tokens": 73,
+          "total_tokens": 200,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 127
+        },
+        "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+      },
+      "status": "JSON_VALID",
+      "parsed_intent": {
+        "start_city": "深圳",
+        "target_city": "广州",
+        "days": 2,
+        "people_number": null,
+        "budget": 1000,
+        "room_count": 1,
+        "room_type": 1,
+        "cuisine": "火锅",
+        "intercity_mode": null,
+        "attraction_category": null
+      }
+    },
+    {
+      "uid": "e20241028160848776495",
+      "max_requests": 1,
+      "provider_response": {
+        "id": "29421596-984c-4091-95d6-d0284e27bb08",
+        "object": "chat.completion",
+        "created": 1789134037,
+        "model": "deepseek-flash",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\"start_city\": \"广州\", \"target_city\": \"杭州\", \"days\": 2, \"people_number\": 4, \"budget\": 5600, \"room_count\": 2, \"room_type\": \"双床房\", \"cuisine\": null, \"intercity_mode\": \"火车\", \"attraction_category\": null}"
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 130,
+          "completion_tokens": 74,
+          "total_tokens": 204,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 130
+        },
+        "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+      },
+      "status": "JSON_VALID",
+      "parsed_intent": {
+        "start_city": "广州",
+        "target_city": "杭州",
+        "days": 2,
+        "people_number": 4,
+        "budget": 5600,
+        "room_count": 2,
+        "room_type": 2,
+        "cuisine": null,
+        "intercity_mode": "train",
+        "attraction_category": null
+      }
+    },
+    {
+      "uid": "e20241028160913165493",
+      "max_requests": 1,
+      "provider_response": {
+        "id": "59eadd9b-05af-495c-ba1d-e3fd1df0196b",
+        "object": "chat.completion",
+        "created": 1789134039,
+        "model": "deepseek-flash",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\"start_city\": \"杭州\", \"target_city\": \"北京\", \"days\": 3, \"people_number\": null, \"budget\": 8000, \"room_count\": 1, \"room_type\": \"双床房\", \"cuisine\": null, \"intercity_mode\": \"飞机\", \"attraction_category\": null}"
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 129,
+          "completion_tokens": 73,
+          "total_tokens": 202,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 129
+        },
+        "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+      },
+      "status": "JSON_VALID",
+      "parsed_intent": {
+        "start_city": "杭州",
+        "target_city": "北京",
+        "days": 3,
+        "people_number": null,
+        "budget": 8000,
+        "room_count": 1,
+        "room_type": 2,
+        "cuisine": null,
+        "intercity_mode": "airplane",
+        "attraction_category": null
+      }
+    },
+    {
+      "uid": "e20241028160902013119",
+      "max_requests": 1,
+      "provider_response": {
+        "id": "030002be-7ad1-4087-a063-cbdf9c420620",
+        "object": "chat.completion",
+        "created": 1789134040,
+        "model": "deepseek-flash",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\"start_city\": \"北京\", \"target_city\": \"武汉\", \"days\": 3, \"people_number\": null, \"budget\": 3000, \"room_count\": 1, \"room_type\": \"单床房\", \"cuisine\": null, \"intercity_mode\": null, \"attraction_category\": \"历史古迹\"}"
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 129,
+          "completion_tokens": 74,
+          "total_tokens": 203,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 129
+        },
+        "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+      },
+      "status": "JSON_VALID",
+      "parsed_intent": {
+        "start_city": "北京",
+        "target_city": "武汉",
+        "days": 3,
+        "people_number": null,
+        "budget": 3000,
+        "room_count": 1,
+        "room_type": 1,
+        "cuisine": null,
+        "intercity_mode": null,
+        "attraction_category": "历史古迹"
+      }
+    },
+    {
+      "uid": "h20241029143455115600",
+      "max_requests": 1,
+      "provider_response": {
+        "id": "ec119a19-2d5b-4a1c-bd8b-372c3c76c8ac",
+        "object": "chat.completion",
+        "created": 1789134041,
+        "model": "deepseek-flash",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\"start_city\": \"北京\", \"target_city\": \"重庆\", \"days\": 5, \"people_number\": 2, \"budget\": null, \"room_count\": null, \"room_type\": null, \"cuisine\": null, \"intercity_mode\": null, \"attraction_category\": null}"
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 117,
+          "completion_tokens": 67,
+          "total_tokens": 184,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 117
+        },
+        "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+      },
+      "status": "JSON_VALID",
+      "parsed_intent": {
+        "start_city": "北京",
+        "target_city": "重庆",
+        "days": 5,
+        "people_number": 2,
+        "budget": null,
+        "room_count": null,
+        "room_type": null,
+        "cuisine": null,
+        "intercity_mode": null,
+        "attraction_category": null
+      }
+    }
+  ]
+}

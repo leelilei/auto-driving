@@ -1,0 +1,2375 @@
+[
+  {
+    "case_id": "F01",
+    "policy": {
+      "selection": "nearest_from_bank",
+      "availability_reference": "arrival",
+      "return_by": null
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_A"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_A",
+        "arrival": 587.2360869454287,
+        "service_finish": 597.2360869454287,
+        "return_time": 621.7513882896912,
+        "distance_from_bank": 7.211102550927978,
+        "added_distance": 11.701419500689717,
+        "rating": 2.0,
+        "feasible": true,
+        "reasons": [],
+        "objective": 7.211102550927978
+      },
+      {
+        "poi_id": "P_B",
+        "arrival": 589.2445288517936,
+        "service_finish": 599.2445288517936,
+        "return_time": 610.646283102785,
+        "distance_from_bank": 9.219544457292887,
+        "added_distance": 0.596314313783477,
+        "rating": 3.4,
+        "feasible": true,
+        "reasons": [],
+        "objective": 9.219544457292887
+      },
+      {
+        "poi_id": "P_C",
+        "arrival": 595.5491590907608,
+        "service_finish": 605.5491590907608,
+        "return_time": 612.6202269026262,
+        "distance_from_bank": 15.524174696260024,
+        "added_distance": 2.570258113624714,
+        "rating": 4.8,
+        "feasible": true,
+        "reasons": [],
+        "objective": 15.524174696260024
+      },
+      {
+        "poi_id": "P_D",
+        "arrival": 598.409760705351,
+        "service_finish": 608.409760705351,
+        "return_time": 615.1179646378504,
+        "distance_from_bank": 18.384776310850235,
+        "added_distance": 5.067995848848817,
+        "rating": 2.2,
+        "feasible": true,
+        "reasons": [],
+        "objective": 18.384776310850235
+      },
+      {
+        "poi_id": "P_E",
+        "arrival": 587.6407575003647,
+        "service_finish": 597.6407575003647,
+        "return_time": 610.7937039383305,
+        "distance_from_bank": 7.615773105863909,
+        "added_distance": 0.7437351493290265,
+        "rating": 4.1,
+        "feasible": true,
+        "reasons": [],
+        "objective": 7.615773105863909
+      }
+    ]
+  },
+  {
+    "case_id": "F02",
+    "policy": {
+      "selection": "minimum_added_distance",
+      "availability_reference": "arrival",
+      "return_by": null
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_E"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_A",
+        "arrival": 590.3960780543712,
+        "service_finish": 600.3960780543712,
+        "return_time": 616.0165774061845,
+        "distance_from_bank": 10.0,
+        "added_distance": 5.22442129744217,
+        "rating": 2.2,
+        "feasible": true,
+        "reasons": [],
+        "objective": 5.22442129744217
+      },
+      {
+        "poi_id": "P_B",
+        "arrival": 582.3960780543712,
+        "service_finish": 592.3960780543712,
+        "return_time": 613.2766910721923,
+        "distance_from_bank": 2.0,
+        "added_distance": 2.4845349634499634,
+        "rating": 3.3,
+        "feasible": true,
+        "reasons": [],
+        "objective": 2.4845349634499634
+      },
+      {
+        "poi_id": "P_C",
+        "arrival": 591.5764179418701,
+        "service_finish": 601.5764179418701,
+        "return_time": 615.0300419889438,
+        "distance_from_bank": 11.180339887498949,
+        "added_distance": 4.237885880201521,
+        "rating": 3.2,
+        "feasible": true,
+        "reasons": [],
+        "objective": 4.237885880201521
+      },
+      {
+        "poi_id": "P_D",
+        "arrival": 589.8300591864278,
+        "service_finish": 599.8300591864278,
+        "return_time": 614.8300591864278,
+        "distance_from_bank": 9.433981132056603,
+        "added_distance": 4.037903077685463,
+        "rating": 2.3,
+        "feasible": true,
+        "reasons": [],
+        "objective": 4.037903077685463
+      },
+      {
+        "poi_id": "P_E",
+        "arrival": 595.3960780543712,
+        "service_finish": 605.3960780543712,
+        "return_time": 611.799202291804,
+        "distance_from_bank": 15.0,
+        "added_distance": 1.0070461830617106,
+        "rating": 3.8,
+        "feasible": true,
+        "reasons": [],
+        "objective": 1.0070461830617106
+      }
+    ]
+  },
+  {
+    "case_id": "F03",
+    "policy": {
+      "selection": "highest_rating",
+      "availability_reference": "arrival",
+      "return_by": null
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_C"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_A",
+        "arrival": 586.1347550712336,
+        "service_finish": 596.1347550712336,
+        "return_time": 620.8733888249395,
+        "distance_from_bank": 17.88854381999832,
+        "added_distance": 34.38096632246896,
+        "rating": 4.4,
+        "feasible": true,
+        "reasons": [],
+        "objective": -4.4
+      },
+      {
+        "poi_id": "P_B",
+        "arrival": 583.4777574629632,
+        "service_finish": 593.4777574629632,
+        "return_time": 616.8871572844024,
+        "distance_from_bank": 15.231546211727817,
+        "added_distance": 30.394734781931746,
+        "rating": 4.0,
+        "feasible": true,
+        "reasons": [],
+        "objective": -4.0
+      },
+      {
+        "poi_id": "P_C",
+        "arrival": 580.2878058300277,
+        "service_finish": 590.2878058300277,
+        "return_time": 602.4943614457613,
+        "distance_from_bank": 12.041594578792296,
+        "added_distance": 16.001938943290675,
+        "rating": 4.5,
+        "feasible": true,
+        "reasons": [],
+        "objective": -4.5
+      },
+      {
+        "poi_id": "P_D",
+        "arrival": 577.6801923832919,
+        "service_finish": 587.6801923832919,
+        "return_time": 598.1204988922025,
+        "distance_from_bank": 9.433981132056603,
+        "added_distance": 11.628076389731833,
+        "rating": 2.5,
+        "feasible": true,
+        "reasons": [],
+        "objective": -2.5
+      },
+      {
+        "poi_id": "P_E",
+        "arrival": 581.2462112512353,
+        "service_finish": 591.2462112512353,
+        "return_time": 599.3084689995338,
+        "distance_from_bank": 13.0,
+        "added_distance": 12.816046497063228,
+        "rating": 3.3,
+        "feasible": true,
+        "reasons": [],
+        "objective": -3.3
+      }
+    ]
+  },
+  {
+    "case_id": "F04",
+    "policy": {
+      "selection": "nearest_from_bank",
+      "availability_reference": "arrival",
+      "return_by": null
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_E"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_A",
+        "arrival": 587.8236568645922,
+        "service_finish": 597.8236568645922,
+        "return_time": 605.4394299704561,
+        "distance_from_bank": 16.64331697709324,
+        "added_distance": 13.078750195458198,
+        "rating": 2.5,
+        "feasible": true,
+        "reasons": [],
+        "objective": 16.64331697709324
+      },
+      {
+        "poi_id": "P_B",
+        "arrival": 583.3868955032326,
+        "service_finish": 593.3868955032326,
+        "return_time": 598.4859150168254,
+        "distance_from_bank": 12.206555615733702,
+        "added_distance": 6.125235241827536,
+        "rating": 2.0,
+        "feasible": true,
+        "reasons": [],
+        "objective": 12.206555615733702
+      },
+      {
+        "poi_id": "P_C",
+        "arrival": 585.3930102910508,
+        "service_finish": 595.3930102910508,
+        "return_time": 602.3930102910508,
+        "distance_from_bank": 14.212670403551895,
+        "added_distance": 10.032330516052948,
+        "rating": 4.4,
+        "feasible": true,
+        "reasons": [],
+        "objective": 14.212670403551895
+      },
+      {
+        "poi_id": "P_D",
+        "arrival": 581.4759700284859,
+        "service_finish": 591.4759700284859,
+        "return_time": 608.9402192250589,
+        "distance_from_bank": 10.295630140987,
+        "added_distance": 16.57953945006103,
+        "rating": 3.9,
+        "feasible": true,
+        "reasons": [],
+        "objective": 10.295630140987
+      },
+      {
+        "poi_id": "P_E",
+        "arrival": 579.7826651545415,
+        "service_finish": 589.7826651545415,
+        "return_time": 606.5457197687817,
+        "distance_from_bank": 8.602325267042627,
+        "added_distance": 14.185039993783889,
+        "rating": 3.1,
+        "feasible": true,
+        "reasons": [],
+        "objective": 8.602325267042627
+      }
+    ]
+  },
+  {
+    "case_id": "F05",
+    "policy": {
+      "selection": "minimum_added_distance",
+      "availability_reference": "arrival",
+      "return_by": null
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_C"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_A",
+        "arrival": 593.7312696280882,
+        "service_finish": 603.7312696280882,
+        "return_time": 613.7312696280882,
+        "distance_from_bank": 15.620499351813308,
+        "added_distance": 7.509729075538473,
+        "rating": 4.6,
+        "feasible": true,
+        "reasons": [],
+        "objective": 7.509729075538473
+      },
+      {
+        "poi_id": "P_B",
+        "arrival": 585.1107702762748,
+        "service_finish": 595.1107702762748,
+        "return_time": 620.1906426842437,
+        "distance_from_bank": 7.0,
+        "added_distance": 13.969102131694072,
+        "rating": 4.4,
+        "feasible": true,
+        "reasons": [],
+        "objective": 13.969102131694072
+      },
+      {
+        "poi_id": "P_C",
+        "arrival": 594.3895908723746,
+        "service_finish": 604.3895908723746,
+        "return_time": 609.7747556795091,
+        "distance_from_bank": 16.278820596099706,
+        "added_distance": 3.553215126959376,
+        "rating": 2.3,
+        "feasible": true,
+        "reasons": [],
+        "objective": 3.553215126959376
+      },
+      {
+        "poi_id": "P_D",
+        "arrival": 586.1730280245733,
+        "service_finish": 596.1730280245733,
+        "return_time": 618.7340563699303,
+        "distance_from_bank": 8.06225774829855,
+        "added_distance": 12.51251581738067,
+        "rating": 4.1,
+        "feasible": true,
+        "reasons": [],
+        "objective": 12.51251581738067
+      },
+      {
+        "poi_id": "P_E",
+        "arrival": 586.3569815275101,
+        "service_finish": 596.3569815275101,
+        "return_time": 617.2375945453313,
+        "distance_from_bank": 8.246211251235321,
+        "added_distance": 11.016053992781586,
+        "rating": 4.9,
+        "feasible": true,
+        "reasons": [],
+        "objective": 11.016053992781586
+      }
+    ]
+  },
+  {
+    "case_id": "F06",
+    "policy": {
+      "selection": "highest_rating",
+      "availability_reference": "arrival",
+      "return_by": null
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_C"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_A",
+        "arrival": 590.4280518414319,
+        "service_finish": 600.4280518414319,
+        "return_time": 614.8502569432878,
+        "distance_from_bank": 11.40175425099138,
+        "added_distance": 6.797661762406889,
+        "rating": 3.1,
+        "feasible": true,
+        "reasons": [],
+        "objective": -3.1
+      },
+      {
+        "poi_id": "P_B",
+        "arrival": 593.2389679939923,
+        "service_finish": 603.2389679939923,
+        "return_time": 614.5526764929771,
+        "distance_from_bank": 14.212670403551895,
+        "added_distance": 6.50008131209621,
+        "rating": 2.7,
+        "feasible": true,
+        "reasons": [],
+        "objective": -2.7
+      },
+      {
+        "poi_id": "P_C",
+        "arrival": 593.5865173690015,
+        "service_finish": 603.5865173690015,
+        "return_time": 609.4174692638468,
+        "distance_from_bank": 14.560219778561036,
+        "added_distance": 1.3648740829658905,
+        "rating": 4.2,
+        "feasible": true,
+        "reasons": [],
+        "objective": -4.2
+      },
+      {
+        "poi_id": "P_D",
+        "arrival": 584.0262975904404,
+        "service_finish": 594.0262975904404,
+        "return_time": 613.9511564356117,
+        "distance_from_bank": 5.0,
+        "added_distance": 5.898561254730829,
+        "rating": 3.5,
+        "feasible": true,
+        "reasons": [],
+        "objective": -3.5
+      },
+      {
+        "poi_id": "P_E",
+        "arrival": 598.1312707649832,
+        "service_finish": 608.1312707649832,
+        "return_time": 611.1312707649832,
+        "distance_from_bank": 19.1049731745428,
+        "added_distance": 3.0786755841023528,
+        "rating": 3.0,
+        "feasible": true,
+        "reasons": [],
+        "objective": -3.0
+      }
+    ]
+  },
+  {
+    "case_id": "F07",
+    "policy": {
+      "selection": "nearest_from_bank",
+      "availability_reference": "departure",
+      "return_by": null
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_E"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_A",
+        "arrival": 574.3868130686353,
+        "service_finish": 584.3868130686353,
+        "return_time": 593.6063575259282,
+        "distance_from_bank": 6.324555320336759,
+        "added_distance": 7.481842029331098,
+        "rating": 3.8,
+        "feasible": false,
+        "reasons": [
+          "pharmacy_not_open_on_arrival",
+          "not_open_at_departure"
+        ],
+        "objective": 6.324555320336759
+      },
+      {
+        "poi_id": "P_B",
+        "arrival": 581.5158817953723,
+        "service_finish": 591.5158817953723,
+        "return_time": 600.5712669335097,
+        "distance_from_bank": 13.45362404707371,
+        "added_distance": 14.446751436912578,
+        "rating": 4.4,
+        "feasible": false,
+        "reasons": [
+          "not_open_at_departure"
+        ],
+        "objective": 13.45362404707371
+      },
+      {
+        "poi_id": "P_C",
+        "arrival": 579.2425976357974,
+        "service_finish": 589.2425976357974,
+        "return_time": 608.2162635968077,
+        "distance_from_bank": 11.180339887498949,
+        "added_distance": 22.091748100210676,
+        "rating": 4.0,
+        "feasible": true,
+        "reasons": [],
+        "objective": 11.180339887498949
+      },
+      {
+        "poi_id": "P_D",
+        "arrival": 575.1333255601639,
+        "service_finish": 585.1333255601639,
+        "return_time": 591.8415294926633,
+        "distance_from_bank": 7.0710678118654755,
+        "added_distance": 5.717013996066296,
+        "rating": 3.5,
+        "feasible": false,
+        "reasons": [
+          "not_open_at_departure"
+        ],
+        "objective": 7.0710678118654755
+      },
+      {
+        "poi_id": "P_E",
+        "arrival": 577.5490907288037,
+        "service_finish": 587.5490907288037,
+        "return_time": 602.4151594761222,
+        "distance_from_bank": 9.486832980505138,
+        "added_distance": 16.290643979525093,
+        "rating": 4.3,
+        "feasible": true,
+        "reasons": [],
+        "objective": 9.486832980505138
+      }
+    ]
+  },
+  {
+    "case_id": "F08",
+    "policy": {
+      "selection": "minimum_added_distance",
+      "availability_reference": "departure",
+      "return_by": null
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_D"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_A",
+        "arrival": 583.0636580406821,
+        "service_finish": 593.0636580406821,
+        "return_time": 615.9109773582738,
+        "distance_from_bank": 11.661903789690601,
+        "added_distance": 23.107468856290943,
+        "rating": 3.0,
+        "feasible": false,
+        "reasons": [
+          "not_open_at_departure"
+        ],
+        "objective": 23.107468856290943
+      },
+      {
+        "poi_id": "P_B",
+        "arrival": 581.301249187603,
+        "service_finish": 591.301249187603,
+        "return_time": 609.7403381021888,
+        "distance_from_bank": 9.899494936611665,
+        "added_distance": 16.93682960020606,
+        "rating": 3.9,
+        "feasible": true,
+        "reasons": [],
+        "objective": 16.93682960020606
+      },
+      {
+        "poi_id": "P_C",
+        "arrival": 578.1099581834908,
+        "service_finish": 588.1099581834908,
+        "return_time": 606.1377145608108,
+        "distance_from_bank": 6.708203932499369,
+        "added_distance": 13.334206058827936,
+        "rating": 2.0,
+        "feasible": false,
+        "reasons": [
+          "not_open_at_departure"
+        ],
+        "objective": 13.334206058827936
+      },
+      {
+        "poi_id": "P_D",
+        "arrival": 584.4401590613967,
+        "service_finish": 594.4401590613967,
+        "return_time": 603.3844309713959,
+        "distance_from_bank": 13.038404810405298,
+        "added_distance": 10.580922469413077,
+        "rating": 2.6,
+        "feasible": true,
+        "reasons": [],
+        "objective": 10.580922469413077
+      },
+      {
+        "poi_id": "P_E",
+        "arrival": 582.4471152681787,
+        "service_finish": 592.4471152681787,
+        "return_time": 614.5378373025532,
+        "distance_from_bank": 11.045361017187261,
+        "added_distance": 21.734328800570403,
+        "rating": 4.4,
+        "feasible": true,
+        "reasons": [],
+        "objective": 21.734328800570403
+      }
+    ]
+  },
+  {
+    "case_id": "F09",
+    "policy": {
+      "selection": "highest_rating",
+      "availability_reference": "departure",
+      "return_by": null
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_D"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_A",
+        "arrival": 576.3542534212243,
+        "service_finish": 586.3542534212243,
+        "return_time": 595.8410864017294,
+        "distance_from_bank": 7.810249675906654,
+        "added_distance": 8.753078911094262,
+        "rating": 3.0,
+        "feasible": false,
+        "reasons": [
+          "not_open_at_departure"
+        ],
+        "objective": -3.0
+      },
+      {
+        "poi_id": "P_B",
+        "arrival": 574.20085799481,
+        "service_finish": 584.20085799481,
+        "return_time": 598.0933019842598,
+        "distance_from_bank": 5.656854249492381,
+        "added_distance": 11.005294493624655,
+        "rating": 2.7,
+        "feasible": true,
+        "reasons": [],
+        "objective": -2.7
+      },
+      {
+        "poi_id": "P_C",
+        "arrival": 575.615071557183,
+        "service_finish": 585.615071557183,
+        "return_time": 595.4639293589792,
+        "distance_from_bank": 7.0710678118654755,
+        "added_distance": 8.375921868344049,
+        "rating": 2.3,
+        "feasible": true,
+        "reasons": [],
+        "objective": -2.3
+      },
+      {
+        "poi_id": "P_D",
+        "arrival": 573.6430232589104,
+        "service_finish": 583.6430232589104,
+        "return_time": 587.2485745343744,
+        "distance_from_bank": 5.0990195135927845,
+        "added_distance": 0.1605670437392437,
+        "rating": 4.3,
+        "feasible": true,
+        "reasons": [],
+        "objective": -4.3
+      },
+      {
+        "poi_id": "P_E",
+        "arrival": 577.7635482026104,
+        "service_finish": 587.7635482026104,
+        "return_time": 604.9681987366956,
+        "distance_from_bank": 9.219544457292887,
+        "added_distance": 17.880191246060612,
+        "rating": 2.8,
+        "feasible": true,
+        "reasons": [],
+        "objective": -2.8
+      }
+    ]
+  },
+  {
+    "case_id": "F10",
+    "policy": {
+      "selection": "nearest_from_bank",
+      "availability_reference": "departure",
+      "return_by": null
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_E"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_A",
+        "arrival": 585.3832586429187,
+        "service_finish": 595.3832586429187,
+        "return_time": 617.9442869882756,
+        "distance_from_bank": 12.041594578792296,
+        "added_distance": 21.260958860022917,
+        "rating": 2.9,
+        "feasible": false,
+        "reasons": [
+          "not_open_at_departure"
+        ],
+        "objective": 12.041594578792296
+      },
+      {
+        "poi_id": "P_B",
+        "arrival": 581.4039218124249,
+        "service_finish": 591.4039218124249,
+        "return_time": 597.486684342723,
+        "distance_from_bank": 8.06225774829855,
+        "added_distance": 0.8033562144704334,
+        "rating": 3.7,
+        "feasible": true,
+        "reasons": [],
+        "objective": 8.06225774829855
+      },
+      {
+        "poi_id": "P_C",
+        "arrival": 581.4039218124249,
+        "service_finish": 591.4039218124249,
+        "return_time": 611.4289062069256,
+        "distance_from_bank": 8.06225774829855,
+        "added_distance": 14.745578078673002,
+        "rating": 4.7,
+        "feasible": false,
+        "reasons": [
+          "not_open_at_departure"
+        ],
+        "objective": 8.06225774829855
+      },
+      {
+        "poi_id": "P_D",
+        "arrival": 581.4039218124249,
+        "service_finish": 591.4039218124249,
+        "return_time": 608.8681710089978,
+        "distance_from_bank": 8.06225774829855,
+        "added_distance": 12.184842880745194,
+        "rating": 4.5,
+        "feasible": true,
+        "reasons": [],
+        "objective": 8.06225774829855
+      },
+      {
+        "poi_id": "P_E",
+        "arrival": 578.7268288712609,
+        "service_finish": 588.7268288712609,
+        "return_time": 603.8595748216824,
+        "distance_from_bank": 5.385164807134504,
+        "added_distance": 7.176246693429725,
+        "rating": 4.6,
+        "feasible": true,
+        "reasons": [],
+        "objective": 5.385164807134504
+      }
+    ]
+  },
+  {
+    "case_id": "F11",
+    "policy": {
+      "selection": "minimum_added_distance",
+      "availability_reference": "departure",
+      "return_by": null
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_E"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_A",
+        "arrival": 594.4159958527317,
+        "service_finish": 604.4159958527317,
+        "return_time": 610.4987583830299,
+        "distance_from_bank": 18.384776310850235,
+        "added_distance": 8.436319299267055,
+        "rating": 4.9,
+        "feasible": true,
+        "reasons": [],
+        "objective": 8.436319299267055
+      },
+      {
+        "poi_id": "P_B",
+        "arrival": 583.311329431162,
+        "service_finish": 593.311329431162,
+        "return_time": 608.5428756428898,
+        "distance_from_bank": 7.280109889280518,
+        "added_distance": 6.480436559126936,
+        "rating": 3.7,
+        "feasible": false,
+        "reasons": [
+          "not_open_at_departure"
+        ],
+        "objective": 6.480436559126936
+      },
+      {
+        "poi_id": "P_C",
+        "arrival": 598.8785388594732,
+        "service_finish": 608.8785388594732,
+        "return_time": 618.3125199915298,
+        "distance_from_bank": 22.847319317591726,
+        "added_distance": 16.25008090776693,
+        "rating": 2.1,
+        "feasible": false,
+        "reasons": [
+          "not_open_at_departure"
+        ],
+        "objective": 16.25008090776693
+      },
+      {
+        "poi_id": "P_D",
+        "arrival": 579.0312195418815,
+        "service_finish": 589.0312195418815,
+        "return_time": 605.1557350384785,
+        "distance_from_bank": 3.0,
+        "added_distance": 3.0932959547156997,
+        "rating": 4.6,
+        "feasible": false,
+        "reasons": [
+          "not_open_at_departure"
+        ],
+        "objective": 3.0932959547156997
+      },
+      {
+        "poi_id": "P_E",
+        "arrival": 585.2507639991743,
+        "service_finish": 595.2507639991743,
+        "return_time": 606.6525182501657,
+        "distance_from_bank": 9.219544457292887,
+        "added_distance": 4.590079166402866,
+        "rating": 2.2,
+        "feasible": true,
+        "reasons": [],
+        "objective": 4.590079166402866
+      }
+    ]
+  },
+  {
+    "case_id": "F12",
+    "policy": {
+      "selection": "highest_rating",
+      "availability_reference": "departure",
+      "return_by": null
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_A"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_A",
+        "arrival": 579.770329614269,
+        "service_finish": 589.770329614269,
+        "return_time": 606.1715490811257,
+        "distance_from_bank": 10.770329614269007,
+        "added_distance": 18.171549081125733,
+        "rating": 4.3,
+        "feasible": true,
+        "reasons": [],
+        "objective": -4.3
+      },
+      {
+        "poi_id": "P_B",
+        "arrival": 579.4403065089106,
+        "service_finish": 589.4403065089106,
+        "return_time": 608.6756905705819,
+        "distance_from_bank": 10.44030650891055,
+        "added_distance": 20.675690570581892,
+        "rating": 3.8,
+        "feasible": false,
+        "reasons": [
+          "not_open_at_departure"
+        ],
+        "objective": -3.8
+      },
+      {
+        "poi_id": "P_C",
+        "arrival": 577.2462112512353,
+        "service_finish": 587.2462112512353,
+        "return_time": 597.87635706397,
+        "distance_from_bank": 8.246211251235321,
+        "added_distance": 9.87635706396997,
+        "rating": 4.2,
+        "feasible": false,
+        "reasons": [
+          "not_open_at_departure"
+        ],
+        "objective": -4.2
+      },
+      {
+        "poi_id": "P_D",
+        "arrival": 576.8102496759067,
+        "service_finish": 586.8102496759067,
+        "return_time": 594.0213522268347,
+        "distance_from_bank": 7.810249675906654,
+        "added_distance": 6.021352226834633,
+        "rating": 3.9,
+        "feasible": false,
+        "reasons": [
+          "not_open_at_departure"
+        ],
+        "objective": -3.9
+      },
+      {
+        "poi_id": "P_E",
+        "arrival": 572.605551275464,
+        "service_finish": 582.605551275464,
+        "return_time": 594.0073055264554,
+        "distance_from_bank": 3.605551275463989,
+        "added_distance": 6.007305526455369,
+        "rating": 4.9,
+        "feasible": false,
+        "reasons": [
+          "pharmacy_not_open_on_arrival",
+          "not_open_at_departure"
+        ],
+        "objective": -4.9
+      }
+    ]
+  },
+  {
+    "case_id": "F13",
+    "policy": {
+      "selection": "nearest_from_bank",
+      "availability_reference": "arrival",
+      "return_by": 605
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_E"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_A",
+        "arrival": 587.5160882115616,
+        "service_finish": 597.5160882115616,
+        "return_time": 601.6391938371793,
+        "distance_from_bank": 15.811388300841896,
+        "added_distance": 8.22979401573993,
+        "rating": 4.3,
+        "feasible": true,
+        "reasons": [],
+        "objective": 15.811388300841896
+      },
+      {
+        "poi_id": "P_B",
+        "arrival": 583.4093998214394,
+        "service_finish": 593.4093998214394,
+        "return_time": 616.8187996428786,
+        "distance_from_bank": 11.704699910719626,
+        "added_distance": 23.40939982143925,
+        "rating": 4.5,
+        "feasible": false,
+        "reasons": [
+          "return_deadline"
+        ],
+        "objective": 11.704699910719626
+      },
+      {
+        "poi_id": "P_C",
+        "arrival": 581.1386810427763,
+        "service_finish": 591.1386810427763,
+        "return_time": 610.1649786332167,
+        "distance_from_bank": 9.433981132056603,
+        "added_distance": 16.755578811777426,
+        "rating": 2.6,
+        "feasible": false,
+        "reasons": [
+          "return_deadline"
+        ],
+        "objective": 9.433981132056603
+      },
+      {
+        "poi_id": "P_D",
+        "arrival": 578.9158024616477,
+        "service_finish": 588.9158024616477,
+        "return_time": 605.9158024616477,
+        "distance_from_bank": 7.211102550927978,
+        "added_distance": 12.506402640208353,
+        "rating": 3.1,
+        "feasible": false,
+        "reasons": [
+          "return_deadline"
+        ],
+        "objective": 7.211102550927978
+      },
+      {
+        "poi_id": "P_E",
+        "arrival": 577.0898647178542,
+        "service_finish": 587.0898647178542,
+        "return_time": 595.5751460920927,
+        "distance_from_bank": 5.385164807134504,
+        "added_distance": 2.1657462706534467,
+        "rating": 3.5,
+        "feasible": true,
+        "reasons": [],
+        "objective": 5.385164807134504
+      }
+    ]
+  },
+  {
+    "case_id": "F14",
+    "policy": {
+      "selection": "minimum_added_distance",
+      "availability_reference": "arrival",
+      "return_by": 595
+    },
+    "status": "INFEASIBLE",
+    "accepted_poi_ids": [],
+    "candidates": [
+      {
+        "poi_id": "P_A",
+        "arrival": 590.8084057914388,
+        "service_finish": 600.8084057914388,
+        "return_time": 623.280610845683,
+        "distance_from_bank": 12.36931687685298,
+        "added_distance": 16.402433016511438,
+        "rating": 4.8,
+        "feasible": false,
+        "reasons": [
+          "return_deadline"
+        ],
+        "objective": 16.402433016511438
+      },
+      {
+        "poi_id": "P_B",
+        "arrival": 601.6339159240722,
+        "service_finish": 611.6339159240722,
+        "return_time": 620.2362411911148,
+        "distance_from_bank": 23.194827009486403,
+        "added_distance": 13.358063361943255,
+        "rating": 2.2,
+        "feasible": false,
+        "reasons": [
+          "return_deadline"
+        ],
+        "objective": 13.358063361943255
+      },
+      {
+        "poi_id": "P_C",
+        "arrival": 590.1009927042765,
+        "service_finish": 600.1009927042765,
+        "return_time": 613.5174005692752,
+        "distance_from_bank": 11.661903789690601,
+        "added_distance": 6.639222740103566,
+        "rating": 3.5,
+        "feasible": false,
+        "reasons": [
+          "return_deadline"
+        ],
+        "objective": 6.639222740103566
+      },
+      {
+        "poi_id": "P_D",
+        "arrival": 592.5812245383167,
+        "service_finish": 602.5812245383167,
+        "return_time": 621.44918680243,
+        "distance_from_bank": 14.142135623730951,
+        "added_distance": 14.57100897325838,
+        "rating": 2.5,
+        "feasible": false,
+        "reasons": [
+          "return_deadline"
+        ],
+        "objective": 14.57100897325838
+      },
+      {
+        "poi_id": "P_E",
+        "arrival": 597.4390889145858,
+        "service_finish": 607.4390889145858,
+        "return_time": 611.5621945402034,
+        "distance_from_bank": 19.0,
+        "added_distance": 4.684016711031887,
+        "rating": 3.0,
+        "feasible": false,
+        "reasons": [
+          "return_deadline"
+        ],
+        "objective": 4.684016711031887
+      }
+    ]
+  },
+  {
+    "case_id": "F15",
+    "policy": {
+      "selection": "highest_rating",
+      "availability_reference": "arrival",
+      "return_by": 620
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_C"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_A",
+        "arrival": 585.495097567964,
+        "service_finish": 595.495097567964,
+        "return_time": 613.8798738788142,
+        "distance_from_bank": 10.198039027185569,
+        "added_distance": 13.285756797257449,
+        "rating": 3.2,
+        "feasible": true,
+        "reasons": [],
+        "objective": -3.2
+      },
+      {
+        "poi_id": "P_B",
+        "arrival": 595.9125866688667,
+        "service_finish": 605.9125866688667,
+        "return_time": 612.3157109062995,
+        "distance_from_bank": 20.615528128088304,
+        "added_distance": 11.721593824742797,
+        "rating": 4.7,
+        "feasible": true,
+        "reasons": [],
+        "objective": -4.7
+      },
+      {
+        "poi_id": "P_C",
+        "arrival": 582.3681263526439,
+        "service_finish": 592.3681263526439,
+        "return_time": 609.5727768867291,
+        "distance_from_bank": 7.0710678118654755,
+        "added_distance": 8.978659805172374,
+        "rating": 4.8,
+        "feasible": true,
+        "reasons": [],
+        "objective": -4.8
+      },
+      {
+        "poi_id": "P_D",
+        "arrival": 583.5432697920137,
+        "service_finish": 593.5432697920137,
+        "return_time": 607.4716580691978,
+        "distance_from_bank": 8.246211251235321,
+        "added_distance": 6.877540987641087,
+        "rating": 3.4,
+        "feasible": true,
+        "reasons": [],
+        "objective": -3.4
+      },
+      {
+        "poi_id": "P_E",
+        "arrival": 583.899383807821,
+        "service_finish": 593.899383807821,
+        "return_time": 615.9901058421955,
+        "distance_from_bank": 8.602325267042627,
+        "added_distance": 15.395988760638794,
+        "rating": 2.1,
+        "feasible": true,
+        "reasons": [],
+        "objective": -2.1
+      }
+    ]
+  },
+  {
+    "case_id": "F16",
+    "policy": {
+      "selection": "nearest_from_bank",
+      "availability_reference": "arrival",
+      "return_by": 605
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_C"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_A",
+        "arrival": 582.9032408455039,
+        "service_finish": 592.9032408455039,
+        "return_time": 615.7505601630957,
+        "distance_from_bank": 13.416407864998739,
+        "added_distance": 26.776894202085327,
+        "rating": 4.1,
+        "feasible": false,
+        "reasons": [
+          "return_deadline"
+        ],
+        "objective": 13.416407864998739
+      },
+      {
+        "poi_id": "P_B",
+        "arrival": 584.6195789309267,
+        "service_finish": 594.6195789309267,
+        "return_time": 619.1348802751892,
+        "distance_from_bank": 15.132745950421556,
+        "added_distance": 30.161214314178945,
+        "rating": 2.1,
+        "feasible": false,
+        "reasons": [
+          "return_deadline"
+        ],
+        "objective": 15.132745950421556
+      },
+      {
+        "poi_id": "P_C",
+        "arrival": 575.3177848753504,
+        "service_finish": 585.3177848753504,
+        "return_time": 600.5493310870783,
+        "distance_from_bank": 5.830951894845301,
+        "added_distance": 11.575665126067978,
+        "rating": 2.7,
+        "feasible": true,
+        "reasons": [],
+        "objective": 5.830951894845301
+      },
+      {
+        "poi_id": "P_D",
+        "arrival": 575.889957217938,
+        "service_finish": 585.889957217938,
+        "return_time": 590.0130628435556,
+        "distance_from_bank": 6.4031242374328485,
+        "added_distance": 1.0393968825453719,
+        "rating": 2.0,
+        "feasible": true,
+        "reasons": [],
+        "objective": 6.4031242374328485
+      },
+      {
+        "poi_id": "P_E",
+        "arrival": 579.6848720076907,
+        "service_finish": 589.6848720076907,
+        "return_time": 602.723276818096,
+        "distance_from_bank": 10.198039027185569,
+        "added_distance": 13.749610857085731,
+        "rating": 4.9,
+        "feasible": true,
+        "reasons": [],
+        "objective": 10.198039027185569
+      }
+    ]
+  },
+  {
+    "case_id": "F17",
+    "policy": {
+      "selection": "minimum_added_distance",
+      "availability_reference": "arrival",
+      "return_by": 605
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_A"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_A",
+        "arrival": 576.3084689995338,
+        "service_finish": 586.3084689995338,
+        "return_time": 588.5445369770337,
+        "distance_from_bank": 8.06225774829855,
+        "added_distance": 2.0521144745630178,
+        "rating": 3.7,
+        "feasible": true,
+        "reasons": [],
+        "objective": 2.0521144745630178
+      },
+      {
+        "poi_id": "P_B",
+        "arrival": 585.7104604478083,
+        "service_finish": 595.7104604478083,
+        "return_time": 620.2257617920708,
+        "distance_from_bank": 17.46424919657298,
+        "added_distance": 33.73333928960018,
+        "rating": 4.9,
+        "feasible": false,
+        "reasons": [
+          "return_deadline"
+        ],
+        "objective": 33.73333928960018
+      },
+      {
+        "poi_id": "P_C",
+        "arrival": 582.6684163530913,
+        "service_finish": 592.6684163530913,
+        "return_time": 613.5490293709124,
+        "distance_from_bank": 14.422205101855956,
+        "added_distance": 27.056606868441733,
+        "rating": 2.8,
+        "feasible": false,
+        "reasons": [
+          "return_deadline"
+        ],
+        "objective": 27.056606868441733
+      },
+      {
+        "poi_id": "P_D",
+        "arrival": 576.8485365182779,
+        "service_finish": 586.8485365182779,
+        "return_time": 600.776924795462,
+        "distance_from_bank": 8.602325267042627,
+        "added_distance": 14.284502292991425,
+        "rating": 3.5,
+        "feasible": true,
+        "reasons": [],
+        "objective": 14.284502292991425
+      },
+      {
+        "poi_id": "P_E",
+        "arrival": 579.2915722684226,
+        "service_finish": 589.2915722684226,
+        "return_time": 608.317869858863,
+        "distance_from_bank": 11.045361017187261,
+        "added_distance": 21.825447356392388,
+        "rating": 4.5,
+        "feasible": false,
+        "reasons": [
+          "return_deadline"
+        ],
+        "objective": 21.825447356392388
+      }
+    ]
+  },
+  {
+    "case_id": "F18",
+    "policy": {
+      "selection": "highest_rating",
+      "availability_reference": "arrival",
+      "return_by": 595
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_A"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_A",
+        "arrival": 570.4822792287351,
+        "service_finish": 580.4822792287351,
+        "return_time": 590.3311370305313,
+        "distance_from_bank": 2.23606797749979,
+        "added_distance": 3.8387145280605726,
+        "rating": 2.8,
+        "feasible": true,
+        "reasons": [],
+        "objective": -2.8
+      },
+      {
+        "poi_id": "P_B",
+        "arrival": 582.2818800988535,
+        "service_finish": 592.2818800988535,
+        "return_time": 614.3045956443988,
+        "distance_from_bank": 14.035668847618199,
+        "added_distance": 27.812173141928113,
+        "rating": 3.5,
+        "feasible": false,
+        "reasons": [
+          "return_deadline"
+        ],
+        "objective": -3.5
+      },
+      {
+        "poi_id": "P_C",
+        "arrival": 578.2462112512353,
+        "service_finish": 588.2462112512353,
+        "return_time": 604.7386337537059,
+        "distance_from_bank": 10.0,
+        "added_distance": 18.246211251235323,
+        "rating": 2.1,
+        "feasible": false,
+        "reasons": [
+          "return_deadline"
+        ],
+        "objective": -2.1
+      },
+      {
+        "poi_id": "P_D",
+        "arrival": 580.776175337377,
+        "service_finish": 590.776175337377,
+        "return_time": 607.4194923144703,
+        "distance_from_bank": 12.529964086141668,
+        "added_distance": 20.927069811999587,
+        "rating": 2.6,
+        "feasible": false,
+        "reasons": [
+          "return_deadline"
+        ],
+        "objective": -2.6
+      },
+      {
+        "poi_id": "P_E",
+        "arrival": 577.1904831612345,
+        "service_finish": 587.1904831612345,
+        "return_time": 604.2784906518696,
+        "distance_from_bank": 8.94427190999916,
+        "added_distance": 17.7860681493989,
+        "rating": 3.3,
+        "feasible": false,
+        "reasons": [
+          "return_deadline"
+        ],
+        "objective": -3.3
+      }
+    ]
+  },
+  {
+    "case_id": "F19",
+    "policy": {
+      "selection": "nearest_from_bank",
+      "availability_reference": "arrival",
+      "return_by": null
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_B"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_A",
+        "arrival": 576.0153397218646,
+        "service_finish": 586.0153397218646,
+        "return_time": 589.177617382033,
+        "distance_from_bank": 7.0710678118654755,
+        "added_distance": 1.2890735620346963,
+        "rating": 2.5,
+        "feasible": true,
+        "reasons": [],
+        "objective": 7.0710678118654755
+      },
+      {
+        "poi_id": "P_B",
+        "arrival": 571.180339887499,
+        "service_finish": 581.180339887499,
+        "return_time": 588.4604497767796,
+        "distance_from_bank": 2.23606797749979,
+        "added_distance": 0.5719059567811478,
+        "rating": 4.6,
+        "feasible": true,
+        "reasons": [],
+        "objective": 2.23606797749979
+      },
+      {
+        "poi_id": "P_C",
+        "arrival": 582.097218347965,
+        "service_finish": 592.097218347965,
+        "return_time": 597.4823831550996,
+        "distance_from_bank": 13.152946437965905,
+        "added_distance": 9.59383933510125,
+        "rating": 4.2,
+        "feasible": true,
+        "reasons": [],
+        "objective": 13.152946437965905
+      },
+      {
+        "poi_id": "P_D",
+        "arrival": 581.0273178835938,
+        "service_finish": 591.0273178835938,
+        "return_time": 612.0511139252225,
+        "distance_from_bank": 12.083045973594572,
+        "added_distance": 24.16257010522405,
+        "rating": 3.7,
+        "feasible": true,
+        "reasons": [],
+        "objective": 12.083045973594572
+      },
+      {
+        "poi_id": "P_E",
+        "arrival": 585.9736582759256,
+        "service_finish": 595.9736582759256,
+        "return_time": 616.9974543175542,
+        "distance_from_bank": 17.029386365926403,
+        "added_distance": 29.108910497555883,
+        "rating": 3.6,
+        "feasible": true,
+        "reasons": [],
+        "objective": 17.029386365926403
+      }
+    ]
+  },
+  {
+    "case_id": "F20",
+    "policy": {
+      "selection": "minimum_added_distance",
+      "availability_reference": "arrival",
+      "return_by": null
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_C"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_A",
+        "arrival": 593.9197633618797,
+        "service_finish": 603.9197633618797,
+        "return_time": 612.9197633618797,
+        "distance_from_bank": 17.88854381999832,
+        "added_distance": 10.85732427811692,
+        "rating": 2.8,
+        "feasible": true,
+        "reasons": [],
+        "objective": 10.85732427811692
+      },
+      {
+        "poi_id": "P_B",
+        "arrival": 579.1934972020498,
+        "service_finish": 589.1934972020498,
+        "return_time": 606.6577463986227,
+        "distance_from_bank": 3.1622776601683795,
+        "added_distance": 4.595307314859959,
+        "rating": 2.9,
+        "feasible": true,
+        "reasons": [],
+        "objective": 4.595307314859959
+      },
+      {
+        "poi_id": "P_C",
+        "arrival": 584.0312195418815,
+        "service_finish": 594.0312195418815,
+        "return_time": 602.09347729018,
+        "distance_from_bank": 8.0,
+        "added_distance": 0.031038206417150604,
+        "rating": 3.2,
+        "feasible": true,
+        "reasons": [],
+        "objective": 0.031038206417150604
+      },
+      {
+        "poi_id": "P_D",
+        "arrival": 589.6326900506169,
+        "service_finish": 599.6326900506169,
+        "return_time": 608.2350153176595,
+        "distance_from_bank": 13.601470508735444,
+        "added_distance": 6.17257623389667,
+        "rating": 4.6,
+        "feasible": true,
+        "reasons": [],
+        "objective": 6.17257623389667
+      },
+      {
+        "poi_id": "P_E",
+        "arrival": 580.0312195418815,
+        "service_finish": 590.0312195418815,
+        "return_time": 602.0728141206738,
+        "distance_from_bank": 4.0,
+        "added_distance": 0.01037503691089725,
+        "rating": 4.3,
+        "feasible": false,
+        "reasons": [
+          "pharmacy_service_finishes_after_close"
+        ],
+        "objective": 0.01037503691089725
+      }
+    ]
+  },
+  {
+    "case_id": "F21",
+    "policy": {
+      "selection": "highest_rating",
+      "availability_reference": "arrival",
+      "return_by": null
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_D"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_A",
+        "arrival": 584.9274924445303,
+        "service_finish": 594.9274924445303,
+        "return_time": 618.1223194540167,
+        "distance_from_bank": 7.810249675906654,
+        "added_distance": 13.887833916769367,
+        "rating": 3.4,
+        "feasible": true,
+        "reasons": [],
+        "objective": -3.4
+      },
+      {
+        "poi_id": "P_B",
+        "arrival": 584.9274924445303,
+        "service_finish": 594.9274924445303,
+        "return_time": 607.5766030852038,
+        "distance_from_bank": 7.810249675906654,
+        "added_distance": 3.3421175479564837,
+        "rating": 2.1,
+        "feasible": true,
+        "reasons": [],
+        "objective": -2.1
+      },
+      {
+        "poi_id": "P_C",
+        "arrival": 587.9338965950157,
+        "service_finish": 597.9338965950157,
+        "return_time": 606.8781685050149,
+        "distance_from_bank": 10.816653826391969,
+        "added_distance": 2.6436829677674396,
+        "rating": 2.6,
+        "feasible": false,
+        "reasons": [
+          "pharmacy_service_finishes_after_close"
+        ],
+        "objective": -2.6
+      },
+      {
+        "poi_id": "P_D",
+        "arrival": 586.1726279067611,
+        "service_finish": 596.1726279067611,
+        "return_time": 613.6368771033341,
+        "distance_from_bank": 9.055385138137417,
+        "added_distance": 9.402391566086706,
+        "rating": 4.7,
+        "feasible": true,
+        "reasons": [],
+        "objective": -4.7
+      },
+      {
+        "poi_id": "P_E",
+        "arrival": 585.1795005169222,
+        "service_finish": 595.1795005169222,
+        "return_time": 609.1078887941063,
+        "distance_from_bank": 8.06225774829855,
+        "added_distance": 4.873403256858978,
+        "rating": 2.7,
+        "feasible": true,
+        "reasons": [],
+        "objective": -2.7
+      }
+    ]
+  },
+  {
+    "case_id": "F22",
+    "policy": {
+      "selection": "nearest_from_bank",
+      "availability_reference": "arrival",
+      "return_by": null
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_B",
+      "P_C"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_A",
+        "arrival": 604.5547985373496,
+        "service_finish": 614.5547985373496,
+        "return_time": 618.6779041629673,
+        "distance_from_bank": 24.331050121192877,
+        "added_distance": 8.230407330653854,
+        "rating": 4.6,
+        "feasible": false,
+        "reasons": [
+          "pharmacy_service_finishes_after_close"
+        ],
+        "objective": 24.331050121192877
+      },
+      {
+        "poi_id": "P_B",
+        "arrival": 597.6879976127296,
+        "service_finish": 607.6879976127296,
+        "return_time": 615.3037707185936,
+        "distance_from_bank": 17.46424919657298,
+        "added_distance": 4.856273886280203,
+        "rating": 3.8,
+        "feasible": true,
+        "reasons": [],
+        "objective": 17.46424919657298
+      },
+      {
+        "poi_id": "P_C",
+        "arrival": 597.6879976127296,
+        "service_finish": 607.6879976127296,
+        "return_time": 610.850275272898,
+        "distance_from_bank": 17.46424919657298,
+        "added_distance": 0.4027784405846724,
+        "rating": 4.2,
+        "feasible": true,
+        "reasons": [],
+        "objective": 17.46424919657298
+      },
+      {
+        "poi_id": "P_D",
+        "arrival": 590.5193785571437,
+        "service_finish": 600.5193785571437,
+        "return_time": 626.2292988215086,
+        "distance_from_bank": 10.295630140987,
+        "added_distance": 15.781801989195198,
+        "rating": 2.8,
+        "feasible": false,
+        "reasons": [
+          "pharmacy_service_finishes_after_close"
+        ],
+        "objective": 10.295630140987
+      },
+      {
+        "poi_id": "P_E",
+        "arrival": 596.5025690122563,
+        "service_finish": 606.5025690122563,
+        "return_time": 617.8162775112411,
+        "distance_from_bank": 16.278820596099706,
+        "added_distance": 7.368780678927781,
+        "rating": 3.9,
+        "feasible": false,
+        "reasons": [
+          "pharmacy_service_finishes_after_close"
+        ],
+        "objective": 16.278820596099706
+      }
+    ]
+  },
+  {
+    "case_id": "F23",
+    "policy": {
+      "selection": "minimum_added_distance",
+      "availability_reference": "arrival",
+      "return_by": null
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_B"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_A",
+        "arrival": 581.7068898836923,
+        "service_finish": 591.7068898836923,
+        "return_time": 605.7425587313105,
+        "distance_from_bank": 4.242640687119285,
+        "added_distance": 0.8140603381645057,
+        "rating": 3.2,
+        "feasible": false,
+        "reasons": [
+          "pharmacy_service_finishes_after_close"
+        ],
+        "objective": 0.8140603381645057
+      },
+      {
+        "poi_id": "P_B",
+        "arrival": 587.464249196573,
+        "service_finish": 597.464249196573,
+        "return_time": 610.9178732436467,
+        "distance_from_bank": 10.0,
+        "added_distance": 5.989374850500731,
+        "rating": 4.4,
+        "feasible": true,
+        "reasons": [],
+        "objective": 5.989374850500731
+      },
+      {
+        "poi_id": "P_C",
+        "arrival": 594.726925698205,
+        "service_finish": 604.726925698205,
+        "return_time": 605.726925698205,
+        "distance_from_bank": 17.26267650163207,
+        "added_distance": 0.7984273050590893,
+        "rating": 3.1,
+        "feasible": false,
+        "reasons": [
+          "pharmacy_service_finishes_after_close"
+        ],
+        "objective": 0.7984273050590893
+      },
+      {
+        "poi_id": "P_D",
+        "arrival": 591.0657197053084,
+        "service_finish": 601.0657197053084,
+        "return_time": 605.0657197053084,
+        "distance_from_bank": 13.601470508735444,
+        "added_distance": 0.1372213121624668,
+        "rating": 2.2,
+        "feasible": false,
+        "reasons": [
+          "pharmacy_service_finishes_after_close"
+        ],
+        "objective": 0.1372213121624668
+      },
+      {
+        "poi_id": "P_E",
+        "arrival": 588.5096102137602,
+        "service_finish": 598.5096102137602,
+        "return_time": 606.3198598896669,
+        "distance_from_bank": 11.045361017187261,
+        "added_distance": 1.3913614965209362,
+        "rating": 2.0,
+        "feasible": false,
+        "reasons": [
+          "pharmacy_service_finishes_after_close"
+        ],
+        "objective": 1.3913614965209362
+      }
+    ]
+  },
+  {
+    "case_id": "F24",
+    "policy": {
+      "selection": "highest_rating",
+      "availability_reference": "arrival",
+      "return_by": null
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_C"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_A",
+        "arrival": 585.568368896547,
+        "service_finish": 595.568368896547,
+        "return_time": 620.568368896547,
+        "distance_from_bank": 12.529964086141668,
+        "added_distance": 24.49155927573637,
+        "rating": 4.8,
+        "feasible": true,
+        "reasons": [],
+        "objective": -4.8
+      },
+      {
+        "poi_id": "P_B",
+        "arrival": 583.4787113193158,
+        "service_finish": 593.4787113193158,
+        "return_time": 597.0842625947798,
+        "distance_from_bank": 10.44030650891055,
+        "added_distance": 1.007452973969242,
+        "rating": 3.4,
+        "feasible": false,
+        "reasons": [
+          "pharmacy_service_finishes_after_close"
+        ],
+        "objective": -3.4
+      },
+      {
+        "poi_id": "P_C",
+        "arrival": 584.4401590613967,
+        "service_finish": 594.4401590613967,
+        "return_time": 617.2436675633794,
+        "distance_from_bank": 11.40175425099138,
+        "added_distance": 21.16685794256884,
+        "rating": 4.9,
+        "feasible": true,
+        "reasons": [],
+        "objective": -4.9
+      },
+      {
+        "poi_id": "P_D",
+        "arrival": 584.7003086000959,
+        "service_finish": 594.7003086000959,
+        "return_time": 618.7419391604385,
+        "distance_from_bank": 11.661903789690601,
+        "added_distance": 22.66512953962792,
+        "rating": 4.6,
+        "feasible": true,
+        "reasons": [],
+        "objective": -4.6
+      },
+      {
+        "poi_id": "P_E",
+        "arrival": 585.4077216872582,
+        "service_finish": 595.4077216872582,
+        "return_time": 599.5308273128759,
+        "distance_from_bank": 12.36931687685298,
+        "added_distance": 3.454017692065344,
+        "rating": 3.2,
+        "feasible": false,
+        "reasons": [
+          "pharmacy_service_finishes_after_close"
+        ],
+        "objective": -3.2
+      }
+    ]
+  },
+  {
+    "case_id": "F25",
+    "policy": {
+      "selection": "nearest_from_bank",
+      "availability_reference": "departure",
+      "return_by": 620
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_E"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_A",
+        "arrival": 576.251982039229,
+        "service_finish": 586.251982039229,
+        "return_time": 602.063370340071,
+        "distance_from_bank": 6.4031242374328485,
+        "added_distance": 12.365654736478643,
+        "rating": 2.9,
+        "feasible": false,
+        "reasons": [
+          "not_open_at_departure"
+        ],
+        "objective": 6.4031242374328485
+      },
+      {
+        "poi_id": "P_B",
+        "arrival": 582.8872626122014,
+        "service_finish": 592.8872626122014,
+        "return_time": 615.4482909575584,
+        "distance_from_bank": 13.038404810405298,
+        "added_distance": 25.750575353966152,
+        "rating": 2.6,
+        "feasible": false,
+        "reasons": [
+          "pharmacy_service_finishes_after_close"
+        ],
+        "objective": 13.038404810405298
+      },
+      {
+        "poi_id": "P_C",
+        "arrival": 586.8782441677225,
+        "service_finish": 596.8782441677225,
+        "return_time": 619.9650369289529,
+        "distance_from_bank": 17.029386365926403,
+        "added_distance": 30.267321325360694,
+        "rating": 3.2,
+        "feasible": false,
+        "reasons": [
+          "pharmacy_service_finishes_after_close",
+          "not_open_at_departure"
+        ],
+        "objective": 17.029386365926403
+      },
+      {
+        "poi_id": "P_D",
+        "arrival": 590.4643859298844,
+        "service_finish": 600.4643859298844,
+        "return_time": 627.0350464410573,
+        "distance_from_bank": 20.615528128088304,
+        "added_distance": 37.337330837465046,
+        "rating": 2.3,
+        "feasible": false,
+        "reasons": [
+          "pharmacy_service_finishes_after_close",
+          "return_deadline"
+        ],
+        "objective": 20.615528128088304
+      },
+      {
+        "poi_id": "P_E",
+        "arrival": 578.3928615471137,
+        "service_finish": 588.3928615471137,
+        "return_time": 605.4222479130401,
+        "distance_from_bank": 8.54400374531753,
+        "added_distance": 15.724532309447827,
+        "rating": 2.7,
+        "feasible": true,
+        "reasons": [],
+        "objective": 8.54400374531753
+      }
+    ]
+  },
+  {
+    "case_id": "F26",
+    "policy": {
+      "selection": "minimum_added_distance",
+      "availability_reference": "departure",
+      "return_by": 620
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_D"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_A",
+        "arrival": 587.6014705087355,
+        "service_finish": 597.6014705087355,
+        "return_time": 601.7245761343531,
+        "distance_from_bank": 13.601470508735444,
+        "added_distance": 3.7245761343531036,
+        "rating": 3.2,
+        "feasible": false,
+        "reasons": [
+          "pharmacy_service_finishes_after_close",
+          "not_open_at_departure"
+        ],
+        "objective": 3.7245761343531036
+      },
+      {
+        "poi_id": "P_B",
+        "arrival": 582.0622577482985,
+        "service_finish": 592.0622577482985,
+        "return_time": 614.0849732938437,
+        "distance_from_bank": 8.06225774829855,
+        "added_distance": 16.084973293843788,
+        "rating": 2.8,
+        "feasible": false,
+        "reasons": [
+          "pharmacy_service_finishes_after_close",
+          "not_open_at_departure"
+        ],
+        "objective": 16.084973293843788
+      },
+      {
+        "poi_id": "P_C",
+        "arrival": 587.4536240470737,
+        "service_finish": 597.4536240470737,
+        "return_time": 622.5334964550426,
+        "distance_from_bank": 13.45362404707371,
+        "added_distance": 24.533496455042616,
+        "rating": 3.4,
+        "feasible": false,
+        "reasons": [
+          "return_deadline"
+        ],
+        "objective": 24.533496455042616
+      },
+      {
+        "poi_id": "P_D",
+        "arrival": 584.1980390271856,
+        "service_finish": 594.1980390271856,
+        "return_time": 598.6701749821851,
+        "distance_from_bank": 10.198039027185569,
+        "added_distance": 0.6701749821851486,
+        "rating": 4.4,
+        "feasible": true,
+        "reasons": [],
+        "objective": 0.6701749821851486
+      },
+      {
+        "poi_id": "P_E",
+        "arrival": 583.8488578017962,
+        "service_finish": 593.8488578017962,
+        "return_time": 600.251982039229,
+        "distance_from_bank": 9.848857801796104,
+        "added_distance": 2.2519820392289525,
+        "rating": 4.9,
+        "feasible": false,
+        "reasons": [
+          "not_open_at_departure"
+        ],
+        "objective": 2.2519820392289525
+      }
+    ]
+  },
+  {
+    "case_id": "F27",
+    "policy": {
+      "selection": "highest_rating",
+      "availability_reference": "departure",
+      "return_by": 595
+    },
+    "status": "INFEASIBLE",
+    "accepted_poi_ids": [],
+    "candidates": [
+      {
+        "poi_id": "P_A",
+        "arrival": 588.6644307526235,
+        "service_finish": 598.6644307526235,
+        "return_time": 614.7889462492205,
+        "distance_from_bank": 11.40175425099138,
+        "added_distance": 10.263593245956411,
+        "rating": 2.1,
+        "feasible": false,
+        "reasons": [
+          "pharmacy_service_finishes_after_close",
+          "return_deadline"
+        ],
+        "objective": -2.1
+      },
+      {
+        "poi_id": "P_B",
+        "arrival": 584.3337443134976,
+        "service_finish": 594.3337443134976,
+        "return_time": 606.4992693740941,
+        "distance_from_bank": 7.0710678118654755,
+        "added_distance": 1.9739163708298442,
+        "rating": 2.9,
+        "feasible": false,
+        "reasons": [
+          "not_open_at_departure",
+          "return_deadline"
+        ],
+        "objective": -2.9
+      },
+      {
+        "poi_id": "P_C",
+        "arrival": 583.3454390319303,
+        "service_finish": 593.3454390319303,
+        "return_time": 616.6906740917877,
+        "distance_from_bank": 6.082762530298219,
+        "added_distance": 12.165321088523655,
+        "rating": 2.6,
+        "feasible": false,
+        "reasons": [
+          "not_open_at_departure",
+          "return_deadline"
+        ],
+        "objective": -2.6
+      },
+      {
+        "poi_id": "P_D",
+        "arrival": 596.5758844174601,
+        "service_finish": 606.5758844174601,
+        "return_time": 610.6989900430777,
+        "distance_from_bank": 19.313207915827967,
+        "added_distance": 6.17363703981356,
+        "rating": 4.1,
+        "feasible": false,
+        "reasons": [
+          "not_open_at_departure",
+          "return_deadline"
+        ],
+        "objective": -4.1
+      },
+      {
+        "poi_id": "P_E",
+        "arrival": 584.878449607496,
+        "service_finish": 594.878449607496,
+        "return_time": 615.2745276618672,
+        "distance_from_bank": 7.615773105863909,
+        "added_distance": 10.749174658602978,
+        "rating": 4.7,
+        "feasible": false,
+        "reasons": [
+          "return_deadline"
+        ],
+        "objective": -4.7
+      }
+    ]
+  },
+  {
+    "case_id": "F28",
+    "policy": {
+      "selection": "nearest_from_bank",
+      "availability_reference": "departure",
+      "return_by": 595
+    },
+    "status": "INFEASIBLE",
+    "accepted_poi_ids": [],
+    "candidates": [
+      {
+        "poi_id": "P_A",
+        "arrival": 592.414301309402,
+        "service_finish": 602.414301309402,
+        "return_time": 607.7994661165366,
+        "distance_from_bank": 15.297058540778355,
+        "added_distance": 3.56498057928917,
+        "rating": 4.4,
+        "feasible": false,
+        "reasons": [
+          "not_open_at_departure",
+          "return_deadline"
+        ],
+        "objective": 15.297058540778355
+      },
+      {
+        "poi_id": "P_B",
+        "arrival": 583.825446701123,
+        "service_finish": 593.825446701123,
+        "return_time": 605.9084926747176,
+        "distance_from_bank": 6.708203932499369,
+        "added_distance": 1.6740071374702516,
+        "rating": 4.0,
+        "feasible": false,
+        "reasons": [
+          "not_open_at_departure",
+          "return_deadline"
+        ],
+        "objective": 6.708203932499369
+      },
+      {
+        "poi_id": "P_C",
+        "arrival": 593.3960633647234,
+        "service_finish": 603.3960633647234,
+        "return_time": 608.4950828783162,
+        "distance_from_bank": 16.278820596099706,
+        "added_distance": 4.260597341068802,
+        "rating": 3.9,
+        "feasible": false,
+        "reasons": [
+          "pharmacy_service_finishes_after_close",
+          "return_deadline"
+        ],
+        "objective": 16.278820596099706
+      },
+      {
+        "poi_id": "P_D",
+        "arrival": 589.158837347416,
+        "service_finish": 599.158837347416,
+        "return_time": 604.2578568610088,
+        "distance_from_bank": 12.041594578792296,
+        "added_distance": 0.023371323761388396,
+        "rating": 2.5,
+        "feasible": false,
+        "reasons": [
+          "return_deadline"
+        ],
+        "objective": 12.041594578792296
+      },
+      {
+        "poi_id": "P_E",
+        "arrival": 589.3237983843574,
+        "service_finish": 599.3237983843574,
+        "return_time": 624.6220196657044,
+        "distance_from_bank": 12.206555615733702,
+        "added_distance": 20.387534128457048,
+        "rating": 3.0,
+        "feasible": false,
+        "reasons": [
+          "return_deadline"
+        ],
+        "objective": 12.206555615733702
+      }
+    ]
+  },
+  {
+    "case_id": "F29",
+    "policy": {
+      "selection": "minimum_added_distance",
+      "availability_reference": "departure",
+      "return_by": 605
+    },
+    "status": "INFEASIBLE",
+    "accepted_poi_ids": [],
+    "candidates": [
+      {
+        "poi_id": "P_A",
+        "arrival": 585.0947477695132,
+        "service_finish": 595.0947477695132,
+        "return_time": 604.1501329076507,
+        "distance_from_bank": 8.602325267042627,
+        "added_distance": 1.1652879027094016,
+        "rating": 3.3,
+        "feasible": false,
+        "reasons": [
+          "not_open_at_departure"
+        ],
+        "objective": 1.1652879027094016
+      },
+      {
+        "poi_id": "P_B",
+        "arrival": 596.7408792337872,
+        "service_finish": 606.7408792337872,
+        "return_time": 610.9835199209065,
+        "distance_from_bank": 20.248456731316587,
+        "added_distance": 7.998674915965228,
+        "rating": 3.4,
+        "feasible": false,
+        "reasons": [
+          "pharmacy_service_finishes_after_close",
+          "return_deadline"
+        ],
+        "objective": 7.998674915965228
+      },
+      {
+        "poi_id": "P_C",
+        "arrival": 581.4924225024706,
+        "service_finish": 591.4924225024706,
+        "return_time": 612.8699808289026,
+        "distance_from_bank": 5.0,
+        "added_distance": 9.885135823961306,
+        "rating": 4.6,
+        "feasible": false,
+        "reasons": [
+          "not_open_at_departure",
+          "return_deadline"
+        ],
+        "objective": 9.885135823961306
+      },
+      {
+        "poi_id": "P_D",
+        "arrival": 595.17396419474,
+        "service_finish": 605.17396419474,
+        "return_time": 607.4100321722399,
+        "distance_from_bank": 18.681541692269406,
+        "added_distance": 4.425187167298553,
+        "rating": 2.6,
+        "feasible": false,
+        "reasons": [
+          "pharmacy_service_finishes_after_close",
+          "not_open_at_departure",
+          "return_deadline"
+        ],
+        "objective": 4.425187167298553
+      },
+      {
+        "poi_id": "P_E",
+        "arrival": 598.8531022774686,
+        "service_finish": 608.8531022774686,
+        "return_time": 616.0642048283966,
+        "distance_from_bank": 22.360679774997898,
+        "added_distance": 13.079359823455235,
+        "rating": 3.5,
+        "feasible": false,
+        "reasons": [
+          "pharmacy_service_finishes_after_close",
+          "not_open_at_departure",
+          "return_deadline"
+        ],
+        "objective": 13.079359823455235
+      }
+    ]
+  },
+  {
+    "case_id": "F30",
+    "policy": {
+      "selection": "highest_rating",
+      "availability_reference": "departure",
+      "return_by": 620
+    },
+    "status": "OK",
+    "accepted_poi_ids": [
+      "P_B"
+    ],
+    "candidates": [
+      {
+        "poi_id": "P_A",
+        "arrival": 586.5512239006803,
+        "service_finish": 596.5512239006803,
+        "return_time": 620.7173158478694,
+        "distance_from_bank": 9.433981132056603,
+        "added_distance": 16.482830310622056,
+        "rating": 2.0,
+        "feasible": false,
+        "reasons": [
+          "pharmacy_service_finishes_after_close",
+          "not_open_at_departure",
+          "return_deadline"
+        ],
+        "objective": -2.0
+      },
+      {
+        "poi_id": "P_B",
+        "arrival": 582.5024075757582,
+        "service_finish": 592.5024075757582,
+        "return_time": 605.1515182164317,
+        "distance_from_bank": 5.385164807134504,
+        "added_distance": 0.9170326791843308,
+        "rating": 3.1,
+        "feasible": true,
+        "reasons": [],
+        "objective": -3.1
+      },
+      {
+        "poi_id": "P_C",
+        "arrival": 585.1795005169222,
+        "service_finish": 595.1795005169222,
+        "return_time": 610.9908888177641,
+        "distance_from_bank": 8.06225774829855,
+        "added_distance": 6.756403280516757,
+        "rating": 2.9,
+        "feasible": false,
+        "reasons": [
+          "not_open_at_departure"
+        ],
+        "objective": -2.9
+      },
+      {
+        "poi_id": "P_D",
+        "arrival": 586.1172427686237,
+        "service_finish": 596.1172427686237,
+        "return_time": 614.5020190794739,
+        "distance_from_bank": 9.0,
+        "added_distance": 10.267533542226545,
+        "rating": 2.7,
+        "feasible": true,
+        "reasons": [],
+        "objective": -2.7
+      },
+      {
+        "poi_id": "P_E",
+        "arrival": 586.3367872259165,
+        "service_finish": 596.3367872259165,
+        "return_time": 607.1071168401855,
+        "distance_from_bank": 9.219544457292887,
+        "added_distance": 2.8726313029382027,
+        "rating": 3.0,
+        "feasible": false,
+        "reasons": [
+          "pharmacy_service_finishes_after_close",
+          "not_open_at_departure"
+        ],
+        "objective": -3.0
+      }
+    ]
+  }
+]

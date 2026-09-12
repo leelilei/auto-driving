@@ -1,0 +1,43 @@
+{
+  "call_id": "pilot_03_v1::time_sensitive::review_fields",
+  "role": "review_fields",
+  "graph_condition": "time_sensitive",
+  "started_at": "2026-09-09T18:46:15.264537+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. The field-difference report only identifies disagreements; it does not identify the correct answer.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not infer user preference from a route or map.\n\nInstruction:\nPlease stop by the pharmacy and the shopping mall today. Seek a balance between high ratings and efficient travel distance. There is no required sequence between them, so choose whichever order suits you.\n\nCandidate A:\n{\"dependencies\": [], \"pois\": [\"pharmacy\", \"shopping_mall\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nCandidate B:\n{\"dependencies\": [], \"pois\": [\"pharmacy\", \"shopping_mall\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nField differences:\n{\"fields\": []}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"pharmacy\",\"shopping_mall\"],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{\"pois\":\"\\\"stop by the pharmacy and the shopping mall\\\"\",\"time_limit\":\"\\\"today\\\"\",\"dependencies\":\"\\\"There is no required sequence between them\\\"\",\"quality_weight\":\"\\\"Seek a balance between high ratings and efficient travel distance\\\"\"},\"changes\":[]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "pharmacy",
+      "shopping_mall"
+    ],
+    "time_limit": null,
+    "dependencies": [],
+    "quality_weight": 0.5
+  },
+  "evidence": {
+    "pois": "\"stop by the pharmacy and the shopping mall\"",
+    "time_limit": "\"today\"",
+    "dependencies": "\"There is no required sequence between them\"",
+    "quality_weight": "\"Seek a balance between high ratings and efficient travel distance\""
+  },
+  "changes": [],
+  "finished_at": "2026-09-09T18:46:55.215199+00:00",
+  "telemetry": {
+    "call_index": 8,
+    "prompt_sha256": "72736447375bbacf503de26bd16fb0d4299a3e9c8ed2dc5469ca51e1947f3785",
+    "attempts": 1,
+    "latency_seconds": 39.95,
+    "input_chars": 1033,
+    "output_chars": 365,
+    "input_tokens": 231,
+    "output_tokens": 192,
+    "total_tokens": 423,
+    "usage_source": "provider",
+    "success": true
+  }
+}

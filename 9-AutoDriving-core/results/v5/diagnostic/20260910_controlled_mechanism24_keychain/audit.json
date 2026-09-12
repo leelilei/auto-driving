@@ -1,0 +1,8 @@
+{
+  "raw_response_independent_score_checks": 48,
+  "frozen_request_matches": 48,
+  "paired_darc_wins": 5,
+  "paired_darc_losses": 0,
+  "all_48_outputs_valid": true,
+  "note": "All fixture dependency sets have at most one edge, so direct edge-set audit suffices; not new human annotation."
+}

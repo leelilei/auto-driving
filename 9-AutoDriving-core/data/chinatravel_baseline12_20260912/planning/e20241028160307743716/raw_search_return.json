@@ -1,0 +1,259 @@
+{
+  "people_number": 1,
+  "start_city": "北京",
+  "target_city": "上海",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "start_time": "01:55",
+          "end_time": "03:14",
+          "start": "北京首都国际机场",
+          "end": "上海浦东国际机场",
+          "price": 485.15,
+          "cost": 485.15,
+          "tickets": 1,
+          "transports": [],
+          "FlightID": "FL081",
+          "type": "airplane"
+        },
+        {
+          "position": "朵云书院(广富林店)",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "05:56",
+          "end_time": "07:26",
+          "transports": [
+            {
+              "start": "上海浦东国际机场",
+              "end": "浦东国际机场-地铁站",
+              "mode": "walk",
+              "start_time": "03:14",
+              "end_time": "03:29",
+              "cost": 0,
+              "distance": 1.27,
+              "price": 0
+            },
+            {
+              "start": "浦东国际机场-地铁站",
+              "end": "洞泾-地铁站",
+              "mode": "metro",
+              "start_time": "03:29",
+              "end_time": "05:19",
+              "cost": 9,
+              "distance": 55.35,
+              "price": 9,
+              "tickets": 1
+            },
+            {
+              "start": "洞泾-地铁站",
+              "end": "朵云书院(广富林店)",
+              "mode": "walk",
+              "start_time": "05:19",
+              "end_time": "05:56",
+              "cost": 0,
+              "distance": 3.1,
+              "price": 0
+            }
+          ],
+          "tickets": 1
+        },
+        {
+          "position": "魔都360°球幕宇宙探索馆",
+          "type": "attraction",
+          "price": 78,
+          "cost": 78,
+          "start_time": "10:00",
+          "end_time": "11:30",
+          "transports": [
+            {
+              "start": "朵云书院(广富林店)",
+              "end": "洞泾-地铁站",
+              "mode": "walk",
+              "start_time": "07:26",
+              "end_time": "08:03",
+              "cost": 0,
+              "distance": 3.1,
+              "price": 0
+            },
+            {
+              "start": "洞泾-地铁站",
+              "end": "奉浦大道-地铁站",
+              "mode": "metro",
+              "start_time": "08:03",
+              "end_time": "08:55",
+              "cost": 6,
+              "distance": 26.17,
+              "price": 6,
+              "tickets": 1
+            },
+            {
+              "start": "奉浦大道-地铁站",
+              "end": "魔都360°球幕宇宙探索馆",
+              "mode": "walk",
+              "start_time": "08:55",
+              "end_time": "09:14",
+              "cost": 0,
+              "distance": 1.65,
+              "price": 0
+            }
+          ],
+          "tickets": 1
+        },
+        {
+          "position": "AZUL italiano意大利餐厅(大洋千树店)",
+          "type": "lunch",
+          "price": 209,
+          "cost": 209,
+          "start_time": "12:19",
+          "end_time": "13:19",
+          "transports": [
+            {
+              "start": "魔都360°球幕宇宙探索馆",
+              "end": "AZUL italiano意大利餐厅(大洋千树店)",
+              "mode": "taxi",
+              "start_time": "11:30",
+              "end_time": "12:19",
+              "cost": 144.61,
+              "distance": 33.31,
+              "price": 144.61,
+              "cars": 1
+            }
+          ]
+        },
+        {
+          "position": "上海图书馆(东馆)",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "13:50",
+          "end_time": "15:20",
+          "transports": [
+            {
+              "start": "AZUL italiano意大利餐厅(大洋千树店)",
+              "end": "江宁路-地铁站",
+              "mode": "walk",
+              "start_time": "13:19",
+              "end_time": "13:25",
+              "cost": 0,
+              "distance": 0.54,
+              "price": 0
+            },
+            {
+              "start": "江宁路-地铁站",
+              "end": "杨高中路-地铁站",
+              "mode": "metro",
+              "start_time": "13:25",
+              "end_time": "13:45",
+              "cost": 4,
+              "distance": 10.07,
+              "price": 4,
+              "tickets": 1
+            },
+            {
+              "start": "杨高中路-地铁站",
+              "end": "上海图书馆(东馆)",
+              "mode": "walk",
+              "start_time": "13:45",
+              "end_time": "13:50",
+              "cost": 0,
+              "distance": 0.49,
+              "price": 0
+            }
+          ],
+          "tickets": 1
+        },
+        {
+          "position": "米奇大街",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "16:02",
+          "end_time": "17:32",
+          "transports": [
+            {
+              "start": "上海图书馆(东馆)",
+              "end": "杨高中路-地铁站",
+              "mode": "walk",
+              "start_time": "15:20",
+              "end_time": "15:25",
+              "cost": 0,
+              "distance": 0.49,
+              "price": 0
+            },
+            {
+              "start": "杨高中路-地铁站",
+              "end": "迪士尼-地铁站",
+              "mode": "metro",
+              "start_time": "15:25",
+              "end_time": "15:54",
+              "cost": 5,
+              "distance": 14.86,
+              "price": 5,
+              "tickets": 1
+            },
+            {
+              "start": "迪士尼-地铁站",
+              "end": "米奇大街",
+              "mode": "walk",
+              "start_time": "15:54",
+              "end_time": "16:02",
+              "cost": 0,
+              "distance": 0.75,
+              "price": 0
+            }
+          ],
+          "tickets": 1
+        },
+        {
+          "start_time": "21:23",
+          "end_time": "22:42",
+          "start": "上海浦东国际机场",
+          "end": "北京大兴国际机场",
+          "price": 578.59,
+          "cost": 578.59,
+          "tickets": 1,
+          "transports": [
+            {
+              "start": "米奇大街",
+              "end": "迪士尼-地铁站",
+              "mode": "walk",
+              "start_time": "17:32",
+              "end_time": "17:40",
+              "cost": 0,
+              "distance": 0.75,
+              "price": 0
+            },
+            {
+              "start": "迪士尼-地铁站",
+              "end": "浦东国际机场-地铁站",
+              "mode": "metro",
+              "start_time": "17:40",
+              "end_time": "18:06",
+              "cost": 4,
+              "distance": 13.17,
+              "price": 4,
+              "tickets": 1
+            },
+            {
+              "start": "浦东国际机场-地铁站",
+              "end": "上海浦东国际机场",
+              "mode": "walk",
+              "start_time": "18:06",
+              "end_time": "18:21",
+              "cost": 0,
+              "distance": 1.27,
+              "price": 0
+            }
+          ],
+          "FlightID": "FL010",
+          "type": "airplane"
+        }
+      ]
+    }
+  ],
+  "search_time_sec": 1.8914639949798584,
+  "llm_inference_time_sec": 0
+}

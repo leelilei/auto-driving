@@ -1,0 +1,29 @@
+{
+  "call_id": "common_error_3__darc",
+  "role": "darc",
+  "graph_condition": "tradeoff",
+  "started_at": "2026-09-10T02:50:04.225759+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. The decision-contrast report is diagnostic evidence about consequences; it is not a label and must not override the words of the instruction.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Use the report to locate consequential disagreements, then decide each field from the instruction alone.\n\nInstruction:\nToday, make sure to visit the bank, library, and pharmacy. It's important to prioritize places with the best ratings. Also, please go to the bank before heading to the library.\n\nCandidate A:\n{\"dependencies\": [[\"library\", \"bank\"]], \"pois\": [\"bank\", \"library\", \"pharmacy\"], \"quality_weight\": 0.75, \"time_limit\": null}\n\nCandidate B:\n{\"dependencies\": [[\"library\", \"bank\"]], \"pois\": [\"bank\", \"library\", \"pharmacy\"], \"quality_weight\": 0.75, \"time_limit\": null}\n\nDecision-contrast report:\n{\"candidate_A\": {\"dependencies\": [[\"library\", \"bank\"]], \"pois\": [\"bank\", \"library\", \"pharmacy\"], \"quality_weight\": 0.75, \"time_limit\": null}, \"candidate_B\": {\"dependencies\": [[\"library\", \"bank\"]], \"pois\": [\"bank\", \"library\", \"pharmacy\"], \"quality_weight\": 0.75, \"time_limit\": null}, \"candidate_evidence\": {\"A\": {}, \"B\": {}}, \"cross_constraints\": {\"route_A_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_A_under_B\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_B\": {\"reasons\": [], \"task_success\": true}}, \"differing_fields\": [], \"instruction\": \"Today, make sure to visit the bank, library, and pharmacy. It's important to prioritize places with the best ratings. Also, please go to the bank before heading to the library.\", \"limitations\": [\"The report does not identify the user's true intent.\", \"Both candidates may share the same error.\", \"Single-field swaps do not identify higher-order interactions.\"], \"report_version\": \"darc-v5.1-contrast-2\", \"routes\": {\"A\": {\"arrival_minutes\": 677, \"average_quality\": 0.9, \"categories\": [\"library\", \"bank\", \"pharmacy\"], \"coverage_count\": 3, \"distance_km\": 23.273, \"duration_minutes\": 136.5, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"library_2\", \"bank_2\", \"pharmacy_2\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": 0.5799365402145622}, \"B\": {\"arrival_minutes\": 677, \"average_quality\": 0.9, \"categories\": [\"library\", \"bank\", \"pharmacy\"], \"coverage_count\": 3, \"distance_km\": 23.273, \"duration_minutes\": 136.5, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"library_2\", \"bank_2\", \"pharmacy_2\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": 0.5799365402145622}}, \"single_field_swaps\": []}\n"
+  },
+  "status": "TRANSPORT_FAILED",
+  "schema_valid": false,
+  "error_type": "RuntimeError",
+  "error_message": "provider HTTP 401: {\"error\":{\"message\":\"Authentication Fails, Your api key: ****rKTY is invalid\",\"type\":\"authentication_error\",\"param\":null,\"code\":\"invalid_request_error\"}}",
+  "finished_at": "2026-09-10T02:50:04.357898+00:00",
+  "telemetry": {
+    "call_index": 1,
+    "prompt_sha256": "20706b7ffccee96496c84b24493e54fa5b97833bb86b612e467ee079b1863b23",
+    "attempts": 1,
+    "latency_seconds": 0.132,
+    "input_chars": 2878,
+    "output_chars": 0,
+    "input_tokens": 720,
+    "output_tokens": 0,
+    "total_tokens": 720,
+    "usage_source": "character_estimate",
+    "success": false,
+    "error": "RuntimeError"
+  }
+}

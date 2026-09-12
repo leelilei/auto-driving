@@ -1,0 +1,49 @@
+{
+  "call_id": "pilot_08_v0::tradeoff::review_fields",
+  "role": "review_fields",
+  "graph_condition": "tradeoff",
+  "started_at": "2026-09-10T01:55:14.123812+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. The field-difference report only identifies disagreements; it does not identify the correct answer.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not infer user preference from a route or map.\n\nInstruction:\nToday, let's visit the library, the shopping mall, and the supermarket. I would like to keep a good balance between visiting well-rated places and having an efficient route. Make sure to stop by the shopping mall before heading to the supermarket.\n\nCandidate A:\n{\"dependencies\": [[\"shopping_mall\", \"supermarket\"]], \"pois\": [\"library\", \"shopping_mall\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nCandidate B:\n{\"dependencies\": [[\"shopping_mall\", \"supermarket\"]], \"pois\": [\"library\", \"shopping_mall\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nField differences:\n{\"fields\": []}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"library\",\"shopping_mall\",\"supermarket\"],\"time_limit\":null,\"dependencies\":[[\"shopping_mall\",\"supermarket\"]],\"quality_weight\":0.5},\"evidence\":{\"pois\":\"visit the library, the shopping mall, and the supermarket\",\"dependencies\":\"stop by the shopping mall before heading to the supermarket\",\"quality_weight\":\"keep a good balance between visiting well-rated places and having an efficient route\",\"time_limit\":\"Today\"},\"changes\":[]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "library",
+      "shopping_mall",
+      "supermarket"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "shopping_mall",
+        "supermarket"
+      ]
+    ],
+    "quality_weight": 0.5
+  },
+  "evidence": {
+    "pois": "visit the library, the shopping mall, and the supermarket",
+    "dependencies": "stop by the shopping mall before heading to the supermarket",
+    "quality_weight": "keep a good balance between visiting well-rated places and having an efficient route",
+    "time_limit": "Today"
+  },
+  "changes": [],
+  "finished_at": "2026-09-10T01:55:36.882230+00:00",
+  "telemetry": {
+    "call_index": 12,
+    "prompt_sha256": "3fdb10af702aadd20ed1570a1540d30477033e0a257990a2bf1a19ba4f6e4a4b",
+    "attempts": 1,
+    "latency_seconds": 22.758,
+    "input_chars": 1168,
+    "output_chars": 444,
+    "input_tokens": 277,
+    "output_tokens": 161,
+    "total_tokens": 438,
+    "usage_source": "provider",
+    "success": true
+  }
+}

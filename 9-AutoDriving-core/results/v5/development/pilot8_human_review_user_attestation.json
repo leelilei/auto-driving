@@ -1,0 +1,243 @@
+{
+  "protocol_version": "darc-v5.1-human-review-1",
+  "reviewer": "research_lead_user",
+  "reviewed_at": "2026-09-09T15:28:13.246473+00:00",
+  "source": "/Users/mac/Documents/6-Research/9-AutoDriving/9-AutoDriving-core/data/pilot/pilot_80_utterances.json",
+  "attestation_basis": "User explicitly stated 人工审核通过 in the project session on 2026-09-09",
+  "scope_groups": [
+    "pilot_01",
+    "pilot_02",
+    "pilot_03",
+    "pilot_04",
+    "pilot_05",
+    "pilot_06",
+    "pilot_07",
+    "pilot_08"
+  ],
+  "records": [
+    {
+      "group_id": "pilot_01",
+      "utterance_id": "pilot_01_v0",
+      "equivalence": "yes",
+      "label_support": "yes",
+      "note": "covered by explicit all-pass attestation"
+    },
+    {
+      "group_id": "pilot_01",
+      "utterance_id": "pilot_01_v1",
+      "equivalence": "yes",
+      "label_support": "yes",
+      "note": "covered by explicit all-pass attestation"
+    },
+    {
+      "group_id": "pilot_01",
+      "utterance_id": "pilot_01_v2",
+      "equivalence": "yes",
+      "label_support": "yes",
+      "note": "covered by explicit all-pass attestation"
+    },
+    {
+      "group_id": "pilot_01",
+      "utterance_id": "pilot_01_v3",
+      "equivalence": "yes",
+      "label_support": "yes",
+      "note": "covered by explicit all-pass attestation"
+    },
+    {
+      "group_id": "pilot_02",
+      "utterance_id": "pilot_02_v0",
+      "equivalence": "yes",
+      "label_support": "yes",
+      "note": "covered by explicit all-pass attestation"
+    },
+    {
+      "group_id": "pilot_02",
+      "utterance_id": "pilot_02_v1",
+      "equivalence": "yes",
+      "label_support": "yes",
+      "note": "covered by explicit all-pass attestation"
+    },
+    {
+      "group_id": "pilot_02",
+      "utterance_id": "pilot_02_v2",
+      "equivalence": "yes",
+      "label_support": "yes",
+      "note": "covered by explicit all-pass attestation"
+    },
+    {
+      "group_id": "pilot_02",
+      "utterance_id": "pilot_02_v3",
+      "equivalence": "yes",
+      "label_support": "yes",
+      "note": "covered by explicit all-pass attestation"
+    },
+    {
+      "group_id": "pilot_03",
+      "utterance_id": "pilot_03_v0",
+      "equivalence": "yes",
+      "label_support": "yes",
+      "note": "covered by explicit all-pass attestation"
+    },
+    {
+      "group_id": "pilot_03",
+      "utterance_id": "pilot_03_v1",
+      "equivalence": "yes",
+      "label_support": "yes",
+      "note": "covered by explicit all-pass attestation"
+    },
+    {
+      "group_id": "pilot_03",
+      "utterance_id": "pilot_03_v2",
+      "equivalence": "yes",
+      "label_support": "yes",
+      "note": "covered by explicit all-pass attestation"
+    },
+    {
+      "group_id": "pilot_03",
+      "utterance_id": "pilot_03_v3",
+      "equivalence": "yes",
+      "label_support": "yes",
+      "note": "covered by explicit all-pass attestation"
+    },
+    {
+      "group_id": "pilot_04",
+      "utterance_id": "pilot_04_v0",
+      "equivalence": "yes",
+      "label_support": "yes",
+      "note": "covered by explicit all-pass attestation"
+    },
+    {
+      "group_id": "pilot_04",
+      "utterance_id": "pilot_04_v1",
+      "equivalence": "yes",
+      "label_support": "yes",
+      "note": "covered by explicit all-pass attestation"
+    },
+    {
+      "group_id": "pilot_04",
+      "utterance_id": "pilot_04_v2",
+      "equivalence": "yes",
+      "label_support": "yes",
+      "note": "covered by explicit all-pass attestation"
+    },
+    {
+      "group_id": "pilot_04",
+      "utterance_id": "pilot_04_v3",
+      "equivalence": "yes",
+      "label_support": "yes",
+      "note": "covered by explicit all-pass attestation"
+    },
+    {
+      "group_id": "pilot_05",
+      "utterance_id": "pilot_05_v0",
+      "equivalence": "yes",
+      "label_support": "yes",
+      "note": "covered by explicit all-pass attestation"
+    },
+    {
+      "group_id": "pilot_05",
+      "utterance_id": "pilot_05_v1",
+      "equivalence": "yes",
+      "label_support": "yes",
+      "note": "covered by explicit all-pass attestation"
+    },
+    {
+      "group_id": "pilot_05",
+      "utterance_id": "pilot_05_v2",
+      "equivalence": "yes",
+      "label_support": "yes",
+      "note": "covered by explicit all-pass attestation"
+    },
+    {
+      "group_id": "pilot_05",
+      "utterance_id": "pilot_05_v3",
+      "equivalence": "yes",
+      "label_support": "yes",
+      "note": "covered by explicit all-pass attestation"
+    },
+    {
+      "group_id": "pilot_06",
+      "utterance_id": "pilot_06_v0",
+      "equivalence": "yes",
+      "label_support": "yes",
+      "note": "covered by explicit all-pass attestation"
+    },
+    {
+      "group_id": "pilot_06",
+      "utterance_id": "pilot_06_v1",
+      "equivalence": "yes",
+      "label_support": "yes",
+      "note": "covered by explicit all-pass attestation"
+    },
+    {
+      "group_id": "pilot_06",
+      "utterance_id": "pilot_06_v2",
+      "equivalence": "yes",
+      "label_support": "yes",
+      "note": "covered by explicit all-pass attestation"
+    },
+    {
+      "group_id": "pilot_06",
+      "utterance_id": "pilot_06_v3",
+      "equivalence": "yes",
+      "label_support": "yes",
+      "note": "covered by explicit all-pass attestation"
+    },
+    {
+      "group_id": "pilot_07",
+      "utterance_id": "pilot_07_v0",
+      "equivalence": "yes",
+      "label_support": "yes",
+      "note": "covered by explicit all-pass attestation"
+    },
+    {
+      "group_id": "pilot_07",
+      "utterance_id": "pilot_07_v1",
+      "equivalence": "yes",
+      "label_support": "yes",
+      "note": "covered by explicit all-pass attestation"
+    },
+    {
+      "group_id": "pilot_07",
+      "utterance_id": "pilot_07_v2",
+      "equivalence": "yes",
+      "label_support": "yes",
+      "note": "covered by explicit all-pass attestation"
+    },
+    {
+      "group_id": "pilot_07",
+      "utterance_id": "pilot_07_v3",
+      "equivalence": "yes",
+      "label_support": "yes",
+      "note": "covered by explicit all-pass attestation"
+    },
+    {
+      "group_id": "pilot_08",
+      "utterance_id": "pilot_08_v0",
+      "equivalence": "yes",
+      "label_support": "yes",
+      "note": "covered by explicit all-pass attestation"
+    },
+    {
+      "group_id": "pilot_08",
+      "utterance_id": "pilot_08_v1",
+      "equivalence": "yes",
+      "label_support": "yes",
+      "note": "covered by explicit all-pass attestation"
+    },
+    {
+      "group_id": "pilot_08",
+      "utterance_id": "pilot_08_v2",
+      "equivalence": "yes",
+      "label_support": "yes",
+      "note": "covered by explicit all-pass attestation"
+    },
+    {
+      "group_id": "pilot_08",
+      "utterance_id": "pilot_08_v3",
+      "equivalence": "yes",
+      "label_support": "yes",
+      "note": "covered by explicit all-pass attestation"
+    }
+  ]
+}

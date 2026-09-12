@@ -1,0 +1,53 @@
+{
+  "call_id": "stress_scope_contrast_v0::B",
+  "role": "B",
+  "graph_condition": null,
+  "started_at": "2026-09-10T02:32:22.410665+00:00",
+  "request": {
+    "system": "Read the user's route-planning instruction field by field before producing the final JSON.\n\nCheck: requested POI categories, return deadline, explicit visit order, and the direction of the quality-versus-distance preference. Each conclusion must be supported by the instruction itself.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nDo not infer a preference from any route or map. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Visit the pharmacy, bank, library, and shopping mall. Go to the pharmacy before the bank, not the library before the bank. Keep ratings and travel efficiency balanced."
+  },
+  "raw_response": "{\n  \"pois\": [\"pharmacy\", \"bank\", \"library\", \"shopping mall\"],\n  \"time_limit\": null,\n  \"dependencies\": [[\"pharmacy\", \"bank\"], [\"bank\", \"library\"]],\n  \"quality_weight\": 0.5,\n  \"evidence\": {\n    \"pois\": \"pharmacy, bank, library, and shopping mall\",\n    \"dependencies\": \"Go to the pharmacy before the bank, not the library before the bank\",\n    \"quality_weight\": \"Keep ratings and travel efficiency balanced\"\n  }\n}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library",
+      "pharmacy",
+      "shopping_mall"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "bank",
+        "library"
+      ],
+      [
+        "pharmacy",
+        "bank"
+      ]
+    ],
+    "quality_weight": 0.5
+  },
+  "evidence": {
+    "pois": "pharmacy, bank, library, and shopping mall",
+    "dependencies": "Go to the pharmacy before the bank, not the library before the bank",
+    "quality_weight": "Keep ratings and travel efficiency balanced"
+  },
+  "changes": [],
+  "finished_at": "2026-09-10T02:32:27.304856+00:00",
+  "telemetry": {
+    "call_index": 2,
+    "prompt_sha256": "f832fae9d65af68cb4bda1cb1f8e5e8301216825438972219b364473d120dc56",
+    "attempts": 1,
+    "latency_seconds": 4.894,
+    "input_chars": 1041,
+    "output_chars": 410,
+    "input_tokens": 264,
+    "output_tokens": 1079,
+    "total_tokens": 1343,
+    "usage_source": "provider",
+    "success": true
+  }
+}

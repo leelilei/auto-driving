@@ -1,0 +1,66 @@
+{
+  "call_id": "pilot_02_v3::tradeoff::review_plain",
+  "role": "review_plain",
+  "graph_condition": "tradeoff",
+  "started_at": "2026-09-12T05:16:59.739287+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. Candidate agreement is not proof of correctness.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not use route efficiency to infer what the user wants.\n\nInstruction:\nMake sure you stop at the supermarket and pharmacy today, starting off at the supermarket then hitting the pharmacy. Try to strike a good balance between decent reviews and not driving too far out of the way.\n\nCandidate A:\n{\"dependencies\": [[\"supermarket\", \"pharmacy\"]], \"pois\": [\"pharmacy\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nCandidate B:\n{\"dependencies\": [[\"supermarket\", \"pharmacy\"]], \"pois\": [\"pharmacy\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"supermarket\",\"pharmacy\"],\"time_limit\":null,\"dependencies\":[[\"supermarket\",\"pharmacy\"]],\"quality_weight\":0.5},\"evidence\":{\"pois\":[\"supermarket and pharmacy\",\"starting off at the supermarket then hitting the pharmacy\"],\"dependencies\":[\"starting off at the supermarket then hitting the pharmacy\"],\"quality_weight\":[\"good balance between decent reviews and not driving too far out of the way\"]},\"changes\":[{\"field\":\"pois\",\"from\":[\"pharmacy\",\"supermarket\"],\"to\":[\"supermarket\",\"pharmacy\"]}]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "pharmacy",
+      "supermarket"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "supermarket",
+        "pharmacy"
+      ]
+    ],
+    "quality_weight": 0.5
+  },
+  "evidence": {
+    "pois": [
+      "supermarket and pharmacy",
+      "starting off at the supermarket then hitting the pharmacy"
+    ],
+    "dependencies": [
+      "starting off at the supermarket then hitting the pharmacy"
+    ],
+    "quality_weight": [
+      "good balance between decent reviews and not driving too far out of the way"
+    ]
+  },
+  "changes": [
+    {
+      "field": "pois",
+      "from": [
+        "pharmacy",
+        "supermarket"
+      ],
+      "to": [
+        "supermarket",
+        "pharmacy"
+      ]
+    }
+  ],
+  "finished_at": "2026-09-12T05:17:25.058500+00:00",
+  "telemetry": {
+    "call_index": 4,
+    "prompt_sha256": "aba2ae4d175065fbc938e962254ce30160216953fee3f2fd7e5532d55353cc3c",
+    "attempts": 1,
+    "latency_seconds": 25.319,
+    "input_chars": 1009,
+    "output_chars": 506,
+    "input_tokens": 287,
+    "output_tokens": 5055,
+    "total_tokens": 5342,
+    "usage_source": "provider",
+    "success": true
+  }
+}

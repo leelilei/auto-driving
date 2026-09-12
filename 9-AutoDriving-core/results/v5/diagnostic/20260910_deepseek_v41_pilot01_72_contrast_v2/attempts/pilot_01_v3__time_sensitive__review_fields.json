@@ -1,0 +1,56 @@
+{
+  "call_id": "pilot_01_v3::time_sensitive::review_fields",
+  "role": "review_fields",
+  "graph_condition": "time_sensitive",
+  "started_at": "2026-09-09T16:22:20.679283+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. The field-difference report only identifies disagreements; it does not identify the correct answer.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not infer user preference from a route or map.\n\nInstruction:\nHey, need you to hit the shopping mall and supermarket today and get back by 22:00 sharp. Keep the driving distance minimal to save time, and definitely swing by the shopping mall first before going to the supermarket.\n\nCandidate A:\n{\"dependencies\": [[\"shopping_mall\", \"supermarket\"]], \"pois\": [\"shopping_mall\", \"supermarket\"], \"quality_weight\": 0.0, \"time_limit\": 1320}\n\nCandidate B:\n{\"dependencies\": [[\"shopping_mall\", \"supermarket\"]], \"pois\": [\"shopping_mall\", \"supermarket\"], \"quality_weight\": 0.0, \"time_limit\": 1320}\n\nField differences:\n{\"fields\": []}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"shopping_mall\",\"supermarket\"],\"time_limit\":1320,\"dependencies\":[[\"shopping_mall\",\"supermarket\"]],\"quality_weight\":0.0},\"evidence\":{\"pois\":[\"hit the shopping mall and supermarket\"],\"time_limit\":[\"get back by 22:00 sharp\"],\"dependencies\":[\"swing by the shopping mall first before going to the supermarket\"],\"quality_weight\":[\"Keep the driving distance minimal to save time\"]},\"changes\":[]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "shopping_mall",
+      "supermarket"
+    ],
+    "time_limit": 1320,
+    "dependencies": [
+      [
+        "shopping_mall",
+        "supermarket"
+      ]
+    ],
+    "quality_weight": 0.0
+  },
+  "evidence": {
+    "pois": [
+      "hit the shopping mall and supermarket"
+    ],
+    "time_limit": [
+      "get back by 22:00 sharp"
+    ],
+    "dependencies": [
+      "swing by the shopping mall first before going to the supermarket"
+    ],
+    "quality_weight": [
+      "Keep the driving distance minimal to save time"
+    ]
+  },
+  "changes": [],
+  "finished_at": "2026-09-09T16:22:26.644911+00:00",
+  "telemetry": {
+    "call_index": 70,
+    "prompt_sha256": "58eb1e6151324a3ad58715838b143208d55f6e08c95a0900cb96045120223e2c",
+    "attempts": 1,
+    "latency_seconds": 5.965,
+    "input_chars": 1117,
+    "output_chars": 407,
+    "input_tokens": 320,
+    "output_tokens": 1790,
+    "total_tokens": 2110,
+    "usage_source": "provider",
+    "success": true
+  }
+}

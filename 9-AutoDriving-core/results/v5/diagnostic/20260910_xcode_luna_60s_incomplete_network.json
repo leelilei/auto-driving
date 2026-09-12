@@ -1,0 +1,8 @@
+{
+  "status": "INCOMPLETE_NETWORK",
+  "analysis_allowed": false,
+  "provider": "xcode",
+  "model": "gpt-5.6-luna",
+  "timeout_seconds": 60,
+  "reason": "Initial curl runs showed TLS/HTTP2 errors and Luna responses at the 60-second timeout boundary. These partial responses are excluded; the replacement run uses HTTP/1.1 and a fresh 120-second config."
+}

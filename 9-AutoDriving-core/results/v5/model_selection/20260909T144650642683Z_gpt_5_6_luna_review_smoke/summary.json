@@ -1,0 +1,12 @@
+{
+  "scope": "hand-authored decision-report development check; not a paper result",
+  "model": "gpt-5.6-luna",
+  "planned_calls": 2,
+  "attempted_calls": 2,
+  "collection_complete": true,
+  "schema_valid": 2,
+  "hard_exact": 2,
+  "direction_exact": 1,
+  "provider_total_tokens": 2368,
+  "mean_latency_seconds": 14.5115
+}

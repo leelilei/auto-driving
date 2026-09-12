@@ -1,0 +1,20 @@
+{
+  "status": "BLOCKED_ON_ANNOTATION",
+  "scope": "qualification count only; no new test split selected",
+  "candidate_split_groups_exposed": 200,
+  "direct_source_indices_exposed": 200,
+  "semantic_clusters_exposed": 200,
+  "remaining_candidate_clusters": 409,
+  "remaining_candidate_records": 648,
+  "pilot_annotation_counts": {
+    "pending": 80
+  },
+  "pilot_groups": 20,
+  "test_selection_performed": false,
+  "warning": "The historical 200-group candidate split is development-exposed and cannot be reused as an untouched v5 test.",
+  "inputs": {
+    "splits_sha256": "551a68f2c3388266edf128abc8549cf6a12d2bc8221a6fd99a61281b0050eee6",
+    "clusters_sha256": "13872438d7b9216474f63b23f910f0077750b0abe78f5b71cc684e635a0d663e",
+    "pilot_sha256": "28e4d39f993769eee929815eaae87f4231a568d2bef66b25a5b423679693610a"
+  }
+}

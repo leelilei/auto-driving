@@ -1,0 +1,18 @@
+Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. The field-difference report only identifies disagreements; it does not identify the correct answer.
+
+Return one JSON object only:
+{"intent":{"pois":[],"time_limit":null,"dependencies":[],"quality_weight":0.5},"evidence":{},"changes":[]}
+
+Evidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not infer user preference from a route or map.
+
+Instruction:
+{{instruction}}
+
+Candidate A:
+{{candidate_a}}
+
+Candidate B:
+{{candidate_b}}
+
+Field differences:
+{{field_differences}}

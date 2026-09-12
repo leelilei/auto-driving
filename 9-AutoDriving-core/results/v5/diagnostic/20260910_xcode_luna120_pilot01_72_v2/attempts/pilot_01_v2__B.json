@@ -1,0 +1,48 @@
+{
+  "call_id": "pilot_01_v2::B",
+  "role": "B",
+  "graph_condition": null,
+  "started_at": "2026-09-09T18:28:21.442178+00:00",
+  "request": {
+    "system": "Read the user's route-planning instruction field by field before producing the final JSON.\n\nCheck: requested POI categories, return deadline, explicit visit order, and the direction of the quality-versus-distance preference. Each conclusion must be supported by the instruction itself.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nDo not infer a preference from any route or map. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Ensure your return by 22:00 today after visiting the shopping mall and the supermarket. Because efficiency is paramount, choose the most direct path possible, stopping at the shopping mall before you head to the supermarket."
+  },
+  "raw_response": "{\"pois\":[\"shopping mall\",\"supermarket\"],\"time_limit\":1320,\"dependencies\":[[\"shopping mall\",\"supermarket\"]],\"quality_weight\":0,\"evidence\":{\"pois\":\"visiting the shopping mall and the supermarket\",\"time_limit\":\"by 22:00 today\",\"dependencies\":\"stopping at the shopping mall before you head to the supermarket\",\"quality_weight\":\"Because efficiency is paramount, choose the most direct path possible\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "shopping_mall",
+      "supermarket"
+    ],
+    "time_limit": 1320,
+    "dependencies": [
+      [
+        "shopping_mall",
+        "supermarket"
+      ]
+    ],
+    "quality_weight": 0.0
+  },
+  "evidence": {
+    "pois": "visiting the shopping mall and the supermarket",
+    "time_limit": "by 22:00 today",
+    "dependencies": "stopping at the shopping mall before you head to the supermarket",
+    "quality_weight": "Because efficiency is paramount, choose the most direct path possible"
+  },
+  "changes": [],
+  "finished_at": "2026-09-09T18:30:14.449578+00:00",
+  "telemetry": {
+    "call_index": 4,
+    "prompt_sha256": "3741eebaa72d208247852d915d06a58e7c943fefedcba7199be20e4693e88b15",
+    "attempts": 1,
+    "latency_seconds": 113.007,
+    "input_chars": 1098,
+    "output_chars": 396,
+    "input_tokens": 228,
+    "output_tokens": 254,
+    "total_tokens": 482,
+    "usage_source": "provider",
+    "success": true
+  }
+}

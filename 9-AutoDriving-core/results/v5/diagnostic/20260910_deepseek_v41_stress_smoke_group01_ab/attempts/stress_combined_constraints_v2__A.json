@@ -1,0 +1,54 @@
+{
+  "call_id": "stress_combined_constraints_v2::A",
+  "role": "A",
+  "graph_condition": null,
+  "started_at": "2026-09-10T02:28:54.159723+00:00",
+  "request": {
+    "system": "You extract route-planning intent from the user's instruction.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nUse only the instruction. Do not invent constraints. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Cover the bank, shopping mall, pharmacy, and library, returning no later than 17:30. Finish the library before the mall and the bank before the pharmacy, without unnecessary travel."
+  },
+  "raw_response": "{\"pois\":[\"bank\",\"shopping mall\",\"pharmacy\",\"library\"],\"time_limit\":1050,\"dependencies\":[[\"library\",\"shopping mall\"],[\"bank\",\"pharmacy\"]],\"quality_weight\":0.0,\"evidence\":{\"pois\":\"bank, shopping mall, pharmacy, and library\",\"time_limit\":\"no later than 17:30\",\"dependencies\":\"Finish the library before the mall and the bank before the pharmacy\",\"quality_weight\":\"without unnecessary travel\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library",
+      "pharmacy",
+      "shopping_mall"
+    ],
+    "time_limit": 1050,
+    "dependencies": [
+      [
+        "bank",
+        "pharmacy"
+      ],
+      [
+        "library",
+        "shopping_mall"
+      ]
+    ],
+    "quality_weight": 0.0
+  },
+  "evidence": {
+    "pois": "bank, shopping mall, pharmacy, and library",
+    "time_limit": "no later than 17:30",
+    "dependencies": "Finish the library before the mall and the bank before the pharmacy",
+    "quality_weight": "without unnecessary travel"
+  },
+  "changes": [],
+  "finished_at": "2026-09-10T02:28:57.988892+00:00",
+  "telemetry": {
+    "call_index": 5,
+    "prompt_sha256": "9b56ccaa5d63f246ea9ef61d0853d61d21aefec211488312ef9da02f27aec070",
+    "attempts": 1,
+    "latency_seconds": 3.829,
+    "input_chars": 836,
+    "output_chars": 389,
+    "input_tokens": 227,
+    "output_tokens": 783,
+    "total_tokens": 1010,
+    "usage_source": "provider",
+    "success": true
+  }
+}

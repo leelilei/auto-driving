@@ -1,0 +1,19 @@
+{
+  "protocol_version": "darc-v5.1-network-interruption-1",
+  "status": "INCOMPLETE_NETWORK",
+  "model": "gpt-5.6-terra",
+  "planned_logical_calls": 72,
+  "completed_logical_calls": 15,
+  "physical_attempts_recorded": 28,
+  "transport_failures_recorded": 13,
+  "schema_failures_recorded": 0,
+  "provider_usage": {
+    "input_tokens": 7028,
+    "output_tokens": 3502,
+    "total_tokens": 10530
+  },
+  "transports_observed": ["urllib", "curl"],
+  "reason": "Repeated TLS EOF / SSL connection failures made continued collection unsuitable for expansion.",
+  "decision": "Stopped before 72 logical calls; preserve all attempts and resume only after provider stability is re-established.",
+  "paper_result_eligible": false
+}

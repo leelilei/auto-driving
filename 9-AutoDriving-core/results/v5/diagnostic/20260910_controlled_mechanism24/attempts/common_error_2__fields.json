@@ -1,0 +1,29 @@
+{
+  "call_id": "common_error_2__fields",
+  "role": "fields",
+  "graph_condition": "tradeoff",
+  "started_at": "2026-09-10T02:50:04.206274+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. The field-difference report only identifies disagreements; it does not identify the correct answer.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not infer user preference from a route or map.\n\nInstruction:\nMake sure to visit the supermarket and the pharmacy today. Balance your stops to maintain both reasonable ratings and efficiency along the route. Start your trip at the supermarket before heading to the pharmacy.\n\nCandidate A:\n{\"dependencies\": [[\"pharmacy\", \"supermarket\"]], \"pois\": [\"pharmacy\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nCandidate B:\n{\"dependencies\": [[\"pharmacy\", \"supermarket\"]], \"pois\": [\"pharmacy\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nField differences:\n{\"fields\": []}\n"
+  },
+  "status": "TRANSPORT_FAILED",
+  "schema_valid": false,
+  "error_type": "RuntimeError",
+  "error_message": "provider HTTP 401: {\"error\":{\"message\":\"Authentication Fails, Your api key: ****rKTY is invalid\",\"type\":\"authentication_error\",\"param\":null,\"code\":\"invalid_request_error\"}}",
+  "finished_at": "2026-09-10T02:50:04.358171+00:00",
+  "telemetry": {
+    "call_index": 1,
+    "prompt_sha256": "ecdb5852213d87b4a341ce5737232e5c584296494b2d9d3d1cda7cb22032365a",
+    "attempts": 1,
+    "latency_seconds": 0.152,
+    "input_chars": 1091,
+    "output_chars": 0,
+    "input_tokens": 273,
+    "output_tokens": 0,
+    "total_tokens": 273,
+    "usage_source": "character_estimate",
+    "success": false,
+    "error": "RuntimeError"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "status": "REPAIR_V1_PLANNING_COMPLETE",
+  "model_api_calls": 0,
+  "search_seconds_per_case": 30,
+  "search_width": 10,
+  "adapter": "room_type numeric-string coercion only",
+  "cases": [
+    {
+      "uid": "e20241028160248698752",
+      "status": "search_success",
+      "seconds": 2.027425832930021,
+      "tool_calls": 3396,
+      "tool_errors": 0,
+      "raw_schema_valid": true,
+      "adapted_schema_valid": true,
+      "schema_changes": 0,
+      "prediction_accepted": true,
+      "predicted_all_pass_rate": 100.0,
+      "official_all_pass_rate": 100.0
+    },
+    {
+      "uid": "e20241028160845920703",
+      "status": "search_success",
+      "seconds": 6.8373728330479935,
+      "tool_calls": 8875,
+      "tool_errors": 0,
+      "raw_schema_valid": false,
+      "adapted_schema_valid": false,
+      "schema_changes": 0,
+      "prediction_accepted": false,
+      "predicted_all_pass_rate": 0.0,
+      "official_all_pass_rate": 0.0
+    },
+    {
+      "uid": "e20241028160848776495",
+      "status": "search_failed",
+      "seconds": 30.680039540980943,
+      "tool_calls": 62143,
+      "tool_errors": 0,
+      "raw_schema_valid": false,
+      "adapted_schema_valid": false,
+      "schema_changes": 0,
+      "prediction_accepted": false,
+      "predicted_all_pass_rate": 0.0,
+      "official_all_pass_rate": 0.0
+    },
+    {
+      "uid": "e20241028160913165493",
+      "status": "search_success",
+      "seconds": 8.13083037501201,
+      "tool_calls": 12183,
+      "tool_errors": 0,
+      "raw_schema_valid": false,
+      "adapted_schema_valid": false,
+      "schema_changes": 0,
+      "prediction_accepted": false,
+      "predicted_all_pass_rate": 0.0,
+      "official_all_pass_rate": 0.0
+    },
+    {
+      "uid": "e20241028160902013119",
+      "status": "search_success",
+      "seconds": 12.901921625016257,
+      "tool_calls": 13516,
+      "tool_errors": 0,
+      "raw_schema_valid": false,
+      "adapted_schema_valid": false,
+      "schema_changes": 0,
+      "prediction_accepted": false,
+      "predicted_all_pass_rate": 0.0,
+      "official_all_pass_rate": 0.0
+    },
+    {
+      "uid": "h20241029143455115600",
+      "status": "search_success",
+      "seconds": 4.020101416041143,
+      "tool_calls": 12818,
+      "tool_errors": 0,
+      "raw_schema_valid": false,
+      "adapted_schema_valid": false,
+      "schema_changes": 0,
+      "prediction_accepted": false,
+      "predicted_all_pass_rate": 0.0,
+      "official_all_pass_rate": 0.0
+    }
+  ]
+}

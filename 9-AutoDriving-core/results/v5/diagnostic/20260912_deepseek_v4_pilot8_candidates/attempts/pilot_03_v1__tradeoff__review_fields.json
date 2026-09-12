@@ -1,0 +1,48 @@
+{
+  "call_id": "pilot_03_v1::tradeoff::review_fields",
+  "role": "review_fields",
+  "graph_condition": "tradeoff",
+  "started_at": "2026-09-12T05:35:07.408755+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. The field-difference report only identifies disagreements; it does not identify the correct answer.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not infer user preference from a route or map.\n\nInstruction:\nPlease stop by the pharmacy and the shopping mall today. Seek a balance between high ratings and efficient travel distance. There is no required sequence between them, so choose whichever order suits you.\n\nCandidate A:\n{\"dependencies\": [], \"pois\": [\"pharmacy\", \"shopping_mall\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nCandidate B:\n{\"dependencies\": [], \"pois\": [\"pharmacy\", \"shopping_mall\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nField differences:\n{\"fields\": []}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"pharmacy\",\"shopping_mall\"],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{\"pois\":[\"pharmacy and the shopping mall\"],\"dependencies\":[\"no required sequence between them\"],\"quality_weight\":[\"balance between high ratings and efficient travel distance\"]},\"changes\":[]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "pharmacy",
+      "shopping_mall"
+    ],
+    "time_limit": null,
+    "dependencies": [],
+    "quality_weight": 0.5
+  },
+  "evidence": {
+    "pois": [
+      "pharmacy and the shopping mall"
+    ],
+    "dependencies": [
+      "no required sequence between them"
+    ],
+    "quality_weight": [
+      "balance between high ratings and efficient travel distance"
+    ]
+  },
+  "changes": [],
+  "finished_at": "2026-09-12T05:35:24.409550+00:00",
+  "telemetry": {
+    "call_index": 9,
+    "prompt_sha256": "72736447375bbacf503de26bd16fb0d4299a3e9c8ed2dc5469ca51e1947f3785",
+    "attempts": 1,
+    "latency_seconds": 17.001,
+    "input_chars": 1033,
+    "output_chars": 306,
+    "input_tokens": 286,
+    "output_tokens": 3050,
+    "total_tokens": 3336,
+    "usage_source": "provider",
+    "success": true
+  }
+}

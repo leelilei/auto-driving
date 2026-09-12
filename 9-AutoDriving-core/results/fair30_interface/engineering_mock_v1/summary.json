@@ -1,0 +1,3313 @@
+{
+  "scope": "MOCK_ENGINEERING_ONLY",
+  "complete": true,
+  "logical_units": 120,
+  "physical_calls": 120,
+  "transport_retries": 0,
+  "independent_decisions": 120,
+  "arms": {
+    "original_language": {
+      "n": 30,
+      "schema_failed": 0,
+      "object_success": 28,
+      "raw_task_success": 28,
+      "rule_correct": 23,
+      "raw_rule_correct": 23,
+      "corrected": 0,
+      "damaged": 0,
+      "cost": {
+        "physical_calls": 30,
+        "usage_unknown": 30,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "token_components_sum": 0
+      }
+    },
+    "original_evidence": {
+      "n": 30,
+      "schema_failed": 0,
+      "object_success": 28,
+      "raw_task_success": 28,
+      "rule_correct": 23,
+      "raw_rule_correct": 23,
+      "corrected": 0,
+      "damaged": 0,
+      "cost": {
+        "physical_calls": 30,
+        "usage_unknown": 30,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "token_components_sum": 0
+      }
+    },
+    "clarified_language": {
+      "n": 30,
+      "schema_failed": 0,
+      "object_success": 28,
+      "raw_task_success": 28,
+      "rule_correct": 23,
+      "raw_rule_correct": 23,
+      "corrected": 0,
+      "damaged": 0,
+      "cost": {
+        "physical_calls": 30,
+        "usage_unknown": 30,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "token_components_sum": 0
+      }
+    },
+    "clarified_evidence": {
+      "n": 30,
+      "schema_failed": 0,
+      "object_success": 28,
+      "raw_task_success": 28,
+      "rule_correct": 23,
+      "raw_rule_correct": 23,
+      "corrected": 0,
+      "damaged": 0,
+      "cost": {
+        "physical_calls": 30,
+        "usage_unknown": 30,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "token_components_sum": 0
+      }
+    }
+  },
+  "primary_schema_reduction_counts": {
+    "language": 0,
+    "evidence": 0
+  },
+  "difference_in_reductions": 0,
+  "rows": [
+    {
+      "call_id": "F01__original__language",
+      "case_id": "F01",
+      "wording": "original",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_A"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F01__original__evidence",
+      "case_id": "F01",
+      "wording": "original",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_A"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F01__clarified__language",
+      "case_id": "F01",
+      "wording": "clarified",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_A"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F01__clarified__evidence",
+      "case_id": "F01",
+      "wording": "clarified",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_A"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F02__original__evidence",
+      "case_id": "F02",
+      "wording": "original",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_E"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F02__clarified__language",
+      "case_id": "F02",
+      "wording": "clarified",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_E"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F02__clarified__evidence",
+      "case_id": "F02",
+      "wording": "clarified",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_E"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F02__original__language",
+      "case_id": "F02",
+      "wording": "original",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_E"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F03__clarified__language",
+      "case_id": "F03",
+      "wording": "clarified",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_C"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F03__clarified__evidence",
+      "case_id": "F03",
+      "wording": "clarified",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_C"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F03__original__language",
+      "case_id": "F03",
+      "wording": "original",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_C"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F03__original__evidence",
+      "case_id": "F03",
+      "wording": "original",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_C"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F04__clarified__evidence",
+      "case_id": "F04",
+      "wording": "clarified",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_E"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F04__original__language",
+      "case_id": "F04",
+      "wording": "original",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_E"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F04__original__evidence",
+      "case_id": "F04",
+      "wording": "original",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_E"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F04__clarified__language",
+      "case_id": "F04",
+      "wording": "clarified",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_E"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F05__original__language",
+      "case_id": "F05",
+      "wording": "original",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_C"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F05__original__evidence",
+      "case_id": "F05",
+      "wording": "original",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_C"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F05__clarified__language",
+      "case_id": "F05",
+      "wording": "clarified",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_C"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F05__clarified__evidence",
+      "case_id": "F05",
+      "wording": "clarified",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_C"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F06__original__evidence",
+      "case_id": "F06",
+      "wording": "original",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_C"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F06__clarified__language",
+      "case_id": "F06",
+      "wording": "clarified",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_C"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F06__clarified__evidence",
+      "case_id": "F06",
+      "wording": "clarified",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_C"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F06__original__language",
+      "case_id": "F06",
+      "wording": "original",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_C"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F07__clarified__language",
+      "case_id": "F07",
+      "wording": "clarified",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "departure",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_E"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F07__clarified__evidence",
+      "case_id": "F07",
+      "wording": "clarified",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "departure",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_E"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F07__original__language",
+      "case_id": "F07",
+      "wording": "original",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "departure",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_E"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F07__original__evidence",
+      "case_id": "F07",
+      "wording": "original",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "departure",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_E"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F08__clarified__evidence",
+      "case_id": "F08",
+      "wording": "clarified",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_D"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F08__original__language",
+      "case_id": "F08",
+      "wording": "original",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_D"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F08__original__evidence",
+      "case_id": "F08",
+      "wording": "original",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_D"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F08__clarified__language",
+      "case_id": "F08",
+      "wording": "clarified",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_D"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F09__original__language",
+      "case_id": "F09",
+      "wording": "original",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_D"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F09__original__evidence",
+      "case_id": "F09",
+      "wording": "original",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_D"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F09__clarified__language",
+      "case_id": "F09",
+      "wording": "clarified",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_D"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F09__clarified__evidence",
+      "case_id": "F09",
+      "wording": "clarified",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_D"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F10__original__evidence",
+      "case_id": "F10",
+      "wording": "original",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_E"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F10__clarified__language",
+      "case_id": "F10",
+      "wording": "clarified",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_E"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F10__clarified__evidence",
+      "case_id": "F10",
+      "wording": "clarified",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_E"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F10__original__language",
+      "case_id": "F10",
+      "wording": "original",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_E"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F11__clarified__language",
+      "case_id": "F11",
+      "wording": "clarified",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "departure",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_E"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F11__clarified__evidence",
+      "case_id": "F11",
+      "wording": "clarified",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "departure",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_E"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F11__original__language",
+      "case_id": "F11",
+      "wording": "original",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "departure",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_E"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F11__original__evidence",
+      "case_id": "F11",
+      "wording": "original",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "departure",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_E"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F12__clarified__evidence",
+      "case_id": "F12",
+      "wording": "clarified",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "departure",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_A"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F12__original__language",
+      "case_id": "F12",
+      "wording": "original",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "departure",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_A"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F12__original__evidence",
+      "case_id": "F12",
+      "wording": "original",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "departure",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_A"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F12__clarified__language",
+      "case_id": "F12",
+      "wording": "clarified",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "departure",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_A"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F13__original__language",
+      "case_id": "F13",
+      "wording": "original",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": 605
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_E"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F13__original__evidence",
+      "case_id": "F13",
+      "wording": "original",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": 605
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_E"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F13__clarified__language",
+      "case_id": "F13",
+      "wording": "clarified",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": 605
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_E"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F13__clarified__evidence",
+      "case_id": "F13",
+      "wording": "clarified",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": 605
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_E"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F14__original__evidence",
+      "case_id": "F14",
+      "wording": "original",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": 595
+      },
+      "decision": {
+        "status": "INFEASIBLE",
+        "selected_poi_ids": []
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F14__clarified__language",
+      "case_id": "F14",
+      "wording": "clarified",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": 595
+      },
+      "decision": {
+        "status": "INFEASIBLE",
+        "selected_poi_ids": []
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F14__clarified__evidence",
+      "case_id": "F14",
+      "wording": "clarified",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": 595
+      },
+      "decision": {
+        "status": "INFEASIBLE",
+        "selected_poi_ids": []
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F14__original__language",
+      "case_id": "F14",
+      "wording": "original",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": 595
+      },
+      "decision": {
+        "status": "INFEASIBLE",
+        "selected_poi_ids": []
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F15__clarified__language",
+      "case_id": "F15",
+      "wording": "clarified",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": 620
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_C"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F15__clarified__evidence",
+      "case_id": "F15",
+      "wording": "clarified",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": 620
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_C"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F15__original__language",
+      "case_id": "F15",
+      "wording": "original",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": 620
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_C"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F15__original__evidence",
+      "case_id": "F15",
+      "wording": "original",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": 620
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_C"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F16__clarified__evidence",
+      "case_id": "F16",
+      "wording": "clarified",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": 605
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_C"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F16__original__language",
+      "case_id": "F16",
+      "wording": "original",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": 605
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_C"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F16__original__evidence",
+      "case_id": "F16",
+      "wording": "original",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": 605
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_C"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F16__clarified__language",
+      "case_id": "F16",
+      "wording": "clarified",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": 605
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_C"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F17__original__language",
+      "case_id": "F17",
+      "wording": "original",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": 605
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_A"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F17__original__evidence",
+      "case_id": "F17",
+      "wording": "original",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": 605
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_A"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F17__clarified__language",
+      "case_id": "F17",
+      "wording": "clarified",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": 605
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_A"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F17__clarified__evidence",
+      "case_id": "F17",
+      "wording": "clarified",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": 605
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_A"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F18__original__evidence",
+      "case_id": "F18",
+      "wording": "original",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": 595
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_A"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F18__clarified__language",
+      "case_id": "F18",
+      "wording": "clarified",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": 595
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_A"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F18__clarified__evidence",
+      "case_id": "F18",
+      "wording": "clarified",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": 595
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_A"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F18__original__language",
+      "case_id": "F18",
+      "wording": "original",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": 595
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_A"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F19__clarified__language",
+      "case_id": "F19",
+      "wording": "clarified",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_B"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F19__clarified__evidence",
+      "case_id": "F19",
+      "wording": "clarified",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_B"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F19__original__language",
+      "case_id": "F19",
+      "wording": "original",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_B"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F19__original__evidence",
+      "case_id": "F19",
+      "wording": "original",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_B"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F20__clarified__evidence",
+      "case_id": "F20",
+      "wording": "clarified",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_C"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F20__original__language",
+      "case_id": "F20",
+      "wording": "original",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_C"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F20__original__evidence",
+      "case_id": "F20",
+      "wording": "original",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_C"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F20__clarified__language",
+      "case_id": "F20",
+      "wording": "clarified",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_C"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F21__original__language",
+      "case_id": "F21",
+      "wording": "original",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_D"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F21__original__evidence",
+      "case_id": "F21",
+      "wording": "original",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_D"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F21__clarified__language",
+      "case_id": "F21",
+      "wording": "clarified",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_D"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F21__clarified__evidence",
+      "case_id": "F21",
+      "wording": "clarified",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_D"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F22__original__evidence",
+      "case_id": "F22",
+      "wording": "original",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_B",
+          "P_C"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F22__clarified__language",
+      "case_id": "F22",
+      "wording": "clarified",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_B",
+          "P_C"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F22__clarified__evidence",
+      "case_id": "F22",
+      "wording": "clarified",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_B",
+          "P_C"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F22__original__language",
+      "case_id": "F22",
+      "wording": "original",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_B",
+          "P_C"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F23__clarified__language",
+      "case_id": "F23",
+      "wording": "clarified",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_B"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F23__clarified__evidence",
+      "case_id": "F23",
+      "wording": "clarified",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_B"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F23__original__language",
+      "case_id": "F23",
+      "wording": "original",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_B"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F23__original__evidence",
+      "case_id": "F23",
+      "wording": "original",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_B"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F24__clarified__evidence",
+      "case_id": "F24",
+      "wording": "clarified",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_C"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F24__original__language",
+      "case_id": "F24",
+      "wording": "original",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_C"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F24__original__evidence",
+      "case_id": "F24",
+      "wording": "original",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_C"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F24__clarified__language",
+      "case_id": "F24",
+      "wording": "clarified",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_C"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F25__original__language",
+      "case_id": "F25",
+      "wording": "original",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": 620
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_A"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": false,
+      "raw_rule_correct": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": false,
+      "feasible_success": false,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F25__original__evidence",
+      "case_id": "F25",
+      "wording": "original",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": 620
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_A"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": false,
+      "raw_rule_correct": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": false,
+      "feasible_success": false,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F25__clarified__language",
+      "case_id": "F25",
+      "wording": "clarified",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": 620
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_A"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": false,
+      "raw_rule_correct": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": false,
+      "feasible_success": false,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F25__clarified__evidence",
+      "case_id": "F25",
+      "wording": "clarified",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": 620
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_A"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": false,
+      "raw_rule_correct": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": false,
+      "feasible_success": false,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F26__original__evidence",
+      "case_id": "F26",
+      "wording": "original",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": 620
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_D"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F26__clarified__language",
+      "case_id": "F26",
+      "wording": "clarified",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": 620
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_D"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F26__clarified__evidence",
+      "case_id": "F26",
+      "wording": "clarified",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": 620
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_D"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F26__original__language",
+      "case_id": "F26",
+      "wording": "original",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": 620
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_D"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F27__clarified__language",
+      "case_id": "F27",
+      "wording": "clarified",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": 595
+      },
+      "decision": {
+        "status": "INFEASIBLE",
+        "selected_poi_ids": []
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F27__clarified__evidence",
+      "case_id": "F27",
+      "wording": "clarified",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": 595
+      },
+      "decision": {
+        "status": "INFEASIBLE",
+        "selected_poi_ids": []
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F27__original__language",
+      "case_id": "F27",
+      "wording": "original",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": 595
+      },
+      "decision": {
+        "status": "INFEASIBLE",
+        "selected_poi_ids": []
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F27__original__evidence",
+      "case_id": "F27",
+      "wording": "original",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": 595
+      },
+      "decision": {
+        "status": "INFEASIBLE",
+        "selected_poi_ids": []
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F28__clarified__evidence",
+      "case_id": "F28",
+      "wording": "clarified",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "departure",
+        "return_by": 595
+      },
+      "decision": {
+        "status": "INFEASIBLE",
+        "selected_poi_ids": []
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F28__original__language",
+      "case_id": "F28",
+      "wording": "original",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "departure",
+        "return_by": 595
+      },
+      "decision": {
+        "status": "INFEASIBLE",
+        "selected_poi_ids": []
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F28__original__evidence",
+      "case_id": "F28",
+      "wording": "original",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "departure",
+        "return_by": 595
+      },
+      "decision": {
+        "status": "INFEASIBLE",
+        "selected_poi_ids": []
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F28__clarified__language",
+      "case_id": "F28",
+      "wording": "clarified",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "departure",
+        "return_by": 595
+      },
+      "decision": {
+        "status": "INFEASIBLE",
+        "selected_poi_ids": []
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F29__original__language",
+      "case_id": "F29",
+      "wording": "original",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": 605
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_A"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": false,
+      "raw_rule_correct": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": false,
+      "feasible_success": false,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F29__original__evidence",
+      "case_id": "F29",
+      "wording": "original",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": 605
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_A"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": false,
+      "raw_rule_correct": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": false,
+      "feasible_success": false,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F29__clarified__language",
+      "case_id": "F29",
+      "wording": "clarified",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": 605
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_A"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": false,
+      "raw_rule_correct": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": false,
+      "feasible_success": false,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F29__clarified__evidence",
+      "case_id": "F29",
+      "wording": "clarified",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": 605
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_A"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": false,
+      "raw_rule_correct": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": false,
+      "object_success": false,
+      "feasible_success": false,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F30__original__evidence",
+      "case_id": "F30",
+      "wording": "original",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "departure",
+        "return_by": 620
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_B"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F30__clarified__language",
+      "case_id": "F30",
+      "wording": "clarified",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "departure",
+        "return_by": 620
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_B"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F30__clarified__evidence",
+      "case_id": "F30",
+      "wording": "clarified",
+      "role": "evidence",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "departure",
+        "return_by": 620
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_B"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "F30__original__language",
+      "case_id": "F30",
+      "wording": "original",
+      "role": "language",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "departure",
+        "return_by": 620
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_B"
+        ]
+      },
+      "schema_failed": false,
+      "raw_task_success": true,
+      "raw_rule_correct": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    }
+  ]
+}

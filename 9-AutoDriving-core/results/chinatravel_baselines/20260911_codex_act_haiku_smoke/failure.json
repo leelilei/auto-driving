@@ -1,0 +1,4 @@
+{
+  "error_type": "BudgetStop",
+  "reason": "Cumulative request character budget reached"
+}

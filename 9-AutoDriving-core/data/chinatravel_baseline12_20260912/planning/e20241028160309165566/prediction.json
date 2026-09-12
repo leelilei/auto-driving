@@ -1,0 +1,195 @@
+{
+  "people_number": 1,
+  "start_city": "广州",
+  "target_city": "武汉",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "start_time": "01:45",
+          "end_time": "02:48",
+          "start": "广州白云国际机场",
+          "end": "武汉天河国际机场",
+          "price": 388.13,
+          "cost": 388.13,
+          "tickets": 1,
+          "transports": [],
+          "FlightID": "FL309",
+          "type": "airplane"
+        },
+        {
+          "position": "幻境空间超级元宇宙剧场",
+          "type": "attraction",
+          "price": 59,
+          "cost": 59,
+          "start_time": "10:00",
+          "end_time": "11:30",
+          "transports": [
+            {
+              "start": "武汉天河国际机场",
+              "end": "天河机场-地铁站",
+              "mode": "walk",
+              "start_time": "02:48",
+              "end_time": "02:54",
+              "cost": 0,
+              "distance": 0.55,
+              "price": 0
+            },
+            {
+              "start": "天河机场-地铁站",
+              "end": "江汉路-地铁站",
+              "mode": "metro",
+              "start_time": "02:54",
+              "end_time": "03:38",
+              "cost": 6,
+              "distance": 22.39,
+              "price": 6,
+              "tickets": 1
+            },
+            {
+              "start": "江汉路-地铁站",
+              "end": "幻境空间超级元宇宙剧场",
+              "mode": "walk",
+              "start_time": "03:38",
+              "end_time": "03:48",
+              "cost": 0,
+              "distance": 0.86,
+              "price": 0
+            }
+          ],
+          "tickets": 1
+        },
+        {
+          "position": "哈根达斯(武汉天地店)",
+          "type": "lunch",
+          "price": 83,
+          "cost": 83,
+          "start_time": "11:51",
+          "end_time": "12:51",
+          "transports": [
+            {
+              "start": "幻境空间超级元宇宙剧场",
+              "end": "江汉路-地铁站",
+              "mode": "walk",
+              "start_time": "11:30",
+              "end_time": "11:40",
+              "cost": 0,
+              "distance": 0.86,
+              "price": 0
+            },
+            {
+              "start": "江汉路-地铁站",
+              "end": "黄浦路-地铁站",
+              "mode": "metro",
+              "start_time": "11:40",
+              "end_time": "11:47",
+              "cost": 2,
+              "distance": 3.54,
+              "price": 2,
+              "tickets": 1
+            },
+            {
+              "start": "黄浦路-地铁站",
+              "end": "哈根达斯(武汉天地店)",
+              "mode": "walk",
+              "start_time": "11:47",
+              "end_time": "11:51",
+              "cost": 0,
+              "distance": 0.34,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "汉口新四军军部旧址",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "13:05",
+          "end_time": "14:35",
+          "transports": [
+            {
+              "start": "哈根达斯(武汉天地店)",
+              "end": "黄浦路-地铁站",
+              "mode": "walk",
+              "start_time": "12:51",
+              "end_time": "12:55",
+              "cost": 0,
+              "distance": 0.34,
+              "price": 0
+            },
+            {
+              "start": "黄浦路-地铁站",
+              "end": "头道街-地铁站",
+              "mode": "metro",
+              "start_time": "12:55",
+              "end_time": "12:57",
+              "cost": 2,
+              "distance": 1.18,
+              "price": 2,
+              "tickets": 1
+            },
+            {
+              "start": "头道街-地铁站",
+              "end": "汉口新四军军部旧址",
+              "mode": "walk",
+              "start_time": "12:57",
+              "end_time": "13:05",
+              "cost": 0,
+              "distance": 0.72,
+              "price": 0
+            }
+          ],
+          "tickets": 1
+        },
+        {
+          "start_time": "17:38",
+          "end_time": "22:02",
+          "start": "武汉站",
+          "end": "广州南站",
+          "price": 543.6,
+          "cost": 543.6,
+          "tickets": 1,
+          "transports": [
+            {
+              "start": "汉口新四军军部旧址",
+              "end": "头道街-地铁站",
+              "mode": "walk",
+              "start_time": "14:35",
+              "end_time": "14:43",
+              "cost": 0,
+              "distance": 0.72,
+              "price": 0
+            },
+            {
+              "start": "头道街-地铁站",
+              "end": "武汉站东广场-地铁站",
+              "mode": "metro",
+              "start_time": "14:43",
+              "end_time": "15:04",
+              "cost": 4,
+              "distance": 10.9,
+              "price": 4,
+              "tickets": 1
+            },
+            {
+              "start": "武汉站东广场-地铁站",
+              "end": "武汉站",
+              "mode": "walk",
+              "start_time": "15:04",
+              "end_time": "15:06",
+              "cost": 0,
+              "distance": 0.19,
+              "price": 0
+            }
+          ],
+          "TrainID": "G1019",
+          "type": "train"
+        }
+      ]
+    }
+  ],
+  "search_time_sec": 1.0416500568389893,
+  "llm_inference_time_sec": 0
+}

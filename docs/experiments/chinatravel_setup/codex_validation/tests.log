@@ -1,0 +1,18 @@
+test_actual_tool_executor (test_chinatravel_pipeline.BoundaryTests.test_actual_tool_executor) ... ok
+test_bridge_and_budget (test_chinatravel_pipeline.BoundaryTests.test_bridge_and_budget) ... ok
+test_input_whitelist (test_chinatravel_pipeline.BoundaryTests.test_input_whitelist) ... ok
+test_invalid_response_stops (test_chinatravel_pipeline.BoundaryTests.test_invalid_response_stops) ... ok
+test_missing_text_fails (test_chinatravel_pipeline.BoundaryTests.test_missing_text_fails) ... ok
+test_official_schema_rejects_old_arrays (test_chinatravel_pipeline.BoundaryTests.test_official_schema_rejects_old_arrays) ... ok
+test_empty_fails (test_chinatravel_pipeline.OfficialScoringTests.test_empty_fails) ... ok
+test_hard_constraint_failure (test_chinatravel_pipeline.OfficialScoringTests.test_hard_constraint_failure) ... ok
+test_invalid_entity (test_chinatravel_pipeline.OfficialScoringTests.test_invalid_entity) ... ok
+test_known_valid_fixture (test_chinatravel_pipeline.OfficialScoringTests.test_known_valid_fixture) ... ok
+test_missing_prediction_stays_in_denominator (test_chinatravel_pipeline.OfficialScoringTests.test_missing_prediction_stays_in_denominator) ... ok
+test_time_conflict (test_chinatravel_pipeline.OfficialScoringTests.test_time_conflict) ... ok
+test_unexpected_id_rejected (test_chinatravel_pipeline.OfficialScoringTests.test_unexpected_id_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 1.573s
+
+OK

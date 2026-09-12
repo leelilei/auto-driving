@@ -1,0 +1,45 @@
+{
+  "fixture_id": "no_preference_with_time",
+  "text": "Visit a pharmacy before 20:00. No preference between rating and travel distance.",
+  "gold": {
+    "pois": [
+      "pharmacy"
+    ],
+    "time_limit": 1200,
+    "dependencies": [],
+    "quality_weight": 0.5
+  },
+  "started_at": "2026-09-09T16:02:46.330119+00:00",
+  "raw_response": "{\"pois\":[\"pharmacy\"],\"time_limit\":\"20:00\",\"dependencies\":[],\"quality_weight\":0.5}",
+  "schema_valid": true,
+  "predicted": {
+    "pois": [
+      "pharmacy"
+    ],
+    "time_limit": 1200,
+    "dependencies": [],
+    "quality_weight": 0.5
+  },
+  "hard": {
+    "poi_exact": true,
+    "time_exact": true,
+    "dependency_exact": true,
+    "hard_exact": true
+  },
+  "direction_predicted": "balanced",
+  "direction_exact": true,
+  "finished_at": "2026-09-09T16:02:48.690643+00:00",
+  "telemetry": {
+    "call_index": 5,
+    "prompt_sha256": "f725e7e7f391915a908f568d971765c035531071499d76c7c37403a797f8cf19",
+    "attempts": 1,
+    "latency_seconds": 2.36,
+    "input_chars": 504,
+    "output_chars": 81,
+    "input_tokens": 174,
+    "output_tokens": 226,
+    "total_tokens": 400,
+    "usage_source": "provider",
+    "success": true
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "parent": "9-AutoDriving-core/results/scene_rule30/20260910T154556Z_haiku_glossary60",
+  "parent_manifest_sha256": "50ea4fc4a8cdbe87bfd24c74e7a964f8d8a8b5f3fc3d296928d0aeec0ba06a72",
+  "inherited_answers": {
+    "R03__r1__glossary.a1.json": "bfd115d8a29400d2982c7a5f4e6f0cbefe6ae35a0da6b0f73a33df880d8f970e",
+    "R04__r1__glossary.a1.json": "0e29b9382f8192a56a0a38182199fb36becd947554d036139e349e2ef9ea8ccb"
+  },
+  "reason": "urllib TLS resets even at one request. Preserve valid answers, change only transport to curl HTTP/1.1.",
+  "parent_transport_failures": 3,
+  "scope": "Documented development transport revision; same prompts, candidates, model, temperature, output cap and scoring."
+}

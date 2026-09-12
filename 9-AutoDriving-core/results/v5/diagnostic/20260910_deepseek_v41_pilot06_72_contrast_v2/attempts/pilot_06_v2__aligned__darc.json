@@ -1,0 +1,51 @@
+{
+  "call_id": "pilot_06_v2::aligned::darc",
+  "role": "darc",
+  "graph_condition": "aligned",
+  "started_at": "2026-09-09T16:42:37.444157+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. The decision-contrast report is diagnostic evidence about consequences; it is not a label and must not override the words of the instruction.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Use the report to locate consequential disagreements, then decide each field from the instruction alone.\n\nInstruction:\nPlease be back by 18:00 after visiting the supermarket, bank, and library. Ensure the supermarket is visited before the bank, and prioritize travel efficiency.\n\nCandidate A:\n{\"dependencies\": [[\"supermarket\", \"bank\"]], \"pois\": [\"bank\", \"library\", \"supermarket\"], \"quality_weight\": 0.2, \"time_limit\": 1080}\n\nCandidate B:\n{\"dependencies\": [[\"supermarket\", \"bank\"]], \"pois\": [\"bank\", \"library\", \"supermarket\"], \"quality_weight\": 0.0, \"time_limit\": 1080}\n\nDecision-contrast report:\n{\"candidate_A\": {\"dependencies\": [[\"supermarket\", \"bank\"]], \"pois\": [\"bank\", \"library\", \"supermarket\"], \"quality_weight\": 0.2, \"time_limit\": 1080}, \"candidate_B\": {\"dependencies\": [[\"supermarket\", \"bank\"]], \"pois\": [\"bank\", \"library\", \"supermarket\"], \"quality_weight\": 0.0, \"time_limit\": 1080}, \"candidate_evidence\": {\"A\": {\"dependencies\": \"supermarket is visited before the bank\", \"pois\": \"supermarket, bank, and library\", \"quality_weight\": \"prioritize travel efficiency\", \"time_limit\": \"back by 18:00\"}, \"B\": {\"dependencies\": \"supermarket is visited before the bank\", \"pois\": \"supermarket, bank, and library\", \"quality_weight\": \"prioritize travel efficiency\", \"time_limit\": \"be back by 18:00\"}}, \"cross_constraints\": {\"route_A_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_A_under_B\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_B\": {\"reasons\": [], \"task_success\": true}}, \"differing_fields\": [\"quality_weight\"], \"instruction\": \"Please be back by 18:00 after visiting the supermarket, bank, and library. Ensure the supermarket is visited before the bank, and prioritize travel efficiency.\", \"limitations\": [\"The report does not identify the user's true intent.\", \"Both candidates may share the same error.\", \"Single-field swaps do not identify higher-order interactions.\"], \"report_version\": \"darc-v5.1-contrast-2\", \"routes\": {\"A\": {\"arrival_minutes\": 667, \"average_quality\": 0.5, \"categories\": [\"supermarket\", \"library\", \"bank\"], \"coverage_count\": 3, \"distance_km\": 5.972, \"duration_minutes\": 126.9, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"supermarket_1\", \"library_1\", \"bank_1\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": 0.02194130743612821}, \"B\": {\"arrival_minutes\": 667, \"average_quality\": 0.5, \"categories\": [\"supermarket\", \"library\", \"bank\"], \"coverage_count\": 3, \"distance_km\": 5.972, \"duration_minutes\": 126.9, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"supermarket_1\", \"library_1\", \"bank_1\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": -0.09757336570483974}}, \"single_field_swaps\": [{\"base\": \"A\", \"field_from_other\": \"quality_weight\", \"hybrid_intent\": {\"dependencies\": [[\"supermarket\", \"bank\"]], \"pois\": [\"bank\", \"library\", \"supermarket\"], \"quality_weight\": 0.0, \"time_limit\": 1080}, \"route\": {\"arrival_minutes\": 667, \"average_quality\": 0.5, \"categories\": [\"supermarket\", \"library\", \"bank\"], \"coverage_count\": 3, \"distance_km\": 5.972, \"duration_minutes\": 126.9, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"supermarket_1\", \"library_1\", \"bank_1\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": -0.09757336570483974}}, {\"base\": \"B\", \"field_from_other\": \"quality_weight\", \"hybrid_intent\": {\"dependencies\": [[\"supermarket\", \"bank\"]], \"pois\": [\"bank\", \"library\", \"supermarket\"], \"quality_weight\": 0.2, \"time_limit\": 1080}, \"route\": {\"arrival_minutes\": 667, \"average_quality\": 0.5, \"categories\": [\"supermarket\", \"library\", \"bank\"], \"coverage_count\": 3, \"distance_km\": 5.972, \"duration_minutes\": 126.9, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"supermarket_1\", \"library_1\", \"bank_1\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": 0.02194130743612821}}]}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"bank\",\"library\",\"supermarket\"],\"time_limit\":1080,\"dependencies\":[[\"supermarket\",\"bank\"]],\"quality_weight\":0.2},\"evidence\":{\"pois\":\"supermarket, bank, and library\",\"time_limit\":\"be back by 18:00\",\"dependencies\":\"supermarket is visited before the bank\",\"quality_weight\":\"prioritize travel efficiency\"},\"changes\":[\"quality_weight\"]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library",
+      "supermarket"
+    ],
+    "time_limit": 1080,
+    "dependencies": [
+      [
+        "supermarket",
+        "bank"
+      ]
+    ],
+    "quality_weight": 0.2
+  },
+  "evidence": {
+    "pois": "supermarket, bank, and library",
+    "time_limit": "be back by 18:00",
+    "dependencies": "supermarket is visited before the bank",
+    "quality_weight": "prioritize travel efficiency"
+  },
+  "changes": [
+    "quality_weight"
+  ],
+  "finished_at": "2026-09-09T16:43:05.614960+00:00",
+  "telemetry": {
+    "call_index": 46,
+    "prompt_sha256": "51e4e85287838364fe86bfe2ded1a1bf1a6a6b8298fecc828ecdd90c53530a0b",
+    "attempts": 1,
+    "latency_seconds": 28.169,
+    "input_chars": 4359,
+    "output_chars": 349,
+    "input_tokens": 1346,
+    "output_tokens": 8498,
+    "total_tokens": 9844,
+    "usage_source": "provider",
+    "success": true
+  }
+}

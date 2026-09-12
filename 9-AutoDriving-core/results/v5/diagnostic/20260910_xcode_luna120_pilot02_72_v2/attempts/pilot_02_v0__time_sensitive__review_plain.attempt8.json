@@ -1,0 +1,29 @@
+{
+  "call_id": "pilot_02_v0::time_sensitive::review_plain",
+  "role": "review_plain",
+  "graph_condition": "time_sensitive",
+  "started_at": "2026-09-09T18:31:17.474921+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. Candidate agreement is not proof of correctness.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not use route efficiency to infer what the user wants.\n\nInstruction:\nMake sure to visit the supermarket and the pharmacy today. Balance your stops to maintain both reasonable ratings and efficiency along the route. Start your trip at the supermarket before heading to the pharmacy.\n\nCandidate A:\n{\"dependencies\": [[\"supermarket\", \"pharmacy\"]], \"pois\": [\"pharmacy\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nCandidate B:\n{\"dependencies\": [[\"supermarket\", \"pharmacy\"]], \"pois\": [\"pharmacy\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"supermarket\",\"pharmacy\"],\"time_limit\":\"today\",\"dependencies\":[[\"supermarket\",\"pharmacy\"]],\"quality_weight\":0.5},\"evidence\":{\"pois\":\"Start your trip at the supermarket before heading to the pharmacy\",\"time_limit\":\"today\",\"dependencies\":\"before heading to the pharmacy\",\"quality_weight\":\"Balance your stops to maintain both reasonable ratings and efficiency\"},\"changes\":[{\"field\":\"pois\",\"from\":[\"pharmacy\",\"supermarket\"],\"to\":[\"supermarket\",\"pharmacy\"]},{\"field\":\"time_limit\",\"from\":null,\"to\":\"today\"}]}",
+  "status": "SCHEMA_FAILED",
+  "schema_valid": false,
+  "error_type": "ValueError",
+  "error_message": "Deadline must be HH:MM or minutes",
+  "finished_at": "2026-09-09T18:31:44.600023+00:00",
+  "telemetry": {
+    "call_index": 1,
+    "prompt_sha256": "befecb0e5584e29c5bf2e4584507dbb7bb06a47b58b256cc85ff8698d76d2d72",
+    "attempts": 1,
+    "latency_seconds": 27.124,
+    "input_chars": 1013,
+    "output_chars": 521,
+    "input_tokens": 229,
+    "output_tokens": 301,
+    "total_tokens": 530,
+    "usage_source": "provider",
+    "success": true
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "call_id": "pilot_08_v3::llmap_direct",
+  "role": "llmap_direct",
+  "graph_condition": null,
+  "started_at": "2026-09-09T16:34:19.556578+00:00",
+  "request": {
+    "system": "Extract POIs, constraints, and weights from a human instruction. POIs should be a simple string array. Dependencies should be an empty list if no sequence requirements are mentioned. Weights should be between 0 and 1, and sum to 1. Extract them from language about importance of POI rating vs route length.\n\nOutput must be valid JSON with structure:\n{\n    \"pois\": [\"poi1\", \"poi2\", ...],\n    \"time_limit\": \"HH:00\" or \"None\",\n    \"dependencies\": [[\"poi1\", \"poi2\"], ...],\n    \"quality_weight\": float,\n    \"distance_weight\": float\n}\n",
+    "user": "Extract POIs, constraints, and weights from this instruction as JSON:\nLet's visit the library, shopping mall, and supermarket today. Hit the shopping mall before heading to the supermarket, and keep a solid balance between good ratings and efficient travel.\n\nOnly output the JSON object. No prefix, additional text, or explanation.\n"
+  },
+  "raw_response": "{\"pois\":[\"library\",\"shopping mall\",\"supermarket\"],\"time_limit\":\"None\",\"dependencies\":[[\"shopping mall\",\"supermarket\"]],\"quality_weight\":0.5,\"distance_weight\":0.5}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "library",
+      "shopping_mall",
+      "supermarket"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "shopping_mall",
+        "supermarket"
+      ]
+    ],
+    "quality_weight": 0.5
+  },
+  "evidence": {},
+  "changes": [],
+  "finished_at": "2026-09-09T16:34:21.346252+00:00",
+  "telemetry": {
+    "call_index": 59,
+    "prompt_sha256": "8cb610107b712a210d8177b49df38a5e2640eab4d5860e048d868898097e3f80",
+    "attempts": 1,
+    "latency_seconds": 1.789,
+    "input_chars": 861,
+    "output_chars": 162,
+    "input_tokens": 258,
+    "output_tokens": 472,
+    "total_tokens": 730,
+    "usage_source": "provider",
+    "success": true
+  }
+}

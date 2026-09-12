@@ -1,0 +1,10 @@
+{
+  "created": "2026-09-10T15:29:31.535774+00:00",
+  "parent_manifest_sha256": "0b96eceda9fc2eb6766a9c5fd0305e2abce059934e161cc1a3cce1dddaa5f956",
+  "recovery_source_sha256": "6862ccb555dc7f952af29cfd0e2ec8a7b364f760ed24f887a021623721a105f2",
+  "concurrency": 8,
+  "max_attempts_per_unit": 3,
+  "max_recoveries": 36,
+  "reason": "Sustained c16 workload encountered TLS resets. Preserve all terminal answers, lower concurrency, recover only transport failures and unstarted units.",
+  "scope": "Transport-only development recovery; no changes to data, semantic prompts, schema, scoring or existing responses."
+}

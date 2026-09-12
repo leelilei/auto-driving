@@ -1,0 +1,3 @@
+Command: /Users/mac/Documents/6-Research/9-AutoDriving/9-AutoDriving-core/.venv/bin/python -m pytest 9-AutoDriving-core/tests/test_v41_closeout.py -q
+............                                                             [100%]
+12 passed in 11.75s

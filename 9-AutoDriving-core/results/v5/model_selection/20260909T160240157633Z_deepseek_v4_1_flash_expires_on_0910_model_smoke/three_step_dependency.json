@@ -1,0 +1,67 @@
+{
+  "fixture_id": "three_step_dependency",
+  "text": "Visit the supermarket before the pharmacy, then go to the library. I care more about a quick route.",
+  "gold": {
+    "pois": [
+      "supermarket",
+      "pharmacy",
+      "library"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "supermarket",
+        "pharmacy"
+      ],
+      [
+        "pharmacy",
+        "library"
+      ]
+    ],
+    "quality_weight": 0.25
+  },
+  "started_at": "2026-09-09T16:02:43.049120+00:00",
+  "raw_response": "{\"pois\":[\"supermarket\",\"pharmacy\",\"library\"],\"time_limit\":null,\"dependencies\":[[\"supermarket\",\"pharmacy\"],[\"pharmacy\",\"library\"]],\"quality_weight\":0.3}",
+  "schema_valid": true,
+  "predicted": {
+    "pois": [
+      "library",
+      "pharmacy",
+      "supermarket"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "pharmacy",
+        "library"
+      ],
+      [
+        "supermarket",
+        "pharmacy"
+      ]
+    ],
+    "quality_weight": 0.3
+  },
+  "hard": {
+    "poi_exact": true,
+    "time_exact": true,
+    "dependency_exact": true,
+    "hard_exact": true
+  },
+  "direction_predicted": "distance_first",
+  "direction_exact": true,
+  "finished_at": "2026-09-09T16:02:46.329213+00:00",
+  "telemetry": {
+    "call_index": 4,
+    "prompt_sha256": "5b5c0e49023935ad368be8f31119552ec5ac9d15777afba3a1474c9f3742b901",
+    "attempts": 1,
+    "latency_seconds": 3.28,
+    "input_chars": 523,
+    "output_chars": 151,
+    "input_tokens": 178,
+    "output_tokens": 1023,
+    "total_tokens": 1201,
+    "usage_source": "provider",
+    "success": true
+  }
+}

@@ -1,0 +1,3089 @@
+{
+  "protocol_version": "darc-v5.1-concurrency-probe-1",
+  "model": "deepseek-v4.1-flash-expires-on-0910",
+  "config": {
+    "provider": "deepseek",
+    "model": "deepseek-v4.1-flash-expires-on-0910",
+    "wire_api": "chat_completions",
+    "base_url": "https://api.deepseek.com",
+    "temperature": 0.0,
+    "timeout": 60,
+    "json_mode": true,
+    "retries": 0,
+    "retry_sleep": 1.0,
+    "sleep": 0.0,
+    "max_concurrency": 1,
+    "omit_temperature": false,
+    "reasoning_effort": null,
+    "max_output_tokens": 100,
+    "stream": false,
+    "service_tier": null,
+    "store": null,
+    "responses_input_mode": "messages",
+    "input_char_limit": null,
+    "transport": "curl",
+    "api_key_env": "DEEPSEEK_API_KEY"
+  },
+  "started_at": "2026-09-09T16:31:15.103045+00:00",
+  "levels": [
+    {
+      "concurrency": 64,
+      "planned": 64,
+      "passed": 64,
+      "failed": 0,
+      "wall_seconds": 6.0459951250231825,
+      "attempts": [
+        {
+          "index": 0,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":0}",
+          "latency_seconds": 1.029100041021593,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "5c9d0801a6ff65046a1a00c7aa47f6666f4b88a2c6e0264eb889ee76d9d78b33",
+            "attempts": 1,
+            "latency_seconds": 1.029,
+            "input_chars": 57,
+            "output_chars": 32,
+            "input_tokens": 70,
+            "output_tokens": 41,
+            "total_tokens": 111,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 1,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":1}",
+          "latency_seconds": 1.4110255000414327,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "f1233562f4a69a7c22a10d3ea29c2bbf9fc07164cd4690208f5a85512c74da73",
+            "attempts": 1,
+            "latency_seconds": 1.411,
+            "input_chars": 57,
+            "output_chars": 32,
+            "input_tokens": 70,
+            "output_tokens": 39,
+            "total_tokens": 109,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 2,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":2}",
+          "latency_seconds": 1.1201529169920832,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "e228004c6c5de2742acf8714b2f0d95b464279747c3848959706adf7bbdc2c92",
+            "attempts": 1,
+            "latency_seconds": 1.12,
+            "input_chars": 57,
+            "output_chars": 32,
+            "input_tokens": 70,
+            "output_tokens": 40,
+            "total_tokens": 110,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 3,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":3}",
+          "latency_seconds": 0.9622311660205014,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "dcc2fd81c27581665e20c1cdbd339b9b02f8b6de11368f3d27d28f0427763ef5",
+            "attempts": 1,
+            "latency_seconds": 0.962,
+            "input_chars": 57,
+            "output_chars": 32,
+            "input_tokens": 70,
+            "output_tokens": 48,
+            "total_tokens": 118,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 4,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":4}",
+          "latency_seconds": 1.5005067079910077,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "b38f36f347348654a1bfc44de41250c4cac43f066170d3ffd1e774ef7c2a2e0f",
+            "attempts": 1,
+            "latency_seconds": 1.5,
+            "input_chars": 57,
+            "output_chars": 32,
+            "input_tokens": 70,
+            "output_tokens": 51,
+            "total_tokens": 121,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 5,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":5}",
+          "latency_seconds": 3.6611982920439914,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "642808ddc66e5eb33bbf7d6586dffc03ef59852e85f23b175c10d09fd48842cc",
+            "attempts": 1,
+            "latency_seconds": 3.661,
+            "input_chars": 57,
+            "output_chars": 32,
+            "input_tokens": 70,
+            "output_tokens": 369,
+            "total_tokens": 439,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 6,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":6}",
+          "latency_seconds": 1.9576157910050824,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "942bcdea1cc3462b2588d2c1d22860ff96aeb5ab6446a8553863fcfa93fcdd33",
+            "attempts": 1,
+            "latency_seconds": 1.958,
+            "input_chars": 57,
+            "output_chars": 32,
+            "input_tokens": 70,
+            "output_tokens": 164,
+            "total_tokens": 234,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 7,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":7}",
+          "latency_seconds": 0.5105525840190239,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "ce59686b1faf0592288ce80dc06ab3223bcb02e42c63d484eee2a8650425b84e",
+            "attempts": 1,
+            "latency_seconds": 0.51,
+            "input_chars": 57,
+            "output_chars": 32,
+            "input_tokens": 70,
+            "output_tokens": 40,
+            "total_tokens": 110,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 8,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":8}",
+          "latency_seconds": 0.9363406249904074,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "a8dc101a24bc079a1a4bda0d7f6d397e3028b5201c0cc216bce26b258ac11424",
+            "attempts": 1,
+            "latency_seconds": 0.936,
+            "input_chars": 57,
+            "output_chars": 32,
+            "input_tokens": 70,
+            "output_tokens": 39,
+            "total_tokens": 109,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 9,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":9}",
+          "latency_seconds": 1.5192753750015981,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "90b8c67711719bcda09dd7e22aa1ab6ba6e20e94c226511b18b82d102ae634da",
+            "attempts": 1,
+            "latency_seconds": 1.519,
+            "input_chars": 57,
+            "output_chars": 32,
+            "input_tokens": 70,
+            "output_tokens": 40,
+            "total_tokens": 110,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 10,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":10}",
+          "latency_seconds": 1.4245362089714035,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "b7afb0bdaf9865c8e25e6c54515700f6e28267ea5761b4c4fff95ce8a5b3ac5b",
+            "attempts": 1,
+            "latency_seconds": 1.425,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 42,
+            "total_tokens": 112,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 11,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":11}",
+          "latency_seconds": 2.0914821249898523,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "220db520c43253cddca9bff722880d04fcab490d726371b3175078a4e03e61d7",
+            "attempts": 1,
+            "latency_seconds": 2.091,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 27,
+            "total_tokens": 97,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 12,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":12}",
+          "latency_seconds": 1.4788683750084601,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "ea98646d7674dcf1e0b1fd20a59baa28b08718ae39e4b911d884b9982e28d7b9",
+            "attempts": 1,
+            "latency_seconds": 1.479,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 48,
+            "total_tokens": 118,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 13,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":13}",
+          "latency_seconds": 0.6495129160466604,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "2add90774175ab26c533cbbddb55e07ac4d0515a9261dc716ede4c58bc4a9613",
+            "attempts": 1,
+            "latency_seconds": 0.649,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 52,
+            "total_tokens": 122,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 14,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":14}",
+          "latency_seconds": 1.5191845000372268,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "23213d2ae50ad589c6b27fcfba822df2261714808b7292e57300cc1f566b1bb2",
+            "attempts": 1,
+            "latency_seconds": 1.519,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 29,
+            "total_tokens": 99,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 15,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":15}",
+          "latency_seconds": 1.7963171250303276,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "39037fbc4f15f1185b2d36459e978da8d2e0c7ebdf74ddf6cf4b95353ea269ed",
+            "attempts": 1,
+            "latency_seconds": 1.796,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 53,
+            "total_tokens": 123,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 16,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":16}",
+          "latency_seconds": 1.435986291966401,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "ebcbc4717b1e1e74dae3e4fa0d62499865c57dee0ecdabcb730bf8355ebebe5f",
+            "attempts": 1,
+            "latency_seconds": 1.436,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 57,
+            "total_tokens": 127,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 17,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":17}",
+          "latency_seconds": 1.660642083035782,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "78904f74530f893126a503aecdccfbb0f5fb2ae42083a336e5b19e9ebe784278",
+            "attempts": 1,
+            "latency_seconds": 1.661,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 48,
+            "total_tokens": 118,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 18,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":18}",
+          "latency_seconds": 1.647674374980852,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "1722cbe9e56822833e68dfec2a824dd848caa78eb1cff8fc36bfe9004354ff98",
+            "attempts": 1,
+            "latency_seconds": 1.648,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 28,
+            "total_tokens": 98,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 19,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":19}",
+          "latency_seconds": 1.2175290829618461,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "69fabbaa2971c477a8668a364b76f30e5c005540a3baa01539ced2547a166e42",
+            "attempts": 1,
+            "latency_seconds": 1.218,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 59,
+            "total_tokens": 129,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 20,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":20}",
+          "latency_seconds": 1.358870125026442,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "7c305fffe085a008e249a0ca9e8de241bfde3a2a3d5af09759e21f90931bee4d",
+            "attempts": 1,
+            "latency_seconds": 1.359,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 28,
+            "total_tokens": 98,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 21,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":21}",
+          "latency_seconds": 1.3935088750440627,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "89ab766b9ec56dc533bec0eca0bc038532ed36482e20dae7ace45d65b082409a",
+            "attempts": 1,
+            "latency_seconds": 1.393,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 56,
+            "total_tokens": 126,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 22,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":22}",
+          "latency_seconds": 1.3595089580048807,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "141efdf286c8996c793446a316c70f0abdada8e7427b0907f4de5c519b051ce7",
+            "attempts": 1,
+            "latency_seconds": 1.359,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 47,
+            "total_tokens": 117,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 23,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":23}",
+          "latency_seconds": 1.1702134580118582,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "3d9867e23eaf86459cec393bc573188085c5e1a03c884b0b8aa49c622547185f",
+            "attempts": 1,
+            "latency_seconds": 1.17,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 44,
+            "total_tokens": 114,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 24,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":24}",
+          "latency_seconds": 2.2891138340346515,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "a09212f13676a65237e0b0d2910831a54e82d09f30d3a18a2e7948f34b0b418c",
+            "attempts": 1,
+            "latency_seconds": 2.289,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 51,
+            "total_tokens": 121,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 25,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":25}",
+          "latency_seconds": 1.6834756250027567,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "312b9c3bbc7f3e203bde94dbe22be2af5894d384e7f167d3552796a34c41836a",
+            "attempts": 1,
+            "latency_seconds": 1.683,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 38,
+            "total_tokens": 108,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 26,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":26}",
+          "latency_seconds": 0.9884103749645874,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "41030163f31df86d61765c1accdf598d7dc78b599427728fcf76086daf744ad4",
+            "attempts": 1,
+            "latency_seconds": 0.988,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 55,
+            "total_tokens": 125,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 27,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":27}",
+          "latency_seconds": 1.74148037499981,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "05e8154658b0762a73c41ca643cef3ebbf7be4182f9a001436bea65b390c9c0e",
+            "attempts": 1,
+            "latency_seconds": 1.741,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 93,
+            "total_tokens": 163,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 28,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":28}",
+          "latency_seconds": 0.9557965000276454,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "19578dc09a04e331cea68b62311d1be19e27845668e4173ec22351795603ce76",
+            "attempts": 1,
+            "latency_seconds": 0.956,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 65,
+            "total_tokens": 135,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 29,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":29}",
+          "latency_seconds": 1.0126159170176834,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "f935e48c52a8b8153466617db311992f401fb34cbc0f0d30129d05b3d31beee5",
+            "attempts": 1,
+            "latency_seconds": 1.013,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 69,
+            "total_tokens": 139,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 30,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":30}",
+          "latency_seconds": 1.0119631250272505,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "6fb6792783ea884e849ffa45828cc417ff05c22462b50404dd1b1edda10e5327",
+            "attempts": 1,
+            "latency_seconds": 1.012,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 46,
+            "total_tokens": 116,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 31,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":31}",
+          "latency_seconds": 3.267764125019312,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "da9d4f70cb88345cd0bec01d692d0cfe487e9f9c781cd31f1f5590065ea54b36",
+            "attempts": 1,
+            "latency_seconds": 3.268,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 106,
+            "total_tokens": 176,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 32,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":32}",
+          "latency_seconds": 1.739740667049773,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "f27d01930d89247b5eb5a645261d85c30b2f6df35df5483abb272d1b5a2df8fd",
+            "attempts": 1,
+            "latency_seconds": 1.74,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 45,
+            "total_tokens": 115,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 33,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":33}",
+          "latency_seconds": 2.8174290410242975,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "866adb6a77658d0c05457e2d10f91cbaa773ffbfa9f60ab2cc5ab81d817869b8",
+            "attempts": 1,
+            "latency_seconds": 2.817,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 46,
+            "total_tokens": 116,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 34,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":34}",
+          "latency_seconds": 1.1270950420293957,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "4b65ad572852678c5bd16895010a94321de97a0ca3433a5a8d315977039e1cc5",
+            "attempts": 1,
+            "latency_seconds": 1.127,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 51,
+            "total_tokens": 121,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 35,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":35}",
+          "latency_seconds": 2.7885130420327187,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "8bb07ff486912b51b93305de3d43e5ced023ee2099af76c8c41216660f422714",
+            "attempts": 1,
+            "latency_seconds": 2.788,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 37,
+            "total_tokens": 107,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 36,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":36}",
+          "latency_seconds": 1.4440986670088023,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "77b6982356b7293b155bbfb8f8ae76bcb04f2871bf9d681f40ab7e16cb12ad30",
+            "attempts": 1,
+            "latency_seconds": 1.444,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 47,
+            "total_tokens": 117,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 37,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":37}",
+          "latency_seconds": 1.4899274169583805,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "5cb5981ea5e480d32f19b3fc6b8d19bc505013be5b3490aa450f3258a208bae0",
+            "attempts": 1,
+            "latency_seconds": 1.49,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 41,
+            "total_tokens": 111,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 38,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":38}",
+          "latency_seconds": 1.124848750012461,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "8c809e6dace027107c30c366a44dc36ca47436c55ff630a7ffc72c384af7afd5",
+            "attempts": 1,
+            "latency_seconds": 1.125,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 41,
+            "total_tokens": 111,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 39,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":39}",
+          "latency_seconds": 1.335224417038262,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "f494907bdf6d4fb51709ac5a2fd56a7bc714c95aa6b77a8cda049e01acec06f7",
+            "attempts": 1,
+            "latency_seconds": 1.335,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 48,
+            "total_tokens": 118,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 40,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":40}",
+          "latency_seconds": 1.3867339999997057,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "ffa172c154cd4e3ca6594058742f38de4dac785007bf49b4edc34e79c531bd0f",
+            "attempts": 1,
+            "latency_seconds": 1.387,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 28,
+            "total_tokens": 98,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 41,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":41}",
+          "latency_seconds": 1.1395093339961022,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "de50362e0c4ff34936cb824c3704adbb66d883c0cb88fd2d641500b9aa81652d",
+            "attempts": 1,
+            "latency_seconds": 1.139,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 37,
+            "total_tokens": 107,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 42,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":42}",
+          "latency_seconds": 2.7613759580417536,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "d7489c8d9f4b1e2a366a2c2374f0ad4c0fd3a449f1f632da4dbcb09ef7c0e002",
+            "attempts": 1,
+            "latency_seconds": 2.761,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 45,
+            "total_tokens": 115,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 43,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":43}",
+          "latency_seconds": 1.789624625002034,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "21f787e82cf0cdb967c43ac5d79215c9ae8a01870be850c3364f089bcb7729d6",
+            "attempts": 1,
+            "latency_seconds": 1.79,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 61,
+            "total_tokens": 131,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 44,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":44}",
+          "latency_seconds": 1.5065138330101036,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "cd66d7a9117cfdd5bd6f4a19eb3bc70f462144d1640b09f2866adc658ecd6673",
+            "attempts": 1,
+            "latency_seconds": 1.506,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 51,
+            "total_tokens": 121,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 45,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":45}",
+          "latency_seconds": 1.2268782919854857,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "06daf7f6ea50f65d5bbb4b28cf44f45b5b7d526fe5019d5dacbcc0c31a3ce46f",
+            "attempts": 1,
+            "latency_seconds": 1.227,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 40,
+            "total_tokens": 110,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 46,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":46}",
+          "latency_seconds": 2.4182057500001974,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "9c95a4c4c13d23371462d15fe90f0311a82e12712e2e9904a2df50807b65fe4f",
+            "attempts": 1,
+            "latency_seconds": 2.418,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 40,
+            "total_tokens": 110,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 47,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":47}",
+          "latency_seconds": 2.4302076249732636,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "17ef851505aabf2c27d37d342fd5cb5c2247597ec43a7ac03e7232fb6b71268d",
+            "attempts": 1,
+            "latency_seconds": 2.43,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 37,
+            "total_tokens": 107,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 48,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":48}",
+          "latency_seconds": 1.1334715409902856,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "f2877c7fca72b4cbead52054d515645763461bb2c1b9249e0e2b4a0dab8ece9f",
+            "attempts": 1,
+            "latency_seconds": 1.133,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 37,
+            "total_tokens": 107,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 49,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":49}",
+          "latency_seconds": 1.4451502499869093,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "4da5b9debc2b3106937f41930244a21bd12c21624ba1d092b8b4af47122ad29c",
+            "attempts": 1,
+            "latency_seconds": 1.445,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 46,
+            "total_tokens": 116,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 50,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":50}",
+          "latency_seconds": 0.8053290420211852,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "64f850e1f8fe825f99605d1200f54a6f24583b54548cc397d4a9b8bcd289faff",
+            "attempts": 1,
+            "latency_seconds": 0.805,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 37,
+            "total_tokens": 107,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 51,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":51}",
+          "latency_seconds": 1.2553545830305666,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "0dfb3722084c2c2c5433c0006932572df9253fc466762f66ab38f49ff38e484e",
+            "attempts": 1,
+            "latency_seconds": 1.255,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 54,
+            "total_tokens": 124,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 52,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":52}",
+          "latency_seconds": 1.0212760829599574,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "fb8f261528b0ffa56efc973b91f25e9eb41871f62e7187d8b56e9ead1b146cc2",
+            "attempts": 1,
+            "latency_seconds": 1.021,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 40,
+            "total_tokens": 110,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 53,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":53}",
+          "latency_seconds": 1.1702237079734914,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "ca7e81703f708b336e9edbf38120de0a1eb5e6c9eaac3128460b83e17d57bff8",
+            "attempts": 1,
+            "latency_seconds": 1.17,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 39,
+            "total_tokens": 109,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 54,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":54}",
+          "latency_seconds": 1.1110531659796834,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "659a744f1e5d4f1c990b0a95b3d00696202be500d3da7b92cf9508bb1df39b8f",
+            "attempts": 1,
+            "latency_seconds": 1.111,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 47,
+            "total_tokens": 117,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 55,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":55}",
+          "latency_seconds": 2.99612858297769,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "99308654e0aba28a710d98d0de32087257fd4f4e82c883683a5c272575177bef",
+            "attempts": 1,
+            "latency_seconds": 2.996,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 52,
+            "total_tokens": 122,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 56,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":56}",
+          "latency_seconds": 1.2321348339901306,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "4072289742f6ecee97044b077a30d0da8a156083147620da813ca34924fddbec",
+            "attempts": 1,
+            "latency_seconds": 1.232,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 66,
+            "total_tokens": 136,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 57,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":57}",
+          "latency_seconds": 0.9556860830052756,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "441fdd30aa85b41a36e2fc4a708114a42aa882954de09eb14fe32e25a260717f",
+            "attempts": 1,
+            "latency_seconds": 0.956,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 50,
+            "total_tokens": 120,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 58,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":58}",
+          "latency_seconds": 1.1571026250021532,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "e7880bb876d5bd5762148fe740b9dc5d2906e44c3b42656efbdbfcaab4f3d7ee",
+            "attempts": 1,
+            "latency_seconds": 1.157,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 41,
+            "total_tokens": 111,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 59,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":59}",
+          "latency_seconds": 0.8128253750037402,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "3d1265f26ca93a9f893800ac1f3ab9c7e1f96e4ea063c2549253ec8df01a3f4f",
+            "attempts": 1,
+            "latency_seconds": 0.813,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 36,
+            "total_tokens": 106,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 60,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":60}",
+          "latency_seconds": 1.4364240000140853,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "2cd459d5441777cbdf2d46c55cb518c9155627fe79e5678d401eecf735e57323",
+            "attempts": 1,
+            "latency_seconds": 1.436,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 48,
+            "total_tokens": 118,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 61,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":61}",
+          "latency_seconds": 5.727486165997107,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "a5be1d9a8222a4cbd0736653ac0226a4ae9cd6661602611670e0b4e97ffa6b14",
+            "attempts": 1,
+            "latency_seconds": 5.727,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 62,
+            "total_tokens": 132,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 62,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":62}",
+          "latency_seconds": 3.3534432080341503,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "b4cc05a45dbbb9e122785e4691410020d136a9fc510f0e100d5753f782747baf",
+            "attempts": 1,
+            "latency_seconds": 3.353,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 204,
+            "total_tokens": 274,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 63,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":64,\"index\":63}",
+          "latency_seconds": 1.1634911249857396,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "c30b8c8f3ca324c1f5a46095aeab7df3a6f3479d6cf87b124c4b9cf641d90603",
+            "attempts": 1,
+            "latency_seconds": 1.163,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 28,
+            "total_tokens": 98,
+            "usage_source": "provider",
+            "success": true
+          }
+        }
+      ]
+    },
+    {
+      "concurrency": 96,
+      "planned": 96,
+      "passed": 95,
+      "failed": 1,
+      "wall_seconds": 9.021796750021167,
+      "attempts": [
+        {
+          "index": 0,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":0}",
+          "latency_seconds": 0.5856434169691056,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "db49710ba4ebedabb93bbc56547e66b5bd0c4b108f9c127ba9c687ee9916168a",
+            "attempts": 1,
+            "latency_seconds": 0.586,
+            "input_chars": 57,
+            "output_chars": 32,
+            "input_tokens": 70,
+            "output_tokens": 39,
+            "total_tokens": 109,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 1,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":1}",
+          "latency_seconds": 1.5550568340113387,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "f12b37f01bdd70fb73c06be45cfc1f9fa38485a848b6c7f4e0448f161e76670e",
+            "attempts": 1,
+            "latency_seconds": 1.555,
+            "input_chars": 57,
+            "output_chars": 32,
+            "input_tokens": 70,
+            "output_tokens": 158,
+            "total_tokens": 228,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 2,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":2}",
+          "latency_seconds": 1.8246946249855682,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "e7715a435b04f380e859ab2d34d9ee1fad06db1cab87e0503219dc10d5c4faea",
+            "attempts": 1,
+            "latency_seconds": 1.825,
+            "input_chars": 57,
+            "output_chars": 32,
+            "input_tokens": 70,
+            "output_tokens": 140,
+            "total_tokens": 210,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 3,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":3}",
+          "latency_seconds": 2.8015203330432996,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "69ee59aab6bbe189530fc2af5da6e102d451d39ad5445f49a5c94552395a4828",
+            "attempts": 1,
+            "latency_seconds": 2.801,
+            "input_chars": 57,
+            "output_chars": 32,
+            "input_tokens": 70,
+            "output_tokens": 52,
+            "total_tokens": 122,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 4,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":4}",
+          "latency_seconds": 1.849575583008118,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "5fe8d1576c01ec7772e44e50704e9d73e98cf72a4face4e71c39fbac808633fb",
+            "attempts": 1,
+            "latency_seconds": 1.85,
+            "input_chars": 57,
+            "output_chars": 32,
+            "input_tokens": 70,
+            "output_tokens": 41,
+            "total_tokens": 111,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 5,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":5}",
+          "latency_seconds": 2.8543751249671914,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "b7e4a7fc675554e694653652aaa97f13529f92c0bca30ad189fa2eac42cc8a04",
+            "attempts": 1,
+            "latency_seconds": 2.854,
+            "input_chars": 57,
+            "output_chars": 32,
+            "input_tokens": 70,
+            "output_tokens": 39,
+            "total_tokens": 109,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 6,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":6}",
+          "latency_seconds": 0.8038775000022724,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "333e544cccb3a16043cc7f524789da4db3899bb4a12c2558f25091d28faec824",
+            "attempts": 1,
+            "latency_seconds": 0.804,
+            "input_chars": 57,
+            "output_chars": 32,
+            "input_tokens": 70,
+            "output_tokens": 56,
+            "total_tokens": 126,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 7,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":7}",
+          "latency_seconds": 1.7949136669631116,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "b78002f8357b1571d6de3555f8f39f5076afc9a0c5f13eb21fe4cc877754cfab",
+            "attempts": 1,
+            "latency_seconds": 1.795,
+            "input_chars": 57,
+            "output_chars": 32,
+            "input_tokens": 70,
+            "output_tokens": 29,
+            "total_tokens": 99,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 8,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":8}",
+          "latency_seconds": 1.4720515829976648,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "7ef561a1c06573cca440b4186f07c0090cc6248d9e106747ac4626abb7049196",
+            "attempts": 1,
+            "latency_seconds": 1.472,
+            "input_chars": 57,
+            "output_chars": 32,
+            "input_tokens": 70,
+            "output_tokens": 37,
+            "total_tokens": 107,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 9,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":9}",
+          "latency_seconds": 1.4339353750110604,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "ac699c780adc7104ddc0729668cfbff47b7674c0e5ebc99647047d72a6e05d97",
+            "attempts": 1,
+            "latency_seconds": 1.434,
+            "input_chars": 57,
+            "output_chars": 32,
+            "input_tokens": 70,
+            "output_tokens": 41,
+            "total_tokens": 111,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 10,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":10}",
+          "latency_seconds": 1.8831205000169575,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "f5c7db55b83a42cd34919df572abe2ea8f6081d31302161c521bf955d32e9e82",
+            "attempts": 1,
+            "latency_seconds": 1.883,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 26,
+            "total_tokens": 96,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 11,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":11}",
+          "latency_seconds": 1.3510159580036998,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "7087be6f15e92d9b7b16614ae81a382f734a01a4e5430a591a2e33c903263679",
+            "attempts": 1,
+            "latency_seconds": 1.351,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 45,
+            "total_tokens": 115,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 12,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":12}",
+          "latency_seconds": 0.8775218750233762,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "e61f616100373f6eadb98536d0be3b401851c62ab7d861123ac68b894461a9e1",
+            "attempts": 1,
+            "latency_seconds": 0.878,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 63,
+            "total_tokens": 133,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 13,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":13}",
+          "latency_seconds": 2.137635416991543,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "40ed098b92dccbd412809437c742d0a933e9dce6772ce639abee1aba3377bbf5",
+            "attempts": 1,
+            "latency_seconds": 2.137,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 53,
+            "total_tokens": 123,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 14,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":14}",
+          "latency_seconds": 1.1407266670139506,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "ae5d11d21c560e2192d6b15218988e6565a089d7ab3c3976cf895993a12bc45b",
+            "attempts": 1,
+            "latency_seconds": 1.141,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 28,
+            "total_tokens": 98,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 15,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":15}",
+          "latency_seconds": 1.344994459010195,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "37fc76661bb168b652390715e095c41c70bac1472359bd9837e542c352758f17",
+            "attempts": 1,
+            "latency_seconds": 1.345,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 41,
+            "total_tokens": 111,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 16,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":16}",
+          "latency_seconds": 1.1832244580145925,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "9cc795a938887c200941382f4bcc355cf129189ba66ea206a4d762e2a55ff63a",
+            "attempts": 1,
+            "latency_seconds": 1.183,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 30,
+            "total_tokens": 100,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 17,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":17}",
+          "latency_seconds": 1.5343999580363743,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "d55e5fea0548679651545162bcb28eadb991b91ac8d7435fdbd48b44e3b39c81",
+            "attempts": 1,
+            "latency_seconds": 1.534,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 24,
+            "total_tokens": 94,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 18,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":18}",
+          "latency_seconds": 2.27698916697409,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "79dadd7f61116a496f588baf307ce97557c665c9bd2d450b63c43b7dde9c8115",
+            "attempts": 1,
+            "latency_seconds": 2.277,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 103,
+            "total_tokens": 173,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 19,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":19}",
+          "latency_seconds": 2.3331661249976605,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "097c31ceb2d2b34c41b71bd136214a8b0f3fa8124a610dd67fb1c09a51752b66",
+            "attempts": 1,
+            "latency_seconds": 2.333,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 41,
+            "total_tokens": 111,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 20,
+          "status": "SCHEMA_FAILED",
+          "raw_response": "{\"type\": \"json_object\"}",
+          "latency_seconds": 8.945022708037868,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "311aef5a6a062068966765109180ed6d6296f3291abda590f25b56e7b0e5e41f",
+            "attempts": 1,
+            "latency_seconds": 8.945,
+            "input_chars": 58,
+            "output_chars": 23,
+            "input_tokens": 70,
+            "output_tokens": 2167,
+            "total_tokens": 2237,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 21,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":21}",
+          "latency_seconds": 0.7891247500083409,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "2353fb4278ef0309abe1a760ace76c78d2044a3a01259de69faec6a45df48840",
+            "attempts": 1,
+            "latency_seconds": 0.789,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 39,
+            "total_tokens": 109,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 22,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":22}",
+          "latency_seconds": 1.1531079170526937,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "3df14e35fb1d29290b70dafd20cfc3b5f822cefbb787dd08f85727f89ead1e7c",
+            "attempts": 1,
+            "latency_seconds": 1.153,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 47,
+            "total_tokens": 117,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 23,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":23}",
+          "latency_seconds": 1.5413529590005055,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "0e967b9a4111efbec7e233b58d00aa736602d8c6575daac9c390e6ca5833682b",
+            "attempts": 1,
+            "latency_seconds": 1.541,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 41,
+            "total_tokens": 111,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 24,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":24}",
+          "latency_seconds": 1.868965667032171,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "cf109cca92a46cc3d056442bcbea29cd03da1668e228ed3ba00b6aa579250669",
+            "attempts": 1,
+            "latency_seconds": 1.869,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 37,
+            "total_tokens": 107,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 25,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":25}",
+          "latency_seconds": 0.6023758749943227,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "3b16ab031483715094cf5e889d4d369ecc96e82a2237b4d520fbe847cd39227c",
+            "attempts": 1,
+            "latency_seconds": 0.602,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 75,
+            "total_tokens": 145,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 26,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":26}",
+          "latency_seconds": 0.6649500830098987,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "332be0e1d514b8155518388a83e339d07abf302b1623ec1d5b2f0d833a3df950",
+            "attempts": 1,
+            "latency_seconds": 0.665,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 40,
+            "total_tokens": 110,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 27,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":27}",
+          "latency_seconds": 1.9730091249803081,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "91ab1f7af86046703ecf377c0e6eba5dabe444f7256805d1d5a7b05fd24474e5",
+            "attempts": 1,
+            "latency_seconds": 1.973,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 51,
+            "total_tokens": 121,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 28,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":28}",
+          "latency_seconds": 1.8824869579984806,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "9c1488b5197e28711640e8c5f8ca55f312d674a8b650251a4e3cfab33e8ef5c5",
+            "attempts": 1,
+            "latency_seconds": 1.882,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 48,
+            "total_tokens": 118,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 29,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":29}",
+          "latency_seconds": 1.212217083957512,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "7134ab331d25421472aa782678ba6c040fd1e961bff78dbc30f54c5f033aafb9",
+            "attempts": 1,
+            "latency_seconds": 1.212,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 28,
+            "total_tokens": 98,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 30,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":30}",
+          "latency_seconds": 1.18663229100639,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "b664f5519328082624cfa98704b8e4e3009c130822c1523e4df1cec4c7e18110",
+            "attempts": 1,
+            "latency_seconds": 1.187,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 52,
+            "total_tokens": 122,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 31,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":31}",
+          "latency_seconds": 1.8452254160074517,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "5fa3f5b645d29bbb2d4c43d2f943d1dc45f09566e731d1c391e5201218586147",
+            "attempts": 1,
+            "latency_seconds": 1.845,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 61,
+            "total_tokens": 131,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 32,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":32}",
+          "latency_seconds": 1.6124242080259137,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "acff1b92786873e17003ee8391ca92b74549ad0fe71443965a825ad33021bfcf",
+            "attempts": 1,
+            "latency_seconds": 1.612,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 54,
+            "total_tokens": 124,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 33,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":33}",
+          "latency_seconds": 2.1463415829930454,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "12234f0502933502e83a0b0b805ced53b60698b5198ce7c9776b233c604b7e2e",
+            "attempts": 1,
+            "latency_seconds": 2.146,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 28,
+            "total_tokens": 98,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 34,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":34}",
+          "latency_seconds": 4.401177874999121,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "c97d85d2933d61a9592191cb9ebd43aa644b259fb180e0d4638916a3c98dd075",
+            "attempts": 1,
+            "latency_seconds": 4.401,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 28,
+            "total_tokens": 98,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 35,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":35}",
+          "latency_seconds": 1.003034207969904,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "ada4cf5ba053121393fddecaa0cc205e923b16bbdee09da63da7638de28369b5",
+            "attempts": 1,
+            "latency_seconds": 1.003,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 50,
+            "total_tokens": 120,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 36,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":36}",
+          "latency_seconds": 2.23129191697808,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "aab2224781c0023054ba542312f230d4a32e0ed3c4bead6e77e28015b89269c9",
+            "attempts": 1,
+            "latency_seconds": 2.231,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 41,
+            "total_tokens": 111,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 37,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":37}",
+          "latency_seconds": 2.532872333016712,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "b0d0653dde3d8e3636e7a91286db0ba18b68de9002d27bec415d88f137e19f07",
+            "attempts": 1,
+            "latency_seconds": 2.533,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 39,
+            "total_tokens": 109,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 38,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":38}",
+          "latency_seconds": 0.5247784579987638,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "d773abf1755822a4aaaa8c7504c8e36bee0f6d156aacbcb7fab0d170a56e4e72",
+            "attempts": 1,
+            "latency_seconds": 0.525,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 55,
+            "total_tokens": 125,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 39,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":39}",
+          "latency_seconds": 2.8986225420376286,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "358c4216f214e9ccde2cc183442c2e3a34c0a3beffe431f994497e758eabca47",
+            "attempts": 1,
+            "latency_seconds": 2.899,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 71,
+            "total_tokens": 141,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 40,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":40}",
+          "latency_seconds": 1.1172901670215651,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "9ea5965cda46272517cd6753bcdd5f53111c43ea6759351d652ae2175a45a26a",
+            "attempts": 1,
+            "latency_seconds": 1.117,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 50,
+            "total_tokens": 120,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 41,
+          "status": "PASS",
+          "raw_response": "{\"type\":\"json_object\",\"ok\":true,\"level\":96,\"index\":41}",
+          "latency_seconds": 1.3469231249764562,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "afd7936ab83b09238d3ab8d32f29ba81248e161661d113da85da11dd66115df8",
+            "attempts": 1,
+            "latency_seconds": 1.347,
+            "input_chars": 58,
+            "output_chars": 54,
+            "input_tokens": 70,
+            "output_tokens": 41,
+            "total_tokens": 111,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 42,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":42}",
+          "latency_seconds": 0.7203774999943562,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "b58339561dd533b25db3a572cea6e156b6d5152a3bee83e35ee4e9187c8ab51c",
+            "attempts": 1,
+            "latency_seconds": 0.72,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 40,
+            "total_tokens": 110,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 43,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":43}",
+          "latency_seconds": 0.8376196250319481,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "1ba25a76dc85c6f8dcd81d68f0b1b57c7611fc8617af3292f441f816c1798c51",
+            "attempts": 1,
+            "latency_seconds": 0.838,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 53,
+            "total_tokens": 123,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 44,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":44}",
+          "latency_seconds": 0.6526088750106283,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "fe1ba1e6cb55d3814b5e41da888c8d5e9ffa88c16b2086091ffddf5935e9b304",
+            "attempts": 1,
+            "latency_seconds": 0.653,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 65,
+            "total_tokens": 135,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 45,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":45}",
+          "latency_seconds": 1.203282999980729,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "acd98c3640a3ae97b084b2fbf039d801977e4c639be15e3e59e06a232f64140f",
+            "attempts": 1,
+            "latency_seconds": 1.203,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 56,
+            "total_tokens": 126,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 46,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":46}",
+          "latency_seconds": 0.6428420000011101,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "de0805c5056639584ae73bd6ca06c01149e4f936af81aa2909624a4d9a0b2a40",
+            "attempts": 1,
+            "latency_seconds": 0.643,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 49,
+            "total_tokens": 119,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 47,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":47}",
+          "latency_seconds": 1.1206396659836173,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "22a307397e55d185ac1b07a66a3edbc2076065891dd6c5a44cacc4ccc214812c",
+            "attempts": 1,
+            "latency_seconds": 1.121,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 36,
+            "total_tokens": 106,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 48,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":48}",
+          "latency_seconds": 1.8972824170487002,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "a7740af363487dde4289f1e7247c28c9d686b3846391d20e0a88669c92bcb299",
+            "attempts": 1,
+            "latency_seconds": 1.897,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 39,
+            "total_tokens": 109,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 49,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":49}",
+          "latency_seconds": 1.32235358300386,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "f5e60114efed60434dae21f08d897d32ed46e2c442ff906a23f43abcfa09cd8f",
+            "attempts": 1,
+            "latency_seconds": 1.322,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 42,
+            "total_tokens": 112,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 50,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":50}",
+          "latency_seconds": 1.707956500002183,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "4156b658a0f60a9a2d05b37249ef4b2f5d14f700d17b3c57c4325113e87c3928",
+            "attempts": 1,
+            "latency_seconds": 1.708,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 37,
+            "total_tokens": 107,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 51,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":51}",
+          "latency_seconds": 1.8318041669554077,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "607644227cf8a529e63d25349e277b34ec1e4d9d1103ad7902fe61d541276600",
+            "attempts": 1,
+            "latency_seconds": 1.832,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 40,
+            "total_tokens": 110,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 52,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":52}",
+          "latency_seconds": 2.044588458025828,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "244822bcdf88232a8a514f234432d1f44f5431766a4b8ba53933dcef08081ae5",
+            "attempts": 1,
+            "latency_seconds": 2.045,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 28,
+            "total_tokens": 98,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 53,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":53}",
+          "latency_seconds": 3.495549166982528,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "f6fbcd2b8ae0d81f9b4deac229df04734ed8e624ed5bbd4babc771243fd3d9dc",
+            "attempts": 1,
+            "latency_seconds": 3.495,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 37,
+            "total_tokens": 107,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 54,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":54}",
+          "latency_seconds": 3.803879666957073,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "ddab7fc51aa60ca87c55a6951ed6cf403cf7069042b4c105a64320c55944fa27",
+            "attempts": 1,
+            "latency_seconds": 3.804,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 42,
+            "total_tokens": 112,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 55,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":55}",
+          "latency_seconds": 0.9841851669480093,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "5faaec0e4730fcb1959773bf16f9573668e12e83d86de9dff96d1a5a7c48a9a4",
+            "attempts": 1,
+            "latency_seconds": 0.984,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 49,
+            "total_tokens": 119,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 56,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":56}",
+          "latency_seconds": 1.5510190830100328,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "512da57ecfd8df34abf6450a00ff05806e4c36ae21ee39fde0fd3f868b93ed57",
+            "attempts": 1,
+            "latency_seconds": 1.551,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 49,
+            "total_tokens": 119,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 57,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":57}",
+          "latency_seconds": 0.9378653329913504,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "548453ef55c87c41a85cd995c6bc4e7436b81ded27e4dc3a6975ca166b47306a",
+            "attempts": 1,
+            "latency_seconds": 0.938,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 28,
+            "total_tokens": 98,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 58,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":58}",
+          "latency_seconds": 1.2178639579797164,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "758190c28df690f509336a342da39efe76911a5988c65983862a150c78e01c74",
+            "attempts": 1,
+            "latency_seconds": 1.218,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 46,
+            "total_tokens": 116,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 59,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":59}",
+          "latency_seconds": 1.9815495410002768,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "2d57821998416f3fc4f88740d3014d571dbbd0aae94f76c82f7a2294c3e9c8f0",
+            "attempts": 1,
+            "latency_seconds": 1.982,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 53,
+            "total_tokens": 123,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 60,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":60}",
+          "latency_seconds": 1.3245357080013491,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "e4b206f3c626cb0bf78cd391a79fc95a9e1e6eb3b01447ed735a56fe5781675b",
+            "attempts": 1,
+            "latency_seconds": 1.324,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 59,
+            "total_tokens": 129,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 61,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":61}",
+          "latency_seconds": 1.4582307920209132,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "292dccba1b084c321255eee26d9777cd0a59618c5fc10c7e5dc16bfb1961cbe0",
+            "attempts": 1,
+            "latency_seconds": 1.458,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 37,
+            "total_tokens": 107,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 62,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":62}",
+          "latency_seconds": 1.3681341250194237,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "4746ae414816d181480b6e082bedb7b9c1222a58308ba91011c4db7d53b99af7",
+            "attempts": 1,
+            "latency_seconds": 1.368,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 44,
+            "total_tokens": 114,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 63,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":63}",
+          "latency_seconds": 3.4409996250178665,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "5680991b37745205e538d6a870eeff118170986570c4787c1b8c15c7b0302f2c",
+            "attempts": 1,
+            "latency_seconds": 3.441,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 30,
+            "total_tokens": 100,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 64,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":64}",
+          "latency_seconds": 1.6580706250388175,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "7b48c8b4f97c8bb2a53422dac8132b0b655b6151d57599ab61e00e796d26e67c",
+            "attempts": 1,
+            "latency_seconds": 1.658,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 51,
+            "total_tokens": 121,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 65,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":65}",
+          "latency_seconds": 2.5590966250165366,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "94a11ad2583517608865d27c39dd32cd5350298c274b07ec2aff4731b057c524",
+            "attempts": 1,
+            "latency_seconds": 2.559,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 49,
+            "total_tokens": 119,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 66,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":66}",
+          "latency_seconds": 0.8514312919578515,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "cc952f975c730af9d2cff36be5e761870cd67999c7c5d89c5e3337aae5962d16",
+            "attempts": 1,
+            "latency_seconds": 0.851,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 40,
+            "total_tokens": 110,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 67,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":67}",
+          "latency_seconds": 0.9785100840381347,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "bb5c9225237762dfd7a32789211ffb1a14dd6c7c67439e3b2981578b30cf2057",
+            "attempts": 1,
+            "latency_seconds": 0.978,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 42,
+            "total_tokens": 112,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 68,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":68}",
+          "latency_seconds": 2.0410034169908613,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "8022d1daa80c6fee7fcce06b33a5e232778d3e7bb7d954fae602225d7a5b5a88",
+            "attempts": 1,
+            "latency_seconds": 2.041,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 311,
+            "total_tokens": 381,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 69,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":69}",
+          "latency_seconds": 0.8065763750346377,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "b7f5c890f704cf740298ed55051a6da64e6f6e177c374cc85e2ceeff12c2a8f7",
+            "attempts": 1,
+            "latency_seconds": 0.807,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 55,
+            "total_tokens": 125,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 70,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":70}",
+          "latency_seconds": 1.104226459050551,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "8ae99287b7f8b1d70c2796d147c9efa484b2a9ec432693a714b13a7f78cbfc38",
+            "attempts": 1,
+            "latency_seconds": 1.104,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 37,
+            "total_tokens": 107,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 71,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":71}",
+          "latency_seconds": 1.5236442079767585,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "3ece59f6e1864f3d4d844e003c8811e769bc4d9da7617e9118626902e17444d9",
+            "attempts": 1,
+            "latency_seconds": 1.524,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 29,
+            "total_tokens": 99,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 72,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":72}",
+          "latency_seconds": 1.3357781250379048,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "5821657360ebafe4f3e05c59a4f225de8a8849ae028237a7133773fbb8ea4ddd",
+            "attempts": 1,
+            "latency_seconds": 1.336,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 36,
+            "total_tokens": 106,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 73,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":73}",
+          "latency_seconds": 3.605512333975639,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "004f213fcf6c24dc38f3fa123acfed59c36d1de330a8328f308d3ae7250b1c0c",
+            "attempts": 1,
+            "latency_seconds": 3.605,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 84,
+            "total_tokens": 154,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 74,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":74}",
+          "latency_seconds": 1.9239851669990458,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "c4c831ff4d05f109ff295821d74d2ab47673d190c49d11c5c1f60e13ad76f873",
+            "attempts": 1,
+            "latency_seconds": 1.924,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 69,
+            "total_tokens": 139,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 75,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":75}",
+          "latency_seconds": 2.70084466697881,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "b172542748095c14589fff6880649bd49a523db788a18e80b3c17088590c53ef",
+            "attempts": 1,
+            "latency_seconds": 2.701,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 39,
+            "total_tokens": 109,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 76,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":76}",
+          "latency_seconds": 1.5054642499890178,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "5795301ae353abcbdfe3eab6ed1e73c96ea1bc25486905721d69c140b75d5df8",
+            "attempts": 1,
+            "latency_seconds": 1.505,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 252,
+            "total_tokens": 322,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 77,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":77}",
+          "latency_seconds": 2.617335249960888,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "06375861c076af23ce3d19e9575c897e79c05de9b7768a0c86ad1da2b6fcac33",
+            "attempts": 1,
+            "latency_seconds": 2.617,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 57,
+            "total_tokens": 127,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 78,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":78}",
+          "latency_seconds": 2.1296667080023326,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "56257363bf13035844f572b0bdfa43d900e36e01d9b1acec0557b923b9b9c12c",
+            "attempts": 1,
+            "latency_seconds": 2.13,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 135,
+            "total_tokens": 205,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 79,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":79}",
+          "latency_seconds": 2.8553151670494117,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "d042724c33009bf46b52dbab228bf6105719b9b34402ec594b57738b7425fdd2",
+            "attempts": 1,
+            "latency_seconds": 2.855,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 49,
+            "total_tokens": 119,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 80,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":80}",
+          "latency_seconds": 0.6916372089763172,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "3daf69854906db6fd3fcf40f674464f57eee5cc15ecda3b1e95de930860dba49",
+            "attempts": 1,
+            "latency_seconds": 0.692,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 56,
+            "total_tokens": 126,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 81,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":81}",
+          "latency_seconds": 2.7858550410019234,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "4fa659e8413ecf2f6d97a7739e4e93794de0028df0673404ad5742a815c8ff77",
+            "attempts": 1,
+            "latency_seconds": 2.786,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 81,
+            "total_tokens": 151,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 82,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":82}",
+          "latency_seconds": 0.7183677079738118,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "0a4d8a53a525902fe67371502bb29f0899d26ff5e832ed1eae45791dd2c6b02a",
+            "attempts": 1,
+            "latency_seconds": 0.718,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 34,
+            "total_tokens": 104,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 83,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":83}",
+          "latency_seconds": 0.8178149999585003,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "a0c0e52ed481fa92aa0602a1adb1a3281cbed59168c37b452f08f1a723fdf8a7",
+            "attempts": 1,
+            "latency_seconds": 0.818,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 52,
+            "total_tokens": 122,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 84,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":84}",
+          "latency_seconds": 2.0150531249819323,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "2240ce03b0167f43a1891a3dc44fec7563b55f16b13936eaf708e85616fae026",
+            "attempts": 1,
+            "latency_seconds": 2.015,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 24,
+            "total_tokens": 94,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 85,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":85}",
+          "latency_seconds": 2.5149403330287896,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "7a3e70c9caf09d032bf702269159f17de30b57631ce090d3467f9272552d3cf6",
+            "attempts": 1,
+            "latency_seconds": 2.515,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 291,
+            "total_tokens": 361,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 86,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":86}",
+          "latency_seconds": 2.531957416969817,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "4694bad1a2ea370ce58f11d270c6617e06cfd7991984c02d32b1c63355c4c989",
+            "attempts": 1,
+            "latency_seconds": 2.532,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 51,
+            "total_tokens": 121,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 87,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":87}",
+          "latency_seconds": 3.899628292012494,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "e22dc6cee0aff6668bc3631446a450d63170da0999e55da9e18e2280534c63b6",
+            "attempts": 1,
+            "latency_seconds": 3.9,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 80,
+            "total_tokens": 150,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 88,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":88}",
+          "latency_seconds": 1.4641495419782586,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "1122bb4f144ee0bf417d2288706f2509703d4b8240a07d21268f0226e1836d7d",
+            "attempts": 1,
+            "latency_seconds": 1.464,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 43,
+            "total_tokens": 113,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 89,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":89}",
+          "latency_seconds": 2.192302000010386,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "19348ddc779facfad590619f73d544c1ede5090ec3d53e76bc7750a0444d9bc7",
+            "attempts": 1,
+            "latency_seconds": 2.192,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 30,
+            "total_tokens": 100,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 90,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":90}",
+          "latency_seconds": 2.2540176670299843,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "b0451861c2733dd0745f01c09fbdb97e36e3e32d2a3713f6b2e482278693502c",
+            "attempts": 1,
+            "latency_seconds": 2.254,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 47,
+            "total_tokens": 117,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 91,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":91}",
+          "latency_seconds": 1.7807231670012698,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "b0cfbd89043f26e406e8684833e9670797a6966119aae40c7689b88a5006869d",
+            "attempts": 1,
+            "latency_seconds": 1.781,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 28,
+            "total_tokens": 98,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 92,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":92}",
+          "latency_seconds": 1.0856188330217265,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "a58451e007559feb022575cd553948afd9a054974f9cd367194a35fff9c08c74",
+            "attempts": 1,
+            "latency_seconds": 1.085,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 26,
+            "total_tokens": 96,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 93,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":93}",
+          "latency_seconds": 1.5698842080309987,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "e5b7aa18b3c2b0424919da1c6de64d512b603ad52464c537b9b3bf024b4aa6e8",
+            "attempts": 1,
+            "latency_seconds": 1.57,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 41,
+            "total_tokens": 111,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 94,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":94}",
+          "latency_seconds": 0.8061626250273548,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "7849f7097ee8dc0ab268a3d9fd8fa441d663e20b860a17f1417655f9494b210d",
+            "attempts": 1,
+            "latency_seconds": 0.806,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 43,
+            "total_tokens": 113,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 95,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":96,\"index\":95}",
+          "latency_seconds": 1.2122177500277758,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "31f2cd6c20e28b9c8da59f7ca85451ef007420cb352277ee765b0463d5222313",
+            "attempts": 1,
+            "latency_seconds": 1.212,
+            "input_chars": 58,
+            "output_chars": 33,
+            "input_tokens": 70,
+            "output_tokens": 57,
+            "total_tokens": 127,
+            "usage_source": "provider",
+            "success": true
+          }
+        }
+      ]
+    }
+  ],
+  "finished_at": "2026-09-09T16:31:30.171650+00:00"
+}

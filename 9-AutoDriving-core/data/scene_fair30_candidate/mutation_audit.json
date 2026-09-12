@@ -1,0 +1,1082 @@
+[
+  {
+    "case_id": "F01",
+    "field": "selection",
+    "value": "minimum_added_distance",
+    "changed": true
+  },
+  {
+    "case_id": "F01",
+    "field": "selection",
+    "value": "highest_rating",
+    "changed": true
+  },
+  {
+    "case_id": "F01",
+    "field": "availability_reference",
+    "value": "departure",
+    "changed": false
+  },
+  {
+    "case_id": "F01",
+    "field": "return_by",
+    "value": 595,
+    "changed": true
+  },
+  {
+    "case_id": "F01",
+    "field": "return_by",
+    "value": 605,
+    "changed": true
+  },
+  {
+    "case_id": "F01",
+    "field": "return_by",
+    "value": 620,
+    "changed": true
+  },
+  {
+    "case_id": "F02",
+    "field": "selection",
+    "value": "nearest_from_bank",
+    "changed": true
+  },
+  {
+    "case_id": "F02",
+    "field": "selection",
+    "value": "highest_rating",
+    "changed": false
+  },
+  {
+    "case_id": "F02",
+    "field": "availability_reference",
+    "value": "departure",
+    "changed": false
+  },
+  {
+    "case_id": "F02",
+    "field": "return_by",
+    "value": 595,
+    "changed": true
+  },
+  {
+    "case_id": "F02",
+    "field": "return_by",
+    "value": 605,
+    "changed": true
+  },
+  {
+    "case_id": "F02",
+    "field": "return_by",
+    "value": 620,
+    "changed": false
+  },
+  {
+    "case_id": "F03",
+    "field": "selection",
+    "value": "nearest_from_bank",
+    "changed": true
+  },
+  {
+    "case_id": "F03",
+    "field": "selection",
+    "value": "minimum_added_distance",
+    "changed": true
+  },
+  {
+    "case_id": "F03",
+    "field": "availability_reference",
+    "value": "departure",
+    "changed": false
+  },
+  {
+    "case_id": "F03",
+    "field": "return_by",
+    "value": 595,
+    "changed": true
+  },
+  {
+    "case_id": "F03",
+    "field": "return_by",
+    "value": 605,
+    "changed": false
+  },
+  {
+    "case_id": "F03",
+    "field": "return_by",
+    "value": 620,
+    "changed": false
+  },
+  {
+    "case_id": "F04",
+    "field": "selection",
+    "value": "minimum_added_distance",
+    "changed": true
+  },
+  {
+    "case_id": "F04",
+    "field": "selection",
+    "value": "highest_rating",
+    "changed": true
+  },
+  {
+    "case_id": "F04",
+    "field": "availability_reference",
+    "value": "departure",
+    "changed": false
+  },
+  {
+    "case_id": "F04",
+    "field": "return_by",
+    "value": 595,
+    "changed": true
+  },
+  {
+    "case_id": "F04",
+    "field": "return_by",
+    "value": 605,
+    "changed": true
+  },
+  {
+    "case_id": "F04",
+    "field": "return_by",
+    "value": 620,
+    "changed": false
+  },
+  {
+    "case_id": "F05",
+    "field": "selection",
+    "value": "nearest_from_bank",
+    "changed": true
+  },
+  {
+    "case_id": "F05",
+    "field": "selection",
+    "value": "highest_rating",
+    "changed": true
+  },
+  {
+    "case_id": "F05",
+    "field": "availability_reference",
+    "value": "departure",
+    "changed": false
+  },
+  {
+    "case_id": "F05",
+    "field": "return_by",
+    "value": 595,
+    "changed": true
+  },
+  {
+    "case_id": "F05",
+    "field": "return_by",
+    "value": 605,
+    "changed": true
+  },
+  {
+    "case_id": "F05",
+    "field": "return_by",
+    "value": 620,
+    "changed": false
+  },
+  {
+    "case_id": "F06",
+    "field": "selection",
+    "value": "nearest_from_bank",
+    "changed": true
+  },
+  {
+    "case_id": "F06",
+    "field": "selection",
+    "value": "minimum_added_distance",
+    "changed": false
+  },
+  {
+    "case_id": "F06",
+    "field": "availability_reference",
+    "value": "departure",
+    "changed": false
+  },
+  {
+    "case_id": "F06",
+    "field": "return_by",
+    "value": 595,
+    "changed": true
+  },
+  {
+    "case_id": "F06",
+    "field": "return_by",
+    "value": 605,
+    "changed": true
+  },
+  {
+    "case_id": "F06",
+    "field": "return_by",
+    "value": 620,
+    "changed": false
+  },
+  {
+    "case_id": "F07",
+    "field": "selection",
+    "value": "minimum_added_distance",
+    "changed": false
+  },
+  {
+    "case_id": "F07",
+    "field": "selection",
+    "value": "highest_rating",
+    "changed": false
+  },
+  {
+    "case_id": "F07",
+    "field": "availability_reference",
+    "value": "arrival",
+    "changed": true
+  },
+  {
+    "case_id": "F07",
+    "field": "return_by",
+    "value": 595,
+    "changed": true
+  },
+  {
+    "case_id": "F07",
+    "field": "return_by",
+    "value": 605,
+    "changed": false
+  },
+  {
+    "case_id": "F07",
+    "field": "return_by",
+    "value": 620,
+    "changed": false
+  },
+  {
+    "case_id": "F08",
+    "field": "selection",
+    "value": "nearest_from_bank",
+    "changed": true
+  },
+  {
+    "case_id": "F08",
+    "field": "selection",
+    "value": "highest_rating",
+    "changed": true
+  },
+  {
+    "case_id": "F08",
+    "field": "availability_reference",
+    "value": "arrival",
+    "changed": false
+  },
+  {
+    "case_id": "F08",
+    "field": "return_by",
+    "value": 595,
+    "changed": true
+  },
+  {
+    "case_id": "F08",
+    "field": "return_by",
+    "value": 605,
+    "changed": false
+  },
+  {
+    "case_id": "F08",
+    "field": "return_by",
+    "value": 620,
+    "changed": false
+  },
+  {
+    "case_id": "F09",
+    "field": "selection",
+    "value": "nearest_from_bank",
+    "changed": false
+  },
+  {
+    "case_id": "F09",
+    "field": "selection",
+    "value": "minimum_added_distance",
+    "changed": false
+  },
+  {
+    "case_id": "F09",
+    "field": "availability_reference",
+    "value": "arrival",
+    "changed": false
+  },
+  {
+    "case_id": "F09",
+    "field": "return_by",
+    "value": 595,
+    "changed": false
+  },
+  {
+    "case_id": "F09",
+    "field": "return_by",
+    "value": 605,
+    "changed": false
+  },
+  {
+    "case_id": "F09",
+    "field": "return_by",
+    "value": 620,
+    "changed": false
+  },
+  {
+    "case_id": "F10",
+    "field": "selection",
+    "value": "minimum_added_distance",
+    "changed": true
+  },
+  {
+    "case_id": "F10",
+    "field": "selection",
+    "value": "highest_rating",
+    "changed": false
+  },
+  {
+    "case_id": "F10",
+    "field": "availability_reference",
+    "value": "arrival",
+    "changed": false
+  },
+  {
+    "case_id": "F10",
+    "field": "return_by",
+    "value": 595,
+    "changed": true
+  },
+  {
+    "case_id": "F10",
+    "field": "return_by",
+    "value": 605,
+    "changed": false
+  },
+  {
+    "case_id": "F10",
+    "field": "return_by",
+    "value": 620,
+    "changed": false
+  },
+  {
+    "case_id": "F11",
+    "field": "selection",
+    "value": "nearest_from_bank",
+    "changed": false
+  },
+  {
+    "case_id": "F11",
+    "field": "selection",
+    "value": "highest_rating",
+    "changed": true
+  },
+  {
+    "case_id": "F11",
+    "field": "availability_reference",
+    "value": "arrival",
+    "changed": true
+  },
+  {
+    "case_id": "F11",
+    "field": "return_by",
+    "value": 595,
+    "changed": true
+  },
+  {
+    "case_id": "F11",
+    "field": "return_by",
+    "value": 605,
+    "changed": true
+  },
+  {
+    "case_id": "F11",
+    "field": "return_by",
+    "value": 620,
+    "changed": false
+  },
+  {
+    "case_id": "F12",
+    "field": "selection",
+    "value": "nearest_from_bank",
+    "changed": false
+  },
+  {
+    "case_id": "F12",
+    "field": "selection",
+    "value": "minimum_added_distance",
+    "changed": false
+  },
+  {
+    "case_id": "F12",
+    "field": "availability_reference",
+    "value": "arrival",
+    "changed": false
+  },
+  {
+    "case_id": "F12",
+    "field": "return_by",
+    "value": 595,
+    "changed": true
+  },
+  {
+    "case_id": "F12",
+    "field": "return_by",
+    "value": 605,
+    "changed": true
+  },
+  {
+    "case_id": "F12",
+    "field": "return_by",
+    "value": 620,
+    "changed": false
+  },
+  {
+    "case_id": "F13",
+    "field": "selection",
+    "value": "minimum_added_distance",
+    "changed": false
+  },
+  {
+    "case_id": "F13",
+    "field": "selection",
+    "value": "highest_rating",
+    "changed": true
+  },
+  {
+    "case_id": "F13",
+    "field": "availability_reference",
+    "value": "departure",
+    "changed": false
+  },
+  {
+    "case_id": "F13",
+    "field": "return_by",
+    "value": null,
+    "changed": false
+  },
+  {
+    "case_id": "F13",
+    "field": "return_by",
+    "value": 595,
+    "changed": true
+  },
+  {
+    "case_id": "F13",
+    "field": "return_by",
+    "value": 620,
+    "changed": false
+  },
+  {
+    "case_id": "F14",
+    "field": "selection",
+    "value": "nearest_from_bank",
+    "changed": false
+  },
+  {
+    "case_id": "F14",
+    "field": "selection",
+    "value": "highest_rating",
+    "changed": false
+  },
+  {
+    "case_id": "F14",
+    "field": "availability_reference",
+    "value": "departure",
+    "changed": false
+  },
+  {
+    "case_id": "F14",
+    "field": "return_by",
+    "value": null,
+    "changed": true
+  },
+  {
+    "case_id": "F14",
+    "field": "return_by",
+    "value": 605,
+    "changed": false
+  },
+  {
+    "case_id": "F14",
+    "field": "return_by",
+    "value": 620,
+    "changed": true
+  },
+  {
+    "case_id": "F15",
+    "field": "selection",
+    "value": "nearest_from_bank",
+    "changed": false
+  },
+  {
+    "case_id": "F15",
+    "field": "selection",
+    "value": "minimum_added_distance",
+    "changed": true
+  },
+  {
+    "case_id": "F15",
+    "field": "availability_reference",
+    "value": "departure",
+    "changed": false
+  },
+  {
+    "case_id": "F15",
+    "field": "return_by",
+    "value": null,
+    "changed": false
+  },
+  {
+    "case_id": "F15",
+    "field": "return_by",
+    "value": 595,
+    "changed": true
+  },
+  {
+    "case_id": "F15",
+    "field": "return_by",
+    "value": 605,
+    "changed": true
+  },
+  {
+    "case_id": "F16",
+    "field": "selection",
+    "value": "minimum_added_distance",
+    "changed": true
+  },
+  {
+    "case_id": "F16",
+    "field": "selection",
+    "value": "highest_rating",
+    "changed": true
+  },
+  {
+    "case_id": "F16",
+    "field": "availability_reference",
+    "value": "departure",
+    "changed": false
+  },
+  {
+    "case_id": "F16",
+    "field": "return_by",
+    "value": null,
+    "changed": false
+  },
+  {
+    "case_id": "F16",
+    "field": "return_by",
+    "value": 595,
+    "changed": true
+  },
+  {
+    "case_id": "F16",
+    "field": "return_by",
+    "value": 620,
+    "changed": false
+  },
+  {
+    "case_id": "F17",
+    "field": "selection",
+    "value": "nearest_from_bank",
+    "changed": false
+  },
+  {
+    "case_id": "F17",
+    "field": "selection",
+    "value": "highest_rating",
+    "changed": false
+  },
+  {
+    "case_id": "F17",
+    "field": "availability_reference",
+    "value": "departure",
+    "changed": false
+  },
+  {
+    "case_id": "F17",
+    "field": "return_by",
+    "value": null,
+    "changed": false
+  },
+  {
+    "case_id": "F17",
+    "field": "return_by",
+    "value": 595,
+    "changed": false
+  },
+  {
+    "case_id": "F17",
+    "field": "return_by",
+    "value": 620,
+    "changed": false
+  },
+  {
+    "case_id": "F18",
+    "field": "selection",
+    "value": "nearest_from_bank",
+    "changed": false
+  },
+  {
+    "case_id": "F18",
+    "field": "selection",
+    "value": "minimum_added_distance",
+    "changed": false
+  },
+  {
+    "case_id": "F18",
+    "field": "availability_reference",
+    "value": "departure",
+    "changed": false
+  },
+  {
+    "case_id": "F18",
+    "field": "return_by",
+    "value": null,
+    "changed": true
+  },
+  {
+    "case_id": "F18",
+    "field": "return_by",
+    "value": 605,
+    "changed": true
+  },
+  {
+    "case_id": "F18",
+    "field": "return_by",
+    "value": 620,
+    "changed": true
+  },
+  {
+    "case_id": "F19",
+    "field": "selection",
+    "value": "minimum_added_distance",
+    "changed": false
+  },
+  {
+    "case_id": "F19",
+    "field": "selection",
+    "value": "highest_rating",
+    "changed": false
+  },
+  {
+    "case_id": "F19",
+    "field": "availability_reference",
+    "value": "departure",
+    "changed": false
+  },
+  {
+    "case_id": "F19",
+    "field": "return_by",
+    "value": 595,
+    "changed": false
+  },
+  {
+    "case_id": "F19",
+    "field": "return_by",
+    "value": 605,
+    "changed": false
+  },
+  {
+    "case_id": "F19",
+    "field": "return_by",
+    "value": 620,
+    "changed": false
+  },
+  {
+    "case_id": "F20",
+    "field": "selection",
+    "value": "nearest_from_bank",
+    "changed": true
+  },
+  {
+    "case_id": "F20",
+    "field": "selection",
+    "value": "highest_rating",
+    "changed": true
+  },
+  {
+    "case_id": "F20",
+    "field": "availability_reference",
+    "value": "departure",
+    "changed": false
+  },
+  {
+    "case_id": "F20",
+    "field": "return_by",
+    "value": 595,
+    "changed": true
+  },
+  {
+    "case_id": "F20",
+    "field": "return_by",
+    "value": 605,
+    "changed": false
+  },
+  {
+    "case_id": "F20",
+    "field": "return_by",
+    "value": 620,
+    "changed": false
+  },
+  {
+    "case_id": "F21",
+    "field": "selection",
+    "value": "nearest_from_bank",
+    "changed": true
+  },
+  {
+    "case_id": "F21",
+    "field": "selection",
+    "value": "minimum_added_distance",
+    "changed": true
+  },
+  {
+    "case_id": "F21",
+    "field": "availability_reference",
+    "value": "departure",
+    "changed": false
+  },
+  {
+    "case_id": "F21",
+    "field": "return_by",
+    "value": 595,
+    "changed": true
+  },
+  {
+    "case_id": "F21",
+    "field": "return_by",
+    "value": 605,
+    "changed": true
+  },
+  {
+    "case_id": "F21",
+    "field": "return_by",
+    "value": 620,
+    "changed": false
+  },
+  {
+    "case_id": "F22",
+    "field": "selection",
+    "value": "minimum_added_distance",
+    "changed": true
+  },
+  {
+    "case_id": "F22",
+    "field": "selection",
+    "value": "highest_rating",
+    "changed": true
+  },
+  {
+    "case_id": "F22",
+    "field": "availability_reference",
+    "value": "departure",
+    "changed": false
+  },
+  {
+    "case_id": "F22",
+    "field": "return_by",
+    "value": 595,
+    "changed": true
+  },
+  {
+    "case_id": "F22",
+    "field": "return_by",
+    "value": 605,
+    "changed": true
+  },
+  {
+    "case_id": "F22",
+    "field": "return_by",
+    "value": 620,
+    "changed": false
+  },
+  {
+    "case_id": "F23",
+    "field": "selection",
+    "value": "nearest_from_bank",
+    "changed": false
+  },
+  {
+    "case_id": "F23",
+    "field": "selection",
+    "value": "highest_rating",
+    "changed": false
+  },
+  {
+    "case_id": "F23",
+    "field": "availability_reference",
+    "value": "departure",
+    "changed": false
+  },
+  {
+    "case_id": "F23",
+    "field": "return_by",
+    "value": 595,
+    "changed": true
+  },
+  {
+    "case_id": "F23",
+    "field": "return_by",
+    "value": 605,
+    "changed": true
+  },
+  {
+    "case_id": "F23",
+    "field": "return_by",
+    "value": 620,
+    "changed": false
+  },
+  {
+    "case_id": "F24",
+    "field": "selection",
+    "value": "nearest_from_bank",
+    "changed": false
+  },
+  {
+    "case_id": "F24",
+    "field": "selection",
+    "value": "minimum_added_distance",
+    "changed": false
+  },
+  {
+    "case_id": "F24",
+    "field": "availability_reference",
+    "value": "departure",
+    "changed": false
+  },
+  {
+    "case_id": "F24",
+    "field": "return_by",
+    "value": 595,
+    "changed": true
+  },
+  {
+    "case_id": "F24",
+    "field": "return_by",
+    "value": 605,
+    "changed": true
+  },
+  {
+    "case_id": "F24",
+    "field": "return_by",
+    "value": 620,
+    "changed": false
+  },
+  {
+    "case_id": "F25",
+    "field": "selection",
+    "value": "minimum_added_distance",
+    "changed": false
+  },
+  {
+    "case_id": "F25",
+    "field": "selection",
+    "value": "highest_rating",
+    "changed": false
+  },
+  {
+    "case_id": "F25",
+    "field": "availability_reference",
+    "value": "arrival",
+    "changed": true
+  },
+  {
+    "case_id": "F25",
+    "field": "return_by",
+    "value": null,
+    "changed": false
+  },
+  {
+    "case_id": "F25",
+    "field": "return_by",
+    "value": 595,
+    "changed": true
+  },
+  {
+    "case_id": "F25",
+    "field": "return_by",
+    "value": 605,
+    "changed": true
+  },
+  {
+    "case_id": "F26",
+    "field": "selection",
+    "value": "nearest_from_bank",
+    "changed": false
+  },
+  {
+    "case_id": "F26",
+    "field": "selection",
+    "value": "highest_rating",
+    "changed": false
+  },
+  {
+    "case_id": "F26",
+    "field": "availability_reference",
+    "value": "arrival",
+    "changed": false
+  },
+  {
+    "case_id": "F26",
+    "field": "return_by",
+    "value": null,
+    "changed": false
+  },
+  {
+    "case_id": "F26",
+    "field": "return_by",
+    "value": 595,
+    "changed": true
+  },
+  {
+    "case_id": "F26",
+    "field": "return_by",
+    "value": 605,
+    "changed": false
+  },
+  {
+    "case_id": "F27",
+    "field": "selection",
+    "value": "nearest_from_bank",
+    "changed": false
+  },
+  {
+    "case_id": "F27",
+    "field": "selection",
+    "value": "minimum_added_distance",
+    "changed": false
+  },
+  {
+    "case_id": "F27",
+    "field": "availability_reference",
+    "value": "arrival",
+    "changed": false
+  },
+  {
+    "case_id": "F27",
+    "field": "return_by",
+    "value": null,
+    "changed": true
+  },
+  {
+    "case_id": "F27",
+    "field": "return_by",
+    "value": 605,
+    "changed": false
+  },
+  {
+    "case_id": "F27",
+    "field": "return_by",
+    "value": 620,
+    "changed": true
+  },
+  {
+    "case_id": "F28",
+    "field": "selection",
+    "value": "minimum_added_distance",
+    "changed": false
+  },
+  {
+    "case_id": "F28",
+    "field": "selection",
+    "value": "highest_rating",
+    "changed": false
+  },
+  {
+    "case_id": "F28",
+    "field": "availability_reference",
+    "value": "arrival",
+    "changed": false
+  },
+  {
+    "case_id": "F28",
+    "field": "return_by",
+    "value": null,
+    "changed": true
+  },
+  {
+    "case_id": "F28",
+    "field": "return_by",
+    "value": 605,
+    "changed": true
+  },
+  {
+    "case_id": "F28",
+    "field": "return_by",
+    "value": 620,
+    "changed": true
+  },
+  {
+    "case_id": "F29",
+    "field": "selection",
+    "value": "nearest_from_bank",
+    "changed": false
+  },
+  {
+    "case_id": "F29",
+    "field": "selection",
+    "value": "highest_rating",
+    "changed": false
+  },
+  {
+    "case_id": "F29",
+    "field": "availability_reference",
+    "value": "arrival",
+    "changed": true
+  },
+  {
+    "case_id": "F29",
+    "field": "return_by",
+    "value": null,
+    "changed": false
+  },
+  {
+    "case_id": "F29",
+    "field": "return_by",
+    "value": 595,
+    "changed": false
+  },
+  {
+    "case_id": "F29",
+    "field": "return_by",
+    "value": 620,
+    "changed": false
+  },
+  {
+    "case_id": "F30",
+    "field": "selection",
+    "value": "nearest_from_bank",
+    "changed": false
+  },
+  {
+    "case_id": "F30",
+    "field": "selection",
+    "value": "minimum_added_distance",
+    "changed": false
+  },
+  {
+    "case_id": "F30",
+    "field": "availability_reference",
+    "value": "arrival",
+    "changed": false
+  },
+  {
+    "case_id": "F30",
+    "field": "return_by",
+    "value": null,
+    "changed": false
+  },
+  {
+    "case_id": "F30",
+    "field": "return_by",
+    "value": 595,
+    "changed": true
+  },
+  {
+    "case_id": "F30",
+    "field": "return_by",
+    "value": 605,
+    "changed": true
+  }
+]

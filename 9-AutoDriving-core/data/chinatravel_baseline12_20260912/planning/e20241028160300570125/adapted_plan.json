@@ -1,0 +1,175 @@
+{
+  "people_number": 1,
+  "start_city": "南京",
+  "target_city": "武汉",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "start_time": "09:33",
+          "end_time": "12:30",
+          "start": "南京南站",
+          "end": "武汉站",
+          "price": 296.86,
+          "cost": 296.86,
+          "tickets": 1,
+          "transports": [],
+          "TrainID": "G1549",
+          "type": "train"
+        },
+        {
+          "position": "棠户小龙虾私房料理",
+          "type": "lunch",
+          "price": 154,
+          "cost": 154,
+          "start_time": "12:48",
+          "end_time": "13:48",
+          "transports": [
+            {
+              "start": "武汉站",
+              "end": "棠户小龙虾私房料理",
+              "mode": "taxi",
+              "start_time": "12:30",
+              "end_time": "12:48",
+              "cost": 51.1,
+              "distance": 12.53,
+              "price": 51.1,
+              "cars": 1
+            }
+          ]
+        },
+        {
+          "position": "刘少奇同志旧居",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "14:03",
+          "end_time": "15:33",
+          "transports": [
+            {
+              "start": "棠户小龙虾私房料理",
+              "end": "江汉路-地铁站",
+              "mode": "walk",
+              "start_time": "13:48",
+              "end_time": "13:57",
+              "cost": 0,
+              "distance": 0.76,
+              "price": 0
+            },
+            {
+              "start": "江汉路-地铁站",
+              "end": "三阳路-地铁站",
+              "mode": "metro",
+              "start_time": "13:57",
+              "end_time": "14:01",
+              "cost": 2,
+              "distance": 2.29,
+              "price": 2,
+              "tickets": 1
+            },
+            {
+              "start": "三阳路-地铁站",
+              "end": "刘少奇同志旧居",
+              "mode": "walk",
+              "start_time": "14:01",
+              "end_time": "14:03",
+              "cost": 0,
+              "distance": 0.19,
+              "price": 0
+            }
+          ],
+          "tickets": 1
+        },
+        {
+          "position": "洪山公园",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "15:56",
+          "end_time": "17:26",
+          "transports": [
+            {
+              "start": "刘少奇同志旧居",
+              "end": "三阳路-地铁站",
+              "mode": "walk",
+              "start_time": "15:33",
+              "end_time": "15:35",
+              "cost": 0,
+              "distance": 0.19,
+              "price": 0
+            },
+            {
+              "start": "三阳路-地铁站",
+              "end": "洪山路-地铁站",
+              "mode": "metro",
+              "start_time": "15:35",
+              "end_time": "15:49",
+              "cost": 3,
+              "distance": 7.17,
+              "price": 3,
+              "tickets": 1
+            },
+            {
+              "start": "洪山路-地铁站",
+              "end": "洪山公园",
+              "mode": "walk",
+              "start_time": "15:49",
+              "end_time": "15:56",
+              "cost": 0,
+              "distance": 0.62,
+              "price": 0
+            }
+          ],
+          "tickets": 1
+        },
+        {
+          "start_time": "19:52",
+          "end_time": "22:37",
+          "start": "武汉站",
+          "end": "南京南站",
+          "price": 296.86,
+          "cost": 296.86,
+          "tickets": 1,
+          "transports": [
+            {
+              "start": "洪山公园",
+              "end": "洪山路-地铁站",
+              "mode": "walk",
+              "start_time": "17:26",
+              "end_time": "17:33",
+              "cost": 0,
+              "distance": 0.62,
+              "price": 0
+            },
+            {
+              "start": "洪山路-地铁站",
+              "end": "武汉站东广场-地铁站",
+              "mode": "metro",
+              "start_time": "17:33",
+              "end_time": "17:53",
+              "cost": 4,
+              "distance": 10.47,
+              "price": 4,
+              "tickets": 1
+            },
+            {
+              "start": "武汉站东广场-地铁站",
+              "end": "武汉站",
+              "mode": "walk",
+              "start_time": "17:53",
+              "end_time": "17:55",
+              "cost": 0,
+              "distance": 0.19,
+              "price": 0
+            }
+          ],
+          "TrainID": "G1428",
+          "type": "train"
+        }
+      ]
+    }
+  ],
+  "search_time_sec": 0.8425719738006592,
+  "llm_inference_time_sec": 0
+}

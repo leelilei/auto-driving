@@ -1,0 +1,268 @@
+{
+  "status": "PASS",
+  "scope": "frozen 12-case development baseline; input/denominator audit only",
+  "model_calls": 12,
+  "public_input_cases": 12,
+  "public_input_keys_only": true,
+  "collection_complete": 12,
+  "planning_cases": 12,
+  "planning_search_successes": 12,
+  "accepted_predictions": 12,
+  "official_all_pass_cases": 12,
+  "full_denominator": 12,
+  "excluded_from_denominator": [],
+  "request_private_marker_hits": 0,
+  "search_trace_private_marker_hits": 0,
+  "request_checks": [
+    {
+      "uid": "e20241028160251109186",
+      "public_keys": [
+        "nature_language",
+        "uid"
+      ],
+      "forbidden_markers": []
+    },
+    {
+      "uid": "e20241028160253742452",
+      "public_keys": [
+        "nature_language",
+        "uid"
+      ],
+      "forbidden_markers": []
+    },
+    {
+      "uid": "e20241028160255878579",
+      "public_keys": [
+        "nature_language",
+        "uid"
+      ],
+      "forbidden_markers": []
+    },
+    {
+      "uid": "e20241028160258515151",
+      "public_keys": [
+        "nature_language",
+        "uid"
+      ],
+      "forbidden_markers": []
+    },
+    {
+      "uid": "e20241028160300570125",
+      "public_keys": [
+        "nature_language",
+        "uid"
+      ],
+      "forbidden_markers": []
+    },
+    {
+      "uid": "e20241028160301887545",
+      "public_keys": [
+        "nature_language",
+        "uid"
+      ],
+      "forbidden_markers": []
+    },
+    {
+      "uid": "e20241028160303262666",
+      "public_keys": [
+        "nature_language",
+        "uid"
+      ],
+      "forbidden_markers": []
+    },
+    {
+      "uid": "e20241028160306588034",
+      "public_keys": [
+        "nature_language",
+        "uid"
+      ],
+      "forbidden_markers": []
+    },
+    {
+      "uid": "e20241028160307743716",
+      "public_keys": [
+        "nature_language",
+        "uid"
+      ],
+      "forbidden_markers": []
+    },
+    {
+      "uid": "e20241028160309165566",
+      "public_keys": [
+        "nature_language",
+        "uid"
+      ],
+      "forbidden_markers": []
+    },
+    {
+      "uid": "e20241028160311039073",
+      "public_keys": [
+        "nature_language",
+        "uid"
+      ],
+      "forbidden_markers": []
+    },
+    {
+      "uid": "e20241028160312706595",
+      "public_keys": [
+        "nature_language",
+        "uid"
+      ],
+      "forbidden_markers": []
+    }
+  ],
+  "trace_checks": [
+    {
+      "uid": "e20241028160251109186",
+      "compiled_query_keys": [
+        "days",
+        "hard_logic_py",
+        "people_number",
+        "start_city",
+        "target_city",
+        "uid"
+      ],
+      "private_markers": []
+    },
+    {
+      "uid": "e20241028160253742452",
+      "compiled_query_keys": [
+        "days",
+        "hard_logic_py",
+        "people_number",
+        "start_city",
+        "target_city",
+        "uid"
+      ],
+      "private_markers": []
+    },
+    {
+      "uid": "e20241028160255878579",
+      "compiled_query_keys": [
+        "days",
+        "hard_logic_py",
+        "people_number",
+        "start_city",
+        "target_city",
+        "uid"
+      ],
+      "private_markers": []
+    },
+    {
+      "uid": "e20241028160258515151",
+      "compiled_query_keys": [
+        "days",
+        "hard_logic_py",
+        "people_number",
+        "start_city",
+        "target_city",
+        "uid"
+      ],
+      "private_markers": []
+    },
+    {
+      "uid": "e20241028160300570125",
+      "compiled_query_keys": [
+        "days",
+        "hard_logic_py",
+        "people_number",
+        "start_city",
+        "target_city",
+        "uid"
+      ],
+      "private_markers": []
+    },
+    {
+      "uid": "e20241028160301887545",
+      "compiled_query_keys": [
+        "days",
+        "hard_logic_py",
+        "people_number",
+        "start_city",
+        "target_city",
+        "uid"
+      ],
+      "private_markers": []
+    },
+    {
+      "uid": "e20241028160303262666",
+      "compiled_query_keys": [
+        "days",
+        "hard_logic_py",
+        "people_number",
+        "start_city",
+        "target_city",
+        "uid"
+      ],
+      "private_markers": []
+    },
+    {
+      "uid": "e20241028160306588034",
+      "compiled_query_keys": [
+        "days",
+        "hard_logic_py",
+        "people_number",
+        "start_city",
+        "target_city",
+        "uid"
+      ],
+      "private_markers": []
+    },
+    {
+      "uid": "e20241028160307743716",
+      "compiled_query_keys": [
+        "days",
+        "hard_logic_py",
+        "people_number",
+        "start_city",
+        "target_city",
+        "uid"
+      ],
+      "private_markers": []
+    },
+    {
+      "uid": "e20241028160309165566",
+      "compiled_query_keys": [
+        "days",
+        "hard_logic_py",
+        "people_number",
+        "start_city",
+        "target_city",
+        "uid"
+      ],
+      "private_markers": []
+    },
+    {
+      "uid": "e20241028160311039073",
+      "compiled_query_keys": [
+        "days",
+        "hard_logic_py",
+        "people_number",
+        "start_city",
+        "target_city",
+        "uid"
+      ],
+      "private_markers": []
+    },
+    {
+      "uid": "e20241028160312706595",
+      "compiled_query_keys": [
+        "days",
+        "hard_logic_py",
+        "people_number",
+        "start_city",
+        "target_city",
+        "uid"
+      ],
+      "private_markers": []
+    }
+  ],
+  "conclusion": "No input leakage or denominator omission observed; 100% is 12/12 for this diagnostic slice, not benchmark evidence.",
+  "artifact_hashes": {
+    "preregistration.json": "34e4080d285e59f8b359914829cb04b90d8f9bc8822a3291b436daffd1c85596",
+    "public_inputs.json": "81e01b0a8d28a1b3fa10a5dc29f9c9ef80fe95aa7e24d49369ba79e60cb72dd4",
+    "collection_retry1.json": "fbd14a49aeb32991288a1371857bce46ccaf7baffb0b16818399a0ab3c626a1c",
+    "final_audit.json": "8d06b9e6343e599278c41cc788fced0999448f2b12a39b746cb6fe2233abfa59",
+    "planning/summary.json": "afb705443f6068662ec7cd0e56f9aa3bf70c70ce3036be0db0ccb2ee0373cea3"
+  }
+}

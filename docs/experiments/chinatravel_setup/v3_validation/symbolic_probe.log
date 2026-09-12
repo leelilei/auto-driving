@@ -1,0 +1,20 @@
+/Users/mac/Documents/6-Research/9-AutoDriving/external/ChinaTravel/.venv-chinatravel/lib/python3.13/site-packages/fuzzywuzzy/fuzz.py:11: UserWarning: Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning
+  warnings.warn('Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning')
+Traceback (most recent call last):
+  File "/Users/mac/Documents/6-Research/9-AutoDriving/9-AutoDriving-core/scripts/chinatravel_symbolic_probe.py", line 97, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/mac/Documents/6-Research/9-AutoDriving/9-AutoDriving-core/scripts/chinatravel_symbolic_probe.py", line 92, in main
+    results={case['name']:solve(case['intent'],out/case['name']) for case in cases}
+                          ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Documents/6-Research/9-AutoDriving/9-AutoDriving-core/scripts/chinatravel_symbolic_probe.py", line 41, in solve
+    from chinatravel.agent.nesy_agent.rule_driven_rec import RuleDrivenAgent
+  File "/Users/mac/Documents/6-Research/9-AutoDriving/external/ChinaTravel/chinatravel/agent/nesy_agent/rule_driven_rec.py", line 10, in <module>
+    from chinatravel.agent.nesy_agent.nesy_agent import NesyAgent
+  File "/Users/mac/Documents/6-Research/9-AutoDriving/external/ChinaTravel/chinatravel/agent/nesy_agent/nesy_agent.py", line 30, in <module>
+    from chinatravel.agent.nesy_agent.nl2sl_hybrid import nl2sl_reflect
+  File "/Users/mac/Documents/6-Research/9-AutoDriving/external/ChinaTravel/chinatravel/agent/nesy_agent/nl2sl_hybrid.py", line 224, in <module>
+    EXAMPLE_PLANS = load_example_plans()
+  File "/Users/mac/Documents/6-Research/9-AutoDriving/external/ChinaTravel/chinatravel/agent/nesy_agent/nl2sl_hybrid.py", line 215, in load_example_plans
+    plan_files = os.listdir(example_plans_dir)
+FileNotFoundError: [Errno 2] No such file or directory: 'chinatravel/agent/nesy_agent/plan_for_check'

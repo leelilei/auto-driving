@@ -1,0 +1,11 @@
+{
+  "collection_complete": false,
+  "recorded": 48,
+  "planned": 48,
+  "statuses": {
+    "COMPLETE": 0,
+    "SCHEMA_FAILED": 0,
+    "TRANSPORT_FAILED": 48
+  },
+  "provider_tokens": 0
+}

@@ -1,0 +1,42 @@
+{
+  "call_id": "stress_concession_quality_v3::A",
+  "role": "A",
+  "graph_condition": null,
+  "started_at": "2026-09-10T02:29:02.009888+00:00",
+  "request": {
+    "system": "You extract route-planning intent from the user's instruction.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nUse only the instruction. Do not invent constraints. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Stop by the library, supermarket, and shopping mall. Favor the top-rated choices, even when doing so adds distance."
+  },
+  "raw_response": "{\"pois\":[\"library\",\"supermarket\",\"shopping mall\"],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":1.0,\"evidence\":{\"pois\":\"library, supermarket, and shopping mall\",\"quality_weight\":\"Favor the top-rated choices, even when doing so adds distance\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "library",
+      "shopping_mall",
+      "supermarket"
+    ],
+    "time_limit": null,
+    "dependencies": [],
+    "quality_weight": 1.0
+  },
+  "evidence": {
+    "pois": "library, supermarket, and shopping mall",
+    "quality_weight": "Favor the top-rated choices, even when doing so adds distance"
+  },
+  "changes": [],
+  "finished_at": "2026-09-10T02:29:04.239550+00:00",
+  "telemetry": {
+    "call_index": 7,
+    "prompt_sha256": "92a4d27620c7e9d467289b727e2ef932e3b080c0e6f569809a3393e1486a69fd",
+    "attempts": 1,
+    "latency_seconds": 2.23,
+    "input_chars": 770,
+    "output_chars": 250,
+    "input_tokens": 214,
+    "output_tokens": 490,
+    "total_tokens": 704,
+    "usage_source": "provider",
+    "success": true
+  }
+}

@@ -1,0 +1,1 @@
+Superseded by closeout_v2c_20260912, adding explicit synthetic gold-weight comparison and run metadata hashes. Original results retained. The evaluator snapshot is preserved here; live source hashes have advanced.

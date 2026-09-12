@@ -1,0 +1,42 @@
+{
+  "call_id": "pilot_03_v0::time_sensitive::darc",
+  "role": "darc",
+  "graph_condition": "time_sensitive",
+  "started_at": "2026-09-09T18:25:44.467905+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. The decision-contrast report is diagnostic evidence about consequences; it is not a label and must not override the words of the instruction.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Use the report to locate consequential disagreements, then decide each field from the instruction alone.\n\nInstruction:\nToday, make sure to visit the pharmacy and the shopping mall. Try to find a balance between visiting well-rated places and keeping the route efficient. There are no specific dependencies on the order of visits, so feel free to choose the sequence that works best for you.\n\nCandidate A:\n{\"dependencies\": [], \"pois\": [\"pharmacy\", \"shopping_mall\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nCandidate B:\n{\"dependencies\": [], \"pois\": [\"pharmacy\", \"shopping_mall\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nDecision-contrast report:\n{\"candidate_A\": {\"dependencies\": [], \"pois\": [\"pharmacy\", \"shopping_mall\"], \"quality_weight\": 0.5, \"time_limit\": null}, \"candidate_B\": {\"dependencies\": [], \"pois\": [\"pharmacy\", \"shopping_mall\"], \"quality_weight\": 0.5, \"time_limit\": null}, \"candidate_evidence\": {\"A\": {\"pois\": \"visit the pharmacy and the shopping mall\", \"quality_weight\": \"find a balance between visiting well-rated places and keeping the route efficient\"}, \"B\": {\"pois\": \"visit the pharmacy and the shopping mall\", \"quality_weight\": \"find a balance between visiting well-rated places and keeping the route efficient\"}}, \"cross_constraints\": {\"route_A_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_A_under_B\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_B\": {\"reasons\": [], \"task_success\": true}}, \"differing_fields\": [], \"instruction\": \"Today, make sure to visit the pharmacy and the shopping mall. Try to find a balance between visiting well-rated places and keeping the route efficient. There are no specific dependencies on the order of visits, so feel free to choose the sequence that works best for you.\", \"limitations\": [\"The report does not identify the user's true intent.\", \"Both candidates may share the same error.\", \"Single-field swaps do not identify higher-order interactions.\"], \"report_version\": \"darc-v5.1-contrast-2\", \"routes\": {\"A\": {\"arrival_minutes\": 622, \"average_quality\": 0.2, \"categories\": [\"pharmacy\", \"shopping_mall\"], \"coverage_count\": 2, \"distance_km\": 3.317, \"duration_minutes\": 81.6, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"pharmacy_1\", \"shopping_mall_1\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": 0.0729030257950895}, \"B\": {\"arrival_minutes\": 622, \"average_quality\": 0.2, \"categories\": [\"pharmacy\", \"shopping_mall\"], \"coverage_count\": 2, \"distance_km\": 3.317, \"duration_minutes\": 81.6, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"pharmacy_1\", \"shopping_mall_1\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": 0.0729030257950895}}, \"single_field_swaps\": []}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"pharmacy\",\"shopping_mall\"],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{\"pois\":\"visit the pharmacy and the shopping mall\",\"quality_weight\":\"find a balance between visiting well-rated places and keeping the route efficient\",\"dependencies\":\"There are no specific dependencies on the order of visits\"},\"changes\":[]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "pharmacy",
+      "shopping_mall"
+    ],
+    "time_limit": null,
+    "dependencies": [],
+    "quality_weight": 0.5
+  },
+  "evidence": {
+    "pois": "visit the pharmacy and the shopping mall",
+    "quality_weight": "find a balance between visiting well-rated places and keeping the route efficient",
+    "dependencies": "There are no specific dependencies on the order of visits"
+  },
+  "changes": [],
+  "finished_at": "2026-09-09T18:25:50.560939+00:00",
+  "telemetry": {
+    "call_index": 8,
+    "prompt_sha256": "e275e98133d5bad2c686a0a8dd64c2c212afc3fc9b62061c1c5889502845c473",
+    "attempts": 1,
+    "latency_seconds": 6.093,
+    "input_chars": 3270,
+    "output_chars": 357,
+    "input_tokens": 823,
+    "output_tokens": 82,
+    "total_tokens": 905,
+    "usage_source": "provider",
+    "success": true
+  }
+}

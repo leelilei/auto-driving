@@ -1,0 +1,44 @@
+{
+  "call_id": "pilot_04_v1::time_sensitive::review_plain",
+  "role": "review_plain",
+  "graph_condition": "time_sensitive",
+  "started_at": "2026-09-09T17:37:39.719933+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. Candidate agreement is not proof of correctness.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not use route efficiency to infer what the user wants.\n\nInstruction:\nMake sure to visit the bank and the library today, returning by 18:00. It is crucial to prioritize an efficient, quick route for these stops.\n\nCandidate A:\n{\"dependencies\": [], \"pois\": [\"bank\", \"library\"], \"quality_weight\": 0.1, \"time_limit\": 1080}\n\nCandidate B:\n{\"dependencies\": [], \"pois\": [\"bank\", \"library\"], \"quality_weight\": 0.1, \"time_limit\": 1080}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"bank\",\"library\"],\"time_limit\":1080,\"dependencies\":[],\"quality_weight\":1.0},\"evidence\":{\"pois\":\"visit the bank and the library\",\"time_limit\":\"returning by 18:00\",\"quality_weight\":\"crucial to prioritize an efficient, quick route\"},\"changes\":[\"quality_weight\"]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library"
+    ],
+    "time_limit": 1080,
+    "dependencies": [],
+    "quality_weight": 1.0
+  },
+  "evidence": {
+    "pois": "visit the bank and the library",
+    "time_limit": "returning by 18:00",
+    "quality_weight": "crucial to prioritize an efficient, quick route"
+  },
+  "changes": [
+    "quality_weight"
+  ],
+  "finished_at": "2026-09-09T17:38:10.676562+00:00",
+  "telemetry": {
+    "call_index": 4,
+    "prompt_sha256": "b7114ab1af0ae853ac46d05c41dcc84512a9f7081cdc8592f922bfb888261956",
+    "attempts": 1,
+    "latency_seconds": 30.956,
+    "input_chars": 872,
+    "output_chars": 278,
+    "input_tokens": 219,
+    "output_tokens": 242,
+    "total_tokens": 461,
+    "usage_source": "provider",
+    "success": true
+  }
+}

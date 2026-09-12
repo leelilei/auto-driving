@@ -1,0 +1,51 @@
+{
+  "call_id": "R24__r1__glossary",
+  "source": "REAL",
+  "request": {
+    "system": "Review the predicted selection rule against the instruction and full public scene. The prediction may be wrong. Supplementary computed facts are consequences only and cannot override what the instruction requests. Check every field, including when the prediction seems feasible. Return only a JSON object with exactly selection, availability_reference, return_by, evidence.\nselection is nearest_from_bank, minimum_added_distance, or highest_rating.\navailability_reference is departure only when already open at home departure is explicitly required, otherwise arrival.\nreturn_by is integer minutes since midnight or null when absent. It is the requested deadline, not a computed arrival time.\nevidence quotes instruction spans. Preserve the requirements even if infeasible. Do not choose a pharmacy ID or relax a rule.\nOUTPUT CONTRACT (applies to all fields):\nReturn one JSON object only, with no commentary before or after it and no Markdown fences.\nIt has exactly four keys: selection, availability_reference, return_by, evidence.\nThe first three fields follow the rules above. evidence MUST be a JSON object, never a string or array.\nInside evidence use field names as keys and instruction quotations as string values; an empty object {} is valid.\nDo not add a verdict, explanation paragraph, corrected_policy wrapper, or any extra top-level key.\n\nDefinitions of the three selection values:\n- nearest_from_bank: minimize the straight-line distance d(B, P) from bank B to the pharmacy P among eligible pharmacies.\n- minimum_added_distance: minimize d(B, P) + d(P, H) - d(B, H) among eligible pharmacies, where H is home.\n- highest_rating: maximize the pharmacy rating among eligible pharmacies.\nThese definitions specify the selection field. Read which objective is requested from the instruction; the availability_reference and return_by fields retain their definitions above.\n",
+    "user": "{\"candidate_policy\": {\"availability_reference\": \"arrival\", \"return_by\": null, \"selection\": \"highest_rating\"}, \"computed_scene_facts\": null, \"instruction\": \"Start at home at 09:00. Visit bank B first, then exactly one pharmacy, then return home. Travel along straight lines at 1 distance unit per minute. Bank service takes 20 minutes and pharmacy service takes 10 minutes. Do not wait for a place to open. Start service immediately on arrival; each service must finish no later than closing time. If no pharmacy can satisfy every requirement, report INFEASIBLE. Among pharmacies satisfying every requirement, choose the one with the highest rating.\", \"scene\": {\"bank\": {\"close\": 660, \"open\": 500, \"rating\": 4, \"x\": 10, \"y\": 0}, \"bank_service\": 20, \"departure\": 540, \"home\": [0, 0], \"pharmacies\": {\"P_alpha\": {\"close\": 582, \"open\": 500, \"rating\": 4.9, \"x\": 12, \"y\": 0}, \"P_beta\": {\"close\": 660, \"open\": 500, \"rating\": 4, \"x\": 8, \"y\": 0}, \"P_gamma\": {\"close\": 660, \"open\": 500, \"rating\": 3.5, \"x\": 15, \"y\": 0}}, \"pharmacy_service\": 10, \"speed_units_per_minute\": 1}}"
+  },
+  "started": "2026-09-10T15:54:47.876078+00:00",
+  "status": "COMPLETE",
+  "concurrency": 2,
+  "raw_response": "```json\n{\n  \"selection\": \"highest_rating\",\n  \"availability_reference\": \"arrival\",\n  \"return_by\": null,\n  \"evidence\": {\n    \"selection\": \"Among pharmacies satisfying every requirement, choose the one with the highest rating.\",\n    \"availability_reference\": \"Do not wait for a place to open. Start service immediately on arrival\",\n    \"return_by\": \"\"\n  }\n}\n```",
+  "provider_response": {
+    "content": [
+      {
+        "text": "```json\n{\n  \"selection\": \"highest_rating\",\n  \"availability_reference\": \"arrival\",\n  \"return_by\": null,\n  \"evidence\": {\n    \"selection\": \"Among pharmacies satisfying every requirement, choose the one with the highest rating.\",\n    \"availability_reference\": \"Do not wait for a place to open. Start service immediately on arrival\",\n    \"return_by\": \"\"\n  }\n}\n```",
+        "type": "text"
+      }
+    ],
+    "id": "msg_0u9tL9uvRrhgrMzAwAAQzuOA",
+    "model": "claude-haiku-4-5-20251001",
+    "role": "assistant",
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation_input_tokens": 410,
+      "cache_read_input_tokens": 54,
+      "input_tokens": 333,
+      "output_tokens": 95
+    }
+  },
+  "parsed_policy": {
+    "selection": "highest_rating",
+    "availability_reference": "arrival",
+    "return_by": null
+  },
+  "finished": "2026-09-10T15:54:55.000595+00:00",
+  "telemetry": {
+    "call_index": 1,
+    "prompt_sha256": "d477f03cf189a7b8a2cde4b06a8b5a775902a3d915592e036588f3b11b8e522c",
+    "attempts": 1,
+    "latency_seconds": 7.123,
+    "input_chars": 2943,
+    "output_chars": 358,
+    "input_tokens": 333,
+    "output_tokens": 95,
+    "total_tokens": 428,
+    "usage_source": "provider",
+    "success": true
+  }
+}

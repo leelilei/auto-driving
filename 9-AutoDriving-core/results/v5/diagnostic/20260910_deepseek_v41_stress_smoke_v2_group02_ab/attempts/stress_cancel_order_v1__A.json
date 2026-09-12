@@ -1,0 +1,42 @@
+{
+  "call_id": "stress_cancel_order_v1::A",
+  "role": "A",
+  "graph_condition": null,
+  "started_at": "2026-09-10T02:32:24.172984+00:00",
+  "request": {
+    "system": "You extract route-planning intent from the user's instruction.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nUse only the instruction. Do not invent constraints. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Stop at the supermarket, bank, and pharmacy using an efficient route. There is no requirement that the bank come before the pharmacy."
+  },
+  "raw_response": "{\"pois\":[\"supermarket\",\"bank\",\"pharmacy\"],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.0,\"evidence\":{\"pois\":\"supermarket, bank, and pharmacy\",\"quality_weight\":\"using an efficient route\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "pharmacy",
+      "supermarket"
+    ],
+    "time_limit": null,
+    "dependencies": [],
+    "quality_weight": 0.0
+  },
+  "evidence": {
+    "pois": "supermarket, bank, and pharmacy",
+    "quality_weight": "using an efficient route"
+  },
+  "changes": [],
+  "finished_at": "2026-09-10T02:32:27.341874+00:00",
+  "telemetry": {
+    "call_index": 3,
+    "prompt_sha256": "849e161afc8bf87d5c63ae3ef05218e454d1ee41c2e99cec6c90921ea9429abf",
+    "attempts": 1,
+    "latency_seconds": 3.169,
+    "input_chars": 788,
+    "output_chars": 197,
+    "input_tokens": 215,
+    "output_tokens": 704,
+    "total_tokens": 919,
+    "usage_source": "provider",
+    "success": true
+  }
+}

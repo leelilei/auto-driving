@@ -1,0 +1,14 @@
+{
+  "scope": "hand-authored development model selection; not a paper result",
+  "model": "deepseek-v4.1-flash-expires-on-0910",
+  "transport": "curl",
+  "planned_calls": 5,
+  "attempted_calls": 1,
+  "collection_complete": false,
+  "schema_valid": 0,
+  "hard_exact": 0,
+  "direction_exact": 0,
+  "provider_usage_calls": 0,
+  "provider_total_tokens": 0,
+  "mean_latency_seconds": 0.657
+}

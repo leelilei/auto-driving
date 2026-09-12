@@ -1,0 +1,1082 @@
+[
+  {
+    "call_id": "R01__r1__direct",
+    "case_id": "R01",
+    "rep": 1,
+    "role": "direct"
+  },
+  {
+    "call_id": "R01__r1__language",
+    "case_id": "R01",
+    "rep": 1,
+    "role": "language"
+  },
+  {
+    "call_id": "R01__r1__evidence",
+    "case_id": "R01",
+    "rep": 1,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R02__r1__direct",
+    "case_id": "R02",
+    "rep": 1,
+    "role": "direct"
+  },
+  {
+    "call_id": "R02__r1__language",
+    "case_id": "R02",
+    "rep": 1,
+    "role": "language"
+  },
+  {
+    "call_id": "R02__r1__evidence",
+    "case_id": "R02",
+    "rep": 1,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R03__r1__direct",
+    "case_id": "R03",
+    "rep": 1,
+    "role": "direct"
+  },
+  {
+    "call_id": "R03__r1__language",
+    "case_id": "R03",
+    "rep": 1,
+    "role": "language"
+  },
+  {
+    "call_id": "R03__r1__evidence",
+    "case_id": "R03",
+    "rep": 1,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R04__r1__direct",
+    "case_id": "R04",
+    "rep": 1,
+    "role": "direct"
+  },
+  {
+    "call_id": "R04__r1__language",
+    "case_id": "R04",
+    "rep": 1,
+    "role": "language"
+  },
+  {
+    "call_id": "R04__r1__evidence",
+    "case_id": "R04",
+    "rep": 1,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R05__r1__direct",
+    "case_id": "R05",
+    "rep": 1,
+    "role": "direct"
+  },
+  {
+    "call_id": "R05__r1__language",
+    "case_id": "R05",
+    "rep": 1,
+    "role": "language"
+  },
+  {
+    "call_id": "R05__r1__evidence",
+    "case_id": "R05",
+    "rep": 1,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R06__r1__direct",
+    "case_id": "R06",
+    "rep": 1,
+    "role": "direct"
+  },
+  {
+    "call_id": "R06__r1__language",
+    "case_id": "R06",
+    "rep": 1,
+    "role": "language"
+  },
+  {
+    "call_id": "R06__r1__evidence",
+    "case_id": "R06",
+    "rep": 1,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R07__r1__direct",
+    "case_id": "R07",
+    "rep": 1,
+    "role": "direct"
+  },
+  {
+    "call_id": "R07__r1__language",
+    "case_id": "R07",
+    "rep": 1,
+    "role": "language"
+  },
+  {
+    "call_id": "R07__r1__evidence",
+    "case_id": "R07",
+    "rep": 1,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R08__r1__direct",
+    "case_id": "R08",
+    "rep": 1,
+    "role": "direct"
+  },
+  {
+    "call_id": "R08__r1__language",
+    "case_id": "R08",
+    "rep": 1,
+    "role": "language"
+  },
+  {
+    "call_id": "R08__r1__evidence",
+    "case_id": "R08",
+    "rep": 1,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R09__r1__direct",
+    "case_id": "R09",
+    "rep": 1,
+    "role": "direct"
+  },
+  {
+    "call_id": "R09__r1__language",
+    "case_id": "R09",
+    "rep": 1,
+    "role": "language"
+  },
+  {
+    "call_id": "R09__r1__evidence",
+    "case_id": "R09",
+    "rep": 1,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R10__r1__direct",
+    "case_id": "R10",
+    "rep": 1,
+    "role": "direct"
+  },
+  {
+    "call_id": "R10__r1__language",
+    "case_id": "R10",
+    "rep": 1,
+    "role": "language"
+  },
+  {
+    "call_id": "R10__r1__evidence",
+    "case_id": "R10",
+    "rep": 1,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R11__r1__direct",
+    "case_id": "R11",
+    "rep": 1,
+    "role": "direct"
+  },
+  {
+    "call_id": "R11__r1__language",
+    "case_id": "R11",
+    "rep": 1,
+    "role": "language"
+  },
+  {
+    "call_id": "R11__r1__evidence",
+    "case_id": "R11",
+    "rep": 1,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R12__r1__direct",
+    "case_id": "R12",
+    "rep": 1,
+    "role": "direct"
+  },
+  {
+    "call_id": "R12__r1__language",
+    "case_id": "R12",
+    "rep": 1,
+    "role": "language"
+  },
+  {
+    "call_id": "R12__r1__evidence",
+    "case_id": "R12",
+    "rep": 1,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R13__r1__direct",
+    "case_id": "R13",
+    "rep": 1,
+    "role": "direct"
+  },
+  {
+    "call_id": "R13__r1__language",
+    "case_id": "R13",
+    "rep": 1,
+    "role": "language"
+  },
+  {
+    "call_id": "R13__r1__evidence",
+    "case_id": "R13",
+    "rep": 1,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R14__r1__direct",
+    "case_id": "R14",
+    "rep": 1,
+    "role": "direct"
+  },
+  {
+    "call_id": "R14__r1__language",
+    "case_id": "R14",
+    "rep": 1,
+    "role": "language"
+  },
+  {
+    "call_id": "R14__r1__evidence",
+    "case_id": "R14",
+    "rep": 1,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R15__r1__direct",
+    "case_id": "R15",
+    "rep": 1,
+    "role": "direct"
+  },
+  {
+    "call_id": "R15__r1__language",
+    "case_id": "R15",
+    "rep": 1,
+    "role": "language"
+  },
+  {
+    "call_id": "R15__r1__evidence",
+    "case_id": "R15",
+    "rep": 1,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R16__r1__direct",
+    "case_id": "R16",
+    "rep": 1,
+    "role": "direct"
+  },
+  {
+    "call_id": "R16__r1__language",
+    "case_id": "R16",
+    "rep": 1,
+    "role": "language"
+  },
+  {
+    "call_id": "R16__r1__evidence",
+    "case_id": "R16",
+    "rep": 1,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R17__r1__direct",
+    "case_id": "R17",
+    "rep": 1,
+    "role": "direct"
+  },
+  {
+    "call_id": "R17__r1__language",
+    "case_id": "R17",
+    "rep": 1,
+    "role": "language"
+  },
+  {
+    "call_id": "R17__r1__evidence",
+    "case_id": "R17",
+    "rep": 1,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R18__r1__direct",
+    "case_id": "R18",
+    "rep": 1,
+    "role": "direct"
+  },
+  {
+    "call_id": "R18__r1__language",
+    "case_id": "R18",
+    "rep": 1,
+    "role": "language"
+  },
+  {
+    "call_id": "R18__r1__evidence",
+    "case_id": "R18",
+    "rep": 1,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R19__r1__direct",
+    "case_id": "R19",
+    "rep": 1,
+    "role": "direct"
+  },
+  {
+    "call_id": "R19__r1__language",
+    "case_id": "R19",
+    "rep": 1,
+    "role": "language"
+  },
+  {
+    "call_id": "R19__r1__evidence",
+    "case_id": "R19",
+    "rep": 1,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R20__r1__direct",
+    "case_id": "R20",
+    "rep": 1,
+    "role": "direct"
+  },
+  {
+    "call_id": "R20__r1__language",
+    "case_id": "R20",
+    "rep": 1,
+    "role": "language"
+  },
+  {
+    "call_id": "R20__r1__evidence",
+    "case_id": "R20",
+    "rep": 1,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R21__r1__direct",
+    "case_id": "R21",
+    "rep": 1,
+    "role": "direct"
+  },
+  {
+    "call_id": "R21__r1__language",
+    "case_id": "R21",
+    "rep": 1,
+    "role": "language"
+  },
+  {
+    "call_id": "R21__r1__evidence",
+    "case_id": "R21",
+    "rep": 1,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R22__r1__direct",
+    "case_id": "R22",
+    "rep": 1,
+    "role": "direct"
+  },
+  {
+    "call_id": "R22__r1__language",
+    "case_id": "R22",
+    "rep": 1,
+    "role": "language"
+  },
+  {
+    "call_id": "R22__r1__evidence",
+    "case_id": "R22",
+    "rep": 1,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R23__r1__direct",
+    "case_id": "R23",
+    "rep": 1,
+    "role": "direct"
+  },
+  {
+    "call_id": "R23__r1__language",
+    "case_id": "R23",
+    "rep": 1,
+    "role": "language"
+  },
+  {
+    "call_id": "R23__r1__evidence",
+    "case_id": "R23",
+    "rep": 1,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R24__r1__direct",
+    "case_id": "R24",
+    "rep": 1,
+    "role": "direct"
+  },
+  {
+    "call_id": "R24__r1__language",
+    "case_id": "R24",
+    "rep": 1,
+    "role": "language"
+  },
+  {
+    "call_id": "R24__r1__evidence",
+    "case_id": "R24",
+    "rep": 1,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R25__r1__direct",
+    "case_id": "R25",
+    "rep": 1,
+    "role": "direct"
+  },
+  {
+    "call_id": "R25__r1__language",
+    "case_id": "R25",
+    "rep": 1,
+    "role": "language"
+  },
+  {
+    "call_id": "R25__r1__evidence",
+    "case_id": "R25",
+    "rep": 1,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R26__r1__direct",
+    "case_id": "R26",
+    "rep": 1,
+    "role": "direct"
+  },
+  {
+    "call_id": "R26__r1__language",
+    "case_id": "R26",
+    "rep": 1,
+    "role": "language"
+  },
+  {
+    "call_id": "R26__r1__evidence",
+    "case_id": "R26",
+    "rep": 1,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R27__r1__direct",
+    "case_id": "R27",
+    "rep": 1,
+    "role": "direct"
+  },
+  {
+    "call_id": "R27__r1__language",
+    "case_id": "R27",
+    "rep": 1,
+    "role": "language"
+  },
+  {
+    "call_id": "R27__r1__evidence",
+    "case_id": "R27",
+    "rep": 1,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R28__r1__direct",
+    "case_id": "R28",
+    "rep": 1,
+    "role": "direct"
+  },
+  {
+    "call_id": "R28__r1__language",
+    "case_id": "R28",
+    "rep": 1,
+    "role": "language"
+  },
+  {
+    "call_id": "R28__r1__evidence",
+    "case_id": "R28",
+    "rep": 1,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R29__r1__direct",
+    "case_id": "R29",
+    "rep": 1,
+    "role": "direct"
+  },
+  {
+    "call_id": "R29__r1__language",
+    "case_id": "R29",
+    "rep": 1,
+    "role": "language"
+  },
+  {
+    "call_id": "R29__r1__evidence",
+    "case_id": "R29",
+    "rep": 1,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R30__r1__direct",
+    "case_id": "R30",
+    "rep": 1,
+    "role": "direct"
+  },
+  {
+    "call_id": "R30__r1__language",
+    "case_id": "R30",
+    "rep": 1,
+    "role": "language"
+  },
+  {
+    "call_id": "R30__r1__evidence",
+    "case_id": "R30",
+    "rep": 1,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R01__r2__direct",
+    "case_id": "R01",
+    "rep": 2,
+    "role": "direct"
+  },
+  {
+    "call_id": "R01__r2__language",
+    "case_id": "R01",
+    "rep": 2,
+    "role": "language"
+  },
+  {
+    "call_id": "R01__r2__evidence",
+    "case_id": "R01",
+    "rep": 2,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R02__r2__direct",
+    "case_id": "R02",
+    "rep": 2,
+    "role": "direct"
+  },
+  {
+    "call_id": "R02__r2__language",
+    "case_id": "R02",
+    "rep": 2,
+    "role": "language"
+  },
+  {
+    "call_id": "R02__r2__evidence",
+    "case_id": "R02",
+    "rep": 2,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R03__r2__direct",
+    "case_id": "R03",
+    "rep": 2,
+    "role": "direct"
+  },
+  {
+    "call_id": "R03__r2__language",
+    "case_id": "R03",
+    "rep": 2,
+    "role": "language"
+  },
+  {
+    "call_id": "R03__r2__evidence",
+    "case_id": "R03",
+    "rep": 2,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R04__r2__direct",
+    "case_id": "R04",
+    "rep": 2,
+    "role": "direct"
+  },
+  {
+    "call_id": "R04__r2__language",
+    "case_id": "R04",
+    "rep": 2,
+    "role": "language"
+  },
+  {
+    "call_id": "R04__r2__evidence",
+    "case_id": "R04",
+    "rep": 2,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R05__r2__direct",
+    "case_id": "R05",
+    "rep": 2,
+    "role": "direct"
+  },
+  {
+    "call_id": "R05__r2__language",
+    "case_id": "R05",
+    "rep": 2,
+    "role": "language"
+  },
+  {
+    "call_id": "R05__r2__evidence",
+    "case_id": "R05",
+    "rep": 2,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R06__r2__direct",
+    "case_id": "R06",
+    "rep": 2,
+    "role": "direct"
+  },
+  {
+    "call_id": "R06__r2__language",
+    "case_id": "R06",
+    "rep": 2,
+    "role": "language"
+  },
+  {
+    "call_id": "R06__r2__evidence",
+    "case_id": "R06",
+    "rep": 2,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R07__r2__direct",
+    "case_id": "R07",
+    "rep": 2,
+    "role": "direct"
+  },
+  {
+    "call_id": "R07__r2__language",
+    "case_id": "R07",
+    "rep": 2,
+    "role": "language"
+  },
+  {
+    "call_id": "R07__r2__evidence",
+    "case_id": "R07",
+    "rep": 2,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R08__r2__direct",
+    "case_id": "R08",
+    "rep": 2,
+    "role": "direct"
+  },
+  {
+    "call_id": "R08__r2__language",
+    "case_id": "R08",
+    "rep": 2,
+    "role": "language"
+  },
+  {
+    "call_id": "R08__r2__evidence",
+    "case_id": "R08",
+    "rep": 2,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R09__r2__direct",
+    "case_id": "R09",
+    "rep": 2,
+    "role": "direct"
+  },
+  {
+    "call_id": "R09__r2__language",
+    "case_id": "R09",
+    "rep": 2,
+    "role": "language"
+  },
+  {
+    "call_id": "R09__r2__evidence",
+    "case_id": "R09",
+    "rep": 2,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R10__r2__direct",
+    "case_id": "R10",
+    "rep": 2,
+    "role": "direct"
+  },
+  {
+    "call_id": "R10__r2__language",
+    "case_id": "R10",
+    "rep": 2,
+    "role": "language"
+  },
+  {
+    "call_id": "R10__r2__evidence",
+    "case_id": "R10",
+    "rep": 2,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R11__r2__direct",
+    "case_id": "R11",
+    "rep": 2,
+    "role": "direct"
+  },
+  {
+    "call_id": "R11__r2__language",
+    "case_id": "R11",
+    "rep": 2,
+    "role": "language"
+  },
+  {
+    "call_id": "R11__r2__evidence",
+    "case_id": "R11",
+    "rep": 2,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R12__r2__direct",
+    "case_id": "R12",
+    "rep": 2,
+    "role": "direct"
+  },
+  {
+    "call_id": "R12__r2__language",
+    "case_id": "R12",
+    "rep": 2,
+    "role": "language"
+  },
+  {
+    "call_id": "R12__r2__evidence",
+    "case_id": "R12",
+    "rep": 2,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R13__r2__direct",
+    "case_id": "R13",
+    "rep": 2,
+    "role": "direct"
+  },
+  {
+    "call_id": "R13__r2__language",
+    "case_id": "R13",
+    "rep": 2,
+    "role": "language"
+  },
+  {
+    "call_id": "R13__r2__evidence",
+    "case_id": "R13",
+    "rep": 2,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R14__r2__direct",
+    "case_id": "R14",
+    "rep": 2,
+    "role": "direct"
+  },
+  {
+    "call_id": "R14__r2__language",
+    "case_id": "R14",
+    "rep": 2,
+    "role": "language"
+  },
+  {
+    "call_id": "R14__r2__evidence",
+    "case_id": "R14",
+    "rep": 2,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R15__r2__direct",
+    "case_id": "R15",
+    "rep": 2,
+    "role": "direct"
+  },
+  {
+    "call_id": "R15__r2__language",
+    "case_id": "R15",
+    "rep": 2,
+    "role": "language"
+  },
+  {
+    "call_id": "R15__r2__evidence",
+    "case_id": "R15",
+    "rep": 2,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R16__r2__direct",
+    "case_id": "R16",
+    "rep": 2,
+    "role": "direct"
+  },
+  {
+    "call_id": "R16__r2__language",
+    "case_id": "R16",
+    "rep": 2,
+    "role": "language"
+  },
+  {
+    "call_id": "R16__r2__evidence",
+    "case_id": "R16",
+    "rep": 2,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R17__r2__direct",
+    "case_id": "R17",
+    "rep": 2,
+    "role": "direct"
+  },
+  {
+    "call_id": "R17__r2__language",
+    "case_id": "R17",
+    "rep": 2,
+    "role": "language"
+  },
+  {
+    "call_id": "R17__r2__evidence",
+    "case_id": "R17",
+    "rep": 2,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R18__r2__direct",
+    "case_id": "R18",
+    "rep": 2,
+    "role": "direct"
+  },
+  {
+    "call_id": "R18__r2__language",
+    "case_id": "R18",
+    "rep": 2,
+    "role": "language"
+  },
+  {
+    "call_id": "R18__r2__evidence",
+    "case_id": "R18",
+    "rep": 2,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R19__r2__direct",
+    "case_id": "R19",
+    "rep": 2,
+    "role": "direct"
+  },
+  {
+    "call_id": "R19__r2__language",
+    "case_id": "R19",
+    "rep": 2,
+    "role": "language"
+  },
+  {
+    "call_id": "R19__r2__evidence",
+    "case_id": "R19",
+    "rep": 2,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R20__r2__direct",
+    "case_id": "R20",
+    "rep": 2,
+    "role": "direct"
+  },
+  {
+    "call_id": "R20__r2__language",
+    "case_id": "R20",
+    "rep": 2,
+    "role": "language"
+  },
+  {
+    "call_id": "R20__r2__evidence",
+    "case_id": "R20",
+    "rep": 2,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R21__r2__direct",
+    "case_id": "R21",
+    "rep": 2,
+    "role": "direct"
+  },
+  {
+    "call_id": "R21__r2__language",
+    "case_id": "R21",
+    "rep": 2,
+    "role": "language"
+  },
+  {
+    "call_id": "R21__r2__evidence",
+    "case_id": "R21",
+    "rep": 2,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R22__r2__direct",
+    "case_id": "R22",
+    "rep": 2,
+    "role": "direct"
+  },
+  {
+    "call_id": "R22__r2__language",
+    "case_id": "R22",
+    "rep": 2,
+    "role": "language"
+  },
+  {
+    "call_id": "R22__r2__evidence",
+    "case_id": "R22",
+    "rep": 2,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R23__r2__direct",
+    "case_id": "R23",
+    "rep": 2,
+    "role": "direct"
+  },
+  {
+    "call_id": "R23__r2__language",
+    "case_id": "R23",
+    "rep": 2,
+    "role": "language"
+  },
+  {
+    "call_id": "R23__r2__evidence",
+    "case_id": "R23",
+    "rep": 2,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R24__r2__direct",
+    "case_id": "R24",
+    "rep": 2,
+    "role": "direct"
+  },
+  {
+    "call_id": "R24__r2__language",
+    "case_id": "R24",
+    "rep": 2,
+    "role": "language"
+  },
+  {
+    "call_id": "R24__r2__evidence",
+    "case_id": "R24",
+    "rep": 2,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R25__r2__direct",
+    "case_id": "R25",
+    "rep": 2,
+    "role": "direct"
+  },
+  {
+    "call_id": "R25__r2__language",
+    "case_id": "R25",
+    "rep": 2,
+    "role": "language"
+  },
+  {
+    "call_id": "R25__r2__evidence",
+    "case_id": "R25",
+    "rep": 2,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R26__r2__direct",
+    "case_id": "R26",
+    "rep": 2,
+    "role": "direct"
+  },
+  {
+    "call_id": "R26__r2__language",
+    "case_id": "R26",
+    "rep": 2,
+    "role": "language"
+  },
+  {
+    "call_id": "R26__r2__evidence",
+    "case_id": "R26",
+    "rep": 2,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R27__r2__direct",
+    "case_id": "R27",
+    "rep": 2,
+    "role": "direct"
+  },
+  {
+    "call_id": "R27__r2__language",
+    "case_id": "R27",
+    "rep": 2,
+    "role": "language"
+  },
+  {
+    "call_id": "R27__r2__evidence",
+    "case_id": "R27",
+    "rep": 2,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R28__r2__direct",
+    "case_id": "R28",
+    "rep": 2,
+    "role": "direct"
+  },
+  {
+    "call_id": "R28__r2__language",
+    "case_id": "R28",
+    "rep": 2,
+    "role": "language"
+  },
+  {
+    "call_id": "R28__r2__evidence",
+    "case_id": "R28",
+    "rep": 2,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R29__r2__direct",
+    "case_id": "R29",
+    "rep": 2,
+    "role": "direct"
+  },
+  {
+    "call_id": "R29__r2__language",
+    "case_id": "R29",
+    "rep": 2,
+    "role": "language"
+  },
+  {
+    "call_id": "R29__r2__evidence",
+    "case_id": "R29",
+    "rep": 2,
+    "role": "evidence"
+  },
+  {
+    "call_id": "R30__r2__direct",
+    "case_id": "R30",
+    "rep": 2,
+    "role": "direct"
+  },
+  {
+    "call_id": "R30__r2__language",
+    "case_id": "R30",
+    "rep": 2,
+    "role": "language"
+  },
+  {
+    "call_id": "R30__r2__evidence",
+    "case_id": "R30",
+    "rep": 2,
+    "role": "evidence"
+  }
+]

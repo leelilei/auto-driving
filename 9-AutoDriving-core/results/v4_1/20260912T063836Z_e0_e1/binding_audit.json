@@ -1,0 +1,18 @@
+{
+  "total_expected_utterances": 640,
+  "gpt": {
+    "loaded_utterances": 640,
+    "text_exact_match": 640,
+    "gold_hard_match": 640,
+    "drift_groups_count": 14,
+    "clean_groups_count": 146
+  },
+  "deepseek": {
+    "loaded_utterances": 640,
+    "text_exact_match": 640,
+    "gold_hard_match": 640,
+    "transport_failures_count": 233,
+    "drift_groups_count": 14,
+    "clean_groups_count": 146
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "scope": "GPT historical full160 only; all A/review routes gold task-success verified; not clean or confirmatory",
+  "route_types": {
+    "a": "list",
+    "r": "tuple"
+  },
+  "quotas": {
+    "0.05": {
+      "normalized_darc": 0.19895833333333335,
+      "normalized_b4": 0.2208333333333333,
+      "normalized_b3_mean": 0.23479166666666665,
+      "bug_reproduced_darc": 0.25520833333333337,
+      "bug_reproduced_b4": 0.2854166666666667,
+      "bug_reproduced_b3_mean": 0.3113541666666667,
+      "darc_minus_b3": -0.03583333333333333,
+      "ci95_darc_minus_b3": [
+        -0.0585,
+        -0.012549479166666686
+      ],
+      "ci95_darc_minus_b4": [
+        -0.042708333333333334,
+        -0.0020833333333333337
+      ]
+    },
+    "0.1": {
+      "normalized_darc": 0.16145833333333334,
+      "normalized_b4": 0.221875,
+      "normalized_b3_mean": 0.23234375,
+      "bug_reproduced_darc": 0.2635416666666667,
+      "bug_reproduced_b4": 0.3260416666666667,
+      "bug_reproduced_b3_mean": 0.37453125000000004,
+      "darc_minus_b3": -0.07088541666666667,
+      "ci95_darc_minus_b3": [
+        -0.09906249999999998,
+        -0.04312369791666666
+      ],
+      "ci95_darc_minus_b4": [
+        -0.08541666666666667,
+        -0.03854166666666666
+      ]
+    },
+    "0.2": {
+      "normalized_darc": 0.16145833333333334,
+      "normalized_b4": 0.18958333333333335,
+      "normalized_b3_mean": 0.22567708333333336,
+      "bug_reproduced_darc": 0.25,
+      "bug_reproduced_b4": 0.4125,
+      "bug_reproduced_b3_mean": 0.4786458333333333,
+      "darc_minus_b3": -0.06421874999999999,
+      "ci95_darc_minus_b3": [
+        -0.08958333333333332,
+        -0.039524739583333364
+      ],
+      "ci95_darc_minus_b4": [
+        -0.04583333333333334,
+        -0.013541666666666665
+      ]
+    }
+  }
+}

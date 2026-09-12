@@ -1,0 +1,49 @@
+{
+  "call_id": "pilot_08_v2::tradeoff::darc",
+  "role": "darc",
+  "graph_condition": "tradeoff",
+  "started_at": "2026-09-09T16:34:02.279796+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. The decision-contrast report is diagnostic evidence about consequences; it is not a label and must not override the words of the instruction.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Use the report to locate consequential disagreements, then decide each field from the instruction alone.\n\nInstruction:\nToday's destination categories are the library, shopping mall, and supermarket. Head to the shopping mall prior to the supermarket, maintaining a balance between quality and distance.\n\nCandidate A:\n{\"dependencies\": [[\"shopping_mall\", \"supermarket\"]], \"pois\": [\"library\", \"shopping_mall\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nCandidate B:\n{\"dependencies\": [[\"shopping_mall\", \"supermarket\"]], \"pois\": [\"library\", \"shopping_mall\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nDecision-contrast report:\n{\"candidate_A\": {\"dependencies\": [[\"shopping_mall\", \"supermarket\"]], \"pois\": [\"library\", \"shopping_mall\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}, \"candidate_B\": {\"dependencies\": [[\"shopping_mall\", \"supermarket\"]], \"pois\": [\"library\", \"shopping_mall\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}, \"candidate_evidence\": {\"A\": {\"dependencies\": \"shopping mall prior to the supermarket\", \"pois\": \"library, shopping mall, and supermarket\", \"quality_weight\": \"maintaining a balance between quality and distance\"}, \"B\": {\"dependencies\": \"shopping mall prior to the supermarket\", \"pois\": \"library, shopping mall, and supermarket\", \"quality_weight\": \"maintaining a balance between quality and distance\"}}, \"cross_constraints\": {\"route_A_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_A_under_B\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_B\": {\"reasons\": [], \"task_success\": true}}, \"differing_fields\": [], \"instruction\": \"Today's destination categories are the library, shopping mall, and supermarket. Head to the shopping mall prior to the supermarket, maintaining a balance between quality and distance.\", \"limitations\": [\"The report does not identify the user's true intent.\", \"Both candidates may share the same error.\", \"Single-field swaps do not identify higher-order interactions.\"], \"report_version\": \"darc-v5.1-contrast-2\", \"routes\": {\"A\": {\"arrival_minutes\": 726, \"average_quality\": 0.9, \"categories\": [\"library\", \"shopping_mall\", \"supermarket\"], \"coverage_count\": 3, \"distance_km\": 20.441, \"duration_minutes\": 185.9, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"library_2\", \"shopping_mall_2\", \"supermarket_2\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": 0.28300601790843904}, \"B\": {\"arrival_minutes\": 726, \"average_quality\": 0.9, \"categories\": [\"library\", \"shopping_mall\", \"supermarket\"], \"coverage_count\": 3, \"distance_km\": 20.441, \"duration_minutes\": 185.9, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"library_2\", \"shopping_mall_2\", \"supermarket_2\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": 0.28300601790843904}}, \"single_field_swaps\": []}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"library\",\"shopping_mall\",\"supermarket\"],\"time_limit\":null,\"dependencies\":[[\"shopping_mall\",\"supermarket\"]],\"quality_weight\":0.5},\"evidence\":{\"pois\":\"library, shopping mall, and supermarket\",\"dependencies\":\"shopping mall prior to the supermarket\",\"quality_weight\":\"maintaining a balance between quality and distance\",\"time_limit\":\"Today's destination categories\"},\"changes\":[]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "library",
+      "shopping_mall",
+      "supermarket"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "shopping_mall",
+        "supermarket"
+      ]
+    ],
+    "quality_weight": 0.5
+  },
+  "evidence": {
+    "pois": "library, shopping mall, and supermarket",
+    "dependencies": "shopping mall prior to the supermarket",
+    "quality_weight": "maintaining a balance between quality and distance",
+    "time_limit": "Today's destination categories"
+  },
+  "changes": [],
+  "finished_at": "2026-09-09T16:34:05.255169+00:00",
+  "telemetry": {
+    "call_index": 50,
+    "prompt_sha256": "a14b27c4d09289d24dbb3364d1506c222528531a3e337bb6964ab3b3c1d296a1",
+    "attempts": 1,
+    "latency_seconds": 2.975,
+    "input_chars": 3396,
+    "output_chars": 396,
+    "input_tokens": 972,
+    "output_tokens": 725,
+    "total_tokens": 1697,
+    "usage_source": "provider",
+    "success": true
+  }
+}

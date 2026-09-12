@@ -1,0 +1,7 @@
+{
+  "status": "ABORTED_COLLECTOR_BOUNDARY_DEFECT",
+  "analysis_allowed": false,
+  "reason": "The collector incorrectly emitted schema-skip placeholders after an upstream transport failure. The operator interrupted an in-flight call after observing unstable serial transport; that in-flight physical attempt has no finished record.",
+  "replacement_policy": "Preserve this directory as incident evidence. Do not resume it and do not include any response in method analysis. Start fresh per-group runs after the boundary fix.",
+  "recorded_at": "2026-09-10T01:09:00+08:00"
+}

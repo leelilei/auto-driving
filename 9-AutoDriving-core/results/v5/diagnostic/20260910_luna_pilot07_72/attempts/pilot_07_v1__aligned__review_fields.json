@@ -1,0 +1,29 @@
+{
+  "call_id": "pilot_07_v1::aligned::review_fields",
+  "role": "review_fields",
+  "graph_condition": "aligned",
+  "started_at": "2026-09-09T17:33:36.265402+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. The field-difference report only identifies disagreements; it does not identify the correct answer.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not infer user preference from a route or map.\n\nInstruction:\nPlease visit the library, pharmacy, and supermarket today and return by 17:00. Prioritize locations with high ratings, even if it requires extra driving distance.\n\nCandidate A:\n{\"dependencies\": [], \"pois\": [\"library\", \"pharmacy\", \"supermarket\"], \"quality_weight\": 0.9, \"time_limit\": 1020}\n\nCandidate B:\n{\"dependencies\": [], \"pois\": [\"library\", \"pharmacy\", \"supermarket\"], \"quality_weight\": 1.0, \"time_limit\": 1020}\n\nField differences:\n{\"fields\": [\"quality_weight\"]}\n"
+  },
+  "status": "TRANSPORT_FAILED",
+  "schema_valid": false,
+  "error_type": "RuntimeError",
+  "error_message": "curl request failed: curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to www.fhl.mom:443",
+  "finished_at": "2026-09-09T17:33:41.277901+00:00",
+  "telemetry": {
+    "call_index": 6,
+    "prompt_sha256": "35b236eb60bb4fd888b51b3f66eba76b00a7df1617956a348d05ed05202d47e3",
+    "attempts": 1,
+    "latency_seconds": 5.012,
+    "input_chars": 1025,
+    "output_chars": 0,
+    "input_tokens": 257,
+    "output_tokens": 0,
+    "total_tokens": 257,
+    "usage_source": "character_estimate",
+    "success": false,
+    "error": "RuntimeError"
+  }
+}

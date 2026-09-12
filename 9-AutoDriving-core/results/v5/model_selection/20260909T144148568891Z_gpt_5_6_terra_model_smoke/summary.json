@@ -1,0 +1,14 @@
+{
+  "scope": "hand-authored development model selection; not a paper result",
+  "model": "gpt-5.6-terra",
+  "transport": "urllib",
+  "planned_calls": 5,
+  "attempted_calls": 5,
+  "collection_complete": true,
+  "schema_valid": 5,
+  "hard_exact": 5,
+  "direction_exact": 5,
+  "provider_usage_calls": 5,
+  "provider_total_tokens": 1498,
+  "mean_latency_seconds": 16.8354
+}

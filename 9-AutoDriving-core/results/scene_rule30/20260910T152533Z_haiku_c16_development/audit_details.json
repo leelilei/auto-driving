@@ -1,0 +1,26 @@
+{
+  "status": "PASS_OFFLINE_EVIDENCE_CHECK",
+  "reference_gold_verified": 30,
+  "provider_responses_verified": 180,
+  "phases": {
+    "initial_16": {
+      "requests": 138,
+      "statuses": {
+        "SCHEMA_FAILED": 2,
+        "COMPLETE": 116,
+        "TRANSPORT_FAILED": 20
+      },
+      "wall_seconds": 71.36091
+    },
+    "recovery_8": {
+      "requests": 62,
+      "statuses": {
+        "COMPLETE": 61,
+        "SCHEMA_FAILED": 1
+      },
+      "wall_seconds": 45.665833
+    }
+  },
+  "source_code_versions_preserved": true,
+  "note": "Node-reported identity and usage are preserved; not independently authenticated backend identity."
+}

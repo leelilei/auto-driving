@@ -1,0 +1,300 @@
+{
+  "people_number": 1,
+  "start_city": "深圳",
+  "target_city": "杭州",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "start_time": "06:02",
+          "end_time": "07:20",
+          "start": "深圳宝安国际机场",
+          "end": "杭州萧山国际机场",
+          "price": 572.69,
+          "cost": 572.69,
+          "tickets": 1,
+          "transports": [],
+          "FlightID": "FL219",
+          "type": "airplane"
+        },
+        {
+          "position": "西湖外事游船",
+          "type": "attraction",
+          "price": 48,
+          "cost": 48,
+          "start_time": "09:00",
+          "end_time": "10:30",
+          "transports": [
+            {
+              "start": "杭州萧山国际机场",
+              "end": "萧山国际机场-地铁站",
+              "mode": "walk",
+              "start_time": "07:20",
+              "end_time": "07:21",
+              "cost": 0,
+              "distance": 0.12,
+              "price": 0
+            },
+            {
+              "start": "萧山国际机场-地铁站",
+              "end": "龙翔桥-地铁站",
+              "mode": "metro",
+              "start_time": "07:21",
+              "end_time": "08:12",
+              "cost": 6,
+              "distance": 25.98,
+              "price": 6,
+              "tickets": 1
+            },
+            {
+              "start": "龙翔桥-地铁站",
+              "end": "西湖外事游船",
+              "mode": "walk",
+              "start_time": "08:12",
+              "end_time": "08:19",
+              "cost": 0,
+              "distance": 0.59,
+              "price": 0
+            }
+          ],
+          "tickets": 1
+        },
+        {
+          "position": "明洞王妃家烤肉(湖滨银泰in77D区店)",
+          "type": "lunch",
+          "price": 132,
+          "cost": 132,
+          "start_time": "11:00",
+          "end_time": "12:00",
+          "transports": [
+            {
+              "start": "西湖外事游船",
+              "end": "明洞王妃家烤肉(湖滨银泰in77D区店)",
+              "mode": "taxi",
+              "start_time": "10:30",
+              "end_time": "10:31",
+              "cost": 11.0,
+              "distance": 0.68,
+              "price": 11.0,
+              "cars": 1
+            }
+          ]
+        },
+        {
+          "position": "中国伞博物馆",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "12:22",
+          "end_time": "13:52",
+          "transports": [
+            {
+              "start": "明洞王妃家烤肉(湖滨银泰in77D区店)",
+              "end": "龙翔桥-地铁站",
+              "mode": "walk",
+              "start_time": "12:00",
+              "end_time": "12:01",
+              "cost": 0,
+              "distance": 0.12,
+              "price": 0
+            },
+            {
+              "start": "龙翔桥-地铁站",
+              "end": "拱宸桥东-地铁站",
+              "mode": "metro",
+              "start_time": "12:01",
+              "end_time": "12:15",
+              "cost": 3,
+              "distance": 7.09,
+              "price": 3,
+              "tickets": 1
+            },
+            {
+              "start": "拱宸桥东-地铁站",
+              "end": "中国伞博物馆",
+              "mode": "walk",
+              "start_time": "12:15",
+              "end_time": "12:22",
+              "cost": 0,
+              "distance": 0.64,
+              "price": 0
+            }
+          ],
+          "tickets": 1
+        },
+        {
+          "position": "南宋德寿宫遗址博物馆",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "14:17",
+          "end_time": "15:47",
+          "transports": [
+            {
+              "start": "中国伞博物馆",
+              "end": "拱宸桥东-地铁站",
+              "mode": "walk",
+              "start_time": "13:52",
+              "end_time": "13:59",
+              "cost": 0,
+              "distance": 0.64,
+              "price": 0
+            },
+            {
+              "start": "拱宸桥东-地铁站",
+              "end": "城站-地铁站",
+              "mode": "metro",
+              "start_time": "13:59",
+              "end_time": "14:16",
+              "cost": 3,
+              "distance": 8.63,
+              "price": 3,
+              "tickets": 1
+            },
+            {
+              "start": "城站-地铁站",
+              "end": "南宋德寿宫遗址博物馆",
+              "mode": "walk",
+              "start_time": "14:16",
+              "end_time": "14:17",
+              "cost": 0,
+              "distance": 0.1,
+              "price": 0
+            }
+          ],
+          "tickets": 1
+        },
+        {
+          "position": "杭州南宋官窑博物馆",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "16:03",
+          "end_time": "16:30",
+          "transports": [
+            {
+              "start": "南宋德寿宫遗址博物馆",
+              "end": "城站-地铁站",
+              "mode": "walk",
+              "start_time": "15:47",
+              "end_time": "15:48",
+              "cost": 0,
+              "distance": 0.1,
+              "price": 0
+            },
+            {
+              "start": "城站-地铁站",
+              "end": "复兴路-地铁站",
+              "mode": "metro",
+              "start_time": "15:48",
+              "end_time": "15:56",
+              "cost": 3,
+              "distance": 4.15,
+              "price": 3,
+              "tickets": 1
+            },
+            {
+              "start": "复兴路-地铁站",
+              "end": "杭州南宋官窑博物馆",
+              "mode": "walk",
+              "start_time": "15:56",
+              "end_time": "16:03",
+              "cost": 0,
+              "distance": 0.61,
+              "price": 0
+            }
+          ],
+          "tickets": 1
+        },
+        {
+          "position": "芽笼芽笼新加坡餐厅(来福士店)",
+          "type": "dinner",
+          "price": 91,
+          "cost": 91,
+          "start_time": "17:00",
+          "end_time": "18:00",
+          "transports": [
+            {
+              "start": "杭州南宋官窑博物馆",
+              "end": "复兴路-地铁站",
+              "mode": "walk",
+              "start_time": "16:30",
+              "end_time": "16:37",
+              "cost": 0,
+              "distance": 0.61,
+              "price": 0
+            },
+            {
+              "start": "复兴路-地铁站",
+              "end": "江锦路-地铁站",
+              "mode": "metro",
+              "start_time": "16:37",
+              "end_time": "16:50",
+              "cost": 3,
+              "distance": 6.66,
+              "price": 3,
+              "tickets": 1
+            },
+            {
+              "start": "江锦路-地铁站",
+              "end": "芽笼芽笼新加坡餐厅(来福士店)",
+              "mode": "walk",
+              "start_time": "16:50",
+              "end_time": "16:52",
+              "cost": 0,
+              "distance": 0.25,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "start_time": "20:59",
+          "end_time": "06:26",
+          "start": "杭州东站",
+          "end": "深圳北站",
+          "price": 631.19,
+          "cost": 631.19,
+          "tickets": 1,
+          "transports": [
+            {
+              "start": "芽笼芽笼新加坡餐厅(来福士店)",
+              "end": "江锦路-地铁站",
+              "mode": "walk",
+              "start_time": "18:00",
+              "end_time": "18:02",
+              "cost": 0,
+              "distance": 0.25,
+              "price": 0
+            },
+            {
+              "start": "江锦路-地铁站",
+              "end": "火车东站(东广场)-地铁站",
+              "mode": "metro",
+              "start_time": "18:02",
+              "end_time": "18:11",
+              "cost": 3,
+              "distance": 4.91,
+              "price": 3,
+              "tickets": 1
+            },
+            {
+              "start": "火车东站(东广场)-地铁站",
+              "end": "杭州东站",
+              "mode": "walk",
+              "start_time": "18:11",
+              "end_time": "18:16",
+              "cost": 0,
+              "distance": 0.48,
+              "price": 0
+            }
+          ],
+          "TrainID": "D931",
+          "type": "train"
+        }
+      ]
+    }
+  ],
+  "search_time_sec": 1.62766695022583,
+  "llm_inference_time_sec": 0
+}

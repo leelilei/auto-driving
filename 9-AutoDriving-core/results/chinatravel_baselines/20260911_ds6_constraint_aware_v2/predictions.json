@@ -1,0 +1,77 @@
+{
+  "e20241028160248698752": {
+    "people_number": 1,
+    "start_city": "上海",
+    "target_city": "杭州",
+    "itinerary": [
+      {
+        "day": 1,
+        "activities": [
+          {
+            "start_time": "08:49",
+            "end_time": "10:51",
+            "start": "上海南站",
+            "end": "杭州南站",
+            "price": 65.95,
+            "cost": 65.95,
+            "tickets": 1,
+            "transports": [],
+            "TrainID": "K379",
+            "type": "train"
+          },
+          {
+            "start_time": "13:43",
+            "end_time": "16:00",
+            "start": "杭州站",
+            "end": "上海南站",
+            "price": 65.95,
+            "cost": 65.95,
+            "tickets": 1,
+            "transports": [
+              {
+                "start": "杭州南站",
+                "end": "火车南站-地铁站",
+                "mode": "walk",
+                "start_time": "10:51",
+                "end_time": "10:54",
+                "cost": 0,
+                "distance": 0.3,
+                "price": 0
+              },
+              {
+                "start": "火车南站-地铁站",
+                "end": "城站-地铁站",
+                "mode": "metro",
+                "start_time": "10:54",
+                "end_time": "11:21",
+                "cost": 4,
+                "distance": 13.77,
+                "price": 4,
+                "tickets": 1
+              },
+              {
+                "start": "城站-地铁站",
+                "end": "杭州站",
+                "mode": "walk",
+                "start_time": "11:21",
+                "end_time": "11:23",
+                "cost": 0,
+                "distance": 0.21,
+                "price": 0
+              }
+            ],
+            "TrainID": "K48",
+            "type": "train"
+          }
+        ]
+      }
+    ],
+    "search_time_sec": 0.43843698501586914,
+    "llm_inference_time_sec": 0
+  },
+  "e20241028160845920703": {},
+  "e20241028160848776495": {},
+  "e20241028160913165493": {},
+  "e20241028160902013119": {},
+  "h20241029143455115600": {}
+}

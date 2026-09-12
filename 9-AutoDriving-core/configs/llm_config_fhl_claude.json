@@ -1,0 +1,16 @@
+{
+  "provider": "anthropic",
+  "model": "claude-haiku-4-5-20251001",
+  "wire_api": "anthropic_messages",
+  "base_url": "https://www.fhl.mom",
+  "api_key_env": "ANTHROPIC_AUTH_TOKEN",
+  "temperature": 0.0,
+  "omit_temperature": false,
+  "timeout": 60,
+  "sleep": 0,
+  "max_concurrency": 16,
+  "retries": 3,
+  "retry_sleep": 2,
+  "json_mode": true,
+  "transport": "urllib"
+}

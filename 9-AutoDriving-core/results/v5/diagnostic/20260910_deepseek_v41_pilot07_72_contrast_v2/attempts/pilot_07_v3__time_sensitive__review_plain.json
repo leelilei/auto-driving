@@ -1,0 +1,15 @@
+{
+  "call_id": "pilot_07_v3::time_sensitive::review_plain",
+  "role": "review_plain",
+  "graph_condition": "time_sensitive",
+  "started_at": "2026-09-09T16:53:22.596541+00:00",
+  "finished_at": "2026-09-09T16:53:22.596541+00:00",
+  "status": "NOT_RUN_UPSTREAM_SCHEMA_FAILED",
+  "schema_valid": false,
+  "reason": "review requires schema-valid A and B candidates",
+  "upstream_status": {
+    "A": "COMPLETE",
+    "B": "SCHEMA_FAILED"
+  },
+  "telemetry": null
+}

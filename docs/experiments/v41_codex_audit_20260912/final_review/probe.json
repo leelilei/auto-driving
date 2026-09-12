@@ -1,0 +1,12 @@
+{
+  "changed_instruction_accepted": {
+    "candidate_match_count": 4,
+    "n": 4
+  },
+  "deleted_group_accepted": {
+    "n": 156,
+    "groups": 39,
+    "evaluated": 39
+  },
+  "recomputed_json_equal": true
+}

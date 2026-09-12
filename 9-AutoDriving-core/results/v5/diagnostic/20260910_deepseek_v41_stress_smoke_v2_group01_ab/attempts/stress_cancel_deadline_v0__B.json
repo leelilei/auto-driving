@@ -1,0 +1,42 @@
+{
+  "call_id": "stress_cancel_deadline_v0::B",
+  "role": "B",
+  "graph_condition": null,
+  "started_at": "2026-09-10T02:32:19.725391+00:00",
+  "request": {
+    "system": "Read the user's route-planning instruction field by field before producing the final JSON.\n\nCheck: requested POI categories, return deadline, explicit visit order, and the direction of the quality-versus-distance preference. Each conclusion must be supported by the instruction itself.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nDo not infer a preference from any route or map. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Visit the bank, library, and pharmacy. I originally planned to be back by 17:00, but that deadline no longer applies. Balance ratings and travel efficiency."
+  },
+  "raw_response": "{\"pois\":[\"bank\",\"library\",\"pharmacy\"],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5,\"evidence\":{\"pois\":\"Visit the bank, library, and pharmacy.\",\"quality_weight\":\"Balance ratings and travel efficiency.\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library",
+      "pharmacy"
+    ],
+    "time_limit": null,
+    "dependencies": [],
+    "quality_weight": 0.5
+  },
+  "evidence": {
+    "pois": "Visit the bank, library, and pharmacy.",
+    "quality_weight": "Balance ratings and travel efficiency."
+  },
+  "changes": [],
+  "finished_at": "2026-09-10T02:32:26.514910+00:00",
+  "telemetry": {
+    "call_index": 2,
+    "prompt_sha256": "f1f4613b7d8e66beb73bce3d7b036b536765df7d15ef1e98c52002c219d23966",
+    "attempts": 1,
+    "latency_seconds": 6.789,
+    "input_chars": 1030,
+    "output_chars": 214,
+    "input_tokens": 264,
+    "output_tokens": 1445,
+    "total_tokens": 1709,
+    "usage_source": "provider",
+    "success": true
+  }
+}

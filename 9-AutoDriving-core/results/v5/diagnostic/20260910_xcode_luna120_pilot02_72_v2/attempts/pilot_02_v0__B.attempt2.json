@@ -1,0 +1,47 @@
+{
+  "call_id": "pilot_02_v0::B",
+  "role": "B",
+  "graph_condition": null,
+  "started_at": "2026-09-09T18:03:08.077684+00:00",
+  "request": {
+    "system": "Read the user's route-planning instruction field by field before producing the final JSON.\n\nCheck: requested POI categories, return deadline, explicit visit order, and the direction of the quality-versus-distance preference. Each conclusion must be supported by the instruction itself.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nDo not infer a preference from any route or map. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Make sure to visit the supermarket and the pharmacy today. Balance your stops to maintain both reasonable ratings and efficiency along the route. Start your trip at the supermarket before heading to the pharmacy."
+  },
+  "raw_response": "{\"pois\":[\"supermarket\",\"pharmacy\"],\"time_limit\":null,\"dependencies\":[[\"supermarket\",\"pharmacy\"]],\"quality_weight\":0.5,\"evidence\":{\"pois\":\"visit the supermarket and the pharmacy\",\"dependencies\":\"Start your trip at the supermarket before heading to the pharmacy\",\"quality_weight\":\"both reasonable ratings and efficiency\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "pharmacy",
+      "supermarket"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "supermarket",
+        "pharmacy"
+      ]
+    ],
+    "quality_weight": 0.5
+  },
+  "evidence": {
+    "pois": "visit the supermarket and the pharmacy",
+    "dependencies": "Start your trip at the supermarket before heading to the pharmacy",
+    "quality_weight": "both reasonable ratings and efficiency"
+  },
+  "changes": [],
+  "finished_at": "2026-09-09T18:03:40.398356+00:00",
+  "telemetry": {
+    "call_index": 1,
+    "prompt_sha256": "0da7b9166cc854ae4735065eba4bae28b28471ca9aeec8213d5c5d7e84c801fc",
+    "attempts": 1,
+    "latency_seconds": 32.32,
+    "input_chars": 1086,
+    "output_chars": 320,
+    "input_tokens": 223,
+    "output_tokens": 188,
+    "total_tokens": 411,
+    "usage_source": "provider",
+    "success": true
+  }
+}

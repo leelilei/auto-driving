@@ -1,0 +1,57 @@
+{
+  "call_id": "pilot_05_v3::aligned::review_fields",
+  "role": "review_fields",
+  "graph_condition": "aligned",
+  "started_at": "2026-09-09T16:36:20.749724+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. The field-difference report only identifies disagreements; it does not identify the correct answer.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not infer user preference from a route or map.\n\nInstruction:\nGo to the bank, library, and pharmacy today, making sure you hit the bank before heading to the library. Pick the top-rated spots since quality is the main priority.\n\nCandidate A:\n{\"dependencies\": [[\"bank\", \"library\"]], \"pois\": [\"bank\", \"library\", \"pharmacy\"], \"quality_weight\": 1.0, \"time_limit\": null}\n\nCandidate B:\n{\"dependencies\": [[\"bank\", \"library\"]], \"pois\": [\"bank\", \"library\", \"pharmacy\"], \"quality_weight\": 1.0, \"time_limit\": null}\n\nField differences:\n{\"fields\": []}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"bank\",\"library\",\"pharmacy\"],\"time_limit\":null,\"dependencies\":[[\"bank\",\"library\"]],\"quality_weight\":1.0},\"evidence\":{\"pois\":[\"Go to the bank, library, and pharmacy today\"],\"dependencies\":[\"hit the bank before heading to the library\"],\"quality_weight\":[\"quality is the main priority\"],\"time_limit\":[\"today\"]},\"changes\":[]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library",
+      "pharmacy"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "bank",
+        "library"
+      ]
+    ],
+    "quality_weight": 1.0
+  },
+  "evidence": {
+    "pois": [
+      "Go to the bank, library, and pharmacy today"
+    ],
+    "dependencies": [
+      "hit the bank before heading to the library"
+    ],
+    "quality_weight": [
+      "quality is the main priority"
+    ],
+    "time_limit": [
+      "today"
+    ]
+  },
+  "changes": [],
+  "finished_at": "2026-09-09T16:36:22.079905+00:00",
+  "telemetry": {
+    "call_index": 62,
+    "prompt_sha256": "343cd207be4517a8d787054ac47729aa6d56eaca526fc95affb0a945a31d59c3",
+    "attempts": 1,
+    "latency_seconds": 1.33,
+    "input_chars": 1036,
+    "output_chars": 340,
+    "input_tokens": 298,
+    "output_tokens": 345,
+    "total_tokens": 643,
+    "usage_source": "provider",
+    "success": true
+  }
+}

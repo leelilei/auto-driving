@@ -1,0 +1,28 @@
+Extract POIs, constraints, and weights from human instruction through step-by-step reasoning:
+
+1. POIs Analysis:
+    - Look for POIs mentioned that need to be visited
+    - Create list of unique POIs
+
+2. Time Limit Analysis:
+    - Search for any specific return time
+    - Format as HH:00 or "None" if not specified
+
+3. Dependencies Analysis:
+    - Look for words indicating sequence (before, after, then, etc.)
+    - Create pairs of [POI1, POI2] for each sequence requirement
+
+4. Preference Analysis:
+    - Look for language about POI quality/rating importance vs route efficiency
+    - High POI rating emphasis (quality, best places, etc.) ->quality_weight should be large than 0.5
+    - High route efficiency emphasis (quick, shortest, save time) -> distance_weight should be large than 0.5
+    - Balanced language -> both weights around 0.5
+
+Output must be valid JSON with structure:
+{
+    "pois": ["poi1", "poi2", ...],
+    "time_limit": "HH:00" or "None",
+    "dependencies": [["poi1", "poi2"], ...],
+    "quality_weight": float,
+    "distance_weight": float
+}

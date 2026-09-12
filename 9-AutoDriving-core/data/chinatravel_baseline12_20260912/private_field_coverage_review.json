@@ -1,0 +1,437 @@
+{
+  "warning": "Contains source-audit annotations; never load in the model collector.",
+  "rows": [
+    {
+      "uid": "e20241028160251109186",
+      "tag": "easy",
+      "request_fields": [
+        "start_city",
+        "target_city",
+        "days",
+        "people_number",
+        "budget"
+      ],
+      "source_quotes": [
+        {
+          "field": "start_city",
+          "quote": "当前位置广州"
+        },
+        {
+          "field": "target_city",
+          "quote": "去深圳"
+        },
+        {
+          "field": "days",
+          "quote": "玩一天"
+        },
+        {
+          "field": "people_number",
+          "quote": "我一个人"
+        },
+        {
+          "field": "budget",
+          "quote": "预算1000人民币"
+        }
+      ],
+      "current_interface_gaps": [],
+      "evaluation_issues": [],
+      "review_status": "pre_call_source_review_from_20260911_audit"
+    },
+    {
+      "uid": "e20241028160253742452",
+      "tag": "easy",
+      "request_fields": [
+        "start_city",
+        "target_city",
+        "days",
+        "people_number",
+        "budget"
+      ],
+      "source_quotes": [
+        {
+          "field": "start_city",
+          "quote": "当前位置重庆"
+        },
+        {
+          "field": "target_city",
+          "quote": "去成都"
+        },
+        {
+          "field": "days",
+          "quote": "玩一天"
+        },
+        {
+          "field": "people_number",
+          "quote": "我一个人"
+        },
+        {
+          "field": "budget",
+          "quote": "预算1200人民币"
+        }
+      ],
+      "current_interface_gaps": [],
+      "evaluation_issues": [],
+      "review_status": "pre_call_source_review_from_20260911_audit"
+    },
+    {
+      "uid": "e20241028160255878579",
+      "tag": "easy",
+      "request_fields": [
+        "start_city",
+        "target_city",
+        "days",
+        "people_number",
+        "budget"
+      ],
+      "source_quotes": [
+        {
+          "field": "start_city",
+          "quote": "当前位置武汉"
+        },
+        {
+          "field": "target_city",
+          "quote": "去南京"
+        },
+        {
+          "field": "days",
+          "quote": "玩一天"
+        },
+        {
+          "field": "people_number",
+          "quote": "我一个人"
+        },
+        {
+          "field": "budget",
+          "quote": "预算1800人民币"
+        }
+      ],
+      "current_interface_gaps": [],
+      "evaluation_issues": [],
+      "review_status": "pre_call_source_review_from_20260911_audit"
+    },
+    {
+      "uid": "e20241028160258515151",
+      "tag": "easy",
+      "request_fields": [
+        "start_city",
+        "target_city",
+        "days",
+        "people_number",
+        "budget"
+      ],
+      "source_quotes": [
+        {
+          "field": "start_city",
+          "quote": "当前位置杭州"
+        },
+        {
+          "field": "target_city",
+          "quote": "去上海"
+        },
+        {
+          "field": "days",
+          "quote": "玩一天"
+        },
+        {
+          "field": "people_number",
+          "quote": "我一个人"
+        },
+        {
+          "field": "budget",
+          "quote": "预算1600人民币"
+        }
+      ],
+      "current_interface_gaps": [],
+      "evaluation_issues": [],
+      "review_status": "pre_call_source_review_from_20260911_audit"
+    },
+    {
+      "uid": "e20241028160300570125",
+      "tag": "easy",
+      "request_fields": [
+        "start_city",
+        "target_city",
+        "days",
+        "people_number",
+        "budget"
+      ],
+      "source_quotes": [
+        {
+          "field": "start_city",
+          "quote": "当前位置南京"
+        },
+        {
+          "field": "target_city",
+          "quote": "去武汉"
+        },
+        {
+          "field": "days",
+          "quote": "玩一天"
+        },
+        {
+          "field": "people_number",
+          "quote": "我一个人"
+        },
+        {
+          "field": "budget",
+          "quote": "预算1500人民币"
+        }
+      ],
+      "current_interface_gaps": [],
+      "evaluation_issues": [],
+      "review_status": "pre_call_source_review_from_20260911_audit"
+    },
+    {
+      "uid": "e20241028160301887545",
+      "tag": "easy",
+      "request_fields": [
+        "start_city",
+        "target_city",
+        "days",
+        "people_number",
+        "budget"
+      ],
+      "source_quotes": [
+        {
+          "field": "start_city",
+          "quote": "当前位置深圳"
+        },
+        {
+          "field": "target_city",
+          "quote": "去广州"
+        },
+        {
+          "field": "days",
+          "quote": "玩一天"
+        },
+        {
+          "field": "people_number",
+          "quote": "我一个人"
+        },
+        {
+          "field": "budget",
+          "quote": "预算800人民币"
+        }
+      ],
+      "current_interface_gaps": [],
+      "evaluation_issues": [],
+      "review_status": "pre_call_source_review_from_20260911_audit"
+    },
+    {
+      "uid": "e20241028160303262666",
+      "tag": "easy",
+      "request_fields": [
+        "start_city",
+        "target_city",
+        "days",
+        "people_number",
+        "budget"
+      ],
+      "source_quotes": [
+        {
+          "field": "start_city",
+          "quote": "当前位置苏州"
+        },
+        {
+          "field": "target_city",
+          "quote": "去南京"
+        },
+        {
+          "field": "days",
+          "quote": "玩一天"
+        },
+        {
+          "field": "people_number",
+          "quote": "我一个人"
+        },
+        {
+          "field": "budget",
+          "quote": "预算900人民币"
+        }
+      ],
+      "current_interface_gaps": [],
+      "evaluation_issues": [],
+      "review_status": "pre_call_source_review_from_20260911_audit"
+    },
+    {
+      "uid": "e20241028160306588034",
+      "tag": "easy",
+      "request_fields": [
+        "start_city",
+        "target_city",
+        "days",
+        "people_number",
+        "budget"
+      ],
+      "source_quotes": [
+        {
+          "field": "start_city",
+          "quote": "当前位置成都"
+        },
+        {
+          "field": "target_city",
+          "quote": "去重庆"
+        },
+        {
+          "field": "days",
+          "quote": "玩一天"
+        },
+        {
+          "field": "people_number",
+          "quote": "我一个人"
+        },
+        {
+          "field": "budget",
+          "quote": "预算1100人民币"
+        }
+      ],
+      "current_interface_gaps": [],
+      "evaluation_issues": [],
+      "review_status": "pre_call_source_review_from_20260911_audit"
+    },
+    {
+      "uid": "e20241028160307743716",
+      "tag": "easy",
+      "request_fields": [
+        "start_city",
+        "target_city",
+        "days",
+        "people_number",
+        "budget"
+      ],
+      "source_quotes": [
+        {
+          "field": "start_city",
+          "quote": "当前位置北京"
+        },
+        {
+          "field": "target_city",
+          "quote": "去上海"
+        },
+        {
+          "field": "days",
+          "quote": "玩一天"
+        },
+        {
+          "field": "people_number",
+          "quote": "我一个人"
+        },
+        {
+          "field": "budget",
+          "quote": "预算3000人民币"
+        }
+      ],
+      "current_interface_gaps": [],
+      "evaluation_issues": [],
+      "review_status": "pre_call_source_review_from_20260911_audit"
+    },
+    {
+      "uid": "e20241028160309165566",
+      "tag": "easy",
+      "request_fields": [
+        "start_city",
+        "target_city",
+        "days",
+        "people_number",
+        "budget"
+      ],
+      "source_quotes": [
+        {
+          "field": "start_city",
+          "quote": "当前位置广州"
+        },
+        {
+          "field": "target_city",
+          "quote": "去武汉"
+        },
+        {
+          "field": "days",
+          "quote": "玩一天"
+        },
+        {
+          "field": "people_number",
+          "quote": "我一个人"
+        },
+        {
+          "field": "budget",
+          "quote": "预算3000人民币"
+        }
+      ],
+      "current_interface_gaps": [],
+      "evaluation_issues": [],
+      "review_status": "pre_call_source_review_from_20260911_audit"
+    },
+    {
+      "uid": "e20241028160311039073",
+      "tag": "easy",
+      "request_fields": [
+        "start_city",
+        "target_city",
+        "days",
+        "people_number",
+        "budget"
+      ],
+      "source_quotes": [
+        {
+          "field": "start_city",
+          "quote": "当前位置深圳"
+        },
+        {
+          "field": "target_city",
+          "quote": "去杭州"
+        },
+        {
+          "field": "days",
+          "quote": "玩一天"
+        },
+        {
+          "field": "people_number",
+          "quote": "我一个人"
+        },
+        {
+          "field": "budget",
+          "quote": "预算2000人民币"
+        }
+      ],
+      "current_interface_gaps": [],
+      "evaluation_issues": [],
+      "review_status": "pre_call_source_review_from_20260911_audit"
+    },
+    {
+      "uid": "e20241028160312706595",
+      "tag": "easy",
+      "request_fields": [
+        "start_city",
+        "target_city",
+        "days",
+        "people_number",
+        "budget"
+      ],
+      "source_quotes": [
+        {
+          "field": "start_city",
+          "quote": "当前位置重庆"
+        },
+        {
+          "field": "target_city",
+          "quote": "去苏州"
+        },
+        {
+          "field": "days",
+          "quote": "玩一天"
+        },
+        {
+          "field": "people_number",
+          "quote": "我一个人"
+        },
+        {
+          "field": "budget",
+          "quote": "预算1400人民币"
+        }
+      ],
+      "current_interface_gaps": [],
+      "evaluation_issues": [],
+      "review_status": "pre_call_source_review_from_20260911_audit"
+    }
+  ]
+}

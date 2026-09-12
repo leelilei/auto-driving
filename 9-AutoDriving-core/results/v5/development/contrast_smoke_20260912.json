@@ -1,0 +1,263 @@
+{
+  "report_version": "darc-v5.1-contrast-2",
+  "instruction": "Visit the bank before the pharmacy and keep the route short.",
+  "candidate_A": {
+    "pois": [
+      "bank",
+      "pharmacy"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "bank",
+        "pharmacy"
+      ]
+    ],
+    "quality_weight": 0.25
+  },
+  "candidate_B": {
+    "pois": [
+      "bank",
+      "pharmacy"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "pharmacy",
+        "bank"
+      ]
+    ],
+    "quality_weight": 0.75
+  },
+  "candidate_evidence": {
+    "A": {
+      "dependencies": "bank before the pharmacy",
+      "quality_weight": "keep the route short"
+    },
+    "B": {
+      "dependencies": "bank before the pharmacy",
+      "quality_weight": "keep the route short"
+    }
+  },
+  "differing_fields": [
+    "dependencies",
+    "quality_weight"
+  ],
+  "routes": {
+    "A": {
+      "poi_ids": [
+        "bank_2",
+        "pharmacy_2"
+      ],
+      "categories": [
+        "bank",
+        "pharmacy"
+      ],
+      "coverage_count": 2,
+      "is_valid": true,
+      "is_full_coverage": true,
+      "average_quality": 0.9,
+      "distance_km": 15.635,
+      "duration_minutes": 76.3,
+      "arrival_minutes": 616,
+      "utility_under_own_candidate": 0.03340342388091713,
+      "status": "SUCCESS"
+    },
+    "B": {
+      "poi_ids": [
+        "pharmacy_2",
+        "bank_2"
+      ],
+      "categories": [
+        "pharmacy",
+        "bank"
+      ],
+      "coverage_count": 2,
+      "is_valid": true,
+      "is_full_coverage": true,
+      "average_quality": 0.9,
+      "distance_km": 15.635,
+      "duration_minutes": 76.3,
+      "arrival_minutes": 616,
+      "utility_under_own_candidate": 0.6111344746269725,
+      "status": "SUCCESS"
+    }
+  },
+  "cross_constraints": {
+    "route_A_under_A": {
+      "task_success": true,
+      "reasons": []
+    },
+    "route_A_under_B": {
+      "task_success": false,
+      "reasons": [
+        "candidate_dependency_violation"
+      ]
+    },
+    "route_B_under_A": {
+      "task_success": false,
+      "reasons": [
+        "candidate_dependency_violation"
+      ]
+    },
+    "route_B_under_B": {
+      "task_success": true,
+      "reasons": []
+    }
+  },
+  "single_field_swaps": [
+    {
+      "base": "A",
+      "field_from_other": "dependencies",
+      "hybrid_intent": {
+        "pois": [
+          "bank",
+          "pharmacy"
+        ],
+        "time_limit": null,
+        "dependencies": [
+          [
+            "pharmacy",
+            "bank"
+          ]
+        ],
+        "quality_weight": 0.25
+      },
+      "route": {
+        "poi_ids": [
+          "pharmacy_2",
+          "bank_2"
+        ],
+        "categories": [
+          "pharmacy",
+          "bank"
+        ],
+        "coverage_count": 2,
+        "is_valid": true,
+        "is_full_coverage": true,
+        "average_quality": 0.9,
+        "distance_km": 15.635,
+        "duration_minutes": 76.3,
+        "arrival_minutes": 616,
+        "utility_under_own_candidate": 0.03340342388091713,
+        "status": "SUCCESS"
+      }
+    },
+    {
+      "base": "B",
+      "field_from_other": "dependencies",
+      "hybrid_intent": {
+        "pois": [
+          "bank",
+          "pharmacy"
+        ],
+        "time_limit": null,
+        "dependencies": [
+          [
+            "bank",
+            "pharmacy"
+          ]
+        ],
+        "quality_weight": 0.75
+      },
+      "route": {
+        "poi_ids": [
+          "bank_2",
+          "pharmacy_2"
+        ],
+        "categories": [
+          "bank",
+          "pharmacy"
+        ],
+        "coverage_count": 2,
+        "is_valid": true,
+        "is_full_coverage": true,
+        "average_quality": 0.9,
+        "distance_km": 15.635,
+        "duration_minutes": 76.3,
+        "arrival_minutes": 616,
+        "utility_under_own_candidate": 0.6111344746269725,
+        "status": "SUCCESS"
+      }
+    },
+    {
+      "base": "A",
+      "field_from_other": "quality_weight",
+      "hybrid_intent": {
+        "pois": [
+          "bank",
+          "pharmacy"
+        ],
+        "time_limit": null,
+        "dependencies": [
+          [
+            "bank",
+            "pharmacy"
+          ]
+        ],
+        "quality_weight": 0.75
+      },
+      "route": {
+        "poi_ids": [
+          "bank_2",
+          "pharmacy_2"
+        ],
+        "categories": [
+          "bank",
+          "pharmacy"
+        ],
+        "coverage_count": 2,
+        "is_valid": true,
+        "is_full_coverage": true,
+        "average_quality": 0.9,
+        "distance_km": 15.635,
+        "duration_minutes": 76.3,
+        "arrival_minutes": 616,
+        "utility_under_own_candidate": 0.6111344746269725,
+        "status": "SUCCESS"
+      }
+    },
+    {
+      "base": "B",
+      "field_from_other": "quality_weight",
+      "hybrid_intent": {
+        "pois": [
+          "bank",
+          "pharmacy"
+        ],
+        "time_limit": null,
+        "dependencies": [
+          [
+            "pharmacy",
+            "bank"
+          ]
+        ],
+        "quality_weight": 0.25
+      },
+      "route": {
+        "poi_ids": [
+          "pharmacy_2",
+          "bank_2"
+        ],
+        "categories": [
+          "pharmacy",
+          "bank"
+        ],
+        "coverage_count": 2,
+        "is_valid": true,
+        "is_full_coverage": true,
+        "average_quality": 0.9,
+        "distance_km": 15.635,
+        "duration_minutes": 76.3,
+        "arrival_minutes": 616,
+        "utility_under_own_candidate": 0.03340342388091713,
+        "status": "SUCCESS"
+      }
+    }
+  ],
+  "limitations": [
+    "The report does not identify the user's true intent.",
+    "Both candidates may share the same error.",
+    "Single-field swaps do not identify higher-order interactions."
+  ]
+}

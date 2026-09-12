@@ -1,0 +1,32 @@
+{
+  "20260912T070050Z_e2_confirmation_gemini-3_1-flash-lite": {
+    "n": 160,
+    "both_null": 160,
+    "one_null": 160
+  },
+  "calibration_overlap": [
+    {
+      "group": "e2_confirm_010",
+      "cluster": 494,
+      "source": 762
+    },
+    {
+      "group": "e2_confirm_030",
+      "cluster": 391,
+      "source": 569
+    }
+  ],
+  "gpt_telemetry_keys": [
+    "call_index",
+    "prompt_sha256",
+    "attempts",
+    "latency_seconds",
+    "input_chars",
+    "output_chars",
+    "input_tokens",
+    "output_tokens",
+    "total_tokens",
+    "usage_source",
+    "success"
+  ]
+}

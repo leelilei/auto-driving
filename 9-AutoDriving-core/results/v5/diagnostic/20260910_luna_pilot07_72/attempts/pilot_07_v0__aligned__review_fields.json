@@ -1,0 +1,44 @@
+{
+  "call_id": "pilot_07_v0::aligned::review_fields",
+  "role": "review_fields",
+  "graph_condition": "aligned",
+  "started_at": "2026-09-09T17:27:04.200769+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. The field-difference report only identifies disagreements; it does not identify the correct answer.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not infer user preference from a route or map.\n\nInstruction:\nToday, make sure to visit the library, pharmacy, and supermarket. Please return by 17:00. Focus on visiting high-rated places, even if the route is slightly longer.\n\nCandidate A:\n{\"dependencies\": [], \"pois\": [\"library\", \"pharmacy\", \"supermarket\"], \"quality_weight\": 0.9, \"time_limit\": 1020}\n\nCandidate B:\n{\"dependencies\": [], \"pois\": [\"library\", \"pharmacy\", \"supermarket\"], \"quality_weight\": 0.9, \"time_limit\": 1020}\n\nField differences:\n{\"fields\": []}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"library\",\"pharmacy\",\"supermarket\"],\"time_limit\":1020,\"dependencies\":[],\"quality_weight\":0.9},\"evidence\":{\"pois\":\"visit the library, pharmacy, and supermarket\",\"time_limit\":\"return by 17:00\",\"quality_weight\":\"Focus on visiting high-rated places, even if the route is slightly longer\",\"dependencies\":[]},\"changes\":[]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "library",
+      "pharmacy",
+      "supermarket"
+    ],
+    "time_limit": 1020,
+    "dependencies": [],
+    "quality_weight": 0.9
+  },
+  "evidence": {
+    "pois": "visit the library, pharmacy, and supermarket",
+    "time_limit": "return by 17:00",
+    "quality_weight": "Focus on visiting high-rated places, even if the route is slightly longer",
+    "dependencies": []
+  },
+  "changes": [],
+  "finished_at": "2026-09-09T17:27:18.913527+00:00",
+  "telemetry": {
+    "call_index": 4,
+    "prompt_sha256": "adfc115d225e84c6b92f569723bc0bdb1618d7d48a5757dd4ec1c716e734c0ae",
+    "attempts": 1,
+    "latency_seconds": 14.713,
+    "input_chars": 1011,
+    "output_chars": 335,
+    "input_tokens": 250,
+    "output_tokens": 162,
+    "total_tokens": 412,
+    "usage_source": "provider",
+    "success": true
+  }
+}

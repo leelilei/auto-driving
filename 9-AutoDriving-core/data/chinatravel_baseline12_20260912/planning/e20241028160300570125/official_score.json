@@ -1,0 +1,65 @@
+{
+  "n_expected": 1,
+  "ids": [
+    "e20241028160300570125"
+  ],
+  "schema_rate": 100.0,
+  "commonsense_macro": 100.0,
+  "commonsense_micro": 100.0,
+  "hard_macro": 100.0,
+  "hard_micro": 100.0,
+  "conditional_hard_macro": 100.0,
+  "conditional_hard_micro": 100.0,
+  "all_pass_ids": [
+    "e20241028160300570125"
+  ],
+  "all_pass_rate": 100.0,
+  "schema": [
+    {
+      "data_id": "e20241028160300570125",
+      "schema": 1
+    }
+  ],
+  "commonsense": [
+    {
+      "data_id": "e20241028160300570125",
+      "Invalid or ungrounded activity entity": 0,
+      "Intercity transportation events must occur": 0,
+      "Invalid Trains or Airplanes, given TrainID/FlightID, origin and destination": 0,
+      "Incorrect Information of Intercity Transport on price or duration": 0,
+      "Incorrect Cost on Intercity Transportation": 0,
+      "Unavailable attractions": 0,
+      "Visiting attraction in their closed time": 0,
+      "Repeated attraction Choices": 0,
+      "Incorrect price Information of attraction": 0,
+      "Incorrect cost Information of attraction": 0,
+      "Unavailable Accommodation": 0,
+      "Incorrect Information of Accommodation on price or room type": 0,
+      "Incorrect cost Information of Accommodation": 0,
+      "Accomondation is necessary for trips longer than one day": 0,
+      "Unavailable Restruants": 0,
+      "Visiting Restruants in their closed time": 0,
+      "Repeated Restruants Choices": 0,
+      "Incorrect price Information of Restruants": 0,
+      "Incorrect cost Information of Restruants": 0,
+      "Inappropriate Meal Times": 0,
+      "Repeated Meal Types in One Day": 0,
+      "Unavailable Inner-City Transport": 0,
+      "Incorrect Information of Inner-City Transporton on price, distance, and duration": 0,
+      "Inccorrect cost information of Inner-City Transport": 0,
+      "Invalid duration information of each activity": 0,
+      "Does not follow Chronological Order": 0,
+      "Invalid Transport information across positions": 0
+    }
+  ],
+  "hard": [
+    {
+      "data_id": "e20241028160300570125",
+      "logic_py_0": 1,
+      "logic_py_1": 1,
+      "logic_py_2": 1,
+      "logic_py_3": 1,
+      "logic_py_4": 1
+    }
+  ]
+}

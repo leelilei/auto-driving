@@ -1,0 +1,27 @@
+{
+  "status": "REPAIR_V1_OFFICIAL_SCORE_COMPLETE",
+  "model_api_calls": 0,
+  "cases": [
+    {
+      "uid": "e20241028160248698752",
+      "schema_rate": 100.0,
+      "commonsense_macro": 100.0,
+      "hard_macro": 100.0,
+      "all_pass_rate": 100.0
+    },
+    {
+      "uid": "e20241028160848776495",
+      "schema_rate": 0.0,
+      "commonsense_macro": 0.0,
+      "hard_macro": 0.0,
+      "all_pass_rate": 0.0
+    },
+    {
+      "uid": "h20241029143455115600",
+      "schema_rate": 100.0,
+      "commonsense_macro": 100.0,
+      "hard_macro": 100.0,
+      "all_pass_rate": 100.0
+    }
+  ]
+}

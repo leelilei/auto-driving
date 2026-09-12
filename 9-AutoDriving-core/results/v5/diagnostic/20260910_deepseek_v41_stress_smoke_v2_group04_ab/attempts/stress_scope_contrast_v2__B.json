@@ -1,0 +1,49 @@
+{
+  "call_id": "stress_scope_contrast_v2::B",
+  "role": "B",
+  "graph_condition": null,
+  "started_at": "2026-09-10T02:32:34.348074+00:00",
+  "request": {
+    "system": "Read the user's route-planning instruction field by field before producing the final JSON.\n\nCheck: requested POI categories, return deadline, explicit visit order, and the direction of the quality-versus-distance preference. Each conclusion must be supported by the instruction itself.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nDo not infer a preference from any route or map. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Cover the library, pharmacy, shopping mall, and bank with equal concern for quality and travel. Require pharmacy before bank, while imposing no library-before-bank rule."
+  },
+  "raw_response": "{\"pois\":[\"library\",\"pharmacy\",\"shopping mall\",\"bank\"],\"time_limit\":null,\"dependencies\":[[\"pharmacy\",\"bank\"]],\"quality_weight\":0.5,\"evidence\":{\"pois\":\"library, pharmacy, shopping mall, and bank\",\"dependencies\":\"pharmacy before bank\",\"quality_weight\":\"equal concern for quality and travel\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library",
+      "pharmacy",
+      "shopping_mall"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "pharmacy",
+        "bank"
+      ]
+    ],
+    "quality_weight": 0.5
+  },
+  "evidence": {
+    "pois": "library, pharmacy, shopping mall, and bank",
+    "dependencies": "pharmacy before bank",
+    "quality_weight": "equal concern for quality and travel"
+  },
+  "changes": [],
+  "finished_at": "2026-09-10T02:32:37.225690+00:00",
+  "telemetry": {
+    "call_index": 6,
+    "prompt_sha256": "d64013d76ad9f53a72f065a617a24ecf45d265b2c127287d61f856be6a56bf7f",
+    "attempts": 1,
+    "latency_seconds": 2.877,
+    "input_chars": 1043,
+    "output_chars": 289,
+    "input_tokens": 265,
+    "output_tokens": 665,
+    "total_tokens": 930,
+    "usage_source": "provider",
+    "success": true
+  }
+}

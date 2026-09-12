@@ -1,0 +1,48 @@
+{
+  "call_id": "stress_negated_order_v0::B",
+  "role": "B",
+  "graph_condition": null,
+  "started_at": "2026-09-10T02:28:37.377358+00:00",
+  "request": {
+    "system": "Read the user's route-planning instruction field by field before producing the final JSON.\n\nCheck: requested POI categories, return deadline, explicit visit order, and the direction of the quality-versus-distance preference. Each conclusion must be supported by the instruction itself.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nDo not infer a preference from any route or map. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Visit the bank, library, and pharmacy. Do not go to the pharmacy until after the bank. Treat ratings and travel efficiency as equally important."
+  },
+  "raw_response": "{\"pois\":[\"bank\",\"library\",\"pharmacy\"],\"time_limit\":null,\"dependencies\":[[\"bank\",\"pharmacy\"]],\"quality_weight\":0.5,\"evidence\":{\"pois\":\"Visit the bank, library, and pharmacy\",\"dependencies\":\"Do not go to the pharmacy until after the bank\",\"quality_weight\":\"Treat ratings and travel efficiency as equally important\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library",
+      "pharmacy"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "bank",
+        "pharmacy"
+      ]
+    ],
+    "quality_weight": 0.5
+  },
+  "evidence": {
+    "pois": "Visit the bank, library, and pharmacy",
+    "dependencies": "Do not go to the pharmacy until after the bank",
+    "quality_weight": "Treat ratings and travel efficiency as equally important"
+  },
+  "changes": [],
+  "finished_at": "2026-09-10T02:28:39.731739+00:00",
+  "telemetry": {
+    "call_index": 2,
+    "prompt_sha256": "eb88991ce126aa4fe18c28542888196f45448baa65c56d58d3ec203d1fcd6c4e",
+    "attempts": 1,
+    "latency_seconds": 2.354,
+    "input_chars": 1018,
+    "output_chars": 314,
+    "input_tokens": 259,
+    "output_tokens": 494,
+    "total_tokens": 753,
+    "usage_source": "provider",
+    "success": true
+  }
+}

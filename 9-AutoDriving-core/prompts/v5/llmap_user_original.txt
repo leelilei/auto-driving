@@ -1,0 +1,4 @@
+Extract POIs, constraints, and weights from this instruction as JSON:
+{{instruction}}
+
+Only output the JSON object. No prefix, additional text, or explanation.

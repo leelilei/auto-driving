@@ -1,0 +1,48 @@
+{
+  "call_id": "pilot_01_v0::B",
+  "role": "B",
+  "graph_condition": null,
+  "started_at": "2026-09-09T17:50:19.513436+00:00",
+  "request": {
+    "system": "Read the user's route-planning instruction field by field before producing the final JSON.\n\nCheck: requested POI categories, return deadline, explicit visit order, and the direction of the quality-versus-distance preference. Each conclusion must be supported by the instruction itself.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nDo not infer a preference from any route or map. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Today, you'll be visiting the shopping mall and the supermarket. Make sure to be back by 22:00. Since time efficiency is a priority, try to keep your route as direct as possible. Remember to visit the shopping mall before heading to the supermarket."
+  },
+  "raw_response": "{\n  \"pois\": [\"shopping mall\", \"supermarket\"],\n  \"time_limit\": 1320,\n  \"dependencies\": [[\"shopping mall\", \"supermarket\"]],\n  \"quality_weight\": 0,\n  \"evidence\": {\n    \"pois\": \"visiting the shopping mall and the supermarket\",\n    \"time_limit\": \"be back by 22:00\",\n    \"dependencies\": \"visit the shopping mall before heading to the supermarket\",\n    \"quality_weight\": \"time efficiency is a priority, try to keep your route as direct as possible\"\n  }\n}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "shopping_mall",
+      "supermarket"
+    ],
+    "time_limit": 1320,
+    "dependencies": [
+      [
+        "shopping_mall",
+        "supermarket"
+      ]
+    ],
+    "quality_weight": 0.0
+  },
+  "evidence": {
+    "pois": "visiting the shopping mall and the supermarket",
+    "time_limit": "be back by 22:00",
+    "dependencies": "visit the shopping mall before heading to the supermarket",
+    "quality_weight": "time efficiency is a priority, try to keep your route as direct as possible"
+  },
+  "changes": [],
+  "finished_at": "2026-09-09T17:51:12.286031+00:00",
+  "telemetry": {
+    "call_index": 2,
+    "prompt_sha256": "6960dcfa997239d06a52b2fc2f64ce90213b34b2ffc01af7c75bd0c87c271fc8",
+    "attempts": 1,
+    "latency_seconds": 52.772,
+    "input_chars": 1123,
+    "output_chars": 447,
+    "input_tokens": 238,
+    "output_tokens": 195,
+    "total_tokens": 433,
+    "usage_source": "provider",
+    "success": true
+  }
+}

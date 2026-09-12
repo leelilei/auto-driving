@@ -1,0 +1,64 @@
+{
+  "call_id": "F28__clarified__language",
+  "case_id": "F28",
+  "candidate_source": "F28__r1__direct",
+  "wording": "clarified",
+  "role": "language",
+  "request": {
+    "system": "Review the predicted selection rule against the instruction and full public scene. The prediction may be wrong. Supplementary computed facts are consequences only and cannot override what the instruction requests. Check every field, including when the prediction seems feasible. Return only a JSON object with exactly selection, availability_reference, return_by, evidence.\nselection is nearest_from_bank, minimum_added_distance, or highest_rating.\navailability_reference is departure only when already open at home departure is explicitly required, otherwise arrival.\nreturn_by is integer minutes since midnight or null when absent. It is the requested deadline, not a computed arrival time.\nevidence quotes instruction spans. Preserve the requirements even if infeasible. Do not choose a pharmacy ID or relax a rule.\nOUTPUT CONTRACT (applies to all fields):\nReturn one JSON object only, with no commentary before or after it and no Markdown fences.\nIt has exactly four keys: selection, availability_reference, return_by, evidence.\nThe first three fields follow the rules above. evidence MUST be a JSON object, never a string or array.\nInside evidence use field names as keys and instruction quotations as string values; an empty object {} is valid.\nDo not add a verdict, explanation paragraph, corrected_policy wrapper, or any extra top-level key.\n\nDefinitions of the three selection values:\n- nearest_from_bank: minimize the straight-line distance d(B, P) from bank B to the pharmacy P among eligible pharmacies.\n- minimum_added_distance: minimize d(B, P) + d(P, H) - d(B, H) among eligible pharmacies, where H is home.\n- highest_rating: maximize the pharmacy rating among eligible pharmacies.\nThese definitions specify the selection field. Read which objective is requested from the instruction; the availability_reference and return_by fields retain their definitions above.\n",
+    "user": "{\"candidate_policy\": {\"availability_reference\": \"departure\", \"return_by\": 595, \"selection\": \"nearest_from_bank\"}, \"computed_scene_facts\": null, \"instruction\": \"Start at home at 09:00. Visit bank B first, then exactly one pharmacy, then return home. Travel along straight lines at 1 distance unit per minute. Bank service takes 20 minutes and pharmacy service takes 10 minutes. Do not wait for a place to open. Start service immediately on arrival; each service must finish no later than closing time. If no pharmacy can satisfy every requirement, the downstream executor reports INFEASIBLE. Your task is only to extract the requested rule fields; preserve those rules even when no pharmacy is feasible. Among pharmacies satisfying every requirement, choose the one with the smallest straight-line distance from bank B. Restrict the choice to pharmacies already open when I leave home at 09:00; service must also fit their opening hours when visited. Return home no later than 09:55.\", \"scene\": {\"bank\": {\"close\": 660, \"open\": 500, \"rating\": 4, \"x\": 17, \"y\": 2}, \"bank_service\": 20, \"departure\": 540, \"home\": [0, 0], \"pharmacies\": {\"P_A\": {\"close\": 610, \"open\": 575, \"rating\": 4.4, \"x\": 2, \"y\": 5}, \"P_B\": {\"close\": 595, \"open\": 575, \"rating\": 4.0, \"x\": 11, \"y\": 5}, \"P_C\": {\"close\": 585, \"open\": 500, \"rating\": 3.9, \"x\": 1, \"y\": 5}, \"P_D\": {\"close\": 610, \"open\": 535, \"rating\": 2.5, \"x\": 5, \"y\": 1}, \"P_E\": {\"close\": 610, \"open\": 500, \"rating\": 3.0, \"x\": 24, \"y\": -8}}, \"pharmacy_service\": 10, \"speed_units_per_minute\": 1}}"
+  },
+  "source": "REAL",
+  "status": "COMPLETE",
+  "started": "2026-09-10T17:25:20.469765+00:00",
+  "provider_response": {
+    "model": "claude-haiku-4-5-20251001",
+    "id": "msg_011Cev9cU7fS9swikG3PamkA",
+    "type": "message",
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "```json\n{\n  \"selection\": \"nearest_from_bank\",\n  \"availability_reference\": \"departure\",\n  \"return_by\": 595,\n  \"evidence\": {\n    \"selection_rule\": \"Among pharmacies satisfying every requirement, choose the one with the smallest straight-line distance from bank B.\",\n    \"availability_constraint\": \"Restrict the choice to pharmacies already open when I leave home at 09:00\",\n    \"deadline\": \"Return home no later than 09:55\"\n  }\n}\n```"
+      }
+    ],
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "stop_details": null,
+    "usage": {
+      "input_tokens": 999,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "output_tokens": 131,
+      "service_tier": "standard",
+      "inference_geo": "global"
+    },
+    "context_management": {
+      "applied_edits": []
+    }
+  },
+  "raw_response": "```json\n{\n  \"selection\": \"nearest_from_bank\",\n  \"availability_reference\": \"departure\",\n  \"return_by\": 595,\n  \"evidence\": {\n    \"selection_rule\": \"Among pharmacies satisfying every requirement, choose the one with the smallest straight-line distance from bank B.\",\n    \"availability_constraint\": \"Restrict the choice to pharmacies already open when I leave home at 09:00\",\n    \"deadline\": \"Return home no later than 09:55\"\n  }\n}\n```",
+  "parsed_policy": {
+    "selection": "nearest_from_bank",
+    "availability_reference": "departure",
+    "return_by": 595
+  },
+  "finished": "2026-09-10T17:25:27.707005+00:00",
+  "telemetry": {
+    "call_index": 1,
+    "prompt_sha256": "831ab5d43f1aba106031c706b093b1b1f439ed47e5fa2c23fba24570b9778cf0",
+    "attempts": 1,
+    "latency_seconds": 7.237,
+    "input_chars": 3403,
+    "output_chars": 431,
+    "input_tokens": 999,
+    "output_tokens": 131,
+    "total_tokens": 1130,
+    "usage_source": "provider",
+    "success": true
+  }
+}

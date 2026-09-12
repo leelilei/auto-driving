@@ -1,0 +1,50 @@
+{
+  "call_id": "pilot_04_v3::aligned::review_constraints",
+  "role": "review_constraints",
+  "graph_condition": "aligned",
+  "started_at": "2026-09-09T16:38:14.592532+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. Cross-constraint checks show consequences of candidates and do not establish the user's intent.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not select a preference because one candidate yields a better route.\n\nInstruction:\nNeed to stop by the bank and library today and be back before 18:00. Keep it super quick and take the most efficient route possible.\n\nCandidate A:\n{\"dependencies\": [], \"pois\": [\"bank\", \"library\"], \"quality_weight\": 0.0, \"time_limit\": 1080}\n\nCandidate B:\n{\"dependencies\": [], \"pois\": [\"bank\", \"library\"], \"quality_weight\": 0.0, \"time_limit\": 1080}\n\nField differences:\n{\"fields\": []}\n\nCross-constraint checks:\n{\"route_A_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_A_under_B\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_B\": {\"reasons\": [], \"task_success\": true}}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"bank\",\"library\"],\"time_limit\":1080,\"dependencies\":[],\"quality_weight\":0.0},\"evidence\":{\"pois\":[\"bank and library\"],\"time_limit\":[\"before 18:00\"],\"dependencies\":[],\"quality_weight\":[\"super quick\",\"most efficient route possible\"]},\"changes\":[]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library"
+    ],
+    "time_limit": 1080,
+    "dependencies": [],
+    "quality_weight": 0.0
+  },
+  "evidence": {
+    "pois": [
+      "bank and library"
+    ],
+    "time_limit": [
+      "before 18:00"
+    ],
+    "dependencies": [],
+    "quality_weight": [
+      "super quick",
+      "most efficient route possible"
+    ]
+  },
+  "changes": [],
+  "finished_at": "2026-09-09T16:38:21.477367+00:00",
+  "telemetry": {
+    "call_index": 63,
+    "prompt_sha256": "bf0f5092414615d02e471b7499618380e8daaf1bdaf144b01df5510be755b7ae",
+    "attempts": 1,
+    "latency_seconds": 6.885,
+    "input_chars": 1218,
+    "output_chars": 262,
+    "input_tokens": 360,
+    "output_tokens": 1948,
+    "total_tokens": 2308,
+    "usage_source": "provider",
+    "success": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "call_id": "stress_cancel_order_v3::A",
+  "role": "A",
+  "graph_condition": null,
+  "started_at": "2026-09-10T02:32:44.527556+00:00",
+  "request": {
+    "system": "You extract route-planning intent from the user's instruction.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nUse only the instruction. Do not invent constraints. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Please take a short route through the bank, supermarket, and pharmacy. The bank and pharmacy may be visited in either sequence."
+  },
+  "raw_response": "{\"pois\":[\"bank\",\"supermarket\",\"pharmacy\"],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.0,\"evidence\":{\"pois\":\"bank, supermarket, and pharmacy\",\"quality_weight\":\"short route\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "pharmacy",
+      "supermarket"
+    ],
+    "time_limit": null,
+    "dependencies": [],
+    "quality_weight": 0.0
+  },
+  "evidence": {
+    "pois": "bank, supermarket, and pharmacy",
+    "quality_weight": "short route"
+  },
+  "changes": [],
+  "finished_at": "2026-09-10T02:32:49.217909+00:00",
+  "telemetry": {
+    "call_index": 7,
+    "prompt_sha256": "091a5879a2a127e55c3e97c2172a4f0ce991eebb3595142544b9dd0e90daf2d0",
+    "attempts": 1,
+    "latency_seconds": 4.69,
+    "input_chars": 782,
+    "output_chars": 184,
+    "input_tokens": 214,
+    "output_tokens": 965,
+    "total_tokens": 1179,
+    "usage_source": "provider",
+    "success": true
+  }
+}

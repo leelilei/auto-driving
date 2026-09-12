@@ -1,0 +1,895 @@
+{
+  "people_number": 1,
+  "start_city": "北京",
+  "target_city": "武汉",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "start_time": "03:43",
+          "end_time": "05:02",
+          "start": "北京首都国际机场",
+          "end": "武汉天河国际机场",
+          "price": 519.12,
+          "cost": 519.12,
+          "tickets": 1,
+          "transports": [],
+          "FlightID": "FL150",
+          "type": "airplane"
+        },
+        {
+          "position": "汉口水塔",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "06:00",
+          "end_time": "07:30",
+          "transports": [
+            {
+              "start": "武汉天河国际机场",
+              "end": "天河机场-地铁站",
+              "mode": "walk",
+              "start_time": "05:02",
+              "end_time": "05:08",
+              "cost": 0,
+              "distance": 0.55,
+              "price": 0
+            },
+            {
+              "start": "天河机场-地铁站",
+              "end": "江汉路-地铁站",
+              "mode": "metro",
+              "start_time": "05:08",
+              "end_time": "05:52",
+              "cost": 6,
+              "distance": 22.39,
+              "price": 6,
+              "tickets": 1
+            },
+            {
+              "start": "江汉路-地铁站",
+              "end": "汉口水塔",
+              "mode": "walk",
+              "start_time": "05:52",
+              "end_time": "06:00",
+              "cost": 0,
+              "distance": 0.7,
+              "price": 0
+            }
+          ],
+          "tickets": 1
+        },
+        {
+          "position": "刘少奇同志旧居",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "07:44",
+          "end_time": "09:14",
+          "transports": [
+            {
+              "start": "汉口水塔",
+              "end": "江汉路-地铁站",
+              "mode": "walk",
+              "start_time": "07:30",
+              "end_time": "07:38",
+              "cost": 0,
+              "distance": 0.7,
+              "price": 0
+            },
+            {
+              "start": "江汉路-地铁站",
+              "end": "三阳路-地铁站",
+              "mode": "metro",
+              "start_time": "07:38",
+              "end_time": "07:42",
+              "cost": 2,
+              "distance": 2.29,
+              "price": 2,
+              "tickets": 1
+            },
+            {
+              "start": "三阳路-地铁站",
+              "end": "刘少奇同志旧居",
+              "mode": "walk",
+              "start_time": "07:42",
+              "end_time": "07:44",
+              "cost": 0,
+              "distance": 0.19,
+              "price": 0
+            }
+          ],
+          "tickets": 1
+        },
+        {
+          "position": "盛世欢乐世界",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "10:00",
+          "end_time": "11:30",
+          "transports": [
+            {
+              "start": "刘少奇同志旧居",
+              "end": "三阳路-地铁站",
+              "mode": "walk",
+              "start_time": "09:14",
+              "end_time": "09:16",
+              "cost": 0,
+              "distance": 0.19,
+              "price": 0
+            },
+            {
+              "start": "三阳路-地铁站",
+              "end": "竹叶海-地铁站",
+              "mode": "metro",
+              "start_time": "09:16",
+              "end_time": "09:42",
+              "cost": 4,
+              "distance": 13.31,
+              "price": 4,
+              "tickets": 1
+            },
+            {
+              "start": "竹叶海-地铁站",
+              "end": "盛世欢乐世界",
+              "mode": "walk",
+              "start_time": "09:42",
+              "end_time": "09:58",
+              "cost": 0,
+              "distance": 1.34,
+              "price": 0
+            }
+          ],
+          "tickets": 1
+        },
+        {
+          "position": "哈根达斯(武汉天地店)",
+          "type": "lunch",
+          "price": 83,
+          "cost": 83,
+          "start_time": "12:17",
+          "end_time": "13:17",
+          "transports": [
+            {
+              "start": "盛世欢乐世界",
+              "end": "竹叶海-地铁站",
+              "mode": "walk",
+              "start_time": "11:30",
+              "end_time": "11:46",
+              "cost": 0,
+              "distance": 1.34,
+              "price": 0
+            },
+            {
+              "start": "竹叶海-地铁站",
+              "end": "黄浦路-地铁站",
+              "mode": "metro",
+              "start_time": "11:46",
+              "end_time": "12:13",
+              "cost": 4,
+              "distance": 13.86,
+              "price": 4,
+              "tickets": 1
+            },
+            {
+              "start": "黄浦路-地铁站",
+              "end": "哈根达斯(武汉天地店)",
+              "mode": "walk",
+              "start_time": "12:13",
+              "end_time": "12:17",
+              "cost": 0,
+              "distance": 0.34,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "汉口新四军军部旧址",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "13:31",
+          "end_time": "15:01",
+          "transports": [
+            {
+              "start": "哈根达斯(武汉天地店)",
+              "end": "黄浦路-地铁站",
+              "mode": "walk",
+              "start_time": "13:17",
+              "end_time": "13:21",
+              "cost": 0,
+              "distance": 0.34,
+              "price": 0
+            },
+            {
+              "start": "黄浦路-地铁站",
+              "end": "头道街-地铁站",
+              "mode": "metro",
+              "start_time": "13:21",
+              "end_time": "13:23",
+              "cost": 2,
+              "distance": 1.18,
+              "price": 2,
+              "tickets": 1
+            },
+            {
+              "start": "头道街-地铁站",
+              "end": "汉口新四军军部旧址",
+              "mode": "walk",
+              "start_time": "13:23",
+              "end_time": "13:31",
+              "cost": 0,
+              "distance": 0.72,
+              "price": 0
+            }
+          ],
+          "tickets": 1
+        },
+        {
+          "position": "洪山公园",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "15:33",
+          "end_time": "17:03",
+          "transports": [
+            {
+              "start": "汉口新四军军部旧址",
+              "end": "头道街-地铁站",
+              "mode": "walk",
+              "start_time": "15:01",
+              "end_time": "15:09",
+              "cost": 0,
+              "distance": 0.72,
+              "price": 0
+            },
+            {
+              "start": "头道街-地铁站",
+              "end": "洪山路-地铁站",
+              "mode": "metro",
+              "start_time": "15:09",
+              "end_time": "15:26",
+              "cost": 3,
+              "distance": 8.52,
+              "price": 3,
+              "tickets": 1
+            },
+            {
+              "start": "洪山路-地铁站",
+              "end": "洪山公园",
+              "mode": "walk",
+              "start_time": "15:26",
+              "end_time": "15:33",
+              "cost": 0,
+              "distance": 0.62,
+              "price": 0
+            }
+          ],
+          "tickets": 1
+        },
+        {
+          "position": "尊宝比萨(省检察院店)",
+          "type": "dinner",
+          "price": 31,
+          "cost": 31,
+          "start_time": "17:24",
+          "end_time": "18:24",
+          "transports": [
+            {
+              "start": "洪山公园",
+              "end": "洪山路-地铁站",
+              "mode": "walk",
+              "start_time": "17:03",
+              "end_time": "17:10",
+              "cost": 0,
+              "distance": 0.62,
+              "price": 0
+            },
+            {
+              "start": "洪山路-地铁站",
+              "end": "马房山-地铁站",
+              "mode": "metro",
+              "start_time": "17:10",
+              "end_time": "17:16",
+              "cost": 2,
+              "distance": 3.31,
+              "price": 2,
+              "tickets": 1
+            },
+            {
+              "start": "马房山-地铁站",
+              "end": "尊宝比萨(省检察院店)",
+              "mode": "walk",
+              "start_time": "17:16",
+              "end_time": "17:24",
+              "cost": 0,
+              "distance": 0.74,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "府河湿地",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "19:07",
+          "end_time": "20:37",
+          "transports": [
+            {
+              "start": "尊宝比萨(省检察院店)",
+              "end": "府河湿地",
+              "mode": "taxi",
+              "start_time": "18:24",
+              "end_time": "19:07",
+              "cost": 124.14,
+              "distance": 28.76,
+              "price": 124.14,
+              "cars": 1
+            }
+          ],
+          "tickets": 1
+        },
+        {
+          "position": "易佰酒店(武汉汉口火车站店)",
+          "type": "accommodation",
+          "price": 73,
+          "cost": 73,
+          "start_time": "21:52",
+          "end_time": "24:00",
+          "transports": [
+            {
+              "start": "府河湿地",
+              "end": "航空总部-地铁站",
+              "mode": "walk",
+              "start_time": "20:37",
+              "end_time": "21:19",
+              "cost": 0,
+              "distance": 3.52,
+              "price": 0
+            },
+            {
+              "start": "航空总部-地铁站",
+              "end": "唐家墩-地铁站",
+              "mode": "metro",
+              "start_time": "21:19",
+              "end_time": "21:45",
+              "cost": 4,
+              "distance": 13.41,
+              "price": 4,
+              "tickets": 1
+            },
+            {
+              "start": "唐家墩-地铁站",
+              "end": "易佰酒店(武汉汉口火车站店)",
+              "mode": "walk",
+              "start_time": "21:45",
+              "end_time": "21:52",
+              "cost": 0,
+              "distance": 0.62,
+              "price": 0
+            }
+          ],
+          "room_type": 1,
+          "rooms": 1
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "activities": [
+        {
+          "position": "易佰酒店(武汉汉口火车站店)",
+          "type": "breakfast",
+          "price": 0,
+          "cost": 0,
+          "start_time": "08:00",
+          "end_time": "08:30",
+          "transports": []
+        },
+        {
+          "position": "幻境空间超级元宇宙剧场",
+          "type": "attraction",
+          "price": 59,
+          "cost": 59,
+          "start_time": "10:00",
+          "end_time": "11:30",
+          "transports": [
+            {
+              "start": "易佰酒店(武汉汉口火车站店)",
+              "end": "唐家墩-地铁站",
+              "mode": "walk",
+              "start_time": "08:30",
+              "end_time": "08:37",
+              "cost": 0,
+              "distance": 0.62,
+              "price": 0
+            },
+            {
+              "start": "唐家墩-地铁站",
+              "end": "江汉路-地铁站",
+              "mode": "metro",
+              "start_time": "08:37",
+              "end_time": "08:46",
+              "cost": 3,
+              "distance": 4.68,
+              "price": 3,
+              "tickets": 1
+            },
+            {
+              "start": "江汉路-地铁站",
+              "end": "幻境空间超级元宇宙剧场",
+              "mode": "walk",
+              "start_time": "08:46",
+              "end_time": "08:56",
+              "cost": 0,
+              "distance": 0.86,
+              "price": 0
+            }
+          ],
+          "tickets": 1
+        },
+        {
+          "position": "山城食记(黎黄陂路店)",
+          "type": "lunch",
+          "price": 90,
+          "cost": 90,
+          "start_time": "11:50",
+          "end_time": "12:50",
+          "transports": [
+            {
+              "start": "幻境空间超级元宇宙剧场",
+              "end": "江汉路-地铁站",
+              "mode": "walk",
+              "start_time": "11:30",
+              "end_time": "11:40",
+              "cost": 0,
+              "distance": 0.86,
+              "price": 0
+            },
+            {
+              "start": "江汉路-地铁站",
+              "end": "大智路-地铁站",
+              "mode": "metro",
+              "start_time": "11:40",
+              "end_time": "11:42",
+              "cost": 2,
+              "distance": 1.46,
+              "price": 2,
+              "tickets": 1
+            },
+            {
+              "start": "大智路-地铁站",
+              "end": "山城食记(黎黄陂路店)",
+              "mode": "walk",
+              "start_time": "11:42",
+              "end_time": "11:50",
+              "cost": 0,
+              "distance": 0.75,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "东湖湖心岛动物博物馆",
+          "type": "attraction",
+          "price": 36,
+          "cost": 36,
+          "start_time": "13:50",
+          "end_time": "15:20",
+          "transports": [
+            {
+              "start": "山城食记(黎黄陂路店)",
+              "end": "大智路-地铁站",
+              "mode": "walk",
+              "start_time": "12:50",
+              "end_time": "12:58",
+              "cost": 0,
+              "distance": 0.75,
+              "price": 0
+            },
+            {
+              "start": "大智路-地铁站",
+              "end": "梨园-地铁站",
+              "mode": "metro",
+              "start_time": "12:58",
+              "end_time": "13:12",
+              "cost": 3,
+              "distance": 7.46,
+              "price": 3,
+              "tickets": 1
+            },
+            {
+              "start": "梨园-地铁站",
+              "end": "东湖湖心岛动物博物馆",
+              "mode": "walk",
+              "start_time": "13:12",
+              "end_time": "13:50",
+              "cost": 0,
+              "distance": 3.18,
+              "price": 0
+            }
+          ],
+          "tickets": 1
+        },
+        {
+          "position": "南岸嘴",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "16:29",
+          "end_time": "17:59",
+          "transports": [
+            {
+              "start": "东湖湖心岛动物博物馆",
+              "end": "梨园-地铁站",
+              "mode": "walk",
+              "start_time": "15:20",
+              "end_time": "15:58",
+              "cost": 0,
+              "distance": 3.18,
+              "price": 0
+            },
+            {
+              "start": "梨园-地铁站",
+              "end": "六渡桥-地铁站",
+              "mode": "metro",
+              "start_time": "15:58",
+              "end_time": "16:14",
+              "cost": 3,
+              "distance": 8.23,
+              "price": 3,
+              "tickets": 1
+            },
+            {
+              "start": "六渡桥-地铁站",
+              "end": "南岸嘴",
+              "mode": "walk",
+              "start_time": "16:14",
+              "end_time": "16:29",
+              "cost": 0,
+              "distance": 1.32,
+              "price": 0
+            }
+          ],
+          "tickets": 1
+        },
+        {
+          "position": "武汉汉口喜来登大酒店·大堂吧",
+          "type": "dinner",
+          "price": 80,
+          "cost": 80,
+          "start_time": "18:28",
+          "end_time": "19:28",
+          "transports": [
+            {
+              "start": "南岸嘴",
+              "end": "六渡桥-地铁站",
+              "mode": "walk",
+              "start_time": "17:59",
+              "end_time": "18:14",
+              "cost": 0,
+              "distance": 1.32,
+              "price": 0
+            },
+            {
+              "start": "六渡桥-地铁站",
+              "end": "云飞路-地铁站",
+              "mode": "metro",
+              "start_time": "18:14",
+              "end_time": "18:23",
+              "cost": 3,
+              "distance": 4.55,
+              "price": 3,
+              "tickets": 1
+            },
+            {
+              "start": "云飞路-地铁站",
+              "end": "武汉汉口喜来登大酒店·大堂吧",
+              "mode": "walk",
+              "start_time": "18:23",
+              "end_time": "18:28",
+              "cost": 0,
+              "distance": 0.42,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "王家墩公园",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "19:29",
+          "end_time": "20:59",
+          "transports": [
+            {
+              "start": "武汉汉口喜来登大酒店·大堂吧",
+              "end": "王家墩公园",
+              "mode": "taxi",
+              "start_time": "19:28",
+              "end_time": "19:29",
+              "cost": 11.0,
+              "distance": 0.73,
+              "price": 11.0,
+              "cars": 1
+            }
+          ],
+          "tickets": 1
+        },
+        {
+          "position": "易佰酒店(武汉汉口火车站店)",
+          "type": "accommodation",
+          "price": 73,
+          "cost": 73,
+          "start_time": "21:15",
+          "end_time": "24:00",
+          "transports": [
+            {
+              "start": "王家墩公园",
+              "end": "云飞路-地铁站",
+              "mode": "walk",
+              "start_time": "20:59",
+              "end_time": "21:04",
+              "cost": 0,
+              "distance": 0.47,
+              "price": 0
+            },
+            {
+              "start": "云飞路-地铁站",
+              "end": "唐家墩-地铁站",
+              "mode": "metro",
+              "start_time": "21:04",
+              "end_time": "21:08",
+              "cost": 2,
+              "distance": 2.3,
+              "price": 2,
+              "tickets": 1
+            },
+            {
+              "start": "唐家墩-地铁站",
+              "end": "易佰酒店(武汉汉口火车站店)",
+              "mode": "walk",
+              "start_time": "21:08",
+              "end_time": "21:15",
+              "cost": 0,
+              "distance": 0.62,
+              "price": 0
+            }
+          ],
+          "room_type": 1,
+          "rooms": 1
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "activities": [
+        {
+          "position": "易佰酒店(武汉汉口火车站店)",
+          "type": "breakfast",
+          "price": 0,
+          "cost": 0,
+          "start_time": "08:00",
+          "end_time": "08:30",
+          "transports": []
+        },
+        {
+          "position": "武汉客厅中国文化博览中心-D馆",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "08:58",
+          "end_time": "10:28",
+          "transports": [
+            {
+              "start": "易佰酒店(武汉汉口火车站店)",
+              "end": "唐家墩-地铁站",
+              "mode": "walk",
+              "start_time": "08:30",
+              "end_time": "08:37",
+              "cost": 0,
+              "distance": 0.62,
+              "price": 0
+            },
+            {
+              "start": "唐家墩-地铁站",
+              "end": "金潭路-地铁站",
+              "mode": "metro",
+              "start_time": "08:37",
+              "end_time": "08:50",
+              "cost": 3,
+              "distance": 6.71,
+              "price": 3,
+              "tickets": 1
+            },
+            {
+              "start": "金潭路-地铁站",
+              "end": "武汉客厅中国文化博览中心-D馆",
+              "mode": "walk",
+              "start_time": "08:50",
+              "end_time": "08:58",
+              "cost": 0,
+              "distance": 0.69,
+              "price": 0
+            }
+          ],
+          "tickets": 1
+        },
+        {
+          "position": "老万成酸梅汤(吉庆街店)",
+          "type": "lunch",
+          "price": 12,
+          "cost": 12,
+          "start_time": "11:05",
+          "end_time": "12:05",
+          "transports": [
+            {
+              "start": "武汉客厅中国文化博览中心-D馆",
+              "end": "金潭路-地铁站",
+              "mode": "walk",
+              "start_time": "10:28",
+              "end_time": "10:36",
+              "cost": 0,
+              "distance": 0.69,
+              "price": 0
+            },
+            {
+              "start": "金潭路-地铁站",
+              "end": "江汉路-地铁站",
+              "mode": "metro",
+              "start_time": "10:36",
+              "end_time": "10:57",
+              "cost": 4,
+              "distance": 10.85,
+              "price": 4,
+              "tickets": 1
+            },
+            {
+              "start": "江汉路-地铁站",
+              "end": "老万成酸梅汤(吉庆街店)",
+              "mode": "walk",
+              "start_time": "10:57",
+              "end_time": "11:05",
+              "cost": 0,
+              "distance": 0.68,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "光谷花海",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "13:13",
+          "end_time": "14:43",
+          "transports": [
+            {
+              "start": "老万成酸梅汤(吉庆街店)",
+              "end": "江汉路-地铁站",
+              "mode": "walk",
+              "start_time": "12:05",
+              "end_time": "12:13",
+              "cost": 0,
+              "distance": 0.68,
+              "price": 0
+            },
+            {
+              "start": "江汉路-地铁站",
+              "end": "光谷四路-地铁站",
+              "mode": "metro",
+              "start_time": "12:13",
+              "end_time": "12:56",
+              "cost": 6,
+              "distance": 21.63,
+              "price": 6,
+              "tickets": 1
+            },
+            {
+              "start": "光谷四路-地铁站",
+              "end": "光谷花海",
+              "mode": "walk",
+              "start_time": "12:56",
+              "end_time": "13:13",
+              "cost": 0,
+              "distance": 1.49,
+              "price": 0
+            }
+          ],
+          "tickets": 1
+        },
+        {
+          "position": "梨园广场",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "15:44",
+          "end_time": "17:14",
+          "transports": [
+            {
+              "start": "光谷花海",
+              "end": "光谷四路-地铁站",
+              "mode": "walk",
+              "start_time": "14:43",
+              "end_time": "15:00",
+              "cost": 0,
+              "distance": 1.49,
+              "price": 0
+            },
+            {
+              "start": "光谷四路-地铁站",
+              "end": "铁机路-地铁站",
+              "mode": "metro",
+              "start_time": "15:00",
+              "end_time": "15:31",
+              "cost": 5,
+              "distance": 15.81,
+              "price": 5,
+              "tickets": 1
+            },
+            {
+              "start": "铁机路-地铁站",
+              "end": "梨园广场",
+              "mode": "walk",
+              "start_time": "15:31",
+              "end_time": "15:44",
+              "cost": 0,
+              "distance": 1.15,
+              "price": 0
+            }
+          ],
+          "tickets": 1
+        },
+        {
+          "start_time": "18:41",
+          "end_time": "23:42",
+          "start": "武汉站",
+          "end": "北京西站",
+          "price": 684.27,
+          "cost": 684.27,
+          "tickets": 1,
+          "transports": [
+            {
+              "start": "梨园广场",
+              "end": "铁机路-地铁站",
+              "mode": "walk",
+              "start_time": "17:14",
+              "end_time": "17:27",
+              "cost": 0,
+              "distance": 1.15,
+              "price": 0
+            },
+            {
+              "start": "铁机路-地铁站",
+              "end": "武汉站东广场-地铁站",
+              "mode": "metro",
+              "start_time": "17:27",
+              "end_time": "17:39",
+              "cost": 3,
+              "distance": 6.11,
+              "price": 3,
+              "tickets": 1
+            },
+            {
+              "start": "武汉站东广场-地铁站",
+              "end": "武汉站",
+              "mode": "walk",
+              "start_time": "17:39",
+              "end_time": "17:41",
+              "cost": 0,
+              "distance": 0.19,
+              "price": 0
+            }
+          ],
+          "TrainID": "G402",
+          "type": "train"
+        }
+      ]
+    }
+  ],
+  "search_time_sec": 12.316234111785889,
+  "llm_inference_time_sec": 0
+}

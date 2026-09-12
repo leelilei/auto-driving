@@ -1,0 +1,96 @@
+{
+  "reviewer": "Codex source review; no independent human signoff",
+  "purpose": "Annotations of original text and its official encoding, not production parser rules or new gold",
+  "human": {
+    "h20241029143447759844": {
+      "requirements": [
+        {"field":"travel_pace","quote":"要轻快自由行，不要特种兵出行","coverage":"absent","modality":"qualitative","note":"未给活动数/步行距离阈值；DSL 只有天数、人数及出租车数量。大儿子不能自动解释为低龄儿童。"}
+      ]
+    },
+    "h20241029143450090032": {
+      "requirements": [
+        {"field":"budget","quote":"预算4000的差旅费","value":4000,"coverage":"absent","note":"明确金额未进入 gold DSL；差旅费的包含范围也应保留，不从 gold 缺失反推无预算。"},
+        {"field":"transport_time_objective","quote":"市内交通要求最省时间","coverage":"absent","modality":"optimization_objective","note":"这是优化目标，不等于指定 taxi；当前评分不比较交通最短时间。"}
+      ],
+      "interpretation_notes":["正文说大概三天，输入前缀显式为3天；保留两者，暂不将约数擅自替换成新的范围。"]
+    },
+    "h20241029143451793119": {
+      "requirements": [
+        {"field":"cuisine","quote":"有当地特色","coverage":"proxy_category","modality":"qualitative","note":"DSL 指定至少一次川菜；当地特色不必然唯一等价于川菜分类。"},
+        {"field":"affordable_food","quote":"实惠","coverage":"absent","modality":"qualitative","note":"没有餐费阈值，不得自造价格上限。"},
+        {"field":"food_quality","quote":"好吃的美食","coverage":"absent","modality":"subjective","note":"官方三层分数没有味觉评价。"}
+      ]
+    },
+    "h20241029143453343691": {
+      "requirements": [
+        {"field":"food_interest","quote":"本人对美食比较感兴趣","coverage":"absent","modality":"preference","note":"不等于固定就餐数量或预算占比。"},
+        {"field":"popular_attractions","quote":"热门景点","coverage":"absent","modality":"qualitative","note":"未给热度标准；DSL 没有景点热度约束。"},
+        {"field":"local_small_restaurants","quote":"地道的当地苍蝇馆子","coverage":"absent","modality":"qualitative","note":"包含本地性和餐馆形态偏好，不能只按任意菜系替代。"}
+      ]
+    },
+    "h20241029143455115600": {"requirements":[],"interpretation_notes":["正文为通用规划请求；起终点、人数、天数均来自保留在模型输入中的方括号前缀。预算未给，不能补默认上限。"]},
+    "h20241029143456235562": {"requirements":[],"interpretation_notes":["一天与前缀一致；预算未给，不代表无限费用偏好或数值0。"]},
+    "h20241029143457494209": {
+      "requirements": [
+        {"field":"poi_names","quote":"看西湖","value":["西湖"],"coverage":"canonical_entity_binding","note":"gold 固定为西湖风景名胜区；运行时需经公开 POI 查询落地，不能把 gold 名称给模型。"},
+        {"field":"budget","quote":"预算2000","value":2000},
+        {"field":"travel_comfort","quote":"相对舒适","coverage":"absent","modality":"qualitative","note":"没有确定的酒店等级、交通方式或活动密度数值。"}
+      ]
+    },
+    "h20241029143458760702": {
+      "requirements": [
+        {"field":"attraction_category","quote":"一些有些历史的区域","coverage":"proxy_category","modality":"qualitative","note":"DSL 为至少一次历史古迹；历史区域不必然只属于该数据库类别。"},
+        {"field":"cuisine","quote":"本地人常去吃的特色美食","coverage":"proxy_category","modality":"qualitative","note":"DSL 只要求湖北菜，不检查本地人常去或特色程度。"}
+      ]
+    },
+    "h20241029143500599951": {
+      "requirements": [
+        {"field":"duration_prose","quote":"旅游一周","value":"一周","coverage":"conflicting_source","note":"前缀5天与正文一周不一致；不自动选5或7天作为语义真值。"},
+        {"field":"child_friendly_attractions","quote":"适合带小朋友的景点","coverage":"proxy_category","modality":"qualitative","note":"DSL 指定游乐园/体育娱乐或大学校园，类别不等价于儿童适宜性。"},
+        {"field":"budget","quote":"预算8000元","value":8000},
+        {"field":"cuisine","quote":"当地的美食","coverage":"proxy_category","modality":"qualitative","note":"DSL 指定至少一次川菜；原句没有直接点名这个类别。"}
+      ],
+      "conflicts":[{"field":"days","quotes":["旅行天数5","旅游一周"],"official_value":5,"decision":"Preserve conflict; do not score a model as semantically wrong solely for choosing a different reading before adjudication."}]
+    },
+    "h20241029143502525564": {
+      "requirements": [
+        {"field":"intercity_mode","quote":"打算坐飞机","value":"airplane"},
+        {"field":"budget","quote":"预算4000","value":4000},
+        {"field":"cuisine","quote":"品尝重庆美食","coverage":"proxy_category","modality":"qualitative","note":"DSL 指定川菜；重庆美食到数据库菜系需要说明映射依据。"}
+      ]
+    },
+    "h20241029143504074288": {
+      "requirements": [
+        {"field":"budget","quote":"预算两个人共3000左右","value":3000,"coverage":"approximate_to_hard_bound","modality":"approximate","note":"DSL 将约数变成严格总额<=3000；不据此自动把略高于3000判为明确语义误读。"},
+        {"field":"attraction_category","quote":"历史人文相关的景点","coverage":"proxy_category","modality":"preference","note":"DSL 是历史古迹或人文景观至少一种，不直接验证历史人文相关性。"},
+        {"field":"poi_names","quote":"看北京大学","value":["北京大学"]}
+      ],
+      "interpretation_notes":["正文大约4天与前缀4天数值一致；近似措辞应保留，不能假装用户提供了严格区间。"]
+    },
+    "h20241029143506461809": {
+      "requirements": [
+        {"field":"attraction_category","quote":"看看自然风光","value":"自然风光"},
+        {"field":"travel_pace","quote":"放松心情，计划不要太累，养生为主","coverage":"absent","modality":"qualitative","note":"DSL 仅有自然风光类别及人数天数，没有疲劳、强度或养生评价。"}
+      ],
+      "interpretation_notes":["正文几天没有精确数字，前缀给3天；保留原始前缀，不删后再补回标签。"]
+    },
+    "h20241029143508251643": {
+      "requirements": [
+        {"field":"group_suitability","quote":"适合和朋友玩","coverage":"absent","modality":"qualitative","note":"无明确活动类别或群体适宜性指标，不能自行赋值。"}
+      ]
+    },
+    "h20241029143509607671": {
+      "requirements": [
+        {"field":"poi_names","quote":"上海世博展览馆","value":["上海世博展览馆"]},
+        {"field":"event_attendance","quote":"参加漫展","coverage":"absent","modality":"explicit_event","note":"DSL 检查参观展览馆，不检查展览日期或是否实际参加漫展。"},
+        {"field":"hotel_proximity","quote":"住附近","coverage":"absent","modality":"relative_spatial","note":"表达住宿邻近关系；距离阈值未给，DSL 也没有住宿到展馆距离条件。"}
+      ],
+      "interpretation_notes":["正文2天左右与前缀2天数值一致，预算未给。地点到访不等于活动事件满足。"]
+    },
+    "h20241029143510880048": {
+      "requirements": [
+        {"field":"poi_names","quote":"石臼湖，也想去音乐台","value":["石臼湖","音乐台"],"note":"gold 集合要求两个地点都出现；不是二选一。仍需公开实体名称落地。"}
+      ]
+    }
+  }
+}

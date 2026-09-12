@@ -1,0 +1,6 @@
+{
+  "status": "BLOCKED_HUMAN_REVIEW",
+  "reason": "human semantic review is not approved",
+  "api_calls": 0,
+  "attempts_directory_exists": false
+}

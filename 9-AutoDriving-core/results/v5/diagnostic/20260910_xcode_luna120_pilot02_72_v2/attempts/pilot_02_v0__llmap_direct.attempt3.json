@@ -1,0 +1,43 @@
+{
+  "call_id": "pilot_02_v0::llmap_direct",
+  "role": "llmap_direct",
+  "graph_condition": null,
+  "started_at": "2026-09-09T18:11:24.792076+00:00",
+  "request": {
+    "system": "Extract POIs, constraints, and weights from a human instruction. POIs should be a simple string array. Dependencies should be an empty list if no sequence requirements are mentioned. Weights should be between 0 and 1, and sum to 1. Extract them from language about importance of POI rating vs route length.\n\nOutput must be valid JSON with structure:\n{\n    \"pois\": [\"poi1\", \"poi2\", ...],\n    \"time_limit\": \"HH:00\" or \"None\",\n    \"dependencies\": [[\"poi1\", \"poi2\"], ...],\n    \"quality_weight\": float,\n    \"distance_weight\": float\n}\n",
+    "user": "Extract POIs, constraints, and weights from this instruction as JSON:\nMake sure to visit the supermarket and the pharmacy today. Balance your stops to maintain both reasonable ratings and efficiency along the route. Start your trip at the supermarket before heading to the pharmacy.\n\nOnly output the JSON object. No prefix, additional text, or explanation.\n"
+  },
+  "raw_response": "{\n  \"pois\": [\"supermarket\", \"pharmacy\"],\n  \"time_limit\": \"None\",\n  \"dependencies\": [[\"supermarket\", \"pharmacy\"]],\n  \"quality_weight\": 0.5,\n  \"distance_weight\": 0.5\n}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "pharmacy",
+      "supermarket"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "supermarket",
+        "pharmacy"
+      ]
+    ],
+    "quality_weight": 0.5
+  },
+  "evidence": {},
+  "changes": [],
+  "finished_at": "2026-09-09T18:12:10.890318+00:00",
+  "telemetry": {
+    "call_index": 1,
+    "prompt_sha256": "327ada8d8100916e1d2fef0cc0dacda989c85b885b5b9057db9f5e20762986e1",
+    "attempts": 1,
+    "latency_seconds": 46.098,
+    "input_chars": 886,
+    "output_chars": 165,
+    "input_tokens": 208,
+    "output_tokens": 106,
+    "total_tokens": 314,
+    "usage_source": "provider",
+    "success": true
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "call_id": "extra_order_1__r1__fields",
+  "role": "fields",
+  "graph_condition": "tradeoff",
+  "started_at": "2026-09-10T03:05:20.885735+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. Both candidates may be wrong, including when they agree. Supplementary information describes candidate differences or planning consequences; it does not identify the correct intent. Resolve every field from the instruction. Do not infer user preference from a route or map.\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised.\n\nInstruction:\nToday, make sure to visit the pharmacy and the shopping mall. Try to find a balance between visiting well-rated places and keeping the route efficient. There are no specific dependencies on the order of visits, so feel free to choose the sequence that works best for you.\n\nCandidate A:\n{\"dependencies\": [], \"pois\": [\"pharmacy\", \"shopping_mall\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nCandidate B:\n{\"dependencies\": [[\"pharmacy\", \"shopping_mall\"]], \"pois\": [\"pharmacy\", \"shopping_mall\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nSupplementary information:\n{\"differing_fields\": [\"dependencies\"]}"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"pharmacy\",\"shopping_mall\"],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{\"pois\":[\"visit the pharmacy and the shopping mall\"],\"quality_weight\":[\"find a balance between visiting well-rated places and keeping the route efficient\"],\"dependencies\":[\"There are no specific dependencies on the order of visits\"],\"time_limit\":[]},\"changes\":[\"dependencies\"]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "pharmacy",
+      "shopping_mall"
+    ],
+    "time_limit": null,
+    "dependencies": [],
+    "quality_weight": 0.5
+  },
+  "evidence": {
+    "pois": [
+      "visit the pharmacy and the shopping mall"
+    ],
+    "quality_weight": [
+      "find a balance between visiting well-rated places and keeping the route efficient"
+    ],
+    "dependencies": [
+      "There are no specific dependencies on the order of visits"
+    ],
+    "time_limit": []
+  },
+  "changes": [
+    "dependencies"
+  ],
+  "finished_at": "2026-09-10T03:05:22.454954+00:00",
+  "telemetry": {
+    "call_index": 1,
+    "prompt_sha256": "77be9be14b134039745f5d4f4d815fdda2ffb346f8921949532ab6a576c8c2f0",
+    "attempts": 1,
+    "latency_seconds": 1.569,
+    "input_chars": 1282,
+    "output_chars": 393,
+    "input_tokens": 338,
+    "output_tokens": 269,
+    "total_tokens": 607,
+    "usage_source": "provider",
+    "success": true
+  }
+}

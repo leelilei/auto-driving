@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "offline": true,
+  "score_identical": true,
+  "new_physical_requests": 0,
+  "inherited_unique_model_requests": 1,
+  "schema_rate": 100.0,
+  "commonsense_macro": 100.0,
+  "hard_macro": 100.0,
+  "all_pass_rate": 100.0,
+  "n_expected": 1
+}

@@ -1,0 +1,8 @@
+{
+  "9-AutoDriving-core/data/chinatravel_repair_v1_deepseek6_retry1/collection.json": "06141e297ef2266dcedd1fa448fdff2565933867ba60302d10794f4820f15ff7",
+  "9-AutoDriving-core/data/chinatravel_repair_v1_deepseek6_retry1/postprocessed/summary.json": "bee310d82503e6d9bd01fda8ce3773c4111cc1d212544691612cd55ffb8539ff",
+  "9-AutoDriving-core/data/chinatravel_repair_v1_deepseek6_retry1/final_audit.json": "2e4e84c224051b2328c39b9201661cb9f1cfcc6a7905fb118748707ea219f91f",
+  "9-AutoDriving-core/scripts/audit_chinatravel_repair_v1_final.py": "29b5d0ccfe18c9415dea6a39ecca35fa5902b79d1c76e5895217b6bdea645c1f",
+  "9-AutoDriving-core/scripts/chinatravel_plan_schema_adapter.py": "9e40e7fb53d2d8037ab10f1095282f4f3e6c1c78cb789a027cba7210e674e498",
+  "9-AutoDriving-core/scripts/chinatravel_parse_plan_v4.py": "197fb033aa7abf9fe747d28387405615a95ce12879e10b85e0febd8f938f6cc0"
+}

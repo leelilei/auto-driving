@@ -1,0 +1,25 @@
+{
+  "protocol_version": "darc-v5.1-stress-candidate-audit-1",
+  "source_dataset": "data/pilot/pilot_80_utterances.json",
+  "source_sha256": "28e4d39f993769eee929815eaae87f4231a568d2bef66b25a5b423679693610a",
+  "selection_rule": "contiguous unused development groups pilot_09 through pilot_20, selected without model outcomes",
+  "candidate_groups": [
+    "pilot_09", "pilot_10", "pilot_11", "pilot_12", "pilot_13", "pilot_14",
+    "pilot_15", "pilot_16", "pilot_17", "pilot_18", "pilot_19", "pilot_20"
+  ],
+  "utterances": 48,
+  "status": "NOT_ADMITTED_PENDING_HUMAN_REVIEW_AND_STRATA_GAPS",
+  "machine_audit": {
+    "combined_deadline_dependency_dense_groups": ["pilot_13", "pilot_17", "pilot_18", "pilot_20"],
+    "multiple_dependency_groups": ["pilot_11", "pilot_13", "pilot_19", "pilot_20"],
+    "five_poi_groups": ["pilot_16", "pilot_17", "pilot_18", "pilot_19", "pilot_20"],
+    "clear_implicit_preference_groups": [],
+    "clear_preference_negation_or_concession_groups": [],
+    "near_boundary_graph_status": "not_yet_constructed",
+    "label_support_risks": {
+      "pilot_11": "text says balance/reasonable timeframe while label is quality_first",
+      "pilot_17": "text says good balance while label is quality_first"
+    }
+  },
+  "decision": "These 12 groups can support dense-constraint and scale strata, but they do not satisfy the full stress design. Do not call models until human review resolves label risks and new development-only minimal pairs cover implicit preference and negation/concession strata."
+}

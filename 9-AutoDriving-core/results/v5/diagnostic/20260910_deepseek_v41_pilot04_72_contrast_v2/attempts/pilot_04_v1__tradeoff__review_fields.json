@@ -1,0 +1,42 @@
+{
+  "call_id": "pilot_04_v1::tradeoff::review_fields",
+  "role": "review_fields",
+  "graph_condition": "tradeoff",
+  "started_at": "2026-09-09T16:35:07.070436+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. The field-difference report only identifies disagreements; it does not identify the correct answer.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not infer user preference from a route or map.\n\nInstruction:\nMake sure to visit the bank and the library today, returning by 18:00. It is crucial to prioritize an efficient, quick route for these stops.\n\nCandidate A:\n{\"dependencies\": [], \"pois\": [\"bank\", \"library\"], \"quality_weight\": 0.0, \"time_limit\": 1080}\n\nCandidate B:\n{\"dependencies\": [], \"pois\": [\"bank\", \"library\"], \"quality_weight\": 0.0, \"time_limit\": 1080}\n\nField differences:\n{\"fields\": []}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"bank\",\"library\"],\"time_limit\":1080,\"dependencies\":[],\"quality_weight\":0.0},\"evidence\":{\"pois\":\"visit the bank and the library\",\"time_limit\":\"returning by 18:00\",\"quality_weight\":\"prioritize an efficient, quick route\"},\"changes\":[]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library"
+    ],
+    "time_limit": 1080,
+    "dependencies": [],
+    "quality_weight": 0.0
+  },
+  "evidence": {
+    "pois": "visit the bank and the library",
+    "time_limit": "returning by 18:00",
+    "quality_weight": "prioritize an efficient, quick route"
+  },
+  "changes": [],
+  "finished_at": "2026-09-09T16:35:26.780636+00:00",
+  "telemetry": {
+    "call_index": 30,
+    "prompt_sha256": "2b303b309f188437aada368f0ffdceec605669c16a4fe5409014baf24fc0ca97",
+    "attempts": 1,
+    "latency_seconds": 19.71,
+    "input_chars": 950,
+    "output_chars": 251,
+    "input_tokens": 277,
+    "output_tokens": 5836,
+    "total_tokens": 6113,
+    "usage_source": "provider",
+    "success": true
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "call_id": "pilot_02_v2::aligned::review_plain",
+  "role": "review_plain",
+  "graph_condition": "aligned",
+  "started_at": "2026-09-12T05:26:01.046558+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. Candidate agreement is not proof of correctness.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not use route efficiency to infer what the user wants.\n\nInstruction:\nYour itinerary today covers the supermarket and the pharmacy, starting at the supermarket before heading to the pharmacy. Aim for a balanced trade-off between customer ratings and total route distance.\n\nCandidate A:\n{\"dependencies\": [[\"supermarket\", \"pharmacy\"]], \"pois\": [\"pharmacy\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nCandidate B:\n{\"dependencies\": [[\"supermarket\", \"pharmacy\"]], \"pois\": [\"pharmacy\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}\n"
+  },
+  "raw_response": "{\"intent\": {\"pois\": [], \"time_limit\": null, \"dependencies\": [], \"quality_weight\": 0.5}, \"evidence\": {}, \"changes\": []}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [],
+    "time_limit": null,
+    "dependencies": [],
+    "quality_weight": 0.5
+  },
+  "evidence": {},
+  "changes": [],
+  "finished_at": "2026-09-12T05:26:11.867906+00:00",
+  "telemetry": {
+    "call_index": 1,
+    "prompt_sha256": "291dc7254de55edcae7b03d1d6aa385c6eb812b4f410f5c7b0c2ba7d9469a7b2",
+    "attempts": 1,
+    "latency_seconds": 10.817,
+    "input_chars": 1002,
+    "output_chars": 118,
+    "input_tokens": 384,
+    "output_tokens": 1600,
+    "total_tokens": 1984,
+    "usage_source": "provider",
+    "success": true
+  }
+}

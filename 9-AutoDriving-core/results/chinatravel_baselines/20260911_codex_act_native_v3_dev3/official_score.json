@@ -1,0 +1,328 @@
+{
+  "n_expected": 3,
+  "ids": [
+    "e20241028160248698752",
+    "e20241028160842228543",
+    "h20241029143447759844"
+  ],
+  "schema_rate": 0.0,
+  "commonsense_macro": 0.0,
+  "commonsense_micro": 33.333333333333336,
+  "hard_macro": 0.0,
+  "hard_micro": 18.75,
+  "conditional_hard_macro": 0.0,
+  "conditional_hard_micro": 0.0,
+  "all_pass_ids": [],
+  "all_pass_rate": 0.0,
+  "schema": [
+    {
+      "data_id": "e20241028160248698752",
+      "schema": 0
+    },
+    {
+      "data_id": "e20241028160842228543",
+      "schema": 0
+    },
+    {
+      "data_id": "h20241029143447759844",
+      "schema": 0
+    }
+  ],
+  "commonsense": [
+    {
+      "data_id": "e20241028160248698752",
+      "Invalid or ungrounded activity entity": 1,
+      "Commonsense Evaluator Exception": 1,
+      "Intercity transportation events must occur": 0,
+      "Invalid Trains or Airplanes, given TrainID/FlightID, origin and destination": 0,
+      "Incorrect Information of Intercity Transport on price or duration": 0,
+      "Incorrect Cost on Intercity Transportation": 0,
+      "Unavailable attractions": 0,
+      "Visiting attraction in their closed time": 0,
+      "Repeated attraction Choices": 0,
+      "Incorrect price Information of attraction": 0,
+      "Incorrect cost Information of attraction": 0,
+      "Unavailable Accommodation": 0,
+      "Incorrect Information of Accommodation on price or room type": 0,
+      "Incorrect cost Information of Accommodation": 0,
+      "Accomondation is necessary for trips longer than one day": 0,
+      "Unavailable Restruants": 0,
+      "Visiting Restruants in their closed time": 0,
+      "Repeated Restruants Choices": 0,
+      "Incorrect price Information of Restruants": 0,
+      "Incorrect cost Information of Restruants": 0,
+      "Inappropriate Meal Times": 0,
+      "Repeated Meal Types in One Day": 0,
+      "Unavailable Inner-City Transport": 0,
+      "Incorrect Information of Inner-City Transporton on price, distance, and duration": 0,
+      "Inccorrect cost information of Inner-City Transport": 0,
+      "Invalid duration information of each activity": 0,
+      "Does not follow Chronological Order": 0,
+      "Invalid Transport information across positions": 0
+    },
+    {
+      "data_id": "e20241028160842228543",
+      "Invalid or ungrounded activity entity": 1,
+      "Commonsense Evaluator Exception": 0,
+      "Intercity transportation events must occur": 1,
+      "Invalid Trains or Airplanes, given TrainID/FlightID, origin and destination": 1,
+      "Incorrect Information of Intercity Transport on price or duration": 1,
+      "Incorrect Cost on Intercity Transportation": 1,
+      "Unavailable attractions": 1,
+      "Visiting attraction in their closed time": 1,
+      "Repeated attraction Choices": 1,
+      "Incorrect price Information of attraction": 1,
+      "Incorrect cost Information of attraction": 1,
+      "Unavailable Accommodation": 1,
+      "Incorrect Information of Accommodation on price or room type": 1,
+      "Incorrect cost Information of Accommodation": 1,
+      "Accomondation is necessary for trips longer than one day": 1,
+      "Unavailable Restruants": 1,
+      "Visiting Restruants in their closed time": 1,
+      "Repeated Restruants Choices": 1,
+      "Incorrect price Information of Restruants": 1,
+      "Incorrect cost Information of Restruants": 1,
+      "Inappropriate Meal Times": 1,
+      "Repeated Meal Types in One Day": 1,
+      "Unavailable Inner-City Transport": 1,
+      "Incorrect Information of Inner-City Transporton on price, distance, and duration": 1,
+      "Inccorrect cost information of Inner-City Transport": 1,
+      "Invalid duration information of each activity": 1,
+      "Does not follow Chronological Order": 1,
+      "Invalid Transport information across positions": 1
+    },
+    {
+      "data_id": "h20241029143447759844",
+      "Invalid or ungrounded activity entity": 1,
+      "Commonsense Evaluator Exception": 0,
+      "Intercity transportation events must occur": 1,
+      "Invalid Trains or Airplanes, given TrainID/FlightID, origin and destination": 1,
+      "Incorrect Information of Intercity Transport on price or duration": 1,
+      "Incorrect Cost on Intercity Transportation": 1,
+      "Unavailable attractions": 1,
+      "Visiting attraction in their closed time": 1,
+      "Repeated attraction Choices": 1,
+      "Incorrect price Information of attraction": 1,
+      "Incorrect cost Information of attraction": 1,
+      "Unavailable Accommodation": 1,
+      "Incorrect Information of Accommodation on price or room type": 1,
+      "Incorrect cost Information of Accommodation": 1,
+      "Accomondation is necessary for trips longer than one day": 1,
+      "Unavailable Restruants": 1,
+      "Visiting Restruants in their closed time": 1,
+      "Repeated Restruants Choices": 1,
+      "Incorrect price Information of Restruants": 1,
+      "Incorrect cost Information of Restruants": 1,
+      "Inappropriate Meal Times": 1,
+      "Repeated Meal Types in One Day": 1,
+      "Unavailable Inner-City Transport": 1,
+      "Incorrect Information of Inner-City Transporton on price, distance, and duration": 1,
+      "Inccorrect cost information of Inner-City Transport": 1,
+      "Invalid duration information of each activity": 1,
+      "Does not follow Chronological Order": 1,
+      "Invalid Transport information across positions": 1
+    }
+  ],
+  "hard": [
+    {
+      "data_id": "e20241028160248698752",
+      "logic_py_0": 1,
+      "logic_py_1": 1,
+      "logic_py_2": 1,
+      "logic_py_3": 0,
+      "logic_py_4": 0,
+      "logic_py_5": null,
+      "logic_py_6": null,
+      "logic_py_7": null
+    },
+    {
+      "data_id": "e20241028160842228543",
+      "logic_py_0": 0,
+      "logic_py_1": 0,
+      "logic_py_2": 0,
+      "logic_py_3": 0,
+      "logic_py_4": 0,
+      "logic_py_5": 0,
+      "logic_py_6": 0,
+      "logic_py_7": 0
+    },
+    {
+      "data_id": "h20241029143447759844",
+      "logic_py_0": 0,
+      "logic_py_1": 0,
+      "logic_py_2": 0,
+      "logic_py_3": null,
+      "logic_py_4": null,
+      "logic_py_5": null,
+      "logic_py_6": null,
+      "logic_py_7": null
+    }
+  ],
+  "per_case": {
+    "e20241028160248698752": {
+      "n_expected": 1,
+      "ids": [
+        "e20241028160248698752"
+      ],
+      "schema_rate": 0.0,
+      "commonsense_macro": 0.0,
+      "commonsense_micro": 0.0,
+      "hard_macro": 0.0,
+      "hard_micro": 60.0,
+      "conditional_hard_macro": 0.0,
+      "conditional_hard_micro": 0.0,
+      "all_pass_ids": [],
+      "all_pass_rate": 0.0,
+      "schema": [
+        {
+          "data_id": "e20241028160248698752",
+          "schema": 0
+        }
+      ],
+      "commonsense": [
+        {
+          "data_id": "e20241028160248698752",
+          "Invalid or ungrounded activity entity": 1,
+          "Commonsense Evaluator Exception": 1
+        }
+      ],
+      "hard": [
+        {
+          "data_id": "e20241028160248698752",
+          "logic_py_0": 1,
+          "logic_py_1": 1,
+          "logic_py_2": 1,
+          "logic_py_3": 0,
+          "logic_py_4": 0
+        }
+      ]
+    },
+    "e20241028160842228543": {
+      "n_expected": 1,
+      "ids": [
+        "e20241028160842228543"
+      ],
+      "schema_rate": 0.0,
+      "commonsense_macro": 0.0,
+      "commonsense_micro": 0.0,
+      "hard_macro": 0.0,
+      "hard_micro": 0.0,
+      "conditional_hard_macro": 0.0,
+      "conditional_hard_micro": 0.0,
+      "all_pass_ids": [],
+      "all_pass_rate": 0.0,
+      "schema": [
+        {
+          "data_id": "e20241028160842228543",
+          "schema": 0
+        }
+      ],
+      "commonsense": [
+        {
+          "data_id": "e20241028160842228543",
+          "Invalid or ungrounded activity entity": 1,
+          "Intercity transportation events must occur": 1,
+          "Invalid Trains or Airplanes, given TrainID/FlightID, origin and destination": 1,
+          "Incorrect Information of Intercity Transport on price or duration": 1,
+          "Incorrect Cost on Intercity Transportation": 1,
+          "Unavailable attractions": 1,
+          "Visiting attraction in their closed time": 1,
+          "Repeated attraction Choices": 1,
+          "Incorrect price Information of attraction": 1,
+          "Incorrect cost Information of attraction": 1,
+          "Unavailable Accommodation": 1,
+          "Incorrect Information of Accommodation on price or room type": 1,
+          "Incorrect cost Information of Accommodation": 1,
+          "Accomondation is necessary for trips longer than one day": 1,
+          "Unavailable Restruants": 1,
+          "Visiting Restruants in their closed time": 1,
+          "Repeated Restruants Choices": 1,
+          "Incorrect price Information of Restruants": 1,
+          "Incorrect cost Information of Restruants": 1,
+          "Inappropriate Meal Times": 1,
+          "Repeated Meal Types in One Day": 1,
+          "Unavailable Inner-City Transport": 1,
+          "Incorrect Information of Inner-City Transporton on price, distance, and duration": 1,
+          "Inccorrect cost information of Inner-City Transport": 1,
+          "Invalid duration information of each activity": 1,
+          "Does not follow Chronological Order": 1,
+          "Invalid Transport information across positions": 1
+        }
+      ],
+      "hard": [
+        {
+          "data_id": "e20241028160842228543",
+          "logic_py_0": 0,
+          "logic_py_1": 0,
+          "logic_py_2": 0,
+          "logic_py_3": 0,
+          "logic_py_4": 0,
+          "logic_py_5": 0,
+          "logic_py_6": 0,
+          "logic_py_7": 0
+        }
+      ]
+    },
+    "h20241029143447759844": {
+      "n_expected": 1,
+      "ids": [
+        "h20241029143447759844"
+      ],
+      "schema_rate": 0.0,
+      "commonsense_macro": 0.0,
+      "commonsense_micro": 0.0,
+      "hard_macro": 0.0,
+      "hard_micro": 0.0,
+      "conditional_hard_macro": 0.0,
+      "conditional_hard_micro": 0.0,
+      "all_pass_ids": [],
+      "all_pass_rate": 0.0,
+      "schema": [
+        {
+          "data_id": "h20241029143447759844",
+          "schema": 0
+        }
+      ],
+      "commonsense": [
+        {
+          "data_id": "h20241029143447759844",
+          "Invalid or ungrounded activity entity": 1,
+          "Intercity transportation events must occur": 1,
+          "Invalid Trains or Airplanes, given TrainID/FlightID, origin and destination": 1,
+          "Incorrect Information of Intercity Transport on price or duration": 1,
+          "Incorrect Cost on Intercity Transportation": 1,
+          "Unavailable attractions": 1,
+          "Visiting attraction in their closed time": 1,
+          "Repeated attraction Choices": 1,
+          "Incorrect price Information of attraction": 1,
+          "Incorrect cost Information of attraction": 1,
+          "Unavailable Accommodation": 1,
+          "Incorrect Information of Accommodation on price or room type": 1,
+          "Incorrect cost Information of Accommodation": 1,
+          "Accomondation is necessary for trips longer than one day": 1,
+          "Unavailable Restruants": 1,
+          "Visiting Restruants in their closed time": 1,
+          "Repeated Restruants Choices": 1,
+          "Incorrect price Information of Restruants": 1,
+          "Incorrect cost Information of Restruants": 1,
+          "Inappropriate Meal Times": 1,
+          "Repeated Meal Types in One Day": 1,
+          "Unavailable Inner-City Transport": 1,
+          "Incorrect Information of Inner-City Transporton on price, distance, and duration": 1,
+          "Inccorrect cost information of Inner-City Transport": 1,
+          "Invalid duration information of each activity": 1,
+          "Does not follow Chronological Order": 1,
+          "Invalid Transport information across positions": 1
+        }
+      ],
+      "hard": [
+        {
+          "data_id": "h20241029143447759844",
+          "logic_py_0": 0,
+          "logic_py_1": 0,
+          "logic_py_2": 0
+        }
+      ]
+    }
+  }
+}

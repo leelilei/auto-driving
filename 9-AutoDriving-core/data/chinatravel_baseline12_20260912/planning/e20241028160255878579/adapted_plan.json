@@ -1,0 +1,195 @@
+{
+  "people_number": 1,
+  "start_city": "武汉",
+  "target_city": "南京",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "start_time": "09:37",
+          "end_time": "12:33",
+          "start": "武汉站",
+          "end": "南京南站",
+          "price": 296.86,
+          "cost": 296.86,
+          "tickets": 1,
+          "transports": [],
+          "TrainID": "G1775",
+          "type": "train"
+        },
+        {
+          "position": "南京天文历史博物馆",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "13:10",
+          "end_time": "14:40",
+          "transports": [
+            {
+              "start": "南京南站",
+              "end": "南京南站-地铁站",
+              "mode": "walk",
+              "start_time": "12:33",
+              "end_time": "12:36",
+              "cost": 0,
+              "distance": 0.29,
+              "price": 0
+            },
+            {
+              "start": "南京南站-地铁站",
+              "end": "蒋王庙-地铁站",
+              "mode": "metro",
+              "start_time": "12:36",
+              "end_time": "13:00",
+              "cost": 4,
+              "distance": 12.25,
+              "price": 4,
+              "tickets": 1
+            },
+            {
+              "start": "蒋王庙-地铁站",
+              "end": "南京天文历史博物馆",
+              "mode": "walk",
+              "start_time": "13:00",
+              "end_time": "13:10",
+              "cost": 0,
+              "distance": 0.84,
+              "price": 0
+            }
+          ],
+          "tickets": 1
+        },
+        {
+          "position": "南京中国绿化博览园",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "15:20",
+          "end_time": "16:50",
+          "transports": [
+            {
+              "start": "南京天文历史博物馆",
+              "end": "蒋王庙-地铁站",
+              "mode": "walk",
+              "start_time": "14:40",
+              "end_time": "14:50",
+              "cost": 0,
+              "distance": 0.84,
+              "price": 0
+            },
+            {
+              "start": "蒋王庙-地铁站",
+              "end": "绿博园-地铁站",
+              "mode": "metro",
+              "start_time": "14:50",
+              "end_time": "15:14",
+              "cost": 4,
+              "distance": 12.32,
+              "price": 4,
+              "tickets": 1
+            },
+            {
+              "start": "绿博园-地铁站",
+              "end": "南京中国绿化博览园",
+              "mode": "walk",
+              "start_time": "15:14",
+              "end_time": "15:20",
+              "cost": 0,
+              "distance": 0.53,
+              "price": 0
+            }
+          ],
+          "tickets": 1
+        },
+        {
+          "position": "南城燕归楼(老门东店)",
+          "type": "dinner",
+          "price": 90,
+          "cost": 90,
+          "start_time": "17:16",
+          "end_time": "18:16",
+          "transports": [
+            {
+              "start": "南京中国绿化博览园",
+              "end": "绿博园-地铁站",
+              "mode": "walk",
+              "start_time": "16:50",
+              "end_time": "16:56",
+              "cost": 0,
+              "distance": 0.53,
+              "price": 0
+            },
+            {
+              "start": "绿博园-地铁站",
+              "end": "武定门-地铁站",
+              "mode": "metro",
+              "start_time": "16:56",
+              "end_time": "17:10",
+              "cost": 3,
+              "distance": 7.45,
+              "price": 3,
+              "tickets": 1
+            },
+            {
+              "start": "武定门-地铁站",
+              "end": "南城燕归楼(老门东店)",
+              "mode": "walk",
+              "start_time": "17:10",
+              "end_time": "17:16",
+              "cost": 0,
+              "distance": 0.56,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "start_time": "20:13",
+          "end_time": "23:51",
+          "start": "南京南站",
+          "end": "武汉站",
+          "price": 274.02,
+          "cost": 274.02,
+          "tickets": 1,
+          "transports": [
+            {
+              "start": "南城燕归楼(老门东店)",
+              "end": "武定门-地铁站",
+              "mode": "walk",
+              "start_time": "18:16",
+              "end_time": "18:22",
+              "cost": 0,
+              "distance": 0.56,
+              "price": 0
+            },
+            {
+              "start": "武定门-地铁站",
+              "end": "南京南站-地铁站",
+              "mode": "metro",
+              "start_time": "18:22",
+              "end_time": "18:31",
+              "cost": 3,
+              "distance": 4.75,
+              "price": 3,
+              "tickets": 1
+            },
+            {
+              "start": "南京南站-地铁站",
+              "end": "南京南站",
+              "mode": "walk",
+              "start_time": "18:31",
+              "end_time": "18:34",
+              "cost": 0,
+              "distance": 0.29,
+              "price": 0
+            }
+          ],
+          "TrainID": "D2184",
+          "type": "train"
+        }
+      ]
+    }
+  ],
+  "search_time_sec": 0.7852790355682373,
+  "llm_inference_time_sec": 0
+}

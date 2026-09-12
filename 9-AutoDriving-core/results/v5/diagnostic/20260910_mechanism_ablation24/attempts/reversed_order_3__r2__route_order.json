@@ -1,0 +1,50 @@
+{
+  "call_id": "reversed_order_3__r2__route_order",
+  "role": "route_order",
+  "graph_condition": "tradeoff",
+  "started_at": "2026-09-10T03:16:20.019512+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. Both candidates may be wrong, including when they agree. Supplementary information describes candidate differences or planning consequences; it does not identify the correct intent. Resolve every field from the instruction. Do not infer user preference from a route or map.\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised.\n\nInstruction:\nToday, make sure to visit the bank, library, and pharmacy. It's important to prioritize places with the best ratings. Also, please go to the bank before heading to the library.\n\nCandidate A:\n{\"dependencies\": [[\"bank\", \"library\"]], \"pois\": [\"bank\", \"library\", \"pharmacy\"], \"quality_weight\": 0.75, \"time_limit\": null}\n\nCandidate B:\n{\"dependencies\": [[\"library\", \"bank\"]], \"pois\": [\"bank\", \"library\", \"pharmacy\"], \"quality_weight\": 0.75, \"time_limit\": null}\n\nSupplementary information:\n{\"differing_fields\": [\"dependencies\"], \"routes\": {\"A\": {\"categories\": [\"pharmacy\", \"bank\", \"library\"]}, \"B\": {\"categories\": [\"library\", \"bank\", \"pharmacy\"]}}}"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"bank\",\"library\",\"pharmacy\"],\"time_limit\":null,\"dependencies\":[[\"bank\",\"library\"]],\"quality_weight\":0.75},\"evidence\":{\"pois\":\"visit the bank, library, and pharmacy\",\"dependencies\":\"go to the bank before heading to the library\",\"quality_weight\":\"prioritize places with the best ratings\"},\"changes\":[\"dependencies\"]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library",
+      "pharmacy"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "bank",
+        "library"
+      ]
+    ],
+    "quality_weight": 0.75
+  },
+  "evidence": {
+    "pois": "visit the bank, library, and pharmacy",
+    "dependencies": "go to the bank before heading to the library",
+    "quality_weight": "prioritize places with the best ratings"
+  },
+  "changes": [
+    "dependencies"
+  ],
+  "finished_at": "2026-09-10T03:16:44.404508+00:00",
+  "telemetry": {
+    "call_index": 1,
+    "prompt_sha256": "3c873b9cab24dda22ca351f20b7a4d98035af2e671b311c6f6e920205575c3eb",
+    "attempts": 1,
+    "latency_seconds": 24.385,
+    "input_chars": 1322,
+    "output_chars": 333,
+    "input_tokens": 362,
+    "output_tokens": 5421,
+    "total_tokens": 5783,
+    "usage_source": "provider",
+    "success": true
+  }
+}

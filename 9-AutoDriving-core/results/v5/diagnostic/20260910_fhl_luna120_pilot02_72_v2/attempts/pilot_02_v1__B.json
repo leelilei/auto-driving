@@ -1,0 +1,47 @@
+{
+  "call_id": "pilot_02_v1::B",
+  "role": "B",
+  "graph_condition": null,
+  "started_at": "2026-09-10T01:49:47.623857+00:00",
+  "request": {
+    "system": "Read the user's route-planning instruction field by field before producing the final JSON.\n\nCheck: requested POI categories, return deadline, explicit visit order, and the direction of the quality-versus-distance preference. Each conclusion must be supported by the instruction itself.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nDo not infer a preference from any route or map. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Please visit the supermarket and the pharmacy today. Keep a balance between selecting well-rated locations and maintaining route efficiency. Begin your stops at the supermarket prior to going to the pharmacy."
+  },
+  "raw_response": "{\n  \"pois\": [\"supermarket\", \"pharmacy\"],\n  \"time_limit\": null,\n  \"dependencies\": [[\"supermarket\", \"pharmacy\"]],\n  \"quality_weight\": 0.5,\n  \"evidence\": {\n    \"pois\": \"visit the supermarket and the pharmacy\",\n    \"dependencies\": \"Begin your stops at the supermarket prior to going to the pharmacy\",\n    \"quality_weight\": \"Keep a balance between selecting well-rated locations and maintaining route efficiency\"\n  }\n}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "pharmacy",
+      "supermarket"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "supermarket",
+        "pharmacy"
+      ]
+    ],
+    "quality_weight": 0.5
+  },
+  "evidence": {
+    "pois": "visit the supermarket and the pharmacy",
+    "dependencies": "Begin your stops at the supermarket prior to going to the pharmacy",
+    "quality_weight": "Keep a balance between selecting well-rated locations and maintaining route efficiency"
+  },
+  "changes": [],
+  "finished_at": "2026-09-10T01:50:07.104799+00:00",
+  "telemetry": {
+    "call_index": 20,
+    "prompt_sha256": "8f14854a9e94a1c6eb6280ddf6d65e6f6b75c2041e67d2d73dd118e0aa1199e5",
+    "attempts": 1,
+    "latency_seconds": 19.481,
+    "input_chars": 1082,
+    "output_chars": 413,
+    "input_tokens": 401,
+    "output_tokens": 203,
+    "total_tokens": 604,
+    "usage_source": "provider",
+    "success": true
+  }
+}

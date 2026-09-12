@@ -1,0 +1,90 @@
+{
+  "decision": "ChinaTravel narrow parse-plus-planner pipeline usable; full benchmark and DARC unvalidated",
+  "assessment": "PASS for one adapted development chain; PARTIAL for research readiness",
+  "all_pass_rate": 100.0,
+  "n_expected": 1,
+  "raw_parser_run_all_pass_rate": 0.0,
+  "raw_and_routed_share_one_model_sample": true,
+  "new_calls_for_routing": 0,
+  "session_physical_requests": 10,
+  "session_provider_input_tokens": 14121,
+  "session_provider_output_tokens": 1696,
+  "session_transport_failures": 0,
+  "session_usage_unknown": 0,
+  "act_valid_tool_calls": 5,
+  "act_protocol_errors": 2,
+  "act_executed_cases": 1,
+  "act_not_executed_cases": 2,
+  "act_original_query_all_pass_rate": 0.0,
+  "canonical_dev_records_crosschecked": 60,
+  "model_input_original_query_complete": true,
+  "gold_in_actual_payload": false,
+  "planner": {
+    "status": "search_success",
+    "search_success": true,
+    "seconds": 1.8167005829745904,
+    "tool_calls": 3396,
+    "tool_errors": 0,
+    "search_nodes": 1630,
+    "schema_valid": true,
+    "adapter": "RuleNeSy with meal-state correction; search_width=10; no plan postprocessing"
+  },
+  "plan_overview": {
+    "days": 1,
+    "activities": 6,
+    "total_cost": 368.12,
+    "activity_types": [
+      "train",
+      "attraction",
+      "lunch",
+      "attraction",
+      "attraction",
+      "train"
+    ]
+  },
+  "predicted_constraint_crosscheck": {
+    "real_predicted_intent": [
+      true,
+      true,
+      true
+    ],
+    "constructed_budget_10": [
+      true,
+      true,
+      false
+    ],
+    "scope": "same actual plan checked against a deliberately constructed alternative budget; not a natural semantic error or DARC trial"
+  },
+  "tamper_tests": {
+    "delete_prediction": {
+      "detected": true,
+      "error_type": "ValueError",
+      "reason": "Artifact inventory mismatch"
+    },
+    "change_provider_response": {
+      "detected": true,
+      "error_type": "ValueError",
+      "reason": "Artifact integrity failure: request.json"
+    },
+    "remove_tool_trace": {
+      "detected": true,
+      "error_type": "ValueError",
+      "reason": "Artifact inventory mismatch"
+    },
+    "erase_hashes": {
+      "detected": true,
+      "error_type": "ValueError",
+      "reason": "Required roles missing"
+    },
+    "replace_evaluation_source": {
+      "detected": true,
+      "error_type": "ValueError",
+      "reason": "Source integrity failure"
+    }
+  },
+  "tests": {
+    "joint_tests_passed": 48,
+    "additional_routing_tests_passed": 2
+  },
+  "independence": "same implementer, separate scoring/replay processes and independently recomputed ledger; no independent-person signoff"
+}

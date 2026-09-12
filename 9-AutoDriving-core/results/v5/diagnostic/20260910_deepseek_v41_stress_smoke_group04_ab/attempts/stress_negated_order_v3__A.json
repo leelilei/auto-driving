@@ -1,0 +1,48 @@
+{
+  "call_id": "stress_negated_order_v3::A",
+  "role": "A",
+  "graph_condition": null,
+  "started_at": "2026-09-10T02:28:48.736184+00:00",
+  "request": {
+    "system": "You extract route-planning intent from the user's instruction.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nUse only the instruction. Do not invent constraints. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Cover the bank, pharmacy, and library. The bank has to be finished before you proceed to the pharmacy. Neither ratings nor route efficiency should dominate the other."
+  },
+  "raw_response": "{\"pois\":[\"bank\",\"pharmacy\",\"library\"],\"time_limit\":null,\"dependencies\":[[\"bank\",\"pharmacy\"]],\"quality_weight\":0.5,\"evidence\":{\"pois\":\"Cover the bank, pharmacy, and library.\",\"dependencies\":\"The bank has to be finished before you proceed to the pharmacy.\",\"quality_weight\":\"Neither ratings nor route efficiency should dominate the other.\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library",
+      "pharmacy"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "bank",
+        "pharmacy"
+      ]
+    ],
+    "quality_weight": 0.5
+  },
+  "evidence": {
+    "pois": "Cover the bank, pharmacy, and library.",
+    "dependencies": "The bank has to be finished before you proceed to the pharmacy.",
+    "quality_weight": "Neither ratings nor route efficiency should dominate the other."
+  },
+  "changes": [],
+  "finished_at": "2026-09-10T02:28:50.581550+00:00",
+  "telemetry": {
+    "call_index": 7,
+    "prompt_sha256": "9f5a9ce57f7097a7994c21043316153b8aafb8005e07e2e2489fbc420c3432f0",
+    "attempts": 1,
+    "latency_seconds": 1.845,
+    "input_chars": 821,
+    "output_chars": 339,
+    "input_tokens": 221,
+    "output_tokens": 361,
+    "total_tokens": 582,
+    "usage_source": "provider",
+    "success": true
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "created": "2026-09-10T02:49:55.459846+00:00",
+  "scope": "author_injected_candidates_development_only",
+  "human_review": "source instructions previously admitted; injected candidates author constructed, not human signed",
+  "planned_calls": 48,
+  "model": "deepseek-v4.1-flash-expires-on-0910",
+  "retries": 0,
+  "concurrency": 4,
+  "max_output_tokens": 1600,
+  "primary": "paired semantic correctness darc minus fields; hard and direction jointly",
+  "secondary": "TSR, correction and damage relative to A; raw and fallback separately",
+  "limitations": "24 cases reuse 8 source groups; no significance claim; no natural error prevalence; no exact-weight truth",
+  "continuation": "descriptive evidence only; ties do not support expansion; do not tune prompts or samples after results",
+  "inputs": {
+    "data/pilot/pilot_80_utterances.json": "28e4d39f993769eee929815eaae87f4231a568d2bef66b25a5b423679693610a",
+    "results/v5/development/pilot8_review_admission.json": "1343b7091d6fc55ed5cfb1d51298a4f51d10b8fc5b45d5c4273218ee46f92f68",
+    "configs/v5/deepseek_official_v41_flash_preview.json": "2d903f7ac54b578d14955296583b0b04daaeaf9773e4378d5156234cbd07b626",
+    "scripts/mechanism_round.py": "43260a27c6a6c949a5cea06ee83b2d3e8631ef281c5fcba609744dace4fb5d07",
+    "results/v5/development/20260909_s1_graphs_v3/pilot_01/tradeoff.json": "606dc49e4538c6ccbd458e5f767997a90ed5c5ad1fa3fdb127e3b139ca2c34bc",
+    "prompts/v5/review_fields.txt": "d146aed024d2fdeeb82eeeea7350d16a211c2776ee0e8493fe97c81a1d28cbb0",
+    "prompts/v5/review_darc.txt": "0608d3df6eef446a4b579b2d1ad3bc4cce2059226cc1e84080527b224a70fd6e",
+    "results/v5/development/20260909_s1_graphs_v3/pilot_04/tradeoff.json": "57b4bb45f4eb4a7578b897075b91b43aac6a55537b0eb786f8d13072ded0ddb2",
+    "results/v5/development/20260909_s1_graphs_v3/pilot_06/tradeoff.json": "930b74ae5ca28cd82226cac8ab334d20e2faa95ef99412a5b5204ed2c98268c1",
+    "results/v5/development/20260909_s1_graphs_v3/pilot_07/tradeoff.json": "56c3d09a3fb39d839582b13cc099b33864bacfd4af6e51532cfeb70002ecae9f",
+    "results/v5/development/20260909_s1_graphs_v3/pilot_02/tradeoff.json": "d12edf79a52037073612e9998fb695122608561bd1ff2743e8168ba078700443",
+    "results/v5/development/20260909_s1_graphs_v3/pilot_05/tradeoff.json": "c9dd12b7205b13a2fa5b7e761b4f93a79ef45ecd37dac3af28941862c822ed43",
+    "results/v5/development/20260909_s1_graphs_v3/pilot_03/tradeoff.json": "9942b7eeb074b1d6cd407f2331142f5e3e40be9b5c8b48a2797a84cf7f7dbb98",
+    "results/v5/development/20260909_s1_graphs_v3/pilot_08/tradeoff.json": "9ea7f84c7537fb5b505806bb3834766256cd33c64d70bde6aa77871e46be868d"
+  },
+  "cases_sha256": "09be57cd11ea717570092dce3ef54e81406b846ea80c4074c12a0263a7b83c10",
+  "requests_sha256": "a4d168555f4afd8bd4d021c544bf30367bc3e2512bc1adedb8721f202f4034f9"
+}

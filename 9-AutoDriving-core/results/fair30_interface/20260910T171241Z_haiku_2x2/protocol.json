@@ -1,0 +1,20 @@
+{
+  "stage": "OFFLINE_READY_NOT_COLLECTED",
+  "model_api_calls": 0,
+  "purpose": "Diagnose instruction-contract interaction, not prove planning method novelty.",
+  "planned": 120,
+  "cases": 30,
+  "arms": 4,
+  "candidate_repeat": 1,
+  "concurrency": 2,
+  "max_transport_retries": 12,
+  "max_attempts_per_unit": 2,
+  "max_physical_calls": 132,
+  "old_sentence": "If no pharmacy can satisfy every requirement, report INFEASIBLE.",
+  "new_sentence": "If no pharmacy can satisfy every requirement, the downstream executor reports INFEASIBLE. Your task is only to extract the requested rule fields; preserve those rules even when no pharmacy is feasible.",
+  "primary": "Schema-failure reduction original minus clarified within evidence; compare same difference within language.",
+  "secondary": "Full-denominator task success raw and with fixed Direct fallback; corrected/damaged, rule accuracy, cost.",
+  "controls": "All four arms newly collected in same run, same frozen Direct per case, no scoring/model-based selection.",
+  "stopping": "No semantic retries; stop401/403/429 or exhausted recovery. This script does not launch collection.",
+  "limitation": "Post-hoc mechanism diagnosis on exposed development data; fixed old candidates; one response per case per arm; does not measure fresh end-to-end performance."
+}

@@ -1,0 +1,35 @@
+{
+  "created": "2026-09-10T15:45:56.234076+00:00",
+  "scope": "UNREVIEWED_DEVELOPMENT_CONTROL",
+  "mode": "REAL",
+  "human_review": "PENDING",
+  "authorization": "用户同意推进60次明确术语定义的语言复核对照。",
+  "reference": "/Users/mac/Documents/6-Research/9-AutoDriving/9-AutoDriving-core/results/scene_rule30/20260910T152533Z_haiku_c16_development",
+  "reference_manifest_sha256": "0b96eceda9fc2eb6766a9c5fd0305e2abce059934e161cc1a3cce1dddaa5f956",
+  "planned": 60,
+  "initial_concurrency": 8,
+  "failure_concurrency": 4,
+  "max_recoveries": 6,
+  "max_attempts_per_unit": 2,
+  "files": {
+    "plan.json": "b2b6caafd3e54d6d05fe56be50a5faca6fbe8bbda2dacee0cfb87ea675e94094",
+    "reference_summary.json": "7930f43e7bc805d2286f578439b231adb8844e803094e8dc38fdb5d486b3b4a4",
+    "model_inputs.json": "3ec69c5eceac4ccf9b13071ef1b5da6a185d296c7399b4f5ab8231e349747f6e",
+    "config.json": "8857e3a329c62c942cf5d0d599a4dd5fbfe6d825b63148638b104863cdba8d4a",
+    "gold_and_traces.json": "5dc2fa0a339467b29270b1289d447102a5cedae47358c7f81492d2ad0b2b7cc3",
+    "glossary.txt": "13fa0630be29baa2cad10cf681022d2e2f1e0d1700c5138b03ffeb174425c186",
+    "author_review_cases.json": "927f4d6fc2b48211e8f9db835d4b3c1a5f9c5882deed3acde2aa887af0511248",
+    "reference_records.json": "816bbd777c5108197d13b6b94faf32fd09dd99c8b1b6b8291ba45cf13c101d49"
+  },
+  "sources": {
+    "scripts/scene_rule30_glossary.py": "360d8d0ff087cb55bf21183a691efc5269ef83f567a16773f12b4e67b0f970f4",
+    "scripts/scene_rule30_run.py": "6862ccb555dc7f952af29cfd0e2ec8a7b364f760ed24f887a021623721a105f2",
+    "scripts/scene_pilot12.py": "8aae62cbcdd1217066250c87acc2612e185e2c341954bf162f481d398ce4226f",
+    "scripts/scene_haiku_contract.py": "a157080adec1b2e476937b42a1e4c28357e0e9337eb479917149d972b800342e",
+    "scripts/prepare_scene_pilot12.py": "356988a65e82800bd4ed8bd4a1d6127cf6cdcc67ec49c69decff26e91562bea3",
+    "src/scene_policy.py": "00715e30b16ad4298b80b340dbc491531505b8fea64388e85d8c5accc0a2ba6f",
+    "src/llm_client.py": "ff086f6efce95bd8dba98ca150ba5f8b48b61dcc543a335c39cbdfbca076639b"
+  },
+  "stopping": "Stop 401/403/429; reduce to4 on other transport failures; retry failed transport once, max6. Never retry schema/semantic failures.",
+  "limitation": "Added development arm in a later time window; reference methods are not contemporaneously resampled."
+}

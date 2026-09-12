@@ -1,0 +1,29 @@
+{
+  "call_id": "pilot_08_v1::A3",
+  "role": "A3",
+  "graph_condition": null,
+  "started_at": "2026-09-09T17:26:44.588938+00:00",
+  "request": {
+    "system": "You extract route-planning intent from the user's instruction.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nUse only the instruction. Do not invent constraints. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Please stop by the library, shopping mall, and supermarket today. Balance good ratings with route efficiency, and ensure you visit the shopping mall before the supermarket."
+  },
+  "status": "TRANSPORT_FAILED",
+  "schema_valid": false,
+  "error_type": "RuntimeError",
+  "error_message": "curl request failed: curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to www.fhl.mom:443",
+  "finished_at": "2026-09-09T17:26:49.610485+00:00",
+  "telemetry": {
+    "call_index": 2,
+    "prompt_sha256": "2fabd272428206bf4bba6a99e52f7b3c407b8eea9ebdcdb844cbeff324434f69",
+    "attempts": 1,
+    "latency_seconds": 5.021,
+    "input_chars": 827,
+    "output_chars": 0,
+    "input_tokens": 207,
+    "output_tokens": 0,
+    "total_tokens": 207,
+    "usage_source": "character_estimate",
+    "success": false,
+    "error": "RuntimeError"
+  }
+}

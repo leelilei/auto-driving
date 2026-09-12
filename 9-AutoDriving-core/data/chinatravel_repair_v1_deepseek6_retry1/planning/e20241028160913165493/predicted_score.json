@@ -1,0 +1,64 @@
+{
+  "n_expected": 1,
+  "ids": [
+    "e20241028160913165493"
+  ],
+  "schema_rate": 0.0,
+  "commonsense_macro": 0.0,
+  "commonsense_micro": 0.0,
+  "hard_macro": 0.0,
+  "hard_micro": 0.0,
+  "conditional_hard_macro": 0.0,
+  "conditional_hard_micro": 0.0,
+  "all_pass_ids": [],
+  "all_pass_rate": 0.0,
+  "schema": [
+    {
+      "data_id": "e20241028160913165493",
+      "schema": 0
+    }
+  ],
+  "commonsense": [
+    {
+      "data_id": "e20241028160913165493",
+      "Invalid or ungrounded activity entity": 1,
+      "Intercity transportation events must occur": 1,
+      "Invalid Trains or Airplanes, given TrainID/FlightID, origin and destination": 1,
+      "Incorrect Information of Intercity Transport on price or duration": 1,
+      "Incorrect Cost on Intercity Transportation": 1,
+      "Unavailable attractions": 1,
+      "Visiting attraction in their closed time": 1,
+      "Repeated attraction Choices": 1,
+      "Incorrect price Information of attraction": 1,
+      "Incorrect cost Information of attraction": 1,
+      "Unavailable Accommodation": 1,
+      "Incorrect Information of Accommodation on price or room type": 1,
+      "Incorrect cost Information of Accommodation": 1,
+      "Accomondation is necessary for trips longer than one day": 1,
+      "Unavailable Restruants": 1,
+      "Visiting Restruants in their closed time": 1,
+      "Repeated Restruants Choices": 1,
+      "Incorrect price Information of Restruants": 1,
+      "Incorrect cost Information of Restruants": 1,
+      "Inappropriate Meal Times": 1,
+      "Repeated Meal Types in One Day": 1,
+      "Unavailable Inner-City Transport": 1,
+      "Incorrect Information of Inner-City Transporton on price, distance, and duration": 1,
+      "Inccorrect cost information of Inner-City Transport": 1,
+      "Invalid duration information of each activity": 1,
+      "Does not follow Chronological Order": 1,
+      "Invalid Transport information across positions": 1
+    }
+  ],
+  "hard": [
+    {
+      "data_id": "e20241028160913165493",
+      "logic_py_0": 0,
+      "logic_py_1": 0,
+      "logic_py_2": 0,
+      "logic_py_3": 0,
+      "logic_py_4": 0,
+      "logic_py_5": 0
+    }
+  ]
+}

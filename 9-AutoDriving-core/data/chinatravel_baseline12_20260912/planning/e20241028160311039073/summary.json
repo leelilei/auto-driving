@@ -1,0 +1,12 @@
+{
+  "uid": "e20241028160311039073",
+  "status": "search_success",
+  "seconds": 2.1814497080631554,
+  "tool_calls": 5043,
+  "tool_errors": 0,
+  "raw_schema_valid": true,
+  "adapted_schema_valid": true,
+  "schema_changes": 0,
+  "prediction_accepted": true,
+  "official_all_pass_rate": 100.0
+}

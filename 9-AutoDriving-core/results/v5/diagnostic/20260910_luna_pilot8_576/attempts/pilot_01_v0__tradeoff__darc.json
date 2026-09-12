@@ -1,0 +1,15 @@
+{
+  "call_id": "pilot_01_v0::tradeoff::darc",
+  "role": "darc",
+  "graph_condition": "tradeoff",
+  "started_at": "2026-09-09T17:10:26.000349+00:00",
+  "finished_at": "2026-09-09T17:10:26.000349+00:00",
+  "status": "NOT_RUN_UPSTREAM_SCHEMA_FAILED",
+  "schema_valid": false,
+  "reason": "review requires schema-valid A and B candidates",
+  "upstream_status": {
+    "A": "TRANSPORT_FAILED",
+    "B": "COMPLETE"
+  },
+  "telemetry": null
+}

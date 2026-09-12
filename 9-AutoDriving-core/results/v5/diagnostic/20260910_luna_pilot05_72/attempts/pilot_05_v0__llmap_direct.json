@@ -1,0 +1,44 @@
+{
+  "call_id": "pilot_05_v0::llmap_direct",
+  "role": "llmap_direct",
+  "graph_condition": null,
+  "started_at": "2026-09-09T17:13:41.035098+00:00",
+  "request": {
+    "system": "Extract POIs, constraints, and weights from a human instruction. POIs should be a simple string array. Dependencies should be an empty list if no sequence requirements are mentioned. Weights should be between 0 and 1, and sum to 1. Extract them from language about importance of POI rating vs route length.\n\nOutput must be valid JSON with structure:\n{\n    \"pois\": [\"poi1\", \"poi2\", ...],\n    \"time_limit\": \"HH:00\" or \"None\",\n    \"dependencies\": [[\"poi1\", \"poi2\"], ...],\n    \"quality_weight\": float,\n    \"distance_weight\": float\n}\n",
+    "user": "Extract POIs, constraints, and weights from this instruction as JSON:\nToday, make sure to visit the bank, library, and pharmacy. It's important to prioritize places with the best ratings. Also, please go to the bank before heading to the library.\n\nOnly output the JSON object. No prefix, additional text, or explanation.\n"
+  },
+  "raw_response": "{\n  \"pois\": [\"bank\", \"library\", \"pharmacy\"],\n  \"time_limit\": \"None\",\n  \"dependencies\": [[\"bank\", \"library\"]],\n  \"quality_weight\": 0.7,\n  \"distance_weight\": 0.3\n}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library",
+      "pharmacy"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "bank",
+        "library"
+      ]
+    ],
+    "quality_weight": 0.7
+  },
+  "evidence": {},
+  "changes": [],
+  "finished_at": "2026-09-09T17:14:01.025686+00:00",
+  "telemetry": {
+    "call_index": 5,
+    "prompt_sha256": "2aad9e09b354f1c980489eca328f9cc8b133575abeaea364a466e128fc6b5931",
+    "attempts": 1,
+    "latency_seconds": 19.99,
+    "input_chars": 850,
+    "output_chars": 161,
+    "input_tokens": 344,
+    "output_tokens": 98,
+    "total_tokens": 442,
+    "usage_source": "provider",
+    "success": true
+  }
+}

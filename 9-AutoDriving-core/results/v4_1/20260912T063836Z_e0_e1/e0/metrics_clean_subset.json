@@ -1,0 +1,80 @@
+{
+  "clean_group_count": 146,
+  "clean_utterance_count": 584,
+  "gpt-5.4-mini": {
+    "B0": {
+      "TSR": 1.0,
+      "route_flip": 0.2306,
+      "mean_calls": 1.0,
+      "review_rate": 0.0
+    },
+    "B2": {
+      "TSR": 1.0,
+      "route_flip": 0.2306,
+      "mean_calls": 2.0,
+      "review_rate": 0.0
+    },
+    "B5": {
+      "TSR": 1.0,
+      "route_flip": 0.2306,
+      "mean_calls": 2.0017,
+      "review_rate": 0.0017
+    },
+    "B6": {
+      "TSR": 1.0,
+      "route_flip": 0.1507,
+      "mean_calls": 3.0,
+      "review_rate": 1.0
+    },
+    "B4": {
+      "TSR": 1.0,
+      "route_flip": 0.218,
+      "mean_calls": 2.0839,
+      "review_rate": 0.0839
+    },
+    "Ours": {
+      "TSR": 1.0,
+      "route_flip": 0.1941,
+      "mean_calls": 2.0445,
+      "review_rate": 0.0445
+    }
+  },
+  "deepseek-v4-flash": {
+    "B0": {
+      "TSR": 0.661,
+      "route_flip": 0.085,
+      "mean_calls": 1.0,
+      "review_rate": 0.0
+    },
+    "B2": {
+      "TSR": 0.661,
+      "route_flip": 0.085,
+      "mean_calls": 2.0,
+      "review_rate": 0.0
+    },
+    "B5": {
+      "TSR": 0.6627,
+      "route_flip": 0.085,
+      "mean_calls": 2.0051,
+      "review_rate": 0.0051
+    },
+    "B6": {
+      "TSR": 0.6627,
+      "route_flip": 0.1,
+      "mean_calls": 3.0,
+      "review_rate": 1.0
+    },
+    "B4": {
+      "TSR": 0.6627,
+      "route_flip": 0.0983,
+      "mean_calls": 2.1284,
+      "review_rate": 0.1284
+    },
+    "Ours": {
+      "TSR": 0.6627,
+      "route_flip": 0.0917,
+      "mean_calls": 2.0257,
+      "review_rate": 0.0257
+    }
+  }
+}

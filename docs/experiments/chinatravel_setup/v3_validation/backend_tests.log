@@ -1,0 +1,11 @@
+/Users/mac/Documents/6-Research/9-AutoDriving/external/ChinaTravel/.venv-chinatravel/lib/python3.13/site-packages/fuzzywuzzy/fuzz.py:11: UserWarning: Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning
+  warnings.warn('Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning')
+test_compiled_budget_constraint_changes_result (test_chinatravel_symbolic_backend.BackendTests.test_compiled_budget_constraint_changes_result) ... ok
+test_duplicate_meal_is_not_selected_again (test_chinatravel_symbolic_backend.BackendTests.test_duplicate_meal_is_not_selected_again) ... ok
+test_gold_and_arbitrary_expression_rejected (test_chinatravel_symbolic_backend.BackendTests.test_gold_and_arbitrary_expression_rejected) ... ok
+test_real_search_with_unchanged_official_evaluator (test_chinatravel_symbolic_backend.BackendTests.test_real_search_with_unchanged_official_evaluator) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 1.500s
+
+OK

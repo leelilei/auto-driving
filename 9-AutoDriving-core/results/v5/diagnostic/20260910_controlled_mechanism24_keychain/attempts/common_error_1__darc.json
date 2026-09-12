@@ -1,0 +1,50 @@
+{
+  "call_id": "common_error_1__darc",
+  "role": "darc",
+  "graph_condition": "tradeoff",
+  "started_at": "2026-09-10T02:53:03.291584+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. The decision-contrast report is diagnostic evidence about consequences; it is not a label and must not override the words of the instruction.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Use the report to locate consequential disagreements, then decide each field from the instruction alone.\n\nInstruction:\nToday, you'll be visiting the shopping mall and the supermarket. Make sure to be back by 22:00. Since time efficiency is a priority, try to keep your route as direct as possible. Remember to visit the shopping mall before heading to the supermarket.\n\nCandidate A:\n{\"dependencies\": [[\"supermarket\", \"shopping_mall\"]], \"pois\": [\"shopping_mall\", \"supermarket\"], \"quality_weight\": 0.25, \"time_limit\": 1320}\n\nCandidate B:\n{\"dependencies\": [[\"supermarket\", \"shopping_mall\"]], \"pois\": [\"shopping_mall\", \"supermarket\"], \"quality_weight\": 0.25, \"time_limit\": 1320}\n\nDecision-contrast report:\n{\"candidate_A\": {\"dependencies\": [[\"supermarket\", \"shopping_mall\"]], \"pois\": [\"shopping_mall\", \"supermarket\"], \"quality_weight\": 0.25, \"time_limit\": 1320}, \"candidate_B\": {\"dependencies\": [[\"supermarket\", \"shopping_mall\"]], \"pois\": [\"shopping_mall\", \"supermarket\"], \"quality_weight\": 0.25, \"time_limit\": 1320}, \"candidate_evidence\": {\"A\": {}, \"B\": {}}, \"cross_constraints\": {\"route_A_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_A_under_B\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_B\": {\"reasons\": [], \"task_success\": true}}, \"differing_fields\": [], \"instruction\": \"Today, you'll be visiting the shopping mall and the supermarket. Make sure to be back by 22:00. Since time efficiency is a priority, try to keep your route as direct as possible. Remember to visit the shopping mall before heading to the supermarket.\", \"limitations\": [\"The report does not identify the user's true intent.\", \"Both candidates may share the same error.\", \"Single-field swaps do not identify higher-order interactions.\"], \"report_version\": \"darc-v5.1-contrast-2\", \"routes\": {\"A\": {\"arrival_minutes\": 668, \"average_quality\": 0.9, \"categories\": [\"supermarket\", \"shopping_mall\"], \"coverage_count\": 2, \"distance_km\": 14.063, \"duration_minutes\": 128.1, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"supermarket_2\", \"shopping_mall_2\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": 0.05266712035904311}, \"B\": {\"arrival_minutes\": 668, \"average_quality\": 0.9, \"categories\": [\"supermarket\", \"shopping_mall\"], \"coverage_count\": 2, \"distance_km\": 14.063, \"duration_minutes\": 128.1, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"supermarket_2\", \"shopping_mall_2\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": 0.05266712035904311}}, \"single_field_swaps\": []}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"shopping_mall\",\"supermarket\"],\"time_limit\":1320,\"dependencies\":[[\"shopping_mall\",\"supermarket\"]],\"quality_weight\":0.25},\"evidence\":{\"dependencies\":\"visit the shopping mall before heading to the supermarket\",\"time_limit\":\"be back by 22:00\",\"pois\":\"visiting the shopping mall and the supermarket\",\"quality_weight\":\"time efficiency is a priority\"},\"changes\":[\"dependencies\"]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "shopping_mall",
+      "supermarket"
+    ],
+    "time_limit": 1320,
+    "dependencies": [
+      [
+        "shopping_mall",
+        "supermarket"
+      ]
+    ],
+    "quality_weight": 0.25
+  },
+  "evidence": {
+    "dependencies": "visit the shopping mall before heading to the supermarket",
+    "time_limit": "be back by 22:00",
+    "pois": "visiting the shopping mall and the supermarket",
+    "quality_weight": "time efficiency is a priority"
+  },
+  "changes": [
+    "dependencies"
+  ],
+  "finished_at": "2026-09-10T02:53:52.524434+00:00",
+  "telemetry": {
+    "call_index": 1,
+    "prompt_sha256": "9def4b77538cc2fc3f29322e93dec90d52412207d04d3c7180ac6b90c44091b2",
+    "attempts": 1,
+    "latency_seconds": 49.233,
+    "input_chars": 3082,
+    "output_chars": 392,
+    "input_tokens": 916,
+    "output_tokens": 11303,
+    "total_tokens": 12219,
+    "usage_source": "provider",
+    "success": true
+  }
+}

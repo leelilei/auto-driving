@@ -1,0 +1,28 @@
+{
+  "protocol_version": "darc-v5.1-diagnostic-plan-1",
+  "stage": "S2_diagnostic8",
+  "dataset": "/Users/mac/Documents/6-Research/9-AutoDriving/9-AutoDriving-core/data/pilot/pilot_80_utterances.json",
+  "dataset_sha256": "28e4d39f993769eee929815eaae87f4231a568d2bef66b25a5b423679693610a",
+  "selected_groups": [
+    "pilot_01",
+    "pilot_02",
+    "pilot_03",
+    "pilot_04",
+    "pilot_05",
+    "pilot_06",
+    "pilot_07",
+    "pilot_08"
+  ],
+  "utterances": 32,
+  "graph_instances": 96,
+  "planned_calls": 576,
+  "expected_calls_formula": "groups * 4 utterances * (6 shared + 3 graphs * 4 reviews)",
+  "annotation_counts": {
+    "pending": 32
+  },
+  "collection_allowed": false,
+  "blocker": "pilot annotations are pending",
+  "retries": 0,
+  "method_gating": false,
+  "hash_used_for_decisions": false
+}

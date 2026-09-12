@@ -1,0 +1,1547 @@
+{
+  "repository": "LAMDA-NeSy/ChinaTravel",
+  "commit": "0936f2727dd102ad811ed015b7bf6f7d6533f28e",
+  "license": null,
+  "tree": {
+    "sha": "0936f2727dd102ad811ed015b7bf6f7d6533f28e",
+    "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/trees/0936f2727dd102ad811ed015b7bf6f7d6533f28e",
+    "tree": [
+      {
+        "path": ".gitignore",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "87a850672663f900d75a6bdaee968cc060f62331",
+        "size": 305,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/87a850672663f900d75a6bdaee968cc060f62331"
+      },
+      {
+        "path": ".python-version",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e4fba2183587225f216eeada4c78dfab6b2e65f5",
+        "size": 5,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/e4fba2183587225f216eeada4c78dfab6b2e65f5"
+      },
+      {
+        "path": "AGENT_ENV_PROGRESS.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ba59613f0febadf28b4ac7c16d1444b0ae0a58ce",
+        "size": 2406,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/ba59613f0febadf28b4ac7c16d1444b0ae0a58ce"
+      },
+      {
+        "path": "README.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7ce48407951cba0a5ce6af58134baab14d3a8059",
+        "size": 16101,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/7ce48407951cba0a5ce6af58134baab14d3a8059"
+      },
+      {
+        "path": "README.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "73e1d7ce862e82b1c6da1c3703ac7c1e949354ca",
+        "size": 15057,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/73e1d7ce862e82b1c6da1c3703ac7c1e949354ca"
+      },
+      {
+        "path": "TPC@AIC2025",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "497febf0207e131295b643b58f85e3b1b9a1774a",
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/trees/497febf0207e131295b643b58f85e3b1b9a1774a"
+      },
+      {
+        "path": "TPC@AIC2025/readme.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a8559f03a0ac379d0b807766e9d29d1e17153709",
+        "size": 7935,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/a8559f03a0ac379d0b807766e9d29d1e17153709"
+      },
+      {
+        "path": "agent_env",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "8f919c1ee3577ac376cc2bc47325d74244842098",
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/trees/8f919c1ee3577ac376cc2bc47325d74244842098"
+      },
+      {
+        "path": "agent_env/README.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "07238468c169010785edb94332cf847aac812ead",
+        "size": 6270,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/07238468c169010785edb94332cf847aac812ead"
+      },
+      {
+        "path": "agent_env/README.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "408b5b9b3a7ed6c708d63350508c129dfee561fd",
+        "size": 4089,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/408b5b9b3a7ed6c708d63350508c129dfee561fd"
+      },
+      {
+        "path": "agent_env/SKILL.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "80f5fd610d691671462d94273a131f9de5880de3",
+        "size": 4512,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/80f5fd610d691671462d94273a131f9de5880de3"
+      },
+      {
+        "path": "agent_env/__init__.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "99f0b12e6a60613f2be5f4ed0b18c074a7a552d0",
+        "size": 391,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/99f0b12e6a60613f2be5f4ed0b18c074a7a552d0"
+      },
+      {
+        "path": "agent_env/__main__.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "30ca3ed9b29c6554436f748ca7fa461846153622",
+        "size": 138,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/30ca3ed9b29c6554436f748ca7fa461846153622"
+      },
+      {
+        "path": "agent_env/adapter.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a10fb332fa6f52c975e6abe25ce776df53975c22",
+        "size": 8045,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/a10fb332fa6f52c975e6abe25ce776df53975c22"
+      },
+      {
+        "path": "agent_env/cli.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "4f26a5bbb8eb74a4f5bdf5fa085091c467bc2005",
+        "size": 4979,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/4f26a5bbb8eb74a4f5bdf5fa085091c467bc2005"
+      },
+      {
+        "path": "agent_env/config.toml.example",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f4c512771ef5814f1d4851c8eea4f3385c166410",
+        "size": 1190,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/f4c512771ef5814f1d4851c8eea4f3385c166410"
+      },
+      {
+        "path": "agent_env/http_server.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "87170e4d85729f604223a15c67539ddb68d2eddf",
+        "size": 2616,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/87170e4d85729f604223a15c67539ddb68d2eddf"
+      },
+      {
+        "path": "agent_env/mcp_stdio.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "eed00cf9d1ad5b461c7fa07b44d5dd4aec70e7cf",
+        "size": 3130,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/eed00cf9d1ad5b461c7fa07b44d5dd4aec70e7cf"
+      },
+      {
+        "path": "agent_env/runtime.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f62a20b19a89c993c949c4d33aa657356ad15ec0",
+        "size": 8490,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/f62a20b19a89c993c949c4d33aa657356ad15ec0"
+      },
+      {
+        "path": "agent_env/scripts",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "902ee8a654d6143874c1446e5d8a3a05610bb89e",
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/trees/902ee8a654d6143874c1446e5d8a3a05610bb89e"
+      },
+      {
+        "path": "agent_env/scripts/__init__.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c240a2eeef21762b6afa872f491d39ce5f4a9dca",
+        "size": 47,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/c240a2eeef21762b6afa872f491d39ce5f4a9dca"
+      },
+      {
+        "path": "agent_env/scripts/solve_script_with_harness.py",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "a42bd639961ce69e1f1f5a4019a9a5fc22b142f1",
+        "size": 35365,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/a42bd639961ce69e1f1f5a4019a9a5fc22b142f1"
+      },
+      {
+        "path": "agent_env/tools.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "872ff8d863f8d2725a79499379a92bbe685e603d",
+        "size": 19396,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/872ff8d863f8d2725a79499379a92bbe685e603d"
+      },
+      {
+        "path": "chinatravel",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "7de366acc21394489bf03abad36f8e36ded7f7a8",
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/trees/7de366acc21394489bf03abad36f8e36ded7f7a8"
+      },
+      {
+        "path": "chinatravel/.gitignore",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "701528760e30d39f46ac7c4a88066385dd4fcb5a",
+        "size": 256,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/701528760e30d39f46ac7c4a88066385dd4fcb5a"
+      },
+      {
+        "path": "chinatravel/agent",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "0bf517cccc4862cca853cb6d12fb680d353da770",
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/trees/0bf517cccc4862cca853cb6d12fb680d353da770"
+      },
+      {
+        "path": "chinatravel/agent/UrbanTrip",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "76dc1169871dd9bf161bfc2860662248ccca63e9",
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/trees/76dc1169871dd9bf161bfc2860662248ccca63e9"
+      },
+      {
+        "path": "chinatravel/agent/UrbanTrip/tpc_agent.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "be74b0d75b9e7c7284e0a630dab36a13da058af2",
+        "size": 187255,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/be74b0d75b9e7c7284e0a630dab36a13da058af2"
+      },
+      {
+        "path": "chinatravel/agent/UrbanTrip/utils.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "bee378592e70bb1fb9e89dcc33094fbe7f4515e7",
+        "size": 4403,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/bee378592e70bb1fb9e89dcc33094fbe7f4515e7"
+      },
+      {
+        "path": "chinatravel/agent/base.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2d5e7fbc8fc8a4b65ad94f17b40af5d203886f1b",
+        "size": 3479,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/2d5e7fbc8fc8a4b65ad94f17b40af5d203886f1b"
+      },
+      {
+        "path": "chinatravel/agent/llms.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "1f9ec82d5b553937f1b55d454005df5b2a88a047",
+        "size": 17717,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/1f9ec82d5b553937f1b55d454005df5b2a88a047"
+      },
+      {
+        "path": "chinatravel/agent/load_model.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "afa2625f08b217648254d3664501cd7cd8a4eda4",
+        "size": 6332,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/afa2625f08b217648254d3664501cd7cd8a4eda4"
+      },
+      {
+        "path": "chinatravel/agent/nesy_agent",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "456c0f901a1c52fa449e40e8a4a125635e74b9e4",
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/trees/456c0f901a1c52fa449e40e8a4a125635e74b9e4"
+      },
+      {
+        "path": "chinatravel/agent/nesy_agent/ast_checker.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "48f11be3f219e56cc69970cd1029d84e35c15e20",
+        "size": 17696,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/48f11be3f219e56cc69970cd1029d84e35c15e20"
+      },
+      {
+        "path": "chinatravel/agent/nesy_agent/ast_checker_en.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "877f17d859ea53d2f6262107afb8661dfe085fba",
+        "size": 15098,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/877f17d859ea53d2f6262107afb8661dfe085fba"
+      },
+      {
+        "path": "chinatravel/agent/nesy_agent/example.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "9fc9b5e37d5b1b3564df7ec9b37f4c190fffc469",
+        "size": 14108,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/9fc9b5e37d5b1b3564df7ec9b37f4c190fffc469"
+      },
+      {
+        "path": "chinatravel/agent/nesy_agent/llm_driven_rec.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6ca7f85e07fa76f78e1bde8d2545d5baa0ce665e",
+        "size": 20112,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/6ca7f85e07fa76f78e1bde8d2545d5baa0ce665e"
+      },
+      {
+        "path": "chinatravel/agent/nesy_agent/nesy_agent.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a7aaa53587ad668d1bfcb837c21f6744186ccc27",
+        "size": 72184,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/a7aaa53587ad668d1bfcb837c21f6744186ccc27"
+      },
+      {
+        "path": "chinatravel/agent/nesy_agent/nl2sl.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "4179e7fafdd0b005581605b509eb0c1589294d30",
+        "size": 17117,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/4179e7fafdd0b005581605b509eb0c1589294d30"
+      },
+      {
+        "path": "chinatravel/agent/nesy_agent/nl2sl_hybrid.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f313486f2308d5f40d99e4529352f1a874892ad4",
+        "size": 25271,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/f313486f2308d5f40d99e4529352f1a874892ad4"
+      },
+      {
+        "path": "chinatravel/agent/nesy_agent/nl2sl_hybrid_en.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "17a2d5700046f7f88207b0455566ec5a962275e6",
+        "size": 25634,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/17a2d5700046f7f88207b0455566ec5a962275e6"
+      },
+      {
+        "path": "chinatravel/agent/nesy_agent/plan_for_check",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "d22cf7515a30a37dfa7e1125fb2b7dae2e0b4d5f",
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/trees/d22cf7515a30a37dfa7e1125fb2b7dae2e0b4d5f"
+      },
+      {
+        "path": "chinatravel/agent/nesy_agent/plan_for_check/day1.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2382a703e90788e43da737c30caedc0a0c475b0b",
+        "size": 1634,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/2382a703e90788e43da737c30caedc0a0c475b0b"
+      },
+      {
+        "path": "chinatravel/agent/nesy_agent/plan_for_check/day2.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "01e7cbce82ab06044edbe2604d194773c49ca2df",
+        "size": 6211,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/01e7cbce82ab06044edbe2604d194773c49ca2df"
+      },
+      {
+        "path": "chinatravel/agent/nesy_agent/plan_for_check/day3.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "423b1d033dfc61ca9577bf85aa2ac5c557678817",
+        "size": 18011,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/423b1d033dfc61ca9577bf85aa2ac5c557678817"
+      },
+      {
+        "path": "chinatravel/agent/nesy_agent/plan_for_check/day4.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "16e2d273b03303dad67c594dc94edfb6d2fd5e35",
+        "size": 27315,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/16e2d273b03303dad67c594dc94edfb6d2fd5e35"
+      },
+      {
+        "path": "chinatravel/agent/nesy_agent/plan_for_check/day5.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "db00f0a60799076588e3035a1bc68633d3e3c2b9",
+        "size": 52193,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/db00f0a60799076588e3035a1bc68633d3e3c2b9"
+      },
+      {
+        "path": "chinatravel/agent/nesy_agent/plan_for_check/day6.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "1b3793df2071d21110aab5297fbb18c5ffdfe527",
+        "size": 54296,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/1b3793df2071d21110aab5297fbb18c5ffdfe527"
+      },
+      {
+        "path": "chinatravel/agent/nesy_agent/plan_for_check_en",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "17c2fcbdfdd75458b82af03299ec5a4c52a40918",
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/trees/17c2fcbdfdd75458b82af03299ec5a4c52a40918"
+      },
+      {
+        "path": "chinatravel/agent/nesy_agent/plan_for_check_en/day1.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "131486292034f6272dab5b2f05891c406266637f",
+        "size": 1698,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/131486292034f6272dab5b2f05891c406266637f"
+      },
+      {
+        "path": "chinatravel/agent/nesy_agent/plan_for_check_en/day2.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "78edffaae1e3a771071f02eee4fbe11fd28c19ce",
+        "size": 6523,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/78edffaae1e3a771071f02eee4fbe11fd28c19ce"
+      },
+      {
+        "path": "chinatravel/agent/nesy_agent/plan_for_check_en/day3.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "eab0f515484b779547192bc1b86a64f7a6894d2b",
+        "size": 18597,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/eab0f515484b779547192bc1b86a64f7a6894d2b"
+      },
+      {
+        "path": "chinatravel/agent/nesy_agent/plan_for_check_en/day4.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fe25e9179fde6139e00ae8bc667644abc9bcee0f",
+        "size": 27822,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/fe25e9179fde6139e00ae8bc667644abc9bcee0f"
+      },
+      {
+        "path": "chinatravel/agent/nesy_agent/plan_for_check_en/day5.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "46394f7f605a1b42499086a900331df975b37198",
+        "size": 53549,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/46394f7f605a1b42499086a900331df975b37198"
+      },
+      {
+        "path": "chinatravel/agent/nesy_agent/plan_for_check_en/day6.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a1f8d310fbd1679412048786affdb7cf19b8562d",
+        "size": 54336,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/a1f8d310fbd1679412048786affdb7cf19b8562d"
+      },
+      {
+        "path": "chinatravel/agent/nesy_agent/prompts",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "c373363260996fcf38c862672790ac828c0ac40f",
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/trees/c373363260996fcf38c862672790ac828c0ac40f"
+      },
+      {
+        "path": "chinatravel/agent/nesy_agent/prompts/__init__.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "064894e931b53eec6b2885093185906b1cc06bc6",
+        "size": 942,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/064894e931b53eec6b2885093185906b1cc06bc6"
+      },
+      {
+        "path": "chinatravel/agent/nesy_agent/prompts/prompts.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6e61fe14a564c91094c78a1ad6462445531bd0e2",
+        "size": 29381,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/6e61fe14a564c91094c78a1ad6462445531bd0e2"
+      },
+      {
+        "path": "chinatravel/agent/nesy_agent/prompts/prompts_en.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3e3483aacfe58eeb15b73b2fd3629d88d8744244",
+        "size": 29740,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/3e3483aacfe58eeb15b73b2fd3629d88d8744244"
+      },
+      {
+        "path": "chinatravel/agent/nesy_agent/rule_driven_rec.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fc7b48c802a0cb9288c7442728dc3a16ae38a4d3",
+        "size": 14058,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/fc7b48c802a0cb9288c7442728dc3a16ae38a4d3"
+      },
+      {
+        "path": "chinatravel/agent/nesy_agent/utils.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "8475b87170a7b0e9a7db69f895e549e76713e278",
+        "size": 3735,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/8475b87170a7b0e9a7db69f895e549e76713e278"
+      },
+      {
+        "path": "chinatravel/agent/nesy_verifier",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "677a1d4075d3c8ddea38b8fcb267f8bdbbba5b49",
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/trees/677a1d4075d3c8ddea38b8fcb267f8bdbbba5b49"
+      },
+      {
+        "path": "chinatravel/agent/nesy_verifier/__init__.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a36de6d9531add2d18aa36cbb8bd93f77e6d2b5b",
+        "size": 240,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/a36de6d9531add2d18aa36cbb8bd93f77e6d2b5b"
+      },
+      {
+        "path": "chinatravel/agent/nesy_verifier/llm_modulo.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f87b7ab397bb15afd1dca70cd9f565f48c56a6ba",
+        "size": 35072,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/f87b7ab397bb15afd1dca70cd9f565f48c56a6ba"
+      },
+      {
+        "path": "chinatravel/agent/nesy_verifier/prompts",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "d057f294e524e0e8a91fdb37c3fe7be72baea1f9",
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/trees/d057f294e524e0e8a91fdb37c3fe7be72baea1f9"
+      },
+      {
+        "path": "chinatravel/agent/nesy_verifier/prompts/llm_modulo.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "def6bf932adce1d9644710575218c51461fff344",
+        "size": 14295,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/def6bf932adce1d9644710575218c51461fff344"
+      },
+      {
+        "path": "chinatravel/agent/nesy_verifier/prompts/poi_selection.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "455c5f07afc8b9ae5cf60fd272aac82c15cb9093",
+        "size": 9058,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/455c5f07afc8b9ae5cf60fd272aac82c15cb9093"
+      },
+      {
+        "path": "chinatravel/agent/nesy_verifier/verifier",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "2693becffde2048d7a25d765f128ef4d9795a1d3",
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/trees/2693becffde2048d7a25d765f128ef4d9795a1d3"
+      },
+      {
+        "path": "chinatravel/agent/nesy_verifier/verifier/commonsense_constraint_nl.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d1075fdac6bb2fc7b023eadf10eb625c4708f07f",
+        "size": 47984,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/d1075fdac6bb2fc7b023eadf10eb625c4708f07f"
+      },
+      {
+        "path": "chinatravel/agent/nesy_verifier/verifier/personal_constraint_nl.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b4b12f88d982fc7edf1a1140cf9f37e867b2c690",
+        "size": 1247,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/b4b12f88d982fc7edf1a1140cf9f37e867b2c690"
+      },
+      {
+        "path": "chinatravel/agent/pure_neuro_agent",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "11c534a681f6f14fe95009ad4e7a6f99b12436e0",
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/trees/11c534a681f6f14fe95009ad4e7a6f99b12436e0"
+      },
+      {
+        "path": "chinatravel/agent/pure_neuro_agent/__init__.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "9c25749c6d7528b468abb20eda22655e9c7e6ca0",
+        "size": 291,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/9c25749c6d7528b468abb20eda22655e9c7e6ca0"
+      },
+      {
+        "path": "chinatravel/agent/pure_neuro_agent/prompts",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "636bd7d27352e872ce3ba920ef097fd75b4433c2",
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/trees/636bd7d27352e872ce3ba920ef097fd75b4433c2"
+      },
+      {
+        "path": "chinatravel/agent/pure_neuro_agent/prompts/__init__.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "93bb5c58e3eec041c8975d881746c484c210194e",
+        "size": 422,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/93bb5c58e3eec041c8975d881746c484c210194e"
+      },
+      {
+        "path": "chinatravel/agent/pure_neuro_agent/prompts/examples.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "50070519e9fce6d275d0a1afac28e3401c9494d3",
+        "size": 60914,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/50070519e9fce6d275d0a1afac28e3401c9494d3"
+      },
+      {
+        "path": "chinatravel/agent/pure_neuro_agent/prompts/examples_en.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b29ceaaf18e073e64b2c1a0cf180c1658b9ce4e4",
+        "size": 50917,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/b29ceaaf18e073e64b2c1a0cf180c1658b9ce4e4"
+      },
+      {
+        "path": "chinatravel/agent/pure_neuro_agent/prompts/output_schema.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "eb27f1b57e3b4acfd029f339655f2c5c464f4af5",
+        "size": 4722,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/eb27f1b57e3b4acfd029f339655f2c5c464f4af5"
+      },
+      {
+        "path": "chinatravel/agent/pure_neuro_agent/prompts/plan.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "0e97243693822d57f061bd621321af4782f22a5a",
+        "size": 19485,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/0e97243693822d57f061bd621321af4782f22a5a"
+      },
+      {
+        "path": "chinatravel/agent/pure_neuro_agent/prompts/plan_en.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d5ece862c939c0d7127056ba13d9bd66eaaf737c",
+        "size": 21170,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/d5ece862c939c0d7127056ba13d9bd66eaaf737c"
+      },
+      {
+        "path": "chinatravel/agent/pure_neuro_agent/prompts/prompts.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2df34490c9497233c9a9be663486fdd08883b917",
+        "size": 27106,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/2df34490c9497233c9a9be663486fdd08883b917"
+      },
+      {
+        "path": "chinatravel/agent/pure_neuro_agent/prompts/prompts_en.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e01ef2a64b1e91a41d12a94b11a00d0425a9aecd",
+        "size": 11251,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/e01ef2a64b1e91a41d12a94b11a00d0425a9aecd"
+      },
+      {
+        "path": "chinatravel/agent/pure_neuro_agent/prompts/query.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d63be5030f410ff2bd7c4edbd6daff96c3c74339",
+        "size": 615,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/d63be5030f410ff2bd7c4edbd6daff96c3c74339"
+      },
+      {
+        "path": "chinatravel/agent/pure_neuro_agent/prompts/query_en.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "690df8c5bd988f7a3aaef11da64a59284f0b7cdc",
+        "size": 285,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/690df8c5bd988f7a3aaef11da64a59284f0b7cdc"
+      },
+      {
+        "path": "chinatravel/agent/pure_neuro_agent/pure_neuro_agent.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "1cddd8459886491b1b316335090de50d66fe0e17",
+        "size": 7117,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/1cddd8459886491b1b316335090de50d66fe0e17"
+      },
+      {
+        "path": "chinatravel/agent/tpc_agent",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "25af541de6f61773121218a0843389a61c73b49d",
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/trees/25af541de6f61773121218a0843389a61c73b49d"
+      },
+      {
+        "path": "chinatravel/agent/tpc_agent/tpc_agent.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "acc2aaee219cec901738836dc0f9fb332159110c",
+        "size": 430,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/acc2aaee219cec901738836dc0f9fb332159110c"
+      },
+      {
+        "path": "chinatravel/agent/utils.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "48d2cafa22fac89948b43f674befea4a99193769",
+        "size": 1695,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/48d2cafa22fac89948b43f674befea4a99193769"
+      },
+      {
+        "path": "chinatravel/data",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "a3f9fb45b7387008cab83dc7e43d3b297d1b24a6",
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/trees/a3f9fb45b7387008cab83dc7e43d3b297d1b24a6"
+      },
+      {
+        "path": "chinatravel/data/load_datasets.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6f1c58d82ed737f0ce06db377788ccead02c4949",
+        "size": 7360,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/6f1c58d82ed737f0ce06db377788ccead02c4949"
+      },
+      {
+        "path": "chinatravel/environment",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "0e0c485574a3c8615759b78b605f1e6dcba21e08",
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/trees/0e0c485574a3c8615759b78b605f1e6dcba21e08"
+      },
+      {
+        "path": "chinatravel/environment/__init__.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+        "size": 0,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "chinatravel/environment/concept_labels.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c9c78283fa3b9252355b5d4d7c6e625caa777b27",
+        "size": 1734,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/c9c78283fa3b9252355b5d4d7c6e625caa777b27"
+      },
+      {
+        "path": "chinatravel/environment/language.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f1b6f1cadcce14cae6e1f3087ef2abcc2ab09cec",
+        "size": 1258,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/f1b6f1cadcce14cae6e1f3087ef2abcc2ab09cec"
+      },
+      {
+        "path": "chinatravel/environment/readme.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "afdfa1766417db2004c7e989b51068448176c161",
+        "size": 11630,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/afdfa1766417db2004c7e989b51068448176c161"
+      },
+      {
+        "path": "chinatravel/environment/tools",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "73bd4468c9d53a653b944d9e5524a70ef1b746c8",
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/trees/73bd4468c9d53a653b944d9e5524a70ef1b746c8"
+      },
+      {
+        "path": "chinatravel/environment/tools/__init__.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "be2ea3349916f601b4a4afa819ae069fc2db758a",
+        "size": 412,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/be2ea3349916f601b4a4afa819ae069fc2db758a"
+      },
+      {
+        "path": "chinatravel/environment/tools/accommodations",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "a70e72e9b849135249db0b41b3594be50fa45f3d",
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/trees/a70e72e9b849135249db0b41b3594be50fa45f3d"
+      },
+      {
+        "path": "chinatravel/environment/tools/accommodations/apis.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "5e5917aa433bd9b5b70cd20877e5665e968952e2",
+        "size": 3213,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/5e5917aa433bd9b5b70cd20877e5665e968952e2"
+      },
+      {
+        "path": "chinatravel/environment/tools/attractions",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "6158ef9ecb8399002c525adc88e6086418ffad52",
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/trees/6158ef9ecb8399002c525adc88e6086418ffad52"
+      },
+      {
+        "path": "chinatravel/environment/tools/attractions/apis.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "0ee2050f0d5d53c60d5a66e815814562f6cd6a75",
+        "size": 4130,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/0ee2050f0d5d53c60d5a66e815814562f6cd6a75"
+      },
+      {
+        "path": "chinatravel/environment/tools/intercity_transport",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "0d61667eca92cc8908bee9b5da1e874f6e522929",
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/trees/0d61667eca92cc8908bee9b5da1e874f6e522929"
+      },
+      {
+        "path": "chinatravel/environment/tools/intercity_transport/apis.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a20f7ee363e68e4a64df62fd7cadb1baf71e320c",
+        "size": 5361,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/a20f7ee363e68e4a64df62fd7cadb1baf71e320c"
+      },
+      {
+        "path": "chinatravel/environment/tools/poi",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "1780c264cba66a706fe8edbef5704ff90513b107",
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/trees/1780c264cba66a706fe8edbef5704ff90513b107"
+      },
+      {
+        "path": "chinatravel/environment/tools/poi/apis.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3268928753baf2fcb925f42e69fb1c8c88011875",
+        "size": 2020,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/3268928753baf2fcb925f42e69fb1c8c88011875"
+      },
+      {
+        "path": "chinatravel/environment/tools/restaurants",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "1b895fc131b54cbe0e5d639564430018f6d59dcd",
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/trees/1b895fc131b54cbe0e5d639564430018f6d59dcd"
+      },
+      {
+        "path": "chinatravel/environment/tools/restaurants/apis.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b0e1a5cd4baf1ca8ab941df9ad7a6f6143c79c59",
+        "size": 3813,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/b0e1a5cd4baf1ca8ab941df9ad7a6f6143c79c59"
+      },
+      {
+        "path": "chinatravel/environment/tools/transportation",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "77cc44f7feb15f51c7f65661042ef7b2acf45960",
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/trees/77cc44f7feb15f51c7f65661042ef7b2acf45960"
+      },
+      {
+        "path": "chinatravel/environment/tools/transportation/apis.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "5907a61c14f0a92f66d35bdadf5fb5815fe73def",
+        "size": 12365,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/5907a61c14f0a92f66d35bdadf5fb5815fe73def"
+      },
+      {
+        "path": "chinatravel/environment/world_env.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "248c6ad42e5535d9b7957fe4e779edcfd8e852c8",
+        "size": 21783,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/248c6ad42e5535d9b7957fe4e779edcfd8e852c8"
+      },
+      {
+        "path": "chinatravel/evaluation",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "cdf4efc0d26a1535c6f4f5d92aef23274a1ac50a",
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/trees/cdf4efc0d26a1535c6f4f5d92aef23274a1ac50a"
+      },
+      {
+        "path": "chinatravel/evaluation/__init__.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+        "size": 0,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "chinatravel/evaluation/commonsense_constraint.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "548d6c6d5724903668fcac4e9a708c9435bcb445",
+        "size": 5445,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/548d6c6d5724903668fcac4e9a708c9435bcb445"
+      },
+      {
+        "path": "chinatravel/evaluation/default_splits",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "3d34fbd7be3d551ca7a227a855282bcc398fa9de",
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/trees/3d34fbd7be3d551ca7a227a855282bcc398fa9de"
+      },
+      {
+        "path": "chinatravel/evaluation/default_splits/easy.txt",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "19a15cac85928cb802aa5a42a3afd9d0ecd119f8",
+        "size": 6600,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/19a15cac85928cb802aa5a42a3afd9d0ecd119f8"
+      },
+      {
+        "path": "chinatravel/evaluation/default_splits/human.txt",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2027d507154961dac6830108990164f7dc992797",
+        "size": 3388,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/2027d507154961dac6830108990164f7dc992797"
+      },
+      {
+        "path": "chinatravel/evaluation/default_splits/human1000.txt",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a0593b8f31221e4434ecded97d8b9547d1667c0a",
+        "size": 20999,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/a0593b8f31221e4434ecded97d8b9547d1667c0a"
+      },
+      {
+        "path": "chinatravel/evaluation/default_splits/medium.txt",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c3d69e3bf7a233e37a7924d119bb08782e84cb2f",
+        "size": 3299,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/c3d69e3bf7a233e37a7924d119bb08782e84cb2f"
+      },
+      {
+        "path": "chinatravel/evaluation/default_splits/p0base50.txt",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b7937a5dff8585302dad90e19d7fd571ae48202e",
+        "size": 1200,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/b7937a5dff8585302dad90e19d7fd571ae48202e"
+      },
+      {
+        "path": "chinatravel/evaluation/default_splits/p1base50.txt",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6bb43e0db07ecc33f08cc7bb4d11feee8fa2738b",
+        "size": 1200,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/6bb43e0db07ecc33f08cc7bb4d11feee8fa2738b"
+      },
+      {
+        "path": "chinatravel/evaluation/default_splits/p2base50.txt",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3af0720ba9e1560c95b7cd7bb8bc074bd26fbc2b",
+        "size": 1200,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/3af0720ba9e1560c95b7cd7bb8bc074bd26fbc2b"
+      },
+      {
+        "path": "chinatravel/evaluation/default_splits/p3base50.txt",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "39cf4cfbe1b818b51fc49de1a35abbe091baef7f",
+        "size": 1200,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/39cf4cfbe1b818b51fc49de1a35abbe091baef7f"
+      },
+      {
+        "path": "chinatravel/evaluation/default_splits/p4base50.txt",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "755224b8347db59e5ccecd3f39bd887d33675908",
+        "size": 1200,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/755224b8347db59e5ccecd3f39bd887d33675908"
+      },
+      {
+        "path": "chinatravel/evaluation/default_splits/p5base50.txt",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fc730a083f9dd549b73e4d4a206422101ee1813f",
+        "size": 1200,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/fc730a083f9dd549b73e4d4a206422101ee1813f"
+      },
+      {
+        "path": "chinatravel/evaluation/default_splits/preference_base50.txt",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fe1715d29c4a7f06003ab9f0b2df1d7b31231b7a",
+        "size": 1100,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/fe1715d29c4a7f06003ab9f0b2df1d7b31231b7a"
+      },
+      {
+        "path": "chinatravel/evaluation/hard_constraint.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "999cd362ef19e609abcab7e1159248c32fed7365",
+        "size": 7961,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/999cd362ef19e609abcab7e1159248c32fed7365"
+      },
+      {
+        "path": "chinatravel/evaluation/output_schema.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "48844432a74ec4c7dcb5a676ac561a016f4381d9",
+        "size": 5471,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/48844432a74ec4c7dcb5a676ac561a016f4381d9"
+      },
+      {
+        "path": "chinatravel/evaluation/preference.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "0e6ef517860e220845dfa23f78d380877e822346",
+        "size": 17297,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/0e6ef517860e220845dfa23f78d380877e822346"
+      },
+      {
+        "path": "chinatravel/evaluation/rank.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "439937e877de2b414d88981b2866fd97147bc678",
+        "size": 9756,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/439937e877de2b414d88981b2866fd97147bc678"
+      },
+      {
+        "path": "chinatravel/evaluation/schema_constraint.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "92a92222a048264b6e94ed18aba24941c1e4d712",
+        "size": 3633,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/92a92222a048264b6e94ed18aba24941c1e4d712"
+      },
+      {
+        "path": "chinatravel/evaluation/utils.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ffcc6803f1869b54f050001bab104032c467251c",
+        "size": 2867,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/ffcc6803f1869b54f050001bab104032c467251c"
+      },
+      {
+        "path": "chinatravel/json_utils.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "04cf220e7bc76f089e1c8b969d86df98dcbd68be",
+        "size": 332,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/04cf220e7bc76f089e1c8b969d86df98dcbd68be"
+      },
+      {
+        "path": "chinatravel/symbol_verification",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "99c5fb0efe7560fbd51e772a0a166d88df8a8480",
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/trees/99c5fb0efe7560fbd51e772a0a166d88df8a8480"
+      },
+      {
+        "path": "chinatravel/symbol_verification/commonsense_constraint.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d245602348f2e9c1e9c92e572d85d632f6141bf5",
+        "size": 68958,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/d245602348f2e9c1e9c92e572d85d632f6141bf5"
+      },
+      {
+        "path": "chinatravel/symbol_verification/concept_func.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a271aae992d0f7ea427c753c173fb7e63fa09d16",
+        "size": 9575,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/a271aae992d0f7ea427c753c173fb7e63fa09d16"
+      },
+      {
+        "path": "chinatravel/symbol_verification/dsl.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "9f17e06782cc6fe3e47fbb2118f130a00054b7d4",
+        "size": 9087,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/9f17e06782cc6fe3e47fbb2118f130a00054b7d4"
+      },
+      {
+        "path": "chinatravel/symbol_verification/hard_constraint.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ac7dbc340a95087ed41ad80ac3a2d27d79f625b6",
+        "size": 17897,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/ac7dbc340a95087ed41ad80ac3a2d27d79f625b6"
+      },
+      {
+        "path": "chinatravel/symbol_verification/preference.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a92d2e6bf2eff02e1e93097bc24fa45e501c17af",
+        "size": 1878,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/a92d2e6bf2eff02e1e93097bc24fa45e501c17af"
+      },
+      {
+        "path": "chinatravel/symbol_verification/readme.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "bf2031107b6e45fad794280b5c5211d216a696ff",
+        "size": 8352,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/bf2031107b6e45fad794280b5c5211d216a696ff"
+      },
+      {
+        "path": "docs",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "f05942d0bac2d5778c4e9375d349d281d452c59f",
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/trees/f05942d0bac2d5778c4e9375d349d281d452c59f"
+      },
+      {
+        "path": "docs/RELEASE_VALIDATION.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d4dde4a4941f9588aa63da583cd54a02e1a4ccff",
+        "size": 3505,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/d4dde4a4941f9588aa63da583cd54a02e1a4ccff"
+      },
+      {
+        "path": "eval_exp.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "975ada7c97c4e88eb95ec97fd4e0042a6f0372c7",
+        "size": 7753,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/975ada7c97c4e88eb95ec97fd4e0042a6f0372c7"
+      },
+      {
+        "path": "eval_tpc.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "427e945b59f0c2d0d9cdd9901ed26c85fa0928d0",
+        "size": 7192,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/427e945b59f0c2d0d9cdd9901ed26c85fa0928d0"
+      },
+      {
+        "path": "eval_with_oracle.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "61814560c226cab0916050aec2b02454538a155f",
+        "size": 1214,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/61814560c226cab0916050aec2b02454538a155f"
+      },
+      {
+        "path": "images",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "0fcb1eddb5b3d4820d995ce48833193187810a0d",
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/trees/0fcb1eddb5b3d4820d995ce48833193187810a0d"
+      },
+      {
+        "path": "images/overview.png",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6fb97dc2bfa472f86b2efcb281629d3e4855b463",
+        "size": 631713,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/6fb97dc2bfa472f86b2efcb281629d3e4855b463"
+      },
+      {
+        "path": "pyproject.toml",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "308eb836f9869945fbd7a5b481217cdf6daa337d",
+        "size": 397,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/308eb836f9869945fbd7a5b481217cdf6daa337d"
+      },
+      {
+        "path": "requirements.txt",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "71d165d50f2ca24b3bad2096a9f3540802c72430",
+        "size": 183,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/71d165d50f2ca24b3bad2096a9f3540802c72430"
+      },
+      {
+        "path": "run_exp.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3ed80d6a64916268af7474e148db08bf04734f6d",
+        "size": 4766,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/3ed80d6a64916268af7474e148db08bf04734f6d"
+      },
+      {
+        "path": "run_tpc.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "cc3c1ab0a4a12e4b4413323b27495e32bd8d7bb9",
+        "size": 3599,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/cc3c1ab0a4a12e4b4413323b27495e32bd8d7bb9"
+      },
+      {
+        "path": "scripts",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "de3e25ec3494ecd4dafa78fe3edf19a7ad5f4cab",
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/trees/de3e25ec3494ecd4dafa78fe3edf19a7ad5f4cab"
+      },
+      {
+        "path": "scripts/SANDBOX_EXPORT.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "4e8f8df2943e8d5435b671053d18cfe905cdeaa2",
+        "size": 4120,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/4e8f8df2943e8d5435b671053d18cfe905cdeaa2"
+      },
+      {
+        "path": "scripts/TRANSLATION_PIPELINE.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7282d25346ff9ba3da44771a062515c25eda142e",
+        "size": 2447,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/7282d25346ff9ba3da44771a062515c25eda142e"
+      },
+      {
+        "path": "scripts/TRANSLATION_PIPELINE.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "43404ebda253a967c46d3c1afcb2bb23d9ab85dd",
+        "size": 2161,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/43404ebda253a967c46d3c1afcb2bb23d9ab85dd"
+      },
+      {
+        "path": "scripts/apply_phase1_human_adjudication.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b82e476cd8cf1678f8ba0c648f317b69a918d9c7",
+        "size": 13313,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/b82e476cd8cf1678f8ba0c648f317b69a918d9c7"
+      },
+      {
+        "path": "scripts/audit_phase1_translations.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "85a3c933c3485de53d10f37683726f2833dd444c",
+        "size": 41380,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/85a3c933c3485de53d10f37683726f2833dd444c"
+      },
+      {
+        "path": "scripts/build_translation_assets.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "902738bf1b612bd40189a4fc38b30d9604510d66",
+        "size": 28980,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/902738bf1b612bd40189a4fc38b30d9604510d66"
+      },
+      {
+        "path": "scripts/export_fixed_sandbox.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "df9ee5526ea35b948ecb764adc0ab62d11e96a7c",
+        "size": 15002,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/df9ee5526ea35b948ecb764adc0ab62d11e96a7c"
+      },
+      {
+        "path": "scripts/export_hf_sandbox.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "df4a54767d06d77bf4070ee71260ae96d9f0690d",
+        "size": 18765,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/df4a54767d06d77bf4070ee71260ae96d9f0690d"
+      },
+      {
+        "path": "scripts/export_phase1_translation_review.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "750a7c0df6eaeef07e3292ee42cc1305a3841281",
+        "size": 9344,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/750a7c0df6eaeef07e3292ee42cc1305a3841281"
+      },
+      {
+        "path": "scripts/export_phase2_hf.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b8fb282774fa5771b4034b1bd6b3651525842160",
+        "size": 19337,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/b8fb282774fa5771b4034b1bd6b3651525842160"
+      },
+      {
+        "path": "scripts/openai_compatible_api.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3c1ec8aeb92be939bfed6ec4b5b84c4a8ef86fa3",
+        "size": 3352,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/3c1ec8aeb92be939bfed6ec4b5b84c4a8ef86fa3"
+      },
+      {
+        "path": "scripts/reaudit_phase1_translations.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2e4641a0866249e7840fb593cd49e019f7d53fbe",
+        "size": 31932,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/2e4641a0866249e7840fb593cd49e019f7d53fbe"
+      },
+      {
+        "path": "scripts/repair_phase1_translations.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2c528bd8c6ef292b5afe36cc88306d5822c02982",
+        "size": 24268,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/2c528bd8c6ef292b5afe36cc88306d5822c02982"
+      },
+      {
+        "path": "scripts/repair_translated_dsl.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e29aa9175b8ef6c2f88a34b196ba73d78d17bb9d",
+        "size": 3706,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/e29aa9175b8ef6c2f88a34b196ba73d78d17bb9d"
+      },
+      {
+        "path": "synthetic_query_generation",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "7552872158a96c84872137947b6f419c27f0ffea",
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/trees/7552872158a96c84872137947b6f419c27f0ffea"
+      },
+      {
+        "path": "synthetic_query_generation/README.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e1a2a24e14f5c2b7d7ed864c59d717c592bb4593",
+        "size": 11075,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/e1a2a24e14f5c2b7d7ed864c59d717c592bb4593"
+      },
+      {
+        "path": "synthetic_query_generation/README.zh-CN.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "dce383884b39685f78ad001b4343f0841346c641",
+        "size": 5872,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/dce383884b39685f78ad001b4343f0841346c641"
+      },
+      {
+        "path": "synthetic_query_generation/__init__.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "1385a09d6f8c3fb1bcba04a33ddcb581d43a965f",
+        "size": 814,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/1385a09d6f8c3fb1bcba04a33ddcb581d43a965f"
+      },
+      {
+        "path": "synthetic_query_generation/__main__.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a67a1473591276d28780ddd6d32257995d93e451",
+        "size": 145,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/a67a1473591276d28780ddd6d32257995d93e451"
+      },
+      {
+        "path": "synthetic_query_generation/audit.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "5b89e59631c2b0a9c13e6a7c82bb51bb6b6ed36c",
+        "size": 16351,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/5b89e59631c2b0a9c13e6a7c82bb51bb6b6ed36c"
+      },
+      {
+        "path": "synthetic_query_generation/catalog.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7863d6e20e54c5e482d916c0ad1b66eecf6cbf93",
+        "size": 9706,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/7863d6e20e54c5e482d916c0ad1b66eecf6cbf93"
+      },
+      {
+        "path": "synthetic_query_generation/cli.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c523a9a65ac51651c9311f142549e8e5cee67c9f",
+        "size": 11113,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/c523a9a65ac51651c9311f142549e8e5cee67c9f"
+      },
+      {
+        "path": "synthetic_query_generation/constraints.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fdd11bb4723982454b615b167619d95fd3715ec5",
+        "size": 62899,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/fdd11bb4723982454b615b167619d95fd3715ec5"
+      },
+      {
+        "path": "synthetic_query_generation/export_release.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b7828f2f08735bff881750e51f976546b04ee575",
+        "size": 2435,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/b7828f2f08735bff881750e51f976546b04ee575"
+      },
+      {
+        "path": "synthetic_query_generation/models.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2b28604d3d50361d8b660615081929f0d9ad8581",
+        "size": 4938,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/2b28604d3d50361d8b660615081929f0d9ad8581"
+      },
+      {
+        "path": "synthetic_query_generation/pipeline.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "81ed0685ac341006e70d3b263e98540d058e0025",
+        "size": 13899,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/81ed0685ac341006e70d3b263e98540d058e0025"
+      },
+      {
+        "path": "synthetic_query_generation/polish_queries_stub.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "68a9f2b61345fc9b83af5092e9c9671be981640a",
+        "size": 3618,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/68a9f2b61345fc9b83af5092e9c9671be981640a"
+      },
+      {
+        "path": "synthetic_query_generation/release_wording.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "987cc843acd6e9cca8f20fa92d2a45bc39a6aba0",
+        "size": 5884,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/987cc843acd6e9cca8f20fa92d2a45bc39a6aba0"
+      },
+      {
+        "path": "synthetic_query_generation/templates.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2759569a1c1596f6e37cce00ee6ff2a8a847330c",
+        "size": 12788,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/2759569a1c1596f6e37cce00ee6ff2a8a847330c"
+      },
+      {
+        "path": "synthetic_query_generation/utils.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6304664840f3c94e7f0d44202e0aacfd3da4b9eb",
+        "size": 6209,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/6304664840f3c94e7f0d44202e0aacfd3da4b9eb"
+      },
+      {
+        "path": "synthetic_query_generation/validation.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b13669e59b155292ebd2460404b87438c9a350f1",
+        "size": 1825,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/b13669e59b155292ebd2460404b87438c9a350f1"
+      },
+      {
+        "path": "tests",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "7074add7d2cfb73e333cda99c7aeca1afc43e572",
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/trees/7074add7d2cfb73e333cda99c7aeca1afc43e572"
+      },
+      {
+        "path": "tests/test_agent_env_language.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2b71493bb384db4f18f4fc58204df1cbf62785f6",
+        "size": 5084,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/2b71493bb384db4f18f4fc58204df1cbf62785f6"
+      },
+      {
+        "path": "tests/test_agent_runtime_protocols.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "4ef999f2a8c750a0646182a53b9dff977e29e91c",
+        "size": 5234,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/4ef999f2a8c750a0646182a53b9dff977e29e91c"
+      },
+      {
+        "path": "tests/test_concept_normalization_and_transport_helpers.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ebd39abcf9e47d525de727aa49799cf4284e2bde",
+        "size": 3713,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/ebd39abcf9e47d525de727aa49799cf4284e2bde"
+      },
+      {
+        "path": "tests/test_dsl_control_flow.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "1830cb7f2fc178319e9846254d46ca05630541ea",
+        "size": 885,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/1830cb7f2fc178319e9846254d46ca05630541ea"
+      },
+      {
+        "path": "tests/test_evaluator_chronology_and_meals.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f9d03f6e54630b5bdcf8192b084f155d7f990049",
+        "size": 4405,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/f9d03f6e54630b5bdcf8192b084f155d7f990049"
+      },
+      {
+        "path": "tests/test_evaluator_performance_caches.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "58be0f084b863eb346201f3cb339f0465a4a7733",
+        "size": 3055,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/58be0f084b863eb346201f3cb339f0465a4a7733"
+      },
+      {
+        "path": "tests/test_evaluator_scoring_and_grounding.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f821ce9ad10d29046aa8e0f79c7ea281efd6f013",
+        "size": 5643,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/f821ce9ad10d29046aa8e0f79c7ea281efd6f013"
+      },
+      {
+        "path": "tests/test_phase1_translation_reaudit.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f7624db1120546bce33f71c595ea7832a9713721",
+        "size": 12824,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/f7624db1120546bce33f71c595ea7832a9713721"
+      },
+      {
+        "path": "tests/test_phase1_translation_repair.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d3449f22beb2c1af043c8f8e5a65cbcf8fb5c25d",
+        "size": 12575,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/d3449f22beb2c1af043c8f8e5a65cbcf8fb5c25d"
+      },
+      {
+        "path": "tests/test_query_loader_resolution.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3b26723b9172f400343137d907a3b3a84b8669a9",
+        "size": 3154,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/3b26723b9172f400343137d907a3b3a84b8669a9"
+      },
+      {
+        "path": "tests/test_runtime_configuration.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "afa43b18e479b21c1b6e74920422338a9a268ec4",
+        "size": 5000,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/afa43b18e479b21c1b6e74920422338a9a268ec4"
+      },
+      {
+        "path": "tests/test_synthetic_query_constraints.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "11d00e5fd297238542ff9a58f711a1ef91fd91b1",
+        "size": 14622,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/11d00e5fd297238542ff9a58f711a1ef91fd91b1"
+      },
+      {
+        "path": "tests/test_translation_dsl.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7a3c521b46d972bbb2d703c1ce7e73b2cf434aa9",
+        "size": 1694,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/7a3c521b46d972bbb2d703c1ce7e73b2cf434aa9"
+      },
+      {
+        "path": "translation_api_config.example.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d5e73140f9f690d152a367eec994e34220ed45f0",
+        "size": 2038,
+        "url": "https://api.github.com/repos/LAMDA-NeSy/ChinaTravel/git/blobs/d5e73140f9f690d152a367eec994e34220ed45f0"
+      }
+    ],
+    "truncated": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "call_id": "pilot_06_v3::aligned::review_fields",
+  "role": "review_fields",
+  "graph_condition": "aligned",
+  "started_at": "2026-09-09T16:46:30.276058+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. The field-difference report only identifies disagreements; it does not identify the correct answer.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not infer user preference from a route or map.\n\nInstruction:\nGot to visit the library, supermarket, and bank today and be back by 18:00. Make sure supermarket comes before the bank, and focus on the fastest, most efficient route.\n\nCandidate A:\n{\"dependencies\": [[\"supermarket\", \"bank\"]], \"pois\": [\"bank\", \"library\", \"supermarket\"], \"quality_weight\": 0.0, \"time_limit\": 1080}\n\nCandidate B:\n{\"dependencies\": [[\"supermarket\", \"bank\"]], \"pois\": [\"bank\", \"library\", \"supermarket\"], \"quality_weight\": 0.0, \"time_limit\": 1080}\n\nField differences:\n{\"fields\": []}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"library\",\"supermarket\",\"bank\"],\"time_limit\":1080,\"dependencies\":[[\"supermarket\",\"bank\"]],\"quality_weight\":0.0},\"evidence\":{\"pois\":\"visit the library, supermarket, and bank today\",\"time_limit\":\"be back by 18:00\",\"dependencies\":\"supermarket comes before the bank\",\"quality_weight\":\"focus on the fastest, most efficient route\"},\"changes\":[]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library",
+      "supermarket"
+    ],
+    "time_limit": 1080,
+    "dependencies": [
+      [
+        "supermarket",
+        "bank"
+      ]
+    ],
+    "quality_weight": 0.0
+  },
+  "evidence": {
+    "pois": "visit the library, supermarket, and bank today",
+    "time_limit": "be back by 18:00",
+    "dependencies": "supermarket comes before the bank",
+    "quality_weight": "focus on the fastest, most efficient route"
+  },
+  "changes": [],
+  "finished_at": "2026-09-09T16:46:34.485049+00:00",
+  "telemetry": {
+    "call_index": 62,
+    "prompt_sha256": "7eea289587afe5427f950a84123b1a62d6997e589fb5927eaf85275e6dad5da6",
+    "attempts": 1,
+    "latency_seconds": 4.209,
+    "input_chars": 1053,
+    "output_chars": 358,
+    "input_tokens": 307,
+    "output_tokens": 979,
+    "total_tokens": 1286,
+    "usage_source": "provider",
+    "success": true
+  }
+}

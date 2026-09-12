@@ -1,0 +1,17 @@
+{
+  "5%": {
+    "quota_k": 32,
+    "calls_per_req": 2.05,
+    "total_calls": 1312
+  },
+  "10%": {
+    "quota_k": 64,
+    "calls_per_req": 2.1,
+    "total_calls": 1344
+  },
+  "20%": {
+    "quota_k": 128,
+    "calls_per_req": 2.2,
+    "total_calls": 1408
+  }
+}

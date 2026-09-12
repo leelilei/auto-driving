@@ -1,0 +1,116 @@
+{
+  "protocol_version": "darc-v5.1-concurrency-probe-1",
+  "model": "gpt-5.6-luna",
+  "config": {
+    "provider": "xcode",
+    "model": "gpt-5.6-luna",
+    "wire_api": "chat_completions",
+    "base_url": "https://xcode.best",
+    "temperature": 0.0,
+    "timeout": 120,
+    "json_mode": true,
+    "retries": 0,
+    "retry_sleep": 2.0,
+    "sleep": 0.0,
+    "max_concurrency": 1,
+    "omit_temperature": true,
+    "reasoning_effort": null,
+    "max_output_tokens": 100,
+    "stream": false,
+    "service_tier": null,
+    "store": null,
+    "responses_input_mode": "messages",
+    "input_char_limit": null,
+    "transport": "curl",
+    "api_key_env": "XCODE_API_KEY"
+  },
+  "started_at": "2026-09-09T17:48:13.186057+00:00",
+  "levels": [
+    {
+      "concurrency": 4,
+      "planned": 4,
+      "passed": 4,
+      "failed": 0,
+      "wall_seconds": 66.57939016597811,
+      "attempts": [
+        {
+          "index": 0,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":4,\"index\":0}",
+          "latency_seconds": 6.410361042013392,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "b898811562d450fa0407c5440e359fd7a1faf17723a69b9510360ecf5066aac3",
+            "attempts": 1,
+            "latency_seconds": 6.41,
+            "input_chars": 56,
+            "output_chars": 31,
+            "input_tokens": 28,
+            "output_tokens": 20,
+            "total_tokens": 48,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 1,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":4,\"index\":1}",
+          "latency_seconds": 8.762681957974564,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "b321f218c1fd839730f3bf1b76ccffe995bc9ac99629d5eb0b526923c962f1af",
+            "attempts": 1,
+            "latency_seconds": 8.763,
+            "input_chars": 56,
+            "output_chars": 31,
+            "input_tokens": 28,
+            "output_tokens": 20,
+            "total_tokens": 48,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 2,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":4,\"index\":2}",
+          "latency_seconds": 66.5782323749736,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "1dd266410d41dc78b5fe334bf33de0fb5cb9ace6ae89379af5640dc926fb6c31",
+            "attempts": 1,
+            "latency_seconds": 66.578,
+            "input_chars": 56,
+            "output_chars": 31,
+            "input_tokens": 28,
+            "output_tokens": 20,
+            "total_tokens": 48,
+            "usage_source": "provider",
+            "success": true
+          }
+        },
+        {
+          "index": 3,
+          "status": "PASS",
+          "raw_response": "{\"ok\":true,\"level\":4,\"index\":3}",
+          "latency_seconds": 15.504588000010699,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "450d933ad8b9acd96f4d703679e3b6d9d1d6205844d5a7c18d9d9416ba8f4930",
+            "attempts": 1,
+            "latency_seconds": 15.505,
+            "input_chars": 56,
+            "output_chars": 31,
+            "input_tokens": 28,
+            "output_tokens": 20,
+            "total_tokens": 48,
+            "usage_source": "provider",
+            "success": true
+          }
+        }
+      ]
+    }
+  ],
+  "finished_at": "2026-09-09T17:49:19.765986+00:00"
+}

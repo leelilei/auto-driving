@@ -1,0 +1,44 @@
+{
+  "call_id": "pilot_07_v2::time_sensitive::review_fields",
+  "role": "review_fields",
+  "graph_condition": "time_sensitive",
+  "started_at": "2026-09-09T16:38:23.637876+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. The field-difference report only identifies disagreements; it does not identify the correct answer.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not infer user preference from a route or map.\n\nInstruction:\nMake sure to return by 17:00 after visiting the library, pharmacy, and supermarket. Quality is the key objective, so choose top-rated spots even if the route is longer.\n\nCandidate A:\n{\"dependencies\": [], \"pois\": [\"library\", \"pharmacy\", \"supermarket\"], \"quality_weight\": 1.0, \"time_limit\": 1020}\n\nCandidate B:\n{\"dependencies\": [], \"pois\": [\"library\", \"pharmacy\", \"supermarket\"], \"quality_weight\": 1.0, \"time_limit\": 1020}\n\nField differences:\n{\"fields\": []}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"library\",\"pharmacy\",\"supermarket\"],\"time_limit\":1020,\"dependencies\":[],\"quality_weight\":1.0},\"evidence\":{\"pois\":\"library, pharmacy, and supermarket\",\"time_limit\":\"return by 17:00\",\"dependencies\":\"after visiting the library, pharmacy, and supermarket\",\"quality_weight\":\"Quality is the key objective\"},\"changes\":[]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "library",
+      "pharmacy",
+      "supermarket"
+    ],
+    "time_limit": 1020,
+    "dependencies": [],
+    "quality_weight": 1.0
+  },
+  "evidence": {
+    "pois": "library, pharmacy, and supermarket",
+    "time_limit": "return by 17:00",
+    "dependencies": "after visiting the library, pharmacy, and supermarket",
+    "quality_weight": "Quality is the key objective"
+  },
+  "changes": [],
+  "finished_at": "2026-09-09T16:38:30.396057+00:00",
+  "telemetry": {
+    "call_index": 52,
+    "prompt_sha256": "69d4f97b6b14cffe09b6b0a6f86788ad639e6490055b6d323f335d24d72503e6",
+    "attempts": 1,
+    "latency_seconds": 6.758,
+    "input_chars": 1015,
+    "output_chars": 333,
+    "input_tokens": 292,
+    "output_tokens": 1897,
+    "total_tokens": 2189,
+    "usage_source": "provider",
+    "success": true
+  }
+}

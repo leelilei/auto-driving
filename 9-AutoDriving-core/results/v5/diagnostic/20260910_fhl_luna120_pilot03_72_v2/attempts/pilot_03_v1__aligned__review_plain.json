@@ -1,0 +1,29 @@
+{
+  "call_id": "pilot_03_v1::aligned::review_plain",
+  "role": "review_plain",
+  "graph_condition": "aligned",
+  "started_at": "2026-09-10T01:49:56.057929+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. Candidate agreement is not proof of correctness.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not use route efficiency to infer what the user wants.\n\nInstruction:\nPlease stop by the pharmacy and the shopping mall today. Seek a balance between high ratings and efficient travel distance. There is no required sequence between them, so choose whichever order suits you.\n\nCandidate A:\n{\"dependencies\": [], \"pois\": [\"pharmacy\", \"shopping_mall\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nCandidate B:\n{\"dependencies\": [], \"pois\": [\"pharmacy\", \"shopping_mall\"], \"quality_weight\": 0.5, \"time_limit\": null}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"pharmacy\",\"shopping_mall\"],\"time_limit\":\"today\",\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{\"pois\":\"stop by the pharmacy and the shopping mall\",\"time_limit\":\"today\",\"dependencies\":\"There is no required sequence between them\",\"quality_weight\":\"Seek a balance between high ratings and efficient travel distance\"},\"changes\":[\"time_limit\"]}",
+  "status": "SCHEMA_FAILED",
+  "schema_valid": false,
+  "error_type": "ValueError",
+  "error_message": "Deadline must be HH:MM or minutes",
+  "finished_at": "2026-09-10T01:50:27.134155+00:00",
+  "telemetry": {
+    "call_index": 25,
+    "prompt_sha256": "dd3418aa61344e7ff62620711dbe0505f3e9de5eab7a6ed19c4716372c59ec2d",
+    "attempts": 1,
+    "latency_seconds": 31.075,
+    "input_chars": 955,
+    "output_chars": 364,
+    "input_tokens": 226,
+    "output_tokens": 363,
+    "total_tokens": 589,
+    "usage_source": "provider",
+    "success": true
+  }
+}

@@ -1,0 +1,1 @@
+{"status":"PASS","network":"socket connections blocked","score_identical":true,"physical_requests":9,"transport_failures":0,"usage_unknown":0,"provider_input_tokens":13942,"provider_output_tokens":1583}

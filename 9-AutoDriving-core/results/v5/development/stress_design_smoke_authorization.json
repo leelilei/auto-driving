@@ -1,0 +1,10 @@
+{
+  "collection_allowed": true,
+  "scope": "author_constructed_candidate_only_design_smoke",
+  "human_review_complete": false,
+  "formal_experiment_allowed": false,
+  "allowed_phase": "candidates",
+  "allowed_dataset": "data/v5/dev/stress_design_smoke_16.json",
+  "authorized_by": "research_lead_request_to_test_new_design_with_deepseek",
+  "restriction": "A/B candidate calls only; results cannot enter formal experiment or paper"
+}

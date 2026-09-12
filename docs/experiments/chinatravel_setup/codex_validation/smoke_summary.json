@@ -1,0 +1,22 @@
+{
+  "scope": "one development integration smoke, not method effectiveness",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "xcode",
+  "n_cases": 1,
+  "llm_calls": 8,
+  "recorded_token_usage": {
+    "input_tokens": 15152,
+    "output_tokens": 4285,
+    "total_tokens": 19437,
+    "attempts": 8
+  },
+  "usage_unknown": 0,
+  "original_query_in_all_requests": true,
+  "gold_dsl_exact_snippets_detected": [],
+  "stop_reason": "cumulative request character budget; prospective ninth request blocked",
+  "useful_tool_observations": 3,
+  "empty_tool_observations": 2,
+  "invalid_tool_observations": 3,
+  "official_all_pass_rate": 0,
+  "offline_replay_runs": 2
+}

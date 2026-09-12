@@ -1,0 +1,21 @@
+{
+  "model": "claude-haiku-4-5-20251001",
+  "scope": "DEVELOPMENT_ONLY",
+  "levels": [
+    {
+      "concurrency": 1,
+      "wave": 1,
+      "scene_prompt": false,
+      "attempted": 1,
+      "passed": 0,
+      "wall_seconds": 9.976,
+      "median_seconds": 9.973,
+      "max_seconds": 9.973,
+      "statuses": [
+        "HTTP_FAILED"
+      ]
+    }
+  ],
+  "last_passing_probe_level": 0,
+  "smoke": []
+}

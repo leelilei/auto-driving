@@ -1,0 +1,29 @@
+{
+  "call_id": "pilot_08_v1::tradeoff::review_fields",
+  "role": "review_fields",
+  "graph_condition": "tradeoff",
+  "started_at": "2026-09-09T17:33:55.705939+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. The field-difference report only identifies disagreements; it does not identify the correct answer.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not infer user preference from a route or map.\n\nInstruction:\nPlease stop by the library, shopping mall, and supermarket today. Balance good ratings with route efficiency, and ensure you visit the shopping mall before the supermarket.\n\nCandidate A:\n{\"dependencies\": [[\"shopping_mall\", \"supermarket\"]], \"pois\": [\"library\", \"shopping_mall\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nCandidate B:\n{\"dependencies\": [[\"shopping_mall\", \"supermarket\"]], \"pois\": [\"library\", \"shopping_mall\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nField differences:\n{\"fields\": []}\n"
+  },
+  "status": "TRANSPORT_FAILED",
+  "schema_valid": false,
+  "error_type": "RuntimeError",
+  "error_message": "curl request failed: curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to www.fhl.mom:443",
+  "finished_at": "2026-09-09T17:34:00.729409+00:00",
+  "telemetry": {
+    "call_index": 9,
+    "prompt_sha256": "4f3fb2a8efef577b62ac50adb3e1d46a08252d303bbf288966c804dc5c3d038a",
+    "attempts": 1,
+    "latency_seconds": 5.023,
+    "input_chars": 1093,
+    "output_chars": 0,
+    "input_tokens": 274,
+    "output_tokens": 0,
+    "total_tokens": 274,
+    "usage_source": "character_estimate",
+    "success": false,
+    "error": "RuntimeError"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "status": "REPAIR_V1_SCHEMA_COMPLETE",
+  "model_api_calls": 0,
+  "adapter_scope": "room_type numeric-string coercion only",
+  "cases": [
+    {
+      "uid": "e20241028160248698752",
+      "raw_schema_valid": true,
+      "adapted_schema_valid": true,
+      "changes": 0,
+      "invented_values": 0
+    },
+    {
+      "uid": "e20241028160848776495",
+      "raw_schema_valid": false,
+      "adapted_schema_valid": false,
+      "changes": 0,
+      "invented_values": 0
+    },
+    {
+      "uid": "h20241029143455115600",
+      "raw_schema_valid": false,
+      "adapted_schema_valid": true,
+      "changes": 4,
+      "invented_values": 0
+    }
+  ]
+}

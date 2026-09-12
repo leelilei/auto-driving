@@ -1,0 +1,57 @@
+{
+  "call_id": "extra_order_4__darc",
+  "role": "darc",
+  "graph_condition": "tradeoff",
+  "started_at": "2026-09-10T02:52:07.367074+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. The decision-contrast report is diagnostic evidence about consequences; it is not a label and must not override the words of the instruction.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Use the report to locate consequential disagreements, then decide each field from the instruction alone.\n\nInstruction:\nToday, let's visit the library, the shopping mall, and the supermarket. I would like to keep a good balance between visiting well-rated places and having an efficient route. Make sure to stop by the shopping mall before heading to the supermarket.\n\nCandidate A:\n{\"dependencies\": [[\"library\", \"shopping_mall\"], [\"shopping_mall\", \"supermarket\"]], \"pois\": [\"library\", \"shopping_mall\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nCandidate B:\n{\"dependencies\": [[\"shopping_mall\", \"supermarket\"]], \"pois\": [\"library\", \"shopping_mall\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nDecision-contrast report:\n{\"candidate_A\": {\"dependencies\": [[\"library\", \"shopping_mall\"], [\"shopping_mall\", \"supermarket\"]], \"pois\": [\"library\", \"shopping_mall\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}, \"candidate_B\": {\"dependencies\": [[\"shopping_mall\", \"supermarket\"]], \"pois\": [\"library\", \"shopping_mall\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}, \"candidate_evidence\": {\"A\": {}, \"B\": {}}, \"cross_constraints\": {\"route_A_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_A_under_B\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_B\": {\"reasons\": [], \"task_success\": true}}, \"differing_fields\": [\"dependencies\"], \"instruction\": \"Today, let's visit the library, the shopping mall, and the supermarket. I would like to keep a good balance between visiting well-rated places and having an efficient route. Make sure to stop by the shopping mall before heading to the supermarket.\", \"limitations\": [\"The report does not identify the user's true intent.\", \"Both candidates may share the same error.\", \"Single-field swaps do not identify higher-order interactions.\"], \"report_version\": \"darc-v5.1-contrast-2\", \"routes\": {\"A\": {\"arrival_minutes\": 726, \"average_quality\": 0.9, \"categories\": [\"library\", \"shopping_mall\", \"supermarket\"], \"coverage_count\": 3, \"distance_km\": 20.441, \"duration_minutes\": 185.9, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"library_2\", \"shopping_mall_2\", \"supermarket_2\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": 0.28300601790843904}, \"B\": {\"arrival_minutes\": 726, \"average_quality\": 0.9, \"categories\": [\"library\", \"shopping_mall\", \"supermarket\"], \"coverage_count\": 3, \"distance_km\": 20.441, \"duration_minutes\": 185.9, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"library_2\", \"shopping_mall_2\", \"supermarket_2\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": 0.28300601790843904}}, \"single_field_swaps\": [{\"base\": \"A\", \"field_from_other\": \"dependencies\", \"hybrid_intent\": {\"dependencies\": [[\"shopping_mall\", \"supermarket\"]], \"pois\": [\"library\", \"shopping_mall\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}, \"route\": {\"arrival_minutes\": 726, \"average_quality\": 0.9, \"categories\": [\"library\", \"shopping_mall\", \"supermarket\"], \"coverage_count\": 3, \"distance_km\": 20.441, \"duration_minutes\": 185.9, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"library_2\", \"shopping_mall_2\", \"supermarket_2\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": 0.28300601790843904}}, {\"base\": \"B\", \"field_from_other\": \"dependencies\", \"hybrid_intent\": {\"dependencies\": [[\"library\", \"shopping_mall\"], [\"shopping_mall\", \"supermarket\"]], \"pois\": [\"library\", \"shopping_mall\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}, \"route\": {\"arrival_minutes\": 726, \"average_quality\": 0.9, \"categories\": [\"library\", \"shopping_mall\", \"supermarket\"], \"coverage_count\": 3, \"distance_km\": 20.441, \"duration_minutes\": 185.9, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"library_2\", \"shopping_mall_2\", \"supermarket_2\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": 0.28300601790843904}}]}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"library\",\"shopping_mall\",\"supermarket\"],\"time_limit\":null,\"dependencies\":[[\"shopping_mall\",\"supermarket\"]],\"quality_weight\":0.5},\"evidence\":{\"pois\":[\"library, the shopping mall, and the supermarket\"],\"dependencies\":[\"Make sure to stop by the shopping mall before heading to the supermarket.\"],\"quality_weight\":[\"keep a good balance between visiting well-rated places and having an efficient route\"],\"time_limit\":[]},\"changes\":[\"dependencies\"]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "library",
+      "shopping_mall",
+      "supermarket"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "shopping_mall",
+        "supermarket"
+      ]
+    ],
+    "quality_weight": 0.5
+  },
+  "evidence": {
+    "pois": [
+      "library, the shopping mall, and the supermarket"
+    ],
+    "dependencies": [
+      "Make sure to stop by the shopping mall before heading to the supermarket."
+    ],
+    "quality_weight": [
+      "keep a good balance between visiting well-rated places and having an efficient route"
+    ],
+    "time_limit": []
+  },
+  "changes": [
+    "dependencies"
+  ],
+  "finished_at": "2026-09-10T02:52:15.229818+00:00",
+  "telemetry": {
+    "call_index": 1,
+    "prompt_sha256": "441650c3656127269a3c47cdcb84869666ac0881b83ced73a67fa2b8798b1ba5",
+    "attempts": 1,
+    "latency_seconds": 7.863,
+    "input_chars": 4440,
+    "output_chars": 463,
+    "input_tokens": 1358,
+    "output_tokens": 1646,
+    "total_tokens": 3004,
+    "usage_source": "provider",
+    "success": true
+  }
+}

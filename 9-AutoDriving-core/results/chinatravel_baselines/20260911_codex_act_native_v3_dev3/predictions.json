@@ -1,0 +1,165 @@
+{
+  "e20241028160248698752": {
+    "itinerary": [
+      {
+        "activities": [
+          {
+            "cost": 65.95,
+            "price": 65.95,
+            "TrainID": "K335",
+            "transports": [],
+            "type": "train",
+            "start_time": "05:26",
+            "end_time": "07:27"
+          },
+          {
+            "transports": [
+              {
+                "end_time": "07:45",
+                "price": 0,
+                "cost": 0,
+                "distance": 0.5,
+                "start": "杭州南站",
+                "end": "杭州站",
+                "mode": "walk",
+                "start_time": "07:27"
+              }
+            ],
+            "type": "breakfast",
+            "start_time": "07:45",
+            "end_time": "08:30",
+            "cost": 0,
+            "price": 0,
+            "position": "杭州站"
+          },
+          {
+            "end_time": "10:15",
+            "cost": 0,
+            "price": 0,
+            "position": "灵隐寺",
+            "transports": [
+              {
+                "start_time": "08:30",
+                "end_time": "08:45",
+                "price": 40,
+                "cost": 40,
+                "distance": 12,
+                "start": "杭州站",
+                "end": "灵隐寺",
+                "mode": "taxi"
+              }
+            ],
+            "type": "attraction",
+            "start_time": "08:45"
+          },
+          {
+            "position": "西湖风景名胜区",
+            "transports": [
+              {
+                "cost": 0,
+                "distance": 1.2,
+                "start": "灵隐寺",
+                "end": "西湖风景名胜区",
+                "mode": "walk",
+                "start_time": "10:15",
+                "end_time": "10:30",
+                "price": 0
+              }
+            ],
+            "type": "attraction",
+            "start_time": "10:30",
+            "end_time": "12:30",
+            "cost": 0,
+            "price": 0
+          },
+          {
+            "cost": 138,
+            "price": 138,
+            "position": "茶人村·只此江南",
+            "transports": [
+              {
+                "start": "西湖风景名胜区",
+                "end": "茶人村·只此江南",
+                "mode": "walk",
+                "start_time": "12:30",
+                "end_time": "12:45",
+                "price": 0,
+                "cost": 0,
+                "distance": 0.8
+              }
+            ],
+            "type": "lunch",
+            "start_time": "12:30",
+            "end_time": "13:45"
+          },
+          {
+            "price": 55,
+            "position": "西湖游船",
+            "transports": [
+              {
+                "mode": "walk",
+                "start_time": "13:45",
+                "end_time": "14:00",
+                "price": 0,
+                "cost": 0,
+                "distance": 0.5,
+                "start": "茶人村·只此江南",
+                "end": "西湖游船"
+              }
+            ],
+            "type": "attraction",
+            "start_time": "14:00",
+            "end_time": "17:00",
+            "cost": 55
+          },
+          {
+            "price": 220,
+            "position": "杭州西溪喜来登度假大酒店·采悦轩中餐厅",
+            "transports": [
+              {
+                "mode": "taxi",
+                "start_time": "17:00",
+                "end_time": "17:30",
+                "price": 50,
+                "cost": 50,
+                "distance": 15,
+                "start": "西湖游船",
+                "end": "杭州西溪喜来登度假大酒店·采悦轩中餐厅"
+              }
+            ],
+            "type": "dinner",
+            "start_time": "17:30",
+            "end_time": "19:00",
+            "cost": 220
+          },
+          {
+            "end_time": "23:25",
+            "cost": 65.95,
+            "price": 65.95,
+            "TrainID": "K1187",
+            "transports": [
+              {
+                "mode": "taxi",
+                "start_time": "19:00",
+                "end_time": "19:45",
+                "price": 45,
+                "cost": 45,
+                "distance": 10,
+                "start": "杭州西溪喜来登度假大酒店·采悦轩中餐厅",
+                "end": "杭州南站"
+              }
+            ],
+            "type": "train",
+            "start_time": "21:00"
+          }
+        ],
+        "day": 1
+      }
+    ],
+    "people_number": 1,
+    "start_city": "上海",
+    "target_city": "杭州"
+  },
+  "e20241028160842228543": {},
+  "h20241029143447759844": {}
+}

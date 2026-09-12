@@ -1,0 +1,72 @@
+{
+  "call_id": "reversed_order_2__r1__full",
+  "role": "full",
+  "graph_condition": "tradeoff",
+  "started_at": "2026-09-10T03:02:35.734562+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. Both candidates may be wrong, including when they agree. Supplementary information describes candidate differences or planning consequences; it does not identify the correct intent. Resolve every field from the instruction. Do not infer user preference from a route or map.\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised.\n\nInstruction:\nMake sure to visit the supermarket and the pharmacy today. Balance your stops to maintain both reasonable ratings and efficiency along the route. Start your trip at the supermarket before heading to the pharmacy.\n\nCandidate A:\n{\"dependencies\": [[\"pharmacy\", \"supermarket\"]], \"pois\": [\"pharmacy\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nCandidate B:\n{\"dependencies\": [[\"supermarket\", \"pharmacy\"]], \"pois\": [\"pharmacy\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nSupplementary information:\n{\"cross_constraints\": {\"route_A_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_A_under_B\": {\"reasons\": [\"candidate_dependency_violation\"], \"task_success\": false}, \"route_B_under_A\": {\"reasons\": [\"candidate_dependency_violation\"], \"task_success\": false}, \"route_B_under_B\": {\"reasons\": [], \"task_success\": true}}, \"differing_fields\": [\"dependencies\"], \"limitations\": [\"The report does not identify the user's true intent.\", \"Both candidates may share the same error.\", \"Single-field swaps do not identify higher-order interactions.\"], \"routes\": {\"A\": {\"arrival_minutes\": 629, \"average_quality\": 0.9, \"categories\": [\"pharmacy\", \"supermarket\"], \"coverage_count\": 2, \"distance_km\": 17.043, \"duration_minutes\": 89.1, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"pharmacy_2\", \"supermarket_2\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": 0.3107691137809123}, \"B\": {\"arrival_minutes\": 629, \"average_quality\": 0.9, \"categories\": [\"supermarket\", \"pharmacy\"], \"coverage_count\": 2, \"distance_km\": 17.043, \"duration_minutes\": 89.1, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"supermarket_2\", \"pharmacy_2\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": 0.3107691137809123}}, \"single_field_swaps\": [{\"base\": \"A\", \"field_from_other\": \"dependencies\", \"hybrid_intent\": {\"dependencies\": [[\"supermarket\", \"pharmacy\"]], \"pois\": [\"pharmacy\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}, \"route\": {\"arrival_minutes\": 629, \"average_quality\": 0.9, \"categories\": [\"supermarket\", \"pharmacy\"], \"coverage_count\": 2, \"distance_km\": 17.043, \"duration_minutes\": 89.1, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"supermarket_2\", \"pharmacy_2\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": 0.3107691137809123}}, {\"base\": \"B\", \"field_from_other\": \"dependencies\", \"hybrid_intent\": {\"dependencies\": [[\"pharmacy\", \"supermarket\"]], \"pois\": [\"pharmacy\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}, \"route\": {\"arrival_minutes\": 629, \"average_quality\": 0.9, \"categories\": [\"pharmacy\", \"supermarket\"], \"coverage_count\": 2, \"distance_km\": 17.043, \"duration_minutes\": 89.1, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"pharmacy_2\", \"supermarket_2\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": 0.3107691137809123}}]}"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"pharmacy\",\"supermarket\"],\"time_limit\":null,\"dependencies\":[[\"supermarket\",\"pharmacy\"]],\"quality_weight\":0.5},\"evidence\":{\"pois\":[\"supermarket and the pharmacy\"],\"dependencies\":[\"Start your trip at the supermarket before heading to the pharmacy\"],\"quality_weight\":[\"Balance your stops to maintain both reasonable ratings and efficiency\"],\"time_limit\":[\"today\"]},\"changes\":[{\"field\":\"dependencies\",\"from\":[[\"pharmacy\",\"supermarket\"]],\"to\":[[\"supermarket\",\"pharmacy\"]]}]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "pharmacy",
+      "supermarket"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "supermarket",
+        "pharmacy"
+      ]
+    ],
+    "quality_weight": 0.5
+  },
+  "evidence": {
+    "pois": [
+      "supermarket and the pharmacy"
+    ],
+    "dependencies": [
+      "Start your trip at the supermarket before heading to the pharmacy"
+    ],
+    "quality_weight": [
+      "Balance your stops to maintain both reasonable ratings and efficiency"
+    ],
+    "time_limit": [
+      "today"
+    ]
+  },
+  "changes": [
+    {
+      "field": "dependencies",
+      "from": [
+        [
+          "pharmacy",
+          "supermarket"
+        ]
+      ],
+      "to": [
+        [
+          "supermarket",
+          "pharmacy"
+        ]
+      ]
+    }
+  ],
+  "finished_at": "2026-09-10T03:03:28.998112+00:00",
+  "telemetry": {
+    "call_index": 1,
+    "prompt_sha256": "991edd765642081e4550571bdd5dfd713b6e8a9d59d7c586b1c8f2219594f83a",
+    "attempts": 1,
+    "latency_seconds": 53.263,
+    "input_chars": 3498,
+    "output_chars": 488,
+    "input_tokens": 1068,
+    "output_tokens": 11392,
+    "total_tokens": 12460,
+    "usage_source": "provider",
+    "success": true
+  }
+}

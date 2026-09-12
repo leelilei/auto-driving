@@ -1,0 +1,42 @@
+{
+  "call_id": "pilot_04_v1::A3",
+  "role": "A3",
+  "graph_condition": null,
+  "started_at": "2026-09-10T01:49:22.766950+00:00",
+  "request": {
+    "system": "You extract route-planning intent from the user's instruction.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nUse only the instruction. Do not invent constraints. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Make sure to visit the bank and the library today, returning by 18:00. It is crucial to prioritize an efficient, quick route for these stops."
+  },
+  "raw_response": "{\"pois\":[\"bank\",\"library\"],\"time_limit\":1080,\"dependencies\":[],\"quality_weight\":0.1,\"evidence\":{\"pois\":\"visit the bank and the library\",\"time_limit\":\"returning by 18:00\",\"quality_weight\":\"prioritize an efficient, quick route\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library"
+    ],
+    "time_limit": 1080,
+    "dependencies": [],
+    "quality_weight": 0.1
+  },
+  "evidence": {
+    "pois": "visit the bank and the library",
+    "time_limit": "returning by 18:00",
+    "quality_weight": "prioritize an efficient, quick route"
+  },
+  "changes": [],
+  "finished_at": "2026-09-10T01:49:39.639105+00:00",
+  "telemetry": {
+    "call_index": 22,
+    "prompt_sha256": "1332a9d875966c50e5206fafb55aec7719c668c28cf2a6847fce69e2d6a0394d",
+    "attempts": 1,
+    "latency_seconds": 16.872,
+    "input_chars": 796,
+    "output_chars": 227,
+    "input_tokens": 316,
+    "output_tokens": 143,
+    "total_tokens": 459,
+    "usage_source": "provider",
+    "success": true
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "call_id": "stress_corrected_deadline_v2::A",
+  "role": "A",
+  "graph_condition": null,
+  "started_at": "2026-09-10T02:32:34.625624+00:00",
+  "request": {
+    "system": "You extract route-planning intent from the user's instruction.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nUse only the instruction. Do not invent constraints. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Go to the shopping mall, supermarket, and library, prioritizing their ratings over extra distance. The valid deadline is 18:30, not the previously mentioned 17:00."
+  },
+  "raw_response": "{\"pois\":[\"shopping mall\",\"supermarket\",\"library\"],\"time_limit\":1110,\"dependencies\":[],\"quality_weight\":0.8,\"evidence\":{\"pois\":\"shopping mall, supermarket, and library\",\"time_limit\":\"deadline is 18:30\",\"quality_weight\":\"prioritizing their ratings over extra distance\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "library",
+      "shopping_mall",
+      "supermarket"
+    ],
+    "time_limit": 1110,
+    "dependencies": [],
+    "quality_weight": 0.8
+  },
+  "evidence": {
+    "pois": "shopping mall, supermarket, and library",
+    "time_limit": "deadline is 18:30",
+    "quality_weight": "prioritizing their ratings over extra distance"
+  },
+  "changes": [],
+  "finished_at": "2026-09-10T02:32:36.982063+00:00",
+  "telemetry": {
+    "call_index": 5,
+    "prompt_sha256": "996ee27fa0ba2725f3018f7039e2d176c3d701f6e990ce1805b4a9539c83b137",
+    "attempts": 1,
+    "latency_seconds": 2.356,
+    "input_chars": 818,
+    "output_chars": 268,
+    "input_tokens": 225,
+    "output_tokens": 529,
+    "total_tokens": 754,
+    "usage_source": "provider",
+    "success": true
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "capability_resolution.json": "c1089dd018442c9787d134b291ed211768973f02cddb8ef2ac6ebf500a314839",
+  "collection.json": "0722b371edd1f983950f4135d29abed5942c99bf0855fbd34fda18ce4547d550",
+  "official_score.json": "c713018a02a0aa45a8617c6e2e2b8d644c73085234a5980794fbcfbaffcb176e",
+  "parsed_intent.json": "5c230fb4ee670ba2573c8a71faa2cfe771b2821db12d23daa2066b50bf4af0a0",
+  "plan.json": "2f36d67ba23220847df37b6161de89f3b653ab28da8c8f9b25bc8dc9b47614c8",
+  "predictions.json": "2755741a906494a5b4d5a62db58afc4e56aeab0d6bf4bd28838c52f46c0ce388",
+  "public_inputs.json": "fde89e62335a047e71eb76814f54734ad31aa4ccfe760c2605bf127edcb18ef6",
+  "request.json": "fd09d43a22e1d85708b4553731ee7031dca18510e818d276de564e9e2539de23",
+  "search/best_so_far_diagnostic_only.json": "88b78c4cca5b19976f89a4ddfc58b19c01d302fd643598fb9ec54932b388ab59",
+  "search/compiled_prediction.json": "5b760fa03351c18fc3ca45c2e21ffb5e70158ce7b062d28056db3f48595a7d01",
+  "search/raw_search_return.json": "88b78c4cca5b19976f89a4ddfc58b19c01d302fd643598fb9ec54932b388ab59",
+  "search/search.log": "b74277855247a5761e5c9d746de960b51057b6f0b0bc5fd56f12a248165ca40f",
+  "search/summary.json": "db54a527b4e4a8f1fc7dba76a3725f915cc179b45206f6696376a6a4b003fdd9",
+  "search/tool_trace.jsonl": "a1a181c36664b10a67b17c8a8de79f248d92b006e6e488c5b3688e077baf21c9"
+}

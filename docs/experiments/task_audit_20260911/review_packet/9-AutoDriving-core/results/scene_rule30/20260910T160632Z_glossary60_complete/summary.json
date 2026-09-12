@@ -1,0 +1,1794 @@
+{
+  "scope": "UNREVIEWED_DEVELOPMENT_CONTROL",
+  "human_review": "PENDING",
+  "complete": true,
+  "physical_calls": 60,
+  "logical_units": 60,
+  "retries": 0,
+  "glossary": {
+    "n": 60,
+    "rule_correct": 60,
+    "raw_rule_correct": 57,
+    "object_success": 60,
+    "raw_object_success": 57,
+    "corrected": 18,
+    "damaged": 0,
+    "fallback": 3
+  },
+  "reference_methods": {
+    "direct": {
+      "n": 60,
+      "rule_correct": 40,
+      "raw_rule_correct": 40,
+      "object_success": 42,
+      "feasible_success": 60,
+      "false_infeasible": 0,
+      "fallback": 0,
+      "corrected": 0,
+      "damaged": 0
+    },
+    "language": {
+      "n": 60,
+      "rule_correct": 40,
+      "raw_rule_correct": 40,
+      "object_success": 42,
+      "feasible_success": 60,
+      "false_infeasible": 0,
+      "fallback": 0,
+      "corrected": 0,
+      "damaged": 0
+    },
+    "evidence": {
+      "n": 60,
+      "rule_correct": 47,
+      "raw_rule_correct": 44,
+      "object_success": 48,
+      "feasible_success": 60,
+      "false_infeasible": 0,
+      "fallback": 3,
+      "corrected": 6,
+      "damaged": 0
+    }
+  },
+  "by_stratum": {
+    "primary": {
+      "n": 36,
+      "rule_correct": 36,
+      "raw_rule_correct": 36,
+      "object_success": 36,
+      "raw_object_success": 36,
+      "corrected": 12,
+      "damaged": 0,
+      "fallback": 0
+    },
+    "control": {
+      "n": 24,
+      "rule_correct": 24,
+      "raw_rule_correct": 21,
+      "object_success": 24,
+      "raw_object_success": 21,
+      "corrected": 6,
+      "damaged": 0,
+      "fallback": 3
+    }
+  },
+  "by_rep": {
+    "1": {
+      "n": 30,
+      "rule_correct": 30,
+      "raw_rule_correct": 28,
+      "object_success": 30,
+      "raw_object_success": 28,
+      "corrected": 9,
+      "damaged": 0,
+      "fallback": 2
+    },
+    "2": {
+      "n": 30,
+      "rule_correct": 30,
+      "raw_rule_correct": 29,
+      "object_success": 30,
+      "raw_object_success": 29,
+      "corrected": 9,
+      "damaged": 0,
+      "fallback": 1
+    }
+  },
+  "comparisons": {
+    "direct": {
+      "glossary_only_correct": 18,
+      "reference_only_correct": 0
+    },
+    "language": {
+      "glossary_only_correct": 18,
+      "reference_only_correct": 0
+    },
+    "evidence": {
+      "glossary_only_correct": 12,
+      "reference_only_correct": 0
+    }
+  },
+  "cost": {
+    "input_tokens": 39854,
+    "output_tokens": 8340,
+    "cache_creation_input_tokens": 9497,
+    "cache_read_input_tokens": 1175,
+    "token_components_sum": 58866,
+    "usage_unknown": 0,
+    "median_seconds": 6.3275
+  },
+  "rows": [
+    {
+      "call_id": "R01__r1__glossary",
+      "case_id": "R01",
+      "rep": 1,
+      "block_id": "G1",
+      "stratum": "primary",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": true,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R02__r1__glossary",
+      "case_id": "R02",
+      "rep": 1,
+      "block_id": "G1",
+      "stratum": "primary",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R03__r1__glossary",
+      "case_id": "R03",
+      "rep": 1,
+      "block_id": "G1",
+      "stratum": "primary",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_gamma"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R04__r1__glossary",
+      "case_id": "R04",
+      "rep": 1,
+      "block_id": "G2",
+      "stratum": "primary",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": true,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R05__r1__glossary",
+      "case_id": "R05",
+      "rep": 1,
+      "block_id": "G2",
+      "stratum": "primary",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_gamma"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R06__r1__glossary",
+      "case_id": "R06",
+      "rep": 1,
+      "block_id": "G2",
+      "stratum": "primary",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R07__r1__glossary",
+      "case_id": "R07",
+      "rep": 1,
+      "block_id": "G3",
+      "stratum": "primary",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_gamma"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": true,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R08__r1__glossary",
+      "case_id": "R08",
+      "rep": 1,
+      "block_id": "G3",
+      "stratum": "primary",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R09__r1__glossary",
+      "case_id": "R09",
+      "rep": 1,
+      "block_id": "G3",
+      "stratum": "primary",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R10__r1__glossary",
+      "case_id": "R10",
+      "rep": 1,
+      "block_id": "G4",
+      "stratum": "primary",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": true,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R11__r1__glossary",
+      "case_id": "R11",
+      "rep": 1,
+      "block_id": "G4",
+      "stratum": "primary",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R12__r1__glossary",
+      "case_id": "R12",
+      "rep": 1,
+      "block_id": "G4",
+      "stratum": "primary",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_gamma"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R13__r1__glossary",
+      "case_id": "R13",
+      "rep": 1,
+      "block_id": "G5",
+      "stratum": "primary",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": true,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R14__r1__glossary",
+      "case_id": "R14",
+      "rep": 1,
+      "block_id": "G5",
+      "stratum": "primary",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_gamma"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R15__r1__glossary",
+      "case_id": "R15",
+      "rep": 1,
+      "block_id": "G5",
+      "stratum": "primary",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R16__r1__glossary",
+      "case_id": "R16",
+      "rep": 1,
+      "block_id": "G6",
+      "stratum": "primary",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_gamma"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": true,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R17__r1__glossary",
+      "case_id": "R17",
+      "rep": 1,
+      "block_id": "G6",
+      "stratum": "primary",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R18__r1__glossary",
+      "case_id": "R18",
+      "rep": 1,
+      "block_id": "G6",
+      "stratum": "primary",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R19__r1__glossary",
+      "case_id": "R19",
+      "rep": 1,
+      "block_id": "C1",
+      "stratum": "control",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "departure",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R20__r1__glossary",
+      "case_id": "R20",
+      "rep": 1,
+      "block_id": "C1",
+      "stratum": "control",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": true,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R21__r1__glossary",
+      "case_id": "R21",
+      "rep": 1,
+      "block_id": "C2",
+      "stratum": "control",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": 595
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R22__r1__glossary",
+      "case_id": "R22",
+      "rep": 1,
+      "block_id": "C2",
+      "stratum": "control",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": 600
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_gamma"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R23__r1__glossary",
+      "case_id": "R23",
+      "rep": 1,
+      "block_id": "C3",
+      "stratum": "control",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R24__r1__glossary",
+      "case_id": "R24",
+      "rep": 1,
+      "block_id": "C3",
+      "stratum": "control",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R25__r1__glossary",
+      "case_id": "R25",
+      "rep": 1,
+      "block_id": "C4",
+      "stratum": "control",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": true,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R26__r1__glossary",
+      "case_id": "R26",
+      "rep": 1,
+      "block_id": "C4",
+      "stratum": "control",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": true,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R27__r1__glossary",
+      "case_id": "R27",
+      "rep": 1,
+      "block_id": "C5",
+      "stratum": "control",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_gamma"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R28__r1__glossary",
+      "case_id": "R28",
+      "rep": 1,
+      "block_id": "C5",
+      "stratum": "control",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R29__r1__glossary",
+      "case_id": "R29",
+      "rep": 1,
+      "block_id": "C6",
+      "stratum": "control",
+      "status": "SCHEMA_FAILED",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": 550
+      },
+      "decision": {
+        "status": "INFEASIBLE",
+        "selected_poi_ids": []
+      },
+      "fallback": true,
+      "raw_rule_correct": false,
+      "raw_object_success": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R30__r1__glossary",
+      "case_id": "R30",
+      "rep": 1,
+      "block_id": "C6",
+      "stratum": "control",
+      "status": "SCHEMA_FAILED",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": 550
+      },
+      "decision": {
+        "status": "INFEASIBLE",
+        "selected_poi_ids": []
+      },
+      "fallback": true,
+      "raw_rule_correct": false,
+      "raw_object_success": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R01__r2__glossary",
+      "case_id": "R01",
+      "rep": 2,
+      "block_id": "G1",
+      "stratum": "primary",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": true,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R02__r2__glossary",
+      "case_id": "R02",
+      "rep": 2,
+      "block_id": "G1",
+      "stratum": "primary",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R03__r2__glossary",
+      "case_id": "R03",
+      "rep": 2,
+      "block_id": "G1",
+      "stratum": "primary",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_gamma"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R04__r2__glossary",
+      "case_id": "R04",
+      "rep": 2,
+      "block_id": "G2",
+      "stratum": "primary",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": true,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R05__r2__glossary",
+      "case_id": "R05",
+      "rep": 2,
+      "block_id": "G2",
+      "stratum": "primary",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_gamma"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R06__r2__glossary",
+      "case_id": "R06",
+      "rep": 2,
+      "block_id": "G2",
+      "stratum": "primary",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R07__r2__glossary",
+      "case_id": "R07",
+      "rep": 2,
+      "block_id": "G3",
+      "stratum": "primary",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_gamma"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": true,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R08__r2__glossary",
+      "case_id": "R08",
+      "rep": 2,
+      "block_id": "G3",
+      "stratum": "primary",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R09__r2__glossary",
+      "case_id": "R09",
+      "rep": 2,
+      "block_id": "G3",
+      "stratum": "primary",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R10__r2__glossary",
+      "case_id": "R10",
+      "rep": 2,
+      "block_id": "G4",
+      "stratum": "primary",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": true,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R11__r2__glossary",
+      "case_id": "R11",
+      "rep": 2,
+      "block_id": "G4",
+      "stratum": "primary",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R12__r2__glossary",
+      "case_id": "R12",
+      "rep": 2,
+      "block_id": "G4",
+      "stratum": "primary",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_gamma"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R13__r2__glossary",
+      "case_id": "R13",
+      "rep": 2,
+      "block_id": "G5",
+      "stratum": "primary",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": true,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R14__r2__glossary",
+      "case_id": "R14",
+      "rep": 2,
+      "block_id": "G5",
+      "stratum": "primary",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_gamma"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R15__r2__glossary",
+      "case_id": "R15",
+      "rep": 2,
+      "block_id": "G5",
+      "stratum": "primary",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R16__r2__glossary",
+      "case_id": "R16",
+      "rep": 2,
+      "block_id": "G6",
+      "stratum": "primary",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_gamma"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": true,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R17__r2__glossary",
+      "case_id": "R17",
+      "rep": 2,
+      "block_id": "G6",
+      "stratum": "primary",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R18__r2__glossary",
+      "case_id": "R18",
+      "rep": 2,
+      "block_id": "G6",
+      "stratum": "primary",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R19__r2__glossary",
+      "case_id": "R19",
+      "rep": 2,
+      "block_id": "C1",
+      "stratum": "control",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "departure",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R20__r2__glossary",
+      "case_id": "R20",
+      "rep": 2,
+      "block_id": "C1",
+      "stratum": "control",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": true,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R21__r2__glossary",
+      "case_id": "R21",
+      "rep": 2,
+      "block_id": "C2",
+      "stratum": "control",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": 595
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R22__r2__glossary",
+      "case_id": "R22",
+      "rep": 2,
+      "block_id": "C2",
+      "stratum": "control",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": 600
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_gamma"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R23__r2__glossary",
+      "case_id": "R23",
+      "rep": 2,
+      "block_id": "C3",
+      "stratum": "control",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R24__r2__glossary",
+      "case_id": "R24",
+      "rep": 2,
+      "block_id": "C3",
+      "stratum": "control",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R25__r2__glossary",
+      "case_id": "R25",
+      "rep": 2,
+      "block_id": "C4",
+      "stratum": "control",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": true,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R26__r2__glossary",
+      "case_id": "R26",
+      "rep": 2,
+      "block_id": "C4",
+      "stratum": "control",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "nearest_from_bank",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_beta"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": true,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R27__r2__glossary",
+      "case_id": "R27",
+      "rep": 2,
+      "block_id": "C5",
+      "stratum": "control",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_gamma"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R28__r2__glossary",
+      "case_id": "R28",
+      "rep": 2,
+      "block_id": "C5",
+      "stratum": "control",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "minimum_added_distance",
+        "availability_reference": "arrival",
+        "return_by": null
+      },
+      "decision": {
+        "status": "OK",
+        "selected_poi_ids": [
+          "P_alpha"
+        ]
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R29__r2__glossary",
+      "case_id": "R29",
+      "rep": 2,
+      "block_id": "C6",
+      "stratum": "control",
+      "status": "COMPLETE",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": 550
+      },
+      "decision": {
+        "status": "INFEASIBLE",
+        "selected_poi_ids": []
+      },
+      "fallback": false,
+      "raw_rule_correct": true,
+      "raw_object_success": true,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    },
+    {
+      "call_id": "R30__r2__glossary",
+      "case_id": "R30",
+      "rep": 2,
+      "block_id": "C6",
+      "stratum": "control",
+      "status": "SCHEMA_FAILED",
+      "policy": {
+        "selection": "highest_rating",
+        "availability_reference": "arrival",
+        "return_by": 550
+      },
+      "decision": {
+        "status": "INFEASIBLE",
+        "selected_poi_ids": []
+      },
+      "fallback": true,
+      "raw_rule_correct": false,
+      "raw_object_success": false,
+      "corrected": false,
+      "damaged": false,
+      "rule_correct": true,
+      "object_success": true,
+      "feasible_success": true,
+      "false_infeasible": false
+    }
+  ]
+}

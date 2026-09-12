@@ -1,0 +1,177 @@
+{
+  "people_number": 1,
+  "start_city": "杭州",
+  "target_city": "上海",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "start_time": "02:48",
+          "end_time": "05:18",
+          "start": "杭州南站",
+          "end": "上海南站",
+          "price": 65.95,
+          "cost": 65.95,
+          "tickets": 1,
+          "transports": [],
+          "TrainID": "K752",
+          "type": "train"
+        },
+        {
+          "position": "魔都360°球幕宇宙探索馆",
+          "type": "attraction",
+          "price": 78,
+          "cost": 78,
+          "start_time": "10:00",
+          "end_time": "11:30",
+          "transports": [
+            {
+              "start": "上海南站",
+              "end": "上海南站-地铁站",
+              "mode": "walk",
+              "start_time": "05:18",
+              "end_time": "05:20",
+              "cost": 0,
+              "distance": 0.18,
+              "price": 0
+            },
+            {
+              "start": "上海南站-地铁站",
+              "end": "奉浦大道-地铁站",
+              "mode": "metro",
+              "start_time": "05:20",
+              "end_time": "06:07",
+              "cost": 6,
+              "distance": 23.63,
+              "price": 6,
+              "tickets": 1
+            },
+            {
+              "start": "奉浦大道-地铁站",
+              "end": "魔都360°球幕宇宙探索馆",
+              "mode": "walk",
+              "start_time": "06:07",
+              "end_time": "06:26",
+              "cost": 0,
+              "distance": 1.65,
+              "price": 0
+            }
+          ],
+          "tickets": 1
+        },
+        {
+          "position": "AZUL italiano意大利餐厅(大洋千树店)",
+          "type": "lunch",
+          "price": 209,
+          "cost": 209,
+          "start_time": "12:19",
+          "end_time": "13:19",
+          "transports": [
+            {
+              "start": "魔都360°球幕宇宙探索馆",
+              "end": "AZUL italiano意大利餐厅(大洋千树店)",
+              "mode": "taxi",
+              "start_time": "11:30",
+              "end_time": "12:19",
+              "cost": 144.61,
+              "distance": 33.31,
+              "price": 144.61,
+              "cars": 1
+            }
+          ]
+        },
+        {
+          "position": "朵云书院(广富林店)",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "14:04",
+          "end_time": "15:34",
+          "transports": [
+            {
+              "start": "AZUL italiano意大利餐厅(大洋千树店)",
+              "end": "朵云书院(广富林店)",
+              "mode": "taxi",
+              "start_time": "13:19",
+              "end_time": "14:04",
+              "cost": 131.99,
+              "distance": 30.51,
+              "price": 131.99,
+              "cars": 1
+            }
+          ],
+          "tickets": 1
+        },
+        {
+          "position": "久事体育旗忠网球中心",
+          "type": "attraction",
+          "price": 335,
+          "cost": 335,
+          "start_time": "15:57",
+          "end_time": "17:27",
+          "transports": [
+            {
+              "start": "朵云书院(广富林店)",
+              "end": "久事体育旗忠网球中心",
+              "mode": "taxi",
+              "start_time": "15:34",
+              "end_time": "15:57",
+              "cost": 64.26,
+              "distance": 15.46,
+              "price": 64.26,
+              "cars": 1
+            }
+          ],
+          "tickets": 1
+        },
+        {
+          "start_time": "20:21",
+          "end_time": "22:58",
+          "start": "上海南站",
+          "end": "杭州南站",
+          "price": 65.95,
+          "cost": 65.95,
+          "tickets": 1,
+          "transports": [
+            {
+              "start": "久事体育旗忠网球中心",
+              "end": "颛桥-地铁站",
+              "mode": "walk",
+              "start_time": "17:27",
+              "end_time": "18:20",
+              "cost": 0,
+              "distance": 4.46,
+              "price": 0
+            },
+            {
+              "start": "颛桥-地铁站",
+              "end": "上海南站-地铁站",
+              "mode": "metro",
+              "start_time": "18:20",
+              "end_time": "18:40",
+              "cost": 4,
+              "distance": 10.07,
+              "price": 4,
+              "tickets": 1
+            },
+            {
+              "start": "上海南站-地铁站",
+              "end": "上海南站",
+              "mode": "walk",
+              "start_time": "18:40",
+              "end_time": "18:42",
+              "cost": 0,
+              "distance": 0.18,
+              "price": 0
+            }
+          ],
+          "TrainID": "K287",
+          "type": "train"
+        }
+      ]
+    }
+  ],
+  "search_time_sec": 1.2615392208099365,
+  "llm_inference_time_sec": 0
+}

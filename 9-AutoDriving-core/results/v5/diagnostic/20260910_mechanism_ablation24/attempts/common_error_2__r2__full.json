@@ -1,0 +1,51 @@
+{
+  "call_id": "common_error_2__r2__full",
+  "role": "full",
+  "graph_condition": "tradeoff",
+  "started_at": "2026-09-10T03:23:10.941565+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. Both candidates may be wrong, including when they agree. Supplementary information describes candidate differences or planning consequences; it does not identify the correct intent. Resolve every field from the instruction. Do not infer user preference from a route or map.\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised.\n\nInstruction:\nMake sure to visit the supermarket and the pharmacy today. Balance your stops to maintain both reasonable ratings and efficiency along the route. Start your trip at the supermarket before heading to the pharmacy.\n\nCandidate A:\n{\"dependencies\": [[\"pharmacy\", \"supermarket\"]], \"pois\": [\"pharmacy\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nCandidate B:\n{\"dependencies\": [[\"pharmacy\", \"supermarket\"]], \"pois\": [\"pharmacy\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nSupplementary information:\n{\"cross_constraints\": {\"route_A_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_A_under_B\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_B\": {\"reasons\": [], \"task_success\": true}}, \"differing_fields\": [], \"limitations\": [\"The report does not identify the user's true intent.\", \"Both candidates may share the same error.\", \"Single-field swaps do not identify higher-order interactions.\"], \"routes\": {\"A\": {\"arrival_minutes\": 629, \"average_quality\": 0.9, \"categories\": [\"pharmacy\", \"supermarket\"], \"coverage_count\": 2, \"distance_km\": 17.043, \"duration_minutes\": 89.1, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"pharmacy_2\", \"supermarket_2\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": 0.3107691137809123}, \"B\": {\"arrival_minutes\": 629, \"average_quality\": 0.9, \"categories\": [\"pharmacy\", \"supermarket\"], \"coverage_count\": 2, \"distance_km\": 17.043, \"duration_minutes\": 89.1, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"pharmacy_2\", \"supermarket_2\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": 0.3107691137809123}}, \"single_field_swaps\": []}"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"supermarket\",\"pharmacy\"],\"time_limit\":null,\"dependencies\":[[\"supermarket\",\"pharmacy\"]],\"quality_weight\":0.5},\"evidence\":{\"pois\":\"visit the supermarket and the pharmacy today\",\"dependencies\":\"Start your trip at the supermarket before heading to the pharmacy\",\"quality_weight\":\"Balance your stops to maintain both reasonable ratings and efficiency\",\"time_limit\":\"today\"},\"changes\":[\"pois\",\"dependencies\"]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "pharmacy",
+      "supermarket"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "supermarket",
+        "pharmacy"
+      ]
+    ],
+    "quality_weight": 0.5
+  },
+  "evidence": {
+    "pois": "visit the supermarket and the pharmacy today",
+    "dependencies": "Start your trip at the supermarket before heading to the pharmacy",
+    "quality_weight": "Balance your stops to maintain both reasonable ratings and efficiency",
+    "time_limit": "today"
+  },
+  "changes": [
+    "pois",
+    "dependencies"
+  ],
+  "finished_at": "2026-09-10T03:23:42.209270+00:00",
+  "telemetry": {
+    "call_index": 1,
+    "prompt_sha256": "4faed6c7fe15692f5faa590f4689e7392ac3717f507401074ddf151c12492870",
+    "attempts": 1,
+    "latency_seconds": 31.267,
+    "input_chars": 2362,
+    "output_chars": 423,
+    "input_tokens": 687,
+    "output_tokens": 7472,
+    "total_tokens": 8159,
+    "usage_source": "provider",
+    "success": true
+  }
+}

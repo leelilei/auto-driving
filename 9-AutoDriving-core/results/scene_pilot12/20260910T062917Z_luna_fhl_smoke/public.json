@@ -1,0 +1,76 @@
+[
+  {
+    "case_id": "S01",
+    "instruction": "Start at home at 09:00. Visit bank B first, then exactly one pharmacy, then return home. Travel along straight lines at 1 distance unit per minute. Bank service takes 20 minutes and pharmacy service takes 10 minutes. Do not wait for a place to open. Start service immediately on arrival; each service must finish no later than closing time. If no pharmacy can satisfy every requirement, report INFEASIBLE. Among pharmacies where service can be completed during opening hours, choose the one closest to bank B.",
+    "scene": {
+      "home": [
+        0,
+        0
+      ],
+      "departure": 540,
+      "speed_units_per_minute": 1,
+      "bank": {
+        "x": 10,
+        "y": 0,
+        "open": 480,
+        "close": 1080,
+        "rating": 4
+      },
+      "bank_service": 20,
+      "pharmacy_service": 10,
+      "pharmacies": {
+        "P_alpha": {
+          "x": 15,
+          "y": 0,
+          "open": 480,
+          "close": 580,
+          "rating": 4
+        },
+        "P_beta": {
+          "x": 22,
+          "y": 0,
+          "open": 480,
+          "close": 620,
+          "rating": 4
+        }
+      }
+    }
+  },
+  {
+    "case_id": "S02",
+    "instruction": "Start at home at 09:00. Visit bank B first, then exactly one pharmacy, then return home. Travel along straight lines at 1 distance unit per minute. Bank service takes 20 minutes and pharmacy service takes 10 minutes. Do not wait for a place to open. Start service immediately on arrival; each service must finish no later than closing time. If no pharmacy can satisfy every requirement, report INFEASIBLE. Among pharmacies where service can be completed during opening hours, choose the one closest to bank B.",
+    "scene": {
+      "home": [
+        0,
+        0
+      ],
+      "departure": 540,
+      "speed_units_per_minute": 1,
+      "bank": {
+        "x": 10,
+        "y": 0,
+        "open": 480,
+        "close": 1080,
+        "rating": 4
+      },
+      "bank_service": 20,
+      "pharmacy_service": 10,
+      "pharmacies": {
+        "P_alpha": {
+          "x": 15,
+          "y": 0,
+          "open": 480,
+          "close": 600,
+          "rating": 4
+        },
+        "P_beta": {
+          "x": 22,
+          "y": 0,
+          "open": 480,
+          "close": 620,
+          "rating": 4
+        }
+      }
+    }
+  }
+]

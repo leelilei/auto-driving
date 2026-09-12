@@ -1,0 +1,27 @@
+{
+  "protocol_version": "darc-v5.1-collection-2",
+  "model": "deepseek-v4-flash",
+  "phase": "ab_reviews",
+  "groups": [
+    "pilot_01",
+    "pilot_02",
+    "pilot_03",
+    "pilot_04",
+    "pilot_05",
+    "pilot_06",
+    "pilot_07",
+    "pilot_08"
+  ],
+  "planned_calls": 448,
+  "attempt_files": 260,
+  "logical_units_recorded": 198,
+  "complete_calls": 177,
+  "physical_attempts": 260,
+  "schema_failures": 49,
+  "skipped_upstream": 0,
+  "transport_failures": 34,
+  "provider_total_tokens": 573962,
+  "collection_complete": false,
+  "all_model_calls_schema_valid": false,
+  "finished_at": "2026-09-12T05:42:32.684209+00:00"
+}

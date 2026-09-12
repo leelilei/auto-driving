@@ -1,0 +1,5 @@
+/Users/mac/Documents/6-Research/9-AutoDriving/external/ChinaTravel/.venv-chinatravel/lib/python3.13/site-packages/fuzzywuzzy/fuzz.py:11: UserWarning: Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning
+  warnings.warn('Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning')
+Created log directory: logs
+cache dir: /Users/mac/Documents/6-Research/9-AutoDriving/tmp/ct_fixture
+tuple (False, {'people_number': 1, 'start_city': '上海', 'target_city': '杭州', 'itinerary': [{'day': 1, 'activities': [{'start_time': '04:30', 'end_time': '06:40', 'start': '上海南站', 'end': '杭州站', 'price': 65.95

@@ -1,0 +1,8 @@
+{
+  "recorded_at": "2026-09-10T03:19:23.019806+00:00",
+  "type": "transparent_transport_only_protocol_amendment",
+  "reason": "At least nine first-pass requests exceeded 60s; original cap eight would prevent complete analysis. No method scores used to choose recovery.",
+  "original_protocol": "Preserved manifest and first-pass collector unchanged; if >8 failures original collector performs no recovery.",
+  "supplemental_recovery": "Only original transport failures; each at most one additional attempt, fixed timeout 120s, max 16 logical units, same model/prompts/temperature/output cap, concurrency4. No schema or valid output retries. Authentication failure stops.",
+  "interpretation": "Complete only after every planned logical unit has valid or schema-failed terminal output. Must label amended development experiment, not untouched preregistration."
+}

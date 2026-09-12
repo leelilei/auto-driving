@@ -1,0 +1,26 @@
+{
+  "status": "STAGE4_COMPLETE",
+  "model": "deepseek-v4-flash (service model deepseek-flash)",
+  "model_api_calls": 0,
+  "source_parse_calls": 6,
+  "planning_cases": 3,
+  "planning_ready_successful_schema": 1,
+  "attribution": {
+    "contract_failure": 3,
+    "search_timeout": 1,
+    "search_success_schema_invalid": 1,
+    "search_success_schema_valid": 1,
+    "semantic_error_candidate": 0
+  },
+  "cases": [
+    {"uid":"e20241028160248698752","status":"search_success_schema_valid","detail":"Base case produced a schema-valid plan."},
+    {"uid":"e20241028160845920703","status":"contract_failure","detail":"people_number null; no host-side imputation."},
+    {"uid":"e20241028160848776495","status":"search_timeout","detail":"30-second bounded search timeout; no semantic conclusion."},
+    {"uid":"e20241028160913165493","status":"contract_failure","detail":"people_number null; no host-side imputation."},
+    {"uid":"e20241028160902013119","status":"contract_failure","detail":"people_number null; no host-side imputation."},
+    {"uid":"h20241029143455115600","status":"search_success_schema_invalid","detail":"Search returned an invalid plan schema; no semantic conclusion."}
+  ],
+  "stage5_decision":"NOT_ELIGIBLE",
+  "reason":"No complete, independently judgeable natural-language semantic error survived contract validation, bounded planning, and schema checks. Stage 5 feedback ablation must not be run on these failures.",
+  "next_step":"Close ChinaTravel as an engineering feasibility case unless a separately justified repair addresses planner schema/search and a new bounded pilot is explicitly opened."
+}

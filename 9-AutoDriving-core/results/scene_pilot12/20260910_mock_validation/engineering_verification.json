@@ -1,0 +1,11 @@
+{
+  "status": "PASS_ENGINEERING_ONLY",
+  "full_suite_passed": 112,
+  "new_tests": 35,
+  "network_blocked_mock": true,
+  "logical_units": 72,
+  "real_api_calls": 0,
+  "full_summary_replay_equal": true,
+  "human_review": "PENDING",
+  "model_effect": "NOT_MEASURED"
+}

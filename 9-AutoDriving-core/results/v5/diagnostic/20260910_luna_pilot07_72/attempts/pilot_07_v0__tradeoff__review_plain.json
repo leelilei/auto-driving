@@ -1,0 +1,29 @@
+{
+  "call_id": "pilot_07_v0::tradeoff::review_plain",
+  "role": "review_plain",
+  "graph_condition": "tradeoff",
+  "started_at": "2026-09-09T17:28:02.315213+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. Candidate agreement is not proof of correctness.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not use route efficiency to infer what the user wants.\n\nInstruction:\nToday, make sure to visit the library, pharmacy, and supermarket. Please return by 17:00. Focus on visiting high-rated places, even if the route is slightly longer.\n\nCandidate A:\n{\"dependencies\": [], \"pois\": [\"library\", \"pharmacy\", \"supermarket\"], \"quality_weight\": 0.9, \"time_limit\": 1020}\n\nCandidate B:\n{\"dependencies\": [], \"pois\": [\"library\", \"pharmacy\", \"supermarket\"], \"quality_weight\": 0.9, \"time_limit\": 1020}\n"
+  },
+  "status": "TRANSPORT_FAILED",
+  "schema_valid": false,
+  "error_type": "RuntimeError",
+  "error_message": "curl request failed: curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to www.fhl.mom:443",
+  "finished_at": "2026-09-09T17:28:07.334224+00:00",
+  "telemetry": {
+    "call_index": 7,
+    "prompt_sha256": "5c326a736a20d9390b7849bc0c90bda07152709bc3cbb7827a78617f487e2bf9",
+    "attempts": 1,
+    "latency_seconds": 5.019,
+    "input_chars": 933,
+    "output_chars": 0,
+    "input_tokens": 234,
+    "output_tokens": 0,
+    "total_tokens": 234,
+    "usage_source": "character_estimate",
+    "success": false,
+    "error": "RuntimeError"
+  }
+}

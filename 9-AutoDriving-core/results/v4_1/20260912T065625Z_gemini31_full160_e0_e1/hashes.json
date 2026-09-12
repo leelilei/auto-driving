@@ -1,0 +1,13 @@
+{
+  "SUMMARY.md": "3f342d57843799c43ad3a13c51119b616e961c79db10902558cc16ad37c599c2",
+  "binding_audit.json": "9b38473e7312093700457259cc3eb2aa750c7ca497dde104d801dfeb11e67bf4",
+  "e0/metrics_clean_subset.json": "c36ad814fac07f5258023e954db773f43738b04812f572b878aaaac857ab5956",
+  "e0/metrics_historical.json": "11ae4eb086306755073f661ff790df1bad2a7176ae814177b9a9b8616df5073b",
+  "e1/confidence_intervals.json": "38447e6b25388512a1d81f9fcd682500f6c6d86db5b14a9407c50a546a87d109",
+  "e1/costs.json": "2106b698e559468aabe99700ea7febcdf9ebc5f2e805931db2f4ac231c74af74",
+  "e1/metrics.json": "aff57a6207c7a9b6a68b7a048bda820de0d2ac7e7314e4f1b4f013f526b7bfbb",
+  "e1/selections.jsonl": "be3ab851aee77432078cb90a0f98b6732bad24b88ce0f6f1050f154d9ede6f8b",
+  "evidence_ledger.jsonl": "bbe36ec49790ef7fc51189186ac4bc3da4e05d7e5a28f233c5aff7ce7d38f29d",
+  "input_manifest.json": "f6c46b4304958ea42d07f0ff234eb33482628f0cf35501c192332480809b1274",
+  "protocol.json": "8263d00c63dc3f16b18ac0db13326850455a6a3b67cfcc5f0eeb3179e91e49cf"
+}

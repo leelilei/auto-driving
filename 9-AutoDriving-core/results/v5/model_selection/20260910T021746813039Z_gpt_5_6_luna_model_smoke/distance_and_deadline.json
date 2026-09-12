@@ -1,0 +1,36 @@
+{
+  "fixture_id": "distance_and_deadline",
+  "text": "Go to a library and a supermarket, return by 18:30, and keep the route as short as possible.",
+  "gold": {
+    "pois": [
+      "library",
+      "supermarket"
+    ],
+    "time_limit": 1110,
+    "dependencies": [],
+    "quality_weight": 0.25
+  },
+  "started_at": "2026-09-10T02:18:29.575731+00:00",
+  "schema_valid": false,
+  "transport_error_type": "RuntimeError",
+  "error_message": "provider curl request timed out after 60 seconds",
+  "hard": {
+    "hard_exact": false
+  },
+  "direction_exact": false,
+  "finished_at": "2026-09-10T02:19:29.587953+00:00",
+  "telemetry": {
+    "call_index": 2,
+    "prompt_sha256": "c85cca81949d8efcc1560ecd885df9044dd23dafcf53cedac98a112e2a1425cd",
+    "attempts": 1,
+    "latency_seconds": 60.012,
+    "input_chars": 516,
+    "output_chars": 0,
+    "input_tokens": 129,
+    "output_tokens": 0,
+    "total_tokens": 129,
+    "usage_source": "character_estimate",
+    "success": false,
+    "error": "RuntimeError"
+  }
+}

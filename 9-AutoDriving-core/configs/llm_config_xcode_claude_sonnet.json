@@ -1,0 +1,13 @@
+{
+  "provider": "xcode",
+  "model": "claude-sonnet-4-6",
+  "wire_api": "anthropic_messages",
+  "base_url": "https://xcode.best",
+  "api_key_env": "XCODE_API_KEY",
+  "temperature": 0.0,
+  "timeout": 90,
+  "max_output_tokens": 1200,
+  "retries": 3,
+  "retry_sleep": 2.0,
+  "transport": "curl"
+}

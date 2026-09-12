@@ -390,10 +390,14 @@ def main():
     parser = argparse.ArgumentParser(description="Run Qwen3.8-max Main Experiment")
     parser.add_argument("--workers", type=int, default=16, help="Concurrent worker threads")
     parser.add_argument("--config", type=Path, default=ROOT / "configs/llm_config_qwen38.json")
+    parser.add_argument("--limit-groups", type=int, default=None, help="Limit number of test groups for a protocol pilot")
+    parser.add_argument("--run-suffix", default="", help="Unique suffix for a run directory")
     parser.add_argument("--resume", action="store_true", default=True, help="Resume by skipping completed groups")
     args = parser.parse_args()
 
-    run_id = f"{datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')}_main_test_qwen38_max"
+    model_label = load_config(args.config).model.replace("/", "_").replace(".", "_")
+    suffix = args.run_suffix or (f"_pilot{args.limit_groups}" if args.limit_groups else "")
+    run_id = f"{datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')}_main_test_{model_label}{suffix}"
     run_dir = ROOT / "results/runs" / run_id
     run_dir.mkdir(parents=True, exist_ok=True)
 
@@ -413,7 +417,9 @@ def main():
         groups[u["group_id"]].append(u)
 
     selected_gids = sorted(groups.keys())
-    print(f"Loaded {len(selected_gids)} test groups ({len(raw_test_data)} utterances) for Qwen3.8-max.")
+    if args.limit_groups:
+        selected_gids = selected_gids[:args.limit_groups]
+    print(f"Loaded {len(selected_gids)} test groups for {model_label}.")
     print(f"Output run directory: {run_dir}")
 
     start_time = time.time()

@@ -1,0 +1,2 @@
+{"uid":"e20241028160248698752","status":"final_schema_invalid","calls":9,"query_calls":8,"chars":57795,"query_chars":47568,"query_stop":"model_finish","elapsed_seconds":54.275662416999694,"schema_valid":false}
+{"status":"PASS","network":"socket connections blocked","score_identical":true,"physical_requests":9,"transport_failures":0,"usage_unknown":0,"provider_input_tokens":13942,"provider_output_tokens":1583}

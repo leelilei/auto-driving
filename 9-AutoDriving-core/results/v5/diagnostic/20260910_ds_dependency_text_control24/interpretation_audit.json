@@ -1,0 +1,14 @@
+{
+  "paired_group_mean_difference": {
+    "pilot_01": 0.125,
+    "pilot_04": 0.3333333333333333,
+    "pilot_06": 0.125,
+    "pilot_07": 0.0,
+    "pilot_02": -0.3333333333333333,
+    "pilot_05": 0.0,
+    "pilot_03": 0.0,
+    "pilot_08": 0.0
+  },
+  "known_token_increase_percent": 19.648395349941982,
+  "case_win_attribution": "all five route-only semantic successes are preference-direction differences, not hard-constraint improvements"
+}

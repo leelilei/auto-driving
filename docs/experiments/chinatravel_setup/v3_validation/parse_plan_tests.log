@@ -1,0 +1,19 @@
+test_unsupported_requirements_stop_without_planning (test_chinatravel_parse_plan.ParsePlanTests.test_unsupported_requirements_stop_without_planning) ... ok
+test_verbatim_evidence_and_duplicate_calls (test_chinatravel_parse_plan.ParsePlanTests.test_verbatim_evidence_and_duplicate_calls) ... ok
+test_wire_boundary_and_full_offline_replay (test_chinatravel_parse_plan.ParsePlanTests.test_wire_boundary_and_full_offline_replay) ... /Users/mac/Documents/6-Research/9-AutoDriving/external/ChinaTravel/.venv-chinatravel/lib/python3.13/site-packages/fuzzywuzzy/fuzz.py:11: UserWarning: Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning
+  warnings.warn('Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning')
+FAIL
+
+======================================================================
+FAIL: test_wire_boundary_and_full_offline_replay (test_chinatravel_parse_plan.ParsePlanTests.test_wire_boundary_and_full_offline_replay)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/mac/Documents/6-Research/9-AutoDriving/9-AutoDriving-core/tests/test_chinatravel_parse_plan.py", line 48, in test_wire_boundary_and_full_offline_replay
+    self.assertEqual(first['all_pass_rate'],100)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0.0 != 100
+
+----------------------------------------------------------------------
+Ran 3 tests in 3.730s
+
+FAILED (failures=1)

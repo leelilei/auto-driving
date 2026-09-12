@@ -1,0 +1,9 @@
+{
+  "warning": "Audit annotations are not model inputs.",
+  "audit_source": "docs/experiments/chinatravel_setup/semantic_audit_20260911/results/audit.json",
+  "audited_cases": 60,
+  "model_input_keys": [
+    "uid",
+    "nature_language"
+  ]
+}

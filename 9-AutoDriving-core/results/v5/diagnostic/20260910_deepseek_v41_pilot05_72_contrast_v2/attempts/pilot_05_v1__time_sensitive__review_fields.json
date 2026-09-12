@@ -1,0 +1,48 @@
+{
+  "call_id": "pilot_05_v1::time_sensitive::review_fields",
+  "role": "review_fields",
+  "graph_condition": "time_sensitive",
+  "started_at": "2026-09-09T16:34:43.725789+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. The field-difference report only identifies disagreements; it does not identify the correct answer.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not infer user preference from a route or map.\n\nInstruction:\nPlease visit the bank, library, and pharmacy today. Give top priority to locations with the highest ratings, and make sure to visit the bank before the library.\n\nCandidate A:\n{\"dependencies\": [[\"bank\", \"library\"]], \"pois\": [\"bank\", \"library\", \"pharmacy\"], \"quality_weight\": 1.0, \"time_limit\": null}\n\nCandidate B:\n{\"dependencies\": [[\"bank\", \"library\"]], \"pois\": [\"bank\", \"library\", \"pharmacy\"], \"quality_weight\": 1.0, \"time_limit\": null}\n\nField differences:\n{\"fields\": []}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"bank\",\"library\",\"pharmacy\"],\"time_limit\":null,\"dependencies\":[[\"bank\",\"library\"]],\"quality_weight\":1.0},\"evidence\":{\"pois\":\"bank, library, and pharmacy\",\"dependencies\":\"bank before the library\",\"quality_weight\":\"top priority to locations with the highest ratings\"},\"changes\":[]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library",
+      "pharmacy"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "bank",
+        "library"
+      ]
+    ],
+    "quality_weight": 1.0
+  },
+  "evidence": {
+    "pois": "bank, library, and pharmacy",
+    "dependencies": "bank before the library",
+    "quality_weight": "top priority to locations with the highest ratings"
+  },
+  "changes": [],
+  "finished_at": "2026-09-09T16:34:53.177205+00:00",
+  "telemetry": {
+    "call_index": 34,
+    "prompt_sha256": "ada9a4b3f04ecfd420128bcbd5c8c54444bab76a2b2aef65e2409573be749317",
+    "attempts": 1,
+    "latency_seconds": 9.451,
+    "input_chars": 1031,
+    "output_chars": 298,
+    "input_tokens": 295,
+    "output_tokens": 2631,
+    "total_tokens": 2926,
+    "usage_source": "provider",
+    "success": true
+  }
+}

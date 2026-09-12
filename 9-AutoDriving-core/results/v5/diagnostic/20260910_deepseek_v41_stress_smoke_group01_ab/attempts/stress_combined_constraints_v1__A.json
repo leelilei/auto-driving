@@ -1,0 +1,54 @@
+{
+  "call_id": "stress_combined_constraints_v1::A",
+  "role": "A",
+  "graph_condition": null,
+  "started_at": "2026-09-10T02:28:41.950633+00:00",
+  "request": {
+    "system": "You extract route-planning intent from the user's instruction.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nUse only the instruction. Do not invent constraints. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Be back by 5:30 PM after stopping at the pharmacy, library, bank, and shopping mall. The library precedes the mall, and the bank precedes the pharmacy. Prefer the shortest practical trip."
+  },
+  "raw_response": "{\"pois\":[\"pharmacy\",\"library\",\"bank\",\"shopping mall\"],\"time_limit\":1050,\"dependencies\":[[\"library\",\"shopping mall\"],[\"bank\",\"pharmacy\"]],\"quality_weight\":0.0,\"evidence\":{\"pois\":\"pharmacy, library, bank, and shopping mall\",\"time_limit\":\"Be back by 5:30 PM\",\"dependencies\":\"The library precedes the mall, and the bank precedes the pharmacy.\",\"quality_weight\":\"Prefer the shortest practical trip\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library",
+      "pharmacy",
+      "shopping_mall"
+    ],
+    "time_limit": 1050,
+    "dependencies": [
+      [
+        "bank",
+        "pharmacy"
+      ],
+      [
+        "library",
+        "shopping_mall"
+      ]
+    ],
+    "quality_weight": 0.0
+  },
+  "evidence": {
+    "pois": "pharmacy, library, bank, and shopping mall",
+    "time_limit": "Be back by 5:30 PM",
+    "dependencies": "The library precedes the mall, and the bank precedes the pharmacy.",
+    "quality_weight": "Prefer the shortest practical trip"
+  },
+  "changes": [],
+  "finished_at": "2026-09-10T02:28:47.517749+00:00",
+  "telemetry": {
+    "call_index": 3,
+    "prompt_sha256": "c821a8af4801fb069fde6d035093cd37f0145c4de9022c3e7a4ca52189a26b6e",
+    "attempts": 1,
+    "latency_seconds": 5.567,
+    "input_chars": 842,
+    "output_chars": 395,
+    "input_tokens": 231,
+    "output_tokens": 1190,
+    "total_tokens": 1421,
+    "usage_source": "provider",
+    "success": true
+  }
+}

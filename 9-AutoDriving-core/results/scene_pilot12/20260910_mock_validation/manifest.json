@@ -1,0 +1,25 @@
+{
+  "protocol": "scene-pilot12-engineering-1",
+  "created": "2026-09-10T04:44:38.377428+00:00",
+  "stage": "PREPARED_NOT_ADMITTED",
+  "scope": "development_only",
+  "model": "deepseek-v4.1-flash-expires-on-0910",
+  "model_identity_status": "candidate_requires_live_check_before_formal_use",
+  "planned": 72,
+  "repetitions": 2,
+  "concurrency": 4,
+  "max_transport_recoveries": 8,
+  "max_attempts_per_unit": 2,
+  "files": {
+    "model_inputs.json": "3972f1a9fdf6e7488c8cb13433cb95c3778e8ee353d79dec55df55c5e437b40c",
+    "gold_and_traces.json": "e1d8c9578982ee343a330d911e15a6805b88c5c47a51a43540e7849126b24453",
+    "author_review_cases.json": "df072b288fc12e6e3d528583bf15fdfa11fd6e924b83cee0a5645b208cd49b84",
+    "plan.json": "69f04ce246369584990da1e625ab9f412240386896c52cc9701d20dea82fa007",
+    "config.json": "c06158e9c9001d8ce982695936c3d2c88209088826e37e8ebd8333dea8ba0c2e"
+  },
+  "sources": {
+    "scripts/scene_pilot12.py": "6e8714448a4b17f82892513d80506381479c642dc374a2e804a58dc229843ed8",
+    "src/scene_policy.py": "4ced5301536ede161427a5e81d5852ef2e9cea0b554d9354bec16ec37b2f7868",
+    "src/llm_client.py": "ea14ca22f10c4fbb3bdc01c3770d3d2f92fa7aa0aaffe5613b65eed7fe68c10d"
+  }
+}

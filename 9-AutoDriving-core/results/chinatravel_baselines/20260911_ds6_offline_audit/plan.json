@@ -1,0 +1,22 @@
+{
+  "ids": [
+    "e20241028160248698752",
+    "e20241028160845920703",
+    "e20241028160848776495",
+    "e20241028160913165493",
+    "e20241028160902013119",
+    "h20241029143455115600"
+  ],
+  "scope": "offline engineering rerun of three resolved intents, not new model samples",
+  "new_model_calls": 0,
+  "per_case_seconds": 30,
+  "search_width": 10,
+  "change": "numpy scalar to native JSON number at serialization boundary; no string-to-number repair",
+  "source_hashes": {
+    "9-AutoDriving-core/data/chinatravel_stage3_fixed6/collection_deepseek_report.json": "305616aabd7fd81eaa7106026b6cc91cb97abff7a5feeb5de5a4a6c6ee5d1d20",
+    "9-AutoDriving-core/data/chinatravel_stage3_fixed6/public_inputs.json": "38fd35b427d7270bb7ca16e56231fe97aa64f8c4b27c6f722831e50d053e495d",
+    "9-AutoDriving-core/scripts/audit_chinatravel_ds6.py": "7a451b63bb880eab56f715e5ce844b987009076127218bf0b3c500b3633a11af",
+    "9-AutoDriving-core/scripts/chinatravel_parse_plan_v4.py": "197fb033aa7abf9fe747d28387405615a95ce12879e10b85e0febd8f938f6cc0",
+    "9-AutoDriving-core/scripts/chinatravel_symbolic_backend.py": "71c47731e7b5bb6982eaaf19888a0c53017afdd2460a1ffb37837c328a4a2466"
+  }
+}

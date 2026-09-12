@@ -1,0 +1,237 @@
+{
+  "people_number": 1,
+  "start_city": "成都",
+  "target_city": "重庆",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "start_time": "08:02",
+          "end_time": "10:17",
+          "start": "成都东站",
+          "end": "重庆北站",
+          "price": 158.49,
+          "cost": 158.49,
+          "tickets": 1,
+          "transports": [],
+          "TrainID": "D2208",
+          "type": "train"
+        },
+        {
+          "position": "东水门及古城墙",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "10:40",
+          "end_time": "12:10",
+          "transports": [
+            {
+              "start": "重庆北站",
+              "end": "重庆北站南广场-地铁站",
+              "mode": "walk",
+              "start_time": "10:17",
+              "end_time": "10:20",
+              "cost": 0,
+              "distance": 0.27,
+              "price": 0
+            },
+            {
+              "start": "重庆北站南广场-地铁站",
+              "end": "仁济-地铁站",
+              "mode": "metro",
+              "start_time": "10:20",
+              "end_time": "10:33",
+              "cost": 3,
+              "distance": 6.85,
+              "price": 3,
+              "tickets": 1
+            },
+            {
+              "start": "仁济-地铁站",
+              "end": "东水门及古城墙",
+              "mode": "walk",
+              "start_time": "10:33",
+              "end_time": "10:40",
+              "cost": 0,
+              "distance": 0.66,
+              "price": 0
+            }
+          ],
+          "tickets": 1
+        },
+        {
+          "position": "戏作寿司(南坪万达创始店)",
+          "type": "lunch",
+          "price": 78,
+          "cost": 78,
+          "start_time": "12:29",
+          "end_time": "13:29",
+          "transports": [
+            {
+              "start": "东水门及古城墙",
+              "end": "仁济-地铁站",
+              "mode": "walk",
+              "start_time": "12:10",
+              "end_time": "12:17",
+              "cost": 0,
+              "distance": 0.66,
+              "price": 0
+            },
+            {
+              "start": "仁济-地铁站",
+              "end": "南坪-地铁站",
+              "mode": "metro",
+              "start_time": "12:17",
+              "end_time": "12:27",
+              "cost": 3,
+              "distance": 5.24,
+              "price": 3,
+              "tickets": 1
+            },
+            {
+              "start": "南坪-地铁站",
+              "end": "戏作寿司(南坪万达创始店)",
+              "mode": "walk",
+              "start_time": "12:27",
+              "end_time": "12:29",
+              "cost": 0,
+              "distance": 0.21,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "重庆工业文化博览园",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "14:12",
+          "end_time": "15:42",
+          "transports": [
+            {
+              "start": "戏作寿司(南坪万达创始店)",
+              "end": "南坪-地铁站",
+              "mode": "walk",
+              "start_time": "13:29",
+              "end_time": "13:31",
+              "cost": 0,
+              "distance": 0.21,
+              "price": 0
+            },
+            {
+              "start": "南坪-地铁站",
+              "end": "平安-地铁站",
+              "mode": "metro",
+              "start_time": "13:31",
+              "end_time": "13:49",
+              "cost": 4,
+              "distance": 9.2,
+              "price": 4,
+              "tickets": 1
+            },
+            {
+              "start": "平安-地铁站",
+              "end": "重庆工业文化博览园",
+              "mode": "walk",
+              "start_time": "13:49",
+              "end_time": "14:12",
+              "cost": 0,
+              "distance": 1.96,
+              "price": 0
+            }
+          ],
+          "tickets": 1
+        },
+        {
+          "position": "巴渝文化会馆",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "16:34",
+          "end_time": "18:04",
+          "transports": [
+            {
+              "start": "重庆工业文化博览园",
+              "end": "平安-地铁站",
+              "mode": "walk",
+              "start_time": "15:42",
+              "end_time": "16:05",
+              "cost": 0,
+              "distance": 1.96,
+              "price": 0
+            },
+            {
+              "start": "平安-地铁站",
+              "end": "大溪沟-地铁站",
+              "mode": "metro",
+              "start_time": "16:05",
+              "end_time": "16:27",
+              "cost": 4,
+              "distance": 11.15,
+              "price": 4,
+              "tickets": 1
+            },
+            {
+              "start": "大溪沟-地铁站",
+              "end": "巴渝文化会馆",
+              "mode": "walk",
+              "start_time": "16:27",
+              "end_time": "16:34",
+              "cost": 0,
+              "distance": 0.61,
+              "price": 0
+            }
+          ],
+          "tickets": 1
+        },
+        {
+          "start_time": "19:09",
+          "end_time": "20:51",
+          "start": "重庆北站",
+          "end": "成都东站",
+          "price": 171.7,
+          "cost": 171.7,
+          "tickets": 1,
+          "transports": [
+            {
+              "start": "巴渝文化会馆",
+              "end": "大溪沟-地铁站",
+              "mode": "walk",
+              "start_time": "18:04",
+              "end_time": "18:11",
+              "cost": 0,
+              "distance": 0.61,
+              "price": 0
+            },
+            {
+              "start": "大溪沟-地铁站",
+              "end": "重庆北站南广场-地铁站",
+              "mode": "metro",
+              "start_time": "18:11",
+              "end_time": "18:20",
+              "cost": 3,
+              "distance": 4.58,
+              "price": 3,
+              "tickets": 1
+            },
+            {
+              "start": "重庆北站南广场-地铁站",
+              "end": "重庆北站",
+              "mode": "walk",
+              "start_time": "18:20",
+              "end_time": "18:23",
+              "cost": 0,
+              "distance": 0.27,
+              "price": 0
+            }
+          ],
+          "TrainID": "G318",
+          "type": "train"
+        }
+      ]
+    }
+  ],
+  "search_time_sec": 0.9967041015625,
+  "llm_inference_time_sec": 0
+}

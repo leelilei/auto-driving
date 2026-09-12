@@ -1,0 +1,64 @@
+{
+  "call_id": "F06__r2__evidence",
+  "case_id": "F06",
+  "rep": 2,
+  "role": "evidence",
+  "request": {
+    "system": "Review the predicted selection rule against the instruction and full public scene. The prediction may be wrong. Supplementary computed facts are consequences only and cannot override what the instruction requests. Check every field, including when the prediction seems feasible. Return only a JSON object with exactly selection, availability_reference, return_by, evidence.\nselection is nearest_from_bank, minimum_added_distance, or highest_rating.\navailability_reference is departure only when already open at home departure is explicitly required, otherwise arrival.\nreturn_by is integer minutes since midnight or null when absent. It is the requested deadline, not a computed arrival time.\nevidence quotes instruction spans. Preserve the requirements even if infeasible. Do not choose a pharmacy ID or relax a rule.\nOUTPUT CONTRACT (applies to all fields):\nReturn one JSON object only, with no commentary before or after it and no Markdown fences.\nIt has exactly four keys: selection, availability_reference, return_by, evidence.\nThe first three fields follow the rules above. evidence MUST be a JSON object, never a string or array.\nInside evidence use field names as keys and instruction quotations as string values; an empty object {} is valid.\nDo not add a verdict, explanation paragraph, corrected_policy wrapper, or any extra top-level key.\n\nDefinitions of the three selection values:\n- nearest_from_bank: minimize the straight-line distance d(B, P) from bank B to the pharmacy P among eligible pharmacies.\n- minimum_added_distance: minimize d(B, P) + d(P, H) - d(B, H) among eligible pharmacies, where H is home.\n- highest_rating: maximize the pharmacy rating among eligible pharmacies.\nThese definitions specify the selection field. Read which objective is requested from the instruction; the availability_reference and return_by fields retain their definitions above.\n",
+    "user": "{\"candidate_policy\": {\"availability_reference\": \"arrival\", \"return_by\": null, \"selection\": \"highest_rating\"}, \"computed_scene_facts\": {\"bank_arrival\": 559.0262975904404, \"bank_service_finish\": 579.0262975904404, \"bank_service_window_ok\": true, \"candidates\": [{\"added_distance\": 6.797661762406889, \"arrival\": 590.4280518414319, \"distance_from_bank\": 11.40175425099138, \"open_at_departure\": true, \"poi_id\": \"P_A\", \"rating\": 3.1, \"return_time\": 614.8502569432878, \"service_finish\": 600.4280518414319, \"service_window_ok\": true}, {\"added_distance\": 6.50008131209621, \"arrival\": 593.2389679939923, \"distance_from_bank\": 14.212670403551895, \"open_at_departure\": true, \"poi_id\": \"P_B\", \"rating\": 2.7, \"return_time\": 614.5526764929771, \"service_finish\": 603.2389679939923, \"service_window_ok\": true}, {\"added_distance\": 1.3648740829658905, \"arrival\": 593.5865173690015, \"distance_from_bank\": 14.560219778561036, \"open_at_departure\": true, \"poi_id\": \"P_C\", \"rating\": 4.2, \"return_time\": 609.4174692638468, \"service_finish\": 603.5865173690015, \"service_window_ok\": true}, {\"added_distance\": 5.898561254730829, \"arrival\": 584.0262975904404, \"distance_from_bank\": 5.0, \"open_at_departure\": true, \"poi_id\": \"P_D\", \"rating\": 3.5, \"return_time\": 613.9511564356117, \"service_finish\": 594.0262975904404, \"service_window_ok\": true}, {\"added_distance\": 3.0786755841023528, \"arrival\": 598.1312707649832, \"distance_from_bank\": 19.1049731745428, \"open_at_departure\": true, \"poi_id\": \"P_E\", \"rating\": 3.0, \"return_time\": 611.1312707649832, \"service_finish\": 608.1312707649832, \"service_window_ok\": true}], \"notes\": \"No waiting. Candidate facts do not identify the user selection rule.\"}, \"instruction\": \"Start at home at 09:00. Visit bank B first, then exactly one pharmacy, then return home. Travel along straight lines at 1 distance unit per minute. Bank service takes 20 minutes and pharmacy service takes 10 minutes. Do not wait for a place to open. Start service immediately on arrival; each service must finish no later than closing time. If no pharmacy can satisfy every requirement, report INFEASIBLE. Among pharmacies satisfying every requirement, choose the one with the highest rating. Pharmacies need not be open when I leave home; they must be open when I arrive and allow the full service.\", \"scene\": {\"bank\": {\"close\": 660, \"open\": 500, \"rating\": 4, \"x\": 19, \"y\": 1}, \"bank_service\": 20, \"departure\": 540, \"home\": [0, 0], \"pharmacies\": {\"P_A\": {\"close\": 660, \"open\": 500, \"rating\": 3.1, \"x\": 12, \"y\": -8}, \"P_B\": {\"close\": 660, \"open\": 500, \"rating\": 2.7, \"x\": 8, \"y\": -8}, \"P_C\": {\"close\": 660, \"open\": 500, \"rating\": 4.2, \"x\": 5, \"y\": -3}, \"P_D\": {\"close\": 660, \"open\": 500, \"rating\": 3.5, \"x\": 19, \"y\": 6}, \"P_E\": {\"close\": 660, \"open\": 500, \"rating\": 3.0, \"x\": 0, \"y\": 3}}, \"pharmacy_service\": 10, \"speed_units_per_minute\": 1}}"
+  },
+  "status": "COMPLETE",
+  "source": "REAL",
+  "started": "2026-09-10T16:41:10.893183+00:00",
+  "transport_revision": "original-c2",
+  "telemetry": {
+    "call_index": 1,
+    "prompt_sha256": "c479205d167cc7b0db864fd928c726cefa4f27aeea441308a89fd618c82870b1",
+    "attempts": 1,
+    "latency_seconds": 3.337,
+    "input_chars": 4703,
+    "output_chars": 374,
+    "input_tokens": 1532,
+    "output_tokens": 109,
+    "total_tokens": 1641,
+    "usage_source": "provider",
+    "success": true
+  },
+  "provider_response": {
+    "model": "claude-haiku-4-5-20251001",
+    "id": "msg_011Cev6F3mWeK4Rt1ZVX4Mwd",
+    "type": "message",
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "```json\n{\n  \"selection\": \"highest_rating\",\n  \"availability_reference\": \"arrival\",\n  \"return_by\": null,\n  \"evidence\": {\n    \"selection_rule\": \"Among pharmacies satisfying every requirement, choose the one with the highest rating.\",\n    \"availability_requirement\": \"they must be open when I arrive\",\n    \"no_deadline\": \"return_by is not specified in the instruction\"\n  }\n}\n```"
+      }
+    ],
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "stop_details": null,
+    "usage": {
+      "input_tokens": 1532,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "output_tokens": 109,
+      "service_tier": "standard",
+      "inference_geo": "global"
+    },
+    "context_management": {
+      "applied_edits": []
+    }
+  },
+  "raw_response": "```json\n{\n  \"selection\": \"highest_rating\",\n  \"availability_reference\": \"arrival\",\n  \"return_by\": null,\n  \"evidence\": {\n    \"selection_rule\": \"Among pharmacies satisfying every requirement, choose the one with the highest rating.\",\n    \"availability_requirement\": \"they must be open when I arrive\",\n    \"no_deadline\": \"return_by is not specified in the instruction\"\n  }\n}\n```",
+  "parsed_policy": {
+    "selection": "highest_rating",
+    "availability_reference": "arrival",
+    "return_by": null
+  },
+  "finished": "2026-09-10T16:41:14.231387+00:00"
+}

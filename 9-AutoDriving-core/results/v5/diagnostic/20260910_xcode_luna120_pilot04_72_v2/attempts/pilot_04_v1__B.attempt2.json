@@ -1,0 +1,29 @@
+{
+  "call_id": "pilot_04_v1::B",
+  "role": "B",
+  "graph_condition": null,
+  "started_at": "2026-09-09T18:32:12.246111+00:00",
+  "request": {
+    "system": "Read the user's route-planning instruction field by field before producing the final JSON.\n\nCheck: requested POI categories, return deadline, explicit visit order, and the direction of the quality-versus-distance preference. Each conclusion must be supported by the instruction itself.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nDo not infer a preference from any route or map. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Make sure to visit the bank and the library today, returning by 18:00. It is crucial to prioritize an efficient, quick route for these stops."
+  },
+  "status": "TRANSPORT_FAILED",
+  "schema_valid": false,
+  "error_type": "RuntimeError",
+  "error_message": "curl request failed: curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to xcode.best:443",
+  "finished_at": "2026-09-09T18:32:17.268261+00:00",
+  "telemetry": {
+    "call_index": 1,
+    "prompt_sha256": "1c42824c12f64cf914a47b01684258f90ba96481737096cab75dc27fce046f77",
+    "attempts": 1,
+    "latency_seconds": 5.022,
+    "input_chars": 1015,
+    "output_chars": 0,
+    "input_tokens": 254,
+    "output_tokens": 0,
+    "total_tokens": 254,
+    "usage_source": "character_estimate",
+    "success": false,
+    "error": "RuntimeError"
+  }
+}

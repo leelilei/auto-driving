@@ -1,0 +1,300 @@
+{
+  "people_number": 1,
+  "start_city": "重庆",
+  "target_city": "成都",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "start_time": "05:15",
+          "end_time": "08:58",
+          "start": "重庆北站",
+          "end": "成都西站",
+          "price": 105.66,
+          "cost": 105.66,
+          "tickets": 1,
+          "transports": [],
+          "TrainID": "K1256",
+          "type": "train"
+        },
+        {
+          "position": "成都失恋博物馆(春熙路旗舰店)",
+          "type": "attraction",
+          "price": 39,
+          "cost": 39,
+          "start_time": "10:00",
+          "end_time": "11:30",
+          "transports": [
+            {
+              "start": "成都西站",
+              "end": "成都西站-地铁站",
+              "mode": "walk",
+              "start_time": "08:58",
+              "end_time": "09:01",
+              "cost": 0,
+              "distance": 0.28,
+              "price": 0
+            },
+            {
+              "start": "成都西站-地铁站",
+              "end": "市二医院-地铁站",
+              "mode": "metro",
+              "start_time": "09:01",
+              "end_time": "09:22",
+              "cost": 4,
+              "distance": 10.59,
+              "price": 4,
+              "tickets": 1
+            },
+            {
+              "start": "市二医院-地铁站",
+              "end": "成都失恋博物馆(春熙路旗舰店)",
+              "mode": "walk",
+              "start_time": "09:22",
+              "end_time": "09:25",
+              "cost": 0,
+              "distance": 0.3,
+              "price": 0
+            }
+          ],
+          "tickets": 1
+        },
+        {
+          "position": "Godiva歌帝梵(成都远洋太古里店)",
+          "type": "lunch",
+          "price": 57,
+          "cost": 57,
+          "start_time": "11:36",
+          "end_time": "12:36",
+          "transports": [
+            {
+              "start": "成都失恋博物馆(春熙路旗舰店)",
+              "end": "市二医院-地铁站",
+              "mode": "walk",
+              "start_time": "11:30",
+              "end_time": "11:33",
+              "cost": 0,
+              "distance": 0.3,
+              "price": 0
+            },
+            {
+              "start": "市二医院-地铁站",
+              "end": "春熙路-地铁站",
+              "mode": "metro",
+              "start_time": "11:33",
+              "end_time": "11:34",
+              "cost": 2,
+              "distance": 0.9,
+              "price": 2,
+              "tickets": 1
+            },
+            {
+              "start": "春熙路-地铁站",
+              "end": "Godiva歌帝梵(成都远洋太古里店)",
+              "mode": "walk",
+              "start_time": "11:34",
+              "end_time": "11:36",
+              "cost": 0,
+              "distance": 0.25,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "锦里古戏台",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "12:50",
+          "end_time": "14:20",
+          "transports": [
+            {
+              "start": "Godiva歌帝梵(成都远洋太古里店)",
+              "end": "春熙路-地铁站",
+              "mode": "walk",
+              "start_time": "12:36",
+              "end_time": "12:38",
+              "cost": 0,
+              "distance": 0.25,
+              "price": 0
+            },
+            {
+              "start": "春熙路-地铁站",
+              "end": "人民公园-地铁站",
+              "mode": "metro",
+              "start_time": "12:38",
+              "end_time": "12:42",
+              "cost": 2,
+              "distance": 2.32,
+              "price": 2,
+              "tickets": 1
+            },
+            {
+              "start": "人民公园-地铁站",
+              "end": "锦里古戏台",
+              "mode": "walk",
+              "start_time": "12:42",
+              "end_time": "12:50",
+              "cost": 0,
+              "distance": 0.74,
+              "price": 0
+            }
+          ],
+          "tickets": 1
+        },
+        {
+          "position": "成都超音速国际卡丁车公园",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "14:57",
+          "end_time": "16:27",
+          "transports": [
+            {
+              "start": "锦里古戏台",
+              "end": "人民公园-地铁站",
+              "mode": "walk",
+              "start_time": "14:20",
+              "end_time": "14:28",
+              "cost": 0,
+              "distance": 0.74,
+              "price": 0
+            },
+            {
+              "start": "人民公园-地铁站",
+              "end": "来龙-地铁站",
+              "mode": "metro",
+              "start_time": "14:28",
+              "end_time": "14:48",
+              "cost": 4,
+              "distance": 10.41,
+              "price": 4,
+              "tickets": 1
+            },
+            {
+              "start": "来龙-地铁站",
+              "end": "成都超音速国际卡丁车公园",
+              "mode": "walk",
+              "start_time": "14:48",
+              "end_time": "14:57",
+              "cost": 0,
+              "distance": 0.82,
+              "price": 0
+            }
+          ],
+          "tickets": 1
+        },
+        {
+          "position": "蜀九香火锅(九眼桥店)",
+          "type": "dinner",
+          "price": 117,
+          "cost": 117,
+          "start_time": "17:00",
+          "end_time": "18:00",
+          "transports": [
+            {
+              "start": "成都超音速国际卡丁车公园",
+              "end": "来龙-地铁站",
+              "mode": "walk",
+              "start_time": "16:27",
+              "end_time": "16:36",
+              "cost": 0,
+              "distance": 0.82,
+              "price": 0
+            },
+            {
+              "start": "来龙-地铁站",
+              "end": "顺江路-地铁站",
+              "mode": "metro",
+              "start_time": "16:36",
+              "end_time": "16:49",
+              "cost": 3,
+              "distance": 6.96,
+              "price": 3,
+              "tickets": 1
+            },
+            {
+              "start": "顺江路-地铁站",
+              "end": "蜀九香火锅(九眼桥店)",
+              "mode": "walk",
+              "start_time": "16:49",
+              "end_time": "16:56",
+              "cost": 0,
+              "distance": 0.62,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "金沙遗址博物馆乌木林",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "18:12",
+          "end_time": "19:42",
+          "transports": [
+            {
+              "start": "蜀九香火锅(九眼桥店)",
+              "end": "金沙遗址博物馆乌木林",
+              "mode": "taxi",
+              "start_time": "18:00",
+              "end_time": "18:12",
+              "cost": 34.18,
+              "distance": 8.42,
+              "price": 34.18,
+              "cars": 1
+            }
+          ],
+          "tickets": 1
+        },
+        {
+          "start_time": "22:31",
+          "end_time": "23:49",
+          "start": "成都东站",
+          "end": "重庆西站",
+          "price": 171.7,
+          "cost": 171.7,
+          "tickets": 1,
+          "transports": [
+            {
+              "start": "金沙遗址博物馆乌木林",
+              "end": "一品天下-地铁站",
+              "mode": "walk",
+              "start_time": "19:42",
+              "end_time": "19:46",
+              "cost": 0,
+              "distance": 0.36,
+              "price": 0
+            },
+            {
+              "start": "一品天下-地铁站",
+              "end": "成都东客站-地铁站",
+              "mode": "metro",
+              "start_time": "19:46",
+              "end_time": "20:12",
+              "cost": 4,
+              "distance": 13.29,
+              "price": 4,
+              "tickets": 1
+            },
+            {
+              "start": "成都东客站-地铁站",
+              "end": "成都东站",
+              "mode": "walk",
+              "start_time": "20:12",
+              "end_time": "20:12",
+              "cost": 0,
+              "distance": 0.0,
+              "price": 0
+            }
+          ],
+          "TrainID": "G8749",
+          "type": "train"
+        }
+      ]
+    }
+  ],
+  "search_time_sec": 1.501420021057129,
+  "llm_inference_time_sec": 0
+}

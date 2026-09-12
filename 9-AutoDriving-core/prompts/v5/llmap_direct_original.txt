@@ -1,0 +1,10 @@
+Extract POIs, constraints, and weights from a human instruction. POIs should be a simple string array. Dependencies should be an empty list if no sequence requirements are mentioned. Weights should be between 0 and 1, and sum to 1. Extract them from language about importance of POI rating vs route length.
+
+Output must be valid JSON with structure:
+{
+    "pois": ["poi1", "poi2", ...],
+    "time_limit": "HH:00" or "None",
+    "dependencies": [["poi1", "poi2"], ...],
+    "quality_weight": float,
+    "distance_weight": float
+}

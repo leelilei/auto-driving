@@ -1,0 +1,48 @@
+{
+  "call_id": "stress_implicit_distance_v3::A",
+  "role": "A",
+  "graph_condition": null,
+  "started_at": "2026-09-10T02:29:04.320837+00:00",
+  "request": {
+    "system": "You extract route-planning intent from the user's instruction.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nUse only the instruction. Do not invent constraints. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Please cover the pharmacy, supermarket, and bank without wasting travel, as I am short on time. Visit the bank earlier than the pharmacy."
+  },
+  "raw_response": "{\"pois\":[\"pharmacy\",\"supermarket\",\"bank\"],\"time_limit\":null,\"dependencies\":[[\"bank\",\"pharmacy\"]],\"quality_weight\":0.2,\"evidence\":{\"pois\":\"pharmacy, supermarket, and bank\",\"dependencies\":\"Visit the bank earlier than the pharmacy\",\"quality_weight\":\"without wasting travel\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "pharmacy",
+      "supermarket"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "bank",
+        "pharmacy"
+      ]
+    ],
+    "quality_weight": 0.2
+  },
+  "evidence": {
+    "pois": "pharmacy, supermarket, and bank",
+    "dependencies": "Visit the bank earlier than the pharmacy",
+    "quality_weight": "without wasting travel"
+  },
+  "changes": [],
+  "finished_at": "2026-09-10T02:29:08.532156+00:00",
+  "telemetry": {
+    "call_index": 7,
+    "prompt_sha256": "23635d4c725585078178d48b7c3af366b078d2fd2056a162fa74b7e9e37e9f2e",
+    "attempts": 1,
+    "latency_seconds": 4.211,
+    "input_chars": 792,
+    "output_chars": 272,
+    "input_tokens": 217,
+    "output_tokens": 779,
+    "total_tokens": 996,
+    "usage_source": "provider",
+    "success": true
+  }
+}

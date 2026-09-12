@@ -1,0 +1,15 @@
+{
+  "scope": "hand-authored development model selection; not a paper result",
+  "model": "gpt-5.6-luna",
+  "transport": "curl",
+  "planned_calls": 5,
+  "attempted_calls": 2,
+  "collection_complete": false,
+  "schema_valid": 1,
+  "hard_exact": 1,
+  "direction_exact": 1,
+  "provider_usage_calls": 1,
+  "provider_total_tokens": 306,
+  "mean_latency_seconds": 51.3865,
+  "run_dir": "9-AutoDriving-core/results/v5/model_selection/20260910T021746813039Z_gpt_5_6_luna_model_smoke"
+}

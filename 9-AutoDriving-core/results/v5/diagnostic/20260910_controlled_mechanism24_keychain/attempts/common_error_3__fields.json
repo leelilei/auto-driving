@@ -1,0 +1,55 @@
+{
+  "call_id": "common_error_3__fields",
+  "role": "fields",
+  "graph_condition": "tradeoff",
+  "started_at": "2026-09-10T02:53:19.230610+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. The field-difference report only identifies disagreements; it does not identify the correct answer.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not infer user preference from a route or map.\n\nInstruction:\nToday, make sure to visit the bank, library, and pharmacy. It's important to prioritize places with the best ratings. Also, please go to the bank before heading to the library.\n\nCandidate A:\n{\"dependencies\": [[\"library\", \"bank\"]], \"pois\": [\"bank\", \"library\", \"pharmacy\"], \"quality_weight\": 0.75, \"time_limit\": null}\n\nCandidate B:\n{\"dependencies\": [[\"library\", \"bank\"]], \"pois\": [\"bank\", \"library\", \"pharmacy\"], \"quality_weight\": 0.75, \"time_limit\": null}\n\nField differences:\n{\"fields\": []}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"bank\",\"library\",\"pharmacy\"],\"time_limit\":null,\"dependencies\":[[\"library\",\"bank\"]],\"quality_weight\":0.75},\"evidence\":{\"pois\":[\"visit the bank, library, and pharmacy\"],\"quality_weight\":[\"prioritize places with the best ratings\"],\"dependencies\":[\"go to the bank before heading to the library\"],\"time_limit\":[]},\"changes\":[]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library",
+      "pharmacy"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "library",
+        "bank"
+      ]
+    ],
+    "quality_weight": 0.75
+  },
+  "evidence": {
+    "pois": [
+      "visit the bank, library, and pharmacy"
+    ],
+    "quality_weight": [
+      "prioritize places with the best ratings"
+    ],
+    "dependencies": [
+      "go to the bank before heading to the library"
+    ],
+    "time_limit": []
+  },
+  "changes": [],
+  "finished_at": "2026-09-10T02:53:50.129830+00:00",
+  "telemetry": {
+    "call_index": 1,
+    "prompt_sha256": "d6a7482844ceafd514c7ef73ef49c14b4e9079541021041e01405467857d609e",
+    "attempts": 1,
+    "latency_seconds": 30.899,
+    "input_chars": 1049,
+    "output_chars": 341,
+    "input_tokens": 301,
+    "output_tokens": 6217,
+    "total_tokens": 6518,
+    "usage_source": "provider",
+    "success": true
+  }
+}

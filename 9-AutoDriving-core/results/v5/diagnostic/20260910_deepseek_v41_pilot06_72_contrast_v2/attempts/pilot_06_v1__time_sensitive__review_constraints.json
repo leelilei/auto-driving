@@ -1,0 +1,51 @@
+{
+  "call_id": "pilot_06_v1::time_sensitive::review_constraints",
+  "role": "review_constraints",
+  "graph_condition": "time_sensitive",
+  "started_at": "2026-09-09T16:40:45.111867+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. Cross-constraint checks show consequences of candidates and do not establish the user's intent.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not select a preference because one candidate yields a better route.\n\nInstruction:\nYou must visit the library, supermarket, and bank today, returning by 18:00. Select an efficient route to complete all visits promptly, and stop by the supermarket before going to the bank.\n\nCandidate A:\n{\"dependencies\": [[\"supermarket\", \"bank\"]], \"pois\": [\"bank\", \"library\", \"supermarket\"], \"quality_weight\": 0.3, \"time_limit\": 1080}\n\nCandidate B:\n{\"dependencies\": [[\"supermarket\", \"bank\"]], \"pois\": [\"bank\", \"library\", \"supermarket\"], \"quality_weight\": 0.2, \"time_limit\": 1080}\n\nField differences:\n{\"fields\": [\"quality_weight\"]}\n\nCross-constraint checks:\n{\"route_A_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_A_under_B\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_B\": {\"reasons\": [], \"task_success\": true}}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"bank\",\"library\",\"supermarket\"],\"time_limit\":1080,\"dependencies\":[[\"supermarket\",\"bank\"]],\"quality_weight\":0.5},\"evidence\":{\"pois\":\"visit the library, supermarket, and bank\",\"time_limit\":\"returning by 18:00\",\"dependencies\":\"stop by the supermarket before going to the bank\",\"quality_weight\":\"Select an efficient route to complete all visits promptly\"},\"changes\":[\"quality_weight\"]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library",
+      "supermarket"
+    ],
+    "time_limit": 1080,
+    "dependencies": [
+      [
+        "supermarket",
+        "bank"
+      ]
+    ],
+    "quality_weight": 0.5
+  },
+  "evidence": {
+    "pois": "visit the library, supermarket, and bank",
+    "time_limit": "returning by 18:00",
+    "dependencies": "stop by the supermarket before going to the bank",
+    "quality_weight": "Select an efficient route to complete all visits promptly"
+  },
+  "changes": [
+    "quality_weight"
+  ],
+  "finished_at": "2026-09-09T16:40:52.143107+00:00",
+  "telemetry": {
+    "call_index": 35,
+    "prompt_sha256": "2289086c3fc9d8eafe4b480ea91b77e09917c83232f9efdf1819e7165f2ca0a5",
+    "attempts": 1,
+    "latency_seconds": 7.031,
+    "input_chars": 1367,
+    "output_chars": 400,
+    "input_tokens": 397,
+    "output_tokens": 1934,
+    "total_tokens": 2331,
+    "usage_source": "provider",
+    "success": true
+  }
+}

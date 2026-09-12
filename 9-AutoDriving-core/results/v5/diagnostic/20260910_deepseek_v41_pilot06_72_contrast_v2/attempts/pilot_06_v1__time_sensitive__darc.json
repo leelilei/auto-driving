@@ -1,0 +1,51 @@
+{
+  "call_id": "pilot_06_v1::time_sensitive::darc",
+  "role": "darc",
+  "graph_condition": "time_sensitive",
+  "started_at": "2026-09-09T16:40:52.144514+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. The decision-contrast report is diagnostic evidence about consequences; it is not a label and must not override the words of the instruction.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Use the report to locate consequential disagreements, then decide each field from the instruction alone.\n\nInstruction:\nYou must visit the library, supermarket, and bank today, returning by 18:00. Select an efficient route to complete all visits promptly, and stop by the supermarket before going to the bank.\n\nCandidate A:\n{\"dependencies\": [[\"supermarket\", \"bank\"]], \"pois\": [\"bank\", \"library\", \"supermarket\"], \"quality_weight\": 0.3, \"time_limit\": 1080}\n\nCandidate B:\n{\"dependencies\": [[\"supermarket\", \"bank\"]], \"pois\": [\"bank\", \"library\", \"supermarket\"], \"quality_weight\": 0.2, \"time_limit\": 1080}\n\nDecision-contrast report:\n{\"candidate_A\": {\"dependencies\": [[\"supermarket\", \"bank\"]], \"pois\": [\"bank\", \"library\", \"supermarket\"], \"quality_weight\": 0.3, \"time_limit\": 1080}, \"candidate_B\": {\"dependencies\": [[\"supermarket\", \"bank\"]], \"pois\": [\"bank\", \"library\", \"supermarket\"], \"quality_weight\": 0.2, \"time_limit\": 1080}, \"candidate_evidence\": {\"A\": {\"dependencies\": \"supermarket before going to the bank\", \"pois\": \"library, supermarket, and bank\", \"quality_weight\": \"efficient route to complete all visits promptly\", \"time_limit\": \"returning by 18:00\"}, \"B\": {\"dependencies\": \"supermarket before going to the bank\", \"pois\": \"library, supermarket, and bank\", \"quality_weight\": \"Select an efficient route to complete all visits promptly\", \"time_limit\": \"returning by 18:00\"}}, \"cross_constraints\": {\"route_A_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_A_under_B\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_B\": {\"reasons\": [], \"task_success\": true}}, \"differing_fields\": [\"quality_weight\"], \"instruction\": \"You must visit the library, supermarket, and bank today, returning by 18:00. Select an efficient route to complete all visits promptly, and stop by the supermarket before going to the bank.\", \"limitations\": [\"The report does not identify the user's true intent.\", \"Both candidates may share the same error.\", \"Single-field swaps do not identify higher-order interactions.\"], \"report_version\": \"darc-v5.1-contrast-2\", \"routes\": {\"A\": {\"arrival_minutes\": 667, \"average_quality\": 0.20000000000000004, \"categories\": [\"supermarket\", \"library\", \"bank\"], \"coverage_count\": 3, \"distance_km\": 5.972, \"duration_minutes\": 126.9, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"supermarket_1\", \"library_1\", \"bank_1\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": -0.008301355993387799}, \"B\": {\"arrival_minutes\": 667, \"average_quality\": 0.20000000000000004, \"categories\": [\"supermarket\", \"library\", \"bank\"], \"coverage_count\": 3, \"distance_km\": 5.972, \"duration_minutes\": 126.9, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"supermarket_1\", \"library_1\", \"bank_1\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": -0.03805869256387179}}, \"single_field_swaps\": [{\"base\": \"A\", \"field_from_other\": \"quality_weight\", \"hybrid_intent\": {\"dependencies\": [[\"supermarket\", \"bank\"]], \"pois\": [\"bank\", \"library\", \"supermarket\"], \"quality_weight\": 0.2, \"time_limit\": 1080}, \"route\": {\"arrival_minutes\": 667, \"average_quality\": 0.20000000000000004, \"categories\": [\"supermarket\", \"library\", \"bank\"], \"coverage_count\": 3, \"distance_km\": 5.972, \"duration_minutes\": 126.9, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"supermarket_1\", \"library_1\", \"bank_1\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": -0.03805869256387179}}, {\"base\": \"B\", \"field_from_other\": \"quality_weight\", \"hybrid_intent\": {\"dependencies\": [[\"supermarket\", \"bank\"]], \"pois\": [\"bank\", \"library\", \"supermarket\"], \"quality_weight\": 0.3, \"time_limit\": 1080}, \"route\": {\"arrival_minutes\": 667, \"average_quality\": 0.20000000000000004, \"categories\": [\"supermarket\", \"library\", \"bank\"], \"coverage_count\": 3, \"distance_km\": 5.972, \"duration_minutes\": 126.9, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"supermarket_1\", \"library_1\", \"bank_1\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": -0.008301355993387799}}]}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"bank\",\"library\",\"supermarket\"],\"time_limit\":1080,\"dependencies\":[[\"supermarket\",\"bank\"]],\"quality_weight\":0.2},\"evidence\":{\"pois\":\"library, supermarket, and bank\",\"time_limit\":\"returning by 18:00\",\"dependencies\":\"supermarket before going to the bank\",\"quality_weight\":\"efficient route to complete all visits promptly\"},\"changes\":[\"quality_weight\"]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library",
+      "supermarket"
+    ],
+    "time_limit": 1080,
+    "dependencies": [
+      [
+        "supermarket",
+        "bank"
+      ]
+    ],
+    "quality_weight": 0.2
+  },
+  "evidence": {
+    "pois": "library, supermarket, and bank",
+    "time_limit": "returning by 18:00",
+    "dependencies": "supermarket before going to the bank",
+    "quality_weight": "efficient route to complete all visits promptly"
+  },
+  "changes": [
+    "quality_weight"
+  ],
+  "finished_at": "2026-09-09T16:41:10.826221+00:00",
+  "telemetry": {
+    "call_index": 36,
+    "prompt_sha256": "0b8a920f4209b1e309f99e24601c5378a5132ede55888c140fe8709f9b1e1bfb",
+    "attempts": 1,
+    "latency_seconds": 18.681,
+    "input_chars": 4538,
+    "output_chars": 368,
+    "input_tokens": 1388,
+    "output_tokens": 5582,
+    "total_tokens": 6970,
+    "usage_source": "provider",
+    "success": true
+  }
+}

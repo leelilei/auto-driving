@@ -1,0 +1,46 @@
+{
+  "fixture_id": "three_step_dependency",
+  "text": "Visit the supermarket before the pharmacy, then go to the library. I care more about a quick route.",
+  "gold": {
+    "pois": [
+      "supermarket",
+      "pharmacy",
+      "library"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "supermarket",
+        "pharmacy"
+      ],
+      [
+        "pharmacy",
+        "library"
+      ]
+    ],
+    "quality_weight": 0.25
+  },
+  "started_at": "2026-09-10T02:19:08.959639+00:00",
+  "schema_valid": false,
+  "transport_error_type": "RuntimeError",
+  "error_message": "provider HTTP 429: {\"error\":{\"message\":\"Upstream rate limit exceeded, please retry later\",\"type\":\"rate_limit_error\"}}",
+  "hard": {
+    "hard_exact": false
+  },
+  "direction_exact": false,
+  "finished_at": "2026-09-10T02:19:16.480683+00:00",
+  "telemetry": {
+    "call_index": 4,
+    "prompt_sha256": "5b5c0e49023935ad368be8f31119552ec5ac9d15777afba3a1474c9f3742b901",
+    "attempts": 1,
+    "latency_seconds": 7.521,
+    "input_chars": 523,
+    "output_chars": 0,
+    "input_tokens": 131,
+    "output_tokens": 0,
+    "total_tokens": 131,
+    "usage_source": "character_estimate",
+    "success": false,
+    "error": "RuntimeError"
+  }
+}

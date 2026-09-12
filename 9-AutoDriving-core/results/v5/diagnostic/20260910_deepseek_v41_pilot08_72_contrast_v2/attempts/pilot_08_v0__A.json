@@ -1,0 +1,48 @@
+{
+  "call_id": "pilot_08_v0::A",
+  "role": "A",
+  "graph_condition": null,
+  "started_at": "2026-09-09T16:31:56.209713+00:00",
+  "request": {
+    "system": "You extract route-planning intent from the user's instruction.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nUse only the instruction. Do not invent constraints. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Today, let's visit the library, the shopping mall, and the supermarket. I would like to keep a good balance between visiting well-rated places and having an efficient route. Make sure to stop by the shopping mall before heading to the supermarket."
+  },
+  "raw_response": "{\"pois\":[\"library\",\"shopping mall\",\"supermarket\"],\"time_limit\":null,\"dependencies\":[[\"shopping mall\",\"supermarket\"]],\"quality_weight\":0.5,\"evidence\":{\"pois\":\"visit the library, the shopping mall, and the supermarket\",\"dependencies\":\"shopping mall before heading to the supermarket\",\"quality_weight\":\"keep a good balance between visiting well-rated places and having an efficient route\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "library",
+      "shopping_mall",
+      "supermarket"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "shopping_mall",
+        "supermarket"
+      ]
+    ],
+    "quality_weight": 0.5
+  },
+  "evidence": {
+    "pois": "visit the library, the shopping mall, and the supermarket",
+    "dependencies": "shopping mall before heading to the supermarket",
+    "quality_weight": "keep a good balance between visiting well-rated places and having an efficient route"
+  },
+  "changes": [],
+  "finished_at": "2026-09-09T16:31:58.227044+00:00",
+  "telemetry": {
+    "call_index": 1,
+    "prompt_sha256": "db74f9c854a52b44c5506c9ebeab9cd640bbd9e3ec665ab7df9c63b62e350414",
+    "attempts": 1,
+    "latency_seconds": 2.017,
+    "input_chars": 902,
+    "output_chars": 387,
+    "input_tokens": 238,
+    "output_tokens": 367,
+    "total_tokens": 605,
+    "usage_source": "provider",
+    "success": true
+  }
+}

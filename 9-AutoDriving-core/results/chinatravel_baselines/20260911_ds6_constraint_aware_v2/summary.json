@@ -1,0 +1,81 @@
+{
+  "n_expected": 6,
+  "original_unique_model_requests": 6,
+  "new_model_requests": 0,
+  "requested_model": "deepseek-v4-flash",
+  "returned_models": [
+    "deepseek-flash"
+  ],
+  "original_usage": {
+    "prompt_tokens": 749,
+    "completion_tokens": 430,
+    "total_tokens": 1179
+  },
+  "original_all_pass_rate": 16.666666666666668,
+  "rerun_all_pass_rate": 16.666666666666668,
+  "rows": [
+    {
+      "uid": "e20241028160248698752",
+      "original_query": "当前位置上海。我一个人想去杭州玩一天，预算1500人民币，请给我一个旅行规划。",
+      "parser_status": "JSON_VALID",
+      "status": "search_success",
+      "seconds": 0.9734596669441089,
+      "tool_calls": 183,
+      "raw_schema_valid": true,
+      "json_schema_valid": true,
+      "normalization_changed_native_types": false
+    },
+    {
+      "uid": "e20241028160845920703",
+      "original_query": "当前位置深圳。我打算去广州玩两天，预算1000元，想吃火锅，开一间单床房。请给我一个旅行规划。",
+      "parser_status": "JSON_VALID",
+      "status": "NEEDS_CLARIFICATION",
+      "missing_fields": [
+        "people_number"
+      ],
+      "error_type": "ValueError"
+    },
+    {
+      "uid": "e20241028160848776495",
+      "original_query": "当前位置广州。我们四个人计划去杭州玩两天，选择火车出行，预算5600元，开两间双床房。请给我一个旅行规划。",
+      "parser_status": "JSON_VALID",
+      "status": "search_error:AttributeError",
+      "seconds": 0.7429160410538316,
+      "tool_calls": 138,
+      "raw_schema_valid": false,
+      "json_schema_valid": false,
+      "normalization_changed_native_types": false
+    },
+    {
+      "uid": "e20241028160913165493",
+      "original_query": "当前位置杭州。我和朋友计划去北京玩三天，选择飞机出行，预算8000元，开一间双床房。请给我一个旅行规划。",
+      "parser_status": "JSON_VALID",
+      "status": "NEEDS_CLARIFICATION",
+      "missing_fields": [
+        "people_number"
+      ],
+      "error_type": "ValueError"
+    },
+    {
+      "uid": "e20241028160902013119",
+      "original_query": "当前位置北京。我计划去武汉玩三天，预算3000元，想欣赏历史古迹，开一间单床房。请给我一个旅行规划。",
+      "parser_status": "JSON_VALID",
+      "status": "NEEDS_CLARIFICATION",
+      "missing_fields": [
+        "people_number"
+      ],
+      "error_type": "ValueError"
+    },
+    {
+      "uid": "h20241029143455115600",
+      "original_query": "[当前位置北京,目标位置重庆,旅行人数2,旅行天数5] 重庆应该怎么玩",
+      "parser_status": "JSON_VALID",
+      "status": "search_error:AttributeError",
+      "seconds": 0.5575219580205157,
+      "tool_calls": 133,
+      "raw_schema_valid": false,
+      "json_schema_valid": false,
+      "normalization_changed_native_types": false
+    }
+  ]
+}

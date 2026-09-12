@@ -1,0 +1,50 @@
+{
+  "protocol_version": "darc-v5.1-probe-1",
+  "started_at": "2026-09-09T14:47:26.563695+00:00",
+  "planned_calls": 1,
+  "config": {
+    "provider": "fhl",
+    "model": "gpt-5.5-mini",
+    "wire_api": "chat_completions",
+    "base_url": "https://www.fhl.mom",
+    "temperature": 0.0,
+    "timeout": 45,
+    "json_mode": true,
+    "retries": 0,
+    "retry_sleep": 2.0,
+    "sleep": 0.0,
+    "max_concurrency": 1,
+    "omit_temperature": true,
+    "reasoning_effort": null,
+    "max_output_tokens": 200,
+    "stream": false,
+    "service_tier": null,
+    "store": null,
+    "responses_input_mode": "messages",
+    "input_char_limit": null,
+    "transport": "urllib",
+    "api_key_env": "FHL_API_KEY"
+  },
+  "request": {
+    "system": "Return only a JSON object with keys status and capability.",
+    "user": "Connectivity probe for DARC-Route v5.1. Set status to ok and capability to json."
+  },
+  "error_type": "RuntimeError",
+  "error_message": "provider HTTP 404: {\"error\":{\"message\":\"Model \\\"gpt-5.5-mini\\\" is not supported by any configured account in this group\",\"type\":\"model_not_found\"}}",
+  "json_valid": false,
+  "finished_at": "2026-09-09T14:47:31.264569+00:00",
+  "telemetry": {
+    "call_index": 1,
+    "prompt_sha256": "243c3b40ad5485fdd827bb0ad6e78b56099eb060c87b57181bdcede9c935ea1a",
+    "attempts": 1,
+    "latency_seconds": 4.701,
+    "input_chars": 138,
+    "output_chars": 0,
+    "input_tokens": 35,
+    "output_tokens": 0,
+    "total_tokens": 35,
+    "usage_source": "character_estimate",
+    "success": false,
+    "error": "RuntimeError"
+  }
+}

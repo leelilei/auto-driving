@@ -1,0 +1,48 @@
+{
+  "call_id": "stress_negated_order_v1::B",
+  "role": "B",
+  "graph_condition": null,
+  "started_at": "2026-09-10T02:28:41.805831+00:00",
+  "request": {
+    "system": "Read the user's route-planning instruction field by field before producing the final JSON.\n\nCheck: requested POI categories, return deadline, explicit visit order, and the direction of the quality-versus-distance preference. Each conclusion must be supported by the instruction itself.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nDo not infer a preference from any route or map. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Stop at the library, pharmacy, and bank, but the pharmacy must not come before the bank. Balance place ratings with route efficiency."
+  },
+  "raw_response": "{\"pois\":[\"library\",\"pharmacy\",\"bank\"],\"time_limit\":null,\"dependencies\":[[\"bank\",\"pharmacy\"]],\"quality_weight\":0.5,\"evidence\":{\"pois\":\"library, pharmacy, and bank\",\"dependencies\":\"pharmacy must not come before the bank\",\"quality_weight\":\"Balance place ratings with route efficiency\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library",
+      "pharmacy"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "bank",
+        "pharmacy"
+      ]
+    ],
+    "quality_weight": 0.5
+  },
+  "evidence": {
+    "pois": "library, pharmacy, and bank",
+    "dependencies": "pharmacy must not come before the bank",
+    "quality_weight": "Balance place ratings with route efficiency"
+  },
+  "changes": [],
+  "finished_at": "2026-09-10T02:28:44.536435+00:00",
+  "telemetry": {
+    "call_index": 4,
+    "prompt_sha256": "10fe85eaf0cd5c98aaa5616f987214e5d904e05c3e0328a8682cedd8bb0c1174",
+    "attempts": 1,
+    "latency_seconds": 2.73,
+    "input_chars": 1007,
+    "output_chars": 283,
+    "input_tokens": 257,
+    "output_tokens": 623,
+    "total_tokens": 880,
+    "usage_source": "provider",
+    "success": true
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "people_number": 1,
+  "start_city": "重庆",
+  "target_city": "苏州",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "start_time": "07:28",
+          "end_time": "09:41",
+          "start": "重庆西站",
+          "end": "苏州站",
+          "price": 679.06,
+          "cost": 679.06,
+          "tickets": 1,
+          "transports": [],
+          "TrainID": "T238",
+          "type": "train"
+        },
+        {
+          "start_time": "11:40",
+          "end_time": "14:08",
+          "start": "苏州站",
+          "end": "重庆西站",
+          "price": 679.06,
+          "cost": 679.06,
+          "tickets": 1,
+          "transports": [],
+          "TrainID": "T237",
+          "type": "train"
+        }
+      ]
+    }
+  ],
+  "search_time_sec": 0.09040307998657227,
+  "llm_inference_time_sec": 0
+}

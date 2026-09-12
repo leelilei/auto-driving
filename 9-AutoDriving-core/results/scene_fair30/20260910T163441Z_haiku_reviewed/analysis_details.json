@@ -1,0 +1,143 @@
+{
+  "data_review": "OWNER_APPROVED",
+  "evidence": "human_review_receipt.json",
+  "legacy_summary_status_note": "Original engine emits PENDING/UNREVIEWED constants; approval is version-bound separate evidence.",
+  "by_scenario": {
+    "open": {
+      "direct": {
+        "n": 12,
+        "success": 12
+      },
+      "language": {
+        "n": 12,
+        "success": 12
+      },
+      "evidence": {
+        "n": 12,
+        "success": 12
+      }
+    },
+    "departure": {
+      "direct": {
+        "n": 12,
+        "success": 12
+      },
+      "language": {
+        "n": 12,
+        "success": 12
+      },
+      "evidence": {
+        "n": 12,
+        "success": 12
+      }
+    },
+    "deadline": {
+      "direct": {
+        "n": 12,
+        "success": 12
+      },
+      "language": {
+        "n": 12,
+        "success": 12
+      },
+      "evidence": {
+        "n": 12,
+        "success": 12
+      }
+    },
+    "closing": {
+      "direct": {
+        "n": 12,
+        "success": 12
+      },
+      "language": {
+        "n": 12,
+        "success": 12
+      },
+      "evidence": {
+        "n": 12,
+        "success": 12
+      }
+    },
+    "combined": {
+      "direct": {
+        "n": 12,
+        "success": 8
+      },
+      "language": {
+        "n": 12,
+        "success": 11
+      },
+      "evidence": {
+        "n": 12,
+        "success": 9
+      }
+    }
+  },
+  "paired_language_evidence": [
+    {
+      "case_id": "F25",
+      "rep": 1,
+      "language_success": true,
+      "evidence_success": false
+    },
+    {
+      "case_id": "F29",
+      "rep": 2,
+      "language_success": true,
+      "evidence_success": false
+    }
+  ],
+  "schema_failures": [
+    {
+      "call_id": "F12__r1__evidence",
+      "error": "unknown selection or availability reference"
+    },
+    {
+      "call_id": "F28__r1__evidence",
+      "error": "unknown selection or availability reference"
+    },
+    {
+      "call_id": "F30__r1__evidence",
+      "error": "unknown selection or availability reference"
+    },
+    {
+      "call_id": "F12__r2__evidence",
+      "error": "unknown selection or availability reference"
+    },
+    {
+      "call_id": "F28__r2__evidence",
+      "error": "unknown selection or availability reference"
+    },
+    {
+      "call_id": "F27__r2__evidence",
+      "error": "Extra data: line 13 column 1 (char 983)"
+    },
+    {
+      "call_id": "F29__r1__evidence",
+      "error": "unknown selection or availability reference"
+    },
+    {
+      "call_id": "F27__r1__evidence",
+      "error": "unknown selection or availability reference"
+    },
+    {
+      "call_id": "F29__r2__evidence",
+      "error": "unknown selection or availability reference"
+    },
+    {
+      "call_id": "F09__r1__evidence",
+      "error": "unknown selection or availability reference"
+    },
+    {
+      "call_id": "F07__r2__evidence",
+      "error": "unknown selection or availability reference"
+    },
+    {
+      "call_id": "F25__r1__evidence",
+      "error": "unknown selection or availability reference"
+    }
+  ],
+  "total_known_token_components": 230078,
+  "all_returned_records_have_usage": true
+}

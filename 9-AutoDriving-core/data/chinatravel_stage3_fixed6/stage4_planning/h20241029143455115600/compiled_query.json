@@ -1,0 +1,11 @@
+{
+  "start_city": "北京",
+  "target_city": "重庆",
+  "days": 5,
+  "people_number": 2,
+  "uid": "h20241029143455115600",
+  "hard_logic_py": [
+    "result=(day_count(plan)==5)",
+    "result=(people_count(plan)==2)"
+  ]
+}

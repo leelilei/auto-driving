@@ -1,0 +1,546 @@
+{
+  "status": "PASS",
+  "raw_response_score_checks": 144,
+  "frozen_request_matches": 144,
+  "common_prefix_triples": 48,
+  "one_instruction_occurrences": 144,
+  "scoring_graphs": 8,
+  "source_groups": 8,
+  "scope": "offline developer audit, not human semantic reannotation",
+  "group_mean_differences": {
+    "full_minus_route_order": {
+      "pilot_01": 0.0,
+      "pilot_04": 0.0,
+      "pilot_06": 0.125,
+      "pilot_07": 0.0,
+      "pilot_02": 0.0,
+      "pilot_05": 0.0,
+      "pilot_03": 0.0,
+      "pilot_08": 0.25
+    },
+    "route_order_minus_fields": {
+      "pilot_01": 0.125,
+      "pilot_04": 0.0,
+      "pilot_06": 0.125,
+      "pilot_07": 0.0,
+      "pilot_02": 0.5,
+      "pilot_05": 0.3333333333333333,
+      "pilot_03": 0.0,
+      "pilot_08": -0.25
+    },
+    "full_minus_fields": {
+      "pilot_01": 0.125,
+      "pilot_04": 0.0,
+      "pilot_06": 0.25,
+      "pilot_07": 0.0,
+      "pilot_02": 0.5,
+      "pilot_05": 0.3333333333333333,
+      "pilot_03": 0.0,
+      "pilot_08": 0.0
+    }
+  },
+  "errors": [
+    {
+      "case": "missing_deadline_3",
+      "rep": 1,
+      "role": "full",
+      "instruction": "Today, you need to visit the library, supermarket, and bank. Make sure to be back by 18:00. Aim for a route that allows you to complete everything efficiently. Also, remember to stop by the supermarket before heading to the bank.",
+      "gold": {
+        "pois": [
+          "bank",
+          "library",
+          "supermarket"
+        ],
+        "time_limit": 1080,
+        "dependencies": [
+          [
+            "supermarket",
+            "bank"
+          ]
+        ],
+        "quality_weight": 0.25
+      },
+      "raw_response": "{\"intent\":{\"pois\":[\"bank\",\"library\",\"supermarket\"],\"time_limit\":1080,\"dependencies\":[[\"supermarket\",\"bank\"]],\"quality_weight\":0.5},\"evidence\":{\"pois\":\"visit the library, supermarket, and bank\",\"time_limit\":\"back by 18:00\",\"dependencies\":\"supermarket before heading to the bank\",\"quality_weight\":\"complete everything efficiently\"},\"changes\":[{\"field\":\"time_limit\",\"from\":null,\"to\":1080},{\"field\":\"quality_weight\",\"from\":0.25,\"to\":0.5}]}",
+      "status": "COMPLETE"
+    },
+    {
+      "case": "missing_deadline_3",
+      "rep": 1,
+      "role": "fields",
+      "instruction": "Today, you need to visit the library, supermarket, and bank. Make sure to be back by 18:00. Aim for a route that allows you to complete everything efficiently. Also, remember to stop by the supermarket before heading to the bank.",
+      "gold": {
+        "pois": [
+          "bank",
+          "library",
+          "supermarket"
+        ],
+        "time_limit": 1080,
+        "dependencies": [
+          [
+            "supermarket",
+            "bank"
+          ]
+        ],
+        "quality_weight": 0.25
+      },
+      "raw_response": "{\"intent\":{\"pois\":[\"library\",\"supermarket\",\"bank\"],\"time_limit\":1080,\"dependencies\":[[\"supermarket\",\"bank\"]],\"quality_weight\":0.5},\"evidence\":{\"pois\":\"library, supermarket, and bank\",\"time_limit\":\"be back by 18:00\",\"dependencies\":\"stop by the supermarket before heading to the bank\",\"quality_weight\":\"efficiently\"},\"changes\":[\"pois\",\"time_limit\",\"quality_weight\"]}",
+      "status": "COMPLETE"
+    },
+    {
+      "case": "missing_deadline_3",
+      "rep": 1,
+      "role": "route_order",
+      "instruction": "Today, you need to visit the library, supermarket, and bank. Make sure to be back by 18:00. Aim for a route that allows you to complete everything efficiently. Also, remember to stop by the supermarket before heading to the bank.",
+      "gold": {
+        "pois": [
+          "bank",
+          "library",
+          "supermarket"
+        ],
+        "time_limit": 1080,
+        "dependencies": [
+          [
+            "supermarket",
+            "bank"
+          ]
+        ],
+        "quality_weight": 0.25
+      },
+      "raw_response": "{\"intent\":{\"pois\":[\"library\",\"supermarket\",\"bank\"],\"time_limit\":1080,\"dependencies\":[[\"supermarket\",\"bank\"]],\"quality_weight\":0.5},\"evidence\":{\"pois\":\"visit the library, supermarket, and bank\",\"time_limit\":\"be back by 18:00\",\"dependencies\":\"supermarket before heading to the bank\",\"quality_weight\":\"complete everything efficiently\"},\"changes\":[\"pois\",\"quality_weight\",\"time_limit\"]}",
+      "status": "COMPLETE"
+    },
+    {
+      "case": "reversed_order_4",
+      "rep": 1,
+      "role": "fields",
+      "instruction": "Today, you need to visit the library, supermarket, and bank. Make sure to be back by 18:00. Aim for a route that allows you to complete everything efficiently. Also, remember to stop by the supermarket before heading to the bank.",
+      "gold": {
+        "pois": [
+          "bank",
+          "library",
+          "supermarket"
+        ],
+        "time_limit": 1080,
+        "dependencies": [
+          [
+            "supermarket",
+            "bank"
+          ]
+        ],
+        "quality_weight": 0.25
+      },
+      "raw_response": "{\"intent\":{\"pois\":[\"library\",\"supermarket\",\"bank\"],\"time_limit\":1080,\"dependencies\":[[\"supermarket\",\"bank\"]],\"quality_weight\":0.5},\"evidence\":{\"pois\":\"visit the library, supermarket, and bank\",\"time_limit\":\"be back by 18:00\",\"dependencies\":\"stop by the supermarket before heading to the bank\"},\"changes\":[\"pois\",\"dependencies\",\"quality_weight\"]}",
+      "status": "COMPLETE"
+    },
+    {
+      "case": "extra_order_4",
+      "rep": 1,
+      "role": "route_order",
+      "instruction": "Today, let's visit the library, the shopping mall, and the supermarket. I would like to keep a good balance between visiting well-rated places and having an efficient route. Make sure to stop by the shopping mall before heading to the supermarket.",
+      "gold": {
+        "pois": [
+          "library",
+          "shopping_mall",
+          "supermarket"
+        ],
+        "time_limit": null,
+        "dependencies": [
+          [
+            "shopping_mall",
+            "supermarket"
+          ]
+        ],
+        "quality_weight": 0.5
+      },
+      "raw_response": "{\"intent\":{\"pois\":[\"library\",\"shopping_mall\",\"supermarket\"],\"time_limit\":null,\"dependencies\":[[\"shopping_mall\",\"supermarket\"]],\"quality_weight\":0.5},\"evidence\":{\"pois\":\"visit the library, the shopping mall, and the supermarket\",\"dependencies\":\"stop by the shopping mall before heading to the supermarket\",\"quality_weight\":\"good balance between visiting well-rated places and having an efficient route\"},\"changes\":[{\"field\":\"dependencies\",\"candidate\":\"A\",\"from\":[[\"library\",\"shopping_mall\"],[\"shopping_mall\",\"supermarket\"]],\"to\":[[\"shopping_mall\",\"supermarket\"]}]}",
+      "status": "SCHEMA_FAILED"
+    },
+    {
+      "case": "reversed_preference_3",
+      "rep": 1,
+      "role": "full",
+      "instruction": "Today, you need to visit the library, supermarket, and bank. Make sure to be back by 18:00. Aim for a route that allows you to complete everything efficiently. Also, remember to stop by the supermarket before heading to the bank.",
+      "gold": {
+        "pois": [
+          "bank",
+          "library",
+          "supermarket"
+        ],
+        "time_limit": 1080,
+        "dependencies": [
+          [
+            "supermarket",
+            "bank"
+          ]
+        ],
+        "quality_weight": 0.25
+      },
+      "raw_response": "{\"intent\":{\"pois\":[\"library\",\"supermarket\",\"bank\"],\"time_limit\":1080,\"dependencies\":[[\"supermarket\",\"bank\"]],\"quality_weight\":0.5},\"evidence\":{\"pois\":\"visit the library, supermarket, and bank\",\"time_limit\":\"be back by 18:00\",\"dependencies\":\"supermarket before heading to the bank\",\"quality_weight\":\"complete everything efficiently\"},\"changes\":[\"pois\",\"quality_weight\"]}",
+      "status": "COMPLETE"
+    },
+    {
+      "case": "reversed_preference_3",
+      "rep": 1,
+      "role": "route_order",
+      "instruction": "Today, you need to visit the library, supermarket, and bank. Make sure to be back by 18:00. Aim for a route that allows you to complete everything efficiently. Also, remember to stop by the supermarket before heading to the bank.",
+      "gold": {
+        "pois": [
+          "bank",
+          "library",
+          "supermarket"
+        ],
+        "time_limit": 1080,
+        "dependencies": [
+          [
+            "supermarket",
+            "bank"
+          ]
+        ],
+        "quality_weight": 0.25
+      },
+      "raw_response": "{\"intent\":{\"pois\":[\"library\",\"supermarket\",\"bank\"],\"time_limit\":1080,\"dependencies\":[[\"supermarket\",\"bank\"]],\"quality_weight\":0.5},\"evidence\":{\"pois\":[\"visit the library, supermarket, and bank\"],\"time_limit\":[\"be back by 18:00\"],\"dependencies\":[\"stop by the supermarket before heading to the bank\"]},\"changes\":[\"pois\",\"quality_weight\"]}",
+      "status": "COMPLETE"
+    },
+    {
+      "case": "common_error_1",
+      "rep": 1,
+      "role": "fields",
+      "instruction": "Today, you'll be visiting the shopping mall and the supermarket. Make sure to be back by 22:00. Since time efficiency is a priority, try to keep your route as direct as possible. Remember to visit the shopping mall before heading to the supermarket.",
+      "gold": {
+        "pois": [
+          "shopping_mall",
+          "supermarket"
+        ],
+        "time_limit": 1320,
+        "dependencies": [
+          [
+            "shopping_mall",
+            "supermarket"
+          ]
+        ],
+        "quality_weight": 0.25
+      },
+      "raw_response": "{\"intent\":{\"pois\":[\"shopping_mall\",\"supermarket\"],\"time_limit\":1320,\"dependencies\":[[\"supermarket\",\"shopping_mall\"]],\"quality_weight\":0.25},\"evidence\":{\"pois\":\"visiting the shopping mall and the supermarket\",\"time_limit\":\"be back by 22:00\",\"dependencies\":\"visit the shopping mall before heading to the supermarket\",\"quality_weight\":\"time efficiency is a priority\"},\"changes\":[]}",
+      "status": "COMPLETE"
+    },
+    {
+      "case": "common_error_2",
+      "rep": 1,
+      "role": "fields",
+      "instruction": "Make sure to visit the supermarket and the pharmacy today. Balance your stops to maintain both reasonable ratings and efficiency along the route. Start your trip at the supermarket before heading to the pharmacy.",
+      "gold": {
+        "pois": [
+          "pharmacy",
+          "supermarket"
+        ],
+        "time_limit": null,
+        "dependencies": [
+          [
+            "supermarket",
+            "pharmacy"
+          ]
+        ],
+        "quality_weight": 0.5
+      },
+      "raw_response": "{\"intent\":{\"pois\":[\"supermarket\",\"pharmacy\"],\"time_limit\":null,\"dependencies\":[[\"pharmacy\",\"supermarket\"]],\"quality_weight\":0.5},\"evidence\":{\"pois\":\"visit the supermarket and the pharmacy\",\"dependencies\":\"Start your trip at the supermarket before heading to the pharmacy\",\"quality_weight\":\"Balance your stops to maintain both reasonable ratings and efficiency\",\"time_limit\":\"today\"},\"changes\":[{\"field\":\"pois\",\"from\":[\"pharmacy\",\"supermarket\"],\"to\":[\"supermarket\",\"pharmacy\"]}]}",
+      "status": "COMPLETE"
+    },
+    {
+      "case": "common_error_3",
+      "rep": 1,
+      "role": "fields",
+      "instruction": "Today, make sure to visit the bank, library, and pharmacy. It's important to prioritize places with the best ratings. Also, please go to the bank before heading to the library.",
+      "gold": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy"
+        ],
+        "time_limit": null,
+        "dependencies": [
+          [
+            "bank",
+            "library"
+          ]
+        ],
+        "quality_weight": 0.75
+      },
+      "raw_response": "{\"intent\":{\"pois\":[\"bank\",\"library\",\"pharmacy\"],\"time_limit\":null,\"dependencies\":[[\"library\",\"bank\"]],\"quality_weight\":1.0},\"evidence\":{\"pois\":\"visit the bank, library, and pharmacy\",\"dependencies\":\"go to the bank before heading to the library\",\"quality_weight\":\"prioritize places with the best ratings\"},\"changes\":[\"quality_weight\"]}",
+      "status": "COMPLETE"
+    },
+    {
+      "case": "common_error_4",
+      "rep": 1,
+      "role": "full",
+      "instruction": "Today, you need to visit the library, supermarket, and bank. Make sure to be back by 18:00. Aim for a route that allows you to complete everything efficiently. Also, remember to stop by the supermarket before heading to the bank.",
+      "gold": {
+        "pois": [
+          "bank",
+          "library",
+          "supermarket"
+        ],
+        "time_limit": 1080,
+        "dependencies": [
+          [
+            "supermarket",
+            "bank"
+          ]
+        ],
+        "quality_weight": 0.25
+      },
+      "raw_response": "{\"intent\":{\"pois\":[\"library\",\"supermarket\",\"bank\"],\"time_limit\":1080,\"dependencies\":[[\"supermarket\",\"bank\"]],\"quality_weight\":0.5},\"evidence\":{\"pois\":[\"library, supermarket, and bank\"],\"time_limit\":[\"back by 18:00\"],\"dependencies\":[\"supermarket before heading to the bank\"]},\"changes\":[\"pois\",\"dependencies\",\"quality_weight\"]}",
+      "status": "COMPLETE"
+    },
+    {
+      "case": "common_error_4",
+      "rep": 1,
+      "role": "fields",
+      "instruction": "Today, you need to visit the library, supermarket, and bank. Make sure to be back by 18:00. Aim for a route that allows you to complete everything efficiently. Also, remember to stop by the supermarket before heading to the bank.",
+      "gold": {
+        "pois": [
+          "bank",
+          "library",
+          "supermarket"
+        ],
+        "time_limit": 1080,
+        "dependencies": [
+          [
+            "supermarket",
+            "bank"
+          ]
+        ],
+        "quality_weight": 0.25
+      },
+      "raw_response": "{\"intent\":{\"pois\":[\"library\",\"supermarket\",\"bank\"],\"time_limit\":1080,\"dependencies\":[[\"bank\",\"supermarket\"]],\"quality_weight\":0.25},\"evidence\":{\"pois\":\"library, supermarket, and bank\",\"time_limit\":\"back by 18:00\",\"dependencies\":\"supermarket before heading to the bank\",\"quality_weight\":\"complete everything efficiently\"},\"changes\":[\"pois\"]}",
+      "status": "COMPLETE"
+    },
+    {
+      "case": "common_error_4",
+      "rep": 1,
+      "role": "route_order",
+      "instruction": "Today, you need to visit the library, supermarket, and bank. Make sure to be back by 18:00. Aim for a route that allows you to complete everything efficiently. Also, remember to stop by the supermarket before heading to the bank.",
+      "gold": {
+        "pois": [
+          "bank",
+          "library",
+          "supermarket"
+        ],
+        "time_limit": 1080,
+        "dependencies": [
+          [
+            "supermarket",
+            "bank"
+          ]
+        ],
+        "quality_weight": 0.25
+      },
+      "raw_response": "{\"intent\":{\"pois\":[\"library\",\"supermarket\",\"bank\"],\"time_limit\":1080,\"dependencies\":[[\"supermarket\",\"bank\"]],\"quality_weight\":0.5},\"evidence\":{\"pois\":[\"library, supermarket, and bank\"],\"time_limit\":[\"be back by 18:00\"],\"dependencies\":[\"stop by the supermarket before heading to the bank\"],\"quality_weight\":[\"complete everything efficiently\"]},\"changes\":[\"pois\",\"dependencies\",\"quality_weight\"]}",
+      "status": "COMPLETE"
+    },
+    {
+      "case": "missing_deadline_3",
+      "rep": 2,
+      "role": "fields",
+      "instruction": "Today, you need to visit the library, supermarket, and bank. Make sure to be back by 18:00. Aim for a route that allows you to complete everything efficiently. Also, remember to stop by the supermarket before heading to the bank.",
+      "gold": {
+        "pois": [
+          "bank",
+          "library",
+          "supermarket"
+        ],
+        "time_limit": 1080,
+        "dependencies": [
+          [
+            "supermarket",
+            "bank"
+          ]
+        ],
+        "quality_weight": 0.25
+      },
+      "raw_response": "{\"intent\":{\"pois\":[\"library\",\"supermarket\",\"bank\"],\"time_limit\":1080,\"dependencies\":[[\"supermarket\",\"bank\"]],\"quality_weight\":0.5},\"evidence\":{\"pois\":\"library, supermarket, and bank\",\"time_limit\":\"be back by 18:00\",\"dependencies\":\"supermarket before heading to the bank\",\"quality_weight\":\"efficiently\"},\"changes\":[\"pois\",\"time_limit\",\"quality_weight\"]}",
+      "status": "COMPLETE"
+    },
+    {
+      "case": "missing_deadline_3",
+      "rep": 2,
+      "role": "full",
+      "instruction": "Today, you need to visit the library, supermarket, and bank. Make sure to be back by 18:00. Aim for a route that allows you to complete everything efficiently. Also, remember to stop by the supermarket before heading to the bank.",
+      "gold": {
+        "pois": [
+          "bank",
+          "library",
+          "supermarket"
+        ],
+        "time_limit": 1080,
+        "dependencies": [
+          [
+            "supermarket",
+            "bank"
+          ]
+        ],
+        "quality_weight": 0.25
+      },
+      "raw_response": "{\"intent\":{\"pois\":[\"bank\",\"library\",\"supermarket\"],\"time_limit\":1080,\"dependencies\":[[\"supermarket\",\"bank\"]],\"quality_weight\":0.5},\"evidence\":{\"pois\":\"visit the library, supermarket, and bank\",\"time_limit\":\"be back by 18:00\",\"dependencies\":\"supermarket before heading to the bank\",\"quality_weight\":\"complete everything efficiently\"},\"changes\":[{\"field\":\"time_limit\",\"from\":null,\"to\":1080,\"candidate\":\"B\"},{\"field\":\"quality_weight\",\"from\":0.25,\"to\":0.5,\"candidate\":\"both\"}]}",
+      "status": "COMPLETE"
+    },
+    {
+      "case": "reversed_order_2",
+      "rep": 2,
+      "role": "fields",
+      "instruction": "Make sure to visit the supermarket and the pharmacy today. Balance your stops to maintain both reasonable ratings and efficiency along the route. Start your trip at the supermarket before heading to the pharmacy.",
+      "gold": {
+        "pois": [
+          "pharmacy",
+          "supermarket"
+        ],
+        "time_limit": null,
+        "dependencies": [
+          [
+            "supermarket",
+            "pharmacy"
+          ]
+        ],
+        "quality_weight": 0.5
+      },
+      "raw_response": "{\"intent\":{\"pois\":[\"pharmacy\",\"supermarket\"],\"time_limit\":null,\"dependencies\":[[\"pharmacy\",\"supermarket\"]],\"quality_weight\":0.5},\"evidence\":{\"pois\":[\"visit the supermarket and the pharmacy\"],\"dependencies\":[\"Start your trip at the supermarket before heading to the pharmacy\"],\"quality_weight\":[\"Balance your stops to maintain both reasonable ratings and efficiency along the route\"]},\"changes\":[]}",
+      "status": "COMPLETE"
+    },
+    {
+      "case": "reversed_order_4",
+      "rep": 2,
+      "role": "fields",
+      "instruction": "Today, you need to visit the library, supermarket, and bank. Make sure to be back by 18:00. Aim for a route that allows you to complete everything efficiently. Also, remember to stop by the supermarket before heading to the bank.",
+      "gold": {
+        "pois": [
+          "bank",
+          "library",
+          "supermarket"
+        ],
+        "time_limit": 1080,
+        "dependencies": [
+          [
+            "supermarket",
+            "bank"
+          ]
+        ],
+        "quality_weight": 0.25
+      },
+      "raw_response": "{\"intent\":{\"pois\":[\"library\",\"supermarket\",\"bank\"],\"time_limit\":1080,\"dependencies\":[[\"supermarket\",\"bank\"]],\"quality_weight\":0.5},\"evidence\":{\"pois\":\"visit the library, supermarket, and bank\",\"time_limit\":\"be back by 18:00\",\"dependencies\":\"supermarket before heading to the bank\",\"quality_weight\":\"complete everything efficiently\"},\"changes\":[\"dependencies\",\"pois\",\"quality_weight\"]}",
+      "status": "COMPLETE"
+    },
+    {
+      "case": "reversed_order_4",
+      "rep": 2,
+      "role": "route_order",
+      "instruction": "Today, you need to visit the library, supermarket, and bank. Make sure to be back by 18:00. Aim for a route that allows you to complete everything efficiently. Also, remember to stop by the supermarket before heading to the bank.",
+      "gold": {
+        "pois": [
+          "bank",
+          "library",
+          "supermarket"
+        ],
+        "time_limit": 1080,
+        "dependencies": [
+          [
+            "supermarket",
+            "bank"
+          ]
+        ],
+        "quality_weight": 0.25
+      },
+      "raw_response": "{\"intent\":{\"pois\":[\"library\",\"supermarket\",\"bank\"],\"time_limit\":1080,\"dependencies\":[[\"supermarket\",\"bank\"]],\"quality_weight\":0.5},\"evidence\":{\"pois\":\"visit the library, supermarket, and bank\",\"time_limit\":\"back by 18:00\",\"dependencies\":\"supermarket before heading to the bank\",\"quality_weight\":\"efficiently\"},\"changes\":[\"pois\",\"dependencies\",\"quality_weight\"]}",
+      "status": "COMPLETE"
+    },
+    {
+      "case": "common_error_2",
+      "rep": 2,
+      "role": "fields",
+      "instruction": "Make sure to visit the supermarket and the pharmacy today. Balance your stops to maintain both reasonable ratings and efficiency along the route. Start your trip at the supermarket before heading to the pharmacy.",
+      "gold": {
+        "pois": [
+          "pharmacy",
+          "supermarket"
+        ],
+        "time_limit": null,
+        "dependencies": [
+          [
+            "supermarket",
+            "pharmacy"
+          ]
+        ],
+        "quality_weight": 0.5
+      },
+      "raw_response": "{\"intent\":{\"pois\":[\"supermarket\",\"pharmacy\"],\"time_limit\":null,\"dependencies\":[[\"pharmacy\",\"supermarket\"]],\"quality_weight\":0.5},\"evidence\":{\"pois\":\"visit the supermarket and the pharmacy\",\"time_limit\":\"today\",\"dependencies\":\"Start your trip at the supermarket before heading to the pharmacy\",\"quality_weight\":\"Balance your stops to maintain both reasonable ratings and efficiency\"},\"changes\":[\"pois\"]}",
+      "status": "COMPLETE"
+    },
+    {
+      "case": "common_error_3",
+      "rep": 2,
+      "role": "fields",
+      "instruction": "Today, make sure to visit the bank, library, and pharmacy. It's important to prioritize places with the best ratings. Also, please go to the bank before heading to the library.",
+      "gold": {
+        "pois": [
+          "bank",
+          "library",
+          "pharmacy"
+        ],
+        "time_limit": null,
+        "dependencies": [
+          [
+            "bank",
+            "library"
+          ]
+        ],
+        "quality_weight": 0.75
+      },
+      "raw_response": "{\"intent\":{\"pois\":[\"bank\",\"library\",\"pharmacy\"],\"time_limit\":null,\"dependencies\":[[\"library\",\"bank\"]],\"quality_weight\":0.75},\"evidence\":{\"pois\":\"visit the bank, library, and pharmacy\",\"time_limit\":\"Today\",\"dependencies\":\"go to the bank before heading to the library\",\"quality_weight\":\"It's important to prioritize places with the best ratings\"},\"changes\":[]}",
+      "status": "COMPLETE"
+    },
+    {
+      "case": "common_error_4",
+      "rep": 2,
+      "role": "fields",
+      "instruction": "Today, you need to visit the library, supermarket, and bank. Make sure to be back by 18:00. Aim for a route that allows you to complete everything efficiently. Also, remember to stop by the supermarket before heading to the bank.",
+      "gold": {
+        "pois": [
+          "bank",
+          "library",
+          "supermarket"
+        ],
+        "time_limit": 1080,
+        "dependencies": [
+          [
+            "supermarket",
+            "bank"
+          ]
+        ],
+        "quality_weight": 0.25
+      },
+      "raw_response": "{\"intent\":{\"pois\":[\"bank\",\"library\",\"supermarket\"],\"time_limit\":1080,\"dependencies\":[[\"bank\",\"supermarket\"]],\"quality_weight\":0.5},\"evidence\":{\"pois\":\"visit the library, supermarket, and bank\",\"time_limit\":\"back by 18:00\",\"dependencies\":\"supermarket before heading to the bank\",\"quality_weight\":\"complete everything efficiently\"},\"changes\":[\"quality_weight\"]}",
+      "status": "COMPLETE"
+    },
+    {
+      "case": "common_error_4",
+      "rep": 2,
+      "role": "route_order",
+      "instruction": "Today, you need to visit the library, supermarket, and bank. Make sure to be back by 18:00. Aim for a route that allows you to complete everything efficiently. Also, remember to stop by the supermarket before heading to the bank.",
+      "gold": {
+        "pois": [
+          "bank",
+          "library",
+          "supermarket"
+        ],
+        "time_limit": 1080,
+        "dependencies": [
+          [
+            "supermarket",
+            "bank"
+          ]
+        ],
+        "quality_weight": 0.25
+      },
+      "raw_response": "{\"intent\":{\"pois\":[\"library\",\"supermarket\",\"bank\"],\"time_limit\":1080,\"dependencies\":[[\"supermarket\",\"bank\"]],\"quality_weight\":0.5},\"evidence\":{\"pois\":\"visit the library, supermarket, and bank\",\"time_limit\":\"be back by 18:00\",\"dependencies\":\"stop by the supermarket before heading to the bank\",\"quality_weight\":\"complete everything efficiently\"},\"changes\":[\"pois\",\"dependencies\",\"quality_weight\"]}",
+      "status": "COMPLETE"
+    }
+  ]
+}

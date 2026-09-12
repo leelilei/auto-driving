@@ -1,0 +1,50 @@
+{
+  "call_id": "pilot_02_v2::time_sensitive::darc",
+  "role": "darc",
+  "graph_condition": "time_sensitive",
+  "started_at": "2026-09-09T16:41:14.530499+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. The decision-contrast report is diagnostic evidence about consequences; it is not a label and must not override the words of the instruction.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Use the report to locate consequential disagreements, then decide each field from the instruction alone.\n\nInstruction:\nYour itinerary today covers the supermarket and the pharmacy, starting at the supermarket before heading to the pharmacy. Aim for a balanced trade-off between customer ratings and total route distance.\n\nCandidate A:\n{\"dependencies\": [[\"supermarket\", \"pharmacy\"]], \"pois\": [\"pharmacy\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nCandidate B:\n{\"dependencies\": [[\"supermarket\", \"pharmacy\"]], \"pois\": [\"pharmacy\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nDecision-contrast report:\n{\"candidate_A\": {\"dependencies\": [[\"supermarket\", \"pharmacy\"]], \"pois\": [\"pharmacy\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}, \"candidate_B\": {\"dependencies\": [[\"supermarket\", \"pharmacy\"]], \"pois\": [\"pharmacy\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}, \"candidate_evidence\": {\"A\": {\"dependencies\": \"starting at the supermarket before heading to the pharmacy\", \"pois\": \"supermarket and the pharmacy\", \"quality_weight\": \"balanced trade-off between customer ratings and total route distance\"}, \"B\": {\"dependencies\": \"starting at the supermarket before heading to the pharmacy\", \"pois\": \"the supermarket and the pharmacy\", \"quality_weight\": \"balanced trade-off between customer ratings and total route distance\"}}, \"cross_constraints\": {\"route_A_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_A_under_B\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_B\": {\"reasons\": [], \"task_success\": true}}, \"differing_fields\": [], \"instruction\": \"Your itinerary today covers the supermarket and the pharmacy, starting at the supermarket before heading to the pharmacy. Aim for a balanced trade-off between customer ratings and total route distance.\", \"limitations\": [\"The report does not identify the user's true intent.\", \"Both candidates may share the same error.\", \"Single-field swaps do not identify higher-order interactions.\"], \"report_version\": \"darc-v5.1-contrast-2\", \"routes\": {\"A\": {\"arrival_minutes\": 602, \"average_quality\": 0.2, \"categories\": [\"supermarket\", \"pharmacy\"], \"coverage_count\": 2, \"distance_km\": 3.401, \"duration_minutes\": 61.8, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"supermarket_1\", \"pharmacy_1\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": 0.07221870918274785}, \"B\": {\"arrival_minutes\": 602, \"average_quality\": 0.2, \"categories\": [\"supermarket\", \"pharmacy\"], \"coverage_count\": 2, \"distance_km\": 3.401, \"duration_minutes\": 61.8, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"supermarket_1\", \"pharmacy_1\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": 0.07221870918274785}}, \"single_field_swaps\": []}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"supermarket\",\"pharmacy\"],\"time_limit\":null,\"dependencies\":[[\"supermarket\",\"pharmacy\"]],\"quality_weight\":0.5},\"evidence\":{\"pois\":\"starting at the supermarket before heading to the pharmacy\",\"dependencies\":\"starting at the supermarket before heading to the pharmacy\",\"quality_weight\":\"balanced trade-off between customer ratings and total route distance\",\"time_limit\":\"today\"},\"changes\":[\"pois\"]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "pharmacy",
+      "supermarket"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "supermarket",
+        "pharmacy"
+      ]
+    ],
+    "quality_weight": 0.5
+  },
+  "evidence": {
+    "pois": "starting at the supermarket before heading to the pharmacy",
+    "dependencies": "starting at the supermarket before heading to the pharmacy",
+    "quality_weight": "balanced trade-off between customer ratings and total route distance",
+    "time_limit": "today"
+  },
+  "changes": [
+    "pois"
+  ],
+  "finished_at": "2026-09-09T16:41:37.333367+00:00",
+  "telemetry": {
+    "call_index": 54,
+    "prompt_sha256": "d9b9785bc3a65fa8b544ef746659aef719ea2a73036bc6db300806c9244a7cdb",
+    "attempts": 1,
+    "latency_seconds": 22.802,
+    "input_chars": 3334,
+    "output_chars": 414,
+    "input_tokens": 928,
+    "output_tokens": 6657,
+    "total_tokens": 7585,
+    "usage_source": "provider",
+    "success": true
+  }
+}

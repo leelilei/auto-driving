@@ -1,0 +1,43 @@
+{
+  "call_id": "pilot_07_v1::tradeoff::darc",
+  "role": "darc",
+  "graph_condition": "tradeoff",
+  "started_at": "2026-09-09T16:36:01.031404+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. The decision-contrast report is diagnostic evidence about consequences; it is not a label and must not override the words of the instruction.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Use the report to locate consequential disagreements, then decide each field from the instruction alone.\n\nInstruction:\nPlease visit the library, pharmacy, and supermarket today and return by 17:00. Prioritize locations with high ratings, even if it requires extra driving distance.\n\nCandidate A:\n{\"dependencies\": [], \"pois\": [\"library\", \"pharmacy\", \"supermarket\"], \"quality_weight\": 1.0, \"time_limit\": 1020}\n\nCandidate B:\n{\"dependencies\": [], \"pois\": [\"library\", \"pharmacy\", \"supermarket\"], \"quality_weight\": 1.0, \"time_limit\": 1020}\n\nDecision-contrast report:\n{\"candidate_A\": {\"dependencies\": [], \"pois\": [\"library\", \"pharmacy\", \"supermarket\"], \"quality_weight\": 1.0, \"time_limit\": 1020}, \"candidate_B\": {\"dependencies\": [], \"pois\": [\"library\", \"pharmacy\", \"supermarket\"], \"quality_weight\": 1.0, \"time_limit\": 1020}, \"candidate_evidence\": {\"A\": {\"pois\": \"library, pharmacy, and supermarket\", \"quality_weight\": \"Prioritize locations with high ratings, even if it requires extra driving distance.\", \"time_limit\": \"return by 17:00\"}, \"B\": {\"pois\": \"library, pharmacy, and supermarket\", \"quality_weight\": \"Prioritize locations with high ratings, even if it requires extra driving distance\", \"time_limit\": \"return by 17:00\"}}, \"cross_constraints\": {\"route_A_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_A_under_B\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_B\": {\"reasons\": [], \"task_success\": true}}, \"differing_fields\": [], \"instruction\": \"Please visit the library, pharmacy, and supermarket today and return by 17:00. Prioritize locations with high ratings, even if it requires extra driving distance.\", \"limitations\": [\"The report does not identify the user's true intent.\", \"Both candidates may share the same error.\", \"Single-field swaps do not identify higher-order interactions.\"], \"report_version\": \"darc-v5.1-contrast-2\", \"routes\": {\"A\": {\"arrival_minutes\": 695, \"average_quality\": 0.9, \"categories\": [\"library\", \"pharmacy\", \"supermarket\"], \"coverage_count\": 3, \"distance_km\": 27.265, \"duration_minutes\": 154.5, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"library_2\", \"pharmacy_2\", \"supermarket_2\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": 0.9}, \"B\": {\"arrival_minutes\": 695, \"average_quality\": 0.9, \"categories\": [\"library\", \"pharmacy\", \"supermarket\"], \"coverage_count\": 3, \"distance_km\": 27.265, \"duration_minutes\": 154.5, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"library_2\", \"pharmacy_2\", \"supermarket_2\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": 0.9}}, \"single_field_swaps\": []}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"library\",\"pharmacy\",\"supermarket\"],\"time_limit\":1020,\"dependencies\":[],\"quality_weight\":1.0},\"evidence\":{\"pois\":\"library, pharmacy, and supermarket\",\"time_limit\":\"return by 17:00\",\"quality_weight\":\"Prioritize locations with high ratings, even if it requires extra driving distance\"},\"changes\":[]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "library",
+      "pharmacy",
+      "supermarket"
+    ],
+    "time_limit": 1020,
+    "dependencies": [],
+    "quality_weight": 1.0
+  },
+  "evidence": {
+    "pois": "library, pharmacy, and supermarket",
+    "time_limit": "return by 17:00",
+    "quality_weight": "Prioritize locations with high ratings, even if it requires extra driving distance"
+  },
+  "changes": [],
+  "finished_at": "2026-09-09T16:36:09.831337+00:00",
+  "telemetry": {
+    "call_index": 32,
+    "prompt_sha256": "19b80a8563ee65edac225cb02155b6a3c32c82f6662fe50afab426de8a565fc4",
+    "attempts": 1,
+    "latency_seconds": 8.8,
+    "input_chars": 3159,
+    "output_chars": 316,
+    "input_tokens": 922,
+    "output_tokens": 2556,
+    "total_tokens": 3478,
+    "usage_source": "provider",
+    "success": true
+  }
+}

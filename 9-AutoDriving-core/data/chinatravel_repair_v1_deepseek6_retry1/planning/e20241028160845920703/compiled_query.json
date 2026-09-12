@@ -1,0 +1,15 @@
+{
+  "start_city": "深圳",
+  "target_city": "广州",
+  "days": 2,
+  "people_number": 1,
+  "uid": "e20241028160845920703",
+  "hard_logic_py": [
+    "result=(day_count(plan)==2)",
+    "result=(people_count(plan)==1)",
+    "total=0\nfor activity in allactivities(plan):\n total+=activity_cost(activity)\n total+=innercity_transport_cost(activity_transports(activity))\nresult=(total<=1000)",
+    "result=True\nfor activity in allactivities(plan):\n if activity_type(activity)==\"accommodation\" and room_count(activity)!=1: result=False",
+    "result=True\nfor activity in allactivities(plan):\n if activity_type(activity)==\"accommodation\" and room_type(activity)!=1: result=False",
+    "found=False\nfor activity in allactivities(plan):\n if activity_type(activity) in [\"breakfast\",\"lunch\",\"dinner\"] and restaurant_type(activity,target_city(plan))==\"火锅\": found=True\nresult=found"
+  ]
+}

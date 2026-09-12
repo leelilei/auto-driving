@@ -1,0 +1,33 @@
+{
+  "protocol_version": "darc-v5.1-prompts-1",
+  "parse": {
+    "A": "parse_a.txt",
+    "B": "parse_b.txt"
+  },
+  "literature_baselines": {
+    "llmap_direct": {
+      "system": "llmap_direct_original.txt",
+      "user": "llmap_user_original.txt",
+      "adapter": "LLMAP_ADAPTER.md"
+    },
+    "llmap_cot": {
+      "system": "llmap_cot_original.txt",
+      "user": "llmap_user_original.txt",
+      "adapter": "LLMAP_ADAPTER.md"
+    }
+  },
+  "reviews": {
+    "review_plain": {"file": "review_plain.txt", "additional_report": "none"},
+    "review_fields": {"file": "review_fields.txt", "additional_report": "field_differences"},
+    "review_constraints": {"file": "review_constraints.txt", "additional_report": "field_differences+cross_constraints"},
+    "darc": {"file": "review_darc.txt", "additional_report": "full_decision_contrast"}
+  },
+  "shared_output_schema": {
+    "intent": ["pois", "time_limit", "dependencies", "quality_weight"],
+    "outer": ["evidence", "changes"]
+  },
+  "gold_fields_allowed": false,
+  "graph_fields_allowed_in_parse": false,
+  "hash_fields_allowed": false,
+  "status": "development_frozen_for_s2_diagnostic"
+}

@@ -1,0 +1,54 @@
+{
+  "call_id": "F26__r2__evidence",
+  "case_id": "F26",
+  "rep": 2,
+  "role": "evidence",
+  "request": {
+    "system": "Review the predicted selection rule against the instruction and full public scene. The prediction may be wrong. Supplementary computed facts are consequences only and cannot override what the instruction requests. Check every field, including when the prediction seems feasible. Return only a JSON object with exactly selection, availability_reference, return_by, evidence.\nselection is nearest_from_bank, minimum_added_distance, or highest_rating.\navailability_reference is departure only when already open at home departure is explicitly required, otherwise arrival.\nreturn_by is integer minutes since midnight or null when absent. It is the requested deadline, not a computed arrival time.\nevidence quotes instruction spans. Preserve the requirements even if infeasible. Do not choose a pharmacy ID or relax a rule.\nOUTPUT CONTRACT (applies to all fields):\nReturn one JSON object only, with no commentary before or after it and no Markdown fences.\nIt has exactly four keys: selection, availability_reference, return_by, evidence.\nThe first three fields follow the rules above. evidence MUST be a JSON object, never a string or array.\nInside evidence use field names as keys and instruction quotations as string values; an empty object {} is valid.\nDo not add a verdict, explanation paragraph, corrected_policy wrapper, or any extra top-level key.\n\nDefinitions of the three selection values:\n- nearest_from_bank: minimize the straight-line distance d(B, P) from bank B to the pharmacy P among eligible pharmacies.\n- minimum_added_distance: minimize d(B, P) + d(P, H) - d(B, H) among eligible pharmacies, where H is home.\n- highest_rating: maximize the pharmacy rating among eligible pharmacies.\nThese definitions specify the selection field. Read which objective is requested from the instruction; the availability_reference and return_by fields retain their definitions above.\n",
+    "user": "{\"candidate_policy\": {\"availability_reference\": \"arrival\", \"return_by\": 620, \"selection\": \"minimum_added_distance\"}, \"computed_scene_facts\": {\"bank_arrival\": 554.0, \"bank_service_finish\": 574.0, \"bank_service_window_ok\": true, \"candidates\": [{\"added_distance\": 3.7245761343531036, \"arrival\": 587.6014705087355, \"distance_from_bank\": 13.601470508735444, \"open_at_departure\": false, \"poi_id\": \"P_A\", \"rating\": 3.2, \"return_time\": 601.7245761343531, \"service_finish\": 597.6014705087355, \"service_window_ok\": false}, {\"added_distance\": 16.084973293843788, \"arrival\": 582.0622577482985, \"distance_from_bank\": 8.06225774829855, \"open_at_departure\": false, \"poi_id\": \"P_B\", \"rating\": 2.8, \"return_time\": 614.0849732938437, \"service_finish\": 592.0622577482985, \"service_window_ok\": false}, {\"added_distance\": 24.533496455042616, \"arrival\": 587.4536240470737, \"distance_from_bank\": 13.45362404707371, \"open_at_departure\": true, \"poi_id\": \"P_C\", \"rating\": 3.4, \"return_time\": 622.5334964550426, \"service_finish\": 597.4536240470737, \"service_window_ok\": true}, {\"added_distance\": 0.6701749821851486, \"arrival\": 584.1980390271856, \"distance_from_bank\": 10.198039027185569, \"open_at_departure\": true, \"poi_id\": \"P_D\", \"rating\": 4.4, \"return_time\": 598.6701749821851, \"service_finish\": 594.1980390271856, \"service_window_ok\": true}, {\"added_distance\": 2.2519820392289525, \"arrival\": 583.8488578017962, \"distance_from_bank\": 9.848857801796104, \"open_at_departure\": false, \"poi_id\": \"P_E\", \"rating\": 4.9, \"return_time\": 600.251982039229, \"service_finish\": 593.8488578017962, \"service_window_ok\": true}], \"notes\": \"No waiting. Candidate facts do not identify the user selection rule.\"}, \"instruction\": \"Start at home at 09:00. Visit bank B first, then exactly one pharmacy, then return home. Travel along straight lines at 1 distance unit per minute. Bank service takes 20 minutes and pharmacy service takes 10 minutes. Do not wait for a place to open. Start service immediately on arrival; each service must finish no later than closing time. If no pharmacy can satisfy every requirement, report INFEASIBLE. Among pharmacies satisfying every requirement, choose the one adding the least travel distance compared with going directly from bank B to home. Added distance means distance(B, pharmacy) + distance(pharmacy, home) - distance(B, home). Restrict the choice to pharmacies already open when I leave home at 09:00; service must also fit their opening hours when visited. Return home no later than 10:20.\", \"scene\": {\"bank\": {\"close\": 660, \"open\": 500, \"rating\": 4, \"x\": 14, \"y\": 0}, \"bank_service\": 20, \"departure\": 540, \"home\": [0, 0], \"pharmacies\": {\"P_A\": {\"close\": 585, \"open\": 575, \"rating\": 3.2, \"x\": 1, \"y\": -4}, \"P_B\": {\"close\": 585, \"open\": 555, \"rating\": 2.8, \"x\": 22, \"y\": -1}, \"P_C\": {\"close\": 660, \"open\": 535, \"rating\": 3.4, \"x\": 23, \"y\": -10}, \"P_D\": {\"close\": 595, \"open\": 500, \"rating\": 4.4, \"x\": 4, \"y\": 2}, \"P_E\": {\"close\": 595, \"open\": 575, \"rating\": 4.9, \"x\": 5, \"y\": -4}}, \"pharmacy_service\": 10, \"speed_units_per_minute\": 1}}"
+  },
+  "status": "COMPLETE",
+  "source": "REAL",
+  "started": "2026-09-10T16:45:33.975474+00:00",
+  "transport_revision": "original-c2",
+  "telemetry": {
+    "call_index": 1,
+    "prompt_sha256": "4edf1c41ac5d988593372acc8c1d10b22015e009ca77436c33eecea3d485ebdb",
+    "attempts": 1,
+    "latency_seconds": 3.458,
+    "input_chars": 4916,
+    "output_chars": 552,
+    "input_tokens": 1096,
+    "output_tokens": 146,
+    "total_tokens": 1242,
+    "usage_source": "provider",
+    "success": true
+  },
+  "provider_response": {
+    "content": [
+      {
+        "text": "```json\n{\n  \"selection\": \"minimum_added_distance\",\n  \"availability_reference\": \"departure\",\n  \"return_by\": 620,\n  \"evidence\": {\n    \"selection\": \"Among pharmacies satisfying every requirement, choose the one adding the least travel distance compared with going directly from bank B to home. Added distance means distance(B, pharmacy) + distance(pharmacy, home) - distance(B, home).\",\n    \"availability_reference\": \"Restrict the choice to pharmacies already open when I leave home at 09:00\",\n    \"return_by\": \"Return home no later than 10:20.\"\n  }\n}\n```",
+        "type": "text"
+      }
+    ],
+    "id": "msg_Dk0Ul6Pdbp7SY2sBYRlXD1N0",
+    "model": "claude-haiku-4-5-20251001",
+    "role": "assistant",
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation_input_tokens": 407,
+      "cache_read_input_tokens": 57,
+      "input_tokens": 1096,
+      "output_tokens": 146
+    }
+  },
+  "raw_response": "```json\n{\n  \"selection\": \"minimum_added_distance\",\n  \"availability_reference\": \"departure\",\n  \"return_by\": 620,\n  \"evidence\": {\n    \"selection\": \"Among pharmacies satisfying every requirement, choose the one adding the least travel distance compared with going directly from bank B to home. Added distance means distance(B, pharmacy) + distance(pharmacy, home) - distance(B, home).\",\n    \"availability_reference\": \"Restrict the choice to pharmacies already open when I leave home at 09:00\",\n    \"return_by\": \"Return home no later than 10:20.\"\n  }\n}\n```",
+  "parsed_policy": {
+    "selection": "minimum_added_distance",
+    "availability_reference": "departure",
+    "return_by": 620
+  },
+  "finished": "2026-09-10T16:45:37.434796+00:00"
+}

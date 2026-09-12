@@ -1,0 +1,47 @@
+{
+  "fixture_id": "balanced",
+  "text": "Stop at a shopping mall and a bank. Balance good ratings with a manageable travel distance.",
+  "gold": {
+    "pois": [
+      "shopping_mall",
+      "bank"
+    ],
+    "time_limit": null,
+    "dependencies": [],
+    "quality_weight": 0.5
+  },
+  "started_at": "2026-09-09T16:02:42.230210+00:00",
+  "raw_response": "{\"pois\":[\"shopping_mall\",\"bank\"],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5}",
+  "schema_valid": true,
+  "predicted": {
+    "pois": [
+      "bank",
+      "shopping_mall"
+    ],
+    "time_limit": null,
+    "dependencies": [],
+    "quality_weight": 0.5
+  },
+  "hard": {
+    "poi_exact": true,
+    "time_exact": true,
+    "dependency_exact": true,
+    "hard_exact": true
+  },
+  "direction_predicted": "balanced",
+  "direction_exact": true,
+  "finished_at": "2026-09-09T16:02:43.048087+00:00",
+  "telemetry": {
+    "call_index": 3,
+    "prompt_sha256": "901996cf591ae454353327a98df265b442f23703a912750736ee62f7fb0e4825",
+    "attempts": 1,
+    "latency_seconds": 0.818,
+    "input_chars": 515,
+    "output_chars": 90,
+    "input_tokens": 175,
+    "output_tokens": 81,
+    "total_tokens": 256,
+    "usage_source": "provider",
+    "success": true
+  }
+}

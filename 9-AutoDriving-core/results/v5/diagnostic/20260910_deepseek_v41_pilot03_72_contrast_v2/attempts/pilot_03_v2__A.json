@@ -1,0 +1,41 @@
+{
+  "call_id": "pilot_03_v2::A",
+  "role": "A",
+  "graph_condition": null,
+  "started_at": "2026-09-09T16:33:36.857593+00:00",
+  "request": {
+    "system": "You extract route-planning intent from the user's instruction.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nUse only the instruction. Do not invent constraints. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Today you should visit both the shopping mall and the pharmacy in whichever order you prefer, balancing location quality with route efficiency."
+  },
+  "raw_response": "{\"pois\":[\"shopping mall\",\"pharmacy\"],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5,\"evidence\":{\"pois\":\"shopping mall and the pharmacy\",\"quality_weight\":\"balancing location quality with route efficiency\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "pharmacy",
+      "shopping_mall"
+    ],
+    "time_limit": null,
+    "dependencies": [],
+    "quality_weight": 0.5
+  },
+  "evidence": {
+    "pois": "shopping mall and the pharmacy",
+    "quality_weight": "balancing location quality with route efficiency"
+  },
+  "changes": [],
+  "finished_at": "2026-09-09T16:33:38.235630+00:00",
+  "telemetry": {
+    "call_index": 37,
+    "prompt_sha256": "3048c8784da5a0407041fdad05062462e30dfd1b4e04019858b1eff9680f4a10",
+    "attempts": 1,
+    "latency_seconds": 1.378,
+    "input_chars": 798,
+    "output_chars": 215,
+    "input_tokens": 213,
+    "output_tokens": 329,
+    "total_tokens": 542,
+    "usage_source": "provider",
+    "success": true
+  }
+}

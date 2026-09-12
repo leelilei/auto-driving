@@ -1,0 +1,43 @@
+{
+  "call_id": "pilot_07_v3::A",
+  "role": "A",
+  "graph_condition": null,
+  "started_at": "2026-09-11T19:05:14.451434+00:00",
+  "request": {
+    "system": "You extract route-planning intent from the user's instruction.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nUse only the instruction. Do not invent constraints. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Head to the library, pharmacy, and supermarket today and be back by 17:00. Don't worry if the route takes a bit longer, just make sure to pick the best-rated places."
+  },
+  "raw_response": "{\"pois\":[\"library\",\"pharmacy\",\"supermarket\"],\"time_limit\":1020,\"dependencies\":[],\"quality_weight\":0.9,\"evidence\":{\"pois\":\"library, pharmacy, and supermarket\",\"time_limit\":\"be back by 17:00\",\"quality_weight\":\"Don't worry if the route takes a bit longer, just make sure to pick the best-rated places\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "library",
+      "pharmacy",
+      "supermarket"
+    ],
+    "time_limit": 1020,
+    "dependencies": [],
+    "quality_weight": 0.9
+  },
+  "evidence": {
+    "pois": "library, pharmacy, and supermarket",
+    "time_limit": "be back by 17:00",
+    "quality_weight": "Don't worry if the route takes a bit longer, just make sure to pick the best-rated places"
+  },
+  "changes": [],
+  "finished_at": "2026-09-11T19:05:22.594565+00:00",
+  "telemetry": {
+    "call_index": 28,
+    "prompt_sha256": "0c263b43dc219e2c4605fbcaa7aa1e6a91c81f0dda136469200327c8a8e77cb5",
+    "attempts": 1,
+    "latency_seconds": 8.143,
+    "input_chars": 820,
+    "output_chars": 300,
+    "input_tokens": 229,
+    "output_tokens": 1417,
+    "total_tokens": 1646,
+    "usage_source": "provider",
+    "success": true
+  }
+}

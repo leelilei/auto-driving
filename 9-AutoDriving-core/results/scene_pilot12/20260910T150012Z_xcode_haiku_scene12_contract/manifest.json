@@ -1,0 +1,31 @@
+{
+  "protocol": "scene-pilot12-engineering-2-json-wrapper",
+  "created": "2026-09-10T15:00:12.951187+00:00",
+  "stage": "PREPARED_NOT_ADMITTED",
+  "scope": "development_only",
+  "model": "claude-haiku-4-5-20251001",
+  "model_identity_status": "candidate_requires_live_check_before_formal_use",
+  "planned": 72,
+  "repetitions": 2,
+  "concurrency": 4,
+  "max_transport_recoveries": 8,
+  "max_attempts_per_unit": 2,
+  "files": {
+    "model_inputs.json": "3972f1a9fdf6e7488c8cb13433cb95c3778e8ee353d79dec55df55c5e437b40c",
+    "gold_and_traces.json": "e1d8c9578982ee343a330d911e15a6805b88c5c47a51a43540e7849126b24453",
+    "author_review_cases.json": "df072b288fc12e6e3d528583bf15fdfa11fd6e924b83cee0a5645b208cd49b84",
+    "plan.json": "69f04ce246369584990da1e625ab9f412240386896c52cc9701d20dea82fa007",
+    "config.json": "8857e3a329c62c942cf5d0d599a4dd5fbfe6d825b63148638b104863cdba8d4a",
+    "development_authorization.json": "351e92b4e9ffcc31f71dbc0b7de84adb4a29e8b1d192113672ecab917a6410fa",
+    "output_contract.txt": "104712cd6005f83c6ef2591923cf329d34d05a2c0711de8f0c7de99628c31b26"
+  },
+  "sources": {
+    "scripts/scene_pilot12.py": "8aae62cbcdd1217066250c87acc2612e185e2c341954bf162f481d398ce4226f",
+    "src/scene_policy.py": "00715e30b16ad4298b80b340dbc491531505b8fea64388e85d8c5accc0a2ba6f",
+    "src/llm_client.py": "ff086f6efce95bd8dba98ca150ba5f8b48b61dcc543a335c39cbdfbca076639b",
+    "scripts/scene_haiku_contract.py": "a157080adec1b2e476937b42a1e4c28357e0e9337eb479917149d972b800342e"
+  },
+  "output_contract_revision": "explicit-object-v1",
+  "preflight_calls": 3,
+  "reason": "Previous run review outputs failed schema; no semantic rules, data, or scoring changed."
+}

@@ -1,0 +1,23 @@
+{
+  "status": "GATED_NOT_COLLECTED",
+  "n_cases": 6,
+  "model_api_calls": 0,
+  "reason": "Existing collector is single-regression hard-coded; batch collector must be implemented before calls.",
+  "ids": [
+    "e20241028160248698752",
+    "e20241028160845920703",
+    "e20241028160848776495",
+    "e20241028160913165493",
+    "e20241028160902013119",
+    "h20241029143455115600"
+  ],
+  "failure_classes": [
+    "parse_error",
+    "unsupported_requirement",
+    "compile_error",
+    "search_failure",
+    "data_coverage_failure",
+    "evaluation_mismatch",
+    "semantic_error"
+  ]
+}

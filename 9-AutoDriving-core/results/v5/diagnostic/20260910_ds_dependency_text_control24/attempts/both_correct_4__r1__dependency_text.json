@@ -1,0 +1,49 @@
+{
+  "call_id": "both_correct_4__r1__dependency_text",
+  "role": "dependency_text",
+  "graph_condition": "tradeoff",
+  "started_at": "2026-09-10T04:11:31.928811+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. Both candidates may be wrong, including when they agree. Supplementary information describes candidate differences or planning consequences; it does not identify the correct intent. Resolve every field from the instruction. Do not infer user preference from a route or map.\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised.\n\nInstruction:\nToday, let's visit the library, the shopping mall, and the supermarket. I would like to keep a good balance between visiting well-rated places and having an efficient route. Make sure to stop by the shopping mall before heading to the supermarket.\n\nCandidate A:\n{\"dependencies\": [[\"shopping_mall\", \"supermarket\"]], \"pois\": [\"library\", \"shopping_mall\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nCandidate B:\n{\"dependencies\": [[\"shopping_mall\", \"supermarket\"]], \"pois\": [\"library\", \"shopping_mall\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nSupplementary information:\n{\"candidate_order_requirements\": {\"A\": [\"Visit shopping mall before supermarket.\"], \"B\": [\"Visit shopping mall before supermarket.\"]}, \"differing_fields\": []}"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"library\",\"shopping_mall\",\"supermarket\"],\"time_limit\":null,\"dependencies\":[[\"shopping_mall\",\"supermarket\"]],\"quality_weight\":0.5},\"evidence\":{\"pois\":\"visit the library, the shopping mall, and the supermarket\",\"time_limit\":\"Today\",\"dependencies\":\"shopping mall before heading to the supermarket\",\"quality_weight\":\"good balance between visiting well-rated places and having an efficient route\"},\"changes\":[]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "library",
+      "shopping_mall",
+      "supermarket"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "shopping_mall",
+        "supermarket"
+      ]
+    ],
+    "quality_weight": 0.5
+  },
+  "evidence": {
+    "pois": "visit the library, the shopping mall, and the supermarket",
+    "time_limit": "Today",
+    "dependencies": "shopping mall before heading to the supermarket",
+    "quality_weight": "good balance between visiting well-rated places and having an efficient route"
+  },
+  "changes": [],
+  "finished_at": "2026-09-10T04:11:43.011928+00:00",
+  "telemetry": {
+    "call_index": 1,
+    "prompt_sha256": "03df3e94df36b4e53479eec0b2e4b5dd81144bb9257f336207f1be4d8453dd6f",
+    "attempts": 1,
+    "latency_seconds": 11.083,
+    "input_chars": 1441,
+    "output_chars": 425,
+    "input_tokens": 378,
+    "output_tokens": 2514,
+    "total_tokens": 2892,
+    "usage_source": "provider",
+    "success": true
+  }
+}

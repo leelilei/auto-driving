@@ -1,0 +1,28 @@
+{
+  "config": {
+    "provider": "fhl",
+    "model": "gpt-5.5",
+    "wire_api": "chat_completions",
+    "base_url": "https://www.fhl.mom",
+    "temperature": 0.0,
+    "timeout": 60,
+    "json_mode": true,
+    "retries": 0,
+    "retry_sleep": 2.0,
+    "sleep": 0.0,
+    "max_concurrency": 1,
+    "omit_temperature": true,
+    "reasoning_effort": null,
+    "max_output_tokens": 800,
+    "stream": false,
+    "service_tier": null,
+    "store": null,
+    "responses_input_mode": "messages",
+    "input_char_limit": null,
+    "transport": "urllib",
+    "api_key_env": "FHL_API_KEY"
+  },
+  "system_prompt": "Parse a route request. Return only JSON with exactly these keys: pois, time_limit, dependencies, quality_weight. Allowed POIs: shopping_mall, supermarket, pharmacy, bank, library. time_limit is HH:MM or null. dependencies is an array of [before, after]. quality_weight is in [0,1]: above 0.6 for quality-first, below 0.4 for distance-first, and 0.5 when explicitly balanced or no preference. Do not add unstated constraints.",
+  "fixture_version": "v5.1-model-smoke-1",
+  "summary_sha256": "a8409842f21a3bb3866bd953e800ace0b8c8ef0c82a2121d58b6f3fa911c8cd8"
+}

@@ -1,0 +1,12 @@
+{
+  "status": "PASS_OFFLINE_ARITHMETIC_ONLY",
+  "cases": 12,
+  "feasible_unique": 10,
+  "infeasible": 2,
+  "pairs": 6,
+  "changed_answer_pairs": 5,
+  "invariant_pairs": 1,
+  "model_api_calls": 0,
+  "human_review": "PENDING",
+  "note": "Reference calculations and hand expectations agree; not a full production solver or independent human audit."
+}

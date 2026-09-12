@@ -1,0 +1,18 @@
+Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. The decision-contrast report is diagnostic evidence about consequences; it is not a label and must not override the words of the instruction.
+
+Return one JSON object only:
+{"intent":{"pois":[],"time_limit":null,"dependencies":[],"quality_weight":0.5},"evidence":{},"changes":[]}
+
+Evidence must quote short spans from the instruction. Changes must name every candidate field you revised. Use the report to locate consequential disagreements, then decide each field from the instruction alone.
+
+Instruction:
+{{instruction}}
+
+Candidate A:
+{{candidate_a}}
+
+Candidate B:
+{{candidate_b}}
+
+Decision-contrast report:
+{{decision_contrast_report}}

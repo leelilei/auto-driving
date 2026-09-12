@@ -1,0 +1,6 @@
+{
+  "status": "PASS_OFFLINE",
+  "scope": "POSTHOC_INTERFACE_DIAGNOSTIC",
+  "independent_decisions": 120,
+  "matched_requests": 120
+}

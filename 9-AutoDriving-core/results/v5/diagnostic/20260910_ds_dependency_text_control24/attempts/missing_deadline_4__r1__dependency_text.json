@@ -1,0 +1,50 @@
+{
+  "call_id": "missing_deadline_4__r1__dependency_text",
+  "role": "dependency_text",
+  "graph_condition": "tradeoff",
+  "started_at": "2026-09-10T04:07:36.122190+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. Both candidates may be wrong, including when they agree. Supplementary information describes candidate differences or planning consequences; it does not identify the correct intent. Resolve every field from the instruction. Do not infer user preference from a route or map.\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised.\n\nInstruction:\nToday, make sure to visit the library, pharmacy, and supermarket. Please return by 17:00. Focus on visiting high-rated places, even if the route is slightly longer.\n\nCandidate A:\n{\"dependencies\": [], \"pois\": [\"library\", \"pharmacy\", \"supermarket\"], \"quality_weight\": 0.75, \"time_limit\": null}\n\nCandidate B:\n{\"dependencies\": [], \"pois\": [\"library\", \"pharmacy\", \"supermarket\"], \"quality_weight\": 0.75, \"time_limit\": 1020}\n\nSupplementary information:\n{\"candidate_order_requirements\": {\"A\": [\"No visit-order requirement is specified in this candidate.\"], \"B\": [\"No visit-order requirement is specified in this candidate.\"]}, \"differing_fields\": [\"time_limit\"]}"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"library\",\"pharmacy\",\"supermarket\"],\"time_limit\":1020,\"dependencies\":[],\"quality_weight\":0.75},\"evidence\":{\"pois\":\"visit the library, pharmacy, and supermarket\",\"time_limit\":\"return by 17:00\",\"dependencies\":\"make sure to visit the library, pharmacy, and supermarket\",\"quality_weight\":\"Focus on visiting high-rated places, even if the route is slightly longer\"},\"changes\":[{\"field\":\"time_limit\",\"from\":null,\"to\":1020}]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "library",
+      "pharmacy",
+      "supermarket"
+    ],
+    "time_limit": 1020,
+    "dependencies": [],
+    "quality_weight": 0.75
+  },
+  "evidence": {
+    "pois": "visit the library, pharmacy, and supermarket",
+    "time_limit": "return by 17:00",
+    "dependencies": "make sure to visit the library, pharmacy, and supermarket",
+    "quality_weight": "Focus on visiting high-rated places, even if the route is slightly longer"
+  },
+  "changes": [
+    {
+      "field": "time_limit",
+      "from": null,
+      "to": 1020
+    }
+  ],
+  "finished_at": "2026-09-10T04:07:56.306849+00:00",
+  "telemetry": {
+    "call_index": 1,
+    "prompt_sha256": "f2ade417238266f4f3aa16f952210a03d99e33c7d4942138a53ef84d60b605db",
+    "attempts": 1,
+    "latency_seconds": 20.184,
+    "input_chars": 1336,
+    "output_chars": 437,
+    "input_tokens": 353,
+    "output_tokens": 4701,
+    "total_tokens": 5054,
+    "usage_source": "provider",
+    "success": true
+  }
+}

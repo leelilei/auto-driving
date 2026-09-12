@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "offline": true,
+  "network_calls": 0,
+  "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:11:29) [Clang 20.1.8 ]",
+  "platform": "macOS-26.3-arm64-arm-64bit-Mach-O",
+  "protocol_version": "darc-v5.1-development-1",
+  "config_sha256": "bc7bc2f23e0b9d1b92d869a719a431b8d76d9b9c927ef43b7e9dd638ca93176c",
+  "hipp_sha256": "5fd5101a9bdb93823f0fe4109fa5342d6bd7d45ef240498a2f822f0554efbf02",
+  "implemented_commands": [
+    "preflight",
+    "audit-data",
+    "build-graphs",
+    "contrast-smoke",
+    "plan-diagnostic",
+    "validate-review",
+    "probe",
+    "model-smoke",
+    "review-smoke"
+  ],
+  "not_implemented": [
+    "plan",
+    "collect",
+    "analyze",
+    "replay",
+    "package"
+  ],
+  "confirmatory_collection_allowed": false
+}

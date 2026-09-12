@@ -1,0 +1,44 @@
+{
+  "call_id": "pilot_05_v0::llmap_cot",
+  "role": "llmap_cot",
+  "graph_condition": null,
+  "started_at": "2026-09-09T18:06:50.087113+00:00",
+  "request": {
+    "system": "Extract POIs, constraints, and weights from human instruction through step-by-step reasoning:\n\n1. POIs Analysis:\n    - Look for POIs mentioned that need to be visited\n    - Create list of unique POIs\n\n2. Time Limit Analysis:\n    - Search for any specific return time\n    - Format as HH:00 or \"None\" if not specified\n\n3. Dependencies Analysis:\n    - Look for words indicating sequence (before, after, then, etc.)\n    - Create pairs of [POI1, POI2] for each sequence requirement\n\n4. Preference Analysis:\n    - Look for language about POI quality/rating importance vs route efficiency\n    - High POI rating emphasis (quality, best places, etc.) ->quality_weight should be large than 0.5\n    - High route efficiency emphasis (quick, shortest, save time) -> distance_weight should be large than 0.5\n    - Balanced language -> both weights around 0.5\n\nOutput must be valid JSON with structure:\n{\n    \"pois\": [\"poi1\", \"poi2\", ...],\n    \"time_limit\": \"HH:00\" or \"None\",\n    \"dependencies\": [[\"poi1\", \"poi2\"], ...],\n    \"quality_weight\": float,\n    \"distance_weight\": float\n}\n",
+    "user": "Extract POIs, constraints, and weights from this instruction as JSON:\nToday, make sure to visit the bank, library, and pharmacy. It's important to prioritize places with the best ratings. Also, please go to the bank before heading to the library.\n\nOnly output the JSON object. No prefix, additional text, or explanation.\n"
+  },
+  "raw_response": "{\n  \"pois\": [\"bank\", \"library\", \"pharmacy\"],\n  \"time_limit\": \"None\",\n  \"dependencies\": [[\"bank\", \"library\"]],\n  \"quality_weight\": 0.8,\n  \"distance_weight\": 0.2\n}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library",
+      "pharmacy"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "bank",
+        "library"
+      ]
+    ],
+    "quality_weight": 0.8
+  },
+  "evidence": {},
+  "changes": [],
+  "finished_at": "2026-09-09T18:07:05.882813+00:00",
+  "telemetry": {
+    "call_index": 3,
+    "prompt_sha256": "113ed9c145afaf3fc8216550d7ce055dc79a6d4891cbfa6fa0f29d7d54c0d7d1",
+    "attempts": 1,
+    "latency_seconds": 15.795,
+    "input_chars": 1388,
+    "output_chars": 161,
+    "input_tokens": 344,
+    "output_tokens": 96,
+    "total_tokens": 440,
+    "usage_source": "provider",
+    "success": true
+  }
+}

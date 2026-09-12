@@ -1,0 +1,50 @@
+{
+  "call_id": "missing_deadline_1__darc",
+  "role": "darc",
+  "graph_condition": "tradeoff",
+  "started_at": "2026-09-10T02:50:57.642246+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. The decision-contrast report is diagnostic evidence about consequences; it is not a label and must not override the words of the instruction.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Use the report to locate consequential disagreements, then decide each field from the instruction alone.\n\nInstruction:\nToday, you'll be visiting the shopping mall and the supermarket. Make sure to be back by 22:00. Since time efficiency is a priority, try to keep your route as direct as possible. Remember to visit the shopping mall before heading to the supermarket.\n\nCandidate A:\n{\"dependencies\": [[\"shopping_mall\", \"supermarket\"]], \"pois\": [\"shopping_mall\", \"supermarket\"], \"quality_weight\": 0.25, \"time_limit\": 1320}\n\nCandidate B:\n{\"dependencies\": [[\"shopping_mall\", \"supermarket\"]], \"pois\": [\"shopping_mall\", \"supermarket\"], \"quality_weight\": 0.25, \"time_limit\": null}\n\nDecision-contrast report:\n{\"candidate_A\": {\"dependencies\": [[\"shopping_mall\", \"supermarket\"]], \"pois\": [\"shopping_mall\", \"supermarket\"], \"quality_weight\": 0.25, \"time_limit\": 1320}, \"candidate_B\": {\"dependencies\": [[\"shopping_mall\", \"supermarket\"]], \"pois\": [\"shopping_mall\", \"supermarket\"], \"quality_weight\": 0.25, \"time_limit\": null}, \"candidate_evidence\": {\"A\": {}, \"B\": {}}, \"cross_constraints\": {\"route_A_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_A_under_B\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_B\": {\"reasons\": [], \"task_success\": true}}, \"differing_fields\": [\"time_limit\"], \"instruction\": \"Today, you'll be visiting the shopping mall and the supermarket. Make sure to be back by 22:00. Since time efficiency is a priority, try to keep your route as direct as possible. Remember to visit the shopping mall before heading to the supermarket.\", \"limitations\": [\"The report does not identify the user's true intent.\", \"Both candidates may share the same error.\", \"Single-field swaps do not identify higher-order interactions.\"], \"report_version\": \"darc-v5.1-contrast-2\", \"routes\": {\"A\": {\"arrival_minutes\": 668, \"average_quality\": 0.9, \"categories\": [\"shopping_mall\", \"supermarket\"], \"coverage_count\": 2, \"distance_km\": 14.063, \"duration_minutes\": 128.1, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"shopping_mall_2\", \"supermarket_2\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": 0.05266712035904311}, \"B\": {\"arrival_minutes\": 668, \"average_quality\": 0.9, \"categories\": [\"shopping_mall\", \"supermarket\"], \"coverage_count\": 2, \"distance_km\": 14.063, \"duration_minutes\": 128.1, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"shopping_mall_2\", \"supermarket_2\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": 0.05266712035904311}}, \"single_field_swaps\": [{\"base\": \"A\", \"field_from_other\": \"time_limit\", \"hybrid_intent\": {\"dependencies\": [[\"shopping_mall\", \"supermarket\"]], \"pois\": [\"shopping_mall\", \"supermarket\"], \"quality_weight\": 0.25, \"time_limit\": null}, \"route\": {\"arrival_minutes\": 668, \"average_quality\": 0.9, \"categories\": [\"shopping_mall\", \"supermarket\"], \"coverage_count\": 2, \"distance_km\": 14.063, \"duration_minutes\": 128.1, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"shopping_mall_2\", \"supermarket_2\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": 0.05266712035904311}}, {\"base\": \"B\", \"field_from_other\": \"time_limit\", \"hybrid_intent\": {\"dependencies\": [[\"shopping_mall\", \"supermarket\"]], \"pois\": [\"shopping_mall\", \"supermarket\"], \"quality_weight\": 0.25, \"time_limit\": 1320}, \"route\": {\"arrival_minutes\": 668, \"average_quality\": 0.9, \"categories\": [\"shopping_mall\", \"supermarket\"], \"coverage_count\": 2, \"distance_km\": 14.063, \"duration_minutes\": 128.1, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"shopping_mall_2\", \"supermarket_2\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": 0.05266712035904311}}]}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"shopping_mall\",\"supermarket\"],\"time_limit\":1320,\"dependencies\":[[\"shopping_mall\",\"supermarket\"]],\"quality_weight\":0.25},\"evidence\":{\"pois\":\"visiting the shopping mall and the supermarket\",\"time_limit\":\"be back by 22:00\",\"dependencies\":\"visit the shopping mall before heading to the supermarket\",\"quality_weight\":\"time efficiency is a priority\"},\"changes\":[\"time_limit\"]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "shopping_mall",
+      "supermarket"
+    ],
+    "time_limit": 1320,
+    "dependencies": [
+      [
+        "shopping_mall",
+        "supermarket"
+      ]
+    ],
+    "quality_weight": 0.25
+  },
+  "evidence": {
+    "pois": "visiting the shopping mall and the supermarket",
+    "time_limit": "be back by 22:00",
+    "dependencies": "visit the shopping mall before heading to the supermarket",
+    "quality_weight": "time efficiency is a priority"
+  },
+  "changes": [
+    "time_limit"
+  ],
+  "finished_at": "2026-09-10T02:51:14.345009+00:00",
+  "telemetry": {
+    "call_index": 1,
+    "prompt_sha256": "ff425c9e92047a3e2ca67ac1d4ad7b793424d166930965986581a50f5d623a2d",
+    "attempts": 1,
+    "latency_seconds": 16.703,
+    "input_chars": 4192,
+    "output_chars": 390,
+    "input_tokens": 1295,
+    "output_tokens": 3590,
+    "total_tokens": 4885,
+    "usage_source": "provider",
+    "success": true
+  }
+}

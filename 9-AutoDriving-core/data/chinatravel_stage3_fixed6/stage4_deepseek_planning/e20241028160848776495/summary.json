@@ -1,0 +1,8 @@
+{
+  "uid": "e20241028160848776495",
+  "status": "search_error:TimeoutError",
+  "seconds": 30.259738458087668,
+  "tool_calls": 81499,
+  "tool_errors": 0,
+  "schema_valid": false
+}

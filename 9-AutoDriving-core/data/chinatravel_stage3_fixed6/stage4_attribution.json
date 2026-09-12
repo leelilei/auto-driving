@@ -1,0 +1,19 @@
+{
+  "status": "NO_ELIGIBLE_SEMANTIC_ERROR",
+  "stage3_cases": 6,
+  "contract_valid": 6,
+  "model_api_calls": 6,
+  "attribution": {
+    "parse_error": 0,
+    "unsupported_requirement": 5,
+    "compile_error": 0,
+    "search_failure": "not_run",
+    "data_coverage_failure": "not_run",
+    "evaluation_mismatch": 0,
+    "semantic_error": 0
+  },
+  "reason": "The v4 native schema only requested base fields. Extended requirements were not exposed in the tool contract, so their omission is an interface coverage limitation, not an eligible model semantic error.",
+  "stage5_decision": "STOP",
+  "stage5_status": "NOT_ELIGIBLE",
+  "next_action": "Expand the native tool schema to room, cuisine, intercity, and attraction fields, then run a fresh bounded six-case pilot before reconsidering feedback ablation."
+}

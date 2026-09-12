@@ -1,0 +1,51 @@
+{
+  "call_id": "reversed_preference_3__r1__dependency_text",
+  "role": "dependency_text",
+  "graph_condition": "tradeoff",
+  "started_at": "2026-09-10T04:10:35.719479+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. Both candidates may be wrong, including when they agree. Supplementary information describes candidate differences or planning consequences; it does not identify the correct intent. Resolve every field from the instruction. Do not infer user preference from a route or map.\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised.\n\nInstruction:\nToday, you need to visit the library, supermarket, and bank. Make sure to be back by 18:00. Aim for a route that allows you to complete everything efficiently. Also, remember to stop by the supermarket before heading to the bank.\n\nCandidate A:\n{\"dependencies\": [[\"supermarket\", \"bank\"]], \"pois\": [\"bank\", \"library\", \"supermarket\"], \"quality_weight\": 0.25, \"time_limit\": 1080}\n\nCandidate B:\n{\"dependencies\": [[\"supermarket\", \"bank\"]], \"pois\": [\"bank\", \"library\", \"supermarket\"], \"quality_weight\": 0.75, \"time_limit\": 1080}\n\nSupplementary information:\n{\"candidate_order_requirements\": {\"A\": [\"Visit supermarket before bank.\"], \"B\": [\"Visit supermarket before bank.\"]}, \"differing_fields\": [\"quality_weight\"]}"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"bank\",\"library\",\"supermarket\"],\"time_limit\":1080,\"dependencies\":[[\"supermarket\",\"bank\"]],\"quality_weight\":0.5},\"evidence\":{\"pois\":\"visit the library, supermarket, and bank\",\"time_limit\":\"be back by 18:00\",\"dependencies\":\"supermarket before heading to the bank\",\"quality_weight\":\"complete everything efficiently\"},\"changes\":[\"quality_weight\"]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library",
+      "supermarket"
+    ],
+    "time_limit": 1080,
+    "dependencies": [
+      [
+        "supermarket",
+        "bank"
+      ]
+    ],
+    "quality_weight": 0.5
+  },
+  "evidence": {
+    "pois": "visit the library, supermarket, and bank",
+    "time_limit": "be back by 18:00",
+    "dependencies": "supermarket before heading to the bank",
+    "quality_weight": "complete everything efficiently"
+  },
+  "changes": [
+    "quality_weight"
+  ],
+  "finished_at": "2026-09-10T04:11:07.792861+00:00",
+  "telemetry": {
+    "call_index": 1,
+    "prompt_sha256": "d2f0bd44df1074908dd6def7a54454c0c15f90afb53b114f7e185e4861254f63",
+    "attempts": 1,
+    "latency_seconds": 32.073,
+    "input_chars": 1387,
+    "output_chars": 362,
+    "input_tokens": 373,
+    "output_tokens": 7392,
+    "total_tokens": 7765,
+    "usage_source": "provider",
+    "success": true
+  }
+}

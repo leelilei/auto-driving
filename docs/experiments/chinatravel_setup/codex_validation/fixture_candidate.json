@@ -1,0 +1,236 @@
+{
+  "query": {
+    "uid": "e20241028160248698752",
+    "tag": "easy",
+    "start_city": "上海",
+    "target_city": "杭州",
+    "days": 1,
+    "people_number": 1,
+    "limit_rooms": false,
+    "limits_room_type": false,
+    "hard_logic_py": [
+      "result=(day_count(plan)==1)",
+      "result=(people_count(plan)==1)",
+      "total_cost=0 \nfor activity in allactivities(plan):\n    total_cost+=activity_cost(activity)\n    total_cost += innercity_transport_cost(activity_transports(activity))\nresult=(total_cost<=1500)",
+      "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=1: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=1: result=False",
+      "result=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False"
+    ],
+    "nature_language": "当前位置上海。我一个人想去杭州玩一天，预算1500人民币，请给我一个旅行规划。",
+    "nature_language_en": "Current location: Shanghai. I want to travel to Hangzhou alone for a day with a budget of 1500 RMB. Please provide me with a travel plan.",
+    "query": "当前位置上海。我一个人想去杭州玩一天，预算1500人民币，请给我一个旅行规划。"
+  },
+  "result": {
+    "people_number": 1,
+    "start_city": "上海",
+    "target_city": "杭州",
+    "itinerary": [
+      {
+        "day": 1,
+        "activities": [
+          {
+            "start_time": "04:30",
+            "end_time": "06:40",
+            "start": "上海南站",
+            "end": "杭州站",
+            "price": 65.95,
+            "cost": 65.95,
+            "tickets": 1,
+            "transports": [],
+            "TrainID": "K1805",
+            "type": "train"
+          },
+          {
+            "position": "中国伞博物馆",
+            "type": "attraction",
+            "price": 0,
+            "cost": 0,
+            "start_time": "09:00",
+            "end_time": "10:30",
+            "transports": [
+              {
+                "start": "杭州站",
+                "end": "城站-地铁站",
+                "mode": "walk",
+                "start_time": "06:40",
+                "end_time": "06:42",
+                "cost": 0,
+                "distance": 0.21,
+                "price": 0
+              },
+              {
+                "start": "城站-地铁站",
+                "end": "拱宸桥东-地铁站",
+                "mode": "metro",
+                "start_time": "06:42",
+                "end_time": "06:59",
+                "cost": 3,
+                "distance": 8.63,
+                "price": 3,
+                "tickets": 1
+              },
+              {
+                "start": "拱宸桥东-地铁站",
+                "end": "中国伞博物馆",
+                "mode": "walk",
+                "start_time": "06:59",
+                "end_time": "07:06",
+                "cost": 0,
+                "distance": 0.64,
+                "price": 0
+              }
+            ],
+            "tickets": 1
+          },
+          {
+            "position": "杭州逸酒店·本逸·割烹料理(湖墅店)",
+            "type": "lunch",
+            "price": 488,
+            "cost": 488,
+            "start_time": "12:32",
+            "end_time": "13:32",
+            "transports": [
+              {
+                "start": "中国伞博物馆",
+                "end": "杭州逸酒店·本逸·割烹料理(湖墅店)",
+                "mode": "taxi",
+                "start_time": "10:30",
+                "end_time": "10:36",
+                "cost": 20.87,
+                "distance": 4.62,
+                "price": 20.87,
+                "cars": 1
+              }
+            ]
+          },
+          {
+            "position": "北山街历史文化街区",
+            "type": "attraction",
+            "price": 0,
+            "cost": 0,
+            "start_time": "13:34",
+            "end_time": "15:04",
+            "transports": [
+              {
+                "start": "杭州逸酒店·本逸·割烹料理(湖墅店)",
+                "end": "北山街历史文化街区",
+                "mode": "taxi",
+                "start_time": "13:32",
+                "end_time": "13:34",
+                "cost": 11.09,
+                "distance": 1.83,
+                "price": 11.09,
+                "cars": 1
+              }
+            ],
+            "tickets": 1
+          },
+          {
+            "position": "杭州国际会议中心",
+            "type": "attraction",
+            "price": 0,
+            "cost": 0,
+            "start_time": "15:24",
+            "end_time": "16:54",
+            "transports": [
+              {
+                "start": "北山街历史文化街区",
+                "end": "凤起路-地铁站",
+                "mode": "walk",
+                "start_time": "15:04",
+                "end_time": "15:09",
+                "cost": 0,
+                "distance": 0.42,
+                "price": 0
+              },
+              {
+                "start": "凤起路-地铁站",
+                "end": "江锦路-地铁站",
+                "mode": "metro",
+                "start_time": "15:09",
+                "end_time": "15:19",
+                "cost": 3,
+                "distance": 5.3,
+                "price": 3,
+                "tickets": 1
+              },
+              {
+                "start": "江锦路-地铁站",
+                "end": "杭州国际会议中心",
+                "mode": "walk",
+                "start_time": "15:19",
+                "end_time": "15:24",
+                "cost": 0,
+                "distance": 0.47,
+                "price": 0
+              }
+            ],
+            "tickets": 1
+          },
+          {
+            "start_time": "18:05",
+            "end_time": "19:06",
+            "start": "杭州东站",
+            "end": "上海虹桥站",
+            "price": 107.17,
+            "cost": 107.17,
+            "tickets": 1,
+            "transports": [
+              {
+                "start": "杭州国际会议中心",
+                "end": "江锦路-地铁站",
+                "mode": "walk",
+                "start_time": "16:54",
+                "end_time": "16:59",
+                "cost": 0,
+                "distance": 0.47,
+                "price": 0
+              },
+              {
+                "start": "江锦路-地铁站",
+                "end": "火车东站(东广场)-地铁站",
+                "mode": "metro",
+                "start_time": "16:59",
+                "end_time": "17:08",
+                "cost": 3,
+                "distance": 4.91,
+                "price": 3,
+                "tickets": 1
+              },
+              {
+                "start": "火车东站(东广场)-地铁站",
+                "end": "杭州东站",
+                "mode": "walk",
+                "start_time": "17:08",
+                "end_time": "17:13",
+                "cost": 0,
+                "distance": 0.48,
+                "price": 0
+              }
+            ],
+            "TrainID": "G1362",
+            "type": "train"
+          }
+        ]
+      }
+    ],
+    "search_time_sec": 25.004873991012573,
+    "llm_inference_time_sec": 0,
+    "time_out_flag": true,
+    "input_token_count": 0,
+    "output_token_count": 0,
+    "input_token_maxx": 0,
+    "llm_rec_count": 0,
+    "llm_rec_format_error_count": 0,
+    "search_nodes": 25566,
+    "backtrack_count": 16155,
+    "constraints_validation_count": 1053,
+    "commonsense_pass_count": 0,
+    "logical_pass_count": 1053,
+    "all_constraints_pass": 0
+  },
+  "solver_success": false,
+  "scope": "offline oracle-fed evaluator fixture only, not baseline result",
+  "fixture_edits": [
+    "Removed duplicate lunch from oracle RuleNeSy candidate; recomputed connecting taxi using public sandbox. No query or gold changes. Evaluator fixture only."
+  ]
+}

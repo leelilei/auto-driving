@@ -1,0 +1,35 @@
+{
+  "status": "PASS_OFFLINE_DISCRIMINATION_ONLY",
+  "cases": 30,
+  "primary_cases": 18,
+  "control_cases": 12,
+  "unique_feasible": 28,
+  "infeasible": 2,
+  "primary_wrong_objective_decisions_changed": "36/36",
+  "balanced_primary_winners": {
+    "nearest_from_bank": {
+      "P_alpha": 2,
+      "P_beta": 2,
+      "P_gamma": 2
+    },
+    "minimum_added_distance": {
+      "P_beta": 2,
+      "P_gamma": 2,
+      "P_alpha": 2
+    },
+    "highest_rating": {
+      "P_gamma": 2,
+      "P_alpha": 2,
+      "P_beta": 2
+    }
+  },
+  "mutation_audit_count": 240,
+  "mutation_decisions_changed": 123,
+  "old_nearest_to_added_distance": {
+    "cases": 6,
+    "changed_decisions": 0
+  },
+  "model_api_calls": 0,
+  "human_review": "PENDING",
+  "caveat": "Mutation discrimination is an offline dataset property, not model accuracy or DARC improvement. Six primary geometries and control reuses are clustered, not thirty independent samples."
+}

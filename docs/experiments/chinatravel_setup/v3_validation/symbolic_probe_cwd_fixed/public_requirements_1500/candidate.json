@@ -1,0 +1,171 @@
+{
+  "people_number": 1,
+  "start_city": "上海",
+  "target_city": "杭州",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "start_time": "04:30",
+          "end_time": "06:40",
+          "start": "上海南站",
+          "end": "杭州站",
+          "price": 65.95,
+          "cost": 65.95,
+          "tickets": 1,
+          "transports": [],
+          "TrainID": "K1805",
+          "type": "train"
+        },
+        {
+          "position": "中国伞博物馆",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "09:00",
+          "end_time": "10:30",
+          "transports": [
+            {
+              "start": "杭州站",
+              "end": "城站-地铁站",
+              "mode": "walk",
+              "start_time": "06:40",
+              "end_time": "06:42",
+              "cost": 0,
+              "distance": 0.21,
+              "price": 0
+            },
+            {
+              "start": "城站-地铁站",
+              "end": "拱宸桥东-地铁站",
+              "mode": "metro",
+              "start_time": "06:42",
+              "end_time": "06:59",
+              "cost": 3,
+              "distance": 8.63,
+              "price": 3,
+              "tickets": 1
+            },
+            {
+              "start": "拱宸桥东-地铁站",
+              "end": "中国伞博物馆",
+              "mode": "walk",
+              "start_time": "06:59",
+              "end_time": "07:06",
+              "cost": 0,
+              "distance": 0.64,
+              "price": 0
+            }
+          ],
+          "tickets": 1
+        },
+        {
+          "position": "烤匠麻辣烤鱼(永旺梦乐城店)",
+          "type": "lunch",
+          "price": 81,
+          "cost": 81,
+          "start_time": "11:00",
+          "end_time": "12:00",
+          "transports": [
+            {
+              "start": "中国伞博物馆",
+              "end": "拱宸桥东-地铁站",
+              "mode": "walk",
+              "start_time": "10:30",
+              "end_time": "10:37",
+              "cost": 0,
+              "distance": 0.64,
+              "price": 0
+            },
+            {
+              "start": "拱宸桥东-地铁站",
+              "end": "杜甫村-地铁站",
+              "mode": "metro",
+              "start_time": "10:37",
+              "end_time": "10:56",
+              "cost": 4,
+              "distance": 9.95,
+              "price": 4,
+              "tickets": 1
+            },
+            {
+              "start": "杜甫村-地铁站",
+              "end": "烤匠麻辣烤鱼(永旺梦乐城店)",
+              "mode": "walk",
+              "start_time": "10:56",
+              "end_time": "10:59",
+              "cost": 0,
+              "distance": 0.3,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "杭州逸酒店·本逸·割烹料理(湖墅店)",
+          "type": "lunch",
+          "price": 488,
+          "cost": 488,
+          "start_time": "12:32",
+          "end_time": "13:32",
+          "transports": [
+            {
+              "start": "烤匠麻辣烤鱼(永旺梦乐城店)",
+              "end": "杜甫村-地铁站",
+              "mode": "walk",
+              "start_time": "12:00",
+              "end_time": "12:03",
+              "cost": 0,
+              "distance": 0.3,
+              "price": 0
+            },
+            {
+              "start": "杜甫村-地铁站",
+              "end": "沈塘桥-地铁站",
+              "mode": "metro",
+              "start_time": "12:03",
+              "end_time": "12:28",
+              "cost": 4,
+              "distance": 12.56,
+              "price": 4,
+              "tickets": 1
+            },
+            {
+              "start": "沈塘桥-地铁站",
+              "end": "杭州逸酒店·本逸·割烹料理(湖墅店)",
+              "mode": "walk",
+              "start_time": "12:28",
+              "end_time": "12:32",
+              "cost": 0,
+              "distance": 0.39,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "start_time": "18:05",
+          "end_time": "19:06",
+          "start": "杭州东站",
+          "end": "上海虹桥站",
+          "price": 107.17,
+          "cost": 107.17,
+          "tickets": 1,
+          "transports": [
+            {
+              "start": "杭州逸酒店·本逸·割烹料理(湖墅店)",
+              "end": "杭州东站",
+              "mode": "walk",
+              "start_time": "13:32",
+              "end_time": "14:50",
+              "cost": 0.0,
+              "distance": 6.523699435604368,
+              "price": 0.0
+            }
+          ],
+          "TrainID": "G1362",
+          "type": "train"
+        }
+      ]
+    }
+  ]
+}

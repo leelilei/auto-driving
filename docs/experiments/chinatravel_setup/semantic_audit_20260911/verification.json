@@ -1,0 +1,235 @@
+{
+  "status": "passed",
+  "model_api_calls": 0,
+  "socket_network_blocked": true,
+  "verified_cases": 60,
+  "selected_cases": 10,
+  "selection_shuffle_checks": 10,
+  "source_hash_count": 68,
+  "artifact_hashes_verified": true,
+  "regeneration_semantically_identical": true,
+  "public_inputs_only_original_text_and_uid": true,
+  "explicit_budget_omission": {
+    "uid": "h20241029143450090032",
+    "clauses": [
+      "result=(day_count(plan)==3)",
+      "result=(people_count(plan)==2)",
+      "result=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False"
+    ]
+  },
+  "predicate_witnesses": [
+    {
+      "uid": "e20241028160842228543",
+      "clause_index": 3,
+      "clause": "innercity_transport_set=set()\nfor activity in allactivities(plan):\n  if activity_transports(activity)!=[]: innercity_transport_set.add(innercity_transport_type(activity_transports(activity)))\nresult=({'metro'}<=innercity_transport_set)",
+      "synthetic_plan": {
+        "itinerary": [
+          {
+            "activities": [
+              {
+                "transports": [
+                  {
+                    "mode": "metro"
+                  }
+                ]
+              },
+              {
+                "transports": [
+                  {
+                    "mode": "taxi"
+                  }
+                ]
+              },
+              {
+                "transports": [
+                  {
+                    "mode": "taxi"
+                  }
+                ]
+              },
+              {
+                "transports": [
+                  {
+                    "mode": "taxi"
+                  }
+                ]
+              },
+              {
+                "transports": [
+                  {
+                    "mode": "taxi"
+                  }
+                ]
+              },
+              {
+                "transports": [
+                  {
+                    "mode": "taxi"
+                  }
+                ]
+              },
+              {
+                "transports": [
+                  {
+                    "mode": "taxi"
+                  }
+                ]
+              },
+              {
+                "transports": [
+                  {
+                    "mode": "taxi"
+                  }
+                ]
+              },
+              {
+                "transports": [
+                  {
+                    "mode": "taxi"
+                  }
+                ]
+              },
+              {
+                "transports": [
+                  {
+                    "mode": "taxi"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "official_result": true,
+      "interpretation": "One metro occurrence among ten transport activities passes; no majority is required."
+    },
+    {
+      "uid": "e20241028160842228543",
+      "clause_index": 3,
+      "clause": "innercity_transport_set=set()\nfor activity in allactivities(plan):\n  if activity_transports(activity)!=[]: innercity_transport_set.add(innercity_transport_type(activity_transports(activity)))\nresult=({'metro'}<=innercity_transport_set)",
+      "synthetic_plan": {
+        "itinerary": [
+          {
+            "activities": [
+              {
+                "transports": [
+                  {
+                    "mode": "taxi"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "official_result": false,
+      "interpretation": "Negative control: taxi only does not satisfy metro occurrence."
+    },
+    {
+      "uid": "e20241028160857444675",
+      "clause_index": 3,
+      "clause": "hotel_cost=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': hotel_cost+=activity_cost(activity)\nresult=(hotel_cost/people_count(plan)/(day_count(plan)-1)<= 500)",
+      "synthetic_plan": {
+        "people_number": 2,
+        "itinerary": [
+          {
+            "activities": [
+              {
+                "type": "accommodation",
+                "cost": 800
+              }
+            ]
+          },
+          {
+            "activities": []
+          }
+        ]
+      },
+      "official_result": true,
+      "interpretation": "Hotel total divided by two people and one night; threshold 500 per person-night."
+    },
+    {
+      "uid": "e20241028160857444675",
+      "clause_index": 3,
+      "clause": "hotel_cost=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': hotel_cost+=activity_cost(activity)\nresult=(hotel_cost/people_count(plan)/(day_count(plan)-1)<= 500)",
+      "synthetic_plan": {
+        "people_number": 2,
+        "itinerary": [
+          {
+            "activities": [
+              {
+                "type": "accommodation",
+                "cost": 1002
+              }
+            ]
+          },
+          {
+            "activities": []
+          }
+        ]
+      },
+      "official_result": false,
+      "interpretation": "Hotel total divided by two people and one night; threshold 500 per person-night."
+    },
+    {
+      "uid": "h20241029143500599951",
+      "clause_index": 3,
+      "clause": "result=(day_count(plan)==5)",
+      "synthetic_plan": {
+        "itinerary": [
+          {
+            "activities": []
+          },
+          {
+            "activities": []
+          },
+          {
+            "activities": []
+          },
+          {
+            "activities": []
+          },
+          {
+            "activities": []
+          }
+        ]
+      },
+      "official_result": true,
+      "interpretation": "Gold duration is five days despite the one-week prose; source conflict remains unresolved."
+    },
+    {
+      "uid": "h20241029143500599951",
+      "clause_index": 3,
+      "clause": "result=(day_count(plan)==5)",
+      "synthetic_plan": {
+        "itinerary": [
+          {
+            "activities": []
+          },
+          {
+            "activities": []
+          },
+          {
+            "activities": []
+          },
+          {
+            "activities": []
+          },
+          {
+            "activities": []
+          },
+          {
+            "activities": []
+          },
+          {
+            "activities": []
+          }
+        ]
+      },
+      "official_result": false,
+      "interpretation": "Gold duration is five days despite the one-week prose; source conflict remains unresolved."
+    }
+  ],
+  "limitations": "Isolated synthetic predicate checks, not valid travel plans, model trials, independent annotation review, or DARC evidence.",
+  "verification_script_sha256": "08bd2208ecc38bda5a3f184efb47b4855a74a08129bb9664d9f017fad0035491"
+}

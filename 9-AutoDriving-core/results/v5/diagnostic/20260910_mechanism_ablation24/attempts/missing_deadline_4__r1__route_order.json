@@ -1,0 +1,46 @@
+{
+  "call_id": "missing_deadline_4__r1__route_order",
+  "role": "route_order",
+  "graph_condition": "tradeoff",
+  "started_at": "2026-09-10T03:02:09.529961+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. Both candidates may be wrong, including when they agree. Supplementary information describes candidate differences or planning consequences; it does not identify the correct intent. Resolve every field from the instruction. Do not infer user preference from a route or map.\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised.\n\nInstruction:\nToday, make sure to visit the library, pharmacy, and supermarket. Please return by 17:00. Focus on visiting high-rated places, even if the route is slightly longer.\n\nCandidate A:\n{\"dependencies\": [], \"pois\": [\"library\", \"pharmacy\", \"supermarket\"], \"quality_weight\": 0.75, \"time_limit\": null}\n\nCandidate B:\n{\"dependencies\": [], \"pois\": [\"library\", \"pharmacy\", \"supermarket\"], \"quality_weight\": 0.75, \"time_limit\": 1020}\n\nSupplementary information:\n{\"differing_fields\": [\"time_limit\"], \"routes\": {\"A\": {\"categories\": [\"library\", \"supermarket\", \"pharmacy\"]}, \"B\": {\"categories\": [\"library\", \"supermarket\", \"pharmacy\"]}}}"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"library\",\"pharmacy\",\"supermarket\"],\"time_limit\":1020,\"dependencies\":[],\"quality_weight\":0.75},\"evidence\":{\"pois\":\"visit the library, pharmacy, and supermarket\",\"time_limit\":\"return by 17:00\",\"quality_weight\":\"Focus on visiting high-rated places\",\"route_tradeoff\":\"even if the route is slightly longer\"},\"changes\":[\"time_limit\"]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "library",
+      "pharmacy",
+      "supermarket"
+    ],
+    "time_limit": 1020,
+    "dependencies": [],
+    "quality_weight": 0.75
+  },
+  "evidence": {
+    "pois": "visit the library, pharmacy, and supermarket",
+    "time_limit": "return by 17:00",
+    "quality_weight": "Focus on visiting high-rated places",
+    "route_tradeoff": "even if the route is slightly longer"
+  },
+  "changes": [
+    "time_limit"
+  ],
+  "finished_at": "2026-09-10T03:02:21.072065+00:00",
+  "telemetry": {
+    "call_index": 1,
+    "prompt_sha256": "d68dc40102311a9cc578638484c0598f547b97657c948f9e70353404e5388231",
+    "attempts": 1,
+    "latency_seconds": 11.542,
+    "input_chars": 1298,
+    "output_chars": 348,
+    "input_tokens": 353,
+    "output_tokens": 2415,
+    "total_tokens": 2768,
+    "usage_source": "provider",
+    "success": true
+  }
+}

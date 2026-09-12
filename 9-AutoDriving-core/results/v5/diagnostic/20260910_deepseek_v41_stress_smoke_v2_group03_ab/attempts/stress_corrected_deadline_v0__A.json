@@ -1,0 +1,43 @@
+{
+  "call_id": "stress_corrected_deadline_v0::A",
+  "role": "A",
+  "graph_condition": null,
+  "started_at": "2026-09-10T02:32:15.274672+00:00",
+  "request": {
+    "system": "You extract route-planning intent from the user's instruction.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nUse only the instruction. Do not invent constraints. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Visit the library, shopping mall, and supermarket. I first said 17:00, but please use the corrected return deadline of 18:30. Favor highly rated places even if the route is longer."
+  },
+  "raw_response": "{\"pois\":[\"library\",\"shopping mall\",\"supermarket\"],\"time_limit\":1110,\"dependencies\":[],\"quality_weight\":0.8,\"evidence\":{\"pois\":\"library, shopping mall, and supermarket\",\"time_limit\":\"corrected return deadline of 18:30\",\"quality_weight\":\"Favor highly rated places even if the route is longer\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "library",
+      "shopping_mall",
+      "supermarket"
+    ],
+    "time_limit": 1110,
+    "dependencies": [],
+    "quality_weight": 0.8
+  },
+  "evidence": {
+    "pois": "library, shopping mall, and supermarket",
+    "time_limit": "corrected return deadline of 18:30",
+    "quality_weight": "Favor highly rated places even if the route is longer"
+  },
+  "changes": [],
+  "finished_at": "2026-09-10T02:32:20.969350+00:00",
+  "telemetry": {
+    "call_index": 1,
+    "prompt_sha256": "1ec05c0b6915e88ae0eea702fca1f4617c435cae45a198bcdd0a5554b5daff50",
+    "attempts": 1,
+    "latency_seconds": 5.694,
+    "input_chars": 835,
+    "output_chars": 292,
+    "input_tokens": 232,
+    "output_tokens": 1128,
+    "total_tokens": 1360,
+    "usage_source": "provider",
+    "success": true
+  }
+}

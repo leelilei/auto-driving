@@ -1,0 +1,29 @@
+{
+  "call_id": "pilot_04_v1::aligned::review_plain",
+  "role": "review_plain",
+  "graph_condition": "aligned",
+  "started_at": "2026-09-10T02:03:55.615799+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. Candidate agreement is not proof of correctness.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not use route efficiency to infer what the user wants.\n\nInstruction:\nMake sure to visit the bank and the library today, returning by 18:00. It is crucial to prioritize an efficient, quick route for these stops.\n\nCandidate A:\n{\"dependencies\": [], \"pois\": [\"bank\", \"library\"], \"quality_weight\": 0.1, \"time_limit\": 1080}\n\nCandidate B:\n{\"dependencies\": [], \"pois\": [\"bank\", \"library\"], \"quality_weight\": 0.0, \"time_limit\": 1080}\n"
+  },
+  "status": "TRANSPORT_FAILED",
+  "schema_valid": false,
+  "error_type": "RuntimeError",
+  "error_message": "provider HTTP 502: error code: 502\n",
+  "finished_at": "2026-09-10T02:03:57.869166+00:00",
+  "telemetry": {
+    "call_index": 1,
+    "prompt_sha256": "5b07fb1e3df18917670e450dcebbd375abfa0e47d0f6e3e4f24c044cc265d05e",
+    "attempts": 1,
+    "latency_seconds": 2.253,
+    "input_chars": 872,
+    "output_chars": 0,
+    "input_tokens": 218,
+    "output_tokens": 0,
+    "total_tokens": 218,
+    "usage_source": "character_estimate",
+    "success": false,
+    "error": "RuntimeError"
+  }
+}

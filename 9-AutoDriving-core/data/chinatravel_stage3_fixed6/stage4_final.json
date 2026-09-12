@@ -1,0 +1,50 @@
+{
+  "status": "PENDING_PLANNING_AND_SEMANTIC_REVIEW",
+  "model_api_calls": 0,
+  "source_reported_model_api_calls": 6,
+  "rows": [
+    {
+      "uid": "e20241028160248698752",
+      "collection_status": "CONTRACT_VALID",
+      "attribution": "ready_for_planning",
+      "detail": null
+    },
+    {
+      "uid": "e20241028160845920703",
+      "collection_status": "CONTRACT_VALID",
+      "attribution": "ready_for_planning",
+      "detail": null
+    },
+    {
+      "uid": "e20241028160848776495",
+      "collection_status": "CONTRACT_VALID",
+      "attribution": "contract_validation_failed",
+      "detail": "invalid cuisine"
+    },
+    {
+      "uid": "e20241028160913165493",
+      "collection_status": "CONTRACT_VALID",
+      "attribution": "contract_validation_failed",
+      "detail": "invalid cuisine"
+    },
+    {
+      "uid": "e20241028160902013119",
+      "collection_status": "FAILED",
+      "attribution": "contract_validation_failed_raw_response_unavailable",
+      "detail": "invalid intercity_mode"
+    },
+    {
+      "uid": "h20241029143455115600",
+      "collection_status": "CONTRACT_VALID",
+      "attribution": "ready_for_planning",
+      "detail": null
+    }
+  ],
+  "counts": {
+    "ready_for_planning": 3,
+    "requires_investigation": 3,
+    "semantic_error": null
+  },
+  "stage5_decision": "PENDING",
+  "reason": "Planning and independent semantic adjudication are incomplete. Contract failures do not establish absence of semantic errors. Raw provider envelopes were not archived by the collector."
+}

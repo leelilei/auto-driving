@@ -1,0 +1,42 @@
+{
+  "call_id": "pilot_04_v1::aligned::review_constraints",
+  "role": "review_constraints",
+  "graph_condition": "aligned",
+  "started_at": "2026-09-09T16:34:26.354882+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. Cross-constraint checks show consequences of candidates and do not establish the user's intent.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not select a preference because one candidate yields a better route.\n\nInstruction:\nMake sure to visit the bank and the library today, returning by 18:00. It is crucial to prioritize an efficient, quick route for these stops.\n\nCandidate A:\n{\"dependencies\": [], \"pois\": [\"bank\", \"library\"], \"quality_weight\": 0.0, \"time_limit\": 1080}\n\nCandidate B:\n{\"dependencies\": [], \"pois\": [\"bank\", \"library\"], \"quality_weight\": 0.0, \"time_limit\": 1080}\n\nField differences:\n{\"fields\": []}\n\nCross-constraint checks:\n{\"route_A_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_A_under_B\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_B\": {\"reasons\": [], \"task_success\": true}}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"bank\",\"library\"],\"time_limit\":1080,\"dependencies\":[],\"quality_weight\":0.0},\"evidence\":{\"pois\":\"visit the bank and the library\",\"time_limit\":\"returning by 18:00\",\"quality_weight\":\"prioritize an efficient, quick route\"},\"changes\":[]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library"
+    ],
+    "time_limit": 1080,
+    "dependencies": [],
+    "quality_weight": 0.0
+  },
+  "evidence": {
+    "pois": "visit the bank and the library",
+    "time_limit": "returning by 18:00",
+    "quality_weight": "prioritize an efficient, quick route"
+  },
+  "changes": [],
+  "finished_at": "2026-09-09T16:34:54.170621+00:00",
+  "telemetry": {
+    "call_index": 27,
+    "prompt_sha256": "9bc9ea4de1ec280682a9a2a18f175895d80fc0b7fdfbf173339001abf90189d6",
+    "attempts": 1,
+    "latency_seconds": 27.815,
+    "input_chars": 1227,
+    "output_chars": 251,
+    "input_tokens": 362,
+    "output_tokens": 8365,
+    "total_tokens": 8727,
+    "usage_source": "provider",
+    "success": true
+  }
+}

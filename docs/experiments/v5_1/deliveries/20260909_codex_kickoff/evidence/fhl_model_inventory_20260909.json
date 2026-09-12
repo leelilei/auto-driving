@@ -1,0 +1,22 @@
+{
+  "queried_at_utc": "2026-09-09T14:35:03Z",
+  "endpoint": "https://www.fhl.mom/v1/models",
+  "authenticated_http_status": 200,
+  "configured_model": "gpt-5.4-mini",
+  "configured_model_listed": false,
+  "listed_model_count": 9,
+  "listed_models": [
+    "codex-auto-review",
+    "gpt-5.3-codex-spark",
+    "gpt-5.5",
+    "gpt-5.6-luna",
+    "gpt-5.6-sol",
+    "gpt-5.6-terra",
+    "gpt-6-astra",
+    "gpt-image-2",
+    "gpt-reserve"
+  ],
+  "api_key_recorded": false,
+  "inference_call": false,
+  "interpretation": "The configured gpt-5.4-mini alias is not advertised by the provider at query time. Do not silently substitute another model."
+}

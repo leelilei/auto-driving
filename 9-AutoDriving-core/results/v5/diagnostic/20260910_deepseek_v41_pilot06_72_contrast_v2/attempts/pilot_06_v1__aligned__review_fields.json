@@ -1,0 +1,60 @@
+{
+  "call_id": "pilot_06_v1::aligned::review_fields",
+  "role": "review_fields",
+  "graph_condition": "aligned",
+  "started_at": "2026-09-09T16:37:49.719392+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. The field-difference report only identifies disagreements; it does not identify the correct answer.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not infer user preference from a route or map.\n\nInstruction:\nYou must visit the library, supermarket, and bank today, returning by 18:00. Select an efficient route to complete all visits promptly, and stop by the supermarket before going to the bank.\n\nCandidate A:\n{\"dependencies\": [[\"supermarket\", \"bank\"]], \"pois\": [\"bank\", \"library\", \"supermarket\"], \"quality_weight\": 0.3, \"time_limit\": 1080}\n\nCandidate B:\n{\"dependencies\": [[\"supermarket\", \"bank\"]], \"pois\": [\"bank\", \"library\", \"supermarket\"], \"quality_weight\": 0.2, \"time_limit\": 1080}\n\nField differences:\n{\"fields\": [\"quality_weight\"]}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"bank\",\"library\",\"supermarket\"],\"time_limit\":1080,\"dependencies\":[[\"supermarket\",\"bank\"]],\"quality_weight\":0.2},\"evidence\":{\"quality_weight\":[\"Select an efficient route\",\"complete all visits promptly\"],\"time_limit\":[\"returning by 18:00\"],\"dependencies\":[\"stop by the supermarket before going to the bank\"],\"pois\":[\"visit the library, supermarket, and bank\"]},\"changes\":[\"quality_weight\"]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library",
+      "supermarket"
+    ],
+    "time_limit": 1080,
+    "dependencies": [
+      [
+        "supermarket",
+        "bank"
+      ]
+    ],
+    "quality_weight": 0.2
+  },
+  "evidence": {
+    "quality_weight": [
+      "Select an efficient route",
+      "complete all visits promptly"
+    ],
+    "time_limit": [
+      "returning by 18:00"
+    ],
+    "dependencies": [
+      "stop by the supermarket before going to the bank"
+    ],
+    "pois": [
+      "visit the library, supermarket, and bank"
+    ]
+  },
+  "changes": [
+    "quality_weight"
+  ],
+  "finished_at": "2026-09-09T16:38:05.315397+00:00",
+  "telemetry": {
+    "call_index": 26,
+    "prompt_sha256": "333d8c40eeb809d50dced022ec385bfaecfe342bbdcd27cf465dd604ad70adb8",
+    "attempts": 1,
+    "latency_seconds": 15.596,
+    "input_chars": 1090,
+    "output_chars": 407,
+    "input_tokens": 312,
+    "output_tokens": 4879,
+    "total_tokens": 5191,
+    "usage_source": "provider",
+    "success": true
+  }
+}

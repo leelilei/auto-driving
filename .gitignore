@@ -18,3 +18,7 @@ assets/papers/pdf/
 *_secret*
 *.key
 *.pem
+
+# Temporary files and external repositories
+tmp/
+external/

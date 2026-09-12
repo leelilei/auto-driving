@@ -1,0 +1,12 @@
+{
+  "start_city": "深圳",
+  "target_city": "广州",
+  "days": 1,
+  "people_number": 1,
+  "budget": 800,
+  "room_count": null,
+  "room_type": null,
+  "cuisine": null,
+  "intercity_mode": null,
+  "attraction_category": null
+}

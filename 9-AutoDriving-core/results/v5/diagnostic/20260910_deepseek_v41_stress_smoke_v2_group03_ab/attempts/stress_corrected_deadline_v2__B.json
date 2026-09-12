@@ -1,0 +1,43 @@
+{
+  "call_id": "stress_corrected_deadline_v2::B",
+  "role": "B",
+  "graph_condition": null,
+  "started_at": "2026-09-10T02:32:36.983998+00:00",
+  "request": {
+    "system": "Read the user's route-planning instruction field by field before producing the final JSON.\n\nCheck: requested POI categories, return deadline, explicit visit order, and the direction of the quality-versus-distance preference. Each conclusion must be supported by the instruction itself.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nDo not infer a preference from any route or map. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Go to the shopping mall, supermarket, and library, prioritizing their ratings over extra distance. The valid deadline is 18:30, not the previously mentioned 17:00."
+  },
+  "raw_response": "{\"pois\":[\"shopping mall\",\"supermarket\",\"library\"],\"time_limit\":1110,\"dependencies\":[],\"quality_weight\":1.0,\"evidence\":{\"pois\":\"shopping mall, supermarket, and library\",\"time_limit\":\"deadline is 18:30\",\"quality_weight\":\"prioritizing their ratings over extra distance\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "library",
+      "shopping_mall",
+      "supermarket"
+    ],
+    "time_limit": 1110,
+    "dependencies": [],
+    "quality_weight": 1.0
+  },
+  "evidence": {
+    "pois": "shopping mall, supermarket, and library",
+    "time_limit": "deadline is 18:30",
+    "quality_weight": "prioritizing their ratings over extra distance"
+  },
+  "changes": [],
+  "finished_at": "2026-09-10T02:32:43.857127+00:00",
+  "telemetry": {
+    "call_index": 6,
+    "prompt_sha256": "2f14423ca2af8b7a3010754a5dff4cc55c77aba8f044aedc16e7ab3b3fe815e4",
+    "attempts": 1,
+    "latency_seconds": 6.873,
+    "input_chars": 1037,
+    "output_chars": 268,
+    "input_tokens": 266,
+    "output_tokens": 1492,
+    "total_tokens": 1758,
+    "usage_source": "provider",
+    "success": true
+  }
+}

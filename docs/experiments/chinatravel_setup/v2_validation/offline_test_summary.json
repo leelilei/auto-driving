@@ -1,0 +1,20 @@
+{
+  "tests_run": 33,
+  "assertion_invocations": 130,
+  "assertions_by_method": {
+    "assertTrue": 4,
+    "assertIn": 10,
+    "assertRaises": 9,
+    "assertEqual": 78,
+    "assertNotIn": 12,
+    "assertFalse": 3,
+    "assertLess": 1,
+    "assertIsNone": 7,
+    "assertNotEqual": 1,
+    "assertRaisesRegex": 5
+  },
+  "failures": 0,
+  "errors": 0,
+  "success": true,
+  "scope": "old13 plus v2; outermost unittest assert invocations, including loop iterations and assertRaises contexts; mock assert_not_called additional and not counted"
+}

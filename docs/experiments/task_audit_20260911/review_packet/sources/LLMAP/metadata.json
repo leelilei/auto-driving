@@ -1,0 +1,120 @@
+{
+  "repository": "liangqiyuan/LLMAP",
+  "commit": "281f6ad95f42ca386400e5288f006aeffa2ac282",
+  "default_branch": "main",
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "tree": {
+    "sha": "281f6ad95f42ca386400e5288f006aeffa2ac282",
+    "url": "https://api.github.com/repos/liangqiyuan/LLMAP/git/trees/281f6ad95f42ca386400e5288f006aeffa2ac282",
+    "tree": [
+      {
+        "path": "LICENSE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "cf229de2587be0f708a56d16ecd8e73575283008",
+        "size": 1069,
+        "url": "https://api.github.com/repos/liangqiyuan/LLMAP/git/blobs/cf229de2587be0f708a56d16ecd8e73575283008"
+      },
+      {
+        "path": "README.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "558b7f8beb5a4f6577a4c4dabb4bd2ba8bf8321f",
+        "size": 3636,
+        "url": "https://api.github.com/repos/liangqiyuan/LLMAP/git/blobs/558b7f8beb5a4f6577a4c4dabb4bd2ba8bf8321f"
+      },
+      {
+        "path": "dataset",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "0e04abc8f72b604ae433907c60a7435c8fc0142c",
+        "url": "https://api.github.com/repos/liangqiyuan/LLMAP/git/trees/0e04abc8f72b604ae433907c60a7435c8fc0142c"
+      },
+      {
+        "path": "dataset/HIPP.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "651eafe59611cd3b22984b11cb0d40aff61b4fe9",
+        "size": 9512285,
+        "url": "https://api.github.com/repos/liangqiyuan/LLMAP/git/blobs/651eafe59611cd3b22984b11cb0d40aff61b4fe9"
+      },
+      {
+        "path": "dataset/HIPP.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "28a2913d9c7f3208cc01f3c864655391eda5e41d",
+        "size": 11986,
+        "url": "https://api.github.com/repos/liangqiyuan/LLMAP/git/blobs/28a2913d9c7f3208cc01f3c864655391eda5e41d"
+      },
+      {
+        "path": "dataset/llm_as_agent.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ef7cab951f7bb5bb460244374088ce48ee56aa2c",
+        "size": 5904,
+        "url": "https://api.github.com/repos/liangqiyuan/LLMAP/git/blobs/ef7cab951f7bb5bb460244374088ce48ee56aa2c"
+      },
+      {
+        "path": "figures",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "16f586a830f6aa552f03206a9791ff2a7cfd6aa5",
+        "url": "https://api.github.com/repos/liangqiyuan/LLMAP/git/trees/16f586a830f6aa552f03206a9791ff2a7cfd6aa5"
+      },
+      {
+        "path": "figures/Methodology.png",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2e7a6d098f5f0be6fd5920f3c47019e3eef60c09",
+        "size": 746219,
+        "url": "https://api.github.com/repos/liangqiyuan/LLMAP/git/blobs/2e7a6d098f5f0be6fd5920f3c47019e3eef60c09"
+      },
+      {
+        "path": "figures/Overview.png",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6431b75df8fc0d950661c43f098f7a720da07af5",
+        "size": 1063669,
+        "url": "https://api.github.com/repos/liangqiyuan/LLMAP/git/blobs/6431b75df8fc0d950661c43f098f7a720da07af5"
+      },
+      {
+        "path": "main",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "c78645b6e9d7dec09f649fec9be211e4c6706d9e",
+        "url": "https://api.github.com/repos/liangqiyuan/LLMAP/git/trees/c78645b6e9d7dec09f649fec9be211e4c6706d9e"
+      },
+      {
+        "path": "main/main.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3664cd2fc1f104d3988f4557b001de4d53418873",
+        "size": 1867,
+        "url": "https://api.github.com/repos/liangqiyuan/LLMAP/git/blobs/3664cd2fc1f104d3988f4557b001de4d53418873"
+      },
+      {
+        "path": "main/utils.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "5e96faafcba0b0b11840fefa531404208b6b4aae",
+        "size": 24258,
+        "url": "https://api.github.com/repos/liangqiyuan/LLMAP/git/blobs/5e96faafcba0b0b11840fefa531404208b6b4aae"
+      },
+      {
+        "path": "requirements.txt",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ed50bc7cc3000d238f9dbcf149c621bd457d1622",
+        "size": 162,
+        "url": "https://api.github.com/repos/liangqiyuan/LLMAP/git/blobs/ed50bc7cc3000d238f9dbcf149c621bd457d1622"
+      }
+    ],
+    "truncated": false
+  }
+}

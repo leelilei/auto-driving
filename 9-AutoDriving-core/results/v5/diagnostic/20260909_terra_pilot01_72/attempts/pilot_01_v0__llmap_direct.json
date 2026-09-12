@@ -1,0 +1,43 @@
+{
+  "call_id": "pilot_01_v0::llmap_direct",
+  "role": "llmap_direct",
+  "graph_condition": null,
+  "started_at": "2026-09-09T15:31:49.455669+00:00",
+  "request": {
+    "system": "Extract POIs, constraints, and weights from a human instruction. POIs should be a simple string array. Dependencies should be an empty list if no sequence requirements are mentioned. Weights should be between 0 and 1, and sum to 1. Extract them from language about importance of POI rating vs route length.\n\nOutput must be valid JSON with structure:\n{\n    \"pois\": [\"poi1\", \"poi2\", ...],\n    \"time_limit\": \"HH:00\" or \"None\",\n    \"dependencies\": [[\"poi1\", \"poi2\"], ...],\n    \"quality_weight\": float,\n    \"distance_weight\": float\n}\n",
+    "user": "Extract POIs, constraints, and weights from this instruction as JSON:\nToday, you'll be visiting the shopping mall and the supermarket. Make sure to be back by 22:00. Since time efficiency is a priority, try to keep your route as direct as possible. Remember to visit the shopping mall before heading to the supermarket.\n\nOnly output the JSON object. No prefix, additional text, or explanation.\n"
+  },
+  "raw_response": "{\n  \"pois\": [\"shopping mall\", \"supermarket\"],\n  \"time_limit\": \"22:00\",\n  \"dependencies\": [[\"shopping mall\", \"supermarket\"]],\n  \"quality_weight\": 0.2,\n  \"distance_weight\": 0.8\n}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "shopping_mall",
+      "supermarket"
+    ],
+    "time_limit": 1320,
+    "dependencies": [
+      [
+        "shopping_mall",
+        "supermarket"
+      ]
+    ],
+    "quality_weight": 0.2
+  },
+  "evidence": {},
+  "changes": [],
+  "finished_at": "2026-09-09T15:32:09.339511+00:00",
+  "telemetry": {
+    "call_index": 5,
+    "prompt_sha256": "9dd9e1cbffaab35dada65f6331fd2c3b1d30c8fc43579c04f8b01bd38e9756dc",
+    "attempts": 1,
+    "latency_seconds": 19.883,
+    "input_chars": 923,
+    "output_chars": 176,
+    "input_tokens": 359,
+    "output_tokens": 136,
+    "total_tokens": 495,
+    "usage_source": "provider",
+    "success": true
+  }
+}

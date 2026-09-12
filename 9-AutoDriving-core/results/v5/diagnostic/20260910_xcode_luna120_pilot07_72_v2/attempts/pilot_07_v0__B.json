@@ -1,0 +1,43 @@
+{
+  "call_id": "pilot_07_v0::B",
+  "role": "B",
+  "graph_condition": null,
+  "started_at": "2026-09-09T17:54:36.875580+00:00",
+  "request": {
+    "system": "Read the user's route-planning instruction field by field before producing the final JSON.\n\nCheck: requested POI categories, return deadline, explicit visit order, and the direction of the quality-versus-distance preference. Each conclusion must be supported by the instruction itself.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nDo not infer a preference from any route or map. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Today, make sure to visit the library, pharmacy, and supermarket. Please return by 17:00. Focus on visiting high-rated places, even if the route is slightly longer."
+  },
+  "raw_response": "{\n  \"pois\": [\"library\", \"pharmacy\", \"supermarket\"],\n  \"time_limit\": 1020,\n  \"dependencies\": [],\n  \"quality_weight\": 0.8,\n  \"evidence\": {\n    \"pois\": \"visit the library, pharmacy, and supermarket\",\n    \"time_limit\": \"return by 17:00\",\n    \"quality_weight\": \"Focus on visiting high-rated places, even if the route is slightly longer\"\n  }\n}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "library",
+      "pharmacy",
+      "supermarket"
+    ],
+    "time_limit": 1020,
+    "dependencies": [],
+    "quality_weight": 0.8
+  },
+  "evidence": {
+    "pois": "visit the library, pharmacy, and supermarket",
+    "time_limit": "return by 17:00",
+    "quality_weight": "Focus on visiting high-rated places, even if the route is slightly longer"
+  },
+  "changes": [],
+  "finished_at": "2026-09-09T17:55:18.887002+00:00",
+  "telemetry": {
+    "call_index": 2,
+    "prompt_sha256": "c1cb6b248cdda0063cb05d7435dded4267e51411de42135fde5afe03342ca010",
+    "attempts": 1,
+    "latency_seconds": 42.011,
+    "input_chars": 1038,
+    "output_chars": 337,
+    "input_tokens": 223,
+    "output_tokens": 230,
+    "total_tokens": 453,
+    "usage_source": "provider",
+    "success": true
+  }
+}

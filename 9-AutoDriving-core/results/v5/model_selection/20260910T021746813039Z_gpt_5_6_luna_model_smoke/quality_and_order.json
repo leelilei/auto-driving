@@ -1,0 +1,57 @@
+{
+  "fixture_id": "quality_and_order",
+  "text": "Visit a bank and then a pharmacy. Choose the best-rated places even if the trip is longer.",
+  "gold": {
+    "pois": [
+      "bank",
+      "pharmacy"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "bank",
+        "pharmacy"
+      ]
+    ],
+    "quality_weight": 0.75
+  },
+  "started_at": "2026-09-10T02:17:46.813600+00:00",
+  "raw_response": "{\"pois\":[\"bank\",\"pharmacy\"],\"time_limit\":null,\"dependencies\":[[\"bank\",\"pharmacy\"]],\"quality_weight\":0.8}",
+  "schema_valid": true,
+  "predicted": {
+    "pois": [
+      "bank",
+      "pharmacy"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "bank",
+        "pharmacy"
+      ]
+    ],
+    "quality_weight": 0.8
+  },
+  "hard": {
+    "poi_exact": true,
+    "time_exact": true,
+    "dependency_exact": true,
+    "hard_exact": true
+  },
+  "direction_predicted": "quality_first",
+  "direction_exact": true,
+  "finished_at": "2026-09-10T02:18:29.575134+00:00",
+  "telemetry": {
+    "call_index": 1,
+    "prompt_sha256": "e874e3c09d6b7e426bfb3dc4a2a691aca3d2d1da14f636957cc44cca1dd2c0bf",
+    "attempts": 1,
+    "latency_seconds": 42.761,
+    "input_chars": 514,
+    "output_chars": 104,
+    "input_tokens": 208,
+    "output_tokens": 98,
+    "total_tokens": 306,
+    "usage_source": "provider",
+    "success": true
+  }
+}

@@ -1,0 +1,32 @@
+Traceback (most recent call last):
+  File "/Users/mac/Documents/6-Research/9-AutoDriving/9-AutoDriving-core/scripts/collect_v5_diagnostic.py", line 242, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/mac/Documents/6-Research/9-AutoDriving/9-AutoDriving-core/scripts/collect_v5_diagnostic.py", line 179, in main
+    rec = execute_call(llm, attempt_dir / f"{uid}__{role}.json", f"{uid}::{role}", role, system, user,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Documents/6-Research/9-AutoDriving/9-AutoDriving-core/scripts/collect_v5_diagnostic.py", line 62, in execute_call
+    raw = llm.complete(system, user)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Documents/6-Research/9-AutoDriving/9-AutoDriving-core/src/llm_client.py", line 249, in complete
+    response = self.client.complete(prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Documents/6-Research/9-AutoDriving/9-AutoDriving-core/src/llm_client.py", line 105, in complete
+    data = post_json_with_curl(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Documents/6-Research/9-AutoDriving/9-AutoDriving-core/src/llm_client.py", line 559, in post_json_with_curl
+    completed = subprocess.run(
+                ^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py", line 550, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py", line 1209, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py", line 2115, in _communicate
+    ready = selector.select(timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/selectors.py", line 415, in select
+    fd_event_list = self._selector.poll(timeout)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

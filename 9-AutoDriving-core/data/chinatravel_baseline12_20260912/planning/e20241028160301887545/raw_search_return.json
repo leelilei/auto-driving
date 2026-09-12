@@ -1,0 +1,320 @@
+{
+  "people_number": 1,
+  "start_city": "深圳",
+  "target_city": "广州",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "start_time": "07:26",
+          "end_time": "08:49",
+          "start": "深圳站",
+          "end": "广州东站",
+          "price": 46.89,
+          "cost": 46.89,
+          "tickets": 1,
+          "transports": [],
+          "TrainID": "C7074",
+          "type": "train"
+        },
+        {
+          "position": "岭南金融博物馆",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "09:13",
+          "end_time": "10:43",
+          "transports": [
+            {
+              "start": "广州东站",
+              "end": "燕塘-地铁站",
+              "mode": "walk",
+              "start_time": "08:49",
+              "end_time": "08:56",
+              "cost": 0,
+              "distance": 0.66,
+              "price": 0
+            },
+            {
+              "start": "燕塘-地铁站",
+              "end": "农讲所-地铁站",
+              "mode": "metro",
+              "start_time": "08:56",
+              "end_time": "09:08",
+              "cost": 3,
+              "distance": 6.44,
+              "price": 3,
+              "tickets": 1
+            },
+            {
+              "start": "农讲所-地铁站",
+              "end": "岭南金融博物馆",
+              "mode": "walk",
+              "start_time": "09:08",
+              "end_time": "09:13",
+              "cost": 0,
+              "distance": 0.47,
+              "price": 0
+            }
+          ],
+          "tickets": 1
+        },
+        {
+          "position": "明华饼店",
+          "type": "lunch",
+          "price": 26,
+          "cost": 26,
+          "start_time": "11:00",
+          "end_time": "12:00",
+          "transports": [
+            {
+              "start": "岭南金融博物馆",
+              "end": "农讲所-地铁站",
+              "mode": "walk",
+              "start_time": "10:43",
+              "end_time": "10:48",
+              "cost": 0,
+              "distance": 0.47,
+              "price": 0
+            },
+            {
+              "start": "农讲所-地铁站",
+              "end": "海珠广场-地铁站",
+              "mode": "metro",
+              "start_time": "10:48",
+              "end_time": "10:51",
+              "cost": 2,
+              "distance": 1.68,
+              "price": 2,
+              "tickets": 1
+            },
+            {
+              "start": "海珠广场-地铁站",
+              "end": "明华饼店",
+              "mode": "walk",
+              "start_time": "10:51",
+              "end_time": "10:55",
+              "cost": 0,
+              "distance": 0.41,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "广州番禺直升机观光游览区",
+          "type": "attraction",
+          "price": 499,
+          "cost": 499,
+          "start_time": "14:12",
+          "end_time": "15:42",
+          "transports": [
+            {
+              "start": "明华饼店",
+              "end": "海珠广场-地铁站",
+              "mode": "walk",
+              "start_time": "12:00",
+              "end_time": "12:04",
+              "cost": 0,
+              "distance": 0.41,
+              "price": 0
+            },
+            {
+              "start": "海珠广场-地铁站",
+              "end": "海傍-地铁站",
+              "mode": "metro",
+              "start_time": "12:04",
+              "end_time": "13:01",
+              "cost": 7,
+              "distance": 28.98,
+              "price": 7,
+              "tickets": 1
+            },
+            {
+              "start": "海傍-地铁站",
+              "end": "广州番禺直升机观光游览区",
+              "mode": "walk",
+              "start_time": "13:01",
+              "end_time": "14:12",
+              "cost": 0,
+              "distance": 5.92,
+              "price": 0
+            }
+          ],
+          "tickets": 1
+        },
+        {
+          "position": "南越国水关遗址(光明广场)",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "17:54",
+          "end_time": "18:00",
+          "transports": [
+            {
+              "start": "广州番禺直升机观光游览区",
+              "end": "海傍-地铁站",
+              "mode": "walk",
+              "start_time": "15:42",
+              "end_time": "16:53",
+              "cost": 0,
+              "distance": 5.92,
+              "price": 0
+            },
+            {
+              "start": "海傍-地铁站",
+              "end": "农讲所-地铁站",
+              "mode": "metro",
+              "start_time": "16:53",
+              "end_time": "17:51",
+              "cost": 7,
+              "distance": 29.13,
+              "price": 7,
+              "tickets": 1
+            },
+            {
+              "start": "农讲所-地铁站",
+              "end": "南越国水关遗址(光明广场)",
+              "mode": "walk",
+              "start_time": "17:51",
+              "end_time": "17:54",
+              "cost": 0,
+              "distance": 0.28,
+              "price": 0
+            }
+          ],
+          "tickets": 1
+        },
+        {
+          "position": "天成川菜·鲜活川味(海港城江景店)",
+          "type": "dinner",
+          "price": 88,
+          "cost": 88,
+          "start_time": "18:13",
+          "end_time": "19:13",
+          "transports": [
+            {
+              "start": "南越国水关遗址(光明广场)",
+              "end": "农讲所-地铁站",
+              "mode": "walk",
+              "start_time": "18:00",
+              "end_time": "18:03",
+              "cost": 0,
+              "distance": 0.28,
+              "price": 0
+            },
+            {
+              "start": "农讲所-地铁站",
+              "end": "东湖-地铁站",
+              "mode": "metro",
+              "start_time": "18:03",
+              "end_time": "18:06",
+              "cost": 2,
+              "distance": 1.84,
+              "price": 2,
+              "tickets": 1
+            },
+            {
+              "start": "东湖-地铁站",
+              "end": "天成川菜·鲜活川味(海港城江景店)",
+              "mode": "walk",
+              "start_time": "18:06",
+              "end_time": "18:13",
+              "cost": 0,
+              "distance": 0.62,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "一方乐田都市农园",
+          "type": "attraction",
+          "price": 37,
+          "cost": 37,
+          "start_time": "19:44",
+          "end_time": "21:14",
+          "transports": [
+            {
+              "start": "天成川菜·鲜活川味(海港城江景店)",
+              "end": "东湖-地铁站",
+              "mode": "walk",
+              "start_time": "19:13",
+              "end_time": "19:20",
+              "cost": 0,
+              "distance": 0.62,
+              "price": 0
+            },
+            {
+              "start": "东湖-地铁站",
+              "end": "大塘-地铁站",
+              "mode": "metro",
+              "start_time": "19:20",
+              "end_time": "19:30",
+              "cost": 3,
+              "distance": 5.33,
+              "price": 3,
+              "tickets": 1
+            },
+            {
+              "start": "大塘-地铁站",
+              "end": "一方乐田都市农园",
+              "mode": "walk",
+              "start_time": "19:30",
+              "end_time": "19:44",
+              "cost": 0,
+              "distance": 1.17,
+              "price": 0
+            }
+          ],
+          "tickets": 1
+        },
+        {
+          "start_time": "23:28",
+          "end_time": "23:57",
+          "start": "广州南站",
+          "end": "深圳北站",
+          "price": 67.73,
+          "cost": 67.73,
+          "tickets": 1,
+          "transports": [
+            {
+              "start": "一方乐田都市农园",
+              "end": "大塘-地铁站",
+              "mode": "walk",
+              "start_time": "21:14",
+              "end_time": "21:28",
+              "cost": 0,
+              "distance": 1.17,
+              "price": 0
+            },
+            {
+              "start": "大塘-地铁站",
+              "end": "广州南站-地铁站",
+              "mode": "metro",
+              "start_time": "21:28",
+              "end_time": "21:50",
+              "cost": 4,
+              "distance": 11.22,
+              "price": 4,
+              "tickets": 1
+            },
+            {
+              "start": "广州南站-地铁站",
+              "end": "广州南站",
+              "mode": "walk",
+              "start_time": "21:50",
+              "end_time": "21:52",
+              "cost": 0,
+              "distance": 0.19,
+              "price": 0
+            }
+          ],
+          "TrainID": "G6025",
+          "type": "train"
+        }
+      ]
+    }
+  ],
+  "search_time_sec": 1.5501649379730225,
+  "llm_inference_time_sec": 0
+}

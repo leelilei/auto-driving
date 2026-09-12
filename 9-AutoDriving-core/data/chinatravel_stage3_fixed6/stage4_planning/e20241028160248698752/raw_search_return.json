@@ -1,0 +1,237 @@
+{
+  "people_number": 1,
+  "start_city": "上海",
+  "target_city": "杭州",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "start_time": "04:30",
+          "end_time": "06:40",
+          "start": "上海南站",
+          "end": "杭州站",
+          "price": 65.95,
+          "cost": 65.95,
+          "tickets": 1,
+          "transports": [],
+          "TrainID": "K1805",
+          "type": "train"
+        },
+        {
+          "position": "中国伞博物馆",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "09:00",
+          "end_time": "10:30",
+          "transports": [
+            {
+              "start": "杭州站",
+              "end": "城站-地铁站",
+              "mode": "walk",
+              "start_time": "06:40",
+              "end_time": "06:42",
+              "cost": 0,
+              "distance": 0.21,
+              "price": 0
+            },
+            {
+              "start": "城站-地铁站",
+              "end": "拱宸桥东-地铁站",
+              "mode": "metro",
+              "start_time": "06:42",
+              "end_time": "06:59",
+              "cost": 3,
+              "distance": 8.63,
+              "price": 3,
+              "tickets": 1
+            },
+            {
+              "start": "拱宸桥东-地铁站",
+              "end": "中国伞博物馆",
+              "mode": "walk",
+              "start_time": "06:59",
+              "end_time": "07:06",
+              "cost": 0,
+              "distance": 0.64,
+              "price": 0
+            }
+          ],
+          "tickets": 1
+        },
+        {
+          "position": "烤匠麻辣烤鱼(永旺梦乐城店)",
+          "type": "lunch",
+          "price": 81,
+          "cost": 81,
+          "start_time": "11:00",
+          "end_time": "12:00",
+          "transports": [
+            {
+              "start": "中国伞博物馆",
+              "end": "拱宸桥东-地铁站",
+              "mode": "walk",
+              "start_time": "10:30",
+              "end_time": "10:37",
+              "cost": 0,
+              "distance": 0.64,
+              "price": 0
+            },
+            {
+              "start": "拱宸桥东-地铁站",
+              "end": "杜甫村-地铁站",
+              "mode": "metro",
+              "start_time": "10:37",
+              "end_time": "10:56",
+              "cost": 4,
+              "distance": 9.95,
+              "price": 4,
+              "tickets": 1
+            },
+            {
+              "start": "杜甫村-地铁站",
+              "end": "烤匠麻辣烤鱼(永旺梦乐城店)",
+              "mode": "walk",
+              "start_time": "10:56",
+              "end_time": "10:59",
+              "cost": 0,
+              "distance": 0.3,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "西湖外事游船",
+          "type": "attraction",
+          "price": 48,
+          "cost": 48,
+          "start_time": "12:41",
+          "end_time": "14:11",
+          "transports": [
+            {
+              "start": "烤匠麻辣烤鱼(永旺梦乐城店)",
+              "end": "杜甫村-地铁站",
+              "mode": "walk",
+              "start_time": "12:00",
+              "end_time": "12:03",
+              "cost": 0,
+              "distance": 0.3,
+              "price": 0
+            },
+            {
+              "start": "杜甫村-地铁站",
+              "end": "龙翔桥-地铁站",
+              "mode": "metro",
+              "start_time": "12:03",
+              "end_time": "12:34",
+              "cost": 5,
+              "distance": 15.52,
+              "price": 5,
+              "tickets": 1
+            },
+            {
+              "start": "龙翔桥-地铁站",
+              "end": "西湖外事游船",
+              "mode": "walk",
+              "start_time": "12:34",
+              "end_time": "12:41",
+              "cost": 0,
+              "distance": 0.59,
+              "price": 0
+            }
+          ],
+          "tickets": 1
+        },
+        {
+          "position": "杭州悬空玻璃艺术馆",
+          "type": "attraction",
+          "price": 49,
+          "cost": 49,
+          "start_time": "14:27",
+          "end_time": "15:57",
+          "transports": [
+            {
+              "start": "西湖外事游船",
+              "end": "龙翔桥-地铁站",
+              "mode": "walk",
+              "start_time": "14:11",
+              "end_time": "14:18",
+              "cost": 0,
+              "distance": 0.59,
+              "price": 0
+            },
+            {
+              "start": "龙翔桥-地铁站",
+              "end": "中河北路-地铁站",
+              "mode": "metro",
+              "start_time": "14:18",
+              "end_time": "14:20",
+              "cost": 2,
+              "distance": 1.37,
+              "price": 2,
+              "tickets": 1
+            },
+            {
+              "start": "中河北路-地铁站",
+              "end": "杭州悬空玻璃艺术馆",
+              "mode": "walk",
+              "start_time": "14:20",
+              "end_time": "14:27",
+              "cost": 0,
+              "distance": 0.62,
+              "price": 0
+            }
+          ],
+          "tickets": 1
+        },
+        {
+          "start_time": "18:05",
+          "end_time": "19:06",
+          "start": "杭州东站",
+          "end": "上海虹桥站",
+          "price": 107.17,
+          "cost": 107.17,
+          "tickets": 1,
+          "transports": [
+            {
+              "start": "杭州悬空玻璃艺术馆",
+              "end": "中河北路-地铁站",
+              "mode": "walk",
+              "start_time": "15:57",
+              "end_time": "16:04",
+              "cost": 0,
+              "distance": 0.62,
+              "price": 0
+            },
+            {
+              "start": "中河北路-地铁站",
+              "end": "火车东站(东广场)-地铁站",
+              "mode": "metro",
+              "start_time": "16:04",
+              "end_time": "16:14",
+              "cost": 3,
+              "distance": 5.31,
+              "price": 3,
+              "tickets": 1
+            },
+            {
+              "start": "火车东站(东广场)-地铁站",
+              "end": "杭州东站",
+              "mode": "walk",
+              "start_time": "16:14",
+              "end_time": "16:19",
+              "cost": 0,
+              "distance": 0.48,
+              "price": 0
+            }
+          ],
+          "TrainID": "G1362",
+          "type": "train"
+        }
+      ]
+    }
+  ],
+  "search_time_sec": 1.2930939197540283,
+  "llm_inference_time_sec": 0
+}

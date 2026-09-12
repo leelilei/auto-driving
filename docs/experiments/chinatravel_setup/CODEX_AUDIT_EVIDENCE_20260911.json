@@ -1,0 +1,32 @@
+{
+  "scope": "local read-only audit; no model API requests",
+  "upstream_commit": "0936f2727dd102ad811ed015b7bf6f7d6533f28e",
+  "sandbox_release": "2026.08.2",
+  "sandbox_manifest_hash_matches": 23,
+  "sandbox_missing": [],
+  "sandbox_mismatches": [],
+  "dev_count": 60,
+  "hold_count": 544,
+  "dev_hold_uid_overlap": 0,
+  "local_dev_matches_partition": true,
+  "baseline_result_files": 0,
+  "official_act_artifacts": {
+    "count": 3,
+    "successful_plans": 0,
+    "error": "Exceed maximum steps"
+  },
+  "offline_probes": {
+    "stage2_normal_custom_schema_pass": true,
+    "stage2_normal_official_schema_pass": false,
+    "empty_custom_schema_pass": true,
+    "empty_official_schema_pass": false,
+    "project_direct_includes_full_query": false,
+    "project_llm_has_call": false,
+    "project_llm_has_complete": true,
+    "fresh_runner_baseline_source": "external/ChinaTravel/baselines.py",
+    "fresh_runner_baseline_has_method_name": false,
+    "fresh_runner_baseline_has_generate_plan": false,
+    "simple_evaluate_list_error": "AttributeError",
+    "dev_records_with_expected_destinations": 0
+  }
+}

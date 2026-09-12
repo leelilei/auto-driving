@@ -1,0 +1,25 @@
+{
+  "resolved_by_planner": [
+    {
+      "raw_requirement": "请给我一个旅行规划（具体行程规划）",
+      "original_evidence": "请给我一个旅行规划",
+      "handled_by": "RuleNeSy itinerary generation, not an additional itinerary constraint"
+    }
+  ],
+  "unresolved_requirements": [],
+  "intent": {
+    "start_city": "上海",
+    "target_city": "杭州",
+    "days": 1,
+    "people_number": 1,
+    "budget": 1500
+  },
+  "policy": {
+    "version": "output_request_routing_v1",
+    "rule": "full string generic plan request, optional generic explanatory parenthesis; base phrase must occur verbatim in original query",
+    "preservation": "raw native parse unchanged; resolution records separate; concrete constraints never removed",
+    "model_calls": 0,
+    "search_seconds": 30,
+    "search_width": 10
+  }
+}

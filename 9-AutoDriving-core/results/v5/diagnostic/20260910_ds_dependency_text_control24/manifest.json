@@ -1,0 +1,29 @@
+{
+  "created": "2026-09-10T04:07:07.824096+00:00",
+  "scope": "controlled_development_no_new_human_annotation",
+  "planned": 96,
+  "cases": 24,
+  "mother_groups": 8,
+  "repetitions": 2,
+  "concurrency": 8,
+  "timeout": 120,
+  "max_output_tokens": 1600,
+  "source_cases_sha256": "09be57cd11ea717570092dce3ef54e81406b846ea80c4074c12a0263a7b83c10",
+  "inputs": {
+    "scripts/dependency_text_control.py": "efa2b6db692c4542ade31995619419a9fc34f4d0f265371cfe86d12c5561fccc",
+    "scripts/mechanism_ablation.py": "9a67b907d7bba25cc9e0e9bb0d60408ca67ee53f7223bd55450a8b5f4e150f79",
+    "scripts/mechanism_round.py": "43260a27c6a6c949a5cea06ee83b2d3e8631ef281c5fcba609744dace4fb5d07",
+    "scripts/collect_v5_diagnostic.py": "1021573147a9ca05f2cb7cc5595c45619f7d982cf737a9e86ebc63cff737d867",
+    "src/llm_client.py": "ea14ca22f10c4fbb3bdc01c3770d3d2f92fa7aa0aaffe5613b65eed7fe68c10d"
+  },
+  "frozen": {
+    "cases.json": "09be57cd11ea717570092dce3ef54e81406b846ea80c4074c12a0263a7b83c10",
+    "requests.json": "3541396514b1d1a05f3ee7936b6bd89a4ea00f4bcf66a82e9b5e26e1b57345e8",
+    "config.json": "c06158e9c9001d8ce982695936c3d2c88209088826e37e8ebd8333dea8ba0c2e",
+    "graph_integrity.json": "8c013a1ab8e53e79c4ca9a75486b14d520455db9639a3f3eef3824a464cce437"
+  },
+  "primary": "route_order minus dependency_text semantic correctness; hard AND preference direction",
+  "secondary": "TSR, raw correctness, correction/damage against A, token cost, per-repeat and mother-group results",
+  "recovery": "max one transport recovery per logical request, at most16 recoveries; no retry of schema or valid responses; authentication error or all failed batch stops",
+  "interpretation": "8 mother groups only; descriptive development evidence; both arms freshly sampled, old answers not reused; dependency text needs no planner but differs from route in wording and total/partial-order information"
+}

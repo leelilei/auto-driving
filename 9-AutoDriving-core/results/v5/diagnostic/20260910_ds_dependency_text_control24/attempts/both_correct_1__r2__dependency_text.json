@@ -1,0 +1,59 @@
+{
+  "call_id": "both_correct_1__r2__dependency_text",
+  "role": "dependency_text",
+  "graph_condition": "tradeoff",
+  "started_at": "2026-09-10T04:16:19.472937+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. Both candidates may be wrong, including when they agree. Supplementary information describes candidate differences or planning consequences; it does not identify the correct intent. Resolve every field from the instruction. Do not infer user preference from a route or map.\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised.\n\nInstruction:\nMake sure to visit the supermarket and the pharmacy today. Balance your stops to maintain both reasonable ratings and efficiency along the route. Start your trip at the supermarket before heading to the pharmacy.\n\nCandidate A:\n{\"dependencies\": [[\"supermarket\", \"pharmacy\"]], \"pois\": [\"pharmacy\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nCandidate B:\n{\"dependencies\": [[\"supermarket\", \"pharmacy\"]], \"pois\": [\"pharmacy\", \"supermarket\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nSupplementary information:\n{\"candidate_order_requirements\": {\"A\": [\"Visit supermarket before pharmacy.\"], \"B\": [\"Visit supermarket before pharmacy.\"]}, \"differing_fields\": []}"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"supermarket\",\"pharmacy\"],\"time_limit\":null,\"dependencies\":[[\"supermarket\",\"pharmacy\"]],\"quality_weight\":0.5},\"evidence\":{\"pois\":[\"visit the supermarket and the pharmacy today\",\"Start your trip at the supermarket before heading to the pharmacy.\"],\"dependencies\":[\"Start your trip at the supermarket before heading to the pharmacy.\"],\"quality_weight\":[\"Balance your stops to maintain both reasonable ratings and efficiency along the route.\"],\"time_limit\":[\"today\"]},\"changes\":[\"pois\"]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "pharmacy",
+      "supermarket"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "supermarket",
+        "pharmacy"
+      ]
+    ],
+    "quality_weight": 0.5
+  },
+  "evidence": {
+    "pois": [
+      "visit the supermarket and the pharmacy today",
+      "Start your trip at the supermarket before heading to the pharmacy."
+    ],
+    "dependencies": [
+      "Start your trip at the supermarket before heading to the pharmacy."
+    ],
+    "quality_weight": [
+      "Balance your stops to maintain both reasonable ratings and efficiency along the route."
+    ],
+    "time_limit": [
+      "today"
+    ]
+  },
+  "changes": [
+    "pois"
+  ],
+  "finished_at": "2026-09-10T04:16:37.098076+00:00",
+  "telemetry": {
+    "call_index": 1,
+    "prompt_sha256": "a048f0477aff4b67c1b792e7da627d4786e90f0074cef39e78e617e7b22bbc05",
+    "attempts": 1,
+    "latency_seconds": 17.625,
+    "input_chars": 1354,
+    "output_chars": 503,
+    "input_tokens": 350,
+    "output_tokens": 3933,
+    "total_tokens": 4283,
+    "usage_source": "provider",
+    "success": true
+  }
+}

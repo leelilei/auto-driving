@@ -1,0 +1,21 @@
+{
+  "protocol_version": "darc-v5.1-prompt-freeze-1",
+  "frozen_on": "2026-09-09",
+  "scope": "S2 diagnostic; any content change requires a new protocol version and new run",
+  "files": {
+    "parse_a.txt": "ff748b2299ce21f7da083400c2754eb548a01b91d32d8a7cbb185314bce345b5",
+    "parse_b.txt": "1e5029b3c25f6aeba27b6279fd33a796c86d04252107c4ec1f0652fa260e2d9d",
+    "registry.json": "a01db8df1fa4eb3705792b488e5177c10863712e7c6dfd103d39c6b3b3638e00",
+    "llmap_cot_original.txt": "9b1e885b35ede2da42dcdb72855612ddb06d26c42aabd3fb4ce418b6443691a2",
+    "llmap_direct_original.txt": "05ba0044aa7d0aa9b0fca4ff3ed96e75ad54479f046890cf7d42a108d11e89c6",
+    "llmap_user_original.txt": "65cfae217baadf8cb9ee2ead376beda70e9f7890d89eca1d38c75d1f641bea9e",
+    "LLMAP_ADAPTER.md": "3501d9ac275d09560fa5da04f709dc3f4b6e8f6e43b0122fe7ada58214aad945",
+    "review_constraints.txt": "1352750966c4238ef40610b3fa88578ff68681193687aadba0515c355654d0bd",
+    "review_darc.txt": "0608d3df6eef446a4b579b2d1ad3bc4cce2059226cc1e84080527b224a70fd6e",
+    "review_fields.txt": "d146aed024d2fdeeb82eeeea7350d16a211c2776ee0e8493fe97c81a1d28cbb0",
+    "review_plain.txt": "796f5fd2593a08a0e825053022cdba39b72d3b5873709b9a6cf79abd8359c9e2"
+  },
+  "selection_fields": false,
+  "gold_fields": false,
+  "hash_used_as_model_input": false
+}

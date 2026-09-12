@@ -1,0 +1,24 @@
+{
+  "model": "claude-haiku-4-5-20251001",
+  "base_url": "https://www.fhl.mom",
+  "wire_api": "anthropic_messages",
+  "levels": [
+    1,
+    2,
+    4,
+    6,
+    8
+  ],
+  "waves": 2,
+  "retries": 0,
+  "timeout": 60,
+  "temperature": 0,
+  "probe_max_tokens": 64,
+  "scene_max_tokens": 1600,
+  "max_total_requests": 56,
+  "human_review": "PENDING",
+  "scope": "NODE_PROBE_AND_UNREVIEWED_DEVELOPMENT_SMOKE",
+  "stopping": "Stop increasing on any failed wave; validate last passing level (max4) with scene prompt, then six sequential scene calls.",
+  "source_sha256": "833f77465e32226a7c0728a7ed19fdda4e5d1f00037afabfd47a858c100e11cc",
+  "policy_sha256": "4ced5301536ede161427a5e81d5852ef2e9cea0b554d9354bec16ec37b2f7868"
+}

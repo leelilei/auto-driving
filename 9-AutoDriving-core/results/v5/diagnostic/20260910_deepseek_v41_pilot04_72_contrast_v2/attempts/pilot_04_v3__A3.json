@@ -1,0 +1,42 @@
+{
+  "call_id": "pilot_04_v3::A3",
+  "role": "A3",
+  "graph_condition": null,
+  "started_at": "2026-09-09T16:37:54.681054+00:00",
+  "request": {
+    "system": "You extract route-planning intent from the user's instruction.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nUse only the instruction. Do not invent constraints. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Need to stop by the bank and library today and be back before 18:00. Keep it super quick and take the most efficient route possible."
+  },
+  "raw_response": "{\"pois\":[\"bank\",\"library\"],\"time_limit\":1080,\"dependencies\":[],\"quality_weight\":0.0,\"evidence\":{\"pois\":\"bank and library\",\"time_limit\":\"before 18:00\",\"quality_weight\":\"super quick and take the most efficient route possible\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library"
+    ],
+    "time_limit": 1080,
+    "dependencies": [],
+    "quality_weight": 0.0
+  },
+  "evidence": {
+    "pois": "bank and library",
+    "time_limit": "before 18:00",
+    "quality_weight": "super quick and take the most efficient route possible"
+  },
+  "changes": [],
+  "finished_at": "2026-09-09T16:37:56.579344+00:00",
+  "telemetry": {
+    "call_index": 58,
+    "prompt_sha256": "28bb4ec72abf3dd3a708e2bb7ab8167466257b3b6a1823be55d741b5d862d23f",
+    "attempts": 1,
+    "latency_seconds": 1.898,
+    "input_chars": 787,
+    "output_chars": 225,
+    "input_tokens": 219,
+    "output_tokens": 500,
+    "total_tokens": 719,
+    "usage_source": "provider",
+    "success": true
+  }
+}

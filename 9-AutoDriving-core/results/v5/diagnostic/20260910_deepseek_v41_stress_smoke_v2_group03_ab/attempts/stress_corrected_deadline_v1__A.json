@@ -1,0 +1,43 @@
+{
+  "call_id": "stress_corrected_deadline_v1::A",
+  "role": "A",
+  "graph_condition": null,
+  "started_at": "2026-09-10T02:32:26.512938+00:00",
+  "request": {
+    "system": "You extract route-planning intent from the user's instruction.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nUse only the instruction. Do not invent constraints. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Choose top-rated options for the supermarket, library, and shopping mall. Replace the old 5 PM return time with 6:30 PM."
+  },
+  "raw_response": "{\"pois\":[\"supermarket\",\"library\",\"shopping mall\"],\"time_limit\":1110,\"dependencies\":[],\"quality_weight\":1.0,\"evidence\":{\"pois\":\"supermarket, library, and shopping mall\",\"time_limit\":\"6:30 PM\",\"quality_weight\":\"top-rated options\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "library",
+      "shopping_mall",
+      "supermarket"
+    ],
+    "time_limit": 1110,
+    "dependencies": [],
+    "quality_weight": 1.0
+  },
+  "evidence": {
+    "pois": "supermarket, library, and shopping mall",
+    "time_limit": "6:30 PM",
+    "quality_weight": "top-rated options"
+  },
+  "changes": [],
+  "finished_at": "2026-09-10T02:32:30.555989+00:00",
+  "telemetry": {
+    "call_index": 3,
+    "prompt_sha256": "8546d11e200626ab0809df37321c0353ee8c241cf8a00a7e738c7ba9bd35e705",
+    "attempts": 1,
+    "latency_seconds": 4.043,
+    "input_chars": 775,
+    "output_chars": 229,
+    "input_tokens": 218,
+    "output_tokens": 596,
+    "total_tokens": 814,
+    "usage_source": "provider",
+    "success": true
+  }
+}

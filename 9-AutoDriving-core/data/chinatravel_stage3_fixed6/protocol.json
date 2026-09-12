@@ -1,0 +1,15 @@
+{
+  "stage": "STAGE3_OFFLINE_READY_NOT_COLLECTED",
+  "model_api_calls": 0,
+  "n_cases": 6,
+  "ids": [
+    "e20241028160248698752",
+    "e20241028160845920703",
+    "e20241028160848776495",
+    "e20241028160913165493",
+    "e20241028160902013119",
+    "h20241029143455115600"
+  ],
+  "gold_in_inputs": false,
+  "source": "fixed selected_dev10 first six; no outcome-based selection"
+}

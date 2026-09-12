@@ -1,0 +1,40 @@
+{
+  "created": "2026-09-10T17:12:41.869985+00:00",
+  "mode": "REAL",
+  "scope": "POSTHOC_INTERFACE_DIAGNOSTIC",
+  "authorization": "用户授权睡前长任务推进接口诊断；仅职责句澄清，原场景和gold保持已批准版本。",
+  "design_manifest_sha256": "af3eb852587c9cf091c1cb003cedecd35530553e45dce4890d0ae2bae9af5919",
+  "reference_manifest_sha256": "9ee252b912ec296f86255c2ac3f1af6724f6791f635f11ebf87a808138322a29",
+  "files": {
+    "reference_direct_records.json": "60c8f30d917187fe9ac63f517feb4adfc9601eb202c5fff6ac2eb6a959f4a057",
+    "human_review_receipt.json": "05c7ac24aad7132ca4bf7be66d009261ede316571a5602c37306448d97b4eeaa",
+    "gold_for_offline_scoring_only.json": "8416188b143e5487c8f18aba2916a64e2e7c83a184077ec8614983310c45c6c5",
+    "config.json": "dbd295d806b56b22f6bf0bb362a3f8555d7940e00051521bd22dd1c7f3f7d1c3",
+    "failure_diagnosis.json": "1e1d372752c6237b2c4bbebf2e8652fd25d4500753fe5550de235b1e4d65eb13",
+    "clarified_model_inputs.json": "4b29ac59ff9cfba3458722c37841b05402ce328445108573a28db8fa60ef8ec8",
+    "request_plan.json": "cffca783d73399db13c4b65e7acd3cb84e887179220d258029c89786d76e6e4f",
+    "original_model_inputs.json": "d7bac479d5a43a28223ae1e96fe79975c99595a5fccb52693fc6352b5fae46a6",
+    "protocol.json": "af9c186266f54deb0a7ee7f5ae95fbd9663b1a683d6eb1ce856daa634d29cc51"
+  },
+  "sources": {
+    "scripts/experiment.py": "3f32e1db828772b1ef05dd045d805817727feefd8eaef363839442fffad738a5",
+    "scripts/prepare_fair30_interface_audit.py": "af99a9e8fc09bb1aaca9fde4db926827623616755c54eea0e58a55fcb4a90db5",
+    "scripts/prepare_scene_fair30.py": "07d48e07291389ca558201dd04261ff5fa894844ab36f8f3f63c4ace8345ebe9",
+    "scripts/prepare_scene_pilot12.py": "356988a65e82800bd4ed8bd4a1d6127cf6cdcc67ec49c69decff26e91562bea3",
+    "scripts/prepare_scene_rule30.py": "4db617c6b06b2e9f03568aecec46653696d8327fb2599234b9987b491e93de09",
+    "scripts/run_fair30_interface.py": "42cbf619ac50694fea39d1f810869009e620d6c2af688c9f0283d86eb50756d5",
+    "scripts/scene_fair30.py": "5360aa83eb3f8f6db7aef7cce1a806a7064ae5836262db6de6079ad61e016769",
+    "scripts/scene_glossary_http1.py": "4b354545a2374d6652caa7ce92eb575c6a89635ef4ab49c206bffaa40e40a7d2",
+    "scripts/scene_haiku_contract.py": "a157080adec1b2e476937b42a1e4c28357e0e9337eb479917149d972b800342e",
+    "scripts/scene_pilot12.py": "8aae62cbcdd1217066250c87acc2612e185e2c341954bf162f481d398ce4226f",
+    "scripts/scene_rule30_glossary.py": "360d8d0ff087cb55bf21183a691efc5269ef83f567a16773f12b4e67b0f970f4",
+    "scripts/scene_rule30_run.py": "6862ccb555dc7f952af29cfd0e2ec8a7b364f760ed24f887a021623721a105f2",
+    "src/llm_client.py": "ff086f6efce95bd8dba98ca150ba5f8b48b61dcc543a335c39cbdfbca076639b",
+    "src/scene_policy.py": "00715e30b16ad4298b80b340dbc491531505b8fea64388e85d8c5accc0a2ba6f"
+  },
+  "planned": 120,
+  "concurrency": 2,
+  "max_recoveries": 12,
+  "max_attempts_per_unit": 2,
+  "max_physical_calls": 132
+}

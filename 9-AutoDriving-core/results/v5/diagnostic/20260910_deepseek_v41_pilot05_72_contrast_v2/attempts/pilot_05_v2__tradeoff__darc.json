@@ -1,0 +1,48 @@
+{
+  "call_id": "pilot_05_v2::tradeoff::darc",
+  "role": "darc",
+  "graph_condition": "tradeoff",
+  "started_at": "2026-09-09T16:35:42.662114+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. The decision-contrast report is diagnostic evidence about consequences; it is not a label and must not override the words of the instruction.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Use the report to locate consequential disagreements, then decide each field from the instruction alone.\n\nInstruction:\nToday's stops include the bank, library, and pharmacy, going to the bank prior to the library. Focus on maximizing place quality and reviews above all.\n\nCandidate A:\n{\"dependencies\": [[\"bank\", \"library\"]], \"pois\": [\"bank\", \"library\", \"pharmacy\"], \"quality_weight\": 1.0, \"time_limit\": null}\n\nCandidate B:\n{\"dependencies\": [[\"bank\", \"library\"]], \"pois\": [\"bank\", \"library\", \"pharmacy\"], \"quality_weight\": 1.0, \"time_limit\": null}\n\nDecision-contrast report:\n{\"candidate_A\": {\"dependencies\": [[\"bank\", \"library\"]], \"pois\": [\"bank\", \"library\", \"pharmacy\"], \"quality_weight\": 1.0, \"time_limit\": null}, \"candidate_B\": {\"dependencies\": [[\"bank\", \"library\"]], \"pois\": [\"bank\", \"library\", \"pharmacy\"], \"quality_weight\": 1.0, \"time_limit\": null}, \"candidate_evidence\": {\"A\": {\"dependencies\": \"going to the bank prior to the library\", \"pois\": \"Today's stops include the bank, library, and pharmacy\", \"quality_weight\": \"maximizing place quality and reviews above all\"}, \"B\": {\"dependencies\": \"going to the bank prior to the library\", \"pois\": \"bank, library, and pharmacy\", \"quality_weight\": \"maximizing place quality and reviews above all\"}}, \"cross_constraints\": {\"route_A_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_A_under_B\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_B\": {\"reasons\": [], \"task_success\": true}}, \"differing_fields\": [], \"instruction\": \"Today's stops include the bank, library, and pharmacy, going to the bank prior to the library. Focus on maximizing place quality and reviews above all.\", \"limitations\": [\"The report does not identify the user's true intent.\", \"Both candidates may share the same error.\", \"Single-field swaps do not identify higher-order interactions.\"], \"report_version\": \"darc-v5.1-contrast-2\", \"routes\": {\"A\": {\"arrival_minutes\": 685, \"average_quality\": 0.9, \"categories\": [\"bank\", \"library\", \"pharmacy\"], \"coverage_count\": 3, \"distance_km\": 27.665, \"duration_minutes\": 145.3, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"bank_2\", \"library_2\", \"pharmacy_2\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": 0.9}, \"B\": {\"arrival_minutes\": 685, \"average_quality\": 0.9, \"categories\": [\"bank\", \"library\", \"pharmacy\"], \"coverage_count\": 3, \"distance_km\": 27.665, \"duration_minutes\": 145.3, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"bank_2\", \"library_2\", \"pharmacy_2\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": 0.9}}, \"single_field_swaps\": []}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"bank\",\"library\",\"pharmacy\"],\"time_limit\":null,\"dependencies\":[[\"bank\",\"library\"]],\"quality_weight\":1.0},\"evidence\":{\"pois\":\"Today's stops include the bank, library, and pharmacy\",\"dependencies\":\"going to the bank prior to the library\",\"quality_weight\":\"maximizing place quality and reviews above all\"},\"changes\":[]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library",
+      "pharmacy"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "bank",
+        "library"
+      ]
+    ],
+    "quality_weight": 1.0
+  },
+  "evidence": {
+    "pois": "Today's stops include the bank, library, and pharmacy",
+    "dependencies": "going to the bank prior to the library",
+    "quality_weight": "maximizing place quality and reviews above all"
+  },
+  "changes": [],
+  "finished_at": "2026-09-09T16:35:47.839947+00:00",
+  "telemetry": {
+    "call_index": 50,
+    "prompt_sha256": "1b248d0398f584dd38c4785044036b20b691ce70716f22dd3807f90a6817a7b9",
+    "attempts": 1,
+    "latency_seconds": 5.178,
+    "input_chars": 3146,
+    "output_chars": 335,
+    "input_tokens": 927,
+    "output_tokens": 1432,
+    "total_tokens": 2359,
+    "usage_source": "provider",
+    "success": true
+  }
+}

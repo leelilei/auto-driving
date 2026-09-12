@@ -1,0 +1,48 @@
+{
+  "call_id": "stress_negated_order_v3::B",
+  "role": "B",
+  "graph_condition": null,
+  "started_at": "2026-09-10T02:28:50.581963+00:00",
+  "request": {
+    "system": "Read the user's route-planning instruction field by field before producing the final JSON.\n\nCheck: requested POI categories, return deadline, explicit visit order, and the direction of the quality-versus-distance preference. Each conclusion must be supported by the instruction itself.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nDo not infer a preference from any route or map. If no preference is stated, use 0.5.\n\nInstruction:\n{{instruction}}\n",
+    "user": "Cover the bank, pharmacy, and library. The bank has to be finished before you proceed to the pharmacy. Neither ratings nor route efficiency should dominate the other."
+  },
+  "raw_response": "{\"pois\":[\"bank\",\"pharmacy\",\"library\"],\"time_limit\":null,\"dependencies\":[[\"bank\",\"pharmacy\"]],\"quality_weight\":0.5,\"evidence\":{\"pois\":\"Cover the bank, pharmacy, and library.\",\"dependencies\":\"The bank has to be finished before you proceed to the pharmacy.\",\"quality_weight\":\"Neither ratings nor route efficiency should dominate the other.\"}}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library",
+      "pharmacy"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "bank",
+        "pharmacy"
+      ]
+    ],
+    "quality_weight": 0.5
+  },
+  "evidence": {
+    "pois": "Cover the bank, pharmacy, and library.",
+    "dependencies": "The bank has to be finished before you proceed to the pharmacy.",
+    "quality_weight": "Neither ratings nor route efficiency should dominate the other."
+  },
+  "changes": [],
+  "finished_at": "2026-09-10T02:28:52.416133+00:00",
+  "telemetry": {
+    "call_index": 8,
+    "prompt_sha256": "cd4d9fbb16009910e91fa4b7e5927e559c5603533c5f195ce7050924481bfa73",
+    "attempts": 1,
+    "latency_seconds": 1.834,
+    "input_chars": 1040,
+    "output_chars": 339,
+    "input_tokens": 262,
+    "output_tokens": 343,
+    "total_tokens": 605,
+    "usage_source": "provider",
+    "success": true
+  }
+}

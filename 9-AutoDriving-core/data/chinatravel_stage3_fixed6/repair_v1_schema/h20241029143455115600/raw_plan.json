@@ -1,0 +1,850 @@
+{
+  "people_number": 2,
+  "start_city": "北京",
+  "target_city": "重庆",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "start_time": "06:55",
+          "end_time": "13:57",
+          "start": "北京西站",
+          "end": "重庆北站",
+          "price": 948.05,
+          "cost": 1896.1,
+          "tickets": 2,
+          "transports": [],
+          "TrainID": "G51",
+          "type": "train"
+        },
+        {
+          "position": "东水门及古城墙",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "14:20",
+          "end_time": "15:50",
+          "transports": [
+            {
+              "start": "重庆北站",
+              "end": "重庆北站南广场-地铁站",
+              "mode": "walk",
+              "start_time": "13:57",
+              "end_time": "14:00",
+              "cost": 0,
+              "distance": 0.27,
+              "price": 0
+            },
+            {
+              "start": "重庆北站南广场-地铁站",
+              "end": "仁济-地铁站",
+              "mode": "metro",
+              "start_time": "14:00",
+              "end_time": "14:13",
+              "cost": 6,
+              "distance": 6.85,
+              "price": 3,
+              "tickets": 2
+            },
+            {
+              "start": "仁济-地铁站",
+              "end": "东水门及古城墙",
+              "mode": "walk",
+              "start_time": "14:13",
+              "end_time": "14:20",
+              "cost": 0,
+              "distance": 0.66,
+              "price": 0
+            }
+          ],
+          "tickets": 2
+        },
+        {
+          "position": "巴滨水世界",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "16:27",
+          "end_time": "17:57",
+          "transports": [
+            {
+              "start": "东水门及古城墙",
+              "end": "仁济-地铁站",
+              "mode": "walk",
+              "start_time": "15:50",
+              "end_time": "15:57",
+              "cost": 0,
+              "distance": 0.66,
+              "price": 0
+            },
+            {
+              "start": "仁济-地铁站",
+              "end": "电厂-地铁站",
+              "mode": "metro",
+              "start_time": "15:57",
+              "end_time": "16:18",
+              "cost": 8,
+              "distance": 10.96,
+              "price": 4,
+              "tickets": 2
+            },
+            {
+              "start": "电厂-地铁站",
+              "end": "巴滨水世界",
+              "mode": "walk",
+              "start_time": "16:18",
+              "end_time": "16:27",
+              "cost": 0,
+              "distance": 0.77,
+              "price": 0
+            }
+          ],
+          "tickets": 2
+        },
+        {
+          "position": "夜宴江景餐厅",
+          "type": "dinner",
+          "price": 190,
+          "cost": 380,
+          "start_time": "18:23",
+          "end_time": "19:23",
+          "transports": [
+            {
+              "start": "巴滨水世界",
+              "end": "电厂-地铁站",
+              "mode": "walk",
+              "start_time": "17:57",
+              "end_time": "18:06",
+              "cost": 0,
+              "distance": 0.77,
+              "price": 0
+            },
+            {
+              "start": "电厂-地铁站",
+              "end": "佛图关-地铁站",
+              "mode": "metro",
+              "start_time": "18:06",
+              "end_time": "18:20",
+              "cost": 6,
+              "distance": 7.42,
+              "price": 3,
+              "tickets": 2
+            },
+            {
+              "start": "佛图关-地铁站",
+              "end": "夜宴江景餐厅",
+              "mode": "walk",
+              "start_time": "18:20",
+              "end_time": "18:23",
+              "cost": 0,
+              "distance": 0.25,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "李子坝公园",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "19:32",
+          "end_time": "21:02",
+          "transports": [
+            {
+              "start": "夜宴江景餐厅",
+              "end": "佛图关-地铁站",
+              "mode": "walk",
+              "start_time": "19:23",
+              "end_time": "19:26",
+              "cost": 0,
+              "distance": 0.25,
+              "price": 0
+            },
+            {
+              "start": "佛图关-地铁站",
+              "end": "牛角沱-地铁站",
+              "mode": "metro",
+              "start_time": "19:26",
+              "end_time": "19:29",
+              "cost": 4,
+              "distance": 1.65,
+              "price": 2,
+              "tickets": 2
+            },
+            {
+              "start": "牛角沱-地铁站",
+              "end": "李子坝公园",
+              "mode": "walk",
+              "start_time": "19:29",
+              "end_time": "19:32",
+              "cost": 0,
+              "distance": 0.31,
+              "price": 0
+            }
+          ],
+          "tickets": 2
+        },
+        {
+          "position": "重庆雅巢连锁时尚太空舱青年旅社",
+          "type": "accommodation",
+          "price": 31,
+          "cost": 31,
+          "start_time": "21:16",
+          "end_time": "24:00",
+          "transports": [
+            {
+              "start": "李子坝公园",
+              "end": "牛角沱-地铁站",
+              "mode": "walk",
+              "start_time": "21:02",
+              "end_time": "21:05",
+              "cost": 0,
+              "distance": 0.31,
+              "price": 0
+            },
+            {
+              "start": "牛角沱-地铁站",
+              "end": "小什字-地铁站",
+              "mode": "metro",
+              "start_time": "21:05",
+              "end_time": "21:12",
+              "cost": 4,
+              "distance": 3.97,
+              "price": 2,
+              "tickets": 2
+            },
+            {
+              "start": "小什字-地铁站",
+              "end": "重庆雅巢连锁时尚太空舱青年旅社",
+              "mode": "walk",
+              "start_time": "21:12",
+              "end_time": "21:16",
+              "cost": 0,
+              "distance": 0.35,
+              "price": 0
+            }
+          ],
+          "room_type": "2",
+          "rooms": 1
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "activities": [
+        {
+          "position": "重庆雅巢连锁时尚太空舱青年旅社",
+          "type": "breakfast",
+          "price": 0,
+          "cost": 0,
+          "start_time": "08:00",
+          "end_time": "08:30",
+          "transports": []
+        },
+        {
+          "position": "重庆市规划展览馆",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "09:00",
+          "end_time": "10:30",
+          "transports": [
+            {
+              "start": "重庆雅巢连锁时尚太空舱青年旅社",
+              "end": "小什字-地铁站",
+              "mode": "walk",
+              "start_time": "08:30",
+              "end_time": "08:34",
+              "cost": 0,
+              "distance": 0.35,
+              "price": 0
+            },
+            {
+              "start": "小什字-地铁站",
+              "end": "弹子石-地铁站",
+              "mode": "metro",
+              "start_time": "08:34",
+              "end_time": "08:39",
+              "cost": 4,
+              "distance": 2.99,
+              "price": 2,
+              "tickets": 2
+            },
+            {
+              "start": "弹子石-地铁站",
+              "end": "重庆市规划展览馆",
+              "mode": "walk",
+              "start_time": "08:39",
+              "end_time": "08:45",
+              "cost": 0,
+              "distance": 0.53,
+              "price": 0
+            }
+          ],
+          "tickets": 2
+        },
+        {
+          "position": "尊宝比萨(北滨路金源店)",
+          "type": "lunch",
+          "price": 35,
+          "cost": 70,
+          "start_time": "11:00",
+          "end_time": "12:00",
+          "transports": [
+            {
+              "start": "重庆市规划展览馆",
+              "end": "弹子石-地铁站",
+              "mode": "walk",
+              "start_time": "10:30",
+              "end_time": "10:36",
+              "cost": 0,
+              "distance": 0.53,
+              "price": 0
+            },
+            {
+              "start": "弹子石-地铁站",
+              "end": "李家坪-地铁站",
+              "mode": "metro",
+              "start_time": "10:36",
+              "end_time": "10:50",
+              "cost": 6,
+              "distance": 7.41,
+              "price": 3,
+              "tickets": 2
+            },
+            {
+              "start": "李家坪-地铁站",
+              "end": "尊宝比萨(北滨路金源店)",
+              "mode": "walk",
+              "start_time": "10:50",
+              "end_time": "11:00",
+              "cost": 0,
+              "distance": 0.85,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "重庆工业文化博览园",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "12:50",
+          "end_time": "14:20",
+          "transports": [
+            {
+              "start": "尊宝比萨(北滨路金源店)",
+              "end": "李家坪-地铁站",
+              "mode": "walk",
+              "start_time": "12:00",
+              "end_time": "12:10",
+              "cost": 0,
+              "distance": 0.85,
+              "price": 0
+            },
+            {
+              "start": "李家坪-地铁站",
+              "end": "平安-地铁站",
+              "mode": "metro",
+              "start_time": "12:10",
+              "end_time": "12:27",
+              "cost": 6,
+              "distance": 8.98,
+              "price": 3,
+              "tickets": 2
+            },
+            {
+              "start": "平安-地铁站",
+              "end": "重庆工业文化博览园",
+              "mode": "walk",
+              "start_time": "12:27",
+              "end_time": "12:50",
+              "cost": 0,
+              "distance": 1.96,
+              "price": 0
+            }
+          ],
+          "tickets": 2
+        },
+        {
+          "position": "巴渝文化会馆",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "15:12",
+          "end_time": "16:42",
+          "transports": [
+            {
+              "start": "重庆工业文化博览园",
+              "end": "平安-地铁站",
+              "mode": "walk",
+              "start_time": "14:20",
+              "end_time": "14:43",
+              "cost": 0,
+              "distance": 1.96,
+              "price": 0
+            },
+            {
+              "start": "平安-地铁站",
+              "end": "大溪沟-地铁站",
+              "mode": "metro",
+              "start_time": "14:43",
+              "end_time": "15:05",
+              "cost": 8,
+              "distance": 11.15,
+              "price": 4,
+              "tickets": 2
+            },
+            {
+              "start": "大溪沟-地铁站",
+              "end": "巴渝文化会馆",
+              "mode": "walk",
+              "start_time": "15:05",
+              "end_time": "15:12",
+              "cost": 0,
+              "distance": 0.61,
+              "price": 0
+            }
+          ],
+          "tickets": 2
+        },
+        {
+          "position": "洞洞里吃火锅(防空洞店)",
+          "type": "dinner",
+          "price": 110,
+          "cost": 220,
+          "start_time": "17:00",
+          "end_time": "18:00",
+          "transports": [
+            {
+              "start": "巴渝文化会馆",
+              "end": "大溪沟-地铁站",
+              "mode": "walk",
+              "start_time": "16:42",
+              "end_time": "16:49",
+              "cost": 0,
+              "distance": 0.61,
+              "price": 0
+            },
+            {
+              "start": "大溪沟-地铁站",
+              "end": "两路口-地铁站",
+              "mode": "metro",
+              "start_time": "16:49",
+              "end_time": "16:52",
+              "cost": 4,
+              "distance": 1.74,
+              "price": 2,
+              "tickets": 2
+            },
+            {
+              "start": "两路口-地铁站",
+              "end": "洞洞里吃火锅(防空洞店)",
+              "mode": "walk",
+              "start_time": "16:52",
+              "end_time": "16:57",
+              "cost": 0,
+              "distance": 0.42,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "壹华里夜景公园",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "18:37",
+          "end_time": "20:07",
+          "transports": [
+            {
+              "start": "洞洞里吃火锅(防空洞店)",
+              "end": "两路口-地铁站",
+              "mode": "walk",
+              "start_time": "18:00",
+              "end_time": "18:05",
+              "cost": 0,
+              "distance": 0.42,
+              "price": 0
+            },
+            {
+              "start": "两路口-地铁站",
+              "end": "罗家坝-地铁站",
+              "mode": "metro",
+              "start_time": "18:05",
+              "end_time": "18:13",
+              "cost": 6,
+              "distance": 4.37,
+              "price": 3,
+              "tickets": 2
+            },
+            {
+              "start": "罗家坝-地铁站",
+              "end": "壹华里夜景公园",
+              "mode": "walk",
+              "start_time": "18:13",
+              "end_time": "18:37",
+              "cost": 0,
+              "distance": 2.04,
+              "price": 0
+            }
+          ],
+          "tickets": 2
+        },
+        {
+          "position": "东水门",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "20:47",
+          "end_time": "22:17",
+          "transports": [
+            {
+              "start": "壹华里夜景公园",
+              "end": "罗家坝-地铁站",
+              "mode": "walk",
+              "start_time": "20:07",
+              "end_time": "20:31",
+              "cost": 0,
+              "distance": 2.04,
+              "price": 0
+            },
+            {
+              "start": "罗家坝-地铁站",
+              "end": "仁济-地铁站",
+              "mode": "metro",
+              "start_time": "20:31",
+              "end_time": "20:40",
+              "cost": 6,
+              "distance": 4.6,
+              "price": 3,
+              "tickets": 2
+            },
+            {
+              "start": "仁济-地铁站",
+              "end": "东水门",
+              "mode": "walk",
+              "start_time": "20:40",
+              "end_time": "20:47",
+              "cost": 0,
+              "distance": 0.66,
+              "price": 0
+            }
+          ],
+          "tickets": 2
+        },
+        {
+          "position": "重庆雅巢连锁时尚太空舱青年旅社",
+          "type": "accommodation",
+          "price": 31,
+          "cost": 31,
+          "start_time": "22:31",
+          "end_time": "24:00",
+          "transports": [
+            {
+              "start": "东水门",
+              "end": "仁济-地铁站",
+              "mode": "walk",
+              "start_time": "22:17",
+              "end_time": "22:24",
+              "cost": 0,
+              "distance": 0.66,
+              "price": 0
+            },
+            {
+              "start": "仁济-地铁站",
+              "end": "小什字-地铁站",
+              "mode": "metro",
+              "start_time": "22:24",
+              "end_time": "22:27",
+              "cost": 4,
+              "distance": 1.77,
+              "price": 2,
+              "tickets": 2
+            },
+            {
+              "start": "小什字-地铁站",
+              "end": "重庆雅巢连锁时尚太空舱青年旅社",
+              "mode": "walk",
+              "start_time": "22:27",
+              "end_time": "22:31",
+              "cost": 0,
+              "distance": 0.35,
+              "price": 0
+            }
+          ],
+          "room_type": "2",
+          "rooms": 1
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "activities": [
+        {
+          "position": "重庆雅巢连锁时尚太空舱青年旅社",
+          "type": "breakfast",
+          "price": 0,
+          "cost": 0,
+          "start_time": "08:00",
+          "end_time": "08:30",
+          "transports": []
+        },
+        {
+          "position": "黄葛古道",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "09:00",
+          "end_time": "10:30",
+          "transports": [
+            {
+              "start": "重庆雅巢连锁时尚太空舱青年旅社",
+              "end": "小什字-地铁站",
+              "mode": "walk",
+              "start_time": "08:30",
+              "end_time": "08:34",
+              "cost": 0,
+              "distance": 0.35,
+              "price": 0
+            },
+            {
+              "start": "小什字-地铁站",
+              "end": "上浩-地铁站",
+              "mode": "metro",
+              "start_time": "08:34",
+              "end_time": "08:37",
+              "cost": 4,
+              "distance": 1.8,
+              "price": 2,
+              "tickets": 2
+            },
+            {
+              "start": "上浩-地铁站",
+              "end": "黄葛古道",
+              "mode": "walk",
+              "start_time": "08:37",
+              "end_time": "08:48",
+              "cost": 0,
+              "distance": 0.94,
+              "price": 0
+            }
+          ],
+          "tickets": 2
+        },
+        {
+          "position": "酒阳蒸经川菜小酒馆(观音桥总店)",
+          "type": "lunch",
+          "price": 74,
+          "cost": 148,
+          "start_time": "11:30",
+          "end_time": "12:30",
+          "transports": [
+            {
+              "start": "黄葛古道",
+              "end": "上浩-地铁站",
+              "mode": "walk",
+              "start_time": "10:30",
+              "end_time": "10:41",
+              "cost": 0,
+              "distance": 0.94,
+              "price": 0
+            },
+            {
+              "start": "上浩-地铁站",
+              "end": "观音桥-地铁站",
+              "mode": "metro",
+              "start_time": "10:41",
+              "end_time": "10:54",
+              "cost": 6,
+              "distance": 6.65,
+              "price": 3,
+              "tickets": 2
+            },
+            {
+              "start": "观音桥-地铁站",
+              "end": "酒阳蒸经川菜小酒馆(观音桥总店)",
+              "mode": "walk",
+              "start_time": "10:54",
+              "end_time": "10:55",
+              "cost": 0,
+              "distance": 0.17,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "千佛寺",
+          "type": "attraction",
+          "price": 0,
+          "cost": 0,
+          "start_time": "12:47",
+          "end_time": "14:17",
+          "transports": [
+            {
+              "start": "酒阳蒸经川菜小酒馆(观音桥总店)",
+              "end": "观音桥-地铁站",
+              "mode": "walk",
+              "start_time": "12:30",
+              "end_time": "12:31",
+              "cost": 0,
+              "distance": 0.17,
+              "price": 0
+            },
+            {
+              "start": "观音桥-地铁站",
+              "end": "涂山-地铁站",
+              "mode": "metro",
+              "start_time": "12:31",
+              "end_time": "12:44",
+              "cost": 6,
+              "distance": 6.61,
+              "price": 3,
+              "tickets": 2
+            },
+            {
+              "start": "涂山-地铁站",
+              "end": "千佛寺",
+              "mode": "walk",
+              "start_time": "12:44",
+              "end_time": "12:47",
+              "cost": 0,
+              "distance": 0.29,
+              "price": 0
+            }
+          ],
+          "tickets": 2
+        },
+        {
+          "position": "重庆雅巢连锁时尚太空舱青年旅社",
+          "type": "accommodation",
+          "price": 31,
+          "cost": 31,
+          "start_time": "14:28",
+          "end_time": "24:00",
+          "transports": [
+            {
+              "start": "千佛寺",
+              "end": "涂山-地铁站",
+              "mode": "walk",
+              "start_time": "14:17",
+              "end_time": "14:20",
+              "cost": 0,
+              "distance": 0.29,
+              "price": 0
+            },
+            {
+              "start": "涂山-地铁站",
+              "end": "小什字-地铁站",
+              "mode": "metro",
+              "start_time": "14:20",
+              "end_time": "14:24",
+              "cost": 4,
+              "distance": 2.42,
+              "price": 2,
+              "tickets": 2
+            },
+            {
+              "start": "小什字-地铁站",
+              "end": "重庆雅巢连锁时尚太空舱青年旅社",
+              "mode": "walk",
+              "start_time": "14:24",
+              "end_time": "14:28",
+              "cost": 0,
+              "distance": 0.35,
+              "price": 0
+            }
+          ],
+          "room_type": "2",
+          "rooms": 1
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "activities": [
+        {
+          "position": "重庆雅巢连锁时尚太空舱青年旅社",
+          "type": "breakfast",
+          "price": 0,
+          "cost": 0,
+          "start_time": "08:00",
+          "end_time": "08:30",
+          "transports": []
+        },
+        {
+          "position": "重庆雅巢连锁时尚太空舱青年旅社",
+          "type": "accommodation",
+          "price": 31,
+          "cost": 31,
+          "start_time": "08:30",
+          "end_time": "24:00",
+          "transports": [],
+          "room_type": "2",
+          "rooms": 1
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "activities": [
+        {
+          "position": "重庆雅巢连锁时尚太空舱青年旅社",
+          "type": "breakfast",
+          "price": 0,
+          "cost": 0,
+          "start_time": "08:00",
+          "end_time": "08:30",
+          "transports": []
+        },
+        {
+          "start_time": "23:16",
+          "end_time": "01:05",
+          "start": "重庆江北国际机场",
+          "end": "北京首都国际机场",
+          "price": 687.46,
+          "cost": 1374.92,
+          "tickets": 2,
+          "transports": [
+            {
+              "start": "重庆雅巢连锁时尚太空舱青年旅社",
+              "end": "小什字-地铁站",
+              "mode": "walk",
+              "start_time": "08:30",
+              "end_time": "08:34",
+              "cost": 0,
+              "distance": 0.35,
+              "price": 0
+            },
+            {
+              "start": "小什字-地铁站",
+              "end": "江北机场T3航站楼-地铁站",
+              "mode": "metro",
+              "start_time": "08:34",
+              "end_time": "09:09",
+              "cost": 10,
+              "distance": 17.85,
+              "price": 5,
+              "tickets": 2
+            },
+            {
+              "start": "江北机场T3航站楼-地铁站",
+              "end": "重庆江北国际机场",
+              "mode": "walk",
+              "start_time": "09:09",
+              "end_time": "09:23",
+              "cost": 0,
+              "distance": 1.21,
+              "price": 0
+            }
+          ],
+          "FlightID": "FL337",
+          "type": "airplane"
+        }
+      ]
+    }
+  ],
+  "search_time_sec": 3.053256034851074,
+  "llm_inference_time_sec": 0
+}

@@ -1,0 +1,446 @@
+[
+  {
+    "case_id": "S01",
+    "instruction": "Start at home at 09:00. Visit bank B first, then exactly one pharmacy, then return home. Travel along straight lines at 1 distance unit per minute. Bank service takes 20 minutes and pharmacy service takes 10 minutes. Do not wait for a place to open. Start service immediately on arrival; each service must finish no later than closing time. If no pharmacy can satisfy every requirement, report INFEASIBLE. Among pharmacies where service can be completed during opening hours, choose the one closest to bank B.",
+    "scene": {
+      "home": [
+        0,
+        0
+      ],
+      "departure": 540,
+      "speed_units_per_minute": 1,
+      "bank": {
+        "x": 10,
+        "y": 0,
+        "open": 480,
+        "close": 1080,
+        "rating": 4
+      },
+      "bank_service": 20,
+      "pharmacy_service": 10,
+      "pharmacies": {
+        "P_alpha": {
+          "x": 15,
+          "y": 0,
+          "open": 480,
+          "close": 580,
+          "rating": 4
+        },
+        "P_beta": {
+          "x": 22,
+          "y": 0,
+          "open": 480,
+          "close": 620,
+          "rating": 4
+        }
+      }
+    }
+  },
+  {
+    "case_id": "S02",
+    "instruction": "Start at home at 09:00. Visit bank B first, then exactly one pharmacy, then return home. Travel along straight lines at 1 distance unit per minute. Bank service takes 20 minutes and pharmacy service takes 10 minutes. Do not wait for a place to open. Start service immediately on arrival; each service must finish no later than closing time. If no pharmacy can satisfy every requirement, report INFEASIBLE. Among pharmacies where service can be completed during opening hours, choose the one closest to bank B.",
+    "scene": {
+      "home": [
+        0,
+        0
+      ],
+      "departure": 540,
+      "speed_units_per_minute": 1,
+      "bank": {
+        "x": 10,
+        "y": 0,
+        "open": 480,
+        "close": 1080,
+        "rating": 4
+      },
+      "bank_service": 20,
+      "pharmacy_service": 10,
+      "pharmacies": {
+        "P_alpha": {
+          "x": 15,
+          "y": 0,
+          "open": 480,
+          "close": 600,
+          "rating": 4
+        },
+        "P_beta": {
+          "x": 22,
+          "y": 0,
+          "open": 480,
+          "close": 620,
+          "rating": 4
+        }
+      }
+    }
+  },
+  {
+    "case_id": "S03",
+    "instruction": "Start at home at 09:00. Visit bank B first, then exactly one pharmacy, then return home. Travel along straight lines at 1 distance unit per minute. Bank service takes 20 minutes and pharmacy service takes 10 minutes. Do not wait for a place to open. Start service immediately on arrival; each service must finish no later than closing time. If no pharmacy can satisfy every requirement, report INFEASIBLE. Choose the highest-rated feasible pharmacy and return home by 09:55.",
+    "scene": {
+      "home": [
+        0,
+        0
+      ],
+      "departure": 540,
+      "speed_units_per_minute": 1,
+      "bank": {
+        "x": 10,
+        "y": 0,
+        "open": 480,
+        "close": 1080,
+        "rating": 4
+      },
+      "bank_service": 20,
+      "pharmacy_service": 10,
+      "pharmacies": {
+        "P_alpha": {
+          "x": 11,
+          "y": 0,
+          "open": 480,
+          "close": 1080,
+          "rating": 4
+        },
+        "P_beta": {
+          "x": 15,
+          "y": 0,
+          "open": 480,
+          "close": 1080,
+          "rating": 4.9
+        }
+      }
+    }
+  },
+  {
+    "case_id": "S04",
+    "instruction": "Start at home at 09:00. Visit bank B first, then exactly one pharmacy, then return home. Travel along straight lines at 1 distance unit per minute. Bank service takes 20 minutes and pharmacy service takes 10 minutes. Do not wait for a place to open. Start service immediately on arrival; each service must finish no later than closing time. If no pharmacy can satisfy every requirement, report INFEASIBLE. Choose the highest-rated feasible pharmacy and return home by 10:05.",
+    "scene": {
+      "home": [
+        0,
+        0
+      ],
+      "departure": 540,
+      "speed_units_per_minute": 1,
+      "bank": {
+        "x": 10,
+        "y": 0,
+        "open": 480,
+        "close": 1080,
+        "rating": 4
+      },
+      "bank_service": 20,
+      "pharmacy_service": 10,
+      "pharmacies": {
+        "P_alpha": {
+          "x": 11,
+          "y": 0,
+          "open": 480,
+          "close": 1080,
+          "rating": 4
+        },
+        "P_beta": {
+          "x": 15,
+          "y": 0,
+          "open": 480,
+          "close": 1080,
+          "rating": 4.9
+        }
+      }
+    }
+  },
+  {
+    "case_id": "S05",
+    "instruction": "Start at home at 09:00. Visit bank B first, then exactly one pharmacy, then return home. Travel along straight lines at 1 distance unit per minute. Bank service takes 20 minutes and pharmacy service takes 10 minutes. Do not wait for a place to open. Start service immediately on arrival; each service must finish no later than closing time. If no pharmacy can satisfy every requirement, report INFEASIBLE. Choose the feasible pharmacy that adds the least travel distance compared with going directly from bank B to home. Added distance means distance(B, pharmacy) + distance(pharmacy, home) - distance(B, home).",
+    "scene": {
+      "home": [
+        0,
+        0
+      ],
+      "departure": 540,
+      "speed_units_per_minute": 1,
+      "bank": {
+        "x": 10,
+        "y": 0,
+        "open": 480,
+        "close": 1080,
+        "rating": 4
+      },
+      "bank_service": 20,
+      "pharmacy_service": 10,
+      "pharmacies": {
+        "P_alpha": {
+          "x": 10,
+          "y": 2,
+          "open": 480,
+          "close": 1080,
+          "rating": 4
+        },
+        "P_beta": {
+          "x": 5,
+          "y": 0,
+          "open": 480,
+          "close": 1080,
+          "rating": 4
+        }
+      }
+    }
+  },
+  {
+    "case_id": "S06",
+    "instruction": "Start at home at 09:00. Visit bank B first, then exactly one pharmacy, then return home. Travel along straight lines at 1 distance unit per minute. Bank service takes 20 minutes and pharmacy service takes 10 minutes. Do not wait for a place to open. Start service immediately on arrival; each service must finish no later than closing time. If no pharmacy can satisfy every requirement, report INFEASIBLE. Choose the feasible pharmacy that adds the least travel distance compared with going directly from bank B to home. Added distance means distance(B, pharmacy) + distance(pharmacy, home) - distance(B, home).",
+    "scene": {
+      "home": [
+        0,
+        0
+      ],
+      "departure": 540,
+      "speed_units_per_minute": 1,
+      "bank": {
+        "x": 10,
+        "y": 0,
+        "open": 480,
+        "close": 1080,
+        "rating": 4
+      },
+      "bank_service": 20,
+      "pharmacy_service": 10,
+      "pharmacies": {
+        "P_alpha": {
+          "x": 10,
+          "y": 2,
+          "open": 480,
+          "close": 1080,
+          "rating": 4
+        },
+        "P_beta": {
+          "x": 5,
+          "y": 5,
+          "open": 480,
+          "close": 1080,
+          "rating": 4
+        }
+      }
+    }
+  },
+  {
+    "case_id": "S07",
+    "instruction": "Start at home at 09:00. Visit bank B first, then exactly one pharmacy, then return home. Travel along straight lines at 1 distance unit per minute. Bank service takes 20 minutes and pharmacy service takes 10 minutes. Do not wait for a place to open. Start service immediately on arrival; each service must finish no later than closing time. If no pharmacy can satisfy every requirement, report INFEASIBLE. Choose the highest-rated pharmacy among those whose full service can finish by closing time.",
+    "scene": {
+      "home": [
+        0,
+        0
+      ],
+      "departure": 540,
+      "speed_units_per_minute": 1,
+      "bank": {
+        "x": 10,
+        "y": 0,
+        "open": 480,
+        "close": 1080,
+        "rating": 4
+      },
+      "bank_service": 20,
+      "pharmacy_service": 10,
+      "pharmacies": {
+        "P_alpha": {
+          "x": 12,
+          "y": 0,
+          "open": 480,
+          "close": 581,
+          "rating": 4.9
+        },
+        "P_beta": {
+          "x": 8,
+          "y": 0,
+          "open": 480,
+          "close": 600,
+          "rating": 4
+        }
+      }
+    }
+  },
+  {
+    "case_id": "S08",
+    "instruction": "Start at home at 09:00. Visit bank B first, then exactly one pharmacy, then return home. Travel along straight lines at 1 distance unit per minute. Bank service takes 20 minutes and pharmacy service takes 10 minutes. Do not wait for a place to open. Start service immediately on arrival; each service must finish no later than closing time. If no pharmacy can satisfy every requirement, report INFEASIBLE. Choose the highest-rated pharmacy among those whose full service can finish by closing time.",
+    "scene": {
+      "home": [
+        0,
+        0
+      ],
+      "departure": 540,
+      "speed_units_per_minute": 1,
+      "bank": {
+        "x": 10,
+        "y": 0,
+        "open": 480,
+        "close": 1080,
+        "rating": 4
+      },
+      "bank_service": 20,
+      "pharmacy_service": 10,
+      "pharmacies": {
+        "P_alpha": {
+          "x": 12,
+          "y": 0,
+          "open": 480,
+          "close": 582,
+          "rating": 4.9
+        },
+        "P_beta": {
+          "x": 8,
+          "y": 0,
+          "open": 480,
+          "close": 600,
+          "rating": 4
+        }
+      }
+    }
+  },
+  {
+    "case_id": "S09",
+    "instruction": "Start at home at 09:00. Visit bank B first, then exactly one pharmacy, then return home. Travel along straight lines at 1 distance unit per minute. Bank service takes 20 minutes and pharmacy service takes 10 minutes. Do not wait for a place to open. Start service immediately on arrival; each service must finish no later than closing time. If no pharmacy can satisfy every requirement, report INFEASIBLE. Restrict the choice to pharmacies already open when I leave home at 09:00. Among those that can also complete service when visited, choose the one closest to bank B.",
+    "scene": {
+      "home": [
+        0,
+        0
+      ],
+      "departure": 540,
+      "speed_units_per_minute": 1,
+      "bank": {
+        "x": 10,
+        "y": 0,
+        "open": 480,
+        "close": 1080,
+        "rating": 4
+      },
+      "bank_service": 20,
+      "pharmacy_service": 10,
+      "pharmacies": {
+        "P_alpha": {
+          "x": 11,
+          "y": 0,
+          "open": 565,
+          "close": 600,
+          "rating": 4
+        },
+        "P_beta": {
+          "x": 15,
+          "y": 0,
+          "open": 500,
+          "close": 650,
+          "rating": 4
+        }
+      }
+    }
+  },
+  {
+    "case_id": "S10",
+    "instruction": "Start at home at 09:00. Visit bank B first, then exactly one pharmacy, then return home. Travel along straight lines at 1 distance unit per minute. Bank service takes 20 minutes and pharmacy service takes 10 minutes. Do not wait for a place to open. Start service immediately on arrival; each service must finish no later than closing time. If no pharmacy can satisfy every requirement, report INFEASIBLE. A pharmacy need not be open at 09:00; it must be open when I reach it after the bank visit and allow the full service. Choose the one closest to bank B.",
+    "scene": {
+      "home": [
+        0,
+        0
+      ],
+      "departure": 540,
+      "speed_units_per_minute": 1,
+      "bank": {
+        "x": 10,
+        "y": 0,
+        "open": 480,
+        "close": 1080,
+        "rating": 4
+      },
+      "bank_service": 20,
+      "pharmacy_service": 10,
+      "pharmacies": {
+        "P_alpha": {
+          "x": 11,
+          "y": 0,
+          "open": 565,
+          "close": 600,
+          "rating": 4
+        },
+        "P_beta": {
+          "x": 15,
+          "y": 0,
+          "open": 500,
+          "close": 650,
+          "rating": 4
+        }
+      }
+    }
+  },
+  {
+    "case_id": "S11",
+    "instruction": "Start at home at 09:00. Visit bank B first, then exactly one pharmacy, then return home. Travel along straight lines at 1 distance unit per minute. Bank service takes 20 minutes and pharmacy service takes 10 minutes. Do not wait for a place to open. Start service immediately on arrival; each service must finish no later than closing time. If no pharmacy can satisfy every requirement, report INFEASIBLE. Choose the feasible pharmacy closest to bank B and return home by 09:10.",
+    "scene": {
+      "home": [
+        0,
+        0
+      ],
+      "departure": 540,
+      "speed_units_per_minute": 1,
+      "bank": {
+        "x": 10,
+        "y": 0,
+        "open": 480,
+        "close": 1080,
+        "rating": 4
+      },
+      "bank_service": 20,
+      "pharmacy_service": 10,
+      "pharmacies": {
+        "P_alpha": {
+          "x": 11,
+          "y": 0,
+          "open": 480,
+          "close": 1080,
+          "rating": 4
+        },
+        "P_beta": {
+          "x": 15,
+          "y": 0,
+          "open": 480,
+          "close": 1080,
+          "rating": 4.9
+        }
+      }
+    }
+  },
+  {
+    "case_id": "S12",
+    "instruction": "Start at home at 09:00. Visit bank B first, then exactly one pharmacy, then return home. Travel along straight lines at 1 distance unit per minute. Bank service takes 20 minutes and pharmacy service takes 10 minutes. Do not wait for a place to open. Start service immediately on arrival; each service must finish no later than closing time. If no pharmacy can satisfy every requirement, report INFEASIBLE. Choose the feasible pharmacy closest to bank B and return home by 09:10.",
+    "scene": {
+      "home": [
+        0,
+        0
+      ],
+      "departure": 540,
+      "speed_units_per_minute": 1,
+      "bank": {
+        "x": 10,
+        "y": 0,
+        "open": 480,
+        "close": 1080,
+        "rating": 4
+      },
+      "bank_service": 20,
+      "pharmacy_service": 10,
+      "pharmacies": {
+        "P_alpha": {
+          "x": 11,
+          "y": 0,
+          "open": 480,
+          "close": 1080,
+          "rating": 4
+        },
+        "P_beta": {
+          "x": 15,
+          "y": 0,
+          "open": 480,
+          "close": 1080,
+          "rating": 1
+        }
+      }
+    }
+  }
+]

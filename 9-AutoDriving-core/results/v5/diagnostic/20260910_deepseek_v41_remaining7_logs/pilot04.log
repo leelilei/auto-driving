@@ -1,0 +1,16 @@
+{
+  "protocol_version": "darc-v5.1-collection-1",
+  "model": "deepseek-v4.1-flash-expires-on-0910",
+  "groups": [
+    "pilot_04"
+  ],
+  "planned_calls": 72,
+  "attempt_files": 72,
+  "complete_calls": 72,
+  "physical_attempts": 72,
+  "schema_failures": 0,
+  "transport_failures": 0,
+  "provider_total_tokens": 159509,
+  "collection_complete": true,
+  "finished_at": "2026-09-09T16:39:45.829242+00:00"
+}

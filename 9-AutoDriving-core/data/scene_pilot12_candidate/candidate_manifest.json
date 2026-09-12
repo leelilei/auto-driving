@@ -1,0 +1,11 @@
+{
+  "stage": "CANDIDATE_NOT_ADMITTED",
+  "model_api_calls": 0,
+  "human_review": "PENDING",
+  "files": {
+    "model_inputs.json": "3972f1a9fdf6e7488c8cb13433cb95c3778e8ee353d79dec55df55c5e437b40c",
+    "author_review_cases.json": "df072b288fc12e6e3d528583bf15fdfa11fd6e924b83cee0a5645b208cd49b84",
+    "gold_and_traces.json": "e1d8c9578982ee343a330d911e15a6805b88c5c47a51a43540e7849126b24453",
+    "offline_validation.json": "4a5c25af6a7fac982cdf93632ec6ec35b16cccbf85f580a23fed26d5156754ff"
+  }
+}

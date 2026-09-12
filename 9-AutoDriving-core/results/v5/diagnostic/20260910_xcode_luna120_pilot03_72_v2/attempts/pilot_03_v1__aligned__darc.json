@@ -1,0 +1,43 @@
+{
+  "call_id": "pilot_03_v1::aligned::darc",
+  "role": "darc",
+  "graph_condition": "aligned",
+  "started_at": "2026-09-09T18:40:50.314480+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. The decision-contrast report is diagnostic evidence about consequences; it is not a label and must not override the words of the instruction.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Use the report to locate consequential disagreements, then decide each field from the instruction alone.\n\nInstruction:\nPlease stop by the pharmacy and the shopping mall today. Seek a balance between high ratings and efficient travel distance. There is no required sequence between them, so choose whichever order suits you.\n\nCandidate A:\n{\"dependencies\": [], \"pois\": [\"pharmacy\", \"shopping_mall\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nCandidate B:\n{\"dependencies\": [], \"pois\": [\"pharmacy\", \"shopping_mall\"], \"quality_weight\": 0.5, \"time_limit\": null}\n\nDecision-contrast report:\n{\"candidate_A\": {\"dependencies\": [], \"pois\": [\"pharmacy\", \"shopping_mall\"], \"quality_weight\": 0.5, \"time_limit\": null}, \"candidate_B\": {\"dependencies\": [], \"pois\": [\"pharmacy\", \"shopping_mall\"], \"quality_weight\": 0.5, \"time_limit\": null}, \"candidate_evidence\": {\"A\": {\"pois\": \"pharmacy and the shopping mall\", \"quality_weight\": \"a balance between high ratings and efficient travel distance\"}, \"B\": {\"pois\": \"stop by the pharmacy and the shopping mall\", \"quality_weight\": \"Seek a balance between high ratings and efficient travel distance\"}}, \"cross_constraints\": {\"route_A_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_A_under_B\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_A\": {\"reasons\": [], \"task_success\": true}, \"route_B_under_B\": {\"reasons\": [], \"task_success\": true}}, \"differing_fields\": [], \"instruction\": \"Please stop by the pharmacy and the shopping mall today. Seek a balance between high ratings and efficient travel distance. There is no required sequence between them, so choose whichever order suits you.\", \"limitations\": [\"The report does not identify the user's true intent.\", \"Both candidates may share the same error.\", \"Single-field swaps do not identify higher-order interactions.\"], \"report_version\": \"darc-v5.1-contrast-2\", \"routes\": {\"A\": {\"arrival_minutes\": 622, \"average_quality\": 0.5, \"categories\": [\"pharmacy\", \"shopping_mall\"], \"coverage_count\": 2, \"distance_km\": 3.317, \"duration_minutes\": 81.6, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"pharmacy_1\", \"shopping_mall_1\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": 0.2229030257950895}, \"B\": {\"arrival_minutes\": 622, \"average_quality\": 0.5, \"categories\": [\"pharmacy\", \"shopping_mall\"], \"coverage_count\": 2, \"distance_km\": 3.317, \"duration_minutes\": 81.6, \"is_full_coverage\": true, \"is_valid\": true, \"poi_ids\": [\"pharmacy_1\", \"shopping_mall_1\"], \"status\": \"SUCCESS\", \"utility_under_own_candidate\": 0.2229030257950895}}, \"single_field_swaps\": []}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"pharmacy\",\"shopping_mall\"],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{\"pois\":\"stop by the pharmacy and the shopping mall\",\"time_limit\":\"today\",\"dependencies\":\"There is no required sequence between them\",\"quality_weight\":\"Seek a balance between high ratings and efficient travel distance\"},\"changes\":[]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "pharmacy",
+      "shopping_mall"
+    ],
+    "time_limit": null,
+    "dependencies": [],
+    "quality_weight": 0.5
+  },
+  "evidence": {
+    "pois": "stop by the pharmacy and the shopping mall",
+    "time_limit": "today",
+    "dependencies": "There is no required sequence between them",
+    "quality_weight": "Seek a balance between high ratings and efficient travel distance"
+  },
+  "changes": [],
+  "finished_at": "2026-09-09T18:42:28.553385+00:00",
+  "telemetry": {
+    "call_index": 2,
+    "prompt_sha256": "9692f4150ebc60b4fa7c9ad206226d349abd55f01dea73cab1cebf5a895ff740",
+    "attempts": 1,
+    "latency_seconds": 98.238,
+    "input_chars": 3091,
+    "output_chars": 349,
+    "input_tokens": 784,
+    "output_tokens": 209,
+    "total_tokens": 993,
+    "usage_source": "provider",
+    "success": true
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "status": "PASS_OFFLINE",
+  "scope": "UNREVIEWED_DEVELOPMENT_ONLY",
+  "independent_decisions": 180,
+  "logical_units": 180,
+  "review_receipt_present": true,
+  "raw_task_success": {
+    "direct": 56,
+    "language": 59,
+    "evidence": 48
+  }
+}

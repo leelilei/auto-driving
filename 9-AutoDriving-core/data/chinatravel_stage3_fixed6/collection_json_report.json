@@ -1,0 +1,279 @@
+{
+  "status": "COLLECTED_JSON_COMPAT",
+  "model_api_calls": 6,
+  "json_valid": 6,
+  "records": [
+    {
+      "uid": "e20241028160248698752",
+      "max_requests": 1,
+      "provider_response": {
+        "model": "claude-haiku-4-5-20251001",
+        "id": "msg_011Cewica5BoAc7UrK2GFrWZ",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "```json\n{\n  \"start_city\": \"上海\",\n  \"target_city\": \"杭州\",\n  \"days\": 1,\n  \"people_number\": 1,\n  \"budget\": 1500,\n  \"room_count\": null,\n  \"room_type\": null,\n  \"cuisine\": null,\n  \"intercity_mode\": null,\n  \"attraction_category\": null\n}\n```"
+          }
+        ],
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 189,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 103,
+          "service_tier": "standard",
+          "inference_geo": "global"
+        },
+        "context_management": {
+          "applied_edits": []
+        }
+      },
+      "status": "JSON_VALID",
+      "parsed_intent": {
+        "start_city": "上海",
+        "target_city": "杭州",
+        "days": 1,
+        "people_number": 1,
+        "budget": 1500,
+        "room_count": null,
+        "room_type": null,
+        "cuisine": null,
+        "intercity_mode": null,
+        "attraction_category": null
+      }
+    },
+    {
+      "uid": "e20241028160845920703",
+      "max_requests": 1,
+      "provider_response": {
+        "content": [
+          {
+            "text": "```json\n{\n  \"start_city\": \"深圳\",\n  \"target_city\": \"广州\",\n  \"days\": 2,\n  \"people_number\": null,\n  \"budget\": 1000,\n  \"room_count\": 1,\n  \"room_type\": \"单床房\",\n  \"cuisine\": \"火锅\",\n  \"intercity_mode\": null,\n  \"attraction_category\": null\n}\n```",
+            "type": "text"
+          }
+        ],
+        "id": "msg_Ov0Ex43zll5yTiOrkSt7ehot",
+        "model": "claude-haiku-4-5-20251001",
+        "role": "assistant",
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "type": "message",
+        "usage": {
+          "cache_creation_input_tokens": 23,
+          "cache_read_input_tokens": 100,
+          "input_tokens": 78,
+          "output_tokens": 101
+        }
+      },
+      "status": "JSON_VALID",
+      "parsed_intent": {
+        "start_city": "深圳",
+        "target_city": "广州",
+        "days": 2,
+        "people_number": null,
+        "budget": 1000,
+        "room_count": 1,
+        "room_type": "单床房",
+        "cuisine": "火锅",
+        "intercity_mode": null,
+        "attraction_category": null
+      }
+    },
+    {
+      "uid": "e20241028160848776495",
+      "max_requests": 1,
+      "provider_response": {
+        "model": "claude-haiku-4-5-20251001",
+        "id": "msg_011CewictNXDtSUr7WCRebJx",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "```json\n{\n  \"start_city\": \"广州\",\n  \"target_city\": \"杭州\",\n  \"days\": 2,\n  \"people_number\": 4,\n  \"budget\": 5600,\n  \"room_count\": 2,\n  \"room_type\": \"双床房\",\n  \"cuisine\": null,\n  \"intercity_mode\": \"火车\",\n  \"attraction_category\": null\n}\n```"
+          }
+        ],
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 202,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 109,
+          "service_tier": "standard",
+          "inference_geo": "global"
+        },
+        "context_management": {
+          "applied_edits": []
+        }
+      },
+      "status": "JSON_VALID",
+      "parsed_intent": {
+        "start_city": "广州",
+        "target_city": "杭州",
+        "days": 2,
+        "people_number": 4,
+        "budget": 5600,
+        "room_count": 2,
+        "room_type": "双床房",
+        "cuisine": null,
+        "intercity_mode": "火车",
+        "attraction_category": null
+      }
+    },
+    {
+      "uid": "e20241028160913165493",
+      "max_requests": 1,
+      "provider_response": {
+        "model": "claude-haiku-4-5-20251001",
+        "id": "msg_011Cewid3RjMbrKEmdex6xtL",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "```json\n{\n  \"start_city\": \"杭州\",\n  \"target_city\": \"北京\",\n  \"days\": 3,\n  \"people_number\": 2,\n  \"budget\": 8000,\n  \"room_count\": 1,\n  \"room_type\": \"双床房\",\n  \"cuisine\": null,\n  \"intercity_mode\": \"飞机\",\n  \"attraction_category\": null\n}\n```"
+          }
+        ],
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 205,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 111,
+          "service_tier": "standard",
+          "inference_geo": "global"
+        },
+        "context_management": {
+          "applied_edits": []
+        }
+      },
+      "status": "JSON_VALID",
+      "parsed_intent": {
+        "start_city": "杭州",
+        "target_city": "北京",
+        "days": 3,
+        "people_number": 2,
+        "budget": 8000,
+        "room_count": 1,
+        "room_type": "双床房",
+        "cuisine": null,
+        "intercity_mode": "飞机",
+        "attraction_category": null
+      }
+    },
+    {
+      "uid": "e20241028160902013119",
+      "max_requests": 1,
+      "provider_response": {
+        "model": "claude-haiku-4-5-20251001",
+        "id": "msg_011CewidDkqvkZLP2JiUzoqe",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "```json\n{\n  \"start_city\": \"北京\",\n  \"target_city\": \"武汉\",\n  \"days\": 3,\n  \"people_number\": null,\n  \"budget\": 3000,\n  \"room_count\": 1,\n  \"room_type\": \"单床房\",\n  \"cuisine\": null,\n  \"intercity_mode\": null,\n  \"attraction_category\": \"历史古迹\"\n}\n```"
+          }
+        ],
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 205,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 113,
+          "service_tier": "standard",
+          "inference_geo": "global"
+        },
+        "context_management": {
+          "applied_edits": []
+        }
+      },
+      "status": "JSON_VALID",
+      "parsed_intent": {
+        "start_city": "北京",
+        "target_city": "武汉",
+        "days": 3,
+        "people_number": null,
+        "budget": 3000,
+        "room_count": 1,
+        "room_type": "单床房",
+        "cuisine": null,
+        "intercity_mode": null,
+        "attraction_category": "历史古迹"
+      }
+    },
+    {
+      "uid": "h20241029143455115600",
+      "max_requests": 1,
+      "provider_response": {
+        "model": "claude-haiku-4-5-20251001",
+        "id": "msg_011CewidVeKRpBYEmwfDjqf8",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "```json\n{\n  \"start_city\": \"北京\",\n  \"target_city\": \"重庆\",\n  \"days\": 5,\n  \"people_number\": 2,\n  \"budget\": null,\n  \"room_count\": null,\n  \"room_type\": null,\n  \"cuisine\": null,\n  \"intercity_mode\": null,\n  \"attraction_category\": null\n}\n```"
+          }
+        ],
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 193,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 101,
+          "service_tier": "standard",
+          "inference_geo": "global"
+        },
+        "context_management": {
+          "applied_edits": []
+        }
+      },
+      "status": "JSON_VALID",
+      "parsed_intent": {
+        "start_city": "北京",
+        "target_city": "重庆",
+        "days": 5,
+        "people_number": 2,
+        "budget": null,
+        "room_count": null,
+        "room_type": null,
+        "cuisine": null,
+        "intercity_mode": null,
+        "attraction_category": null
+      }
+    }
+  ]
+}

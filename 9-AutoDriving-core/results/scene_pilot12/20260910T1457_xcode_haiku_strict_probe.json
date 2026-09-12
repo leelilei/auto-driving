@@ -1,0 +1,61 @@
+{
+  "protocol_version": "darc-v5.1-concurrency-probe-1",
+  "model": "claude-haiku-4-5-20251001",
+  "config": {
+    "provider": "xcode",
+    "model": "claude-haiku-4-5-20251001",
+    "wire_api": "anthropic_messages",
+    "base_url": "https://xcode.best",
+    "temperature": 0.0,
+    "timeout": 120,
+    "json_mode": true,
+    "retries": 0,
+    "retry_sleep": 1.0,
+    "sleep": 0.0,
+    "max_concurrency": 1,
+    "omit_temperature": false,
+    "reasoning_effort": null,
+    "max_output_tokens": 100,
+    "stream": false,
+    "service_tier": null,
+    "store": null,
+    "responses_input_mode": "messages",
+    "input_char_limit": null,
+    "transport": "urllib",
+    "api_key_env": "XCODE_API_KEY"
+  },
+  "started_at": "2026-09-10T14:54:19.627991+00:00",
+  "levels": [
+    {
+      "concurrency": 1,
+      "planned": 1,
+      "passed": 0,
+      "failed": 1,
+      "wall_seconds": 5.003270375018474,
+      "attempts": [
+        {
+          "index": 0,
+          "status": "SCHEMA_FAILED",
+          "raw_response": "```json\n{\"ok\":true,\"level\":1,\"index\":0}\n```",
+          "error_type": "JSONDecodeError",
+          "error_message": "Expecting value: line 1 column 1 (char 0)",
+          "latency_seconds": 5.002289041993208,
+          "telemetry": {
+            "call_index": 1,
+            "prompt_sha256": "044f13568492d7fef4c861ff7156ea28636283042f1d3a86de869d635a5dee9e",
+            "attempts": 1,
+            "latency_seconds": 5.002,
+            "input_chars": 118,
+            "output_chars": 43,
+            "input_tokens": 19,
+            "output_tokens": 19,
+            "total_tokens": 38,
+            "usage_source": "provider",
+            "success": true
+          }
+        }
+      ]
+    }
+  ],
+  "finished_at": "2026-09-10T14:54:24.631813+00:00"
+}

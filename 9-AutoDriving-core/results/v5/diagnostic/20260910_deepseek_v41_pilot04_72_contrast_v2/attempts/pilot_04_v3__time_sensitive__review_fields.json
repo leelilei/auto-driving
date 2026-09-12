@@ -1,0 +1,43 @@
+{
+  "call_id": "pilot_04_v3::time_sensitive::review_fields",
+  "role": "review_fields",
+  "graph_condition": "time_sensitive",
+  "started_at": "2026-09-09T16:39:25.920387+00:00",
+  "request": {
+    "system": "Return only the requested JSON object.",
+    "user": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. The field-difference report only identifies disagreements; it does not identify the correct answer.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not infer user preference from a route or map.\n\nInstruction:\nNeed to stop by the bank and library today and be back before 18:00. Keep it super quick and take the most efficient route possible.\n\nCandidate A:\n{\"dependencies\": [], \"pois\": [\"bank\", \"library\"], \"quality_weight\": 0.0, \"time_limit\": 1080}\n\nCandidate B:\n{\"dependencies\": [], \"pois\": [\"bank\", \"library\"], \"quality_weight\": 0.0, \"time_limit\": 1080}\n\nField differences:\n{\"fields\": []}\n"
+  },
+  "raw_response": "{\"intent\":{\"pois\":[\"bank\",\"library\"],\"time_limit\":1080,\"dependencies\":[],\"quality_weight\":0.0},\"evidence\":{\"pois\":\"stop by the bank and library\",\"time_limit\":\"be back before 18:00\",\"quality_weight\":\"Keep it super quick and take the most efficient route possible\",\"dependencies\":\"stop by the bank and library\"},\"changes\":[]}",
+  "status": "COMPLETE",
+  "schema_valid": true,
+  "parsed_intent": {
+    "pois": [
+      "bank",
+      "library"
+    ],
+    "time_limit": 1080,
+    "dependencies": [],
+    "quality_weight": 0.0
+  },
+  "evidence": {
+    "pois": "stop by the bank and library",
+    "time_limit": "be back before 18:00",
+    "quality_weight": "Keep it super quick and take the most efficient route possible",
+    "dependencies": "stop by the bank and library"
+  },
+  "changes": [],
+  "finished_at": "2026-09-09T16:39:28.364065+00:00",
+  "telemetry": {
+    "call_index": 70,
+    "prompt_sha256": "cd39a561027e9c67dffa9a10e8e3c7147b86fd1b1290cd17876a6d09eac2b6b9",
+    "attempts": 1,
+    "latency_seconds": 2.444,
+    "input_chars": 941,
+    "output_chars": 323,
+    "input_tokens": 275,
+    "output_tokens": 590,
+    "total_tokens": 865,
+    "usage_source": "provider",
+    "success": true
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "status": "search_error:TimeoutError",
+  "search_success": false,
+  "seconds": 30.046602250018623,
+  "candidate_origin": "explicit_best_so_far",
+  "schema_valid": true,
+  "tool_calls": 73071,
+  "tool_errors": 0,
+  "search_nodes": 38632,
+  "candidate_constraint_pass": [
+    true,
+    true,
+    true
+  ],
+  "predicted_all_pass_rate": 0.0,
+  "scope": "constructed predicted-intent interface diagnostic; no gold; no natural model errors; no effectiveness claim"
+}
