@@ -1,0 +1,38 @@
+{
+  "call_id": "transfer_026_v3_parse_a",
+  "attempt_idx": 1,
+  "status": "success",
+  "start_time": "2026-09-13T07:28:01.460749+00:00",
+  "duration_sec": 6.508772134780884,
+  "status_code": 200,
+  "requested_model": "deepseek-v4-flash",
+  "returned_model": "deepseek-flash",
+  "raw_response": "{\"pois\":[\"bank\",\"library\",\"supermarket\",\"shopping mall\"],\"time_limit\":1140,\"dependencies\":[[\"bank\",\"library\"],[\"library\",\"supermarket\"]],\"quality_weight\":1.0,\"evidence\":{\"pois\":\"stop by the bank, the library, the supermarket, and the shopping mall\",\"time_limit\":\"back by 19:00\",\"dependencies\":\"bank first before the library. Be sure to hit the library first before the supermarket\",\"quality_weight\":\"quality is the main goal\"}}",
+  "usage": {
+    "prompt_tokens": 260,
+    "completion_tokens": 1417,
+    "total_tokens": 1677,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1310
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 260
+  },
+  "request_payload": {
+    "model": "deepseek-v4-flash",
+    "temperature": 0.0,
+    "messages": [
+      {
+        "role": "system",
+        "content": "You extract route-planning intent."
+      },
+      {
+        "role": "user",
+        "content": "You extract route-planning intent from the user's instruction.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nUse only the instruction. Do not invent constraints. If no preference is stated, use 0.5.\n\nInstruction:\nHey, need you to stop by the bank, the library, the supermarket, and the shopping mall today. Be sure to hit the bank first before the library. Be sure to hit the library first before the supermarket. Make sure we are back by 19:00. Aim for the highest-rated places since quality is the main goal.\n"
+      }
+    ]
+  }
+}

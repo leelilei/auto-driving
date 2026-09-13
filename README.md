@@ -3,6 +3,11 @@
 > **2026-09-13 最新行动与方向收敛入口（当前主线）**：
 > - [下一步行动计划：DS / Qwen 160 组与 LLMAP 迁移实验](docs/guides/AGY_NEXT_ACTION_DS_QWEN_TRANSFER_20260913.md)
 > - [方向决策说明：为什么最终收敛到当前方向 (DARC-Route v4.1 决策依据)](docs/plans/DIRECTION_RATIONALE_20260913.md)
+> - [LLMAP 迁移实验最终交付与验收报告 (FINAL_HANDOFF)](docs/experiments/v41_next_action_20260913/FINAL_HANDOFF.md)
+> - [LLMAP 迁移实验执行方案与审查 (EXECUTION_PLAN)](docs/experiments/v41_next_action_20260913/EXECUTION_PLAN.md)
+> - [LLMAP 原协议复现性与可行性决断 (TRANSFER_FEASIBILITY)](docs/experiments/v41_next_action_20260913/TRANSFER_FEASIBILITY.md)
+> - [模型身份与接口核验表 (MODEL_IDENTITY)](docs/experiments/v41_next_action_20260913/MODEL_IDENTITY.md)
+> - [40 组评估与 5 组开发改写审核清单 (REVIEW_QUEUE)](docs/experiments/v41_next_action_20260913/REVIEW_QUEUE.md)
 > - [历史 160 组收尾与 6 模型基准总账报告](docs/experiments/v41_codex_audit_20260912/closeout/HISTORICAL_160_AUDIT_AND_DECISION_REPORT.md)
 
 > **2026-09-12 实验收尾完成**：[Codex 收尾结果与下一步](docs/experiments/v41_codex_audit_20260912/closeout/RESULTS_AND_NEXT.md)。负责人当前人工审核已通过；v2c 冻结包完成联合评分、固定策略分层和断网重放，12 项新增验收测试通过。停止新增 API，进入证据/主张定稿；论文写作 CLOSED。下方较早状态按历史保留。

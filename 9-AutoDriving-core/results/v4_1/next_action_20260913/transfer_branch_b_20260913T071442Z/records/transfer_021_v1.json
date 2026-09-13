@@ -1,0 +1,114 @@
+{
+  "utterance_id": "transfer_021_v1",
+  "group_id": "transfer_021",
+  "variant_type": "V1",
+  "source_index": 51,
+  "gold_hard": {
+    "pois": [
+      "shopping_mall",
+      "pharmacy"
+    ],
+    "time_limit": "23:00",
+    "dependencies": []
+  },
+  "w_synthetic": 0.5,
+  "intent_a": {
+    "requested_pois": [
+      "pharmacy",
+      "shopping_mall"
+    ],
+    "time_limit": 1380,
+    "dependencies": [],
+    "quality_weight": 0.5
+  },
+  "intent_b": {
+    "requested_pois": [
+      "pharmacy",
+      "shopping_mall"
+    ],
+    "time_limit": 1380,
+    "dependencies": [],
+    "quality_weight": 0.5
+  },
+  "intent_rev": {
+    "requested_pois": [
+      "pharmacy",
+      "shopping_mall"
+    ],
+    "time_limit": 1380,
+    "dependencies": [],
+    "quality_weight": 0.5
+  },
+  "intent_llmap": null,
+  "eval_a": {
+    "path": [
+      0,
+      1,
+      3,
+      5
+    ],
+    "group_order": [
+      0,
+      2
+    ],
+    "group_coverage": 100.0,
+    "avg_rating": 3.9000000000000004,
+    "avg_num_ratings": 149.0,
+    "path_length_km": 11.641260333408212,
+    "real_time_hours": 12.638042011113608,
+    "time_violations_hours": 0.0,
+    "dependency_violations": 0,
+    "availability_violations": 0,
+    "is_valid": true
+  },
+  "eval_b": {
+    "path": [
+      0,
+      1,
+      3,
+      5
+    ],
+    "group_order": [
+      0,
+      2
+    ],
+    "group_coverage": 100.0,
+    "avg_rating": 3.9000000000000004,
+    "avg_num_ratings": 149.0,
+    "path_length_km": 11.641260333408212,
+    "real_time_hours": 12.638042011113608,
+    "time_violations_hours": 0.0,
+    "dependency_violations": 0,
+    "availability_violations": 0,
+    "is_valid": true
+  },
+  "eval_rev": {
+    "path": [
+      0,
+      1,
+      3,
+      5
+    ],
+    "group_order": [
+      0,
+      2
+    ],
+    "group_coverage": 100.0,
+    "avg_rating": 3.9000000000000004,
+    "avg_num_ratings": 149.0,
+    "path_length_km": 11.641260333408212,
+    "real_time_hours": 12.638042011113608,
+    "time_violations_hours": 0.0,
+    "dependency_violations": 0,
+    "availability_violations": 0,
+    "is_valid": true
+  },
+  "eval_llmap": null,
+  "util_a": 0.304293698332959,
+  "util_b": 0.304293698332959,
+  "util_rev": 0.304293698332959,
+  "util_llmap": -1.0,
+  "delta_u": 0.0,
+  "h_flag": 0,
+  "param_diff": 0
+}

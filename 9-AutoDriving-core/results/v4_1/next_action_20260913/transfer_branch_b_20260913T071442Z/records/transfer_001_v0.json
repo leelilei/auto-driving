@@ -1,0 +1,168 @@
+{
+  "utterance_id": "transfer_001_v0",
+  "group_id": "transfer_001",
+  "variant_type": "V0",
+  "source_index": 13,
+  "gold_hard": {
+    "pois": [
+      "library",
+      "bank",
+      "supermarket",
+      "shopping_mall"
+    ],
+    "time_limit": "23:00",
+    "dependencies": []
+  },
+  "w_synthetic": 0.9,
+  "intent_a": {
+    "requested_pois": [
+      "bank",
+      "library",
+      "shopping_mall",
+      "supermarket"
+    ],
+    "time_limit": 1380,
+    "dependencies": [],
+    "quality_weight": 1.0
+  },
+  "intent_b": {
+    "requested_pois": [
+      "bank",
+      "library",
+      "shopping_mall",
+      "supermarket"
+    ],
+    "time_limit": 1380,
+    "dependencies": [],
+    "quality_weight": 1.0
+  },
+  "intent_rev": {
+    "requested_pois": [
+      "bank",
+      "library",
+      "shopping_mall",
+      "supermarket"
+    ],
+    "time_limit": 1380,
+    "dependencies": [],
+    "quality_weight": 1.0
+  },
+  "intent_llmap": {
+    "requested_pois": [
+      "bank",
+      "library",
+      "shopping_mall",
+      "supermarket"
+    ],
+    "time_limit": 1380,
+    "dependencies": [],
+    "quality_weight": 1.0
+  },
+  "eval_a": {
+    "path": [
+      0,
+      2,
+      4,
+      6,
+      7,
+      9
+    ],
+    "group_order": [
+      0,
+      1,
+      3,
+      4
+    ],
+    "group_coverage": 100.0,
+    "avg_rating": 4.375,
+    "avg_num_ratings": 337.75,
+    "path_length_km": 42.39751876465428,
+    "real_time_hours": 15.246583958821809,
+    "time_violations_hours": 0.0,
+    "dependency_violations": 0,
+    "availability_violations": 0,
+    "is_valid": true
+  },
+  "eval_b": {
+    "path": [
+      0,
+      2,
+      4,
+      6,
+      7,
+      9
+    ],
+    "group_order": [
+      0,
+      1,
+      3,
+      4
+    ],
+    "group_coverage": 100.0,
+    "avg_rating": 4.375,
+    "avg_num_ratings": 337.75,
+    "path_length_km": 42.39751876465428,
+    "real_time_hours": 15.246583958821809,
+    "time_violations_hours": 0.0,
+    "dependency_violations": 0,
+    "availability_violations": 0,
+    "is_valid": true
+  },
+  "eval_rev": {
+    "path": [
+      0,
+      2,
+      4,
+      6,
+      7,
+      9
+    ],
+    "group_order": [
+      0,
+      1,
+      3,
+      4
+    ],
+    "group_coverage": 100.0,
+    "avg_rating": 4.375,
+    "avg_num_ratings": 337.75,
+    "path_length_km": 42.39751876465428,
+    "real_time_hours": 15.246583958821809,
+    "time_violations_hours": 0.0,
+    "dependency_violations": 0,
+    "availability_violations": 0,
+    "is_valid": true
+  },
+  "eval_llmap": {
+    "path": [
+      0,
+      2,
+      4,
+      6,
+      7,
+      9
+    ],
+    "group_order": [
+      0,
+      1,
+      3,
+      4
+    ],
+    "group_coverage": 100.0,
+    "avg_rating": 4.375,
+    "avg_num_ratings": 337.75,
+    "path_length_km": 42.39751876465428,
+    "real_time_hours": 15.246583958821809,
+    "time_violations_hours": 0.0,
+    "dependency_violations": 0,
+    "availability_violations": 0,
+    "is_valid": true
+  },
+  "util_a": 0.84375,
+  "util_b": 0.84375,
+  "util_rev": 0.84375,
+  "util_llmap": 0.84375,
+  "delta_u": 0.0,
+  "h_flag": 0,
+  "param_diff": 0
+}

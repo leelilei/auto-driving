@@ -1,0 +1,38 @@
+{
+  "call_id": "transfer_011_v0_parse_a",
+  "attempt_idx": 1,
+  "status": "success",
+  "start_time": "2026-09-13T07:19:22.113058+00:00",
+  "duration_sec": 2.978227138519287,
+  "status_code": 200,
+  "requested_model": "deepseek-v4-flash",
+  "returned_model": "deepseek-flash",
+  "raw_response": "{\"pois\":[\"library\"],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":1.0,\"evidence\":{\"pois\":\"visit the library\",\"quality_weight\":\"most important to ensure it's a top-rated place, so focus on the quality of the experience rather than the travel time\"}}",
+  "usage": {
+    "prompt_tokens": 244,
+    "completion_tokens": 490,
+    "total_tokens": 734,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 426
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 244
+  },
+  "request_payload": {
+    "model": "deepseek-v4-flash",
+    "temperature": 0.0,
+    "messages": [
+      {
+        "role": "system",
+        "content": "You extract route-planning intent."
+      },
+      {
+        "role": "user",
+        "content": "You extract route-planning intent from the user's instruction.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nUse only the instruction. Do not invent constraints. If no preference is stated, use 0.5.\n\nInstruction:\nToday, make sure to visit the library. It's most important to ensure it's a top-rated place, so focus on the quality of the experience rather than the travel time. There are no specific places to visit in sequence, just enjoy your time there.\n"
+      }
+    ]
+  }
+}

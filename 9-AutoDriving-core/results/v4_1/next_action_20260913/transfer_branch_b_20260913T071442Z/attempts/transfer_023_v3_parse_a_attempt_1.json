@@ -1,0 +1,38 @@
+{
+  "call_id": "transfer_023_v3_parse_a",
+  "attempt_idx": 1,
+  "status": "success",
+  "start_time": "2026-09-13T07:26:05.280550+00:00",
+  "duration_sec": 3.373684883117676,
+  "status_code": 200,
+  "requested_model": "deepseek-v4-flash",
+  "returned_model": "deepseek-flash",
+  "raw_response": "{\"pois\":[\"shopping mall\",\"supermarket\",\"bank\",\"library\",\"pharmacy\"],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.0,\"evidence\":{\"pois\":\"shopping mall, the supermarket, the bank, the library, and the pharmacy\",\"quality_weight\":\"quickest and most efficient route possible\"}}",
+  "usage": {
+    "prompt_tokens": 227,
+    "completion_tokens": 583,
+    "total_tokens": 810,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 511
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 227
+  },
+  "request_payload": {
+    "model": "deepseek-v4-flash",
+    "temperature": 0.0,
+    "messages": [
+      {
+        "role": "system",
+        "content": "You extract route-planning intent."
+      },
+      {
+        "role": "user",
+        "content": "You extract route-planning intent from the user's instruction.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nUse only the instruction. Do not invent constraints. If no preference is stated, use 0.5.\n\nInstruction:\nHey, need you to stop by the shopping mall, the supermarket, the bank, the library, and the pharmacy today. Take the quickest and most efficient route possible.\n"
+      }
+    ]
+  }
+}

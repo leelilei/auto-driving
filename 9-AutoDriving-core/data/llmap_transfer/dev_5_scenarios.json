@@ -1,0 +1,667 @@
+{
+  "dev_001_graph": {
+    "start_location": {
+      "latitude": 39.949245,
+      "longitude": 116.46612
+    },
+    "end_location": {
+      "latitude": 39.949245,
+      "longitude": 116.46612
+    },
+    "pois": [
+      {
+        "Place ID": "shopping_mall_1",
+        "Type": "shopping_mall",
+        "Rating": 3.7,
+        "Number Ratings": 87,
+        "Latitude": 39.941894,
+        "Longitude": 116.458134,
+        "Opening": [
+          "Monday: 9:00 AM – 9:00 PM"
+        ],
+        "stay_duration": 60
+      },
+      {
+        "Place ID": "shopping_mall_2",
+        "Type": "shopping_mall",
+        "Rating": 4.8,
+        "Number Ratings": 808,
+        "Latitude": 39.975254,
+        "Longitude": 116.494341,
+        "Opening": [
+          "Monday: 9:00 AM – 9:00 PM"
+        ],
+        "stay_duration": 60
+      },
+      {
+        "Place ID": "supermarket_1",
+        "Type": "supermarket",
+        "Rating": 3.5,
+        "Number Ratings": 85,
+        "Latitude": 39.958858,
+        "Longitude": 116.486742,
+        "Opening": [
+          "Monday: 8:00 AM – 9:00 PM"
+        ],
+        "stay_duration": 40
+      },
+      {
+        "Place ID": "supermarket_2",
+        "Type": "supermarket",
+        "Rating": 4.7,
+        "Number Ratings": 915,
+        "Latitude": 39.994065,
+        "Longitude": 116.472509,
+        "Opening": [
+          "Monday: 8:00 AM – 9:00 PM"
+        ],
+        "stay_duration": 40
+      },
+      {
+        "Place ID": "pharmacy_1",
+        "Type": "pharmacy",
+        "Rating": 3.8,
+        "Number Ratings": 101,
+        "Latitude": 39.931641,
+        "Longitude": 116.458874,
+        "Opening": [
+          "Monday: 8:00 AM – 9:00 PM"
+        ],
+        "stay_duration": 15
+      },
+      {
+        "Place ID": "pharmacy_2",
+        "Type": "pharmacy",
+        "Rating": 4.9,
+        "Number Ratings": 682,
+        "Latitude": 39.91975,
+        "Longitude": 116.481187,
+        "Opening": [
+          "Monday: 8:00 AM – 9:00 PM"
+        ],
+        "stay_duration": 15
+      },
+      {
+        "Place ID": "bank_1",
+        "Type": "bank",
+        "Rating": 4.2,
+        "Number Ratings": 116,
+        "Latitude": 39.959795,
+        "Longitude": 116.457359,
+        "Opening": [
+          "Monday: 9:00 AM – 6:00 PM"
+        ],
+        "stay_duration": 30
+      },
+      {
+        "Place ID": "bank_2",
+        "Type": "bank",
+        "Rating": 4.6,
+        "Number Ratings": 602,
+        "Latitude": 39.973254,
+        "Longitude": 116.507964,
+        "Opening": [
+          "Monday: 9:00 AM – 6:00 PM"
+        ],
+        "stay_duration": 30
+      },
+      {
+        "Place ID": "library_1",
+        "Type": "library",
+        "Rating": 4.0,
+        "Number Ratings": 167,
+        "Latitude": 39.932759,
+        "Longitude": 116.437946,
+        "Opening": [
+          "Monday: 9:00 AM – 6:00 PM"
+        ],
+        "stay_duration": 45
+      },
+      {
+        "Place ID": "library_2",
+        "Type": "library",
+        "Rating": 4.4,
+        "Number Ratings": 550,
+        "Latitude": 39.986191,
+        "Longitude": 116.514388,
+        "Opening": [
+          "Monday: 9:00 AM – 6:00 PM"
+        ],
+        "stay_duration": 45
+      }
+    ],
+    "graph_id": "dev_001_graph"
+  },
+  "dev_002_graph": {
+    "start_location": {
+      "latitude": 39.949245,
+      "longitude": 116.46612
+    },
+    "end_location": {
+      "latitude": 39.949245,
+      "longitude": 116.46612
+    },
+    "pois": [
+      {
+        "Place ID": "shopping_mall_1",
+        "Type": "shopping_mall",
+        "Rating": 3.6,
+        "Number Ratings": 148,
+        "Latitude": 39.955164,
+        "Longitude": 116.497371,
+        "Opening": [
+          "Monday: 9:00 AM – 9:00 PM"
+        ],
+        "stay_duration": 60
+      },
+      {
+        "Place ID": "shopping_mall_2",
+        "Type": "shopping_mall",
+        "Rating": 4.4,
+        "Number Ratings": 863,
+        "Latitude": 39.983723,
+        "Longitude": 116.423982,
+        "Opening": [
+          "Monday: 9:00 AM – 9:00 PM"
+        ],
+        "stay_duration": 60
+      },
+      {
+        "Place ID": "supermarket_1",
+        "Type": "supermarket",
+        "Rating": 3.8,
+        "Number Ratings": 125,
+        "Latitude": 39.949344,
+        "Longitude": 116.453812,
+        "Opening": [
+          "Monday: 8:00 AM – 9:00 PM"
+        ],
+        "stay_duration": 40
+      },
+      {
+        "Place ID": "supermarket_2",
+        "Type": "supermarket",
+        "Rating": 4.9,
+        "Number Ratings": 694,
+        "Latitude": 39.911984,
+        "Longitude": 116.417241,
+        "Opening": [
+          "Monday: 8:00 AM – 9:00 PM"
+        ],
+        "stay_duration": 40
+      },
+      {
+        "Place ID": "pharmacy_1",
+        "Type": "pharmacy",
+        "Rating": 3.6,
+        "Number Ratings": 61,
+        "Latitude": 39.955614,
+        "Longitude": 116.455562,
+        "Opening": [
+          "Monday: 8:00 AM – 9:00 PM"
+        ],
+        "stay_duration": 15
+      },
+      {
+        "Place ID": "pharmacy_2",
+        "Type": "pharmacy",
+        "Rating": 4.7,
+        "Number Ratings": 757,
+        "Latitude": 39.972939,
+        "Longitude": 116.434904,
+        "Opening": [
+          "Monday: 8:00 AM – 9:00 PM"
+        ],
+        "stay_duration": 15
+      },
+      {
+        "Place ID": "bank_1",
+        "Type": "bank",
+        "Rating": 4.2,
+        "Number Ratings": 99,
+        "Latitude": 39.962065,
+        "Longitude": 116.482068,
+        "Opening": [
+          "Monday: 9:00 AM – 6:00 PM"
+        ],
+        "stay_duration": 30
+      },
+      {
+        "Place ID": "bank_2",
+        "Type": "bank",
+        "Rating": 4.3,
+        "Number Ratings": 312,
+        "Latitude": 39.931038,
+        "Longitude": 116.419661,
+        "Opening": [
+          "Monday: 9:00 AM – 6:00 PM"
+        ],
+        "stay_duration": 30
+      },
+      {
+        "Place ID": "library_1",
+        "Type": "library",
+        "Rating": 3.6,
+        "Number Ratings": 100,
+        "Latitude": 39.958822,
+        "Longitude": 116.471369,
+        "Opening": [
+          "Monday: 9:00 AM – 6:00 PM"
+        ],
+        "stay_duration": 45
+      },
+      {
+        "Place ID": "library_2",
+        "Type": "library",
+        "Rating": 4.4,
+        "Number Ratings": 848,
+        "Latitude": 39.921389,
+        "Longitude": 116.509326,
+        "Opening": [
+          "Monday: 9:00 AM – 6:00 PM"
+        ],
+        "stay_duration": 45
+      }
+    ],
+    "graph_id": "dev_002_graph"
+  },
+  "dev_003_graph": {
+    "start_location": {
+      "latitude": 39.949245,
+      "longitude": 116.46612
+    },
+    "end_location": {
+      "latitude": 39.949245,
+      "longitude": 116.46612
+    },
+    "pois": [
+      {
+        "Place ID": "shopping_mall_1",
+        "Type": "shopping_mall",
+        "Rating": 3.6,
+        "Number Ratings": 116,
+        "Latitude": 39.969056,
+        "Longitude": 116.46255,
+        "Opening": [
+          "Monday: 9:00 AM – 9:00 PM"
+        ],
+        "stay_duration": 60
+      },
+      {
+        "Place ID": "shopping_mall_2",
+        "Type": "shopping_mall",
+        "Rating": 4.4,
+        "Number Ratings": 370,
+        "Latitude": 39.954984,
+        "Longitude": 116.520929,
+        "Opening": [
+          "Monday: 9:00 AM – 9:00 PM"
+        ],
+        "stay_duration": 60
+      },
+      {
+        "Place ID": "supermarket_1",
+        "Type": "supermarket",
+        "Rating": 4.0,
+        "Number Ratings": 189,
+        "Latitude": 39.941587,
+        "Longitude": 116.501598,
+        "Opening": [
+          "Monday: 8:00 AM – 9:00 PM"
+        ],
+        "stay_duration": 40
+      },
+      {
+        "Place ID": "supermarket_2",
+        "Type": "supermarket",
+        "Rating": 4.9,
+        "Number Ratings": 407,
+        "Latitude": 39.964551,
+        "Longitude": 116.510958,
+        "Opening": [
+          "Monday: 8:00 AM – 9:00 PM"
+        ],
+        "stay_duration": 40
+      },
+      {
+        "Place ID": "pharmacy_1",
+        "Type": "pharmacy",
+        "Rating": 4.0,
+        "Number Ratings": 49,
+        "Latitude": 39.976515,
+        "Longitude": 116.47501,
+        "Opening": [
+          "Monday: 8:00 AM – 9:00 PM"
+        ],
+        "stay_duration": 15
+      },
+      {
+        "Place ID": "pharmacy_2",
+        "Type": "pharmacy",
+        "Rating": 4.3,
+        "Number Ratings": 282,
+        "Latitude": 39.926605,
+        "Longitude": 116.431757,
+        "Opening": [
+          "Monday: 8:00 AM – 9:00 PM"
+        ],
+        "stay_duration": 15
+      },
+      {
+        "Place ID": "bank_1",
+        "Type": "bank",
+        "Rating": 4.0,
+        "Number Ratings": 111,
+        "Latitude": 39.962209,
+        "Longitude": 116.475104,
+        "Opening": [
+          "Monday: 9:00 AM – 6:00 PM"
+        ],
+        "stay_duration": 30
+      },
+      {
+        "Place ID": "bank_2",
+        "Type": "bank",
+        "Rating": 4.8,
+        "Number Ratings": 574,
+        "Latitude": 39.967885,
+        "Longitude": 116.502491,
+        "Opening": [
+          "Monday: 9:00 AM – 6:00 PM"
+        ],
+        "stay_duration": 30
+      },
+      {
+        "Place ID": "library_1",
+        "Type": "library",
+        "Rating": 4.2,
+        "Number Ratings": 165,
+        "Latitude": 39.925047,
+        "Longitude": 116.472943,
+        "Opening": [
+          "Monday: 9:00 AM – 6:00 PM"
+        ],
+        "stay_duration": 45
+      },
+      {
+        "Place ID": "library_2",
+        "Type": "library",
+        "Rating": 4.8,
+        "Number Ratings": 908,
+        "Latitude": 39.906002,
+        "Longitude": 116.4307,
+        "Opening": [
+          "Monday: 9:00 AM – 6:00 PM"
+        ],
+        "stay_duration": 45
+      }
+    ],
+    "graph_id": "dev_003_graph"
+  },
+  "dev_004_graph": {
+    "start_location": {
+      "latitude": 39.949245,
+      "longitude": 116.46612
+    },
+    "end_location": {
+      "latitude": 39.949245,
+      "longitude": 116.46612
+    },
+    "pois": [
+      {
+        "Place ID": "shopping_mall_1",
+        "Type": "shopping_mall",
+        "Rating": 3.9,
+        "Number Ratings": 92,
+        "Latitude": 39.949479,
+        "Longitude": 116.446566,
+        "Opening": [
+          "Monday: 9:00 AM – 9:00 PM"
+        ],
+        "stay_duration": 60
+      },
+      {
+        "Place ID": "shopping_mall_2",
+        "Type": "shopping_mall",
+        "Rating": 4.5,
+        "Number Ratings": 801,
+        "Latitude": 39.903587,
+        "Longitude": 116.443654,
+        "Opening": [
+          "Monday: 9:00 AM – 9:00 PM"
+        ],
+        "stay_duration": 60
+      },
+      {
+        "Place ID": "supermarket_1",
+        "Type": "supermarket",
+        "Rating": 3.6,
+        "Number Ratings": 69,
+        "Latitude": 39.971353,
+        "Longitude": 116.453131,
+        "Opening": [
+          "Monday: 8:00 AM – 9:00 PM"
+        ],
+        "stay_duration": 40
+      },
+      {
+        "Place ID": "supermarket_2",
+        "Type": "supermarket",
+        "Rating": 4.5,
+        "Number Ratings": 477,
+        "Latitude": 39.976894,
+        "Longitude": 116.440894,
+        "Opening": [
+          "Monday: 8:00 AM – 9:00 PM"
+        ],
+        "stay_duration": 40
+      },
+      {
+        "Place ID": "pharmacy_1",
+        "Type": "pharmacy",
+        "Rating": 3.7,
+        "Number Ratings": 184,
+        "Latitude": 39.977912,
+        "Longitude": 116.481199,
+        "Opening": [
+          "Monday: 8:00 AM – 9:00 PM"
+        ],
+        "stay_duration": 15
+      },
+      {
+        "Place ID": "pharmacy_2",
+        "Type": "pharmacy",
+        "Rating": 4.4,
+        "Number Ratings": 315,
+        "Latitude": 39.923632,
+        "Longitude": 116.508163,
+        "Opening": [
+          "Monday: 8:00 AM – 9:00 PM"
+        ],
+        "stay_duration": 15
+      },
+      {
+        "Place ID": "bank_1",
+        "Type": "bank",
+        "Rating": 4.1,
+        "Number Ratings": 194,
+        "Latitude": 39.923398,
+        "Longitude": 116.453542,
+        "Opening": [
+          "Monday: 9:00 AM – 6:00 PM"
+        ],
+        "stay_duration": 30
+      },
+      {
+        "Place ID": "bank_2",
+        "Type": "bank",
+        "Rating": 4.5,
+        "Number Ratings": 694,
+        "Latitude": 39.921777,
+        "Longitude": 116.486637,
+        "Opening": [
+          "Monday: 9:00 AM – 6:00 PM"
+        ],
+        "stay_duration": 30
+      },
+      {
+        "Place ID": "library_1",
+        "Type": "library",
+        "Rating": 4.1,
+        "Number Ratings": 99,
+        "Latitude": 39.938407,
+        "Longitude": 116.46154,
+        "Opening": [
+          "Monday: 9:00 AM – 6:00 PM"
+        ],
+        "stay_duration": 45
+      },
+      {
+        "Place ID": "library_2",
+        "Type": "library",
+        "Rating": 4.4,
+        "Number Ratings": 888,
+        "Latitude": 39.924443,
+        "Longitude": 116.51447,
+        "Opening": [
+          "Monday: 9:00 AM – 6:00 PM"
+        ],
+        "stay_duration": 45
+      }
+    ],
+    "graph_id": "dev_004_graph"
+  },
+  "dev_005_graph": {
+    "start_location": {
+      "latitude": 39.949245,
+      "longitude": 116.46612
+    },
+    "end_location": {
+      "latitude": 39.949245,
+      "longitude": 116.46612
+    },
+    "pois": [
+      {
+        "Place ID": "shopping_mall_1",
+        "Type": "shopping_mall",
+        "Rating": 3.9,
+        "Number Ratings": 153,
+        "Latitude": 39.942993,
+        "Longitude": 116.479637,
+        "Opening": [
+          "Monday: 9:00 AM – 9:00 PM"
+        ],
+        "stay_duration": 60
+      },
+      {
+        "Place ID": "shopping_mall_2",
+        "Type": "shopping_mall",
+        "Rating": 4.5,
+        "Number Ratings": 587,
+        "Latitude": 39.92211,
+        "Longitude": 116.508786,
+        "Opening": [
+          "Monday: 9:00 AM – 9:00 PM"
+        ],
+        "stay_duration": 60
+      },
+      {
+        "Place ID": "supermarket_1",
+        "Type": "supermarket",
+        "Rating": 4.1,
+        "Number Ratings": 83,
+        "Latitude": 39.941011,
+        "Longitude": 116.445815,
+        "Opening": [
+          "Monday: 8:00 AM – 9:00 PM"
+        ],
+        "stay_duration": 40
+      },
+      {
+        "Place ID": "supermarket_2",
+        "Type": "supermarket",
+        "Rating": 5.0,
+        "Number Ratings": 812,
+        "Latitude": 39.916894,
+        "Longitude": 116.459097,
+        "Opening": [
+          "Monday: 8:00 AM – 9:00 PM"
+        ],
+        "stay_duration": 40
+      },
+      {
+        "Place ID": "pharmacy_1",
+        "Type": "pharmacy",
+        "Rating": 3.7,
+        "Number Ratings": 105,
+        "Latitude": 39.95247,
+        "Longitude": 116.452332,
+        "Opening": [
+          "Monday: 8:00 AM – 9:00 PM"
+        ],
+        "stay_duration": 15
+      },
+      {
+        "Place ID": "pharmacy_2",
+        "Type": "pharmacy",
+        "Rating": 4.4,
+        "Number Ratings": 911,
+        "Latitude": 39.933353,
+        "Longitude": 116.510665,
+        "Opening": [
+          "Monday: 8:00 AM – 9:00 PM"
+        ],
+        "stay_duration": 15
+      },
+      {
+        "Place ID": "bank_1",
+        "Type": "bank",
+        "Rating": 3.8,
+        "Number Ratings": 39,
+        "Latitude": 39.964479,
+        "Longitude": 116.464722,
+        "Opening": [
+          "Monday: 9:00 AM – 6:00 PM"
+        ],
+        "stay_duration": 30
+      },
+      {
+        "Place ID": "bank_2",
+        "Type": "bank",
+        "Rating": 4.5,
+        "Number Ratings": 484,
+        "Latitude": 39.971605,
+        "Longitude": 116.436607,
+        "Opening": [
+          "Monday: 9:00 AM – 6:00 PM"
+        ],
+        "stay_duration": 30
+      },
+      {
+        "Place ID": "library_1",
+        "Type": "library",
+        "Rating": 4.1,
+        "Number Ratings": 64,
+        "Latitude": 39.936524,
+        "Longitude": 116.463806,
+        "Opening": [
+          "Monday: 9:00 AM – 6:00 PM"
+        ],
+        "stay_duration": 45
+      },
+      {
+        "Place ID": "library_2",
+        "Type": "library",
+        "Rating": 4.3,
+        "Number Ratings": 463,
+        "Latitude": 39.985632,
+        "Longitude": 116.416278,
+        "Opening": [
+          "Monday: 9:00 AM – 6:00 PM"
+        ],
+        "stay_duration": 45
+      }
+    ],
+    "graph_id": "dev_005_graph"
+  }
+}

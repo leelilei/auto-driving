@@ -1,0 +1,38 @@
+{
+  "call_id": "transfer_025_v0_llmap_orig",
+  "attempt_idx": 1,
+  "status": "success",
+  "start_time": "2026-09-13T07:28:16.001992+00:00",
+  "duration_sec": 2.3820931911468506,
+  "status_code": 200,
+  "requested_model": "deepseek-v4-flash",
+  "returned_model": "deepseek-flash",
+  "raw_response": "{\"pois\":[\"pharmacy\"],\"time_limit\":\"None\",\"dependencies\":[],\"quality_weight\":0.0,\"distance_weight\":1.0}",
+  "usage": {
+    "prompt_tokens": 244,
+    "completion_tokens": 394,
+    "total_tokens": 638,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 360
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 244
+  },
+  "request_payload": {
+    "model": "deepseek-v4-flash",
+    "temperature": 0.0,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Extract POIs, constraints, and weights from a human instruction. POIs should be a simple string array. Dependencies should be an empty list if no sequence requirements are mentioned. Weights should be between 0 and 1, and sum to 1. Extract them from language about importance of POI rating vs route length.\n\nOutput must be valid JSON with structure:\n{\n    \"pois\": [\"poi1\", \"poi2\", ...],\n    \"time_limit\": \"HH:00\" or \"None\",\n    \"dependencies\": [[\"poi1\", \"poi2\"], ...],\n    \"quality_weight\": float,\n    \"distance_weight\": float\n}\n"
+      },
+      {
+        "role": "user",
+        "content": "Extract POIs, constraints, and weights from this instruction as JSON:\nPlease make sure to visit the pharmacy today. Try to make the trip as quick and efficient as possible.\n\nOnly output the JSON object. No prefix, additional text, or explanation.\n"
+      }
+    ]
+  }
+}

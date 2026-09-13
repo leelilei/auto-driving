@@ -1,0 +1,38 @@
+{
+  "call_id": "transfer_014_v1_review",
+  "attempt_idx": 1,
+  "status": "success",
+  "start_time": "2026-09-13T07:21:04.853206+00:00",
+  "duration_sec": 22.189433097839355,
+  "status_code": 200,
+  "requested_model": "deepseek-v4-flash",
+  "returned_model": "deepseek-flash",
+  "raw_response": "{\"intent\":{\"pois\":[\"pharmacy\",\"library\"],\"time_limit\":\"today\",\"dependencies\":[],\"quality_weight\":1.0},\"evidence\":{\"pois\":\"the pharmacy and the library\",\"time_limit\":\"today\",\"quality_weight\":\"Prioritize locations with high ratings and strong customer reviews\"},\"changes\":[\"time_limit\"]}",
+  "usage": {
+    "prompt_tokens": 308,
+    "completion_tokens": 4504,
+    "total_tokens": 4812,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4432
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 308
+  },
+  "request_payload": {
+    "model": "deepseek-v4-flash",
+    "temperature": 0.0,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Resolve two candidate interpretations."
+      },
+      {
+        "role": "user",
+        "content": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. Candidate agreement is not proof of correctness.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not use route efficiency to infer what the user wants.\n\nInstruction:\nPlease visit the pharmacy and the library today. Prioritize locations with high ratings and strong customer reviews.\n\nCandidate A:\n{\"pois\": [\"pharmacy\", \"library\"], \"time_limit\": null, \"dependencies\": [], \"quality_weight\": 1.0, \"evidence\": {\"pois\": \"the pharmacy and the library\", \"quality_weight\": \"Prioritize locations with high ratings and strong customer reviews\"}}\n\nCandidate B:\n{\"pois\": [\"pharmacy\", \"library\"], \"time_limit\": null, \"dependencies\": [], \"quality_weight\": 1, \"evidence\": {\"pois\": \"pharmacy and the library\", \"quality_weight\": \"Prioritize locations with high ratings and strong customer reviews\"}}\n"
+      }
+    ]
+  }
+}

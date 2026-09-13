@@ -1,0 +1,38 @@
+{
+  "call_id": "transfer_025_v1_parse_a",
+  "attempt_idx": 1,
+  "status": "success",
+  "start_time": "2026-09-13T07:26:45.883853+00:00",
+  "duration_sec": 3.6863460540771484,
+  "status_code": 200,
+  "requested_model": "deepseek-v4-flash",
+  "returned_model": "deepseek-flash",
+  "raw_response": "{\"pois\":[\"pharmacy\"],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.0,\"evidence\":{\"pois\":\"pharmacy\",\"quality_weight\":\"route efficiency and minimizing unnecessary travel time\"}}",
+  "usage": {
+    "prompt_tokens": 208,
+    "completion_tokens": 694,
+    "total_tokens": 902,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 647
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 208
+  },
+  "request_payload": {
+    "model": "deepseek-v4-flash",
+    "temperature": 0.0,
+    "messages": [
+      {
+        "role": "system",
+        "content": "You extract route-planning intent."
+      },
+      {
+        "role": "user",
+        "content": "You extract route-planning intent from the user's instruction.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nUse only the instruction. Do not invent constraints. If no preference is stated, use 0.5.\n\nInstruction:\nPlease visit the pharmacy today. Focus on route efficiency and minimizing unnecessary travel time.\n"
+      }
+    ]
+  }
+}

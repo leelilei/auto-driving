@@ -1,0 +1,38 @@
+{
+  "call_id": "transfer_026_v0_llmap_orig",
+  "attempt_idx": 1,
+  "status": "success",
+  "start_time": "2026-09-13T07:28:40.081762+00:00",
+  "duration_sec": 5.954692125320435,
+  "status_code": 200,
+  "requested_model": "deepseek-v4-flash",
+  "returned_model": "deepseek-flash",
+  "raw_response": "{\"pois\": [\"bank\", \"library\", \"supermarket\", \"shopping mall\"], \"time_limit\": \"19:00\", \"dependencies\": [[\"bank\", \"library\"], [\"library\", \"supermarket\"]], \"quality_weight\": 0.7, \"distance_weight\": 0.3}",
+  "usage": {
+    "prompt_tokens": 283,
+    "completion_tokens": 1252,
+    "total_tokens": 1535,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1186
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 155
+  },
+  "request_payload": {
+    "model": "deepseek-v4-flash",
+    "temperature": 0.0,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Extract POIs, constraints, and weights from a human instruction. POIs should be a simple string array. Dependencies should be an empty list if no sequence requirements are mentioned. Weights should be between 0 and 1, and sum to 1. Extract them from language about importance of POI rating vs route length.\n\nOutput must be valid JSON with structure:\n{\n    \"pois\": [\"poi1\", \"poi2\", ...],\n    \"time_limit\": \"HH:00\" or \"None\",\n    \"dependencies\": [[\"poi1\", \"poi2\"], ...],\n    \"quality_weight\": float,\n    \"distance_weight\": float\n}\n"
+      },
+      {
+        "role": "user",
+        "content": "Extract POIs, constraints, and weights from this instruction as JSON:\nToday, make sure to visit the bank, library, supermarket, and shopping mall. Please be home by 19:00. Prioritize visiting places with high ratings as they are more important today. Start at the bank before heading to the library, and continue to the supermarket right after the library.\n\nOnly output the JSON object. No prefix, additional text, or explanation.\n"
+      }
+    ]
+  }
+}

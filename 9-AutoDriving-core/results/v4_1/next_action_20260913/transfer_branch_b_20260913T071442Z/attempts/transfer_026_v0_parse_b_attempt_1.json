@@ -1,0 +1,38 @@
+{
+  "call_id": "transfer_026_v0_parse_b",
+  "attempt_idx": 1,
+  "status": "success",
+  "start_time": "2026-09-13T07:27:13.502122+00:00",
+  "duration_sec": 4.895805358886719,
+  "status_code": 200,
+  "requested_model": "deepseek-v4-flash",
+  "returned_model": "deepseek-flash",
+  "raw_response": "{\"pois\":[\"bank\",\"library\",\"supermarket\",\"shopping mall\"],\"time_limit\":1140,\"dependencies\":[[\"bank\",\"library\"],[\"library\",\"supermarket\"]],\"quality_weight\":1.0,\"evidence\":{\"pois\":\"visit the bank, library, supermarket, and shopping mall\",\"time_limit\":\"be home by 19:00\",\"dependencies\":\"Start at the bank before heading to the library, and continue to the supermarket right after the library\",\"quality_weight\":\"Prioritize visiting places with high ratings\"}}",
+  "usage": {
+    "prompt_tokens": 293,
+    "completion_tokens": 971,
+    "total_tokens": 1264,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 861
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 165
+  },
+  "request_payload": {
+    "model": "deepseek-v4-flash",
+    "temperature": 0.0,
+    "messages": [
+      {
+        "role": "system",
+        "content": "You extract route-planning intent."
+      },
+      {
+        "role": "user",
+        "content": "Read the user's route-planning instruction field by field before producing the final JSON.\n\nCheck: requested POI categories, return deadline, explicit visit order, and the direction of the quality-versus-distance preference. Each conclusion must be supported by the instruction itself.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nDo not infer a preference from any route or map. If no preference is stated, use 0.5.\n\nInstruction:\nToday, make sure to visit the bank, library, supermarket, and shopping mall. Please be home by 19:00. Prioritize visiting places with high ratings as they are more important today. Start at the bank before heading to the library, and continue to the supermarket right after the library.\n"
+      }
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "call_id": "transfer_019_v1_review",
+  "attempt_idx": 1,
+  "status": "success",
+  "start_time": "2026-09-13T07:23:41.488204+00:00",
+  "duration_sec": 27.101585865020752,
+  "status_code": 200,
+  "requested_model": "deepseek-v4-flash",
+  "returned_model": "deepseek-flash",
+  "raw_response": "{\"intent\":{\"pois\":[\"library\",\"supermarket\",\"pharmacy\",\"shopping mall\",\"bank\"],\"time_limit\":null,\"dependencies\":[[\"supermarket\",\"pharmacy\"]],\"quality_weight\":0.9},\"evidence\":{\"pois\":\"library, the supermarket, the pharmacy, the shopping mall, and the bank\",\"dependencies\":\"visit the supermarket prior to the pharmacy\",\"quality_weight\":\"Prioritize locations with high ratings and strong customer reviews\"},\"changes\":[\"quality_weight\"]}",
+  "usage": {
+    "prompt_tokens": 423,
+    "completion_tokens": 5810,
+    "total_tokens": 6233,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5707
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 423
+  },
+  "request_payload": {
+    "model": "deepseek-v4-flash",
+    "temperature": 0.0,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Resolve two candidate interpretations."
+      },
+      {
+        "role": "user",
+        "content": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. Candidate agreement is not proof of correctness.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not use route efficiency to infer what the user wants.\n\nInstruction:\nPlease visit the library, the supermarket, the pharmacy, the shopping mall, and the bank today. Prioritize locations with high ratings and strong customer reviews. Make sure to visit the supermarket prior to the pharmacy.\n\nCandidate A:\n{\"pois\": [\"library\", \"supermarket\", \"pharmacy\", \"shopping mall\", \"bank\"], \"time_limit\": null, \"dependencies\": [[\"supermarket\", \"pharmacy\"]], \"quality_weight\": 0.9, \"evidence\": {\"pois\": \"library, the supermarket, the pharmacy, the shopping mall, and the bank\", \"dependencies\": \"supermarket prior to the pharmacy\", \"quality_weight\": \"Prioritize locations with high ratings and strong customer reviews\"}}\n\nCandidate B:\n{\"pois\": [\"library\", \"supermarket\", \"pharmacy\", \"shopping mall\", \"bank\"], \"time_limit\": null, \"dependencies\": [[\"supermarket\", \"pharmacy\"]], \"quality_weight\": 1.0, \"evidence\": {\"pois\": \"Please visit the library, the supermarket, the pharmacy, the shopping mall, and the bank today.\", \"dependencies\": \"visit the supermarket prior to the pharmacy\", \"quality_weight\": \"Prioritize locations with high ratings and strong customer reviews\"}}\n"
+      }
+    ]
+  }
+}

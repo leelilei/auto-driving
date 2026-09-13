@@ -1,0 +1,114 @@
+{
+  "utterance_id": "transfer_008_v1",
+  "group_id": "transfer_008",
+  "variant_type": "V1",
+  "source_index": 22,
+  "gold_hard": {
+    "pois": [
+      "bank",
+      "shopping_mall"
+    ],
+    "time_limit": null,
+    "dependencies": []
+  },
+  "w_synthetic": 0.7,
+  "intent_a": {
+    "requested_pois": [
+      "bank",
+      "shopping_mall"
+    ],
+    "time_limit": null,
+    "dependencies": [],
+    "quality_weight": 1.0
+  },
+  "intent_b": {
+    "requested_pois": [
+      "bank",
+      "shopping_mall"
+    ],
+    "time_limit": null,
+    "dependencies": [],
+    "quality_weight": 0.9
+  },
+  "intent_rev": {
+    "requested_pois": [
+      "bank",
+      "shopping_mall"
+    ],
+    "time_limit": null,
+    "dependencies": [],
+    "quality_weight": 1.0
+  },
+  "intent_llmap": null,
+  "eval_a": {
+    "path": [
+      0,
+      2,
+      3,
+      5
+    ],
+    "group_order": [
+      0,
+      3
+    ],
+    "group_coverage": 100.0,
+    "avg_rating": 4.25,
+    "avg_num_ratings": 545.5,
+    "path_length_km": 18.54996540052581,
+    "real_time_hours": 12.95166551335086,
+    "time_violations_hours": 0.0,
+    "dependency_violations": 0,
+    "availability_violations": 0,
+    "is_valid": true
+  },
+  "eval_b": {
+    "path": [
+      0,
+      1,
+      3,
+      5
+    ],
+    "group_order": [
+      0,
+      3
+    ],
+    "group_coverage": 100.0,
+    "avg_rating": 3.8,
+    "avg_num_ratings": 102.0,
+    "path_length_km": 7.708223599497471,
+    "real_time_hours": 12.590274119983249,
+    "time_violations_hours": 0.0,
+    "dependency_violations": 0,
+    "availability_violations": 0,
+    "is_valid": true
+  },
+  "eval_rev": {
+    "path": [
+      0,
+      2,
+      3,
+      5
+    ],
+    "group_order": [
+      0,
+      3
+    ],
+    "group_coverage": 100.0,
+    "avg_rating": 4.25,
+    "avg_num_ratings": 545.5,
+    "path_length_km": 18.54996540052581,
+    "real_time_hours": 12.95166551335086,
+    "time_violations_hours": 0.0,
+    "dependency_violations": 0,
+    "availability_violations": 0,
+    "is_valid": true
+  },
+  "eval_llmap": null,
+  "util_a": 0.8125,
+  "util_b": 0.6222917764005025,
+  "util_rev": 0.8125,
+  "util_llmap": -1.0,
+  "delta_u": 0.19020822359949752,
+  "h_flag": 0,
+  "param_diff": 1
+}

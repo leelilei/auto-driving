@@ -1,0 +1,466 @@
+[
+  {
+    "group_id": "dev_001",
+    "utterance_id": "dev_001_v0",
+    "source_index": 0,
+    "split": "dev",
+    "variant_type": "V0",
+    "text": "Let's head to the supermarket today. It would be great to be efficient with our route.",
+    "gold_hard": {
+      "pois": [
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": []
+    },
+    "preference_direction": "distance_first",
+    "w_synthetic": 0.4,
+    "distance_weight": 0.6,
+    "graph_id": "dev_001_graph"
+  },
+  {
+    "group_id": "dev_001",
+    "utterance_id": "dev_001_v1",
+    "source_index": 0,
+    "split": "dev",
+    "variant_type": "V1",
+    "text": "Please visit the supermarket today. Focus on route efficiency and minimizing unnecessary travel time.",
+    "gold_hard": {
+      "pois": [
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": []
+    },
+    "preference_direction": "distance_first",
+    "w_synthetic": 0.4,
+    "distance_weight": 0.6,
+    "graph_id": "dev_001_graph"
+  },
+  {
+    "group_id": "dev_001",
+    "utterance_id": "dev_001_v2",
+    "source_index": 0,
+    "split": "dev",
+    "variant_type": "V2",
+    "text": "Your itinerary today includes visiting the supermarket. Keep the travel distance minimal and direct.",
+    "gold_hard": {
+      "pois": [
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": []
+    },
+    "preference_direction": "distance_first",
+    "w_synthetic": 0.4,
+    "distance_weight": 0.6,
+    "graph_id": "dev_001_graph"
+  },
+  {
+    "group_id": "dev_001",
+    "utterance_id": "dev_001_v3",
+    "source_index": 0,
+    "split": "dev",
+    "variant_type": "V3",
+    "text": "Hey, need you to stop by the supermarket today. Take the quickest and most efficient route possible.",
+    "gold_hard": {
+      "pois": [
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": []
+    },
+    "preference_direction": "distance_first",
+    "w_synthetic": 0.4,
+    "distance_weight": 0.6,
+    "graph_id": "dev_001_graph"
+  },
+  {
+    "group_id": "dev_002",
+    "utterance_id": "dev_002_v0",
+    "source_index": 1,
+    "split": "dev",
+    "variant_type": "V0",
+    "text": "Today, you'll be visiting the library, shopping mall, bank, and supermarket. Although there's no specific time to finish by, try to focus on exploring places with higher ratings. Enjoy your trip without any specific order to follow!",
+    "gold_hard": {
+      "pois": [
+        "library",
+        "shopping_mall",
+        "bank",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": []
+    },
+    "preference_direction": "quality_first",
+    "w_synthetic": 0.7,
+    "distance_weight": 0.3,
+    "graph_id": "dev_002_graph"
+  },
+  {
+    "group_id": "dev_002",
+    "utterance_id": "dev_002_v1",
+    "source_index": 1,
+    "split": "dev",
+    "variant_type": "V1",
+    "text": "Please visit the library, the shopping mall, the bank, and the supermarket today. Prioritize locations with high ratings and strong customer reviews.",
+    "gold_hard": {
+      "pois": [
+        "library",
+        "shopping_mall",
+        "bank",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": []
+    },
+    "preference_direction": "quality_first",
+    "w_synthetic": 0.7,
+    "distance_weight": 0.3,
+    "graph_id": "dev_002_graph"
+  },
+  {
+    "group_id": "dev_002",
+    "utterance_id": "dev_002_v2",
+    "source_index": 1,
+    "split": "dev",
+    "variant_type": "V2",
+    "text": "Your itinerary today includes visiting the library, the shopping mall, the bank, and the supermarket. Give top priority to reputable, well-reviewed venues.",
+    "gold_hard": {
+      "pois": [
+        "library",
+        "shopping_mall",
+        "bank",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": []
+    },
+    "preference_direction": "quality_first",
+    "w_synthetic": 0.7,
+    "distance_weight": 0.3,
+    "graph_id": "dev_002_graph"
+  },
+  {
+    "group_id": "dev_002",
+    "utterance_id": "dev_002_v3",
+    "source_index": 1,
+    "split": "dev",
+    "variant_type": "V3",
+    "text": "Hey, need you to stop by the library, the shopping mall, the bank, and the supermarket today. Aim for the highest-rated places since quality is the main goal.",
+    "gold_hard": {
+      "pois": [
+        "library",
+        "shopping_mall",
+        "bank",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": []
+    },
+    "preference_direction": "quality_first",
+    "w_synthetic": 0.7,
+    "distance_weight": 0.3,
+    "graph_id": "dev_002_graph"
+  },
+  {
+    "group_id": "dev_003",
+    "utterance_id": "dev_003_v0",
+    "source_index": 3,
+    "split": "dev",
+    "variant_type": "V0",
+    "text": "Today, make sure to visit the shopping mall, bank, pharmacy, and library. While planning your trip, prioritize going to high-rated places. It's important to stop by the bank before heading to the pharmacy.",
+    "gold_hard": {
+      "pois": [
+        "shopping_mall",
+        "bank",
+        "pharmacy",
+        "library"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "bank",
+          "pharmacy"
+        ]
+      ]
+    },
+    "preference_direction": "quality_first",
+    "w_synthetic": 0.8,
+    "distance_weight": 0.2,
+    "graph_id": "dev_003_graph"
+  },
+  {
+    "group_id": "dev_003",
+    "utterance_id": "dev_003_v1",
+    "source_index": 3,
+    "split": "dev",
+    "variant_type": "V1",
+    "text": "Please visit the shopping mall, the bank, the pharmacy, and the library today. Prioritize locations with high ratings and strong customer reviews. Make sure to visit the bank prior to the pharmacy.",
+    "gold_hard": {
+      "pois": [
+        "shopping_mall",
+        "bank",
+        "pharmacy",
+        "library"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "bank",
+          "pharmacy"
+        ]
+      ]
+    },
+    "preference_direction": "quality_first",
+    "w_synthetic": 0.8,
+    "distance_weight": 0.2,
+    "graph_id": "dev_003_graph"
+  },
+  {
+    "group_id": "dev_003",
+    "utterance_id": "dev_003_v2",
+    "source_index": 3,
+    "split": "dev",
+    "variant_type": "V2",
+    "text": "Your itinerary today includes visiting the shopping mall, the bank, the pharmacy, and the library. Remember to stop at the bank before heading to the pharmacy. Give top priority to reputable, well-reviewed venues.",
+    "gold_hard": {
+      "pois": [
+        "shopping_mall",
+        "bank",
+        "pharmacy",
+        "library"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "bank",
+          "pharmacy"
+        ]
+      ]
+    },
+    "preference_direction": "quality_first",
+    "w_synthetic": 0.8,
+    "distance_weight": 0.2,
+    "graph_id": "dev_003_graph"
+  },
+  {
+    "group_id": "dev_003",
+    "utterance_id": "dev_003_v3",
+    "source_index": 3,
+    "split": "dev",
+    "variant_type": "V3",
+    "text": "Hey, need you to stop by the shopping mall, the bank, the pharmacy, and the library today. Be sure to hit the bank first before the pharmacy. Aim for the highest-rated places since quality is the main goal.",
+    "gold_hard": {
+      "pois": [
+        "shopping_mall",
+        "bank",
+        "pharmacy",
+        "library"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "bank",
+          "pharmacy"
+        ]
+      ]
+    },
+    "preference_direction": "quality_first",
+    "w_synthetic": 0.8,
+    "distance_weight": 0.2,
+    "graph_id": "dev_003_graph"
+  },
+  {
+    "group_id": "dev_004",
+    "utterance_id": "dev_004_v0",
+    "source_index": 8,
+    "split": "dev",
+    "variant_type": "V0",
+    "text": "Today, make sure to visit the shopping mall, pharmacy, supermarket, and library. Please prioritize an efficient route to get everything done swiftly. Remember, you need to stop by the supermarket before heading to the library.",
+    "gold_hard": {
+      "pois": [
+        "shopping_mall",
+        "pharmacy",
+        "supermarket",
+        "library"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "supermarket",
+          "library"
+        ]
+      ]
+    },
+    "preference_direction": "distance_first",
+    "w_synthetic": 0.2,
+    "distance_weight": 0.8,
+    "graph_id": "dev_004_graph"
+  },
+  {
+    "group_id": "dev_004",
+    "utterance_id": "dev_004_v1",
+    "source_index": 8,
+    "split": "dev",
+    "variant_type": "V1",
+    "text": "Please visit the shopping mall, the pharmacy, the supermarket, and the library today. Focus on route efficiency and minimizing unnecessary travel time. Make sure to visit the supermarket prior to the library.",
+    "gold_hard": {
+      "pois": [
+        "shopping_mall",
+        "pharmacy",
+        "supermarket",
+        "library"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "supermarket",
+          "library"
+        ]
+      ]
+    },
+    "preference_direction": "distance_first",
+    "w_synthetic": 0.2,
+    "distance_weight": 0.8,
+    "graph_id": "dev_004_graph"
+  },
+  {
+    "group_id": "dev_004",
+    "utterance_id": "dev_004_v2",
+    "source_index": 8,
+    "split": "dev",
+    "variant_type": "V2",
+    "text": "Your itinerary today includes visiting the shopping mall, the pharmacy, the supermarket, and the library. Remember to stop at the supermarket before heading to the library. Keep the travel distance minimal and direct.",
+    "gold_hard": {
+      "pois": [
+        "shopping_mall",
+        "pharmacy",
+        "supermarket",
+        "library"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "supermarket",
+          "library"
+        ]
+      ]
+    },
+    "preference_direction": "distance_first",
+    "w_synthetic": 0.2,
+    "distance_weight": 0.8,
+    "graph_id": "dev_004_graph"
+  },
+  {
+    "group_id": "dev_004",
+    "utterance_id": "dev_004_v3",
+    "source_index": 8,
+    "split": "dev",
+    "variant_type": "V3",
+    "text": "Hey, need you to stop by the shopping mall, the pharmacy, the supermarket, and the library today. Be sure to hit the supermarket first before the library. Take the quickest and most efficient route possible.",
+    "gold_hard": {
+      "pois": [
+        "shopping_mall",
+        "pharmacy",
+        "supermarket",
+        "library"
+      ],
+      "time_limit": null,
+      "dependencies": [
+        [
+          "supermarket",
+          "library"
+        ]
+      ]
+    },
+    "preference_direction": "distance_first",
+    "w_synthetic": 0.2,
+    "distance_weight": 0.8,
+    "graph_id": "dev_004_graph"
+  },
+  {
+    "group_id": "dev_005",
+    "utterance_id": "dev_005_v0",
+    "source_index": 12,
+    "split": "dev",
+    "variant_type": "V0",
+    "text": "Make sure to visit the pharmacy, library, and supermarket today. It's important to prioritize locations that are well-rated as we go. Enjoy your day!",
+    "gold_hard": {
+      "pois": [
+        "pharmacy",
+        "library",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": []
+    },
+    "preference_direction": "quality_first",
+    "w_synthetic": 0.7,
+    "distance_weight": 0.3,
+    "graph_id": "dev_005_graph"
+  },
+  {
+    "group_id": "dev_005",
+    "utterance_id": "dev_005_v1",
+    "source_index": 12,
+    "split": "dev",
+    "variant_type": "V1",
+    "text": "Please visit the pharmacy, the library, and the supermarket today. Prioritize locations with high ratings and strong customer reviews.",
+    "gold_hard": {
+      "pois": [
+        "pharmacy",
+        "library",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": []
+    },
+    "preference_direction": "quality_first",
+    "w_synthetic": 0.7,
+    "distance_weight": 0.3,
+    "graph_id": "dev_005_graph"
+  },
+  {
+    "group_id": "dev_005",
+    "utterance_id": "dev_005_v2",
+    "source_index": 12,
+    "split": "dev",
+    "variant_type": "V2",
+    "text": "Your itinerary today includes visiting the pharmacy, the library, and the supermarket. Give top priority to reputable, well-reviewed venues.",
+    "gold_hard": {
+      "pois": [
+        "pharmacy",
+        "library",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": []
+    },
+    "preference_direction": "quality_first",
+    "w_synthetic": 0.7,
+    "distance_weight": 0.3,
+    "graph_id": "dev_005_graph"
+  },
+  {
+    "group_id": "dev_005",
+    "utterance_id": "dev_005_v3",
+    "source_index": 12,
+    "split": "dev",
+    "variant_type": "V3",
+    "text": "Hey, need you to stop by the pharmacy, the library, and the supermarket today. Aim for the highest-rated places since quality is the main goal.",
+    "gold_hard": {
+      "pois": [
+        "pharmacy",
+        "library",
+        "supermarket"
+      ],
+      "time_limit": null,
+      "dependencies": []
+    },
+    "preference_direction": "quality_first",
+    "w_synthetic": 0.7,
+    "distance_weight": 0.3,
+    "graph_id": "dev_005_graph"
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "call_id": "transfer_037_v0_parse_b",
+  "attempt_idx": 1,
+  "status": "success",
+  "start_time": "2026-09-13T07:33:18.626784+00:00",
+  "duration_sec": 4.899333238601685,
+  "status_code": 200,
+  "requested_model": "deepseek-v4-flash",
+  "returned_model": "deepseek-flash",
+  "raw_response": "{\"pois\":[\"library\",\"bank\",\"pharmacy\"],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.0,\"evidence\":{\"pois\":\"library, bank, and pharmacy\",\"time_limit\":\"no set time to return\",\"quality_weight\":\"aim to make the trip quick and efficient\"}}",
+  "usage": {
+    "prompt_tokens": 262,
+    "completion_tokens": 966,
+    "total_tokens": 1228,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 901
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 134
+  },
+  "request_payload": {
+    "model": "deepseek-v4-flash",
+    "temperature": 0.0,
+    "messages": [
+      {
+        "role": "system",
+        "content": "You extract route-planning intent."
+      },
+      {
+        "role": "user",
+        "content": "Read the user's route-planning instruction field by field before producing the final JSON.\n\nCheck: requested POI categories, return deadline, explicit visit order, and the direction of the quality-versus-distance preference. Each conclusion must be supported by the instruction itself.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nDo not infer a preference from any route or map. If no preference is stated, use 0.5.\n\nInstruction:\nToday, visit the library, bank, and pharmacy. Since there's no set time to return, aim to make the trip quick and efficient.\n"
+      }
+    ]
+  }
+}

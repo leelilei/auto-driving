@@ -1,0 +1,38 @@
+{
+  "call_id": "transfer_025_v0_review",
+  "attempt_idx": 2,
+  "status": "success",
+  "start_time": "2026-09-13T07:28:00.262356+00:00",
+  "duration_sec": 15.736419916152954,
+  "status_code": 200,
+  "requested_model": "deepseek-v4-flash",
+  "returned_model": "deepseek-flash",
+  "raw_response": "{\"intent\":{\"pois\":[\"pharmacy\"],\"time_limit\":1440,\"dependencies\":[],\"quality_weight\":0.0},\"evidence\":{\"pois\":\"pharmacy\",\"time_limit\":\"today\",\"quality_weight\":\"as quick and efficient as possible\"},\"changes\":[\"time_limit\",\"evidence.time_limit\"]}",
+  "usage": {
+    "prompt_tokens": 298,
+    "completion_tokens": 3378,
+    "total_tokens": 3676,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3311
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 170
+  },
+  "request_payload": {
+    "model": "deepseek-v4-flash",
+    "temperature": 0.0,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Resolve two candidate interpretations."
+      },
+      {
+        "role": "user",
+        "content": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. Candidate agreement is not proof of correctness.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not use route efficiency to infer what the user wants.\n\nInstruction:\nPlease make sure to visit the pharmacy today. Try to make the trip as quick and efficient as possible.\n\nCandidate A:\n{\"pois\": [\"pharmacy\"], \"time_limit\": 1440, \"dependencies\": [], \"quality_weight\": 0.0, \"evidence\": {\"pois\": \"pharmacy\", \"time_limit\": \"today\", \"quality_weight\": \"as quick and efficient as possible\"}}\n\nCandidate B:\n{\"pois\": [\"pharmacy\"], \"time_limit\": null, \"dependencies\": [], \"quality_weight\": 0.0, \"evidence\": {\"pois\": \"pharmacy\", \"quality_weight\": \"as quick and efficient as possible\"}}\n"
+      }
+    ]
+  }
+}

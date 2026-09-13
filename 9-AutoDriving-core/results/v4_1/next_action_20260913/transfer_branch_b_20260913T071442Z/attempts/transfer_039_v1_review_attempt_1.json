@@ -1,0 +1,38 @@
+{
+  "call_id": "transfer_039_v1_review",
+  "attempt_idx": 1,
+  "status": "success",
+  "start_time": "2026-09-13T07:34:28.013353+00:00",
+  "duration_sec": 10.344405174255371,
+  "status_code": 200,
+  "requested_model": "deepseek-v4-flash",
+  "returned_model": "deepseek-flash",
+  "raw_response": "{\"intent\":{\"pois\":[\"library\",\"pharmacy\"],\"time_limit\":1320,\"dependencies\":[[\"library\",\"pharmacy\"]],\"quality_weight\":0.5},\"evidence\":{\"pois\":\"visit the library and the pharmacy\",\"time_limit\":\"return home by 22:00\",\"dependencies\":\"visit the library prior to the pharmacy\",\"quality_weight\":\"balance good quality with route efficiency\"},\"changes\":[]}",
+  "usage": {
+    "prompt_tokens": 394,
+    "completion_tokens": 2257,
+    "total_tokens": 2651,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2169
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 394
+  },
+  "request_payload": {
+    "model": "deepseek-v4-flash",
+    "temperature": 0.0,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Resolve two candidate interpretations."
+      },
+      {
+        "role": "user",
+        "content": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. Candidate agreement is not proof of correctness.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not use route efficiency to infer what the user wants.\n\nInstruction:\nPlease visit the library and the pharmacy today. Ensure that you return home by 22:00. Try to balance good quality with route efficiency. Make sure to visit the library prior to the pharmacy.\n\nCandidate A:\n{\"pois\": [\"library\", \"pharmacy\"], \"time_limit\": 1320, \"dependencies\": [[\"library\", \"pharmacy\"]], \"quality_weight\": 0.5, \"evidence\": {\"pois\": \"visit the library and the pharmacy\", \"time_limit\": \"return home by 22:00\", \"dependencies\": \"visit the library prior to the pharmacy\", \"quality_weight\": \"balance good quality with route efficiency\"}}\n\nCandidate B:\n{\"pois\": [\"library\", \"pharmacy\"], \"time_limit\": 1320, \"dependencies\": [[\"library\", \"pharmacy\"]], \"quality_weight\": 0.5, \"evidence\": {\"pois\": \"visit the library and the pharmacy\", \"time_limit\": \"return home by 22:00\", \"dependencies\": \"visit the library prior to the pharmacy\", \"quality_weight\": \"balance good quality with route efficiency\"}}\n"
+      }
+    ]
+  }
+}

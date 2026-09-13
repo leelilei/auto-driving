@@ -1,0 +1,38 @@
+{
+  "call_id": "transfer_015_v0_parse_b",
+  "attempt_idx": 1,
+  "status": "success",
+  "start_time": "2026-09-13T07:21:12.505041+00:00",
+  "duration_sec": 4.739573955535889,
+  "status_code": 200,
+  "requested_model": "deepseek-v4-flash",
+  "returned_model": "deepseek-flash",
+  "raw_response": "{\"pois\":[\"shopping mall\",\"bank\",\"pharmacy\"],\"time_limit\":1020,\"dependencies\":[[\"bank\",\"pharmacy\"]],\"quality_weight\":1.0,\"evidence\":{\"pois\":\"visit the shopping mall, the bank, and the pharmacy\",\"time_limit\":\"return by 17:00\",\"dependencies\":\"go to the bank before heading to the pharmacy\",\"quality_weight\":\"highly rated for the best experience\"}}",
+  "usage": {
+    "prompt_tokens": 286,
+    "completion_tokens": 947,
+    "total_tokens": 1233,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 856
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 158
+  },
+  "request_payload": {
+    "model": "deepseek-v4-flash",
+    "temperature": 0.0,
+    "messages": [
+      {
+        "role": "system",
+        "content": "You extract route-planning intent."
+      },
+      {
+        "role": "user",
+        "content": "Read the user's route-planning instruction field by field before producing the final JSON.\n\nCheck: requested POI categories, return deadline, explicit visit order, and the direction of the quality-versus-distance preference. Each conclusion must be supported by the instruction itself.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nDo not infer a preference from any route or map. If no preference is stated, use 0.5.\n\nInstruction:\nToday, you need to visit the shopping mall, the bank, and the pharmacy. Make sure to return by 17:00. Aim to visit places that are highly rated for the best experience. Be sure to go to the bank before heading to the pharmacy.\n"
+      }
+    ]
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "utterance_id": "transfer_026_v0",
+  "group_id": "transfer_026",
+  "variant_type": "V0",
+  "source_index": 60,
+  "gold_hard": {
+    "pois": [
+      "bank",
+      "library",
+      "supermarket",
+      "shopping_mall"
+    ],
+    "time_limit": "19:00",
+    "dependencies": [
+      [
+        "bank",
+        "library"
+      ],
+      [
+        "library",
+        "supermarket"
+      ]
+    ]
+  },
+  "w_synthetic": 0.9,
+  "intent_a": {
+    "requested_pois": [
+      "bank",
+      "library",
+      "shopping_mall",
+      "supermarket"
+    ],
+    "time_limit": 1140,
+    "dependencies": [
+      [
+        "bank",
+        "library"
+      ],
+      [
+        "library",
+        "supermarket"
+      ]
+    ],
+    "quality_weight": 0.9
+  },
+  "intent_b": {
+    "requested_pois": [
+      "bank",
+      "library",
+      "shopping_mall",
+      "supermarket"
+    ],
+    "time_limit": 1140,
+    "dependencies": [
+      [
+        "bank",
+        "library"
+      ],
+      [
+        "library",
+        "supermarket"
+      ]
+    ],
+    "quality_weight": 1.0
+  },
+  "intent_rev": {
+    "requested_pois": [
+      "bank",
+      "library",
+      "shopping_mall",
+      "supermarket"
+    ],
+    "time_limit": 1140,
+    "dependencies": [
+      [
+        "bank",
+        "library"
+      ],
+      [
+        "bank",
+        "shopping_mall"
+      ],
+      [
+        "library",
+        "supermarket"
+      ]
+    ],
+    "quality_weight": 1.0
+  },
+  "intent_llmap": {
+    "requested_pois": [
+      "bank",
+      "library",
+      "shopping_mall",
+      "supermarket"
+    ],
+    "time_limit": 1140,
+    "dependencies": [
+      [
+        "bank",
+        "library"
+      ],
+      [
+        "library",
+        "supermarket"
+      ]
+    ],
+    "quality_weight": 0.7
+  },
+  "eval_a": {
+    "path": [
+      0,
+      1,
+      5,
+      8,
+      3,
+      9
+    ],
+    "group_order": [
+      0,
+      3,
+      4,
+      1
+    ],
+    "group_coverage": 100.0,
+    "avg_rating": 3.975,
+    "avg_num_ratings": 188.75,
+    "path_length_km": 16.258572126021683,
+    "real_time_hours": 14.375285737534057,
+    "time_violations_hours": 0.0,
+    "dependency_violations": 0,
+    "availability_violations": 0,
+    "is_valid": true
+  },
+  "eval_b": {
+    "path": [
+      0,
+      2,
+      6,
+      8,
+      3,
+      9
+    ],
+    "group_order": [
+      0,
+      3,
+      4,
+      1
+    ],
+    "group_coverage": 100.0,
+    "avg_rating": 4.425,
+    "avg_num_ratings": 311.5,
+    "path_length_km": 32.73695271862443,
+    "real_time_hours": 14.924565090620813,
+    "time_violations_hours": 0.0,
+    "dependency_violations": 0,
+    "availability_violations": 0,
+    "is_valid": true
+  },
+  "eval_rev": {
+    "path": [
+      0,
+      6,
+      2,
+      8,
+      3,
+      9
+    ],
+    "group_order": [
+      3,
+      0,
+      4,
+      1
+    ],
+    "group_coverage": 100.0,
+    "avg_rating": 4.425,
+    "avg_num_ratings": 311.5,
+    "path_length_km": 31.453633487697687,
+    "real_time_hours": 14.881787782923256,
+    "time_violations_hours": 0.0,
+    "dependency_violations": 0,
+    "availability_violations": 0,
+    "is_valid": true
+  },
+  "eval_llmap": {
+    "path": [
+      0,
+      1,
+      5,
+      8,
+      3,
+      9
+    ],
+    "group_order": [
+      0,
+      3,
+      4,
+      1
+    ],
+    "group_coverage": 100.0,
+    "avg_rating": 3.975,
+    "avg_num_ratings": 188.75,
+    "path_length_km": 16.258572126021683,
+    "real_time_hours": 14.375285737534057,
+    "time_violations_hours": 0.0,
+    "dependency_violations": 0,
+    "availability_violations": 0,
+    "is_valid": true
+  },
+  "util_a": 0.6531164278739784,
+  "util_b": 0.85625,
+  "util_rev": 0.85625,
+  "util_llmap": 0.47184928362193496,
+  "delta_u": 0.20313357212602157,
+  "h_flag": 0,
+  "param_diff": 1
+}

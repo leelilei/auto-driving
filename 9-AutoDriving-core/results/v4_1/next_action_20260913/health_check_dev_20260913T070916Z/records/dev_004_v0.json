@@ -1,0 +1,193 @@
+{
+  "utterance_id": "dev_004_v0",
+  "group_id": "dev_004",
+  "variant_type": "V0",
+  "source_index": 8,
+  "gold_hard": {
+    "pois": [
+      "shopping_mall",
+      "pharmacy",
+      "supermarket",
+      "library"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "supermarket",
+        "library"
+      ]
+    ]
+  },
+  "w_synthetic": 0.2,
+  "intent_a": {
+    "requested_pois": [
+      "library",
+      "pharmacy",
+      "shopping_mall",
+      "supermarket"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "supermarket",
+        "library"
+      ]
+    ],
+    "quality_weight": 0.2
+  },
+  "intent_b": {
+    "requested_pois": [
+      "library",
+      "pharmacy",
+      "shopping_mall",
+      "supermarket"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "supermarket",
+        "library"
+      ]
+    ],
+    "quality_weight": 0.0
+  },
+  "intent_rev": {
+    "requested_pois": [
+      "library",
+      "pharmacy",
+      "shopping_mall",
+      "supermarket"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "supermarket",
+        "library"
+      ]
+    ],
+    "quality_weight": 0.0
+  },
+  "intent_llmap": {
+    "requested_pois": [
+      "library",
+      "pharmacy",
+      "shopping_mall",
+      "supermarket"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "supermarket",
+        "library"
+      ]
+    ],
+    "quality_weight": 0.0
+  },
+  "eval_a": {
+    "path": [
+      0,
+      1,
+      3,
+      5,
+      7,
+      9
+    ],
+    "group_order": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "group_coverage": 100.0,
+    "avg_rating": 3.825,
+    "avg_num_ratings": 111.0,
+    "path_length_km": 18.947417159490815,
+    "real_time_hours": 14.381580571983026,
+    "time_violations_hours": 0.0,
+    "dependency_violations": 0,
+    "availability_violations": 0,
+    "is_valid": true
+  },
+  "eval_b": {
+    "path": [
+      0,
+      1,
+      3,
+      5,
+      7,
+      9
+    ],
+    "group_order": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "group_coverage": 100.0,
+    "avg_rating": 3.825,
+    "avg_num_ratings": 111.0,
+    "path_length_km": 18.947417159490815,
+    "real_time_hours": 14.381580571983026,
+    "time_violations_hours": 0.0,
+    "dependency_violations": 0,
+    "availability_violations": 0,
+    "is_valid": true
+  },
+  "eval_rev": {
+    "path": [
+      0,
+      1,
+      3,
+      5,
+      7,
+      9
+    ],
+    "group_order": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "group_coverage": 100.0,
+    "avg_rating": 3.825,
+    "avg_num_ratings": 111.0,
+    "path_length_km": 18.947417159490815,
+    "real_time_hours": 14.381580571983026,
+    "time_violations_hours": 0.0,
+    "dependency_violations": 0,
+    "availability_violations": 0,
+    "is_valid": true
+  },
+  "eval_llmap": {
+    "path": [
+      0,
+      1,
+      3,
+      5,
+      7,
+      9
+    ],
+    "group_order": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "group_coverage": 100.0,
+    "avg_rating": 3.825,
+    "avg_num_ratings": 111.0,
+    "path_length_km": 18.947417159490815,
+    "real_time_hours": 14.381580571983026,
+    "time_violations_hours": 0.0,
+    "dependency_violations": 0,
+    "availability_violations": 0,
+    "is_valid": true
+  },
+  "util_a": -0.010329337275926526,
+  "util_b": -0.18947417159490815,
+  "util_rev": -0.18947417159490815,
+  "util_llmap": -0.18947417159490815,
+  "delta_u": 0.17914483431898162,
+  "h_flag": 0,
+  "param_diff": 1
+}

@@ -1,0 +1,38 @@
+{
+  "call_id": "transfer_009_v0_parse_b",
+  "attempt_idx": 1,
+  "status": "success",
+  "start_time": "2026-09-13T07:18:38.440423+00:00",
+  "duration_sec": 3.954406976699829,
+  "status_code": 200,
+  "requested_model": "deepseek-v4-flash",
+  "returned_model": "deepseek-flash",
+  "raw_response": "{\"pois\":[\"library\",\"supermarket\"],\"time_limit\":1200,\"dependencies\":[],\"quality_weight\":0.8,\"evidence\":{\"pois\":\"visit the library and the supermarket\",\"time_limit\":\"return by 20:00\",\"quality_weight\":\"Focus on visiting places with high ratings, even if it means taking a slightly longer route.\"}}",
+  "usage": {
+    "prompt_tokens": 288,
+    "completion_tokens": 780,
+    "total_tokens": 1068,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 706
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 160
+  },
+  "request_payload": {
+    "model": "deepseek-v4-flash",
+    "temperature": 0.0,
+    "messages": [
+      {
+        "role": "system",
+        "content": "You extract route-planning intent."
+      },
+      {
+        "role": "user",
+        "content": "Read the user's route-planning instruction field by field before producing the final JSON.\n\nCheck: requested POI categories, return deadline, explicit visit order, and the direction of the quality-versus-distance preference. Each conclusion must be supported by the instruction itself.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nDo not infer a preference from any route or map. If no preference is stated, use 0.5.\n\nInstruction:\nToday, you need to visit the library and the supermarket. Please make sure to return by 20:00. Focus on visiting places with high ratings, even if it means taking a slightly longer route. There are no particular places that you must visit in a specific order.\n"
+      }
+    ]
+  }
+}

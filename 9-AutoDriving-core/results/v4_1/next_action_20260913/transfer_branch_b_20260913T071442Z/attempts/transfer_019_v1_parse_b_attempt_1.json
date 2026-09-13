@@ -1,0 +1,38 @@
+{
+  "call_id": "transfer_019_v1_parse_b",
+  "attempt_idx": 1,
+  "status": "success",
+  "start_time": "2026-09-13T07:23:34.911023+00:00",
+  "duration_sec": 6.5740861892700195,
+  "status_code": 200,
+  "requested_model": "deepseek-v4-flash",
+  "returned_model": "deepseek-flash",
+  "raw_response": "{\"pois\":[\"library\",\"supermarket\",\"pharmacy\",\"shopping mall\",\"bank\"],\"time_limit\":null,\"dependencies\":[[\"supermarket\",\"pharmacy\"]],\"quality_weight\":1.0,\"evidence\":{\"pois\":\"Please visit the library, the supermarket, the pharmacy, the shopping mall, and the bank today.\",\"dependencies\":\"visit the supermarket prior to the pharmacy\",\"quality_weight\":\"Prioritize locations with high ratings and strong customer reviews\"}}",
+  "usage": {
+    "prompt_tokens": 275,
+    "completion_tokens": 1411,
+    "total_tokens": 1686,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1314
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 147
+  },
+  "request_payload": {
+    "model": "deepseek-v4-flash",
+    "temperature": 0.0,
+    "messages": [
+      {
+        "role": "system",
+        "content": "You extract route-planning intent."
+      },
+      {
+        "role": "user",
+        "content": "Read the user's route-planning instruction field by field before producing the final JSON.\n\nCheck: requested POI categories, return deadline, explicit visit order, and the direction of the quality-versus-distance preference. Each conclusion must be supported by the instruction itself.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nDo not infer a preference from any route or map. If no preference is stated, use 0.5.\n\nInstruction:\nPlease visit the library, the supermarket, the pharmacy, the shopping mall, and the bank today. Prioritize locations with high ratings and strong customer reviews. Make sure to visit the supermarket prior to the pharmacy.\n"
+      }
+    ]
+  }
+}

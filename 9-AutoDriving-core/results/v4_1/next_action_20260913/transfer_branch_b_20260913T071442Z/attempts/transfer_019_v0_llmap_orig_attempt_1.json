@@ -1,0 +1,38 @@
+{
+  "call_id": "transfer_019_v0_llmap_orig",
+  "attempt_idx": 1,
+  "status": "success",
+  "start_time": "2026-09-13T07:24:03.625095+00:00",
+  "duration_sec": 7.522069931030273,
+  "status_code": 200,
+  "requested_model": "deepseek-v4-flash",
+  "returned_model": "deepseek-flash",
+  "raw_response": "{\"pois\":[\"library\",\"supermarket\",\"pharmacy\",\"shopping mall\",\"bank\"],\"time_limit\":\"None\",\"dependencies\":[[\"supermarket\",\"pharmacy\"]],\"quality_weight\":0.7,\"distance_weight\":0.3}",
+  "usage": {
+    "prompt_tokens": 265,
+    "completion_tokens": 1599,
+    "total_tokens": 1864,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1548
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 137
+  },
+  "request_payload": {
+    "model": "deepseek-v4-flash",
+    "temperature": 0.0,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Extract POIs, constraints, and weights from a human instruction. POIs should be a simple string array. Dependencies should be an empty list if no sequence requirements are mentioned. Weights should be between 0 and 1, and sum to 1. Extract them from language about importance of POI rating vs route length.\n\nOutput must be valid JSON with structure:\n{\n    \"pois\": [\"poi1\", \"poi2\", ...],\n    \"time_limit\": \"HH:00\" or \"None\",\n    \"dependencies\": [[\"poi1\", \"poi2\"], ...],\n    \"quality_weight\": float,\n    \"distance_weight\": float\n}\n"
+      },
+      {
+        "role": "user",
+        "content": "Extract POIs, constraints, and weights from this instruction as JSON:\nToday, you'll need to visit the library, supermarket, pharmacy, shopping mall, and bank. Make sure to prioritize places with excellent ratings. You'll need to visit the supermarket before heading to the pharmacy.\n\nOnly output the JSON object. No prefix, additional text, or explanation.\n"
+      }
+    ]
+  }
+}

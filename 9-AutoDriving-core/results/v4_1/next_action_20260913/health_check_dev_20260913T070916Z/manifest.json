@@ -1,0 +1,9 @@
+{
+  "split": "dev",
+  "timestamp": "2026-09-13T07:09:16.815507+00:00",
+  "git_commit": "dbaa94b497340c800c1eee4e825e955d7c917f72",
+  "model": "deepseek-v4-flash",
+  "base_url": "https://api.deepseek.com",
+  "utterances_count": 5,
+  "scenarios_count": 5
+}

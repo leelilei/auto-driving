@@ -1,0 +1,38 @@
+{
+  "call_id": "transfer_009_v3_review",
+  "attempt_idx": 1,
+  "status": "success",
+  "start_time": "2026-09-13T07:19:03.717261+00:00",
+  "duration_sec": 15.62209415435791,
+  "status_code": 200,
+  "requested_model": "deepseek-v4-flash",
+  "returned_model": "deepseek-flash",
+  "raw_response": "{\"intent\":{\"pois\":[\"library\",\"supermarket\"],\"time_limit\":1200,\"dependencies\":[],\"quality_weight\":1.0},\"evidence\":{\"pois\":\"library and the supermarket\",\"time_limit\":\"back by 20:00\",\"quality_weight\":\"highest-rated places since quality is the main goal\"},\"changes\":[]}",
+  "usage": {
+    "prompt_tokens": 345,
+    "completion_tokens": 3381,
+    "total_tokens": 3726,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3308
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 345
+  },
+  "request_payload": {
+    "model": "deepseek-v4-flash",
+    "temperature": 0.0,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Resolve two candidate interpretations."
+      },
+      {
+        "role": "user",
+        "content": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. Candidate agreement is not proof of correctness.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not use route efficiency to infer what the user wants.\n\nInstruction:\nHey, need you to stop by the library and the supermarket today. Make sure we are back by 20:00. Aim for the highest-rated places since quality is the main goal.\n\nCandidate A:\n{\"pois\": [\"library\", \"supermarket\"], \"time_limit\": 1200, \"dependencies\": [], \"quality_weight\": 1.0, \"evidence\": {\"pois\": \"library and the supermarket\", \"time_limit\": \"back by 20:00\", \"quality_weight\": \"highest-rated places since quality is the main goal\"}}\n\nCandidate B:\n{\"pois\": [\"library\", \"supermarket\"], \"time_limit\": 1200, \"dependencies\": [], \"quality_weight\": 1, \"evidence\": {\"pois\": \"library and the supermarket\", \"time_limit\": \"back by 20:00\", \"quality_weight\": \"quality is the main goal\"}}\n"
+      }
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "N_utterances": 160,
+  "N_groups": 40,
+  "budget_K": 16,
+  "policies": {
+    "B0_no_review": {
+      "TSR_pct": 100.0,
+      "GTSR_pct": 100.0,
+      "cond_flip_rate_pct": 0.0,
+      "full_flip_or_failure_pct": 0.0,
+      "mean_composite_utility": 0.4797,
+      "reviews_conducted": 0,
+      "corrected_count": 0,
+      "degraded_count": 0
+    },
+    "B3_random": {
+      "TSR_pct": 100.0,
+      "GTSR_pct": 100.0,
+      "cond_flip_rate_pct": 0.0,
+      "full_flip_or_failure_pct": 0.0,
+      "mean_composite_utility": 0.4928,
+      "reviews_conducted": 16,
+      "corrected_count": 0,
+      "degraded_count": 0
+    },
+    "B4_param_diff": {
+      "TSR_pct": 100.0,
+      "GTSR_pct": 100.0,
+      "cond_flip_rate_pct": 0.0,
+      "full_flip_or_failure_pct": 0.0,
+      "mean_composite_utility": 0.4811,
+      "reviews_conducted": 16,
+      "corrected_count": 0,
+      "degraded_count": 0
+    },
+    "DARC_delta_u": {
+      "TSR_pct": 100.0,
+      "GTSR_pct": 100.0,
+      "cond_flip_rate_pct": 0.0,
+      "full_flip_or_failure_pct": 0.0,
+      "mean_composite_utility": 0.4812,
+      "reviews_conducted": 16,
+      "corrected_count": 0,
+      "degraded_count": 0
+    },
+    "B6_all_review": {
+      "TSR_pct": 100.0,
+      "GTSR_pct": 100.0,
+      "cond_flip_rate_pct": 0.0,
+      "full_flip_or_failure_pct": 0.0,
+      "mean_composite_utility": 0.526,
+      "reviews_conducted": 160,
+      "corrected_count": 0,
+      "degraded_count": 0
+    }
+  },
+  "system_level_v0": {
+    "LLMAP_adapted_baseline": {
+      "count": 40,
+      "valid_pct": 100.0,
+      "mean_group_coverage_pct": 100.0,
+      "mean_path_length_km": 19.54,
+      "mean_rating": 4.26,
+      "time_violations_count": 0,
+      "dependency_violations_count": 0,
+      "availability_violations_count": 0
+    },
+    "DARC_pipeline_A": {
+      "count": 40,
+      "valid_pct": 100.0,
+      "mean_group_coverage_pct": 100.0,
+      "mean_path_length_km": 18.04,
+      "mean_rating": 4.21,
+      "time_violations_count": 0,
+      "dependency_violations_count": 0,
+      "availability_violations_count": 0
+    }
+  }
+}

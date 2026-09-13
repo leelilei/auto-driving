@@ -1,0 +1,86 @@
+{
+  "utterance_id": "transfer_028_v3",
+  "group_id": "transfer_028",
+  "variant_type": "V3",
+  "source_index": 67,
+  "gold_hard": {
+    "pois": [
+      "bank",
+      "supermarket"
+    ],
+    "time_limit": null,
+    "dependencies": []
+  },
+  "w_synthetic": 0.9,
+  "intent_a": {
+    "requested_pois": [
+      "bank",
+      "supermarket"
+    ],
+    "time_limit": null,
+    "dependencies": [],
+    "quality_weight": 1.0
+  },
+  "intent_b": {
+    "requested_pois": [
+      "bank",
+      "supermarket"
+    ],
+    "time_limit": null,
+    "dependencies": [],
+    "quality_weight": 1.0
+  },
+  "intent_rev": null,
+  "intent_llmap": null,
+  "eval_a": {
+    "path": [
+      0,
+      2,
+      3,
+      5
+    ],
+    "group_order": [
+      1,
+      3
+    ],
+    "group_coverage": 100.0,
+    "avg_rating": 4.35,
+    "avg_num_ratings": 209.0,
+    "path_length_km": 13.61104488090046,
+    "real_time_hours": 11.287034829363348,
+    "time_violations_hours": 0.0,
+    "dependency_violations": 0,
+    "availability_violations": 0,
+    "is_valid": true
+  },
+  "eval_b": {
+    "path": [
+      0,
+      2,
+      3,
+      5
+    ],
+    "group_order": [
+      1,
+      3
+    ],
+    "group_coverage": 100.0,
+    "avg_rating": 4.35,
+    "avg_num_ratings": 209.0,
+    "path_length_km": 13.61104488090046,
+    "real_time_hours": 11.287034829363348,
+    "time_violations_hours": 0.0,
+    "dependency_violations": 0,
+    "availability_violations": 0,
+    "is_valid": true
+  },
+  "eval_rev": null,
+  "eval_llmap": null,
+  "util_a": 0.8374999999999999,
+  "util_b": 0.8374999999999999,
+  "util_rev": -1.0,
+  "util_llmap": -1.0,
+  "delta_u": 0.0,
+  "h_flag": 0,
+  "param_diff": 0
+}

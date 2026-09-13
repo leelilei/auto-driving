@@ -1,0 +1,38 @@
+{
+  "call_id": "transfer_019_v0_parse_a",
+  "attempt_idx": 1,
+  "status": "success",
+  "start_time": "2026-09-13T07:23:20.648980+00:00",
+  "duration_sec": 3.200221300125122,
+  "status_code": 200,
+  "requested_model": "deepseek-v4-flash",
+  "returned_model": "deepseek-flash",
+  "raw_response": "{\"pois\":[\"library\",\"supermarket\",\"pharmacy\",\"shopping mall\",\"bank\"],\"time_limit\":null,\"dependencies\":[[\"supermarket\",\"pharmacy\"]],\"quality_weight\":0.8,\"evidence\":{\"pois\":\"library, supermarket, pharmacy, shopping mall, and bank\",\"dependencies\":\"supermarket before heading to the pharmacy\",\"quality_weight\":\"prioritize places with excellent ratings\"}}",
+  "usage": {
+    "prompt_tokens": 234,
+    "completion_tokens": 503,
+    "total_tokens": 737,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 419
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 234
+  },
+  "request_payload": {
+    "model": "deepseek-v4-flash",
+    "temperature": 0.0,
+    "messages": [
+      {
+        "role": "system",
+        "content": "You extract route-planning intent."
+      },
+      {
+        "role": "user",
+        "content": "You extract route-planning intent from the user's instruction.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nUse only the instruction. Do not invent constraints. If no preference is stated, use 0.5.\n\nInstruction:\nToday, you'll need to visit the library, supermarket, pharmacy, shopping mall, and bank. Make sure to prioritize places with excellent ratings. You'll need to visit the supermarket before heading to the pharmacy.\n"
+      }
+    ]
+  }
+}

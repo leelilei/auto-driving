@@ -1,0 +1,104 @@
+{
+  "utterance_id": "transfer_012_v2",
+  "group_id": "transfer_012",
+  "variant_type": "V2",
+  "source_index": 29,
+  "gold_hard": {
+    "pois": [
+      "shopping_mall"
+    ],
+    "time_limit": "20:00",
+    "dependencies": []
+  },
+  "w_synthetic": 0.5,
+  "intent_a": {
+    "requested_pois": [
+      "shopping_mall"
+    ],
+    "time_limit": 1200,
+    "dependencies": [],
+    "quality_weight": 0.5
+  },
+  "intent_b": {
+    "requested_pois": [
+      "shopping_mall"
+    ],
+    "time_limit": 1200,
+    "dependencies": [],
+    "quality_weight": 0.5
+  },
+  "intent_rev": {
+    "requested_pois": [
+      "shopping_mall"
+    ],
+    "time_limit": 1200,
+    "dependencies": [],
+    "quality_weight": 0.5
+  },
+  "intent_llmap": null,
+  "eval_a": {
+    "path": [
+      0,
+      2,
+      3
+    ],
+    "group_order": [
+      0
+    ],
+    "group_coverage": 100.0,
+    "avg_rating": 4.9,
+    "avg_num_ratings": 364.0,
+    "path_length_km": 12.990134112943704,
+    "real_time_hours": 12.433004470431456,
+    "time_violations_hours": 0.0,
+    "dependency_violations": 0,
+    "availability_violations": 0,
+    "is_valid": true
+  },
+  "eval_b": {
+    "path": [
+      0,
+      2,
+      3
+    ],
+    "group_order": [
+      0
+    ],
+    "group_coverage": 100.0,
+    "avg_rating": 4.9,
+    "avg_num_ratings": 364.0,
+    "path_length_km": 12.990134112943704,
+    "real_time_hours": 12.433004470431456,
+    "time_violations_hours": 0.0,
+    "dependency_violations": 0,
+    "availability_violations": 0,
+    "is_valid": true
+  },
+  "eval_rev": {
+    "path": [
+      0,
+      2,
+      3
+    ],
+    "group_order": [
+      0
+    ],
+    "group_coverage": 100.0,
+    "avg_rating": 4.9,
+    "avg_num_ratings": 364.0,
+    "path_length_km": 12.990134112943704,
+    "real_time_hours": 12.433004470431456,
+    "time_violations_hours": 0.0,
+    "dependency_violations": 0,
+    "availability_violations": 0,
+    "is_valid": true
+  },
+  "eval_llmap": null,
+  "util_a": 0.4225493294352815,
+  "util_b": 0.4225493294352815,
+  "util_rev": 0.4225493294352815,
+  "util_llmap": -1.0,
+  "delta_u": 0.0,
+  "h_flag": 0,
+  "param_diff": 0
+}

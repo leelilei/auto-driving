@@ -1,0 +1,38 @@
+{
+  "call_id": "transfer_004_v0_parse_b",
+  "attempt_idx": 1,
+  "status": "success",
+  "start_time": "2026-09-13T07:16:07.970982+00:00",
+  "duration_sec": 6.15568208694458,
+  "status_code": 200,
+  "requested_model": "deepseek-v4-flash",
+  "returned_model": "deepseek-flash",
+  "raw_response": "{\"pois\":[\"shopping mall\"],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.9,\"evidence\":{\"pois\":\"visit the shopping mall\",\"quality_weight\":\"quality of our destinations is quite important\"}}",
+  "usage": {
+    "prompt_tokens": 286,
+    "completion_tokens": 760,
+    "total_tokens": 1046,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 710
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 158
+  },
+  "request_payload": {
+    "model": "deepseek-v4-flash",
+    "temperature": 0.0,
+    "messages": [
+      {
+        "role": "system",
+        "content": "You extract route-planning intent."
+      },
+      {
+        "role": "user",
+        "content": "Read the user's route-planning instruction field by field before producing the final JSON.\n\nCheck: requested POI categories, return deadline, explicit visit order, and the direction of the quality-versus-distance preference. Each conclusion must be supported by the instruction itself.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nDo not infer a preference from any route or map. If no preference is stated, use 0.5.\n\nInstruction:\nLet's make sure to visit the shopping mall today. Since the quality of our destinations is quite important, we should prioritize a place with a high rating for a better experience. There's no specific order needed for our visit, so we have flexibility in our schedule.\n"
+      }
+    ]
+  }
+}

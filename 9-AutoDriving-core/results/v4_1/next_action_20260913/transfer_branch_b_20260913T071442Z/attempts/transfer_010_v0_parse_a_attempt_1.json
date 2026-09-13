@@ -1,0 +1,38 @@
+{
+  "call_id": "transfer_010_v0_parse_a",
+  "attempt_idx": 1,
+  "status": "success",
+  "start_time": "2026-09-13T07:19:02.943535+00:00",
+  "duration_sec": 2.9614298343658447,
+  "status_code": 200,
+  "requested_model": "deepseek-v4-flash",
+  "returned_model": "deepseek-flash",
+  "raw_response": "{\"pois\":[\"shopping mall\",\"supermarket\",\"library\",\"pharmacy\",\"bank\"],\"time_limit\":1080,\"dependencies\":[],\"quality_weight\":0.8,\"evidence\":{\"pois\":\"shopping mall, supermarket, library, pharmacy, and bank\",\"time_limit\":\"return by 18:00\",\"quality_weight\":\"known for good ratings\"}}",
+  "usage": {
+    "prompt_tokens": 246,
+    "completion_tokens": 470,
+    "total_tokens": 716,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 394
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 246
+  },
+  "request_payload": {
+    "model": "deepseek-v4-flash",
+    "temperature": 0.0,
+    "messages": [
+      {
+        "role": "system",
+        "content": "You extract route-planning intent."
+      },
+      {
+        "role": "user",
+        "content": "You extract route-planning intent from the user's instruction.\n\nReturn one JSON object only, with exactly these keys:\n- pois: array of requested POI category strings\n- time_limit: return deadline as minutes after midnight, or null\n- dependencies: array of [before, after] category pairs\n- quality_weight: number in [0,1], where higher means stronger preference for place quality and lower means stronger preference for short travel distance\n- evidence: object mapping each nonempty field to a short verbatim span from the instruction\n\nUse only the instruction. Do not invent constraints. If no preference is stated, use 0.5.\n\nInstruction:\nToday, we need to visit the shopping mall, supermarket, library, pharmacy, and bank. Please make sure to return by 18:00. Aim for visiting places that are known for good ratings on our list. No particular order is required for visiting these locations.\n"
+      }
+    ]
+  }
+}

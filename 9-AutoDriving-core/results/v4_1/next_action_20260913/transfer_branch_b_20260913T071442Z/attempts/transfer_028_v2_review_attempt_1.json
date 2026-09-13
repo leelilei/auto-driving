@@ -1,0 +1,38 @@
+{
+  "call_id": "transfer_028_v2_review",
+  "attempt_idx": 1,
+  "status": "success",
+  "start_time": "2026-09-13T07:29:04.432471+00:00",
+  "duration_sec": 5.497711181640625,
+  "status_code": 200,
+  "requested_model": "deepseek-v4-flash",
+  "returned_model": "deepseek-flash",
+  "raw_response": "{\"intent\":{\"pois\":[\"bank\",\"supermarket\"],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":1.0},\"evidence\":{\"pois\":\"visiting the bank and the supermarket\",\"quality_weight\":\"top priority to reputable, well-reviewed venues\"},\"changes\":[]}",
+  "usage": {
+    "prompt_tokens": 310,
+    "completion_tokens": 1118,
+    "total_tokens": 1428,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1055
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 310
+  },
+  "request_payload": {
+    "model": "deepseek-v4-flash",
+    "temperature": 0.0,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Resolve two candidate interpretations."
+      },
+      {
+        "role": "user",
+        "content": "Resolve two candidate interpretations of one route-planning instruction. The instruction is the sole authority. Candidate agreement is not proof of correctness.\n\nReturn one JSON object only:\n{\"intent\":{\"pois\":[],\"time_limit\":null,\"dependencies\":[],\"quality_weight\":0.5},\"evidence\":{},\"changes\":[]}\n\nEvidence must quote short spans from the instruction. Changes must name every candidate field you revised. Do not use route efficiency to infer what the user wants.\n\nInstruction:\nYour itinerary today includes visiting the bank and the supermarket. Give top priority to reputable, well-reviewed venues.\n\nCandidate A:\n{\"pois\": [\"bank\", \"supermarket\"], \"time_limit\": null, \"dependencies\": [], \"quality_weight\": 1.0, \"evidence\": {\"pois\": \"visiting the bank and the supermarket\", \"quality_weight\": \"top priority to reputable, well-reviewed venues\"}}\n\nCandidate B:\n{\"pois\": [\"bank\", \"supermarket\"], \"time_limit\": null, \"dependencies\": [], \"quality_weight\": 1.0, \"evidence\": {\"pois\": \"visiting the bank and the supermarket\", \"quality_weight\": \"Give top priority to reputable, well-reviewed venues.\"}}\n"
+      }
+    ]
+  }
+}

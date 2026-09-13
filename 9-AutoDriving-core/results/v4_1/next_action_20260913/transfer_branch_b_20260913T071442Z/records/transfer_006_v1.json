@@ -1,0 +1,134 @@
+{
+  "utterance_id": "transfer_006_v1",
+  "group_id": "transfer_006",
+  "variant_type": "V1",
+  "source_index": 18,
+  "gold_hard": {
+    "pois": [
+      "supermarket",
+      "shopping_mall",
+      "library",
+      "pharmacy"
+    ],
+    "time_limit": null,
+    "dependencies": []
+  },
+  "w_synthetic": 0.7,
+  "intent_a": {
+    "requested_pois": [
+      "library",
+      "pharmacy",
+      "shopping_mall",
+      "supermarket"
+    ],
+    "time_limit": null,
+    "dependencies": [],
+    "quality_weight": 0.9
+  },
+  "intent_b": {
+    "requested_pois": [
+      "library",
+      "pharmacy",
+      "shopping_mall",
+      "supermarket"
+    ],
+    "time_limit": null,
+    "dependencies": [],
+    "quality_weight": 1.0
+  },
+  "intent_rev": {
+    "requested_pois": [
+      "library",
+      "pharmacy",
+      "shopping_mall",
+      "supermarket"
+    ],
+    "time_limit": null,
+    "dependencies": [],
+    "quality_weight": 1.0
+  },
+  "intent_llmap": null,
+  "eval_a": {
+    "path": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      9
+    ],
+    "group_order": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "group_coverage": 100.0,
+    "avg_rating": 4.7,
+    "avg_num_ratings": 467.0,
+    "path_length_km": 44.17754194237812,
+    "real_time_hours": 15.222584731412603,
+    "time_violations_hours": 0.0,
+    "dependency_violations": 0,
+    "availability_violations": 0,
+    "is_valid": true
+  },
+  "eval_b": {
+    "path": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      9
+    ],
+    "group_order": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "group_coverage": 100.0,
+    "avg_rating": 4.7,
+    "avg_num_ratings": 467.0,
+    "path_length_km": 44.17754194237812,
+    "real_time_hours": 15.222584731412603,
+    "time_violations_hours": 0.0,
+    "dependency_violations": 0,
+    "availability_violations": 0,
+    "is_valid": true
+  },
+  "eval_rev": {
+    "path": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      9
+    ],
+    "group_order": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "group_coverage": 100.0,
+    "avg_rating": 4.7,
+    "avg_num_ratings": 467.0,
+    "path_length_km": 44.17754194237812,
+    "real_time_hours": 15.222584731412603,
+    "time_violations_hours": 0.0,
+    "dependency_violations": 0,
+    "availability_violations": 0,
+    "is_valid": true
+  },
+  "eval_llmap": null,
+  "util_a": 0.7883224580576219,
+  "util_b": 0.925,
+  "util_rev": 0.925,
+  "util_llmap": -1.0,
+  "delta_u": 0.13667754194237813,
+  "h_flag": 0,
+  "param_diff": 1
+}

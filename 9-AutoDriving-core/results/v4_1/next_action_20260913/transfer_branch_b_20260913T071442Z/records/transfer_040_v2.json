@@ -1,0 +1,104 @@
+{
+  "utterance_id": "transfer_040_v2",
+  "group_id": "transfer_040",
+  "variant_type": "V2",
+  "source_index": 91,
+  "gold_hard": {
+    "pois": [
+      "bank"
+    ],
+    "time_limit": null,
+    "dependencies": []
+  },
+  "w_synthetic": 0.9,
+  "intent_a": {
+    "requested_pois": [
+      "bank"
+    ],
+    "time_limit": null,
+    "dependencies": [],
+    "quality_weight": 1.0
+  },
+  "intent_b": {
+    "requested_pois": [
+      "bank"
+    ],
+    "time_limit": null,
+    "dependencies": [],
+    "quality_weight": 1.0
+  },
+  "intent_rev": {
+    "requested_pois": [
+      "bank"
+    ],
+    "time_limit": null,
+    "dependencies": [],
+    "quality_weight": 1.0
+  },
+  "intent_llmap": null,
+  "eval_a": {
+    "path": [
+      0,
+      2,
+      3
+    ],
+    "group_order": [
+      3
+    ],
+    "group_coverage": 100.0,
+    "avg_rating": 5.0,
+    "avg_num_ratings": 745.0,
+    "path_length_km": 15.271708741079962,
+    "real_time_hours": 10.842390291369332,
+    "time_violations_hours": 0.0,
+    "dependency_violations": 0,
+    "availability_violations": 0,
+    "is_valid": true
+  },
+  "eval_b": {
+    "path": [
+      0,
+      2,
+      3
+    ],
+    "group_order": [
+      3
+    ],
+    "group_coverage": 100.0,
+    "avg_rating": 5.0,
+    "avg_num_ratings": 745.0,
+    "path_length_km": 15.271708741079962,
+    "real_time_hours": 10.842390291369332,
+    "time_violations_hours": 0.0,
+    "dependency_violations": 0,
+    "availability_violations": 0,
+    "is_valid": true
+  },
+  "eval_rev": {
+    "path": [
+      0,
+      2,
+      3
+    ],
+    "group_order": [
+      3
+    ],
+    "group_coverage": 100.0,
+    "avg_rating": 5.0,
+    "avg_num_ratings": 745.0,
+    "path_length_km": 15.271708741079962,
+    "real_time_hours": 10.842390291369332,
+    "time_violations_hours": 0.0,
+    "dependency_violations": 0,
+    "availability_violations": 0,
+    "is_valid": true
+  },
+  "eval_llmap": null,
+  "util_a": 1.0,
+  "util_b": 1.0,
+  "util_rev": 1.0,
+  "util_llmap": -1.0,
+  "delta_u": 0.0,
+  "h_flag": 0,
+  "param_diff": 0
+}
