@@ -44,6 +44,52 @@
     "bank_2",
     "pharmacy_1"
   ],
+  "ev_internal_a": {
+    "path": [
+      0,
+      1,
+      5,
+      3,
+      7
+    ],
+    "group_order": [
+      0,
+      3,
+      2
+    ],
+    "group_coverage": 100.0,
+    "avg_rating": 3.8333333333333335,
+    "avg_num_ratings": 69.66666666666667,
+    "path_length_km": 15.25990332348334,
+    "real_time_hours": 13.091996777449445,
+    "time_violations_hours": 0.0,
+    "dependency_violations": 0,
+    "availability_violations": 0,
+    "is_valid": true
+  },
+  "ev_internal_b": {
+    "path": [
+      0,
+      2,
+      6,
+      3,
+      7
+    ],
+    "group_order": [
+      0,
+      3,
+      2
+    ],
+    "group_coverage": 100.0,
+    "avg_rating": 4.3,
+    "avg_num_ratings": 300.0,
+    "path_length_km": 34.20500180054731,
+    "real_time_hours": 13.723500060018244,
+    "time_violations_hours": 0.0,
+    "dependency_violations": 0,
+    "availability_violations": 0,
+    "is_valid": true
+  },
   "gold_a": {
     "is_valid": true,
     "failure_reason": null,

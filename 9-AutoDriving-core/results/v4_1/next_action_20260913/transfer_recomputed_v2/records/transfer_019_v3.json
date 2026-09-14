@@ -42,6 +42,60 @@
   ],
   "route_rev": null,
   "route_llmap": null,
+  "ev_internal_a": {
+    "path": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      9,
+      11
+    ],
+    "group_order": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "group_coverage": 100.0,
+    "avg_rating": 4.5200000000000005,
+    "avg_num_ratings": 548.8,
+    "path_length_km": 45.58029567385653,
+    "real_time_hours": 15.602676522461884,
+    "time_violations_hours": 0.0,
+    "dependency_violations": 0,
+    "availability_violations": 0,
+    "is_valid": true
+  },
+  "ev_internal_b": {
+    "path": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      9,
+      11
+    ],
+    "group_order": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "group_coverage": 100.0,
+    "avg_rating": 4.5200000000000005,
+    "avg_num_ratings": 548.8,
+    "path_length_km": 45.58029567385653,
+    "real_time_hours": 15.602676522461884,
+    "time_violations_hours": 0.0,
+    "dependency_violations": 0,
+    "availability_violations": 0,
+    "is_valid": true
+  },
   "gold_a": {
     "is_valid": true,
     "failure_reason": null,

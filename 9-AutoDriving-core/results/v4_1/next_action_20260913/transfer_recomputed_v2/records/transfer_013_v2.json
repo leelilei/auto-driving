@@ -27,6 +27,44 @@
     "pharmacy_2"
   ],
   "route_llmap": null,
+  "ev_internal_a": {
+    "path": [
+      0,
+      2,
+      3
+    ],
+    "group_order": [
+      2
+    ],
+    "group_coverage": 100.0,
+    "avg_rating": 4.4,
+    "avg_num_ratings": 694.0,
+    "path_length_km": 16.41958711171201,
+    "real_time_hours": 10.7973195703904,
+    "time_violations_hours": 0.0,
+    "dependency_violations": 0,
+    "availability_violations": 0,
+    "is_valid": true
+  },
+  "ev_internal_b": {
+    "path": [
+      0,
+      2,
+      3
+    ],
+    "group_order": [
+      2
+    ],
+    "group_coverage": 100.0,
+    "avg_rating": 4.4,
+    "avg_num_ratings": 694.0,
+    "path_length_km": 16.41958711171201,
+    "real_time_hours": 10.7973195703904,
+    "time_violations_hours": 0.0,
+    "dependency_violations": 0,
+    "availability_violations": 0,
+    "is_valid": true
+  },
   "gold_a": {
     "is_valid": true,
     "failure_reason": null,

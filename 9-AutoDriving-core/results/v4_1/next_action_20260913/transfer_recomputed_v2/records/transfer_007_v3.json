@@ -31,6 +31,48 @@
     "supermarket_1"
   ],
   "route_llmap": null,
+  "ev_internal_a": {
+    "path": [
+      0,
+      1,
+      3,
+      5
+    ],
+    "group_order": [
+      0,
+      1
+    ],
+    "group_coverage": 100.0,
+    "avg_rating": 4.1,
+    "avg_num_ratings": 121.0,
+    "path_length_km": 7.86659859945451,
+    "real_time_hours": 12.76221995331515,
+    "time_violations_hours": 0.0,
+    "dependency_violations": 0,
+    "availability_violations": 0,
+    "is_valid": true
+  },
+  "ev_internal_b": {
+    "path": [
+      0,
+      1,
+      3,
+      5
+    ],
+    "group_order": [
+      0,
+      1
+    ],
+    "group_coverage": 100.0,
+    "avg_rating": 4.1,
+    "avg_num_ratings": 121.0,
+    "path_length_km": 7.86659859945451,
+    "real_time_hours": 12.76221995331515,
+    "time_violations_hours": 0.0,
+    "dependency_violations": 0,
+    "availability_violations": 0,
+    "is_valid": true
+  },
   "gold_a": {
     "is_valid": true,
     "failure_reason": null,

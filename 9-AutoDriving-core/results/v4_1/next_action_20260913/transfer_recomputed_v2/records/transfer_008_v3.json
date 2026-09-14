@@ -28,6 +28,48 @@
   ],
   "route_rev": null,
   "route_llmap": null,
+  "ev_internal_a": {
+    "path": [
+      0,
+      2,
+      3,
+      5
+    ],
+    "group_order": [
+      0,
+      3
+    ],
+    "group_coverage": 100.0,
+    "avg_rating": 4.25,
+    "avg_num_ratings": 545.5,
+    "path_length_km": 18.54996540052581,
+    "real_time_hours": 12.95166551335086,
+    "time_violations_hours": 0.0,
+    "dependency_violations": 0,
+    "availability_violations": 0,
+    "is_valid": true
+  },
+  "ev_internal_b": {
+    "path": [
+      0,
+      2,
+      3,
+      5
+    ],
+    "group_order": [
+      0,
+      3
+    ],
+    "group_coverage": 100.0,
+    "avg_rating": 4.25,
+    "avg_num_ratings": 545.5,
+    "path_length_km": 18.54996540052581,
+    "real_time_hours": 12.95166551335086,
+    "time_violations_hours": 0.0,
+    "dependency_violations": 0,
+    "availability_violations": 0,
+    "is_valid": true
+  },
   "gold_a": {
     "is_valid": true,
     "failure_reason": null,

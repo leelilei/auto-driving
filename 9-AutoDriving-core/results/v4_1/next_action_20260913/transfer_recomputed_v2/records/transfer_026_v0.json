@@ -53,6 +53,56 @@
     "library_2",
     "supermarket_1"
   ],
+  "ev_internal_a": {
+    "path": [
+      0,
+      1,
+      5,
+      8,
+      3,
+      9
+    ],
+    "group_order": [
+      0,
+      3,
+      4,
+      1
+    ],
+    "group_coverage": 100.0,
+    "avg_rating": 3.975,
+    "avg_num_ratings": 188.75,
+    "path_length_km": 16.258572126021683,
+    "real_time_hours": 14.375285737534057,
+    "time_violations_hours": 0.0,
+    "dependency_violations": 0,
+    "availability_violations": 0,
+    "is_valid": true
+  },
+  "ev_internal_b": {
+    "path": [
+      0,
+      2,
+      6,
+      8,
+      3,
+      9
+    ],
+    "group_order": [
+      0,
+      3,
+      4,
+      1
+    ],
+    "group_coverage": 100.0,
+    "avg_rating": 4.425,
+    "avg_num_ratings": 311.5,
+    "path_length_km": 32.73695271862443,
+    "real_time_hours": 14.924565090620813,
+    "time_violations_hours": 0.0,
+    "dependency_violations": 0,
+    "availability_violations": 0,
+    "is_valid": true
+  },
   "gold_a": {
     "is_valid": true,
     "failure_reason": null,

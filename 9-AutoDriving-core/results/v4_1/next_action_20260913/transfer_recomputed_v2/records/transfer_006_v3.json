@@ -34,6 +34,56 @@
   ],
   "route_rev": null,
   "route_llmap": null,
+  "ev_internal_a": {
+    "path": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      9
+    ],
+    "group_order": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "group_coverage": 100.0,
+    "avg_rating": 4.7,
+    "avg_num_ratings": 467.0,
+    "path_length_km": 44.17754194237812,
+    "real_time_hours": 15.222584731412603,
+    "time_violations_hours": 0.0,
+    "dependency_violations": 0,
+    "availability_violations": 0,
+    "is_valid": true
+  },
+  "ev_internal_b": {
+    "path": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      9
+    ],
+    "group_order": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "group_coverage": 100.0,
+    "avg_rating": 4.7,
+    "avg_num_ratings": 467.0,
+    "path_length_km": 44.17754194237812,
+    "real_time_hours": 15.222584731412603,
+    "time_violations_hours": 0.0,
+    "dependency_violations": 0,
+    "availability_violations": 0,
+    "is_valid": true
+  },
   "gold_a": {
     "is_valid": true,
     "failure_reason": null,

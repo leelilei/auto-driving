@@ -27,6 +27,44 @@
     "shopping_mall_2"
   ],
   "route_llmap": null,
+  "ev_internal_a": {
+    "path": [
+      0,
+      2,
+      3
+    ],
+    "group_order": [
+      0
+    ],
+    "group_coverage": 100.0,
+    "avg_rating": 4.9,
+    "avg_num_ratings": 364.0,
+    "path_length_km": 12.990134112943704,
+    "real_time_hours": 12.433004470431456,
+    "time_violations_hours": 0.0,
+    "dependency_violations": 0,
+    "availability_violations": 0,
+    "is_valid": true
+  },
+  "ev_internal_b": {
+    "path": [
+      0,
+      2,
+      3
+    ],
+    "group_order": [
+      0
+    ],
+    "group_coverage": 100.0,
+    "avg_rating": 4.9,
+    "avg_num_ratings": 364.0,
+    "path_length_km": 12.990134112943704,
+    "real_time_hours": 12.433004470431456,
+    "time_violations_hours": 0.0,
+    "dependency_violations": 0,
+    "availability_violations": 0,
+    "is_valid": true
+  },
   "gold_a": {
     "is_valid": true,
     "failure_reason": null,
