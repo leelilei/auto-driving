@@ -1,13 +1,18 @@
 #!/usr/bin/env python3
-"""Strict recomputation and offline replay engine for LLMAP transfer experiment (v3).
+"""Strict recomputation and offline replay engine for LLMAP transfer experiment (v4).
 
-Implements all P0/P1 audit remediations per CODEX_TRANSFER_REVIEW_20260913.md and v3 specifications:
+Implements all P0/P1 audit remediations per CODEX_TRANSFER_REVIEW_20260913.md and v4 specifications:
 1. Gating & Delta U: Completely removes gold_hard from gating (h_flag) and cross-utility (Delta U) calculations.
    Evaluates candidates strictly using internal solver outputs (ev_internal_a, ev_internal_b).
-2. System Level: Re-allocates 4 reviews (10% of 40) directly across the 40 original V0 instructions.
-3. Cluster Bootstrap: Resamples 35 clusters (B=1000) and computes 95% CIs for DARC - B4, DARC - B3, and DARC - B0.
-4. Auto-generated Tables: Generates Markdown tables directly from JSON to eliminate manual transcription errors.
-5. Fail-Closed Tamper Rejection: CLI exits with real non-zero codes (2, 3, 4, 5) upon any tampering.
+2. Dependency Transitive Closure: Compares Intent.closure() for dependencies in h_flag to prevent false structural splits.
+3. System Level: Re-allocates 4 reviews (10% of 40) directly across the 40 original V0 instructions.
+4. Cluster Bootstrap Protocol: Adheres strictly to frozen protocol (2,000 resamples, random seed 20260912).
+   Reports full 95% CIs for DARC - B4, DARC - B3, and DARC - B0.
+5. Invariant Canonical Metrics Hash: Eliminates self-referential hash bug by excluding mutable environmental metadata
+   (git commit and timestamp) from canonical metrics payload, while independently binding code, backend, prompt,
+   and config SHA-256 digests in manifest.json.
+6. Auto-generated Tables: Generates Markdown tables directly from JSON to eliminate manual transcription errors.
+7. Fail-Closed Tamper Rejection: CLI exits with real non-zero codes (2, 3, 4, 5) upon any tampering.
 """
 
 from __future__ import annotations
@@ -37,6 +42,8 @@ PROJECT_ROOT = CURRENT_DIR.parent
 CORE_DIR = PROJECT_ROOT / "9-AutoDriving-core"
 if str(CORE_DIR) not in sys.path:
     sys.path.insert(0, str(CORE_DIR))
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
 
 from src.baselines.llmap_adapted import (
     AVERAGE_SPEED,
@@ -52,13 +59,21 @@ from src.baselines.llmap_adapted import (
     msgs_adapted,
     parse_time,
 )
-from src.intent import Intent
+from src.intent import Intent, closure
 
 DEFAULT_RAW_DIR = CORE_DIR / "results" / "v4_1" / "next_action_20260913" / "transfer_branch_b_20260913T071442Z" / "attempts"
 DEFAULT_OUT_DIR = CORE_DIR / "results" / "v4_1" / "next_action_20260913" / "transfer_recomputed_v2"
 DEFAULT_DATA_DIR = CORE_DIR / "data" / "llmap_transfer"
 DEFAULT_CLUSTERS_FILE = CORE_DIR / "data" / "processed" / "hipp_clusters.json"
 DEFAULT_HANDOFF_FILE = PROJECT_ROOT / "docs" / "experiments" / "v41_next_action_20260913" / "FINAL_HANDOFF.md"
+
+PROMPT_NAMES = [
+    "parse_a.txt",
+    "parse_b.txt",
+    "review_plain.txt",
+    "llmap_direct_original.txt",
+    "llmap_user_original.txt",
+]
 
 
 def get_git_commit() -> str:
@@ -99,6 +114,25 @@ def compute_directory_files_sha256(dir_path: Path | str) -> str:
         hasher.update(f.name.encode("utf-8"))
         hasher.update(f.read_bytes())
     return hasher.hexdigest()
+
+
+def compute_canonical_metrics_hash(joint_metrics: dict[str, Any]) -> str:
+    """Compute invariant SHA-256 hash of experimental results excluding environmental metadata.
+
+    Excludes mutable environmental fields ('timestamp', 'git_commit') to guarantee bit-for-bit
+    replay invariance across different git states. Provenance of code, backend, prompts, and configs
+    is bound independently in manifest.json.
+    """
+    canonical_payload = {
+        "raw_attempts_sha256": joint_metrics["metadata"]["raw_attempts_sha256"],
+        "utterances_sha256": joint_metrics["metadata"]["utterances_sha256"],
+        "scenarios_sha256": joint_metrics["metadata"]["scenarios_sha256"],
+        "audit_summary": joint_metrics["audit_summary"],
+        "budgets": joint_metrics["budgets"],
+        "system_level_v0": joint_metrics["system_level_v0"],
+    }
+    canonical_bytes = json.dumps(canonical_payload, sort_keys=True).encode("utf-8")
+    return hashlib.sha256(canonical_bytes).hexdigest()
 
 
 def extract_json_object(raw_text: str) -> dict[str, Any] | None:
@@ -420,7 +454,6 @@ def evaluate_policy(
             if chosen_r != r["route_a"]:
                 rev_updates += 1
 
-            # Count corrections and degradations relative to Candidate A
             if not a_gold.get("is_valid", False) and chosen_g.get("is_valid", False):
                 corrections += 1
             elif a_gold.get("is_valid", False) and not chosen_g.get("is_valid", False):
@@ -514,10 +547,10 @@ def compute_cluster_bootstrap(
     records: dict[str, Any],
     budget_fraction: float,
     clusters_file: Path,
-    n_boot: int = 1000,
-    random_seed: int = 20260914,
+    n_boot: int = 2000,
+    random_seed: int = 20260912,
 ) -> dict[str, Any]:
-    """Run 35-cluster bootstrap resampling (B=1000) for DARC vs B4, B3, and B0."""
+    """Run 35-cluster bootstrap resampling adhering strictly to frozen protocol (B=2000, seed=20260912)."""
     source_to_cluster = {}
     if clusters_file.exists():
         c_data = load_json(clusters_file)
@@ -591,7 +624,7 @@ def compute_cluster_bootstrap(
     b0_stats = get_group_stats(set())
     b3_stats_list = [get_group_stats(rs) for rs in b3_rev_sets]
 
-    # Run 1000 cluster bootstrap resamples
+    # Run 2000 cluster bootstrap resamples
     diff_u_b4, diff_f_b4 = [], []
     diff_u_b3, diff_f_b3 = [], []
     diff_u_b0, diff_f_b0 = [], []
@@ -711,7 +744,6 @@ def compute_system_level_v0_reallocated(records: dict[str, Any]) -> dict[str, An
             "coverage_missing_total": sum(cov_missings),
         }
 
-    # B3 across 20 seeds
     b3_v0_summaries = [summarize_policy_v0(rs) for rs in b3_v0_rev_sets]
     b3_v0_agg = {
         "count": len(v0_records),
@@ -750,7 +782,7 @@ def generate_markdown_tables(joint_metrics: dict[str, Any]) -> str:
     lines.append(f"| **Candidate A 解析成功率** | {audit['parse_a_success']} / 160 (100.0%) | 0 语法/语义错误 |")
     lines.append(f"| **Candidate B 解析成功率** | {audit['parse_b_success']} / 160 (100.0%) | 0 语法/语义错误 |")
     lines.append(f"| **LLMAP Original (V0) 解析成功率** | {audit['llmap_orig_success']} / 40 (100.0%) | 0 语法/语义错误 |")
-    lines.append(f"| **Review 阶段解析成功率** | {audit['review_success']} / 160 (80.0%) | **32 次解析失败** (全为 'time_limit: today') |")
+    lines.append(f"| **Review 阶段解析成功率** | {audit['review_success']} / 160 (80.0%) | **32 次解析失败** (全因输出 'time_limit: today' 违规) |")
     lines.append("")
 
     # 2. System Level Table
@@ -799,7 +831,7 @@ def generate_markdown_tables(joint_metrics: dict[str, Any]) -> str:
         lines.append("")
 
     # 4. Bootstrap CIs Table
-    lines.append("### 4. 35 个语义簇的 Bootstrap 95% 置信区间 (B=1,000 次重采样)")
+    lines.append("### 4. 35 个语义簇的 Bootstrap 95% 置信区间 (B=2,000 次重采样，种子 20260912)")
     lines.append("")
     lines.append("| 对比项 (10% 主预算) | 均值差值 | 95% Bootstrap 置信区间 | 是否包含 0 | 统计学判定 |")
     lines.append("| :--- | :---: | :---: | :---: | :--- |")
@@ -837,7 +869,6 @@ def recompute_all(
     scenarios_file = data_dir / "eval_40_scenarios.json"
     utterances_file = data_dir / "eval_40_utterances.json"
 
-    # Integrity verification
     raw_files = sorted(list(raw_dir.glob("*.json")))
     actual_raw_digest = compute_directory_files_sha256(raw_dir)
     actual_utts_digest = compute_file_sha256(utterances_file)
@@ -943,14 +974,14 @@ def recompute_all(
             gold_llmap = evaluate_route_against_gold(route_llmap, gold_hard, sc)
 
         # 5. Gating signals: Protection flag h, cross-utility Delta U, preference diff |wa - wb|
-        # STRICTLY NO GOLD IN GATING OR DELTA U!
+        # STRICTLY NO GOLD IN GATING OR DELTA U! Uses Intent.closure for dependency matching.
         struct_diff = False
         if int_a and int_b:
             if set(int_a.pois) != set(int_b.pois):
                 struct_diff = True
             if int_a.time_limit != int_b.time_limit:
                 struct_diff = True
-            if sorted(int_a.dependencies) != sorted(int_b.dependencies):
+            if closure(int_a.dependencies) != closure(int_b.dependencies):
                 struct_diff = True
         else:
             struct_diff = True
@@ -984,7 +1015,7 @@ def recompute_all(
             "route_b": route_b,
             "route_rev": route_rev,
             "route_llmap": route_llmap,
-            # Internal solver evaluations (no gold)
+            # Internal solver evaluations (strictly no gold)
             "ev_internal_a": ev_internal_a,
             "ev_internal_b": ev_internal_b,
             # Independent gold evaluations (benchmark evaluation only)
@@ -1077,8 +1108,8 @@ def recompute_all(
         # 5. B6
         eval_b6 = evaluate_policy(records, set(utt_ids), fallback=True)
 
-        # Bootstrap analysis
-        boot_res = compute_cluster_bootstrap(records, b_frac, clusters_file, n_boot=1000)
+        # Bootstrap analysis adhering strictly to frozen protocol (B=2000, seed=20260912)
+        boot_res = compute_cluster_bootstrap(records, b_frac, clusters_file, n_boot=2000, random_seed=20260912)
 
         joint_metrics["budgets"][b_key] = {
             "budget_fraction": b_frac,
@@ -1100,23 +1131,32 @@ def recompute_all(
     # System-level comparison on V0 re-allocating 4 reviews
     joint_metrics["system_level_v0"] = compute_system_level_v0_reallocated(records)
 
-    # Save joint_metrics.json
-    save_json(out_dir / "joint_metrics.json", joint_metrics)
+    # Compute invariant canonical metrics hash (independent of git commit or timestamp)
+    canonical_metrics_hash = compute_canonical_metrics_hash(joint_metrics)
 
-    # Save canonical manifest
-    metrics_copy = copy.deepcopy(joint_metrics)
-    metrics_copy["metadata"]["timestamp"] = "REPLAY_CANONICAL"
-    metrics_bytes = json.dumps(metrics_copy, sort_keys=True).encode("utf-8")
-    canonical_metrics_hash = hashlib.sha256(metrics_bytes).hexdigest()
+    # Record code and prompt asset provenance
+    prompt_hashes = {}
+    prompts_dir = CORE_DIR / "prompts" / "v5"
+    for pname in PROMPT_NAMES:
+        pf = prompts_dir / pname
+        if pf.exists():
+            prompt_hashes[pname] = compute_file_sha256(pf)
 
     manifest_data = {
         "raw_attempts_sha256": actual_raw_digest,
         "utterances_sha256": actual_utts_digest,
         "scenarios_sha256": actual_scs_digest,
+        "eval_script_sha256": compute_file_sha256(CURRENT_DIR / "recompute_transfer_metrics.py"),
+        "backend_sha256": compute_file_sha256(CORE_DIR / "src" / "baselines" / "llmap_adapted.py"),
+        "prompts_sha256": prompt_hashes,
+        "config_sha256": compute_file_sha256(CORE_DIR / "configs" / "v5" / "deepseek_official_v4_flash.json"),
         "expected_ids": utt_ids,
         "git_commit": get_git_commit(),
         "canonical_metrics_hash": canonical_metrics_hash,
     }
+
+    # Save joint_metrics.json and manifest.json
+    save_json(out_dir / "joint_metrics.json", joint_metrics)
     save_json(out_dir / "manifest.json", manifest_data)
 
     # Auto-generate Markdown tables
@@ -1166,11 +1206,7 @@ def verify_replay(recomputed_dir: Path, data_dir: Path, raw_dir: Path, clusters_
             clusters_file=clusters_file,
             enforce_manifest=False,
         )
-        new_copy = copy.deepcopy(new_data)
-        new_copy["metadata"]["timestamp"] = "REPLAY_CANONICAL"
-        new_bytes = json.dumps(new_copy, sort_keys=True).encode("utf-8")
-        new_hash = hashlib.sha256(new_bytes).hexdigest()
-
+        new_hash = compute_canonical_metrics_hash(new_data)
         expected_hash = manifest.get("canonical_metrics_hash")
         print(f"Expected hash: {expected_hash}")
         print(f"Replay hash:   {new_hash}")
@@ -1280,7 +1316,7 @@ def run_tamper_rejection_tests(recomputed_dir: Path, raw_dir: Path, data_dir: Pa
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Recompute LLMAP transfer metrics with audit remediations (v3).")
+    parser = argparse.ArgumentParser(description="Recompute LLMAP transfer metrics with audit remediations (v4).")
     parser.add_argument("command", choices=["recompute", "replay", "test_tamper", "status", "dump_tables"], default="recompute")
     parser.add_argument("--raw-dir", type=str, default=str(DEFAULT_RAW_DIR))
     parser.add_argument("--output-dir", type=str, default=str(DEFAULT_OUT_DIR))
@@ -1321,7 +1357,7 @@ def main() -> None:
             print(f"No recomputed run found in {out_dir}.", file=sys.stderr)
             sys.exit(1)
         m = load_json(metrics_file)
-        print("Recomputed Run Status (v3):")
+        print("Recomputed Run Status (v4):")
         print(f"  Utterances: {m['metadata']['utterances_count']}")
         print(f"  Raw SHA256: {m['metadata']['raw_attempts_sha256'][:16]}...")
         print(f"  Review parse failures: {m['audit_summary']['review_fail']}/160")

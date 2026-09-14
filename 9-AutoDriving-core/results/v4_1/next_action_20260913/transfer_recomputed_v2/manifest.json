@@ -2,6 +2,16 @@
   "raw_attempts_sha256": "cabd488bf7d546728a1c11ee87dc2b398dfbfe32799b20873f4eaf1c93e77de7",
   "utterances_sha256": "7ccacd58d6369d96ffe8565afbed1c284742f8d8d46c99b400ae2a7e5807d350",
   "scenarios_sha256": "28cb0c441bdd8374ca01aba45fedcb0265fed209546563b7176cf12612bd5b0f",
+  "eval_script_sha256": "5a84ebf7899f1f7a20a5e2d1237169d939c368deccb1c200725c91c0a81c19fe",
+  "backend_sha256": "9d9e70eb6b56f60ccb5076f2226b13724ff3f5e2f8f227af30043169730ead5f",
+  "prompts_sha256": {
+    "parse_a.txt": "ff748b2299ce21f7da083400c2754eb548a01b91d32d8a7cbb185314bce345b5",
+    "parse_b.txt": "1e5029b3c25f6aeba27b6279fd33a796c86d04252107c4ec1f0652fa260e2d9d",
+    "review_plain.txt": "796f5fd2593a08a0e825053022cdba39b72d3b5873709b9a6cf79abd8359c9e2",
+    "llmap_direct_original.txt": "05ba0044aa7d0aa9b0fca4ff3ed96e75ad54479f046890cf7d42a108d11e89c6",
+    "llmap_user_original.txt": "65cfae217baadf8cb9ee2ead376beda70e9f7890d89eca1d38c75d1f641bea9e"
+  },
+  "config_sha256": "5a338b78c0f088fa1d01c3079a742116f4b8cc6185bb7ff8e933d64045c18101",
   "expected_ids": [
     "transfer_001_v0",
     "transfer_001_v1",
@@ -164,6 +174,6 @@
     "transfer_040_v2",
     "transfer_040_v3"
   ],
-  "git_commit": "aa84d733cbb973c35536d89c1a905a9cdf7d4ff1",
-  "canonical_metrics_hash": "0ff18dabe92d33a515087fc50730c28798cdd19dd69d1372d55f9e99c1b512aa"
+  "git_commit": "ca97cdc2a576f9b84d71f8b6c7864ba8bcd5f46c",
+  "canonical_metrics_hash": "5150ff258f5fc94eee043a8d008fb15596ea74b3e6eb04dda13ec94c1a97837a"
 }

@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "timestamp": "2026-09-14T03:15:08.437994+00:00",
+    "timestamp": "2026-09-14T03:27:21.114705+00:00",
     "utterances_count": 160,
     "groups_count": 40,
     "raw_attempts_sha256": "cabd488bf7d546728a1c11ee87dc2b398dfbfe32799b20873f4eaf1c93e77de7",
     "utterances_sha256": "7ccacd58d6369d96ffe8565afbed1c284742f8d8d46c99b400ae2a7e5807d350",
     "scenarios_sha256": "28cb0c441bdd8374ca01aba45fedcb0265fed209546563b7176cf12612bd5b0f",
-    "git_commit": "aa84d733cbb973c35536d89c1a905a9cdf7d4ff1"
+    "git_commit": "ca97cdc2a576f9b84d71f8b6c7864ba8bcd5f46c"
   },
   "audit_summary": {
     "total_attempt_files": 521,
@@ -179,20 +179,20 @@
       "cluster_bootstrap_35clusters": {
         "n_clusters": 35,
         "n_groups": 40,
-        "n_bootstraps": 1000,
+        "n_bootstraps": 2000,
         "delta_darc_minus_b4_utility": {
-          "mean": 0.0006,
+          "mean": 0.0005,
           "ci_95": [
             -0.0,
-            0.0018
+            0.0017
           ],
           "crosses_zero": true
         },
         "delta_darc_minus_b4_flip_pct": {
-          "mean": 1.738,
+          "mean": 1.6698,
           "ci_95": [
             0.0,
-            4.7619
+            4.585
           ],
           "crosses_zero": true
         },
@@ -200,31 +200,31 @@
           "mean": 0.0005,
           "ci_95": [
             -0.0001,
-            0.0018
+            0.0016
           ],
           "crosses_zero": true
         },
         "delta_darc_minus_b3_flip_pct": {
-          "mean": 0.3015,
+          "mean": 0.2746,
           "ci_95": [
-            -0.4375,
-            1.3818
+            -0.4054,
+            1.2821
           ],
           "crosses_zero": true
         },
         "delta_darc_minus_b0_utility": {
-          "mean": 0.0006,
+          "mean": 0.0005,
           "ci_95": [
             0.0,
-            0.0019
+            0.0017
           ],
           "crosses_zero": true
         },
         "delta_darc_minus_b0_flip_pct": {
-          "mean": 0.4419,
+          "mean": 0.4188,
           "ci_95": [
             0.0,
-            1.4501
+            1.3158
           ],
           "crosses_zero": true
         }
@@ -385,20 +385,20 @@
       "cluster_bootstrap_35clusters": {
         "n_clusters": 35,
         "n_groups": 40,
-        "n_bootstraps": 1000,
+        "n_bootstraps": 2000,
         "delta_darc_minus_b4_utility": {
-          "mean": 0.0006,
+          "mean": 0.0005,
           "ci_95": [
             0.0,
-            0.0019
+            0.0017
           ],
           "crosses_zero": true
         },
         "delta_darc_minus_b4_flip_pct": {
-          "mean": 0.4419,
+          "mean": 0.4188,
           "ci_95": [
             0.0,
-            1.4501
+            1.3158
           ],
           "crosses_zero": true
         },
@@ -406,15 +406,15 @@
           "mean": 0.0005,
           "ci_95": [
             -0.0001,
-            0.0018
+            0.0016
           ],
           "crosses_zero": true
         },
         "delta_darc_minus_b3_flip_pct": {
-          "mean": -1.1159,
+          "mean": -1.1038,
           "ci_95": [
-            -3.5274,
-            0.79
+            -3.7019,
+            0.7692
           ],
           "crosses_zero": true
         },
@@ -422,14 +422,14 @@
           "mean": 0.0006,
           "ci_95": [
             0.0,
-            0.0019
+            0.0017
           ],
           "crosses_zero": true
         },
         "delta_darc_minus_b0_flip_pct": {
-          "mean": -0.8541,
+          "mean": -0.8321,
           "ci_95": [
-            -3.5714,
+            -3.75,
             1.2821
           ],
           "crosses_zero": true
@@ -591,7 +591,7 @@
       "cluster_bootstrap_35clusters": {
         "n_clusters": 35,
         "n_groups": 40,
-        "n_bootstraps": 1000,
+        "n_bootstraps": 2000,
         "delta_darc_minus_b4_utility": {
           "mean": 0.0,
           "ci_95": [
@@ -611,16 +611,16 @@
         "delta_darc_minus_b3_utility": {
           "mean": 0.0004,
           "ci_95": [
-            -0.0004,
-            0.0017
+            -0.0005,
+            0.0016
           ],
           "crosses_zero": true
         },
         "delta_darc_minus_b3_flip_pct": {
-          "mean": -1.9414,
+          "mean": -1.9289,
           "ci_95": [
-            -4.4512,
-            0.2502
+            -4.5518,
+            0.1437
           ],
           "crosses_zero": true
         },
@@ -628,14 +628,14 @@
           "mean": 0.0006,
           "ci_95": [
             0.0,
-            0.0019
+            0.0017
           ],
           "crosses_zero": true
         },
         "delta_darc_minus_b0_flip_pct": {
-          "mean": -0.8541,
+          "mean": -0.8321,
           "ci_95": [
-            -3.5714,
+            -3.75,
             1.2821
           ],
           "crosses_zero": true
