@@ -1,0 +1,98 @@
+{
+  "utterance_id": "transfer_001_v1",
+  "group_id": "transfer_001",
+  "variant_type": "V1",
+  "source_index": 13,
+  "w_synthetic": 0.9,
+  "gold_hard": {
+    "pois": [
+      "library",
+      "bank",
+      "supermarket",
+      "shopping_mall"
+    ],
+    "time_limit": "23:00",
+    "dependencies": []
+  },
+  "parse_a_status": "success",
+  "parse_a_error": null,
+  "parse_b_status": "success",
+  "parse_b_error": null,
+  "parse_rev_status": "success",
+  "parse_rev_error": null,
+  "route_a": [
+    "shopping_mall_2",
+    "supermarket_2",
+    "bank_2",
+    "library_1"
+  ],
+  "route_b": [
+    "shopping_mall_2",
+    "supermarket_2",
+    "bank_2",
+    "library_1"
+  ],
+  "route_rev": [
+    "shopping_mall_2",
+    "supermarket_2",
+    "bank_2",
+    "library_1"
+  ],
+  "route_llmap": null,
+  "gold_a": {
+    "is_valid": true,
+    "failure_reason": null,
+    "total_dist_km": 42.39751876465428,
+    "avg_rating": 4.375,
+    "return_time_hours": 15.24658395882181,
+    "time_violation_hours": 0.0,
+    "dep_violations": 0,
+    "avail_violations": 0,
+    "cov_missing": [],
+    "visited_categories": [
+      "shopping_mall",
+      "supermarket",
+      "bank",
+      "library"
+    ]
+  },
+  "gold_b": {
+    "is_valid": true,
+    "failure_reason": null,
+    "total_dist_km": 42.39751876465428,
+    "avg_rating": 4.375,
+    "return_time_hours": 15.24658395882181,
+    "time_violation_hours": 0.0,
+    "dep_violations": 0,
+    "avail_violations": 0,
+    "cov_missing": [],
+    "visited_categories": [
+      "shopping_mall",
+      "supermarket",
+      "bank",
+      "library"
+    ]
+  },
+  "gold_rev": {
+    "is_valid": true,
+    "failure_reason": null,
+    "total_dist_km": 42.39751876465428,
+    "avg_rating": 4.375,
+    "return_time_hours": 15.24658395882181,
+    "time_violation_hours": 0.0,
+    "dep_violations": 0,
+    "avail_violations": 0,
+    "cov_missing": [],
+    "visited_categories": [
+      "shopping_mall",
+      "supermarket",
+      "bank",
+      "library"
+    ]
+  },
+  "gold_llmap": null,
+  "h_flag": 0,
+  "delta_u": 0.0,
+  "param_diff": 0.0,
+  "structural_difference": false
+}

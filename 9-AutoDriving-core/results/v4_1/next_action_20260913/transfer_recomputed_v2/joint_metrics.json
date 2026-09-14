@@ -1,0 +1,631 @@
+{
+  "metadata": {
+    "timestamp": "2026-09-14T02:46:28.846330+00:00",
+    "utterances_count": 160,
+    "groups_count": 40,
+    "raw_attempts_sha256": "cabd488bf7d546728a1c11ee87dc2b398dfbfe32799b20873f4eaf1c93e77de7",
+    "git_commit": "recomputed_audit_v2"
+  },
+  "audit_summary": {
+    "total_attempt_files": 521,
+    "raw_attempts_sha256": "cabd488bf7d546728a1c11ee87dc2b398dfbfe32799b20873f4eaf1c93e77de7",
+    "parse_a_success": 160,
+    "parse_a_fail": 0,
+    "parse_b_success": 160,
+    "parse_b_fail": 0,
+    "review_success": 128,
+    "review_fail": 32,
+    "llmap_orig_success": 40,
+    "llmap_orig_fail": 0,
+    "review_failure_types": {
+      "Deadline must be HH:MM or minutes": 32
+    }
+  },
+  "budgets": {
+    "budget_5pct": {
+      "budget_fraction": 0.05,
+      "budget_K": 8,
+      "h_count": 2,
+      "budget_feasible": true,
+      "budget_warning": null,
+      "policies": {
+        "B0_no_review": {
+          "TSR_pct": 100.0,
+          "GTSR_pct": 100.0,
+          "pairwise_route_diff_rate_pct": 11.25,
+          "diff_route_pairs": 27,
+          "mutually_valid_pairs": 240,
+          "total_pairs": 240,
+          "pairwise_incon_failure_rate_pct": 11.25,
+          "group_inconsistent_rate_pct": 20.0,
+          "conditional_flip_rate_pct": 20.0,
+          "mean_invariant_utility": 0.4421,
+          "mean_path_length_km": 20.22,
+          "mean_rating": 4.27,
+          "mean_return_time_hours": 12.85,
+          "reviews_conducted": 0,
+          "review_parse_failures": 0,
+          "review_route_updates": 0,
+          "corrections": 0,
+          "degradations": 0,
+          "fallbacks_to_a": 0
+        },
+        "B3_random_20seeds": {
+          "TSR_pct": {
+            "mean": 100.0,
+            "std": 0.0
+          },
+          "GTSR_pct": {
+            "mean": 100.0,
+            "std": 0.0
+          },
+          "pairwise_route_diff_rate_pct": {
+            "mean": 11.396,
+            "std": 0.5477
+          },
+          "pairwise_incon_failure_rate_pct": {
+            "mean": 11.396,
+            "std": 0.5477
+          },
+          "group_inconsistent_rate_pct": {
+            "mean": 20.25,
+            "std": 1.0897
+          },
+          "conditional_flip_rate_pct": {
+            "mean": 20.25,
+            "std": 1.0897
+          },
+          "mean_invariant_utility": {
+            "mean": 0.4421,
+            "std": 0.0002
+          },
+          "mean_path_length_km": {
+            "mean": 20.246,
+            "std": 0.0498
+          },
+          "mean_rating": {
+            "mean": 4.2705,
+            "std": 0.0022
+          },
+          "seeds_evaluated": 20
+        },
+        "B4_param_diff": {
+          "TSR_pct": 100.0,
+          "GTSR_pct": 100.0,
+          "pairwise_route_diff_rate_pct": 10.0,
+          "diff_route_pairs": 24,
+          "mutually_valid_pairs": 240,
+          "total_pairs": 240,
+          "pairwise_incon_failure_rate_pct": 10.0,
+          "group_inconsistent_rate_pct": 17.5,
+          "conditional_flip_rate_pct": 17.5,
+          "mean_invariant_utility": 0.4421,
+          "mean_path_length_km": 20.37,
+          "mean_rating": 4.27,
+          "mean_return_time_hours": 12.86,
+          "reviews_conducted": 8,
+          "review_parse_failures": 1,
+          "review_route_updates": 1,
+          "corrections": 0,
+          "degradations": 0,
+          "fallbacks_to_a": 1
+        },
+        "DARC_cross_utility": {
+          "TSR_pct": 100.0,
+          "GTSR_pct": 100.0,
+          "pairwise_route_diff_rate_pct": 11.67,
+          "diff_route_pairs": 28,
+          "mutually_valid_pairs": 240,
+          "total_pairs": 240,
+          "pairwise_incon_failure_rate_pct": 11.67,
+          "group_inconsistent_rate_pct": 20.0,
+          "conditional_flip_rate_pct": 20.0,
+          "mean_invariant_utility": 0.4426,
+          "mean_path_length_km": 20.32,
+          "mean_rating": 4.27,
+          "mean_return_time_hours": 12.86,
+          "reviews_conducted": 8,
+          "review_parse_failures": 0,
+          "review_route_updates": 1,
+          "corrections": 0,
+          "degradations": 0,
+          "fallbacks_to_a": 0
+        },
+        "DARC_pure_review_no_fallback": {
+          "TSR_pct": 100.0,
+          "GTSR_pct": 100.0,
+          "pairwise_route_diff_rate_pct": 11.67,
+          "diff_route_pairs": 28,
+          "mutually_valid_pairs": 240,
+          "total_pairs": 240,
+          "pairwise_incon_failure_rate_pct": 11.67,
+          "group_inconsistent_rate_pct": 20.0,
+          "conditional_flip_rate_pct": 20.0,
+          "mean_invariant_utility": 0.4426,
+          "mean_path_length_km": 20.32,
+          "mean_rating": 4.27,
+          "mean_return_time_hours": 12.86,
+          "reviews_conducted": 8,
+          "review_parse_failures": 0,
+          "review_route_updates": 1,
+          "corrections": 0,
+          "degradations": 0,
+          "fallbacks_to_a": 0
+        },
+        "B6_full_review": {
+          "TSR_pct": 100.0,
+          "GTSR_pct": 100.0,
+          "pairwise_route_diff_rate_pct": 17.08,
+          "diff_route_pairs": 41,
+          "mutually_valid_pairs": 240,
+          "total_pairs": 240,
+          "pairwise_incon_failure_rate_pct": 17.08,
+          "group_inconsistent_rate_pct": 30.0,
+          "conditional_flip_rate_pct": 30.0,
+          "mean_invariant_utility": 0.4434,
+          "mean_path_length_km": 20.63,
+          "mean_rating": 4.3,
+          "mean_return_time_hours": 12.87,
+          "reviews_conducted": 160,
+          "review_parse_failures": 32,
+          "review_route_updates": 8,
+          "corrections": 0,
+          "degradations": 0,
+          "fallbacks_to_a": 32
+        }
+      },
+      "cluster_bootstrap_35clusters": {
+        "n_clusters": 35,
+        "n_groups": 40,
+        "n_bootstraps": 1000,
+        "delta_darc_minus_b4_utility": {
+          "mean": 0.0005,
+          "ci_95": [
+            -0.0001,
+            0.001
+          ],
+          "crosses_zero": true
+        },
+        "delta_darc_minus_b4_flip_pct": {
+          "mean": 1.688,
+          "ci_95": [
+            0.0,
+            3.03
+          ],
+          "crosses_zero": true
+        },
+        "delta_darc_minus_b0_utility": {
+          "mean": 0.0006,
+          "ci_95": [
+            0.0,
+            0.001
+          ],
+          "crosses_zero": true
+        },
+        "delta_darc_minus_b0_flip_pct": {
+          "mean": 0.4307,
+          "ci_95": [
+            0.0,
+            0.79
+          ],
+          "crosses_zero": true
+        }
+      }
+    },
+    "budget_10pct": {
+      "budget_fraction": 0.1,
+      "budget_K": 16,
+      "h_count": 2,
+      "budget_feasible": true,
+      "budget_warning": null,
+      "policies": {
+        "B0_no_review": {
+          "TSR_pct": 100.0,
+          "GTSR_pct": 100.0,
+          "pairwise_route_diff_rate_pct": 11.25,
+          "diff_route_pairs": 27,
+          "mutually_valid_pairs": 240,
+          "total_pairs": 240,
+          "pairwise_incon_failure_rate_pct": 11.25,
+          "group_inconsistent_rate_pct": 20.0,
+          "conditional_flip_rate_pct": 20.0,
+          "mean_invariant_utility": 0.4421,
+          "mean_path_length_km": 20.22,
+          "mean_rating": 4.27,
+          "mean_return_time_hours": 12.85,
+          "reviews_conducted": 0,
+          "review_parse_failures": 0,
+          "review_route_updates": 0,
+          "corrections": 0,
+          "degradations": 0,
+          "fallbacks_to_a": 0
+        },
+        "B3_random_20seeds": {
+          "TSR_pct": {
+            "mean": 100.0,
+            "std": 0.0
+          },
+          "GTSR_pct": {
+            "mean": 100.0,
+            "std": 0.0
+          },
+          "pairwise_route_diff_rate_pct": {
+            "mean": 11.521,
+            "std": 0.7486
+          },
+          "pairwise_incon_failure_rate_pct": {
+            "mean": 11.521,
+            "std": 0.7486
+          },
+          "group_inconsistent_rate_pct": {
+            "mean": 20.5,
+            "std": 1.5
+          },
+          "conditional_flip_rate_pct": {
+            "mean": 20.5,
+            "std": 1.5
+          },
+          "mean_invariant_utility": {
+            "mean": 0.4421,
+            "std": 0.0002
+          },
+          "mean_path_length_km": {
+            "mean": 20.259,
+            "std": 0.0549
+          },
+          "mean_rating": {
+            "mean": 4.2705,
+            "std": 0.0022
+          },
+          "seeds_evaluated": 20
+        },
+        "B4_param_diff": {
+          "TSR_pct": 100.0,
+          "GTSR_pct": 100.0,
+          "pairwise_route_diff_rate_pct": 10.0,
+          "diff_route_pairs": 24,
+          "mutually_valid_pairs": 240,
+          "total_pairs": 240,
+          "pairwise_incon_failure_rate_pct": 10.0,
+          "group_inconsistent_rate_pct": 17.5,
+          "conditional_flip_rate_pct": 17.5,
+          "mean_invariant_utility": 0.4421,
+          "mean_path_length_km": 20.37,
+          "mean_rating": 4.27,
+          "mean_return_time_hours": 12.86,
+          "reviews_conducted": 16,
+          "review_parse_failures": 1,
+          "review_route_updates": 1,
+          "corrections": 0,
+          "degradations": 0,
+          "fallbacks_to_a": 1
+        },
+        "DARC_cross_utility": {
+          "TSR_pct": 100.0,
+          "GTSR_pct": 100.0,
+          "pairwise_route_diff_rate_pct": 10.42,
+          "diff_route_pairs": 25,
+          "mutually_valid_pairs": 240,
+          "total_pairs": 240,
+          "pairwise_incon_failure_rate_pct": 10.42,
+          "group_inconsistent_rate_pct": 17.5,
+          "conditional_flip_rate_pct": 17.5,
+          "mean_invariant_utility": 0.4426,
+          "mean_path_length_km": 20.47,
+          "mean_rating": 4.27,
+          "mean_return_time_hours": 12.86,
+          "reviews_conducted": 16,
+          "review_parse_failures": 1,
+          "review_route_updates": 2,
+          "corrections": 0,
+          "degradations": 0,
+          "fallbacks_to_a": 1
+        },
+        "DARC_pure_review_no_fallback": {
+          "TSR_pct": 99.38,
+          "GTSR_pct": 97.5,
+          "pairwise_route_diff_rate_pct": 10.55,
+          "diff_route_pairs": 25,
+          "mutually_valid_pairs": 237,
+          "total_pairs": 240,
+          "pairwise_incon_failure_rate_pct": 11.67,
+          "group_inconsistent_rate_pct": 20.0,
+          "conditional_flip_rate_pct": 20.0,
+          "mean_invariant_utility": 0.4369,
+          "mean_path_length_km": 20.29,
+          "mean_rating": 4.26,
+          "mean_return_time_hours": 12.77,
+          "reviews_conducted": 16,
+          "review_parse_failures": 1,
+          "review_route_updates": 3,
+          "corrections": 0,
+          "degradations": 1,
+          "fallbacks_to_a": 0
+        },
+        "B6_full_review": {
+          "TSR_pct": 100.0,
+          "GTSR_pct": 100.0,
+          "pairwise_route_diff_rate_pct": 17.08,
+          "diff_route_pairs": 41,
+          "mutually_valid_pairs": 240,
+          "total_pairs": 240,
+          "pairwise_incon_failure_rate_pct": 17.08,
+          "group_inconsistent_rate_pct": 30.0,
+          "conditional_flip_rate_pct": 30.0,
+          "mean_invariant_utility": 0.4434,
+          "mean_path_length_km": 20.63,
+          "mean_rating": 4.3,
+          "mean_return_time_hours": 12.87,
+          "reviews_conducted": 160,
+          "review_parse_failures": 32,
+          "review_route_updates": 8,
+          "corrections": 0,
+          "degradations": 0,
+          "fallbacks_to_a": 32
+        }
+      },
+      "cluster_bootstrap_35clusters": {
+        "n_clusters": 35,
+        "n_groups": 40,
+        "n_bootstraps": 1000,
+        "delta_darc_minus_b4_utility": {
+          "mean": 0.0006,
+          "ci_95": [
+            0.0,
+            0.001
+          ],
+          "crosses_zero": true
+        },
+        "delta_darc_minus_b4_flip_pct": {
+          "mean": 0.4307,
+          "ci_95": [
+            0.0,
+            0.79
+          ],
+          "crosses_zero": true
+        },
+        "delta_darc_minus_b0_utility": {
+          "mean": 0.0006,
+          "ci_95": [
+            0.0,
+            0.001
+          ],
+          "crosses_zero": true
+        },
+        "delta_darc_minus_b0_flip_pct": {
+          "mean": -0.8266,
+          "ci_95": [
+            -2.17,
+            0.76
+          ],
+          "crosses_zero": true
+        }
+      }
+    },
+    "budget_20pct": {
+      "budget_fraction": 0.2,
+      "budget_K": 32,
+      "h_count": 2,
+      "budget_feasible": true,
+      "budget_warning": null,
+      "policies": {
+        "B0_no_review": {
+          "TSR_pct": 100.0,
+          "GTSR_pct": 100.0,
+          "pairwise_route_diff_rate_pct": 11.25,
+          "diff_route_pairs": 27,
+          "mutually_valid_pairs": 240,
+          "total_pairs": 240,
+          "pairwise_incon_failure_rate_pct": 11.25,
+          "group_inconsistent_rate_pct": 20.0,
+          "conditional_flip_rate_pct": 20.0,
+          "mean_invariant_utility": 0.4421,
+          "mean_path_length_km": 20.22,
+          "mean_rating": 4.27,
+          "mean_return_time_hours": 12.85,
+          "reviews_conducted": 0,
+          "review_parse_failures": 0,
+          "review_route_updates": 0,
+          "corrections": 0,
+          "degradations": 0,
+          "fallbacks_to_a": 0
+        },
+        "B3_random_20seeds": {
+          "TSR_pct": {
+            "mean": 100.0,
+            "std": 0.0
+          },
+          "GTSR_pct": {
+            "mean": 100.0,
+            "std": 0.0
+          },
+          "pairwise_route_diff_rate_pct": {
+            "mean": 12.3545,
+            "std": 1.1279
+          },
+          "pairwise_incon_failure_rate_pct": {
+            "mean": 12.3545,
+            "std": 1.1279
+          },
+          "group_inconsistent_rate_pct": {
+            "mean": 22.125,
+            "std": 2.2742
+          },
+          "conditional_flip_rate_pct": {
+            "mean": 22.125,
+            "std": 2.2742
+          },
+          "mean_invariant_utility": {
+            "mean": 0.4423,
+            "std": 0.0003
+          },
+          "mean_path_length_km": {
+            "mean": 20.29,
+            "std": 0.0676
+          },
+          "mean_rating": {
+            "mean": 4.2735,
+            "std": 0.0048
+          },
+          "seeds_evaluated": 20
+        },
+        "B4_param_diff": {
+          "TSR_pct": 100.0,
+          "GTSR_pct": 100.0,
+          "pairwise_route_diff_rate_pct": 10.42,
+          "diff_route_pairs": 25,
+          "mutually_valid_pairs": 240,
+          "total_pairs": 240,
+          "pairwise_incon_failure_rate_pct": 10.42,
+          "group_inconsistent_rate_pct": 17.5,
+          "conditional_flip_rate_pct": 17.5,
+          "mean_invariant_utility": 0.4426,
+          "mean_path_length_km": 20.47,
+          "mean_rating": 4.27,
+          "mean_return_time_hours": 12.86,
+          "reviews_conducted": 32,
+          "review_parse_failures": 5,
+          "review_route_updates": 2,
+          "corrections": 0,
+          "degradations": 0,
+          "fallbacks_to_a": 5
+        },
+        "DARC_cross_utility": {
+          "TSR_pct": 100.0,
+          "GTSR_pct": 100.0,
+          "pairwise_route_diff_rate_pct": 10.42,
+          "diff_route_pairs": 25,
+          "mutually_valid_pairs": 240,
+          "total_pairs": 240,
+          "pairwise_incon_failure_rate_pct": 10.42,
+          "group_inconsistent_rate_pct": 17.5,
+          "conditional_flip_rate_pct": 17.5,
+          "mean_invariant_utility": 0.4426,
+          "mean_path_length_km": 20.47,
+          "mean_rating": 4.27,
+          "mean_return_time_hours": 12.86,
+          "reviews_conducted": 32,
+          "review_parse_failures": 2,
+          "review_route_updates": 2,
+          "corrections": 0,
+          "degradations": 0,
+          "fallbacks_to_a": 2
+        },
+        "DARC_pure_review_no_fallback": {
+          "TSR_pct": 98.75,
+          "GTSR_pct": 95.0,
+          "pairwise_route_diff_rate_pct": 10.68,
+          "diff_route_pairs": 25,
+          "mutually_valid_pairs": 234,
+          "total_pairs": 240,
+          "pairwise_incon_failure_rate_pct": 12.92,
+          "group_inconsistent_rate_pct": 22.5,
+          "conditional_flip_rate_pct": 20.51,
+          "mean_invariant_utility": 0.4259,
+          "mean_path_length_km": 20.22,
+          "mean_rating": 4.24,
+          "mean_return_time_hours": 12.69,
+          "reviews_conducted": 32,
+          "review_parse_failures": 2,
+          "review_route_updates": 4,
+          "corrections": 0,
+          "degradations": 2,
+          "fallbacks_to_a": 0
+        },
+        "B6_full_review": {
+          "TSR_pct": 100.0,
+          "GTSR_pct": 100.0,
+          "pairwise_route_diff_rate_pct": 17.08,
+          "diff_route_pairs": 41,
+          "mutually_valid_pairs": 240,
+          "total_pairs": 240,
+          "pairwise_incon_failure_rate_pct": 17.08,
+          "group_inconsistent_rate_pct": 30.0,
+          "conditional_flip_rate_pct": 30.0,
+          "mean_invariant_utility": 0.4434,
+          "mean_path_length_km": 20.63,
+          "mean_rating": 4.3,
+          "mean_return_time_hours": 12.87,
+          "reviews_conducted": 160,
+          "review_parse_failures": 32,
+          "review_route_updates": 8,
+          "corrections": 0,
+          "degradations": 0,
+          "fallbacks_to_a": 32
+        }
+      },
+      "cluster_bootstrap_35clusters": {
+        "n_clusters": 35,
+        "n_groups": 40,
+        "n_bootstraps": 1000,
+        "delta_darc_minus_b4_utility": {
+          "mean": 0.0,
+          "ci_95": [
+            0.0,
+            0.0
+          ],
+          "crosses_zero": true
+        },
+        "delta_darc_minus_b4_flip_pct": {
+          "mean": 0.0,
+          "ci_95": [
+            0.0,
+            0.0
+          ],
+          "crosses_zero": true
+        },
+        "delta_darc_minus_b0_utility": {
+          "mean": 0.0006,
+          "ci_95": [
+            0.0,
+            0.001
+          ],
+          "crosses_zero": true
+        },
+        "delta_darc_minus_b0_flip_pct": {
+          "mean": -0.8266,
+          "ci_95": [
+            -2.17,
+            0.76
+          ],
+          "crosses_zero": true
+        }
+      }
+    }
+  },
+  "system_level_v0": {
+    "LLMAP_adapted_baseline": {
+      "count": 40,
+      "valid_pct": 100.0,
+      "mean_path_length_km": 19.54,
+      "mean_rating": 4.26,
+      "mean_return_time_hours": 12.83,
+      "time_violations_count": 0,
+      "dependency_violations_count": 0,
+      "availability_violations_count": 0,
+      "coverage_missing_total": 0
+    },
+    "Prompt_A_alone": {
+      "count": 40,
+      "valid_pct": 100.0,
+      "mean_path_length_km": 18.04,
+      "mean_rating": 4.21,
+      "mean_return_time_hours": 12.78,
+      "time_violations_count": 0,
+      "dependency_violations_count": 0,
+      "availability_violations_count": 0,
+      "coverage_missing_total": 0
+    },
+    "DARC_policy_applied_to_v0": {
+      "count": 40,
+      "valid_pct": 100.0,
+      "mean_path_length_km": 19.02,
+      "mean_rating": 4.23,
+      "mean_return_time_hours": 12.81,
+      "time_violations_count": 0,
+      "dependency_violations_count": 0,
+      "availability_violations_count": 0,
+      "coverage_missing_total": 0
+    }
+  }
+}

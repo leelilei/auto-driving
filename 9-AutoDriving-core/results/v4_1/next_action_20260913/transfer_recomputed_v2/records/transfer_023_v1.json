@@ -1,0 +1,99 @@
+{
+  "utterance_id": "transfer_023_v1",
+  "group_id": "transfer_023",
+  "variant_type": "V1",
+  "source_index": 56,
+  "w_synthetic": 0.2,
+  "gold_hard": {
+    "pois": [
+      "shopping_mall",
+      "supermarket",
+      "bank",
+      "library",
+      "pharmacy"
+    ],
+    "time_limit": null,
+    "dependencies": []
+  },
+  "parse_a_status": "success",
+  "parse_a_error": null,
+  "parse_b_status": "success",
+  "parse_b_error": null,
+  "parse_rev_status": "fail",
+  "parse_rev_error": "Deadline must be HH:MM or minutes",
+  "route_a": [
+    "shopping_mall_1",
+    "supermarket_1",
+    "pharmacy_1",
+    "bank_1",
+    "library_1"
+  ],
+  "route_b": [
+    "shopping_mall_1",
+    "supermarket_1",
+    "pharmacy_2",
+    "bank_1",
+    "library_1"
+  ],
+  "route_rev": null,
+  "route_llmap": null,
+  "gold_a": {
+    "is_valid": true,
+    "failure_reason": null,
+    "total_dist_km": 27.261417068188955,
+    "avg_rating": 3.78,
+    "return_time_hours": 14.9920472356063,
+    "time_violation_hours": 0.0,
+    "dep_violations": 0,
+    "avail_violations": 0,
+    "cov_missing": [],
+    "visited_categories": [
+      "shopping_mall",
+      "supermarket",
+      "pharmacy",
+      "bank",
+      "library"
+    ]
+  },
+  "gold_b": {
+    "is_valid": true,
+    "failure_reason": null,
+    "total_dist_km": 27.545536674703996,
+    "avg_rating": 3.8600000000000003,
+    "return_time_hours": 15.001517889156801,
+    "time_violation_hours": 0.0,
+    "dep_violations": 0,
+    "avail_violations": 0,
+    "cov_missing": [],
+    "visited_categories": [
+      "shopping_mall",
+      "supermarket",
+      "pharmacy",
+      "bank",
+      "library"
+    ]
+  },
+  "gold_rev": {
+    "is_valid": false,
+    "failure_reason": "no_route_or_solver_failed",
+    "total_dist_km": 0.0,
+    "avg_rating": 1.0,
+    "return_time_hours": 0.0,
+    "time_violation_hours": 0.0,
+    "dep_violations": 0,
+    "avail_violations": 0,
+    "cov_missing": [
+      "shopping_mall",
+      "supermarket",
+      "bank",
+      "library",
+      "pharmacy"
+    ],
+    "visited_categories": []
+  },
+  "gold_llmap": null,
+  "h_flag": 0,
+  "delta_u": 0.002841196065150431,
+  "param_diff": 0.2,
+  "structural_difference": false
+}

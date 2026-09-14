@@ -1,0 +1,92 @@
+{
+  "utterance_id": "transfer_025_v0",
+  "group_id": "transfer_025",
+  "variant_type": "V0",
+  "source_index": 59,
+  "w_synthetic": 0.2,
+  "gold_hard": {
+    "pois": [
+      "pharmacy"
+    ],
+    "time_limit": null,
+    "dependencies": []
+  },
+  "parse_a_status": "success",
+  "parse_a_error": null,
+  "parse_b_status": "success",
+  "parse_b_error": null,
+  "parse_rev_status": "success",
+  "parse_rev_error": null,
+  "route_a": [
+    "pharmacy_1"
+  ],
+  "route_b": [
+    "pharmacy_1"
+  ],
+  "route_rev": [
+    "pharmacy_1"
+  ],
+  "route_llmap": [
+    "pharmacy_1"
+  ],
+  "gold_a": {
+    "is_valid": true,
+    "failure_reason": null,
+    "total_dist_km": 7.816892327019186,
+    "avg_rating": 4.1,
+    "return_time_hours": 10.510563077567305,
+    "time_violation_hours": 0.0,
+    "dep_violations": 0,
+    "avail_violations": 0,
+    "cov_missing": [],
+    "visited_categories": [
+      "pharmacy"
+    ]
+  },
+  "gold_b": {
+    "is_valid": true,
+    "failure_reason": null,
+    "total_dist_km": 7.816892327019186,
+    "avg_rating": 4.1,
+    "return_time_hours": 10.510563077567305,
+    "time_violation_hours": 0.0,
+    "dep_violations": 0,
+    "avail_violations": 0,
+    "cov_missing": [],
+    "visited_categories": [
+      "pharmacy"
+    ]
+  },
+  "gold_rev": {
+    "is_valid": true,
+    "failure_reason": null,
+    "total_dist_km": 7.816892327019186,
+    "avg_rating": 4.1,
+    "return_time_hours": 10.510563077567305,
+    "time_violation_hours": 0.0,
+    "dep_violations": 0,
+    "avail_violations": 0,
+    "cov_missing": [],
+    "visited_categories": [
+      "pharmacy"
+    ]
+  },
+  "gold_llmap": {
+    "is_valid": true,
+    "failure_reason": null,
+    "total_dist_km": 7.816892327019186,
+    "avg_rating": 4.1,
+    "return_time_hours": 10.510563077567305,
+    "time_violation_hours": 0.0,
+    "dep_violations": 0,
+    "avail_violations": 0,
+    "cov_missing": [],
+    "visited_categories": [
+      "pharmacy"
+    ]
+  },
+  "h_flag": 1,
+  "delta_u": 0.0,
+  "param_diff": 0.0,
+  "structural_difference": true
+}

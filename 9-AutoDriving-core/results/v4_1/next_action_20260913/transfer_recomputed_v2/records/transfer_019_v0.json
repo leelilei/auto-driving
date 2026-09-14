@@ -1,0 +1,133 @@
+{
+  "utterance_id": "transfer_019_v0",
+  "group_id": "transfer_019",
+  "variant_type": "V0",
+  "source_index": 45,
+  "w_synthetic": 1.0,
+  "gold_hard": {
+    "pois": [
+      "library",
+      "supermarket",
+      "pharmacy",
+      "shopping_mall",
+      "bank"
+    ],
+    "time_limit": null,
+    "dependencies": [
+      [
+        "supermarket",
+        "pharmacy"
+      ]
+    ]
+  },
+  "parse_a_status": "success",
+  "parse_a_error": null,
+  "parse_b_status": "success",
+  "parse_b_error": null,
+  "parse_rev_status": "success",
+  "parse_rev_error": null,
+  "route_a": [
+    "shopping_mall_2",
+    "supermarket_2",
+    "pharmacy_2",
+    "bank_2",
+    "library_1"
+  ],
+  "route_b": [
+    "shopping_mall_2",
+    "supermarket_2",
+    "pharmacy_2",
+    "bank_2",
+    "library_1"
+  ],
+  "route_rev": [
+    "shopping_mall_2",
+    "supermarket_2",
+    "pharmacy_2",
+    "bank_2",
+    "library_1"
+  ],
+  "route_llmap": [
+    "shopping_mall_2",
+    "supermarket_2",
+    "pharmacy_2",
+    "bank_2",
+    "library_1"
+  ],
+  "gold_a": {
+    "is_valid": true,
+    "failure_reason": null,
+    "total_dist_km": 45.58029567385653,
+    "avg_rating": 4.5200000000000005,
+    "return_time_hours": 15.602676522461884,
+    "time_violation_hours": 0.0,
+    "dep_violations": 0,
+    "avail_violations": 0,
+    "cov_missing": [],
+    "visited_categories": [
+      "shopping_mall",
+      "supermarket",
+      "pharmacy",
+      "bank",
+      "library"
+    ]
+  },
+  "gold_b": {
+    "is_valid": true,
+    "failure_reason": null,
+    "total_dist_km": 45.58029567385653,
+    "avg_rating": 4.5200000000000005,
+    "return_time_hours": 15.602676522461884,
+    "time_violation_hours": 0.0,
+    "dep_violations": 0,
+    "avail_violations": 0,
+    "cov_missing": [],
+    "visited_categories": [
+      "shopping_mall",
+      "supermarket",
+      "pharmacy",
+      "bank",
+      "library"
+    ]
+  },
+  "gold_rev": {
+    "is_valid": true,
+    "failure_reason": null,
+    "total_dist_km": 45.58029567385653,
+    "avg_rating": 4.5200000000000005,
+    "return_time_hours": 15.602676522461884,
+    "time_violation_hours": 0.0,
+    "dep_violations": 0,
+    "avail_violations": 0,
+    "cov_missing": [],
+    "visited_categories": [
+      "shopping_mall",
+      "supermarket",
+      "pharmacy",
+      "bank",
+      "library"
+    ]
+  },
+  "gold_llmap": {
+    "is_valid": true,
+    "failure_reason": null,
+    "total_dist_km": 45.58029567385653,
+    "avg_rating": 4.5200000000000005,
+    "return_time_hours": 15.602676522461884,
+    "time_violation_hours": 0.0,
+    "dep_violations": 0,
+    "avail_violations": 0,
+    "cov_missing": [],
+    "visited_categories": [
+      "shopping_mall",
+      "supermarket",
+      "pharmacy",
+      "bank",
+      "library"
+    ]
+  },
+  "h_flag": 0,
+  "delta_u": 0.0,
+  "param_diff": 0.19999999999999996,
+  "structural_difference": false
+}

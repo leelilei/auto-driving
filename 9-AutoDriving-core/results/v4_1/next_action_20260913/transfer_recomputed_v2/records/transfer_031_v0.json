@@ -1,0 +1,101 @@
+{
+  "utterance_id": "transfer_031_v0",
+  "group_id": "transfer_031",
+  "variant_type": "V0",
+  "source_index": 74,
+  "w_synthetic": 0.2,
+  "gold_hard": {
+    "pois": [
+      "library",
+      "supermarket"
+    ],
+    "time_limit": null,
+    "dependencies": []
+  },
+  "parse_a_status": "success",
+  "parse_a_error": null,
+  "parse_b_status": "success",
+  "parse_b_error": null,
+  "parse_rev_status": "success",
+  "parse_rev_error": null,
+  "route_a": [
+    "supermarket_1",
+    "library_1"
+  ],
+  "route_b": [
+    "supermarket_1",
+    "library_1"
+  ],
+  "route_rev": [
+    "supermarket_1",
+    "library_1"
+  ],
+  "route_llmap": [
+    "supermarket_1",
+    "library_1"
+  ],
+  "gold_a": {
+    "is_valid": true,
+    "failure_reason": null,
+    "total_dist_km": 12.29684689530679,
+    "avg_rating": 3.9,
+    "return_time_hours": 11.909894896510226,
+    "time_violation_hours": 0.0,
+    "dep_violations": 0,
+    "avail_violations": 0,
+    "cov_missing": [],
+    "visited_categories": [
+      "supermarket",
+      "library"
+    ]
+  },
+  "gold_b": {
+    "is_valid": true,
+    "failure_reason": null,
+    "total_dist_km": 12.29684689530679,
+    "avg_rating": 3.9,
+    "return_time_hours": 11.909894896510226,
+    "time_violation_hours": 0.0,
+    "dep_violations": 0,
+    "avail_violations": 0,
+    "cov_missing": [],
+    "visited_categories": [
+      "supermarket",
+      "library"
+    ]
+  },
+  "gold_rev": {
+    "is_valid": true,
+    "failure_reason": null,
+    "total_dist_km": 12.29684689530679,
+    "avg_rating": 3.9,
+    "return_time_hours": 11.909894896510226,
+    "time_violation_hours": 0.0,
+    "dep_violations": 0,
+    "avail_violations": 0,
+    "cov_missing": [],
+    "visited_categories": [
+      "supermarket",
+      "library"
+    ]
+  },
+  "gold_llmap": {
+    "is_valid": true,
+    "failure_reason": null,
+    "total_dist_km": 12.29684689530679,
+    "avg_rating": 3.9,
+    "return_time_hours": 11.909894896510226,
+    "time_violation_hours": 0.0,
+    "dep_violations": 0,
+    "avail_violations": 0,
+    "cov_missing": [],
+    "visited_categories": [
+      "supermarket",
+      "library"
+    ]
+  },
+  "h_flag": 0,
+  "delta_u": 0.0,
+  "param_diff": 0.0,
+  "structural_difference": false
+}

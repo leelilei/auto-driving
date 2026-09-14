@@ -1,0 +1,75 @@
+{
+  "utterance_id": "transfer_011_v1",
+  "group_id": "transfer_011",
+  "variant_type": "V1",
+  "source_index": 28,
+  "w_synthetic": 1.0,
+  "gold_hard": {
+    "pois": [
+      "library"
+    ],
+    "time_limit": null,
+    "dependencies": []
+  },
+  "parse_a_status": "success",
+  "parse_a_error": null,
+  "parse_b_status": "success",
+  "parse_b_error": null,
+  "parse_rev_status": "fail",
+  "parse_rev_error": "Deadline must be HH:MM or minutes",
+  "route_a": [
+    "library_2"
+  ],
+  "route_b": [
+    "library_2"
+  ],
+  "route_rev": null,
+  "route_llmap": null,
+  "gold_a": {
+    "is_valid": true,
+    "failure_reason": null,
+    "total_dist_km": 16.257393780597916,
+    "avg_rating": 4.6,
+    "return_time_hours": 11.541913126019931,
+    "time_violation_hours": 0.0,
+    "dep_violations": 0,
+    "avail_violations": 0,
+    "cov_missing": [],
+    "visited_categories": [
+      "library"
+    ]
+  },
+  "gold_b": {
+    "is_valid": true,
+    "failure_reason": null,
+    "total_dist_km": 16.257393780597916,
+    "avg_rating": 4.6,
+    "return_time_hours": 11.541913126019931,
+    "time_violation_hours": 0.0,
+    "dep_violations": 0,
+    "avail_violations": 0,
+    "cov_missing": [],
+    "visited_categories": [
+      "library"
+    ]
+  },
+  "gold_rev": {
+    "is_valid": false,
+    "failure_reason": "no_route_or_solver_failed",
+    "total_dist_km": 0.0,
+    "avg_rating": 1.0,
+    "return_time_hours": 0.0,
+    "time_violation_hours": 0.0,
+    "dep_violations": 0,
+    "avail_violations": 0,
+    "cov_missing": [
+      "library"
+    ],
+    "visited_categories": []
+  },
+  "gold_llmap": null,
+  "h_flag": 0,
+  "delta_u": 0.0,
+  "param_diff": 0.09999999999999998,
+  "structural_difference": false
+}

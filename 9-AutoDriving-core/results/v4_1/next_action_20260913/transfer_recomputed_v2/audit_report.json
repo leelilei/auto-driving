@@ -1,0 +1,15 @@
+{
+  "total_attempt_files": 521,
+  "raw_attempts_sha256": "cabd488bf7d546728a1c11ee87dc2b398dfbfe32799b20873f4eaf1c93e77de7",
+  "parse_a_success": 160,
+  "parse_a_fail": 0,
+  "parse_b_success": 160,
+  "parse_b_fail": 0,
+  "review_success": 128,
+  "review_fail": 32,
+  "llmap_orig_success": 40,
+  "llmap_orig_fail": 0,
+  "review_failure_types": {
+    "Deadline must be HH:MM or minutes": 32
+  }
+}

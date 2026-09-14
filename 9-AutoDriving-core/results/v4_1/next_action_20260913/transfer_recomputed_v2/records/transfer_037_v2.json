@@ -1,0 +1,91 @@
+{
+  "utterance_id": "transfer_037_v2",
+  "group_id": "transfer_037",
+  "variant_type": "V2",
+  "source_index": 88,
+  "w_synthetic": 0.1,
+  "gold_hard": {
+    "pois": [
+      "library",
+      "bank",
+      "pharmacy"
+    ],
+    "time_limit": null,
+    "dependencies": []
+  },
+  "parse_a_status": "success",
+  "parse_a_error": null,
+  "parse_b_status": "success",
+  "parse_b_error": null,
+  "parse_rev_status": "success",
+  "parse_rev_error": null,
+  "route_a": [
+    "pharmacy_1",
+    "bank_1",
+    "library_1"
+  ],
+  "route_b": [
+    "pharmacy_1",
+    "bank_1",
+    "library_1"
+  ],
+  "route_rev": [
+    "pharmacy_1",
+    "bank_1",
+    "library_1"
+  ],
+  "route_llmap": null,
+  "gold_a": {
+    "is_valid": true,
+    "failure_reason": null,
+    "total_dist_km": 9.31308742251793,
+    "avg_rating": 3.8666666666666667,
+    "return_time_hours": 11.893769580750599,
+    "time_violation_hours": 0.0,
+    "dep_violations": 0,
+    "avail_violations": 0,
+    "cov_missing": [],
+    "visited_categories": [
+      "pharmacy",
+      "bank",
+      "library"
+    ]
+  },
+  "gold_b": {
+    "is_valid": true,
+    "failure_reason": null,
+    "total_dist_km": 9.31308742251793,
+    "avg_rating": 3.8666666666666667,
+    "return_time_hours": 11.893769580750599,
+    "time_violation_hours": 0.0,
+    "dep_violations": 0,
+    "avail_violations": 0,
+    "cov_missing": [],
+    "visited_categories": [
+      "pharmacy",
+      "bank",
+      "library"
+    ]
+  },
+  "gold_rev": {
+    "is_valid": true,
+    "failure_reason": null,
+    "total_dist_km": 9.31308742251793,
+    "avg_rating": 3.8666666666666667,
+    "return_time_hours": 11.893769580750599,
+    "time_violation_hours": 0.0,
+    "dep_violations": 0,
+    "avail_violations": 0,
+    "cov_missing": [],
+    "visited_categories": [
+      "pharmacy",
+      "bank",
+      "library"
+    ]
+  },
+  "gold_llmap": null,
+  "h_flag": 0,
+  "delta_u": 0.0,
+  "param_diff": 0.0,
+  "structural_difference": false
+}

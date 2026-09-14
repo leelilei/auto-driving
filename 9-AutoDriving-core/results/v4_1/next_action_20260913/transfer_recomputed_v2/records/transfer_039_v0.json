@@ -1,0 +1,106 @@
+{
+  "utterance_id": "transfer_039_v0",
+  "group_id": "transfer_039",
+  "variant_type": "V0",
+  "source_index": 90,
+  "w_synthetic": 0.5,
+  "gold_hard": {
+    "pois": [
+      "library",
+      "pharmacy"
+    ],
+    "time_limit": "22:00",
+    "dependencies": [
+      [
+        "library",
+        "pharmacy"
+      ]
+    ]
+  },
+  "parse_a_status": "success",
+  "parse_a_error": null,
+  "parse_b_status": "success",
+  "parse_b_error": null,
+  "parse_rev_status": "success",
+  "parse_rev_error": null,
+  "route_a": [
+    "library_1",
+    "pharmacy_1"
+  ],
+  "route_b": [
+    "library_1",
+    "pharmacy_1"
+  ],
+  "route_rev": [
+    "library_1",
+    "pharmacy_1"
+  ],
+  "route_llmap": [
+    "library_1",
+    "pharmacy_1"
+  ],
+  "gold_a": {
+    "is_valid": true,
+    "failure_reason": null,
+    "total_dist_km": 12.285827689363067,
+    "avg_rating": 3.65,
+    "return_time_hours": 11.659527589645435,
+    "time_violation_hours": 0.0,
+    "dep_violations": 0,
+    "avail_violations": 0,
+    "cov_missing": [],
+    "visited_categories": [
+      "library",
+      "pharmacy"
+    ]
+  },
+  "gold_b": {
+    "is_valid": true,
+    "failure_reason": null,
+    "total_dist_km": 12.285827689363067,
+    "avg_rating": 3.65,
+    "return_time_hours": 11.659527589645435,
+    "time_violation_hours": 0.0,
+    "dep_violations": 0,
+    "avail_violations": 0,
+    "cov_missing": [],
+    "visited_categories": [
+      "library",
+      "pharmacy"
+    ]
+  },
+  "gold_rev": {
+    "is_valid": true,
+    "failure_reason": null,
+    "total_dist_km": 12.285827689363067,
+    "avg_rating": 3.65,
+    "return_time_hours": 11.659527589645435,
+    "time_violation_hours": 0.0,
+    "dep_violations": 0,
+    "avail_violations": 0,
+    "cov_missing": [],
+    "visited_categories": [
+      "library",
+      "pharmacy"
+    ]
+  },
+  "gold_llmap": {
+    "is_valid": true,
+    "failure_reason": null,
+    "total_dist_km": 12.285827689363067,
+    "avg_rating": 3.65,
+    "return_time_hours": 11.659527589645435,
+    "time_violation_hours": 0.0,
+    "dep_violations": 0,
+    "avail_violations": 0,
+    "cov_missing": [],
+    "visited_categories": [
+      "library",
+      "pharmacy"
+    ]
+  },
+  "h_flag": 0,
+  "delta_u": 0.0,
+  "param_diff": 0.0,
+  "structural_difference": false
+}

@@ -1,0 +1,77 @@
+{
+  "utterance_id": "transfer_033_v1",
+  "group_id": "transfer_033",
+  "variant_type": "V1",
+  "source_index": 79,
+  "w_synthetic": 0.6,
+  "gold_hard": {
+    "pois": [
+      "bank"
+    ],
+    "time_limit": null,
+    "dependencies": []
+  },
+  "parse_a_status": "success",
+  "parse_a_error": null,
+  "parse_b_status": "success",
+  "parse_b_error": null,
+  "parse_rev_status": "success",
+  "parse_rev_error": null,
+  "route_a": [
+    "bank_2"
+  ],
+  "route_b": [
+    "bank_2"
+  ],
+  "route_rev": [
+    "bank_2"
+  ],
+  "route_llmap": null,
+  "gold_a": {
+    "is_valid": true,
+    "failure_reason": null,
+    "total_dist_km": 14.9470103124012,
+    "avg_rating": 4.8,
+    "return_time_hours": 10.831567010413375,
+    "time_violation_hours": 0.0,
+    "dep_violations": 0,
+    "avail_violations": 0,
+    "cov_missing": [],
+    "visited_categories": [
+      "bank"
+    ]
+  },
+  "gold_b": {
+    "is_valid": true,
+    "failure_reason": null,
+    "total_dist_km": 14.9470103124012,
+    "avg_rating": 4.8,
+    "return_time_hours": 10.831567010413375,
+    "time_violation_hours": 0.0,
+    "dep_violations": 0,
+    "avail_violations": 0,
+    "cov_missing": [],
+    "visited_categories": [
+      "bank"
+    ]
+  },
+  "gold_rev": {
+    "is_valid": true,
+    "failure_reason": null,
+    "total_dist_km": 14.9470103124012,
+    "avg_rating": 4.8,
+    "return_time_hours": 10.831567010413375,
+    "time_violation_hours": 0.0,
+    "dep_violations": 0,
+    "avail_violations": 0,
+    "cov_missing": [],
+    "visited_categories": [
+      "bank"
+    ]
+  },
+  "gold_llmap": null,
+  "h_flag": 1,
+  "delta_u": 0.0,
+  "param_diff": 0.0,
+  "structural_difference": true
+}

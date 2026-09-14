@@ -1,0 +1,115 @@
+{
+  "utterance_id": "transfer_015_v0",
+  "group_id": "transfer_015",
+  "variant_type": "V0",
+  "source_index": 33,
+  "w_synthetic": 0.7,
+  "gold_hard": {
+    "pois": [
+      "shopping_mall",
+      "bank",
+      "pharmacy"
+    ],
+    "time_limit": "17:00",
+    "dependencies": [
+      [
+        "bank",
+        "pharmacy"
+      ]
+    ]
+  },
+  "parse_a_status": "success",
+  "parse_a_error": null,
+  "parse_b_status": "success",
+  "parse_b_error": null,
+  "parse_rev_status": "success",
+  "parse_rev_error": null,
+  "route_a": [
+    "shopping_mall_1",
+    "bank_1",
+    "pharmacy_1"
+  ],
+  "route_b": [
+    "shopping_mall_2",
+    "bank_2",
+    "pharmacy_1"
+  ],
+  "route_rev": [
+    "shopping_mall_1",
+    "bank_1",
+    "pharmacy_1"
+  ],
+  "route_llmap": [
+    "shopping_mall_2",
+    "bank_2",
+    "pharmacy_1"
+  ],
+  "gold_a": {
+    "is_valid": true,
+    "failure_reason": null,
+    "total_dist_km": 15.25990332348334,
+    "avg_rating": 3.8333333333333335,
+    "return_time_hours": 13.091996777449445,
+    "time_violation_hours": 0.0,
+    "dep_violations": 0,
+    "avail_violations": 0,
+    "cov_missing": [],
+    "visited_categories": [
+      "shopping_mall",
+      "bank",
+      "pharmacy"
+    ]
+  },
+  "gold_b": {
+    "is_valid": true,
+    "failure_reason": null,
+    "total_dist_km": 34.20500180054731,
+    "avg_rating": 4.3,
+    "return_time_hours": 13.723500060018246,
+    "time_violation_hours": 0.0,
+    "dep_violations": 0,
+    "avail_violations": 0,
+    "cov_missing": [],
+    "visited_categories": [
+      "shopping_mall",
+      "bank",
+      "pharmacy"
+    ]
+  },
+  "gold_rev": {
+    "is_valid": true,
+    "failure_reason": null,
+    "total_dist_km": 15.25990332348334,
+    "avg_rating": 3.8333333333333335,
+    "return_time_hours": 13.091996777449445,
+    "time_violation_hours": 0.0,
+    "dep_violations": 0,
+    "avail_violations": 0,
+    "cov_missing": [],
+    "visited_categories": [
+      "shopping_mall",
+      "bank",
+      "pharmacy"
+    ]
+  },
+  "gold_llmap": {
+    "is_valid": true,
+    "failure_reason": null,
+    "total_dist_km": 34.20500180054731,
+    "avg_rating": 4.3,
+    "return_time_hours": 13.723500060018246,
+    "time_violation_hours": 0.0,
+    "dep_violations": 0,
+    "avail_violations": 0,
+    "cov_missing": [],
+    "visited_categories": [
+      "shopping_mall",
+      "bank",
+      "pharmacy"
+    ]
+  },
+  "h_flag": 0,
+  "delta_u": 0.11666666666666659,
+  "param_diff": 0.19999999999999996,
+  "structural_difference": false
+}
